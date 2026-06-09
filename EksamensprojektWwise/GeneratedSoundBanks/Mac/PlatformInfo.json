@@ -10,7 +10,7 @@
    "SourceFilesRoot": "../../.cache",
    "SoundBanksRoot": ".",
    "ExternalSourcesInputFile": "",
-   "ExternalSourcesOutputRoot": "../../../EksamensprojektUnity/Assets/GeneratedSoundBanks/Mac"
+   "ExternalSourcesOutputRoot": "."
   },
   "DefaultAlign": "16",
   "Settings": {
@@ -33,6 +33,6 @@
    "PrintObjectPath": "true",
    "PrintObjectColor": "true"
   },
-  "FileHash": "{8EB5A732-B06D-2AB9-5BF9-D1495EBC481F}"
+  "FileHash": "{A79D7D5F-DAF3-78EE-6F3B-F716E0C29799}"
  }
 }

@@ -3,7 +3,7 @@
     <CopySoundBanksAsPreBuildStep>true</CopySoundBanksAsPreBuildStep>
     <GenerateSoundBanksAsPreBuildStep>false</GenerateSoundBanksAsPreBuildStep>
     <WwiseStreamingAssetsPath>Audio/GeneratedSoundBanks</WwiseStreamingAssetsPath>
-    <RootOutputPath>StreamingAssets/Audio/GeneratedSoundBanks</RootOutputPath>
+    <RootOutputPath>../../EksamensprojektWwise/GeneratedSoundBanks/</RootOutputPath>
     <CreatedPicker>true</CreatedPicker>
     <CreateWwiseGlobal>true</CreateWwiseGlobal>
     <CreateWwiseListener>false</CreateWwiseListener>

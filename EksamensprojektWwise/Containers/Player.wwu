@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{4B639D35-1952-4C2D-B0DC-5EBA355BBDDD}" SchemaVersion="133" RootDocumentID="{A7C259A8-97E5-469B-B3B9-4406E8357590}" ParentDocumentID="{A7C259A8-97E5-469B-B3B9-4406E8357590}">
-	<Containers>
-		<WorkUnit Name="Player" ID="{4B639D35-1952-4C2D-B0DC-5EBA355BBDDD}" OwnerID="{A7C259A8-97E5-469B-B3B9-4406E8357590}" PersistMode="Nested"/>
-	</Containers>
-</WwiseDocument>
