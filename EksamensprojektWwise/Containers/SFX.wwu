@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{A7C259A8-97E5-469B-B3B9-4406E8357590}" SchemaVersion="133">
+	<Containers>
+		<WorkUnit Name="SFX" ID="{A7C259A8-97E5-469B-B3B9-4406E8357590}" PersistMode="Standalone">
+			<ChildrenList>
+				<WorkUnit Name="Player" ID="{4B639D35-1952-4C2D-B0DC-5EBA355BBDDD}" PersistMode="Reference"/>
+			</ChildrenList>
+		</WorkUnit>
+	</Containers>
+</WwiseDocument>
