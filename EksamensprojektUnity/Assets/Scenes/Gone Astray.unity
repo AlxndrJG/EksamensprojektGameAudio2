@@ -726,18 +726,18 @@ Light:
   m_Type: 1
   m_Color: {r: 0, g: 0.71847177, b: 1, a: 1}
   m_Intensity: 1
-  m_Range: 10
-  m_SpotAngle: 30
+  m_Range: 31.65559
+  m_SpotAngle: 179
   m_InnerSpotAngle: 21.80208
   m_CookieSize2D: {x: 0.5, y: 0.5}
   m_Shadows:
-    m_Type: 2
+    m_Type: 1
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
     m_Bias: 0.05
     m_NormalBias: 0.4
-    m_NearPlane: 0.2
+    m_NearPlane: 3.56
     m_CullingMatrixOverride:
       e00: 1
       e01: 0
@@ -788,7 +788,7 @@ Transform:
   m_GameObject: {fileID: 44017048}
   serializedVersion: 2
   m_LocalRotation: {x: -0.3690169, y: 0, z: 0, w: -0.92942274}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.114, y: -5.697, z: 6.548}
   m_LocalScale: {x: 0.1, y: 0.09999999, z: 0.099999994}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -11318,7 +11318,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 492154785080476394, guid: d0012339c279240ddad8688160dcd798, type: 3}
       propertyPath: field of view
-      value: 50
+      value: 70
       objectReference: {fileID: 0}
     - target: {fileID: 492154785080476397, guid: d0012339c279240ddad8688160dcd798, type: 3}
       propertyPath: m_LocalPosition.y
@@ -11330,7 +11330,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4973592953976778909, guid: d0012339c279240ddad8688160dcd798, type: 3}
       propertyPath: m_Lens.FieldOfView
-      value: 50
+      value: 70
       objectReference: {fileID: 0}
     - target: {fileID: 5784916221486192781, guid: d0012339c279240ddad8688160dcd798, type: 3}
       propertyPath: m_Name
