@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{08F20BFB-F7C4-40F3-B852-C39F7D674E18}" SchemaVersion="133">
+	<Containers>
+		<WorkUnit Name="SFX" ID="{08F20BFB-F7C4-40F3-B852-C39F7D674E18}" PersistMode="Standalone">
+			<ChildrenList>
+				<WorkUnit Name="Player" ID="{409268F6-A1BE-4C6D-B73D-C82A96CEEB64}" PersistMode="Reference"/>
+				<WorkUnit Name="Doors" ID="{76B5CC4A-DF79-4C1D-BE39-7BD9231E4A3F}" PersistMode="Reference"/>
+			</ChildrenList>
+		</WorkUnit>
+	</Containers>
+</WwiseDocument>

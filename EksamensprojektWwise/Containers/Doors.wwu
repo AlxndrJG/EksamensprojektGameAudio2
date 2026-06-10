@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{76B5CC4A-DF79-4C1D-BE39-7BD9231E4A3F}" SchemaVersion="133" RootDocumentID="{08F20BFB-F7C4-40F3-B852-C39F7D674E18}" ParentDocumentID="{08F20BFB-F7C4-40F3-B852-C39F7D674E18}">
+	<Containers>
+		<WorkUnit Name="Doors" ID="{76B5CC4A-DF79-4C1D-BE39-7BD9231E4A3F}" OwnerID="{08F20BFB-F7C4-40F3-B852-C39F7D674E18}" PersistMode="Nested"/>
+	</Containers>
+</WwiseDocument>
