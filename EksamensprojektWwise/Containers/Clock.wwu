@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{6F7C04D4-30B2-43D6-8171-AF664137D730}" SchemaVersion="133" RootDocumentID="{08F20BFB-F7C4-40F3-B852-C39F7D674E18}" ParentDocumentID="{D751A346-751C-439A-9397-A1FDB4F10230}">
+	<Containers>
+		<WorkUnit Name="Clock" ID="{6F7C04D4-30B2-43D6-8171-AF664137D730}" OwnerID="{D751A346-751C-439A-9397-A1FDB4F10230}" PersistMode="Nested"/>
+	</Containers>
+</WwiseDocument>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{D751A346-751C-439A-9397-A1FDB4F10230}" SchemaVersion="133" RootDocumentID="{08F20BFB-F7C4-40F3-B852-C39F7D674E18}" ParentDocumentID="{08F20BFB-F7C4-40F3-B852-C39F7D674E18}">
+	<Containers>
+		<WorkUnit Name="Objects" ID="{D751A346-751C-439A-9397-A1FDB4F10230}" OwnerID="{08F20BFB-F7C4-40F3-B852-C39F7D674E18}" PersistMode="Nested">
+			<ChildrenList>
+				<WorkUnit Name="Doors" ID="{76B5CC4A-DF79-4C1D-BE39-7BD9231E4A3F}" PersistMode="Reference"/>
+				<WorkUnit Name="Cabinet" ID="{71EECC52-AA90-49B1-B25E-FBEA4961A280}" PersistMode="Reference"/>
+				<WorkUnit Name="TV" ID="{39B736E9-3A53-47FA-A130-DCB4295BC736}" PersistMode="Reference"/>
+				<WorkUnit Name="Clock" ID="{6F7C04D4-30B2-43D6-8171-AF664137D730}" PersistMode="Reference"/>
+				<WorkUnit Name="Fridge" ID="{3FC2F755-5E02-4AF3-B9B2-BD8F28326426}" PersistMode="Reference"/>
+				<WorkUnit Name="Fan" ID="{B033FB0C-6348-405B-97D0-0C32AAFCB7AB}" PersistMode="Reference"/>
+			</ChildrenList>
+		</WorkUnit>
+	</Containers>
+</WwiseDocument>

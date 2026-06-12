@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{71EECC52-AA90-49B1-B25E-FBEA4961A280}" SchemaVersion="133" RootDocumentID="{08F20BFB-F7C4-40F3-B852-C39F7D674E18}" ParentDocumentID="{D751A346-751C-439A-9397-A1FDB4F10230}">
+	<Containers>
+		<WorkUnit Name="Cabinet" ID="{71EECC52-AA90-49B1-B25E-FBEA4961A280}" OwnerID="{D751A346-751C-439A-9397-A1FDB4F10230}" PersistMode="Nested"/>
+	</Containers>
+</WwiseDocument>

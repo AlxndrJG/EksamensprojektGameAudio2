@@ -4,7 +4,7 @@
 		<WorkUnit Name="SFX" ID="{08F20BFB-F7C4-40F3-B852-C39F7D674E18}" PersistMode="Standalone">
 			<ChildrenList>
 				<WorkUnit Name="Player" ID="{409268F6-A1BE-4C6D-B73D-C82A96CEEB64}" PersistMode="Reference"/>
-				<WorkUnit Name="Doors" ID="{76B5CC4A-DF79-4C1D-BE39-7BD9231E4A3F}" PersistMode="Reference"/>
+				<WorkUnit Name="Objects" ID="{D751A346-751C-439A-9397-A1FDB4F10230}" PersistMode="Reference"/>
 			</ChildrenList>
 		</WorkUnit>
 	</Containers>
