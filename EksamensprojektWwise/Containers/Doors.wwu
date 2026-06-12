@@ -1,6 +1,124 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{76B5CC4A-DF79-4C1D-BE39-7BD9231E4A3F}" SchemaVersion="133" RootDocumentID="{08F20BFB-F7C4-40F3-B852-C39F7D674E18}" ParentDocumentID="{D751A346-751C-439A-9397-A1FDB4F10230}">
 	<Containers>
-		<WorkUnit Name="Doors" ID="{76B5CC4A-DF79-4C1D-BE39-7BD9231E4A3F}" OwnerID="{D751A346-751C-439A-9397-A1FDB4F10230}" PersistMode="Nested"/>
+		<WorkUnit Name="Doors" ID="{76B5CC4A-DF79-4C1D-BE39-7BD9231E4A3F}" OwnerID="{D751A346-751C-439A-9397-A1FDB4F10230}" PersistMode="Nested">
+			<ChildrenList>
+				<RandomSequenceContainer Name="Door_Creak" ID="{19AF4CB5-A11B-4DAC-849B-2E2135ABF1D1}" ShortID="655226980">
+					<PropertyList>
+						<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<RandomSequenceContainer Name="Door_Creak" ID="{D43E4505-40FD-4E12-9DAB-AD1580381174}" ShortID="427874114">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Door_Creak_2" ID="{84A2A8A5-7490-498D-955F-F9B9D68FC20F}" ShortID="581848780">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Door_Creak_2" ID="{AF562822-8C77-461C-B037-8AF2FBB0E215}">
+											<Language>SFX</Language>
+											<AudioFile>EksamensprojektWwise\Originals\SFX\Door_Creak_2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="825915921"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Door_Creak_2" ID="{AF562822-8C77-461C-B037-8AF2FBB0E215}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Door_Creak_3" ID="{6235851D-6E3B-462A-9A50-1FF1F1457AB6}" ShortID="417510720">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Door_Creak_3" ID="{6A7021A0-85F2-42E5-871A-279C0C84E234}">
+											<Language>SFX</Language>
+											<AudioFile>EksamensprojektWwise\Originals\SFX\Door_Creak_3.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="317220653"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Door_Creak_3" ID="{6A7021A0-85F2-42E5-871A-279C0C84E234}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Door_Creak_4" ID="{EB8AF17F-760A-4F48-BEA8-BBAC18484BA3}" ShortID="351567494">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Door_Creak_4" ID="{A2BE2F4F-3673-4E73-9514-7076876155D1}">
+											<Language>SFX</Language>
+											<AudioFile>EksamensprojektWwise\Originals\SFX\Door_Creak_4.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="239415483"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Door_Creak_4" ID="{A2BE2F4F-3673-4E73-9514-7076876155D1}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Door_Creak_1" ID="{5A4F3461-F8E2-44C6-8D76-4B1C37A0F09C}" ShortID="489620349">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Door_Creak_1" ID="{F66FB83A-956E-4311-BBC6-B071FD69F002}">
+											<Language>SFX</Language>
+											<AudioFile>EksamensprojektWwise\Originals\SFX\Door_Creak_1.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="464480199"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Door_Creak_1" ID="{F66FB83A-956E-4311-BBC6-B071FD69F002}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+					</ChildrenList>
+				</RandomSequenceContainer>
+			</ChildrenList>
+		</WorkUnit>
 	</Containers>
 </WwiseDocument>

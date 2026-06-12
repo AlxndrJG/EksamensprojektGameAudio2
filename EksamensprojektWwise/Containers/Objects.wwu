@@ -9,6 +9,7 @@
 				<WorkUnit Name="Clock" ID="{6F7C04D4-30B2-43D6-8171-AF664137D730}" PersistMode="Reference"/>
 				<WorkUnit Name="Fridge" ID="{3FC2F755-5E02-4AF3-B9B2-BD8F28326426}" PersistMode="Reference"/>
 				<WorkUnit Name="Fan" ID="{B033FB0C-6348-405B-97D0-0C32AAFCB7AB}" PersistMode="Reference"/>
+				<WorkUnit Name="Kitchen_Sink" ID="{9EACD1AD-FFB9-402E-A191-1BEE50C3B9D8}" PersistMode="Reference"/>
 			</ChildrenList>
 		</WorkUnit>
 	</Containers>

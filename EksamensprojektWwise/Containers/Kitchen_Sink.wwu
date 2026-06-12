@@ -1,0 +1,1205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{9EACD1AD-FFB9-402E-A191-1BEE50C3B9D8}" SchemaVersion="133" RootDocumentID="{08F20BFB-F7C4-40F3-B852-C39F7D674E18}" ParentDocumentID="{D751A346-751C-439A-9397-A1FDB4F10230}">
+	<Containers>
+		<WorkUnit Name="Kitchen_Sink" ID="{9EACD1AD-FFB9-402E-A191-1BEE50C3B9D8}" OwnerID="{D751A346-751C-439A-9397-A1FDB4F10230}" PersistMode="Nested">
+			<ChildrenList>
+				<RandomSequenceContainer Name="Kitchen_Sink_Water_Tapping" ID="{E4F7E484-23BF-4C3B-88A2-1EF5C562C49C}" ShortID="607707048">
+					<PropertyList>
+						<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<RandomSequenceContainer Name="Metal_Impact" ID="{0395B3A6-10C0-4F61-AD4B-16EE4E547707}" ShortID="750685825">
+							<PropertyList>
+								<Property Name="InitialDelay" Type="Real64">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{9286CEE2-254E-46FE-BE2E-EB3A1FCB3A0B}">
+												<PropertyList>
+													<Property Name="Max" Type="Real64" Value="2"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Water_Metal_Impact_1" ID="{15A71840-303C-44F1-821F-7F2D6498F0EF}" ShortID="932038596">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Water_Metal_Impact_1" ID="{88BA39F2-AC8F-49A6-B616-07EB43C469CA}">
+											<Language>SFX</Language>
+											<AudioFile>EksamensprojektWwise\Originals\SFX\Water_Metal_Impact_1.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="722315689"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Water_Metal_Impact_1" ID="{88BA39F2-AC8F-49A6-B616-07EB43C469CA}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Water_Metal_Impact_2" ID="{974AEDEB-7A31-4F8E-97FE-280FDBF441C6}" ShortID="875526405">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Water_Metal_Impact_2" ID="{08B7F7CB-A8DD-43B1-B872-F0D3EA14C2D3}">
+											<Language>SFX</Language>
+											<AudioFile>EksamensprojektWwise\Originals\SFX\Water_Metal_Impact_2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1007782491"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Water_Metal_Impact_2" ID="{08B7F7CB-A8DD-43B1-B872-F0D3EA14C2D3}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Water_Metal_Impact_3" ID="{AF433E70-588C-4C9A-8E61-7FAF90762755}" ShortID="663593843">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Water_Metal_Impact_3" ID="{441F9887-7249-4A95-8AC6-B466482A44D4}">
+											<Language>SFX</Language>
+											<AudioFile>EksamensprojektWwise\Originals\SFX\Water_Metal_Impact_3.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="244709766"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Water_Metal_Impact_3" ID="{441F9887-7249-4A95-8AC6-B466482A44D4}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Water_Metal_Impact_4" ID="{9705E1F0-4786-47B4-AA11-4A7129BA760D}" ShortID="759850059">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Water_Metal_Impact_4" ID="{243CB296-A63C-4C04-9F8A-02A28D79366F}">
+											<Language>SFX</Language>
+											<AudioFile>EksamensprojektWwise\Originals\SFX\Water_Metal_Impact_4.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="605947183"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Water_Metal_Impact_4" ID="{243CB296-A63C-4C04-9F8A-02A28D79366F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Water_Metal_Impact_5" ID="{33B5CAB3-FFF6-4DF7-B357-64E7D2B82998}" ShortID="411380466">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Water_Metal_Impact_5" ID="{93776BE8-4A30-4FE2-88F0-0C23FA82506A}">
+											<Language>SFX</Language>
+											<AudioFile>EksamensprojektWwise\Originals\SFX\Water_Metal_Impact_5.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="715853598"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Water_Metal_Impact_5" ID="{93776BE8-4A30-4FE2-88F0-0C23FA82506A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Water_Metal_Impact_6" ID="{E7215502-5951-4B20-BF49-A3072D57C200}" ShortID="335134243">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Water_Metal_Impact_6" ID="{B34A3801-8F26-4A09-A7AB-D4AC022EDB04}">
+											<Language>SFX</Language>
+											<AudioFile>EksamensprojektWwise\Originals\SFX\Water_Metal_Impact_6.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="906161376"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Water_Metal_Impact_6" ID="{B34A3801-8F26-4A09-A7AB-D4AC022EDB04}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Water_Metal_Impact_7" ID="{A40DD2A1-CE3B-4428-BA8A-BB60B652A9D6}" ShortID="282498462">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Water_Metal_Impact_7" ID="{F2C7FD05-5D4D-4F3F-BC7D-A80D5D75C2D9}">
+											<Language>SFX</Language>
+											<AudioFile>EksamensprojektWwise\Originals\SFX\Water_Metal_Impact_7.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="495671222"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Water_Metal_Impact_7" ID="{F2C7FD05-5D4D-4F3F-BC7D-A80D5D75C2D9}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Water_Metal_Impact_8" ID="{EBA2E3DE-717C-4DBE-BFF9-F4E342400432}" ShortID="936621984">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Water_Metal_Impact_8" ID="{85213756-7131-4A06-806C-82565A599710}">
+											<Language>SFX</Language>
+											<AudioFile>EksamensprojektWwise\Originals\SFX\Water_Metal_Impact_8.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="250790566"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Water_Metal_Impact_8" ID="{85213756-7131-4A06-806C-82565A599710}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Water_Metal_Impact_9" ID="{D688DA17-D3AC-4976-A927-F62267D81A57}" ShortID="454330163">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Water_Metal_Impact_9" ID="{9A7EE4BC-219F-4335-B836-A4ABCD9988D1}">
+											<Language>SFX</Language>
+											<AudioFile>EksamensprojektWwise\Originals\SFX\Water_Metal_Impact_9.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="730136227"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Water_Metal_Impact_9" ID="{9A7EE4BC-219F-4335-B836-A4ABCD9988D1}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Water_Metal_Impact_10" ID="{70FCEE88-8CE4-40DA-9D2A-7AEF7EACDFAB}" ShortID="940405165">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Water_Metal_Impact_10" ID="{4A212B5B-F43C-4D82-9E5F-DE9A9B30525F}">
+											<Language>SFX</Language>
+											<AudioFile>EksamensprojektWwise\Originals\SFX\Water_Metal_Impact_10.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="156226617"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Water_Metal_Impact_10" ID="{4A212B5B-F43C-4D82-9E5F-DE9A9B30525F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Water_Tap" ID="{3A76B270-EBC9-4CF9-B7CB-3DCB32CA57ED}" ShortID="126051432">
+							<PropertyList>
+								<Property Name="InitialDelay" Type="Real64">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{0D7FE704-3F6A-4AAB-8E69-9EFCD3CBF1AE}">
+												<PropertyList>
+													<Property Name="Max" Type="Real64" Value="1"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Lowpass" Type="int16">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{9D08DB2F-DCA4-48E1-A21D-0930FB49FEFE}"/>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{2A8B329C-F7EE-4858-9C1E-494247EC1C6B}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="2"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Water_Tap_Singes_2" ID="{73E74B3D-A808-4CD6-99C1-A23CA7F53787}" ShortID="477646715">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Water_Tap_Singes_2" ID="{819289D7-4F83-4DFA-A7AA-A8A0DEBD96F6}">
+											<Language>SFX</Language>
+											<AudioFile>EksamensprojektWwise\Originals\SFX\Water_Tap_Singes_2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="861515863"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Water_Tap_Singes_2" ID="{819289D7-4F83-4DFA-A7AA-A8A0DEBD96F6}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Water_Tap_Singles_1" ID="{E55D82ED-B2D2-4EC8-8B6D-C0AE48CD7CD8}" ShortID="84081188">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Water_Tap_Singles_1" ID="{E71EDC15-BB8E-4652-BD05-1E7A0224E80C}">
+											<Language>SFX</Language>
+											<AudioFile>EksamensprojektWwise\Originals\SFX\Water_Tap_Singles_1.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="215137000"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Water_Tap_Singles_1" ID="{E71EDC15-BB8E-4652-BD05-1E7A0224E80C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Water_Tap_Singles_3" ID="{FBE64465-AAB3-4873-8D86-86FF999AB751}" ShortID="1041106727">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Water_Tap_Singles_3" ID="{B99FFBDA-76F7-427C-9950-178DA1A186C4}">
+											<Language>SFX</Language>
+											<AudioFile>EksamensprojektWwise\Originals\SFX\Water_Tap_Singles_3.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="530376271"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Water_Tap_Singles_3" ID="{B99FFBDA-76F7-427C-9950-178DA1A186C4}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Water_Tap_Singles_4" ID="{D449063C-05F4-49A5-8634-388E2CCF2AD1}" ShortID="470618777">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Water_Tap_Singles_4" ID="{7EB06114-E171-492A-BD68-2128AE6478D8}">
+											<Language>SFX</Language>
+											<AudioFile>EksamensprojektWwise\Originals\SFX\Water_Tap_Singles_4.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="36999298"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Water_Tap_Singles_4" ID="{7EB06114-E171-492A-BD68-2128AE6478D8}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Water_Tap_Singles_5" ID="{07E23A9E-C6DC-4C5F-B6AD-F65BACEDBF96}" ShortID="459165680">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Water_Tap_Singles_5" ID="{10D6C180-5F12-4CD2-91A3-1875B593C663}">
+											<Language>SFX</Language>
+											<AudioFile>EksamensprojektWwise\Originals\SFX\Water_Tap_Singles_5.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1070944068"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Water_Tap_Singles_5" ID="{10D6C180-5F12-4CD2-91A3-1875B593C663}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Water_Tap_Singles_6" ID="{FDE49A5D-710A-47C4-9F81-EB1A4AAD7432}" ShortID="1049230589">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Water_Tap_Singles_6" ID="{D7164E8E-AC36-4129-B677-31A3F9738126}">
+											<Language>SFX</Language>
+											<AudioFile>EksamensprojektWwise\Originals\SFX\Water_Tap_Singles_6.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="467378241"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Water_Tap_Singles_6" ID="{D7164E8E-AC36-4129-B677-31A3F9738126}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Water_Tap_Singles_7" ID="{1E910A9B-BEA0-4ED0-A34C-F4C40E9FA9D1}" ShortID="384163171">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Water_Tap_Singles_7" ID="{E38B7F55-3461-4565-9B91-D4FDC1163F7C}">
+											<Language>SFX</Language>
+											<AudioFile>EksamensprojektWwise\Originals\SFX\Water_Tap_Singles_7.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="846616987"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Water_Tap_Singles_7" ID="{E38B7F55-3461-4565-9B91-D4FDC1163F7C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Water_Tap_Singles_8" ID="{F299BF43-FEED-4B6D-AF7E-643305A240C4}" ShortID="77612771">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Water_Tap_Singles_8" ID="{4721F722-26BF-4CF3-94BC-C9AA0DD84605}">
+											<Language>SFX</Language>
+											<AudioFile>EksamensprojektWwise\Originals\SFX\Water_Tap_Singles_8.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="152894249"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Water_Tap_Singles_8" ID="{4721F722-26BF-4CF3-94BC-C9AA0DD84605}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Water_Tap_Singles_9" ID="{F5231B4D-6465-49F2-A43C-5D20EC590868}" ShortID="1010906749">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Water_Tap_Singles_9" ID="{0C79AD80-805F-498D-BDB5-AC49D097CFFD}">
+											<Language>SFX</Language>
+											<AudioFile>EksamensprojektWwise\Originals\SFX\Water_Tap_Singles_9.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="737010438"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Water_Tap_Singles_9" ID="{0C79AD80-805F-498D-BDB5-AC49D097CFFD}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Water_Tap_Singles_10" ID="{65081817-5CD3-477C-BF22-80CBB025ABFC}" ShortID="225752598">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Water_Tap_Singles_10" ID="{D621C106-FA60-488C-9595-252AC3229707}">
+											<Language>SFX</Language>
+											<AudioFile>EksamensprojektWwise\Originals\SFX\Water_Tap_Singles_10.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="836151234"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Water_Tap_Singles_10" ID="{D621C106-FA60-488C-9595-252AC3229707}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Water_Tap_Singles_11" ID="{D1F80BD9-B6C8-4B28-A065-C8E7452EF7BD}" ShortID="588416171">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Water_Tap_Singles_11" ID="{F0DA0ED2-D82C-4C9F-8D56-4A1428673B1C}">
+											<Language>SFX</Language>
+											<AudioFile>EksamensprojektWwise\Originals\SFX\Water_Tap_Singles_11.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="706924221"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Water_Tap_Singles_11" ID="{F0DA0ED2-D82C-4C9F-8D56-4A1428673B1C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Water_Tap_Singles_12" ID="{6D27E28A-1CF3-4C8A-AC55-FF1707A8AD12}" ShortID="980424879">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Water_Tap_Singles_12" ID="{96B8AFD7-A913-4DE3-A4D4-B1371650EA81}">
+											<Language>SFX</Language>
+											<AudioFile>EksamensprojektWwise\Originals\SFX\Water_Tap_Singles_12.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="372064601"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Water_Tap_Singles_12" ID="{96B8AFD7-A913-4DE3-A4D4-B1371650EA81}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Water_Tap_Singles_13" ID="{A792E8FE-C12F-4367-8B07-928630F94781}" ShortID="592623000">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Water_Tap_Singles_13" ID="{D57A150A-E6D8-42C1-9B5E-9BD73E0E627F}">
+											<Language>SFX</Language>
+											<AudioFile>EksamensprojektWwise\Originals\SFX\Water_Tap_Singles_13.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="667575423"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Water_Tap_Singles_13" ID="{D57A150A-E6D8-42C1-9B5E-9BD73E0E627F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Water_Tap_Singles_14" ID="{DFEB2FC3-A957-4650-854D-8459F4AF217C}" ShortID="965637018">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Water_Tap_Singles_14" ID="{880F195A-2ECA-4C52-B0DE-D9A0C2DC35D9}">
+											<Language>SFX</Language>
+											<AudioFile>EksamensprojektWwise\Originals\SFX\Water_Tap_Singles_14.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="161588475"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Water_Tap_Singles_14" ID="{880F195A-2ECA-4C52-B0DE-D9A0C2DC35D9}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Water_Tap_Singles_15" ID="{47401194-46FD-4FC8-90EA-93A6525FD3F1}" ShortID="663936410">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Water_Tap_Singles_15" ID="{9A19A049-D22E-4B25-A4E7-9D629CE46A8A}">
+											<Language>SFX</Language>
+											<AudioFile>EksamensprojektWwise\Originals\SFX\Water_Tap_Singles_15.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="108596002"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Water_Tap_Singles_15" ID="{9A19A049-D22E-4B25-A4E7-9D629CE46A8A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Water_Tap_Multiples_1" ID="{39947AEA-B11D-4098-8FC2-7E877B37F57C}" ShortID="911693222">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Water_Tap_Multiples_1" ID="{4178BCFF-E168-45C4-AF8E-01CBDCDAB1B5}">
+											<Language>SFX</Language>
+											<AudioFile>EksamensprojektWwise\Originals\SFX\Water_Tap_Multiples_1.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="122381313"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Water_Tap_Multiples_1" ID="{4178BCFF-E168-45C4-AF8E-01CBDCDAB1B5}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Water_Tap_Multiples_2" ID="{E1359611-2617-4DA6-BDB7-3F12880DFD16}" ShortID="640558476">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Water_Tap_Multiples_2" ID="{6BB7965C-5D13-4DA3-A375-EA4849AA86F5}">
+											<Language>SFX</Language>
+											<AudioFile>EksamensprojektWwise\Originals\SFX\Water_Tap_Multiples_2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="636377678"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Water_Tap_Multiples_2" ID="{6BB7965C-5D13-4DA3-A375-EA4849AA86F5}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Water_Tap_Multiples_3" ID="{FDEB43D7-7675-4C11-931E-A88CBC620EDB}" ShortID="183099638">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Water_Tap_Multiples_3" ID="{4D1B51DB-2E92-49CD-9584-3EF0E05B789D}">
+											<Language>SFX</Language>
+											<AudioFile>EksamensprojektWwise\Originals\SFX\Water_Tap_Multiples_3.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="336136840"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Water_Tap_Multiples_3" ID="{4D1B51DB-2E92-49CD-9584-3EF0E05B789D}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Water_Tap_Multiples_4" ID="{C351E78A-E268-4377-B38F-B07BE2983419}" ShortID="49038664">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Water_Tap_Multiples_4" ID="{B32B3B23-8FD3-4BDD-B231-0C7BE8472F42}">
+											<Language>SFX</Language>
+											<AudioFile>EksamensprojektWwise\Originals\SFX\Water_Tap_Multiples_4.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="279684925"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Water_Tap_Multiples_4" ID="{B32B3B23-8FD3-4BDD-B231-0C7BE8472F42}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Water_Tap_Multiples_5" ID="{BD3A70D7-9D2B-48FD-A803-705442044B4B}" ShortID="1046070838">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Water_Tap_Multiples_5" ID="{A1229231-DD9A-49B8-92D8-68D90938856B}">
+											<Language>SFX</Language>
+											<AudioFile>EksamensprojektWwise\Originals\SFX\Water_Tap_Multiples_5.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="715145102"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Water_Tap_Multiples_5" ID="{A1229231-DD9A-49B8-92D8-68D90938856B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Water_Tap_Multiples_6" ID="{C1123A20-8D20-4DAA-84B2-CB69B57E0FF3}" ShortID="809065430">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Water_Tap_Multiples_6" ID="{323C7D3B-59C5-488E-849D-C0778684D4AC}">
+											<Language>SFX</Language>
+											<AudioFile>EksamensprojektWwise\Originals\SFX\Water_Tap_Multiples_6.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="524490257"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Water_Tap_Multiples_6" ID="{323C7D3B-59C5-488E-849D-C0778684D4AC}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Water_Tap_Multiples_7" ID="{98E7C483-0B5F-4FC3-8B83-3D0930196EC5}" ShortID="387247546">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Water_Tap_Multiples_7" ID="{4E63D0F6-146B-47F4-8B8E-DA3C4706E191}">
+											<Language>SFX</Language>
+											<AudioFile>EksamensprojektWwise\Originals\SFX\Water_Tap_Multiples_7.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="578541975"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Water_Tap_Multiples_7" ID="{4E63D0F6-146B-47F4-8B8E-DA3C4706E191}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Water_Tap_Multiples_8" ID="{0FA7EDDF-46CF-44E8-BCF3-623A3DEAEC79}" ShortID="170777360">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Water_Tap_Multiples_8" ID="{0A73D1BA-B553-472F-956D-0D228BB407B4}">
+											<Language>SFX</Language>
+											<AudioFile>EksamensprojektWwise\Originals\SFX\Water_Tap_Multiples_8.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="308875793"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Water_Tap_Multiples_8" ID="{0A73D1BA-B553-472F-956D-0D228BB407B4}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Water_Tap_Multiples_9" ID="{80BD9E07-0E14-4B6F-AB8C-16E541A9B3BD}" ShortID="457246249">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Water_Tap_Multiples_9" ID="{E0461102-31D7-41C0-BE2B-F5633B61E0BE}">
+											<Language>SFX</Language>
+											<AudioFile>EksamensprojektWwise\Originals\SFX\Water_Tap_Multiples_9.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="725432678"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Water_Tap_Multiples_9" ID="{E0461102-31D7-41C0-BE2B-F5633B61E0BE}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Water_Tap_Multiples_10" ID="{BB56DB0D-651A-4C86-9668-BB9235BE87D0}" ShortID="339136934">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Water_Tap_Multiples_10" ID="{E77BC669-421B-4D15-AAD1-1C83342C902B}">
+											<Language>SFX</Language>
+											<AudioFile>EksamensprojektWwise\Originals\SFX\Water_Tap_Multiples_10.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="564010101"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Water_Tap_Multiples_10" ID="{E77BC669-421B-4D15-AAD1-1C83342C902B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Water_Tap_Multiples_11" ID="{E9F168F5-F6CA-4E39-A4EF-28B09D546B7B}" ShortID="671914289">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Water_Tap_Multiples_11" ID="{8F7D4991-CD7C-4536-9E2F-7F07687E6265}">
+											<Language>SFX</Language>
+											<AudioFile>EksamensprojektWwise\Originals\SFX\Water_Tap_Multiples_11.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="908896640"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Water_Tap_Multiples_11" ID="{8F7D4991-CD7C-4536-9E2F-7F07687E6265}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Water_Tap_Multiples_12" ID="{B2476D68-7740-457E-BD76-722F3901AD46}" ShortID="495819704">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Water_Tap_Multiples_12" ID="{16580104-4405-4D51-AF7D-B9FA7414845A}">
+											<Language>SFX</Language>
+											<AudioFile>EksamensprojektWwise\Originals\SFX\Water_Tap_Multiples_12.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="926597305"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Water_Tap_Multiples_12" ID="{16580104-4405-4D51-AF7D-B9FA7414845A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Water_Tap_Multiples_13" ID="{F7623920-2600-4317-B547-8309435B58BC}" ShortID="1000618513">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Water_Tap_Multiples_13" ID="{2201310A-1FAD-423C-9609-26B84F1042DE}">
+											<Language>SFX</Language>
+											<AudioFile>EksamensprojektWwise\Originals\SFX\Water_Tap_Multiples_13.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="613851330"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Water_Tap_Multiples_13" ID="{2201310A-1FAD-423C-9609-26B84F1042DE}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Water_Tap_Multiples_14" ID="{67AB1DAC-13FA-4B3D-A2E4-3AF69625E817}" ShortID="213013166">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Water_Tap_Multiples_14" ID="{A09F8536-2CF9-4438-A393-B6C4E5E933DB}">
+											<Language>SFX</Language>
+											<AudioFile>EksamensprojektWwise\Originals\SFX\Water_Tap_Multiples_14.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="298646003"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Water_Tap_Multiples_14" ID="{A09F8536-2CF9-4438-A393-B6C4E5E933DB}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Water_Tap_Multiples_15" ID="{82E3D4A1-1EFB-440B-84D6-7D8E7E2C7B0C}" ShortID="154007405">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Water_Tap_Multiples_15" ID="{C9E9B4B4-3F1E-4657-9A7E-6481FD3F2C2A}">
+											<Language>SFX</Language>
+											<AudioFile>EksamensprojektWwise\Originals\SFX\Water_Tap_Multiples_15.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="748226737"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Water_Tap_Multiples_15" ID="{C9E9B4B4-3F1E-4657-9A7E-6481FD3F2C2A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="Playlist">
+									<PluginInnerObject Name="" ID="{7AD641AF-FA74-4112-9C7B-A50BD4B2F110}" PluginName="PlaylistSlot" CompanyID="0" PluginID="86">
+										<ReferenceList>
+											<Reference Name="PlaylistObject">
+												<ObjectRef Name="Water_Tap_Multiples_1" ID="{39947AEA-B11D-4098-8FC2-7E877B37F57C}" WorkUnitID="{9EACD1AD-FFB9-402E-A191-1BEE50C3B9D8}"/>
+											</Reference>
+										</ReferenceList>
+									</PluginInnerObject>
+									<PluginInnerObject Name="" ID="{454D5F34-8A19-4CF5-B220-46797E5F2DC8}" PluginName="PlaylistSlot" CompanyID="0" PluginID="86">
+										<ReferenceList>
+											<Reference Name="PlaylistObject">
+												<ObjectRef Name="Water_Tap_Multiples_2" ID="{E1359611-2617-4DA6-BDB7-3F12880DFD16}" WorkUnitID="{9EACD1AD-FFB9-402E-A191-1BEE50C3B9D8}"/>
+											</Reference>
+										</ReferenceList>
+									</PluginInnerObject>
+									<PluginInnerObject Name="" ID="{84A72F1A-0ADF-460A-94E2-12466039267C}" PluginName="PlaylistSlot" CompanyID="0" PluginID="86">
+										<ReferenceList>
+											<Reference Name="PlaylistObject">
+												<ObjectRef Name="Water_Tap_Multiples_3" ID="{FDEB43D7-7675-4C11-931E-A88CBC620EDB}" WorkUnitID="{9EACD1AD-FFB9-402E-A191-1BEE50C3B9D8}"/>
+											</Reference>
+										</ReferenceList>
+									</PluginInnerObject>
+									<PluginInnerObject Name="" ID="{442BD591-809D-4418-8D86-467DB75081C4}" PluginName="PlaylistSlot" CompanyID="0" PluginID="86">
+										<ReferenceList>
+											<Reference Name="PlaylistObject">
+												<ObjectRef Name="Water_Tap_Multiples_4" ID="{C351E78A-E268-4377-B38F-B07BE2983419}" WorkUnitID="{9EACD1AD-FFB9-402E-A191-1BEE50C3B9D8}"/>
+											</Reference>
+										</ReferenceList>
+									</PluginInnerObject>
+									<PluginInnerObject Name="" ID="{27AE15DC-7D68-4ADD-A458-13B986F0129D}" PluginName="PlaylistSlot" CompanyID="0" PluginID="86">
+										<ReferenceList>
+											<Reference Name="PlaylistObject">
+												<ObjectRef Name="Water_Tap_Multiples_5" ID="{BD3A70D7-9D2B-48FD-A803-705442044B4B}" WorkUnitID="{9EACD1AD-FFB9-402E-A191-1BEE50C3B9D8}"/>
+											</Reference>
+										</ReferenceList>
+									</PluginInnerObject>
+									<PluginInnerObject Name="" ID="{603021FD-2220-4830-8D55-0E0190B9435D}" PluginName="PlaylistSlot" CompanyID="0" PluginID="86">
+										<ReferenceList>
+											<Reference Name="PlaylistObject">
+												<ObjectRef Name="Water_Tap_Multiples_6" ID="{C1123A20-8D20-4DAA-84B2-CB69B57E0FF3}" WorkUnitID="{9EACD1AD-FFB9-402E-A191-1BEE50C3B9D8}"/>
+											</Reference>
+										</ReferenceList>
+									</PluginInnerObject>
+									<PluginInnerObject Name="" ID="{38A882FF-EF4A-4FE1-8726-2644092633D6}" PluginName="PlaylistSlot" CompanyID="0" PluginID="86">
+										<ReferenceList>
+											<Reference Name="PlaylistObject">
+												<ObjectRef Name="Water_Tap_Multiples_7" ID="{98E7C483-0B5F-4FC3-8B83-3D0930196EC5}" WorkUnitID="{9EACD1AD-FFB9-402E-A191-1BEE50C3B9D8}"/>
+											</Reference>
+										</ReferenceList>
+									</PluginInnerObject>
+									<PluginInnerObject Name="" ID="{0A82C4F8-5A85-44B2-BB53-C54C6D72459B}" PluginName="PlaylistSlot" CompanyID="0" PluginID="86">
+										<ReferenceList>
+											<Reference Name="PlaylistObject">
+												<ObjectRef Name="Water_Tap_Multiples_8" ID="{0FA7EDDF-46CF-44E8-BCF3-623A3DEAEC79}" WorkUnitID="{9EACD1AD-FFB9-402E-A191-1BEE50C3B9D8}"/>
+											</Reference>
+										</ReferenceList>
+									</PluginInnerObject>
+									<PluginInnerObject Name="" ID="{A56BF49C-BA27-448E-89E4-BA8A6965F5EA}" PluginName="PlaylistSlot" CompanyID="0" PluginID="86">
+										<ReferenceList>
+											<Reference Name="PlaylistObject">
+												<ObjectRef Name="Water_Tap_Multiples_9" ID="{80BD9E07-0E14-4B6F-AB8C-16E541A9B3BD}" WorkUnitID="{9EACD1AD-FFB9-402E-A191-1BEE50C3B9D8}"/>
+											</Reference>
+										</ReferenceList>
+									</PluginInnerObject>
+									<PluginInnerObject Name="" ID="{06B26D0A-922D-423E-8086-36FE74A4408C}" PluginName="PlaylistSlot" CompanyID="0" PluginID="86">
+										<ReferenceList>
+											<Reference Name="PlaylistObject">
+												<ObjectRef Name="Water_Tap_Multiples_10" ID="{BB56DB0D-651A-4C86-9668-BB9235BE87D0}" WorkUnitID="{9EACD1AD-FFB9-402E-A191-1BEE50C3B9D8}"/>
+											</Reference>
+										</ReferenceList>
+									</PluginInnerObject>
+									<PluginInnerObject Name="" ID="{731CC514-5831-4CFC-AA9A-EC25AA1E6A67}" PluginName="PlaylistSlot" CompanyID="0" PluginID="86">
+										<ReferenceList>
+											<Reference Name="PlaylistObject">
+												<ObjectRef Name="Water_Tap_Multiples_11" ID="{E9F168F5-F6CA-4E39-A4EF-28B09D546B7B}" WorkUnitID="{9EACD1AD-FFB9-402E-A191-1BEE50C3B9D8}"/>
+											</Reference>
+										</ReferenceList>
+									</PluginInnerObject>
+									<PluginInnerObject Name="" ID="{CB246E07-7E5E-4945-AB6D-AB9D59C56F3A}" PluginName="PlaylistSlot" CompanyID="0" PluginID="86">
+										<ReferenceList>
+											<Reference Name="PlaylistObject">
+												<ObjectRef Name="Water_Tap_Multiples_12" ID="{B2476D68-7740-457E-BD76-722F3901AD46}" WorkUnitID="{9EACD1AD-FFB9-402E-A191-1BEE50C3B9D8}"/>
+											</Reference>
+										</ReferenceList>
+									</PluginInnerObject>
+									<PluginInnerObject Name="" ID="{FD96C327-EA6F-45AA-AF2A-7BE7D65A3166}" PluginName="PlaylistSlot" CompanyID="0" PluginID="86">
+										<ReferenceList>
+											<Reference Name="PlaylistObject">
+												<ObjectRef Name="Water_Tap_Multiples_13" ID="{F7623920-2600-4317-B547-8309435B58BC}" WorkUnitID="{9EACD1AD-FFB9-402E-A191-1BEE50C3B9D8}"/>
+											</Reference>
+										</ReferenceList>
+									</PluginInnerObject>
+									<PluginInnerObject Name="" ID="{4D4B1ECA-291B-4E39-85D0-DAD7D109ED23}" PluginName="PlaylistSlot" CompanyID="0" PluginID="86">
+										<ReferenceList>
+											<Reference Name="PlaylistObject">
+												<ObjectRef Name="Water_Tap_Multiples_14" ID="{67AB1DAC-13FA-4B3D-A2E4-3AF69625E817}" WorkUnitID="{9EACD1AD-FFB9-402E-A191-1BEE50C3B9D8}"/>
+											</Reference>
+										</ReferenceList>
+									</PluginInnerObject>
+									<PluginInnerObject Name="" ID="{A8886E56-6572-4B8C-9222-2CF8BD7E2194}" PluginName="PlaylistSlot" CompanyID="0" PluginID="86">
+										<ReferenceList>
+											<Reference Name="PlaylistObject">
+												<ObjectRef Name="Water_Tap_Multiples_15" ID="{82E3D4A1-1EFB-440B-84D6-7D8E7E2C7B0C}" WorkUnitID="{9EACD1AD-FFB9-402E-A191-1BEE50C3B9D8}"/>
+											</Reference>
+										</ReferenceList>
+									</PluginInnerObject>
+									<PluginInnerObject Name="" ID="{0CB218EC-567D-413B-83AD-24D178C28935}" PluginName="PlaylistSlot" CompanyID="0" PluginID="86">
+										<ReferenceList>
+											<Reference Name="PlaylistObject">
+												<ObjectRef Name="Water_Tap_Singes_2" ID="{73E74B3D-A808-4CD6-99C1-A23CA7F53787}" WorkUnitID="{9EACD1AD-FFB9-402E-A191-1BEE50C3B9D8}"/>
+											</Reference>
+										</ReferenceList>
+									</PluginInnerObject>
+									<PluginInnerObject Name="" ID="{73D204AF-C239-484E-ADB9-A7894D66A374}" PluginName="PlaylistSlot" CompanyID="0" PluginID="86">
+										<ReferenceList>
+											<Reference Name="PlaylistObject">
+												<ObjectRef Name="Water_Tap_Singles_1" ID="{E55D82ED-B2D2-4EC8-8B6D-C0AE48CD7CD8}" WorkUnitID="{9EACD1AD-FFB9-402E-A191-1BEE50C3B9D8}"/>
+											</Reference>
+										</ReferenceList>
+									</PluginInnerObject>
+									<PluginInnerObject Name="" ID="{8825478F-F86B-4700-8FD1-46AD577F8103}" PluginName="PlaylistSlot" CompanyID="0" PluginID="86">
+										<ReferenceList>
+											<Reference Name="PlaylistObject">
+												<ObjectRef Name="Water_Tap_Singles_3" ID="{FBE64465-AAB3-4873-8D86-86FF999AB751}" WorkUnitID="{9EACD1AD-FFB9-402E-A191-1BEE50C3B9D8}"/>
+											</Reference>
+										</ReferenceList>
+									</PluginInnerObject>
+									<PluginInnerObject Name="" ID="{0F89CB0B-91B5-4B20-96D1-BCBDC80B66BD}" PluginName="PlaylistSlot" CompanyID="0" PluginID="86">
+										<ReferenceList>
+											<Reference Name="PlaylistObject">
+												<ObjectRef Name="Water_Tap_Singles_4" ID="{D449063C-05F4-49A5-8634-388E2CCF2AD1}" WorkUnitID="{9EACD1AD-FFB9-402E-A191-1BEE50C3B9D8}"/>
+											</Reference>
+										</ReferenceList>
+									</PluginInnerObject>
+									<PluginInnerObject Name="" ID="{928C28D7-1426-4328-8B46-4AA81DA789B3}" PluginName="PlaylistSlot" CompanyID="0" PluginID="86">
+										<ReferenceList>
+											<Reference Name="PlaylistObject">
+												<ObjectRef Name="Water_Tap_Singles_5" ID="{07E23A9E-C6DC-4C5F-B6AD-F65BACEDBF96}" WorkUnitID="{9EACD1AD-FFB9-402E-A191-1BEE50C3B9D8}"/>
+											</Reference>
+										</ReferenceList>
+									</PluginInnerObject>
+									<PluginInnerObject Name="" ID="{F3AB0115-ACE7-424C-B633-60E85CA4EC4B}" PluginName="PlaylistSlot" CompanyID="0" PluginID="86">
+										<ReferenceList>
+											<Reference Name="PlaylistObject">
+												<ObjectRef Name="Water_Tap_Singles_6" ID="{FDE49A5D-710A-47C4-9F81-EB1A4AAD7432}" WorkUnitID="{9EACD1AD-FFB9-402E-A191-1BEE50C3B9D8}"/>
+											</Reference>
+										</ReferenceList>
+									</PluginInnerObject>
+									<PluginInnerObject Name="" ID="{D9DEB48E-133F-45BB-B2D2-DDA95FA2D2B3}" PluginName="PlaylistSlot" CompanyID="0" PluginID="86">
+										<ReferenceList>
+											<Reference Name="PlaylistObject">
+												<ObjectRef Name="Water_Tap_Singles_7" ID="{1E910A9B-BEA0-4ED0-A34C-F4C40E9FA9D1}" WorkUnitID="{9EACD1AD-FFB9-402E-A191-1BEE50C3B9D8}"/>
+											</Reference>
+										</ReferenceList>
+									</PluginInnerObject>
+									<PluginInnerObject Name="" ID="{85636A8B-D444-4973-8215-D1CD8263BAF6}" PluginName="PlaylistSlot" CompanyID="0" PluginID="86">
+										<ReferenceList>
+											<Reference Name="PlaylistObject">
+												<ObjectRef Name="Water_Tap_Singles_8" ID="{F299BF43-FEED-4B6D-AF7E-643305A240C4}" WorkUnitID="{9EACD1AD-FFB9-402E-A191-1BEE50C3B9D8}"/>
+											</Reference>
+										</ReferenceList>
+									</PluginInnerObject>
+									<PluginInnerObject Name="" ID="{08507385-DE50-45FB-95FD-350A1F3C4026}" PluginName="PlaylistSlot" CompanyID="0" PluginID="86">
+										<ReferenceList>
+											<Reference Name="PlaylistObject">
+												<ObjectRef Name="Water_Tap_Singles_9" ID="{F5231B4D-6465-49F2-A43C-5D20EC590868}" WorkUnitID="{9EACD1AD-FFB9-402E-A191-1BEE50C3B9D8}"/>
+											</Reference>
+										</ReferenceList>
+									</PluginInnerObject>
+									<PluginInnerObject Name="" ID="{1DC81EDB-46F2-410A-BC78-FFECB7662F43}" PluginName="PlaylistSlot" CompanyID="0" PluginID="86">
+										<ReferenceList>
+											<Reference Name="PlaylistObject">
+												<ObjectRef Name="Water_Tap_Singles_10" ID="{65081817-5CD3-477C-BF22-80CBB025ABFC}" WorkUnitID="{9EACD1AD-FFB9-402E-A191-1BEE50C3B9D8}"/>
+											</Reference>
+										</ReferenceList>
+									</PluginInnerObject>
+									<PluginInnerObject Name="" ID="{FB69AA4A-A8E5-408C-9440-EEE9796E02EC}" PluginName="PlaylistSlot" CompanyID="0" PluginID="86">
+										<ReferenceList>
+											<Reference Name="PlaylistObject">
+												<ObjectRef Name="Water_Tap_Singles_11" ID="{D1F80BD9-B6C8-4B28-A065-C8E7452EF7BD}" WorkUnitID="{9EACD1AD-FFB9-402E-A191-1BEE50C3B9D8}"/>
+											</Reference>
+										</ReferenceList>
+									</PluginInnerObject>
+									<PluginInnerObject Name="" ID="{7F7ACF27-1B91-4BE2-8E97-770809D7104E}" PluginName="PlaylistSlot" CompanyID="0" PluginID="86">
+										<ReferenceList>
+											<Reference Name="PlaylistObject">
+												<ObjectRef Name="Water_Tap_Singles_12" ID="{6D27E28A-1CF3-4C8A-AC55-FF1707A8AD12}" WorkUnitID="{9EACD1AD-FFB9-402E-A191-1BEE50C3B9D8}"/>
+											</Reference>
+										</ReferenceList>
+									</PluginInnerObject>
+									<PluginInnerObject Name="" ID="{6092E4AE-5D9B-46F6-816D-22F5642AD5DE}" PluginName="PlaylistSlot" CompanyID="0" PluginID="86">
+										<ReferenceList>
+											<Reference Name="PlaylistObject">
+												<ObjectRef Name="Water_Tap_Singles_13" ID="{A792E8FE-C12F-4367-8B07-928630F94781}" WorkUnitID="{9EACD1AD-FFB9-402E-A191-1BEE50C3B9D8}"/>
+											</Reference>
+										</ReferenceList>
+									</PluginInnerObject>
+									<PluginInnerObject Name="" ID="{F67212BB-4590-40A3-9630-F6851EE04714}" PluginName="PlaylistSlot" CompanyID="0" PluginID="86">
+										<ReferenceList>
+											<Reference Name="PlaylistObject">
+												<ObjectRef Name="Water_Tap_Singles_14" ID="{DFEB2FC3-A957-4650-854D-8459F4AF217C}" WorkUnitID="{9EACD1AD-FFB9-402E-A191-1BEE50C3B9D8}"/>
+											</Reference>
+										</ReferenceList>
+									</PluginInnerObject>
+									<PluginInnerObject Name="" ID="{AEDAE9BF-142E-4A5D-AFDF-AFA013220060}" PluginName="PlaylistSlot" CompanyID="0" PluginID="86">
+										<ReferenceList>
+											<Reference Name="PlaylistObject">
+												<ObjectRef Name="Water_Tap_Singles_15" ID="{47401194-46FD-4FC8-90EA-93A6525FD3F1}" WorkUnitID="{9EACD1AD-FFB9-402E-A191-1BEE50C3B9D8}"/>
+											</Reference>
+										</ReferenceList>
+									</PluginInnerObject>
+								</ObjectList>
+							</ObjectLists>
+						</RandomSequenceContainer>
+					</ChildrenList>
+					<ObjectLists>
+						<ObjectList Name="Playlist">
+							<PluginInnerObject Name="" ID="{BCC47764-FF93-488C-AB84-0B6AEBE0342C}" PluginName="PlaylistSlot" CompanyID="0" PluginID="86">
+								<ReferenceList>
+									<Reference Name="PlaylistObject">
+										<ObjectRef Name="Metal_Impact" ID="{0395B3A6-10C0-4F61-AD4B-16EE4E547707}" WorkUnitID="{9EACD1AD-FFB9-402E-A191-1BEE50C3B9D8}"/>
+									</Reference>
+								</ReferenceList>
+							</PluginInnerObject>
+							<PluginInnerObject Name="" ID="{EF02F4B3-1BD9-4093-B863-0D8314F65AC3}" PluginName="PlaylistSlot" CompanyID="0" PluginID="86">
+								<ReferenceList>
+									<Reference Name="PlaylistObject">
+										<ObjectRef Name="Water_Tap" ID="{3A76B270-EBC9-4CF9-B7CB-3DCB32CA57ED}" WorkUnitID="{9EACD1AD-FFB9-402E-A191-1BEE50C3B9D8}"/>
+									</Reference>
+								</ReferenceList>
+							</PluginInnerObject>
+						</ObjectList>
+					</ObjectLists>
+				</RandomSequenceContainer>
+			</ChildrenList>
+		</WorkUnit>
+	</Containers>
+</WwiseDocument>
