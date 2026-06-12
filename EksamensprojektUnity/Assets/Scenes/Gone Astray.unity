@@ -2217,7 +2217,7 @@ Light:
   serializedVersion: 13
   m_Type: 1
   m_Color: {r: 0, g: 0.71847177, b: 1, a: 1}
-  m_Intensity: 1
+  m_Intensity: 12.59
   m_Range: 31.65559
   m_SpotAngle: 179
   m_InnerSpotAngle: 21.80208
@@ -19221,7 +19221,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2358387032081700145, guid: 92b79ae98a4f84fd2bfa133273cc966f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.3619688
+      value: -1.346
       objectReference: {fileID: 0}
     - target: {fileID: 2358387032081700145, guid: 92b79ae98a4f84fd2bfa133273cc966f, type: 3}
       propertyPath: m_LocalPosition.z
@@ -21820,14 +21820,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1a4c69f7a9d3ea43907b5765229dc85, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PSXShaderKit.PSXShaderManager
-  _TextureWarpingFactor: 0.5
-  _TextureWarpingMode: 0
-  _VertexGridResolution: 100
+  _TextureWarpingFactor: 0.018
+  _TextureWarpingMode: 1
+  _VertexGridResolution: 79.1
   _VertexWobbleMode: 0
   _UseRetroVertexLighting: 1
   _RetroLightingNormalFactor: 1
   _RetroLightFalloffStart: 0
-  _FlatShadingMode: 0
+  _FlatShadingMode: 1
   _TriangleSortMode: 0
   _DepthDebugView: 0
 --- !u!1 &822522026
@@ -22769,6 +22769,26 @@ PrefabInstance:
     - target: {fileID: 279024258842826929, guid: 65710dcea6ae843dcb859ab43e82cd45, type: 3}
       propertyPath: m_projectionMatrixMode
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1255968227380559961, guid: 65710dcea6ae843dcb859ab43e82cd45, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.22357024
+      objectReference: {fileID: 0}
+    - target: {fileID: 1255968227380559961, guid: 65710dcea6ae843dcb859ab43e82cd45, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1255968227380559961, guid: 65710dcea6ae843dcb859ab43e82cd45, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.9746879
+      objectReference: {fileID: 0}
+    - target: {fileID: 1255968227380559961, guid: 65710dcea6ae843dcb859ab43e82cd45, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1255968227380559961, guid: 65710dcea6ae843dcb859ab43e82cd45, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -154.162
       objectReference: {fileID: 0}
     - target: {fileID: 1678287728479509248, guid: 65710dcea6ae843dcb859ab43e82cd45, type: 3}
       propertyPath: m_Height
@@ -47285,7 +47305,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3923391557038933520, guid: dd467fee6abf54fa9b850e26018e6cb5, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 0.034
       objectReference: {fileID: 0}
     - target: {fileID: 3923391557038933520, guid: dd467fee6abf54fa9b850e26018e6cb5, type: 3}
       propertyPath: m_LocalPosition.y

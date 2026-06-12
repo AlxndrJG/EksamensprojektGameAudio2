@@ -4,6 +4,9 @@
 		<WorkUnit Name="Footsteps" ID="{A21A0D10-AC46-456D-8248-7867DF29135B}" OwnerID="{409268F6-A1BE-4C6D-B73D-C82A96CEEB64}" PersistMode="Nested">
 			<ChildrenList>
 				<SwitchContainer Name="Foostep_Material" ID="{72E2A1F7-3487-44FA-A391-D4558B3FCDAB}" ShortID="434245836">
+					<PropertyList>
+						<Property Name="3DPosition" Type="int16" Value="2"/>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
@@ -805,6 +808,29 @@
 							</ObjectLists>
 						</RandomSequenceContainer>
 					</ChildrenList>
+					<PositioningInfo>
+						<Panner Name="" ID="{3FC2A8D5-E3FB-4297-ADF3-7000BDD6671E}"/>
+						<Position Name="" ID="{6F10E785-0455-4583-B5DE-81AAAEFBEE57}">
+							<PropertyList>
+								<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+							</PropertyList>
+							<ChildrenList>
+								<Path2D Name="Foostep_Material_Path" ID="{26CC1A3F-B5FF-461D-80DB-50EEC3A14EEB}">
+									<PropertyList>
+										<Property Name="RandomX" Type="Real64" Value="100"/>
+									</PropertyList>
+									<PointList>
+										<Point>
+											<XPos>-49.23858</XPos>
+											<YPos>-4.80226</YPos>
+											<Flags>12</Flags>
+											<Time>0</Time>
+										</Point>
+									</PointList>
+								</Path2D>
+							</ChildrenList>
+						</Position>
+					</PositioningInfo>
 					<GroupingInfo>
 						<GroupingBehaviorList>
 							<GroupingBehavior>
