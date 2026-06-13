@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 #if ENABLE_INPUT_SYSTEM
 using UnityEngine.InputSystem;
@@ -8,6 +9,9 @@ namespace StarterAssets
 	public class StarterAssetsInputs : MonoBehaviour
 	{
 		[Header("Character Input Values")]
+		public Animator animator;
+		public float moveAmountVertical;
+		public float moveAmountHorizontal;
 		public Vector2 move;
 		public Vector2 look;
 		public bool jump;
@@ -19,7 +23,9 @@ namespace StarterAssets
 		[Header("Mouse Cursor Settings")]
 		public bool cursorLocked = true;
 		public bool cursorInputForLook = true;
+		
 
+		
 #if ENABLE_INPUT_SYSTEM
 		public void OnMove(InputValue value)
 		{

@@ -15,7 +15,9 @@ namespace AK
     {
         static const AkUniqueID PLAY_BOOKSHELF_CABINET_CLOSE = 4255376059U;
         static const AkUniqueID PLAY_BOOKSHELF_CABINET_OPEN = 2481548253U;
-        static const AkUniqueID PLAY_FOOTSTEP = 1602358412U;
+        static const AkUniqueID PLAY_FSBACK = 369029778U;
+        static const AkUniqueID PLAY_FSFORWARD = 3148743426U;
+        static const AkUniqueID PLAY_FSSIDE = 4244553126U;
         static const AkUniqueID PLAY_KITCHEN_CABINET_BOTTOM_CLOSE = 259954442U;
         static const AkUniqueID PLAY_KITCHEN_CABINET_BOTTOM_OPEN = 1437364014U;
         static const AkUniqueID PLAY_KITCHEN_CABINET_TOP_CLOSE = 1760803494U;

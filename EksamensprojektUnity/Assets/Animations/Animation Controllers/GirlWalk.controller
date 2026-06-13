@@ -15,13 +15,13 @@ AnimatorController:
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 9100000}
-  - m_Name: Horizontal
+  - m_Name: moveAmountHorizontal
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 9100000}
-  - m_Name: MoveAmount
+  - m_Name: moveAmountVertical
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
@@ -81,7 +81,7 @@ BlendTree:
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: -203655887218126122, guid: ee253a173f62c456b9c90a0c9f60b176, type: 3}
-    m_Threshold: 0.5
+    m_Threshold: 0.33333334
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
@@ -89,16 +89,16 @@ BlendTree:
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: -203655887218126122, guid: 305daa4c4d2fc46ccb45cab0517f6de9, type: 3}
-    m_Threshold: 1
+    m_Threshold: 0.6666667
     m_Position: {x: 0, y: -1}
     m_TimeScale: 1
     m_CycleOffset: 0
     m_DirectBlendParameter: Blend
     m_Mirror: 0
-  m_BlendParameter: Horizontal
-  m_BlendParameterY: MoveAmount
+  m_BlendParameter: moveAmountHorizontal
+  m_BlendParameterY: moveAmountVertical
   m_MinThreshold: 0
-  m_MaxThreshold: 1
+  m_MaxThreshold: 0.6666667
   m_UseAutomaticThresholds: 1
   m_NormalizedBlendValues: 0
   m_BlendType: 2

@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{69C07AC4-2AB0-417A-A9B2-DC14CCE12DE0}",
     "Language": "SFX",
-    "Hash": "{8102C4CB-892F-B54C-8EAF-7F40660DAF0B}",
+    "Hash": "{B518E9AC-F105-447D-85EB-31585DA0C1BE}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -356,10 +356,10 @@
       ]
      },
      {
-      "Id": "1602358412",
-      "Name": "Play_Footstep",
-      "ObjectPath": "\\Events\\Player\\Play_Footstep",
-      "GUID": "{9DED7C3E-60EC-40E0-8488-0D4267B08330}",
+      "Id": "369029778",
+      "Name": "Play_FSBack",
+      "ObjectPath": "\\Events\\Player\\Play_FSBack",
+      "GUID": "{241637BD-4940-4821-BBC3-535AAAC79395}",
       "DurationType": "OneShot",
       "DurationMin": "0",
       "DurationMax": "0.49170068",
@@ -431,6 +431,187 @@
          },
          {
           "Id": "991939243"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "4050929301",
+         "Id": "2195636714",
+         "GUID": "{EA7FBBC3-42D5-40A1-833B-09A701BB2D0D}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "230118352"
+         },
+         {
+          "Id": "611354854"
+         },
+         {
+          "Id": "726162783"
+         },
+         {
+          "Id": "997602928"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "Id": "3148743426",
+      "Name": "Play_FSForward",
+      "ObjectPath": "\\Events\\Player\\Play_FSForward",
+      "GUID": "{9B5E6030-2213-47DF-AB48-36874C8AD8D9}",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0.49170068",
+      "SwitchContainers": [
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "4050929301",
+         "Id": "2185786256",
+         "GUID": "{ADE85F24-97E2-41EA-AF91-21D7ACFDC344}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "68469168"
+         },
+         {
+          "Id": "752203284"
+         },
+         {
+          "Id": "830572607"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "4050929301",
+         "Id": "2058049674",
+         "GUID": "{01D74985-5AAD-4D47-AB4D-3BEFB42EDB14}",
+         "Default": "true"
+        },
+        "MediaRefs": [
+         {
+          "Id": "45625094"
+         },
+         {
+          "Id": "190621521"
+         },
+         {
+          "Id": "199929400"
+         },
+         {
+          "Id": "282347760"
+         },
+         {
+          "Id": "443176583"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "4050929301",
+         "Id": "2637588553",
+         "GUID": "{489F938C-52D2-44BF-A188-0CB73A226A23}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "41764518"
+         },
+         {
+          "Id": "124697463"
+         },
+         {
+          "Id": "512419251"
+         },
+         {
+          "Id": "568086991"
+         },
+         {
+          "Id": "991939243"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "4050929301",
+         "Id": "2195636714",
+         "GUID": "{EA7FBBC3-42D5-40A1-833B-09A701BB2D0D}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "230118352"
+         },
+         {
+          "Id": "611354854"
+         },
+         {
+          "Id": "726162783"
+         },
+         {
+          "Id": "997602928"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "Id": "4244553126",
+      "Name": "Play_FSSide",
+      "ObjectPath": "\\Events\\Player\\Play_FSSide",
+      "GUID": "{83EF0AEC-1A98-4E91-88D3-5ABC730E4FAF}",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0.49170068",
+      "SwitchContainers": [
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "4050929301",
+         "Id": "2185786256",
+         "GUID": "{ADE85F24-97E2-41EA-AF91-21D7ACFDC344}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "68469168"
+         },
+         {
+          "Id": "752203284"
+         },
+         {
+          "Id": "830572607"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "4050929301",
+         "Id": "2058049674",
+         "GUID": "{01D74985-5AAD-4D47-AB4D-3BEFB42EDB14}",
+         "Default": "true"
+        },
+        "MediaRefs": [
+         {
+          "Id": "45625094"
+         },
+         {
+          "Id": "190621521"
+         },
+         {
+          "Id": "199929400"
+         },
+         {
+          "Id": "282347760"
+         },
+         {
+          "Id": "443176583"
          }
         ]
        },
@@ -685,6 +866,6 @@
     ]
    }
   ],
-  "FileHash": "{CEBC0B6C-7C7E-70FB-3EF4-25E0BBA1991D}"
+  "FileHash": "{5D373257-2E1A-2102-F4A8-468647EA43DE}"
  }
 }

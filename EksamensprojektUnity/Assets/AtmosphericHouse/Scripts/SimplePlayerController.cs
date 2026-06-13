@@ -10,6 +10,11 @@ namespace FS_Atmo
 
     public class SimplePlayerController : MonoBehaviour
     {
+        
+        public float moveAmount;
+		
+        public Animator animator;
+        
         public Camera playerCamera;
         public float walkSpeed = 1.15f;
         public float runSpeed = 4.0f;

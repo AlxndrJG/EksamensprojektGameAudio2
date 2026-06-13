@@ -3,12 +3,34 @@
 	<Events>
 		<WorkUnit Name="Player" ID="{7889376E-CE23-446C-869A-0335CB56C684}" PersistMode="Standalone">
 			<ChildrenList>
-				<Event Name="Play_Footstep" ID="{9DED7C3E-60EC-40E0-8488-0D4267B08330}">
+				<Event Name="Play_FSForward" ID="{9B5E6030-2213-47DF-AB48-36874C8AD8D9}">
 					<ChildrenList>
-						<Action Name="" ID="{1113B653-3671-41A0-8DA6-53BDDEAEF55B}" ShortID="276360183">
+						<Action Name="" ID="{B3892CF8-44D0-4C19-9EBE-2DAB0D9EC70E}" ShortID="739241629">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Foostep_Material" ID="{72E2A1F7-3487-44FA-A391-D4558B3FCDAB}" WorkUnitID="{A21A0D10-AC46-456D-8248-7867DF29135B}"/>
+									<ObjectRef Name="FSForward" ID="{72E2A1F7-3487-44FA-A391-D4558B3FCDAB}" WorkUnitID="{A21A0D10-AC46-456D-8248-7867DF29135B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_FSSide" ID="{83EF0AEC-1A98-4E91-88D3-5ABC730E4FAF}">
+					<ChildrenList>
+						<Action Name="" ID="{32E11CAE-29EA-4DF8-BDEB-DDA8BD21A2EE}" ShortID="42215868">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="FSSide" ID="{62CD60CB-2C6D-40FD-AC05-FEA1FDC0A88B}" WorkUnitID="{A21A0D10-AC46-456D-8248-7867DF29135B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_FSBack" ID="{241637BD-4940-4821-BBC3-535AAAC79395}">
+					<ChildrenList>
+						<Action Name="" ID="{76074E6F-847E-4F1A-B538-6A43CF949647}" ShortID="505256084">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="FSBack" ID="{1DEDB888-9E4F-4E54-A6C9-191F7A654EA5}" WorkUnitID="{A21A0D10-AC46-456D-8248-7867DF29135B}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

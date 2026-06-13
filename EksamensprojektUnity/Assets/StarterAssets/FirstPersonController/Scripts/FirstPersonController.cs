@@ -11,10 +11,18 @@ namespace StarterAssets
 #endif
 	public class FirstPersonController : MonoBehaviour
 	{
-		public float moveAmount;
-		
 		public Animator animator;
+
+		public float moveAmountVertical;
+
+		public float moveAmountHorizontal;
 		
+		/* Dette er 
+		moveAmountVertical = hastigheden frem;
+		moveAmountHorizontal = hastigheden tilbage;
+		animator.SetFloat("moveAmountVertical", moveAmountVertical);
+		animator.SetFloat("moveAmountHorizontal", moveAmountHorizontal);
+		*/
 		[Header("Player")]
 		[Tooltip("Move speed of the character in m/s")]
 		public float MoveSpeed = 4.0f;
@@ -119,14 +127,8 @@ namespace StarterAssets
 			JumpAndGravity();
 			GroundedCheck();
 			Move();
-			MoveAnimate();
 		}
-
-		private void MoveAnimate()
-		{
-			moveAmount = _speed;
-			animator.SetFloat("MoveAmount", moveAmount);			
-		}
+		
 
 		private void LateUpdate()
 		{
@@ -208,6 +210,13 @@ namespace StarterAssets
 
 			// move the player
 			_controller.Move(inputDirection.normalized * (_speed * Time.deltaTime) + new Vector3(0.0f, _verticalVelocity, 0.0f) * Time.deltaTime);
+			Vector3 localVelocity = transform.InverseTransformDirection(_controller.velocity);
+
+			moveAmountVertical = Mathf.Clamp(localVelocity.z / MoveSpeed, -1f, 1f);
+			moveAmountHorizontal = Mathf.Clamp(localVelocity.x / MoveSpeed, -1f, 1f);
+
+			animator.SetFloat("moveAmountVertical", moveAmountVertical, 0.1f, Time.deltaTime);
+			animator.SetFloat("moveAmountHorizontal", moveAmountHorizontal, 0.1f, Time.deltaTime);
 		}
 
 		private void JumpAndGravity()
