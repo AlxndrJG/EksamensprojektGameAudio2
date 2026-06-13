@@ -34,9 +34,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6504138183657395546}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.5, y: -1, z: -1.5}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.1483582, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1866459047210554897}
@@ -534,6 +534,14 @@ MonoBehaviour:
   objectOpen: 0
   objectOpenAdditional: 0
   animateAdditional: {fileID: 0}
+  akEventOpen:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: c65a9e7de70f947eea12d8d864e0792d, type: 2}
+  akEventClose:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: aa6f2db02b95a4ef6ad0ee8479774b9a, type: 2}
 --- !u!4 &6693897137859706182 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5290628391574470016, guid: 21bd10f6f2ed98c408100aba24b2f050, type: 3}
@@ -652,6 +660,14 @@ MonoBehaviour:
   objectOpen: 0
   objectOpenAdditional: 0
   animateAdditional: {fileID: 0}
+  akEventOpen:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: c65a9e7de70f947eea12d8d864e0792d, type: 2}
+  akEventClose:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: aa6f2db02b95a4ef6ad0ee8479774b9a, type: 2}
 --- !u!4 &7835544749798469073 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5913058171717857498, guid: 1aa689e4d2e16354e97432c7767d059a, type: 3}

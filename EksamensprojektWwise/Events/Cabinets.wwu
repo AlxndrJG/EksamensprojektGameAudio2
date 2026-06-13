@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{5C18DC07-E11B-4CA0-A076-43E3E27DCED6}" SchemaVersion="133" RootDocumentID="{7D3A5287-A22D-4F9B-95A6-CA0F5ED9C299}" ParentDocumentID="{7D3A5287-A22D-4F9B-95A6-CA0F5ED9C299}">
+	<Events>
+		<WorkUnit Name="Cabinets" ID="{5C18DC07-E11B-4CA0-A076-43E3E27DCED6}" OwnerID="{7D3A5287-A22D-4F9B-95A6-CA0F5ED9C299}" PersistMode="Nested">
+			<ChildrenList>
+				<Event Name="Play_Bookshelf_Cabinet_Open" ID="{8ADA70CC-8C1E-4E94-BE7A-873BD6F8E89F}">
+					<ChildrenList>
+						<Action Name="" ID="{D1FE94D1-DA33-40D4-B92C-EC1D6295AAFD}" ShortID="98302724">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Bookshelf_Cabinet_Open" ID="{2184D79C-5D0A-4965-959E-ADF2B9EC35F5}" WorkUnitID="{71EECC52-AA90-49B1-B25E-FBEA4961A280}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Kitchen_Cabinet_Top_Open" ID="{B6FE863D-2C11-4625-8037-AD160C9ADADD}">
+					<ChildrenList>
+						<Action Name="" ID="{ECA5EC4C-3B84-4B23-B8AD-B06DF63DFC79}" ShortID="893438746">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Kitchen_Cabinet_Top_Open" ID="{E97936AD-4FC6-41BB-A750-74D4CD3F1D8C}" WorkUnitID="{D662E550-F06B-4CBB-8B50-BB6DF3340AE6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Kitchen_Cabinet_Top_Close" ID="{5E568F85-4D51-47A4-9C4B-0CEC5ADC7320}">
+					<ChildrenList>
+						<Action Name="" ID="{8D91126A-A9BF-442C-826D-5CE4F01C37A0}" ShortID="469689475">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Kitchen_Cabinet_Top_Close" ID="{E514BF91-2021-46F3-9537-C1653454D5CB}" WorkUnitID="{D662E550-F06B-4CBB-8B50-BB6DF3340AE6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Kitchen_Cabinet_Bottom_Close" ID="{FA839368-11C4-4B4E-BF59-BF39D670639D}">
+					<ChildrenList>
+						<Action Name="" ID="{9A244933-F583-46C8-B7BA-531149E174EF}" ShortID="125229169">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Kitchen_Cabinet_Bottom_Close" ID="{057DC1CC-5F0B-4B61-A0CE-3472B0E49A3D}" WorkUnitID="{6DF0C4E7-1377-44AD-81E3-881E4BBE9A7C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Bookshelf_Cabinet_Close" ID="{C57D6E7E-C8C6-44CE-832A-3A67880F23A0}">
+					<ChildrenList>
+						<Action Name="" ID="{D3191C9E-34A9-4983-8064-E95827F2DDA8}" ShortID="763108371">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Bookshelf_Cabinet_Close" ID="{BD4462A0-C0C2-4E00-B87F-2794E3631541}" WorkUnitID="{71EECC52-AA90-49B1-B25E-FBEA4961A280}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Kitchen_Cabinet_Bottom_Open" ID="{9D1DDA21-BF4D-40A8-A684-9C16EAF546EE}">
+					<ChildrenList>
+						<Action Name="" ID="{FD917A94-7F09-490A-B312-7395E710D1CF}" ShortID="825451125">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Kitchen_Cabinet_Bottom_Open" ID="{0F4F1438-4F28-4420-BE02-E6668E022AE0}" WorkUnitID="{6DF0C4E7-1377-44AD-81E3-881E4BBE9A7C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

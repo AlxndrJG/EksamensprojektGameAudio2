@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using AK.Wwise;
 
 namespace FS_Atmo
 {
@@ -14,13 +15,15 @@ namespace FS_Atmo
         public GameObject animateAdditional;
         private bool hasAdditional = false;
         float myNormalizedTime;
-
-
+        
+        public AK.Wwise.Event akEventOpen;
+        public AK.Wwise.Event akEventClose;
+        
         // Open or close animator state in start depending on selection.
         // Additional object with animator. For example another door when double doors. 
         void Start()
         {
-
+            
             // If there is no animator in the gameobject itself, get the parent animator.
             myAnimator = GetComponent<Animator>();
             if (myAnimator == null)
@@ -61,12 +64,15 @@ namespace FS_Atmo
                     {
                         myAnimator.Play("Close", 0, 0.0f);
                         objectOpen = false;
+                        akEventClose.Post(gameObject);
+
                     }
 
                     else
                     {
                         myAnimator.Play("Open", 0, 0.0f);
                         objectOpen = true;
+                        akEventOpen.Post(gameObject);
                     }
                 }
             }

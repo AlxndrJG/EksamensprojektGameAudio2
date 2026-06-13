@@ -1,0 +1,740 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{71EECC52-AA90-49B1-B25E-FBEA4961A280}" SchemaVersion="133" RootDocumentID="{08F20BFB-F7C4-40F3-B852-C39F7D674E18}" ParentDocumentID="{EAA9C195-5D86-4529-8D52-3AAB6FDD41DF}">
+	<Containers>
+		<WorkUnit Name="Cabinet_Bookshelf" ID="{71EECC52-AA90-49B1-B25E-FBEA4961A280}" OwnerID="{EAA9C195-5D86-4529-8D52-3AAB6FDD41DF}" PersistMode="Nested">
+			<ChildrenList>
+				<RandomSequenceContainer Name="Bookshelf_Cabinet_Open" ID="{2184D79C-5D0A-4965-959E-ADF2B9EC35F5}" ShortID="586696356">
+					<PropertyList>
+						<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+						<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
+						<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.3">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{5F22FE27-F77A-457A-9A6E-61510F999FA3}"/>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+						<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<RandomSequenceContainer Name="Bookshelf_Cabinet_Creak" ID="{750859FC-A09E-4F46-B513-5E8FC3D4A8EC}" ShortID="56369329">
+							<PropertyList>
+								<Property Name="Highpass" Type="int16">
+									<ValueList>
+										<Value>26</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Cabinet_Creak_1" ID="{B13E9E55-D253-4AFF-9C96-7AC0D379409F}" ShortID="700949073">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Cabinet_Creak_1" ID="{029E39AA-AFA0-4123-8B67-CFD52104C877}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.07999"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.18448"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.6889"/>
+												<Property Name="TrimEnd" Type="Real64" Value="1.19778"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>EksamensprojektWwise\Originals\SFX\Cabinet_Creak_1.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="548501112"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Cabinet_Creak_1" ID="{029E39AA-AFA0-4123-8B67-CFD52104C877}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Cabinet_Creak_2" ID="{E7722E29-C7E8-4F81-AFC0-875590D05F33}" ShortID="772136684">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Cabinet_Creak_2" ID="{288F9EE6-3725-4860-BDAF-00DF305BABCA}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.03111"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.11558"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.16219"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.6422"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>EksamensprojektWwise\Originals\SFX\Cabinet_Creak_2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="694716087"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Cabinet_Creak_2" ID="{288F9EE6-3725-4860-BDAF-00DF305BABCA}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Cabinet_Creak_3" ID="{036423BE-2614-4696-86F5-5364B5E54556}" ShortID="273145091">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Cabinet_Creak_3" ID="{7B943C99-2E1D-4943-AEA8-D17760E86CFF}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.56222"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.56222"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.26444"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.82666"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>EksamensprojektWwise\Originals\SFX\Cabinet_Creak_3.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="42955071"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Cabinet_Creak_3" ID="{7B943C99-2E1D-4943-AEA8-D17760E86CFF}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Cabinet_Creak_4" ID="{91FCEA32-B4BB-4B18-9922-2877892E0F8A}" ShortID="638259351">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Cabinet_Creak_4" ID="{C1555B51-A8D2-4D97-9AE5-7427CCF396F4}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.25776"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.05333"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.40665"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.79996"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>EksamensprojektWwise\Originals\SFX\Cabinet_Creak_4.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="256663500"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Cabinet_Creak_4" ID="{C1555B51-A8D2-4D97-9AE5-7427CCF396F4}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Cabinet_Creak_5" ID="{B028D5D7-8CE4-4443-AC0B-D640C8DA2986}" ShortID="733412367">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Cabinet_Creak_5" ID="{18F01F02-5C95-40F3-BBAD-6A2C199C2BDE}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.08346"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.25591"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.06629"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.36543"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>EksamensprojektWwise\Originals\SFX\Cabinet_Creak_5.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="497409491"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Cabinet_Creak_5" ID="{18F01F02-5C95-40F3-BBAD-6A2C199C2BDE}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Cabinet_Creak_6" ID="{F2C445A9-6A49-446F-986E-A7E6F10B1F21}" ShortID="289914809">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Cabinet_Creak_6" ID="{1C291E72-2FC2-409B-A420-D1DCF72320BD}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.1889"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.41775"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.52001"/>
+												<Property Name="TrimEnd" Type="Real64" Value="1.26665"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>EksamensprojektWwise\Originals\SFX\Cabinet_Creak_6.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="357550026"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Cabinet_Creak_6" ID="{1C291E72-2FC2-409B-A420-D1DCF72320BD}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Bookshelf_Cabinet_Open_Imp" ID="{2AE4E2EB-6001-49C1-8A2C-AF4D3A68A32C}" ShortID="290193231">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Cabinet_Open_1" ID="{C8C005A6-99D7-49F7-8AA6-38411A35A153}" ShortID="239436889">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Cabinet_Open_1" ID="{EE4F1A51-7350-40D5-91A2-FC7CE47815C5}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.01234"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.28376"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.62468"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>EksamensprojektWwise\Originals\SFX\Cabinet_Open_1.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="423912907"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Cabinet_Open_1" ID="{EE4F1A51-7350-40D5-91A2-FC7CE47815C5}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Cabinet_Open_2" ID="{6DCB3DBF-B812-45F8-9E3B-F36BBDED8D81}" ShortID="1061724281">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Cabinet_Open_2" ID="{BD980D73-EDE9-43A7-918F-B5CE5ABF2DC0}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.00838"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.47164"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.60429"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>EksamensprojektWwise\Originals\SFX\Cabinet_Open_2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="983813656"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Cabinet_Open_2" ID="{BD980D73-EDE9-43A7-918F-B5CE5ABF2DC0}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Cabinet_Open_3" ID="{32529F9E-D89A-426D-B0E5-057DAB1F8B17}" ShortID="676885467">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Cabinet_Open_3" ID="{9870802D-41B5-44ED-A705-83B1168C1FD9}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.01929"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.79993"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.59643"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>EksamensprojektWwise\Originals\SFX\Cabinet_Open_3.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1013893993"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Cabinet_Open_3" ID="{9870802D-41B5-44ED-A705-83B1168C1FD9}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Cabinet_Open_4" ID="{F9F2658F-81B1-47D5-873B-611886957C06}" ShortID="903780579">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Cabinet_Open_4" ID="{83847A74-A48F-4465-AAC4-AC77811658B3}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.01391"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.53708"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.48416"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>EksamensprojektWwise\Originals\SFX\Cabinet_Open_4.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="393372814"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Cabinet_Open_4" ID="{83847A74-A48F-4465-AAC4-AC77811658B3}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+					</ChildrenList>
+					<ObjectLists>
+						<ObjectList Name="Playlist">
+							<PluginInnerObject Name="" ID="{C86FEA2E-D938-4F47-96CC-387A699B10A9}" PluginName="PlaylistSlot" CompanyID="0" PluginID="86">
+								<ReferenceList>
+									<Reference Name="PlaylistObject">
+										<ObjectRef Name="Bookshelf_Cabinet_Open_Imp" ID="{2AE4E2EB-6001-49C1-8A2C-AF4D3A68A32C}" WorkUnitID="{71EECC52-AA90-49B1-B25E-FBEA4961A280}"/>
+									</Reference>
+								</ReferenceList>
+							</PluginInnerObject>
+							<PluginInnerObject Name="" ID="{47E06148-B30F-492D-8D2B-A3DD13F41877}" PluginName="PlaylistSlot" CompanyID="0" PluginID="86">
+								<ReferenceList>
+									<Reference Name="PlaylistObject">
+										<ObjectRef Name="Bookshelf_Cabinet_Creak" ID="{750859FC-A09E-4F46-B513-5E8FC3D4A8EC}" WorkUnitID="{71EECC52-AA90-49B1-B25E-FBEA4961A280}"/>
+									</Reference>
+								</ReferenceList>
+							</PluginInnerObject>
+						</ObjectList>
+					</ObjectLists>
+				</RandomSequenceContainer>
+				<RandomSequenceContainer Name="Bookshelf_Cabinet_Close" ID="{BD4462A0-C0C2-4E00-B87F-2794E3631541}" ShortID="127016450">
+					<PropertyList>
+						<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+						<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
+						<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.7">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{3D60A519-88B7-47F2-A037-E468E95D37D5}"/>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+						<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<RandomSequenceContainer Name="Bookshelf_Cabinet_Creak" ID="{F4A65E1C-FD06-4239-B773-CBF0ABCEECD4}" ShortID="517558655">
+							<PropertyList>
+								<Property Name="Highpass" Type="int16">
+									<ValueList>
+										<Value>26</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Cabinet_Creak_1" ID="{191CC767-BA40-4053-B6A9-0779E2EDDF98}" ShortID="685026187">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Cabinet_Creak_1" ID="{BE345295-1A6A-4770-AD63-2B9A415193A1}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.07999"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.18448"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.6889"/>
+												<Property Name="TrimEnd" Type="Real64" Value="1.19778"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>EksamensprojektWwise\Originals\SFX\Cabinet_Creak_1.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="548501112"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Cabinet_Creak_1" ID="{BE345295-1A6A-4770-AD63-2B9A415193A1}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Cabinet_Creak_2" ID="{D86D7DDB-D0CE-430D-9410-16443CE03B64}" ShortID="140579048">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Cabinet_Creak_2" ID="{474DB89F-178F-483F-83A2-A0FE2221974E}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.03111"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.11558"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.16219"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.6422"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>EksamensprojektWwise\Originals\SFX\Cabinet_Creak_2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="694716087"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Cabinet_Creak_2" ID="{474DB89F-178F-483F-83A2-A0FE2221974E}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Cabinet_Creak_3" ID="{55BEA420-30FC-4FED-9CAF-2F97DE9B0876}" ShortID="864206530">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Cabinet_Creak_3" ID="{38998CD9-7731-4FD1-851A-5B67334F1A15}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.56222"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.56222"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.26444"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.82666"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>EksamensprojektWwise\Originals\SFX\Cabinet_Creak_3.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="42955071"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Cabinet_Creak_3" ID="{38998CD9-7731-4FD1-851A-5B67334F1A15}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Cabinet_Creak_4" ID="{29CA026C-DA67-4B4C-8F99-5305B31DAC09}" ShortID="52426400">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Cabinet_Creak_4" ID="{514B607E-A864-4C3B-ADD4-A8104340E194}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.25776"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.05333"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.40665"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.79996"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>EksamensprojektWwise\Originals\SFX\Cabinet_Creak_4.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="256663500"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Cabinet_Creak_4" ID="{514B607E-A864-4C3B-ADD4-A8104340E194}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Cabinet_Creak_5" ID="{690F3638-3016-495F-8418-FD38BC7B5C29}" ShortID="742270687">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Cabinet_Creak_5" ID="{E4D29B4F-044B-46FF-B3A3-5D0E0433B748}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.08346"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.25591"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.06629"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.36543"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>EksamensprojektWwise\Originals\SFX\Cabinet_Creak_5.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="497409491"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Cabinet_Creak_5" ID="{E4D29B4F-044B-46FF-B3A3-5D0E0433B748}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Cabinet_Creak_6" ID="{83200CB0-83B1-4E8E-9BD8-D7208A1A72C3}" ShortID="155855863">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Cabinet_Creak_6" ID="{E6732936-28A6-44C2-A5F7-3A07AF97D869}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.1889"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.41775"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.52001"/>
+												<Property Name="TrimEnd" Type="Real64" Value="1.26665"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>EksamensprojektWwise\Originals\SFX\Cabinet_Creak_6.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="357550026"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Cabinet_Creak_6" ID="{E6732936-28A6-44C2-A5F7-3A07AF97D869}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Bookshelf_Cabinet_Close_Imp" ID="{1A8B1E33-D0BA-4585-846E-7A4D0381C7D9}" ShortID="829434663">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>-1980</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Cabinet_Open_1" ID="{FBE26191-E673-43B2-9A56-E49191345191}" ShortID="149508392">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Cabinet_Open_1" ID="{646DB6D8-5CB7-4413-9EA3-B3FD3995383B}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.01234"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.08963"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.62468"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.71431"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>EksamensprojektWwise\Originals\SFX\Cabinet_Open_1.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="191063999"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Cabinet_Open_1" ID="{646DB6D8-5CB7-4413-9EA3-B3FD3995383B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Cabinet_Open_2" ID="{59586CCB-D784-4319-B770-247A196201D2}" ShortID="94880132">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Cabinet_Open_2" ID="{6465B5CF-2227-4E2E-A96E-715F020F21EF}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.00838"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.10573"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.60429"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.71002"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>EksamensprojektWwise\Originals\SFX\Cabinet_Open_2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="395654687"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Cabinet_Open_2" ID="{6465B5CF-2227-4E2E-A96E-715F020F21EF}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Cabinet_Open_3" ID="{0F3312BF-10CD-48F9-994E-0ADF75E6384B}" ShortID="112788237">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Cabinet_Open_3" ID="{DA317011-0513-4C64-8082-3BB046E61B48}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.01929"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.07546"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.59643"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.71925"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>EksamensprojektWwise\Originals\SFX\Cabinet_Open_3.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="368131898"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Cabinet_Open_3" ID="{DA317011-0513-4C64-8082-3BB046E61B48}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Cabinet_Open_4" ID="{3E010DD4-488D-4750-BD24-7B864FC507EC}" ShortID="229645953">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Cabinet_Open_4" ID="{D4A7679A-454B-4DB4-B128-3DAF6C4B2676}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.01391"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.10576"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.49112"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.59688"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>EksamensprojektWwise\Originals\SFX\Cabinet_Open_4.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="336167279"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Cabinet_Open_4" ID="{D4A7679A-454B-4DB4-B128-3DAF6C4B2676}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+					</ChildrenList>
+					<ObjectLists>
+						<ObjectList Name="Playlist">
+							<PluginInnerObject Name="" ID="{14387AB3-EB25-4A9A-B8F6-50D842252566}" PluginName="PlaylistSlot" CompanyID="0" PluginID="86">
+								<ReferenceList>
+									<Reference Name="PlaylistObject">
+										<ObjectRef Name="Bookshelf_Cabinet_Creak" ID="{F4A65E1C-FD06-4239-B773-CBF0ABCEECD4}" WorkUnitID="{71EECC52-AA90-49B1-B25E-FBEA4961A280}"/>
+									</Reference>
+								</ReferenceList>
+							</PluginInnerObject>
+							<PluginInnerObject Name="" ID="{62C70A8E-EBE6-4F61-8E6C-93D770227884}" PluginName="PlaylistSlot" CompanyID="0" PluginID="86">
+								<ReferenceList>
+									<Reference Name="PlaylistObject">
+										<ObjectRef Name="Bookshelf_Cabinet_Close_Imp" ID="{1A8B1E33-D0BA-4585-846E-7A4D0381C7D9}" WorkUnitID="{71EECC52-AA90-49B1-B25E-FBEA4961A280}"/>
+									</Reference>
+								</ReferenceList>
+							</PluginInnerObject>
+						</ObjectList>
+					</ObjectLists>
+				</RandomSequenceContainer>
+			</ChildrenList>
+		</WorkUnit>
+	</Containers>
+</WwiseDocument>

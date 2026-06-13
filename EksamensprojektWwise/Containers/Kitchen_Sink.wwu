@@ -5,6 +5,10 @@
 			<ChildrenList>
 				<RandomSequenceContainer Name="Kitchen_Sink_Water_Tapping" ID="{E4F7E484-23BF-4C3B-88A2-1EF5C562C49C}" ShortID="607707048">
 					<PropertyList>
+						<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+						<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
+						<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0"/>
+						<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 						<Property Name="RandomOrSequence" Type="int16" Value="0"/>
 					</PropertyList>
 					<ReferenceList>
@@ -1182,14 +1186,14 @@
 					</ChildrenList>
 					<ObjectLists>
 						<ObjectList Name="Playlist">
-							<PluginInnerObject Name="" ID="{BCC47764-FF93-488C-AB84-0B6AEBE0342C}" PluginName="PlaylistSlot" CompanyID="0" PluginID="86">
+							<PluginInnerObject Name="" ID="{F72B9560-B82D-41B5-AC57-13944319366E}" PluginName="PlaylistSlot" CompanyID="0" PluginID="86">
 								<ReferenceList>
 									<Reference Name="PlaylistObject">
 										<ObjectRef Name="Metal_Impact" ID="{0395B3A6-10C0-4F61-AD4B-16EE4E547707}" WorkUnitID="{9EACD1AD-FFB9-402E-A191-1BEE50C3B9D8}"/>
 									</Reference>
 								</ReferenceList>
 							</PluginInnerObject>
-							<PluginInnerObject Name="" ID="{EF02F4B3-1BD9-4093-B863-0D8314F65AC3}" PluginName="PlaylistSlot" CompanyID="0" PluginID="86">
+							<PluginInnerObject Name="" ID="{B45B6563-81D1-44A9-942B-637A72CED1E6}" PluginName="PlaylistSlot" CompanyID="0" PluginID="86">
 								<ReferenceList>
 									<Reference Name="PlaylistObject">
 										<ObjectRef Name="Water_Tap" ID="{3A76B270-EBC9-4CF9-B7CB-3DCB32CA57ED}" WorkUnitID="{9EACD1AD-FFB9-402E-A191-1BEE50C3B9D8}"/>

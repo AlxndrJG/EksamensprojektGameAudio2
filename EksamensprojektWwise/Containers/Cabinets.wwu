@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{EAA9C195-5D86-4529-8D52-3AAB6FDD41DF}" SchemaVersion="133" RootDocumentID="{08F20BFB-F7C4-40F3-B852-C39F7D674E18}" ParentDocumentID="{D751A346-751C-439A-9397-A1FDB4F10230}">
+	<Containers>
+		<WorkUnit Name="Cabinets" ID="{EAA9C195-5D86-4529-8D52-3AAB6FDD41DF}" OwnerID="{D751A346-751C-439A-9397-A1FDB4F10230}" PersistMode="Nested">
+			<ChildrenList>
+				<WorkUnit Name="Cabinet_Bookshelf" ID="{71EECC52-AA90-49B1-B25E-FBEA4961A280}" PersistMode="Reference"/>
+				<WorkUnit Name="Cabinet_Kitchen_Top" ID="{D662E550-F06B-4CBB-8B50-BB6DF3340AE6}" PersistMode="Reference"/>
+				<WorkUnit Name="Cabinet_Kitchen_Bottom" ID="{6DF0C4E7-1377-44AD-81E3-881E4BBE9A7C}" PersistMode="Reference"/>
+			</ChildrenList>
+		</WorkUnit>
+	</Containers>
+</WwiseDocument>

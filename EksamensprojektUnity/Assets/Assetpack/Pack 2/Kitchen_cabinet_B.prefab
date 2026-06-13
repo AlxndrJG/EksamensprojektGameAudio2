@@ -33,16 +33,16 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7076523239943431748}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.5, y: -1, z: -1.5}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.1145, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8051602807405668181}
   - {fileID: 5212330231145114620}
   - {fileID: 4982398606123191629}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: -18.103, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &4748160261972535591
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -311,6 +311,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6297368549564053982, guid: c3e69268ed6611c439007c63d0394a61, type: 3}
+      propertyPath: akEventOpen.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: b6a9346d41c6a4c089d02ca6c97c6b7e, type: 2}
+    - target: {fileID: 6297368549564053982, guid: c3e69268ed6611c439007c63d0394a61, type: 3}
+      propertyPath: akEventClose.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: dd18f8a75eed34d05bf5e24aee750ff0, type: 2}
     - target: {fileID: 6603920296878949520, guid: c3e69268ed6611c439007c63d0394a61, type: 3}
       propertyPath: m_Name
       value: Kitchen_cabinet_door_B_L
@@ -447,6 +455,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Kitchen_cabinet_door_B_R
       objectReference: {fileID: 0}
+    - target: {fileID: 8106985822123773972, guid: 3148f4a211c16174188f91005897429c, type: 3}
+      propertyPath: akEventOpen.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: b6a9346d41c6a4c089d02ca6c97c6b7e, type: 2}
+    - target: {fileID: 8106985822123773972, guid: 3148f4a211c16174188f91005897429c, type: 3}
+      propertyPath: akEventClose.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: dd18f8a75eed34d05bf5e24aee750ff0, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

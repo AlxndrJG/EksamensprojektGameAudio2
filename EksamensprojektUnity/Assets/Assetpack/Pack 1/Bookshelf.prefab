@@ -151,6 +151,14 @@ MonoBehaviour:
   objectOpen: 0
   objectOpenAdditional: 0
   animateAdditional: {fileID: 0}
+  akEventOpen:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  akEventClose:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
 --- !u!1 &660743411206169753
 GameObject:
   m_ObjectHideFlags: 0
@@ -165,6 +173,7 @@ GameObject:
   - component: {fileID: 9098780357396579432}
   - component: {fileID: 1432820642778233517}
   - component: {fileID: 3121399962503167548}
+  - component: {fileID: 4328523690977600332}
   m_Layer: 0
   m_Name: Door_A_L
   m_TagString: Untagged
@@ -302,6 +311,38 @@ MonoBehaviour:
   objectOpen: 0
   objectOpenAdditional: 0
   animateAdditional: {fileID: 0}
+  akEventOpen:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 5b5a6184cab0c4e3d9478578dd705027, type: 2}
+  akEventClose:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 5b5a6184cab0c4e3d9478578dd705027, type: 2}
+--- !u!114 &4328523690977600332
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 660743411206169753}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18007ef524e524cd3ac60a70663703c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: AK.Wwise.Unity.MonoBehaviour::AkGameObj
+  m_listeners:
+    initialListenerList: []
+    useDefaultListeners: 1
+  isEnvironmentAware: 1
+  isStaticObject: 1
+  usePositionOffsetData: 0
+  m_positionOffsetData:
+    KeepMe: 0
+    positionOffset: {x: 0, y: 0, z: 0}
+  scalingFactor: 1
+  m_posOffsetData: {fileID: 0}
+  listenerMask: 1
 --- !u!1 &2668174181978560211
 GameObject:
   m_ObjectHideFlags: 0
@@ -369,7 +410,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4662552833501168862}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 8.5, y: 0, z: -15}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -831,6 +872,14 @@ MonoBehaviour:
   objectOpen: 0
   objectOpenAdditional: 0
   animateAdditional: {fileID: 0}
+  akEventOpen:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 5b5a6184cab0c4e3d9478578dd705027, type: 2}
+  akEventClose:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 5b5a6184cab0c4e3d9478578dd705027, type: 2}
 --- !u!1 &7345717726027577322
 GameObject:
   m_ObjectHideFlags: 0
@@ -982,3 +1031,11 @@ MonoBehaviour:
   objectOpen: 0
   objectOpenAdditional: 0
   animateAdditional: {fileID: 0}
+  akEventOpen:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  akEventClose:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}

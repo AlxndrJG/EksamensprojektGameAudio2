@@ -13,8 +13,34 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID PLAY_BOOKSHELF_CABINET_CLOSE = 4255376059U;
+        static const AkUniqueID PLAY_BOOKSHELF_CABINET_OPEN = 2481548253U;
+        static const AkUniqueID PLAY_FOOTSTEP = 1602358412U;
+        static const AkUniqueID PLAY_KITCHEN_CABINET_BOTTOM_CLOSE = 259954442U;
+        static const AkUniqueID PLAY_KITCHEN_CABINET_BOTTOM_OPEN = 1437364014U;
+        static const AkUniqueID PLAY_KITCHEN_CABINET_TOP_CLOSE = 1760803494U;
+        static const AkUniqueID PLAY_KITCHEN_CABINET_TOP_OPEN = 567305970U;
         static const AkUniqueID PLAY_TESTLYD = 1963904025U;
     } // namespace EVENTS
+
+    namespace SWITCHES
+    {
+        namespace MATERIALS
+        {
+            static const AkUniqueID GROUP = 4050929301U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID CARPET = 2412606308U;
+                static const AkUniqueID CONCRETE = 841620460U;
+                static const AkUniqueID DIRT = 2195636714U;
+                static const AkUniqueID GRAVEL = 2185786256U;
+                static const AkUniqueID TILE = 2637588553U;
+                static const AkUniqueID WOOD = 2058049674U;
+            } // namespace SWITCH
+        } // namespace MATERIALS
+
+    } // namespace SWITCHES
 
     namespace BANKS
     {

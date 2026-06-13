@@ -10,11 +10,115 @@
     "Type": "User",
     "GUID": "{69C07AC4-2AB0-417A-A9B2-DC14CCE12DE0}",
     "Language": "SFX",
-    "Hash": "{00D9939C-9203-C98E-0C4F-A9EA54200349}",
+    "Hash": "{8102C4CB-892F-B54C-8EAF-7F40660DAF0B}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
     "Media": [
+     {
+      "Id": "41764518",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "EksamensprojektGameAudio2\\EksamensprojektWwise\\Originals\\SFX\\MetalSheet\\Footstep_Walking_Hardmetal_03.wav",
+      "CachePath": "47/{47F348DA-AEE4-930D-EE89-4939801C9F5F}.wem"
+     },
+     {
+      "Id": "42955071",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "EksamensprojektWwise\\Originals\\SFX\\Cabinet_Creak_3.wav",
+      "CachePath": "5A/{5A26F877-7695-B329-6EA0-1CA6A6E4487F}.wem"
+     },
+     {
+      "Id": "45625094",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "EksamensprojektGameAudio2\\EksamensprojektWwise\\Originals\\SFX\\WoodSolid\\Footstep_Walking_Hardwood_01.wav",
+      "CachePath": "CA/{CA016289-4407-1B84-A9CD-F3F358842D64}.wem"
+     },
+     {
+      "Id": "68469168",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "EksamensprojektGameAudio2\\EksamensprojektWwise\\Originals\\SFX\\Gravel\\AK_FS_Run_Gravel_01.wav",
+      "CachePath": "86/{86807691-21CC-81DD-F7DD-BC4F19D72232}.wem"
+     },
+     {
+      "Id": "124697463",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "EksamensprojektGameAudio2\\EksamensprojektWwise\\Originals\\SFX\\MetalSheet\\Footstep_Walking_Hardmetal_02.wav",
+      "CachePath": "09/{09551186-5F03-97C2-9956-996EDD7B280E}.wem"
+     },
+     {
+      "Id": "190621521",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "EksamensprojektGameAudio2\\EksamensprojektWwise\\Originals\\SFX\\WoodSolid\\Footstep_Walking_Hardwood_02.wav",
+      "CachePath": "B2/{B21A638F-A494-1C2B-781F-1ED08877F090}.wem"
+     },
+     {
+      "Id": "191063999",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "EksamensprojektWwise\\Originals\\SFX\\Cabinet_Open_1.wav",
+      "CachePath": "76/{761F97E5-3529-3FD1-A542-B854C7662B8F}.wem"
+     },
+     {
+      "Id": "199929400",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "EksamensprojektGameAudio2\\EksamensprojektWwise\\Originals\\SFX\\WoodSolid\\Footstep_Walking_Hardwood_04.wav",
+      "CachePath": "29/{29F1896E-8A4C-4AFB-6218-D37E1C54DA92}.wem"
+     },
+     {
+      "Id": "230118352",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "EksamensprojektGameAudio2\\EksamensprojektWwise\\Originals\\SFX\\Dirt\\FS_Dirt_03.wav",
+      "CachePath": "77/{7705EF54-DC90-3654-A458-07821385283A}.wem"
+     },
+     {
+      "Id": "256663500",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "EksamensprojektWwise\\Originals\\SFX\\Cabinet_Creak_4.wav",
+      "CachePath": "A4/{A4443063-7492-218A-93CC-DC87D7CC36FB}.wem"
+     },
+     {
+      "Id": "282347760",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "EksamensprojektGameAudio2\\EksamensprojektWwise\\Originals\\SFX\\WoodSolid\\Footstep_Walking_Hardwood_03.wav",
+      "CachePath": "42/{42DBC691-6E2E-5F8D-8737-1D657921AFC8}.wem"
+     },
+     {
+      "Id": "336167279",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "EksamensprojektWwise\\Originals\\SFX\\Cabinet_Open_4.wav",
+      "CachePath": "06/{064F453F-0972-24E4-71FD-71114D795EF6}.wem"
+     },
+     {
+      "Id": "357550026",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "EksamensprojektWwise\\Originals\\SFX\\Cabinet_Creak_6.wav",
+      "CachePath": "21/{21A95C6C-DE83-E12C-F376-898CCB7D3897}.wem"
+     },
      {
       "Id": "368103941",
       "Language": "SFX",
@@ -22,9 +126,502 @@
       "Location": "Memory",
       "ShortName": "K 43 K Latter - Hysterisk lang PITCHED-WAV.wav",
       "CachePath": "A9/{A9AD2235-3E69-DA71-179A-35C9149ABC8A}.wem"
+     },
+     {
+      "Id": "368131898",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "EksamensprojektWwise\\Originals\\SFX\\Cabinet_Open_3.wav",
+      "CachePath": "57/{5718A884-9192-1B2D-1979-48CC9AFA0C9A}.wem"
+     },
+     {
+      "Id": "393372814",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "EksamensprojektWwise\\Originals\\SFX\\Cabinet_Open_4.wav",
+      "CachePath": "C1/{C190672F-C509-2E7E-CD0B-B534083A885C}.wem"
+     },
+     {
+      "Id": "395654687",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "EksamensprojektWwise\\Originals\\SFX\\Cabinet_Open_2.wav",
+      "CachePath": "84/{84225D9B-DBAD-AB3A-0B78-57EA1A54A578}.wem"
+     },
+     {
+      "Id": "423912907",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "EksamensprojektWwise\\Originals\\SFX\\Cabinet_Open_1.wav",
+      "CachePath": "23/{23FC72F1-90CA-3BC7-0374-2137D60A0ADC}.wem"
+     },
+     {
+      "Id": "443176583",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "EksamensprojektGameAudio2\\EksamensprojektWwise\\Originals\\SFX\\WoodSolid\\Footstep_Walking_Hardwood_05.wav",
+      "CachePath": "1E/{1E015A9E-FA5C-ACF7-0268-011E9F5747D2}.wem"
+     },
+     {
+      "Id": "497409491",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "EksamensprojektWwise\\Originals\\SFX\\Cabinet_Creak_5.wav",
+      "CachePath": "35/{35CE5CD4-D32C-63AA-A0DD-9F48C7F9A521}.wem"
+     },
+     {
+      "Id": "512419251",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "EksamensprojektGameAudio2\\EksamensprojektWwise\\Originals\\SFX\\MetalSheet\\Footstep_Walking_Hardmetal_01.wav",
+      "CachePath": "CB/{CB9CD5C8-1278-5978-0A25-55A58AE7A09B}.wem"
+     },
+     {
+      "Id": "548501112",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "EksamensprojektWwise\\Originals\\SFX\\Cabinet_Creak_1.wav",
+      "CachePath": "4D/{4D999DE6-7C93-66CD-D8DD-AC0D2BEDB375}.wem"
+     },
+     {
+      "Id": "568086991",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "EksamensprojektGameAudio2\\EksamensprojektWwise\\Originals\\SFX\\MetalSheet\\Footstep_Walking_Hardmetal_04.wav",
+      "CachePath": "9B/{9BF9D4DF-CF6B-AE4B-AC2B-31A2FEE53B01}.wem"
+     },
+     {
+      "Id": "611354854",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "EksamensprojektGameAudio2\\EksamensprojektWwise\\Originals\\SFX\\Dirt\\FS_Dirt_02.wav",
+      "CachePath": "13/{13E53E2B-07B5-5A64-7EE2-2FF157ED84C5}.wem"
+     },
+     {
+      "Id": "694716087",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "EksamensprojektWwise\\Originals\\SFX\\Cabinet_Creak_2.wav",
+      "CachePath": "CD/{CD1E1C64-D5A7-DC8B-CF72-4DE5F316C079}.wem"
+     },
+     {
+      "Id": "726162783",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "EksamensprojektGameAudio2\\EksamensprojektWwise\\Originals\\SFX\\Dirt\\FS_Dirt_01.wav",
+      "CachePath": "87/{87FF5C08-EEC4-F517-435C-9AA11156D5EA}.wem"
+     },
+     {
+      "Id": "752203284",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "EksamensprojektGameAudio2\\EksamensprojektWwise\\Originals\\SFX\\Gravel\\AK_FS_Run_Gravel_03.wav",
+      "CachePath": "3D/{3D5093FB-D022-59E2-2622-E423E4B87BA0}.wem"
+     },
+     {
+      "Id": "830572607",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "EksamensprojektGameAudio2\\EksamensprojektWwise\\Originals\\SFX\\Gravel\\AK_FS_Run_Gravel_02.wav",
+      "CachePath": "86/{8674BD6B-F7AD-6384-72C4-73062F193BCB}.wem"
+     },
+     {
+      "Id": "983813656",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "EksamensprojektWwise\\Originals\\SFX\\Cabinet_Open_2.wav",
+      "CachePath": "F5/{F518A565-C2CC-973E-6D47-33BDDB784132}.wem"
+     },
+     {
+      "Id": "991939243",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "EksamensprojektGameAudio2\\EksamensprojektWwise\\Originals\\SFX\\MetalSheet\\Footstep_Walking_Hardmetal_05.wav",
+      "CachePath": "E5/{E540F3A0-3D20-BA92-70F6-A4A77053D5EA}.wem"
+     },
+     {
+      "Id": "997602928",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "EksamensprojektGameAudio2\\EksamensprojektWwise\\Originals\\SFX\\Dirt\\FS_Dirt_04.wav",
+      "CachePath": "27/{27E8F152-ED1C-6A4A-28A2-440486DB92CC}.wem"
+     },
+     {
+      "Id": "1013893993",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "EksamensprojektWwise\\Originals\\SFX\\Cabinet_Open_3.wav",
+      "CachePath": "B5/{B53747D8-079D-3B6E-2598-28046F684843}.wem"
      }
     ],
     "Events": [
+     {
+      "Id": "4255376059",
+      "Name": "Play_Bookshelf_Cabinet_Close",
+      "ObjectPath": "\\Events\\Default Work Unit\\Cabinets\\Play_Bookshelf_Cabinet_Close",
+      "GUID": "{C57D6E7E-C8C6-44CE-832A-3A67880F23A0}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.981289",
+      "DurationMax": "1.0854504",
+      "MediaRefs": [
+       {
+        "Id": "42955071"
+       },
+       {
+        "Id": "191063999"
+       },
+       {
+        "Id": "256663500"
+       },
+       {
+        "Id": "336167279"
+       },
+       {
+        "Id": "357550026"
+       },
+       {
+        "Id": "368131898"
+       },
+       {
+        "Id": "395654687"
+       },
+       {
+        "Id": "497409491"
+       },
+       {
+        "Id": "548501112"
+       },
+       {
+        "Id": "694716087"
+       }
+      ]
+     },
+     {
+      "Id": "2481548253",
+      "Name": "Play_Bookshelf_Cabinet_Open",
+      "ObjectPath": "\\Events\\Default Work Unit\\Cabinets\\Play_Bookshelf_Cabinet_Open",
+      "GUID": "{8ADA70CC-8C1E-4E94-BE7A-873BD6F8E89F}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.76357",
+      "DurationMax": "1.04664",
+      "MediaRefs": [
+       {
+        "Id": "42955071"
+       },
+       {
+        "Id": "256663500"
+       },
+       {
+        "Id": "357550026"
+       },
+       {
+        "Id": "393372814"
+       },
+       {
+        "Id": "423912907"
+       },
+       {
+        "Id": "497409491"
+       },
+       {
+        "Id": "548501112"
+       },
+       {
+        "Id": "694716087"
+       },
+       {
+        "Id": "983813656"
+       },
+       {
+        "Id": "1013893993"
+       }
+      ]
+     },
+     {
+      "Id": "1602358412",
+      "Name": "Play_Footstep",
+      "ObjectPath": "\\Events\\Player\\Play_Footstep",
+      "GUID": "{9DED7C3E-60EC-40E0-8488-0D4267B08330}",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0.49170068",
+      "SwitchContainers": [
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "4050929301",
+         "Id": "2185786256",
+         "GUID": "{ADE85F24-97E2-41EA-AF91-21D7ACFDC344}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "68469168"
+         },
+         {
+          "Id": "752203284"
+         },
+         {
+          "Id": "830572607"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "4050929301",
+         "Id": "2058049674",
+         "GUID": "{01D74985-5AAD-4D47-AB4D-3BEFB42EDB14}",
+         "Default": "true"
+        },
+        "MediaRefs": [
+         {
+          "Id": "45625094"
+         },
+         {
+          "Id": "190621521"
+         },
+         {
+          "Id": "199929400"
+         },
+         {
+          "Id": "282347760"
+         },
+         {
+          "Id": "443176583"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "4050929301",
+         "Id": "2637588553",
+         "GUID": "{489F938C-52D2-44BF-A188-0CB73A226A23}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "41764518"
+         },
+         {
+          "Id": "124697463"
+         },
+         {
+          "Id": "512419251"
+         },
+         {
+          "Id": "568086991"
+         },
+         {
+          "Id": "991939243"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "4050929301",
+         "Id": "2195636714",
+         "GUID": "{EA7FBBC3-42D5-40A1-833B-09A701BB2D0D}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "230118352"
+         },
+         {
+          "Id": "611354854"
+         },
+         {
+          "Id": "726162783"
+         },
+         {
+          "Id": "997602928"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "Id": "259954442",
+      "Name": "Play_Kitchen_Cabinet_Bottom_Close",
+      "ObjectPath": "\\Events\\Default Work Unit\\Cabinets\\Play_Kitchen_Cabinet_Bottom_Close",
+      "GUID": "{FA839368-11C4-4B4E-BF59-BF39D670639D}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.981289",
+      "DurationMax": "1.0854504",
+      "MediaRefs": [
+       {
+        "Id": "42955071"
+       },
+       {
+        "Id": "191063999"
+       },
+       {
+        "Id": "256663500"
+       },
+       {
+        "Id": "336167279"
+       },
+       {
+        "Id": "357550026"
+       },
+       {
+        "Id": "368131898"
+       },
+       {
+        "Id": "395654687"
+       },
+       {
+        "Id": "497409491"
+       },
+       {
+        "Id": "548501112"
+       },
+       {
+        "Id": "694716087"
+       }
+      ]
+     },
+     {
+      "Id": "1437364014",
+      "Name": "Play_Kitchen_Cabinet_Bottom_Open",
+      "ObjectPath": "\\Events\\Default Work Unit\\Cabinets\\Play_Kitchen_Cabinet_Bottom_Open",
+      "GUID": "{9D1DDA21-BF4D-40A8-A684-9C16EAF546EE}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.76357",
+      "DurationMax": "1.04664",
+      "MediaRefs": [
+       {
+        "Id": "42955071"
+       },
+       {
+        "Id": "256663500"
+       },
+       {
+        "Id": "357550026"
+       },
+       {
+        "Id": "393372814"
+       },
+       {
+        "Id": "423912907"
+       },
+       {
+        "Id": "497409491"
+       },
+       {
+        "Id": "548501112"
+       },
+       {
+        "Id": "694716087"
+       },
+       {
+        "Id": "983813656"
+       },
+       {
+        "Id": "1013893993"
+       }
+      ]
+     },
+     {
+      "Id": "1760803494",
+      "Name": "Play_Kitchen_Cabinet_Top_Close",
+      "ObjectPath": "\\Events\\Default Work Unit\\Cabinets\\Play_Kitchen_Cabinet_Top_Close",
+      "GUID": "{5E568F85-4D51-47A4-9C4B-0CEC5ADC7320}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.981289",
+      "DurationMax": "1.0854504",
+      "MediaRefs": [
+       {
+        "Id": "42955071"
+       },
+       {
+        "Id": "191063999"
+       },
+       {
+        "Id": "256663500"
+       },
+       {
+        "Id": "336167279"
+       },
+       {
+        "Id": "357550026"
+       },
+       {
+        "Id": "368131898"
+       },
+       {
+        "Id": "395654687"
+       },
+       {
+        "Id": "497409491"
+       },
+       {
+        "Id": "548501112"
+       },
+       {
+        "Id": "694716087"
+       }
+      ]
+     },
+     {
+      "Id": "567305970",
+      "Name": "Play_Kitchen_Cabinet_Top_Open",
+      "ObjectPath": "\\Events\\Default Work Unit\\Cabinets\\Play_Kitchen_Cabinet_Top_Open",
+      "GUID": "{B6FE863D-2C11-4625-8037-AD160C9ADADD}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.76357",
+      "DurationMax": "1.04664",
+      "MediaRefs": [
+       {
+        "Id": "42955071"
+       },
+       {
+        "Id": "256663500"
+       },
+       {
+        "Id": "357550026"
+       },
+       {
+        "Id": "393372814"
+       },
+       {
+        "Id": "423912907"
+       },
+       {
+        "Id": "497409491"
+       },
+       {
+        "Id": "548501112"
+       },
+       {
+        "Id": "694716087"
+       },
+       {
+        "Id": "983813656"
+       },
+       {
+        "Id": "1013893993"
+       }
+      ]
+     },
      {
       "Id": "1963904025",
       "Name": "Play_Testlyd",
@@ -39,9 +636,55 @@
        }
       ]
      }
+    ],
+    "SwitchGroups": [
+     {
+      "Id": "4050929301",
+      "Name": "Materials",
+      "ObjectPath": "\\Switches\\Default Work Unit\\Materials",
+      "GUID": "{78F904E6-4534-4617-910E-C7490503BDB6}",
+      "Switches": [
+       {
+        "Id": "841620460",
+        "Name": "Concrete",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Materials\\Concrete",
+        "GUID": "{08B9ED8A-851B-406C-BE22-8A17373FFE72}"
+       },
+       {
+        "Id": "2058049674",
+        "Name": "Wood",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Materials\\Wood",
+        "GUID": "{01D74985-5AAD-4D47-AB4D-3BEFB42EDB14}"
+       },
+       {
+        "Id": "2185786256",
+        "Name": "Gravel",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Materials\\Gravel",
+        "GUID": "{ADE85F24-97E2-41EA-AF91-21D7ACFDC344}"
+       },
+       {
+        "Id": "2195636714",
+        "Name": "Dirt",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Materials\\Dirt",
+        "GUID": "{EA7FBBC3-42D5-40A1-833B-09A701BB2D0D}"
+       },
+       {
+        "Id": "2412606308",
+        "Name": "Carpet",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Materials\\Carpet",
+        "GUID": "{20CB2217-9B72-41FC-8CA9-CF9513CA335E}"
+       },
+       {
+        "Id": "2637588553",
+        "Name": "Tile",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Materials\\Tile",
+        "GUID": "{489F938C-52D2-44BF-A188-0CB73A226A23}"
+       }
+      ]
+     }
     ]
    }
   ],
-  "FileHash": "{58E7E6F1-08C4-04B2-4473-8AFA97316463}"
+  "FileHash": "{35D93AFE-A97F-E8F0-0D5A-6F311B4E7525}"
  }
 }

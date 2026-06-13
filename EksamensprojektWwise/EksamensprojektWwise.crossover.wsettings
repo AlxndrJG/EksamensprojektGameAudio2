@@ -7,7 +7,13 @@
 				<Property Name="AudioFilesImporter\DestinationFolder" Type="string" Value="Y:\Documents\GitHub\EksamensprojektGameAudio2\EksamensprojektWwise\Originals\SFX\EksamensprojektWwise\Originals\SFX\"/>
 				<Property Name="AudioFilesImporter\Path" Type="string" Value="Y:\Desktop\GameAudio2\Gone Astray\G.A_Lydbibliotek110626\GA_Sounds\SFX\Kitchen\Kitchen_Sink\Water_Metal_Impact\"/>
 				<Property Name="Event Action List\{4E61DA24-6F36-4098-A304-755A4FF3E9A5}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{5E568F85-4D51-47A4-9C4B-0CEC5ADC7320}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{8ADA70CC-8C1E-4E94-BE7A-873BD6F8E89F}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{9D1DDA21-BF4D-40A8-A684-9C16EAF546EE}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{9DED7C3E-60EC-40E0-8488-0D4267B08330}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{B6FE863D-2C11-4625-8037-AD160C9ADADD}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{C57D6E7E-C8C6-44CE-832A-3A67880F23A0}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{FA839368-11C4-4B4E-BF59-BF39D670639D}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="EventView\FilterMode1" Type="int32" Value="2"/>
 				<Property Name="EventView\FilterMode2" Type="int32" Value="2"/>
 				<Property Name="ExternalSourcesInputPath" Type="string">
@@ -47,11 +53,10 @@
 				<Property Name="OverrideCacheFolder\Path" Type="string" Value=".cache"/>
 				<Property Name="OverrideOriginalFolder\Active" Type="bool" Value="False"/>
 				<Property Name="OverrideOriginalFolder\Path" Type="string" Value="Originals"/>
-				<Property Name="PlaylistViewCtrl\x64_{165B1091-CBDD-4D71-9E16-EF9438BE0390}Collapse StatesPath1" Type="string" Value="LwBGAFMAXwBUAGkAbABlAF8AMgAtAEkAbQBwAGEAYwB0AAAAAAAAAH6EGgEAAAAACMERAAAAAADgwBEAAAAAAAjBEQAAAAAA4MARAAAAAAAUtBYDAAAAAAAAMQcAAAAADAAAAAAAAAAgwREAAAAAAECUQwkAAAAAIMQRAAAAAABIAAAAAAAAAAIQAAAAAAAASAAAAAAAAABIAAAAAAAAAAIQAAAAAAAAPKwCcAEAAAAQ+HoJAAAAAAsAACAAAAABaAAAAAAAAAACEAAAAAAAAAAAMQcAAAAAMJQCcAEAAAACEAAAAAAAADysAnABAAAACGPvAwAAAAAAADEHAAAAAADDEQAAAAAAMAAAAAAAAAAgSpcIAAAAAP//////////mAAAAAAAAABwAAAAAAAAAJgAAAAAAAAAmAAAAAAAAAACEAAAAAAAAAIQAAAAAAAAAAAKAwAAAABcngJwAQAAAAIQAAAAAAAAPKwCcAEAAAD/////////HwAAAAAAAAAABwAAAAAAAABkM2qvAwAAAAAAMQcAAAAAAAAxBwAAAADowBEAAAAAAAAAMQcAAAAAdgAAAAAAAAD//////////3DNaAkAAAAAHgAAAAAAAACYwREAAAAAADUAAAAAAAAAcEmXCAAAAADw7XYHAAAAALxJlwgAAAAA67ECcAEAAAA="/>
 				<Property Name="ProjectExplorer\SelectionChannel_1\Audio_FocusedObject" Type="string" Value="{72E2A1F7-3487-44FA-A391-D4558B3FCDAB}"/>
 				<Property Name="ProjectExplorer\SelectionChannel_1\CurrentSearch" Type="string" Value=""/>
-				<Property Name="ProjectExplorer\SelectionChannel_1\CurrentTab" Type="int32" Value="3"/>
-				<Property Name="ProjectExplorer\SelectionChannel_1\Events_FocusedObject" Type="string" Value="{9DED7C3E-60EC-40E0-8488-0D4267B08330}"/>
+				<Property Name="ProjectExplorer\SelectionChannel_1\CurrentTab" Type="int32" Value="1"/>
+				<Property Name="ProjectExplorer\SelectionChannel_1\Events_FocusedObject" Type="string" Value="{8ADA70CC-8C1E-4E94-BE7A-873BD6F8E89F}"/>
 				<Property Name="ProjectExplorer\SelectionChannel_1\Game Syncs_FocusedObject" Type="string" Value="{78F904E6-4534-4617-910E-C7490503BDB6}"/>
 				<Property Name="ProjectExplorer\SelectionChannel_1\Queries_FocusedObject" Type="string" Value="{23EC2DE3-3ED8-4B82-AC99-92E25F2E4C6B}"/>
 				<Property Name="ProjectExplorer\SelectionChannel_1\Sessions_FocusedObject" Type="string" Value="{4C96B38B-3DB4-40C7-91C9-665510E38993}"/>
@@ -264,8 +269,11 @@
 				<List Name="BatchRenameSettings">
 					<PluginInnerObject Name="" ID="{E30F5B6B-19CF-478B-AEBE-36E0D56C9B9A}" PluginName="BatchRenameSettings" CompanyID="0" PluginID="992">
 						<PropertyList>
-							<Property Name="ReplaceFindWhat" Type="string" Value="Dirt"/>
-							<Property Name="ReplaceReplaceWith" Type="string" Value="Gravel"/>
+							<Property Name="InsertAtPosition" Type="int32" Value="5"/>
+							<Property Name="InsertFrom" Type="int16" Value="0"/>
+							<Property Name="InsertToInsert" Type="string" Value="Bookshelf_"/>
+							<Property Name="ReplaceFindWhat" Type="string" Value="Top"/>
+							<Property Name="ReplaceReplaceWith" Type="string" Value="Bottom"/>
 						</PropertyList>
 					</PluginInnerObject>
 				</List>

@@ -5,6 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2e31d9a8-fdaf-40cd-b541-478bfe29dbec" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.EksamensprojektUnity/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.EksamensprojektUnity/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assetpack/Pack 1/Bookshelf.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assetpack/Pack 1/Bookshelf.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AtmosphericHouse/Scripts/SimpleOpenClose.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AtmosphericHouse/Scripts/SimpleOpenClose.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Gone Astray.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Gone Astray.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EksamensprojektWwise/EksamensprojektWwise.crossover.validationcache" beforeDir="false" afterPath="$PROJECT_DIR$/../EksamensprojektWwise/EksamensprojektWwise.crossover.validationcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../EksamensprojektWwise/EksamensprojektWwise.crossover.wsettings" beforeDir="false" afterPath="$PROJECT_DIR$/../EksamensprojektWwise/EksamensprojektWwise.crossover.wsettings" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -89,6 +94,7 @@
       <workItem from="1781084330754" duration="417000" />
       <workItem from="1781084945521" duration="2091000" />
       <workItem from="1781109250293" duration="3988000" />
+      <workItem from="1781352911754" duration="3111000" />
     </task>
     <servers />
   </component>

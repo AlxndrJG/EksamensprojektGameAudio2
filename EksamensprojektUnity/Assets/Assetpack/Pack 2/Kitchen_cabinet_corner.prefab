@@ -29,7 +29,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2723126263487547807}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: -0.7071068}
+  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 1.5, y: -1, z: -1.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -333,6 +333,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4929420480982672140, guid: c9ebd1d1f08d8504899971b91e6943f7, type: 3}
+      propertyPath: akEventOpen.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: b6a9346d41c6a4c089d02ca6c97c6b7e, type: 2}
+    - target: {fileID: 4929420480982672140, guid: c9ebd1d1f08d8504899971b91e6943f7, type: 3}
+      propertyPath: akEventClose.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: dd18f8a75eed34d05bf5e24aee750ff0, type: 2}
     - target: {fileID: 5235918483091152450, guid: c9ebd1d1f08d8504899971b91e6943f7, type: 3}
       propertyPath: m_Name
       value: Kitchen_cabinet_door_A_L

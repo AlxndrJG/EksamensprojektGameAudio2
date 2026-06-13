@@ -33,7 +33,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7217905681420490919}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: -0.7071068}
+  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 1.5, y: -1, z: 0.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -41,7 +41,7 @@ Transform:
   - {fileID: 1130060644281755916}
   - {fileID: 7491118151985181924}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!114 &7628027428393262523
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -266,6 +266,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4808255649957665295}
     m_Modifications:
+    - target: {fileID: 3935254035159313246, guid: e02680129fc57f7459cbd2521d82ca11, type: 3}
+      propertyPath: akEventOpen.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: b6a9346d41c6a4c089d02ca6c97c6b7e, type: 2}
+    - target: {fileID: 3935254035159313246, guid: e02680129fc57f7459cbd2521d82ca11, type: 3}
+      propertyPath: akEventClose.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: dd18f8a75eed34d05bf5e24aee750ff0, type: 2}
     - target: {fileID: 8218442938311336019, guid: e02680129fc57f7459cbd2521d82ca11, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -380,6 +388,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8225245936535755152, guid: c2a15845ceceb1a4bb9ff8875c57b9bc, type: 3}
+      propertyPath: akEventOpen.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: b6a9346d41c6a4c089d02ca6c97c6b7e, type: 2}
+    - target: {fileID: 8225245936535755152, guid: c2a15845ceceb1a4bb9ff8875c57b9bc, type: 3}
+      propertyPath: akEventClose.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: dd18f8a75eed34d05bf5e24aee750ff0, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
