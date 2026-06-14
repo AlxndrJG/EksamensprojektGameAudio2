@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{5650F0CA-A7DF-477A-9756-F5E563667C96}" SchemaVersion="133" RootDocumentID="{592E4948-4B95-4D07-A8F5-57224D983201}" ParentDocumentID="{592E4948-4B95-4D07-A8F5-57224D983201}">
+	<Events>
+		<WorkUnit Name="Objects" ID="{5650F0CA-A7DF-477A-9756-F5E563667C96}" OwnerID="{592E4948-4B95-4D07-A8F5-57224D983201}" PersistMode="Nested">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="8"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
+			<ChildrenList>
+				<WorkUnit Name="Cabinets" ID="{5C18DC07-E11B-4CA0-A076-43E3E27DCED6}" PersistMode="Reference"/>
+				<WorkUnit Name="TV" ID="{E2AB566E-40F0-47CA-BA46-76EC80410D4E}" PersistMode="Reference"/>
+				<WorkUnit Name="Fan" ID="{B220945B-82F4-48A5-955C-0E2D019BFDFF}" PersistMode="Reference"/>
+				<WorkUnit Name="Clock" ID="{56D3BDFB-9DDC-42C7-BFE7-0910E8BE1ADA}" PersistMode="Reference"/>
+				<WorkUnit Name="Kitchen_Sink" ID="{13ED91BD-CE1F-474C-A161-849FB33FDE31}" PersistMode="Reference"/>
+				<WorkUnit Name="Doors" ID="{527A38F7-0B26-4C6D-B8CC-4EE6D6E126D1}" PersistMode="Reference"/>
+				<WorkUnit Name="Fridge" ID="{F5320B92-6B8A-417C-9C68-C9C98B4740B1}" PersistMode="Reference"/>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

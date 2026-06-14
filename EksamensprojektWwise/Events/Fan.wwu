@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{B220945B-82F4-48A5-955C-0E2D019BFDFF}" SchemaVersion="133" RootDocumentID="{592E4948-4B95-4D07-A8F5-57224D983201}" ParentDocumentID="{5650F0CA-A7DF-477A-9756-F5E563667C96}">
+	<Events>
+		<WorkUnit Name="Fan" ID="{B220945B-82F4-48A5-955C-0E2D019BFDFF}" OwnerID="{5650F0CA-A7DF-477A-9756-F5E563667C96}" PersistMode="Nested">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="8"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

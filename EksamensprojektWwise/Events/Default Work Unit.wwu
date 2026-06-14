@@ -14,7 +14,6 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<WorkUnit Name="Cabinets" ID="{5C18DC07-E11B-4CA0-A076-43E3E27DCED6}" PersistMode="Reference"/>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

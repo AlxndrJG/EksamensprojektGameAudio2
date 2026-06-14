@@ -437,6 +437,17 @@
 							</ChildrenList>
 						</RandomSequenceContainer>
 					</ChildrenList>
+					<ObjectLists>
+						<ObjectList Name="Playlist">
+							<PluginInnerObject Name="" ID="{EBA2DF2A-55AE-4E71-A0B7-BFDBF5467AC1}" PluginName="PlaylistSlot" CompanyID="0" PluginID="86">
+								<ReferenceList>
+									<Reference Name="PlaylistObject">
+										<ObjectRef Name="Cabinet_Open" ID="{810387D9-8055-4BC5-AFF0-3E0814F39F98}" WorkUnitID="{CC65FEA8-FA6B-4248-9B9D-3D7072710284}"/>
+									</Reference>
+								</ReferenceList>
+							</PluginInnerObject>
+						</ObjectList>
+					</ObjectLists>
 				</RandomSequenceContainer>
 				<RandomSequenceContainer Name="Cabinet_Draw_Close" ID="{E5B25F31-3A9A-4150-ABEC-863946167DA5}" ShortID="266578561">
 					<PropertyList>

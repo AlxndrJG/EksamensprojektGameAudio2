@@ -290,6 +290,11 @@
 				</Attenuation>
 				<Attenuation Name="Attenuate_50" ID="{143E31F9-1597-48C4-9436-CFA24A10D321}" ShortID="945154916">
 					<PropertyList>
+						<Property Name="ConeAttenuation" Type="Real64">
+							<ValueList>
+								<Value>-28</Value>
+							</ValueList>
+						</Property>
 						<Property Name="ConeUse" Type="bool">
 							<ValueList>
 								<Value>True</Value>

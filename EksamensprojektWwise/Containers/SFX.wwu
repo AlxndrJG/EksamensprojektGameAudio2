@@ -2,6 +2,10 @@
 <WwiseDocument Type="WorkUnit" ID="{08F20BFB-F7C4-40F3-B852-C39F7D674E18}" SchemaVersion="133">
 	<Containers>
 		<WorkUnit Name="SFX" ID="{08F20BFB-F7C4-40F3-B852-C39F7D674E18}" PersistMode="Standalone">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="8"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
 			<ChildrenList>
 				<WorkUnit Name="Objects" ID="{D751A346-751C-439A-9397-A1FDB4F10230}" PersistMode="Reference"/>
 			</ChildrenList>

@@ -2,6 +2,10 @@
 <WwiseDocument Type="WorkUnit" ID="{7889376E-CE23-446C-869A-0335CB56C684}" SchemaVersion="133">
 	<Events>
 		<WorkUnit Name="Player" ID="{7889376E-CE23-446C-869A-0335CB56C684}" PersistMode="Standalone">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="1"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
 			<ChildrenList>
 				<Event Name="Play_FSForward" ID="{9B5E6030-2213-47DF-AB48-36874C8AD8D9}">
 					<ChildrenList>

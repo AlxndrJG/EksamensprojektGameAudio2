@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{56D3BDFB-9DDC-42C7-BFE7-0910E8BE1ADA}" SchemaVersion="133" RootDocumentID="{592E4948-4B95-4D07-A8F5-57224D983201}" ParentDocumentID="{5650F0CA-A7DF-477A-9756-F5E563667C96}">
+	<Events>
+		<WorkUnit Name="Clock" ID="{56D3BDFB-9DDC-42C7-BFE7-0910E8BE1ADA}" OwnerID="{5650F0CA-A7DF-477A-9756-F5E563667C96}" PersistMode="Nested">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="8"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

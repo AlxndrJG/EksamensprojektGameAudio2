@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{5C18DC07-E11B-4CA0-A076-43E3E27DCED6}" SchemaVersion="133" RootDocumentID="{7D3A5287-A22D-4F9B-95A6-CA0F5ED9C299}" ParentDocumentID="{7D3A5287-A22D-4F9B-95A6-CA0F5ED9C299}">
+<WwiseDocument Type="WorkUnit" ID="{5C18DC07-E11B-4CA0-A076-43E3E27DCED6}" SchemaVersion="133" RootDocumentID="{592E4948-4B95-4D07-A8F5-57224D983201}" ParentDocumentID="{5650F0CA-A7DF-477A-9756-F5E563667C96}">
 	<Events>
-		<WorkUnit Name="Cabinets" ID="{5C18DC07-E11B-4CA0-A076-43E3E27DCED6}" OwnerID="{7D3A5287-A22D-4F9B-95A6-CA0F5ED9C299}" PersistMode="Nested">
+		<WorkUnit Name="Cabinets" ID="{5C18DC07-E11B-4CA0-A076-43E3E27DCED6}" OwnerID="{5650F0CA-A7DF-477A-9756-F5E563667C96}" PersistMode="Nested">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="8"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
 			<ChildrenList>
 				<Event Name="Play_Bookshelf_Cabinet_Open" ID="{8ADA70CC-8C1E-4E94-BE7A-873BD6F8E89F}">
 					<ChildrenList>

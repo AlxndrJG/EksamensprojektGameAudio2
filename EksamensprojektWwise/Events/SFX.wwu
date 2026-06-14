@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{592E4948-4B95-4D07-A8F5-57224D983201}" SchemaVersion="133">
+	<Events>
+		<WorkUnit Name="SFX" ID="{592E4948-4B95-4D07-A8F5-57224D983201}" PersistMode="Standalone">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="8"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
+			<ChildrenList>
+				<WorkUnit Name="Objects" ID="{5650F0CA-A7DF-477A-9756-F5E563667C96}" PersistMode="Reference"/>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

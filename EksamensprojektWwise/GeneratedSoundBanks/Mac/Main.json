@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{69C07AC4-2AB0-417A-A9B2-DC14CCE12DE0}",
     "Language": "SFX",
-    "Hash": "{1021B4E3-83D3-F479-C7F2-F2B57E9FFC37}",
+    "Hash": "{2996F421-4876-6B79-4CD3-16B5BC2E2298}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -56,28 +56,20 @@
       "CachePath": "5A/{5A26F877-7695-B329-6EA0-1CA6A6E4487F}.wem"
      },
      {
+      "Id": "45577981",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "EksamensprojektWwise\\Originals\\SFX\\Carpet_Step-009.wav",
+      "CachePath": "8E/{8ED4228A-E799-856B-F2B3-E2A057B48BF0}.wem"
+     },
+     {
       "Id": "45625094",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "EksamensprojektGameAudio2\\EksamensprojektWwise\\Originals\\SFX\\WoodSolid\\Footstep_Walking_Hardwood_01.wav",
       "CachePath": "CA/{CA016289-4407-1B84-A9CD-F3F358842D64}.wem"
-     },
-     {
-      "Id": "50829802",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "EksamensprojektWwise\\Originals\\SFX\\Carpet_Texture-009.wav",
-      "CachePath": "93/{93E80119-A5D8-68F1-A9DF-7462A6EE4214}.wem"
-     },
-     {
-      "Id": "68469168",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "EksamensprojektGameAudio2\\EksamensprojektWwise\\Originals\\SFX\\Gravel\\AK_FS_Run_Gravel_01.wav",
-      "CachePath": "86/{86807691-21CC-81DD-F7DD-BC4F19D72232}.wem"
      },
      {
       "Id": "77414822",
@@ -88,12 +80,28 @@
       "CachePath": "BC/{BC3977D2-1D69-5C0F-D2D6-34E115801055}.wem"
      },
      {
+      "Id": "79542059",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "EksamensprojektWwise\\Originals\\SFX\\Carpet_Step-003.wav",
+      "CachePath": "C6/{C6F790F3-2AD0-D8B8-1539-01E62FC6916F}.wem"
+     },
+     {
       "Id": "84162569",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "EksamensprojektWwise\\Originals\\SFX\\Wood_Impact-002.wav",
       "CachePath": "41/{413FD696-EB81-7BCE-604F-2F9FADBA8AE6}.wem"
+     },
+     {
+      "Id": "89975996",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "EksamensprojektWwise\\Originals\\SFX\\Carpet_Texture-001.wav",
+      "CachePath": "1D/{1DDEC7D7-1377-A365-D184-255F12E768DB}.wem"
      },
      {
       "Id": "104982052",
@@ -126,6 +134,14 @@
       "Location": "Memory",
       "ShortName": "EksamensprojektWwise\\Originals\\SFX\\Carpet_Step_2-009.wav",
       "CachePath": "8C/{8CD153A2-48AC-7637-AEDC-73F75085C61F}.wem"
+     },
+     {
+      "Id": "160873394",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "EksamensprojektWwise\\Originals\\SFX\\Carpet_Texture-006.wav",
+      "CachePath": "A4/{A4C6AFBF-BCBD-32EB-E392-736CEA9D12AD}.wem"
      },
      {
       "Id": "166747718",
@@ -222,6 +238,22 @@
       "Location": "Memory",
       "ShortName": "EksamensprojektGameAudio2\\EksamensprojektWwise\\Originals\\SFX\\WoodSolid\\Footstep_Walking_Hardwood_03.wav",
       "CachePath": "42/{42DBC691-6E2E-5F8D-8737-1D657921AFC8}.wem"
+     },
+     {
+      "Id": "285702296",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "EksamensprojektWwise\\Originals\\SFX\\Carpet_Texture-003.wav",
+      "CachePath": "37/{374C3210-C9C6-1CC5-24EF-CF1EEDE1B230}.wem"
+     },
+     {
+      "Id": "287090829",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "EksamensprojektWwise\\Originals\\SFX\\Carpet_Step-007.wav",
+      "CachePath": "97/{97A1D675-0875-A601-F18E-787E2119AF6E}.wem"
      },
      {
       "Id": "299862196",
@@ -342,6 +374,14 @@
       "Location": "Memory",
       "ShortName": "EksamensprojektWwise\\Originals\\SFX\\Wood_Impact-004.wav",
       "CachePath": "37/{37BB4E01-6E79-0B29-4369-460159B332C0}.wem"
+     },
+     {
+      "Id": "350414441",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "EksamensprojektWwise\\Originals\\SFX\\Carpet_Texture-002.wav",
+      "CachePath": "4F/{4F331001-140F-904C-3824-5DA039E3D74B}.wem"
      },
      {
       "Id": "357550026",
@@ -470,6 +510,14 @@
       "Location": "Memory",
       "ShortName": "EksamensprojektWwise\\Originals\\SFX\\Carpet_Texture-001.wav",
       "CachePath": "E4/{E43026FB-BBDD-596D-8F62-5806E1A61EF7}.wem"
+     },
+     {
+      "Id": "464856770",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "EksamensprojektWwise\\Originals\\SFX\\Carpet_Step-004.wav",
+      "CachePath": "43/{436CA268-B85A-429B-A738-172E9E57B6AA}.wem"
      },
      {
       "Id": "467355072",
@@ -608,12 +656,28 @@
       "CachePath": "FF/{FF71AED0-2298-7931-1CCB-89B7A1F03D36}.wem"
      },
      {
+      "Id": "591778919",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "EksamensprojektWwise\\Originals\\SFX\\Carpet_Step-006.wav",
+      "CachePath": "07/{07946D7C-F890-D75D-BC60-5CE247512395}.wem"
+     },
+     {
       "Id": "602692716",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "EksamensprojektWwise\\Originals\\SFX\\Carpet_Step-007.wav",
       "CachePath": "80/{807F0C50-9FEC-AD90-D501-A121DC64B963}.wem"
+     },
+     {
+      "Id": "607186932",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "EksamensprojektWwise\\Originals\\SFX\\Carpet_Step-001.wav",
+      "CachePath": "81/{81133419-2D99-6BB3-9D3E-844B6ED13304}.wem"
      },
      {
       "Id": "608888312",
@@ -672,28 +736,12 @@
       "CachePath": "89/{8957CDF6-148F-26B2-0C8D-05701AE02846}.wem"
      },
      {
-      "Id": "720642648",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "EksamensprojektWwise\\Originals\\SFX\\Wood_Impact-005.wav",
-      "CachePath": "1C/{1C42F97C-617F-20F9-7BFB-50BC2D92BDE3}.wem"
-     },
-     {
       "Id": "738538910",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "EksamensprojektWwise\\Originals\\SFX\\Wood_Impact-001.wav",
       "CachePath": "70/{70BCF5B0-9445-9F85-193B-711AE53EF8EE}.wem"
-     },
-     {
-      "Id": "752203284",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "EksamensprojektGameAudio2\\EksamensprojektWwise\\Originals\\SFX\\Gravel\\AK_FS_Run_Gravel_03.wav",
-      "CachePath": "3D/{3D5093FB-D022-59E2-2622-E423E4B87BA0}.wem"
      },
      {
       "Id": "760580256",
@@ -720,6 +768,14 @@
       "CachePath": "C3/{C31E5CD3-E468-B8AE-8354-3B7D66FAEC9D}.wem"
      },
      {
+      "Id": "767721366",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "EksamensprojektWwise\\Originals\\SFX\\Carpet_Texture-010.wav",
+      "CachePath": "70/{70DB5CD9-9153-F245-5170-90B21D869D8E}.wem"
+     },
+     {
       "Id": "774812347",
       "Language": "SFX",
       "Streaming": "false",
@@ -728,12 +784,28 @@
       "CachePath": "65/{6593D3E0-7710-4AA0-9F4B-CD4DF87EAA96}.wem"
      },
      {
+      "Id": "804666013",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "EksamensprojektWwise\\Originals\\SFX\\Carpet_Texture-004.wav",
+      "CachePath": "08/{08B118D4-AB12-94FF-25A0-601689F07E03}.wem"
+     },
+     {
       "Id": "808433203",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "EksamensprojektWwise\\Originals\\SFX\\Wood_Impact-009.wav",
       "CachePath": "1E/{1E02D83E-7A11-57A0-AD86-F6F32FB29D3C}.wem"
+     },
+     {
+      "Id": "816807131",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "EksamensprojektWwise\\Originals\\SFX\\Carpet_Step-008.wav",
+      "CachePath": "01/{01AD1C5C-6667-9618-9E55-04879DCFC38D}.wem"
      },
      {
       "Id": "819172608",
@@ -750,14 +822,6 @@
       "Location": "Memory",
       "ShortName": "EksamensprojektWwise\\Originals\\SFX\\Carpet_Step-009.wav",
       "CachePath": "D3/{D3381E3A-8C9C-9BD4-0EF4-082AE8C77B28}.wem"
-     },
-     {
-      "Id": "830572607",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "EksamensprojektGameAudio2\\EksamensprojektWwise\\Originals\\SFX\\Gravel\\AK_FS_Run_Gravel_02.wav",
-      "CachePath": "86/{8674BD6B-F7AD-6384-72C4-73062F193BCB}.wem"
      },
      {
       "Id": "832157666",
@@ -800,6 +864,14 @@
       "CachePath": "3E/{3E20C047-2E6F-CC81-7015-7A07B5464EC3}.wem"
      },
      {
+      "Id": "856242761",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "EksamensprojektWwise\\Originals\\SFX\\Carpet_Texture-007.wav",
+      "CachePath": "E9/{E9CCEA23-D49C-707E-E4E2-3F51C8985E86}.wem"
+     },
+     {
       "Id": "860934273",
       "Language": "SFX",
       "Streaming": "false",
@@ -840,6 +912,14 @@
       "CachePath": "3B/{3B3D075B-7752-CF35-830E-B3DF8366CCA3}.wem"
      },
      {
+      "Id": "900261532",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "EksamensprojektWwise\\Originals\\SFX\\Carpet_Texture-008.wav",
+      "CachePath": "7F/{7F1CB5FF-E339-95E1-AFE0-7227D625B47E}.wem"
+     },
+     {
       "Id": "901203002",
       "Language": "SFX",
       "Streaming": "false",
@@ -870,6 +950,14 @@
       "Location": "Memory",
       "ShortName": "EksamensprojektWwise\\Originals\\SFX\\Carpet_Step_2-008.wav",
       "CachePath": "74/{74B412B3-F264-DCEE-956B-5C153255009E}.wem"
+     },
+     {
+      "Id": "927161079",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "EksamensprojektWwise\\Originals\\SFX\\Carpet_Step-005.wav",
+      "CachePath": "C9/{C94D95CC-75AB-20CE-7218-13EEF9EA843D}.wem"
      },
      {
       "Id": "943204351",
@@ -910,6 +998,14 @@
       "Location": "Memory",
       "ShortName": "EksamensprojektWwise\\Originals\\SFX\\Skuffe_Ind-002.wav",
       "CachePath": "95/{95F9D317-E043-64D4-3D0E-9FAB0D86547E}.wem"
+     },
+     {
+      "Id": "979031044",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "EksamensprojektWwise\\Originals\\SFX\\Carpet_Texture-009.wav",
+      "CachePath": "19/{1906C09C-3B73-A243-EDCF-9EE9CD32BF3C}.wem"
      },
      {
       "Id": "983813656",
@@ -966,6 +1062,14 @@
       "Location": "Memory",
       "ShortName": "EksamensprojektWwise\\Originals\\SFX\\Cabinet_Open_3.wav",
       "CachePath": "B5/{B53747D8-079D-3B6E-2598-28046F684843}.wem"
+     },
+     {
+      "Id": "1017019208",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "EksamensprojektWwise\\Originals\\SFX\\Carpet_Step-010.wav",
+      "CachePath": "F1/{F13AEBAE-AB8D-DBD5-CC37-52F8950389F8}.wem"
      },
      {
       "Id": "1021846890",
@@ -1048,6 +1152,22 @@
       "CachePath": "E6/{E687E7DC-CF81-82DE-0E78-B2A895CBEF3A}.wem"
      },
      {
+      "Id": "1066736166",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "EksamensprojektWwise\\Originals\\SFX\\Carpet_Texture-005.wav",
+      "CachePath": "1E/{1E6E3A2A-F9A4-04E4-D5BB-A73C45C802B3}.wem"
+     },
+     {
+      "Id": "1069163309",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "EksamensprojektWwise\\Originals\\SFX\\Carpet_Step-002.wav",
+      "CachePath": "97/{97C4015D-FF25-F086-7951-BF9C9D9014BE}.wem"
+     },
+     {
       "Id": "1070350176",
       "Language": "SFX",
       "Streaming": "false",
@@ -1060,8 +1180,9 @@
      {
       "Id": "4255376059",
       "Name": "Play_Bookshelf_Cabinet_Close",
-      "ObjectPath": "\\Events\\Default Work Unit\\Cabinets\\Play_Bookshelf_Cabinet_Close",
+      "ObjectPath": "\\Events\\SFX\\Objects\\Cabinets\\Play_Bookshelf_Cabinet_Close",
       "GUID": "{C57D6E7E-C8C6-44CE-832A-3A67880F23A0}",
+      "Color": "8",
       "DurationType": "OneShot",
       "DurationMin": "0.981289",
       "DurationMax": "1.0854504",
@@ -1101,8 +1222,9 @@
      {
       "Id": "2481548253",
       "Name": "Play_Bookshelf_Cabinet_Open",
-      "ObjectPath": "\\Events\\Default Work Unit\\Cabinets\\Play_Bookshelf_Cabinet_Open",
+      "ObjectPath": "\\Events\\SFX\\Objects\\Cabinets\\Play_Bookshelf_Cabinet_Open",
       "GUID": "{8ADA70CC-8C1E-4E94-BE7A-873BD6F8E89F}",
+      "Color": "8",
       "DurationType": "OneShot",
       "DurationMin": "0.76357",
       "DurationMax": "1.04664",
@@ -1142,8 +1264,9 @@
      {
       "Id": "1347786538",
       "Name": "Play_Cabinet_Draw_Close",
-      "ObjectPath": "\\Events\\Default Work Unit\\Cabinets\\Play_Cabinet_Draw_Close",
+      "ObjectPath": "\\Events\\SFX\\Objects\\Cabinets\\Play_Cabinet_Draw_Close",
       "GUID": "{E8A2427E-3550-49F0-96FD-C4E08AD10E3F}",
+      "Color": "8",
       "DurationType": "OneShot",
       "DurationMin": "1.1842101",
       "DurationMax": "1.3606875",
@@ -1198,11 +1321,12 @@
      {
       "Id": "4258792910",
       "Name": "Play_Cabinet_Draw_Open",
-      "ObjectPath": "\\Events\\Default Work Unit\\Cabinets\\Play_Cabinet_Draw_Open",
+      "ObjectPath": "\\Events\\SFX\\Objects\\Cabinets\\Play_Cabinet_Draw_Open",
       "GUID": "{AA086A02-8586-4368-953C-4EC1591E1892}",
+      "Color": "8",
       "DurationType": "OneShot",
-      "DurationMin": "0",
-      "DurationMax": "0",
+      "DurationMin": "0.9717186",
+      "DurationMax": "1.8128269",
       "MediaRefs": [
        {
         "Id": "310145761"
@@ -1235,10 +1359,11 @@
       "Name": "Play_FSBack",
       "ObjectPath": "\\Events\\Player\\Play_FSBack",
       "GUID": "{241637BD-4940-4821-BBC3-535AAAC79395}",
+      "Color": "1",
       "MaxAttenuation": "50",
       "DurationType": "OneShot",
-      "DurationMin": "1.250875",
-      "DurationMax": "3.5",
+      "DurationMin": "0",
+      "DurationMax": "0.945135",
       "SwitchContainers": [
        {
         "SwitchValue": {
@@ -1249,25 +1374,40 @@
         },
         "MediaRefs": [
          {
-          "Id": "50829802"
+          "Id": "84162569"
          },
          {
-          "Id": "166747718"
+          "Id": "89975996"
+         },
+         {
+          "Id": "160873394"
          },
          {
           "Id": "198614840"
          },
          {
-          "Id": "282301507"
+          "Id": "271782980"
          },
          {
-          "Id": "312410540"
+          "Id": "285702296"
+         },
+         {
+          "Id": "299862196"
          },
          {
           "Id": "333689584"
          },
          {
+          "Id": "349133057"
+         },
+         {
+          "Id": "350414441"
+         },
+         {
           "Id": "378264715"
+         },
+         {
+          "Id": "387729452"
          },
          {
           "Id": "394551106"
@@ -1276,22 +1416,25 @@
           "Id": "395206649"
          },
          {
-          "Id": "452746440"
-         },
-         {
-          "Id": "505914770"
-         },
-         {
-          "Id": "546259954"
-         },
-         {
           "Id": "581056281"
          },
          {
           "Id": "608888312"
          },
          {
-          "Id": "760580256"
+          "Id": "618541652"
+         },
+         {
+          "Id": "767721366"
+         },
+         {
+          "Id": "774812347"
+         },
+         {
+          "Id": "804666013"
+         },
+         {
+          "Id": "808433203"
          },
          {
           "Id": "830043247"
@@ -1300,32 +1443,22 @@
           "Id": "847207346"
          },
          {
-          "Id": "943204351"
+          "Id": "856242761"
+         },
+         {
+          "Id": "900261532"
+         },
+         {
+          "Id": "947310149"
+         },
+         {
+          "Id": "979031044"
          },
          {
           "Id": "1037127939"
          },
          {
-          "Id": "1053272454"
-         }
-        ]
-       },
-       {
-        "SwitchValue": {
-         "GroupType": "Switch",
-         "GroupId": "4050929301",
-         "Id": "2185786256",
-         "GUID": "{ADE85F24-97E2-41EA-AF91-21D7ACFDC344}"
-        },
-        "MediaRefs": [
-         {
-          "Id": "68469168"
-         },
-         {
-          "Id": "752203284"
-         },
-         {
-          "Id": "830572607"
+          "Id": "1066736166"
          }
         ]
        },
@@ -1354,9 +1487,6 @@
           "Id": "560497447"
          },
          {
-          "Id": "720642648"
-         },
-         {
           "Id": "738538910"
          },
          {
@@ -1367,31 +1497,6 @@
          },
          {
           "Id": "1030826398"
-         }
-        ]
-       },
-       {
-        "SwitchValue": {
-         "GroupType": "Switch",
-         "GroupId": "4050929301",
-         "Id": "2637588553",
-         "GUID": "{489F938C-52D2-44BF-A188-0CB73A226A23}"
-        },
-        "MediaRefs": [
-         {
-          "Id": "41764518"
-         },
-         {
-          "Id": "124697463"
-         },
-         {
-          "Id": "512419251"
-         },
-         {
-          "Id": "568086991"
-         },
-         {
-          "Id": "991939243"
          }
         ]
        },
@@ -1442,10 +1547,11 @@
       "Name": "Play_FSForward",
       "ObjectPath": "\\Events\\Player\\Play_FSForward",
       "GUID": "{9B5E6030-2213-47DF-AB48-36874C8AD8D9}",
+      "Color": "1",
       "MaxAttenuation": "50",
       "DurationType": "OneShot",
-      "DurationMin": "1.250875",
-      "DurationMax": "3.5",
+      "DurationMin": "0",
+      "DurationMax": "0.8366682",
       "SwitchContainers": [
        {
         "SwitchValue": {
@@ -1456,83 +1562,94 @@
         },
         "MediaRefs": [
          {
-          "Id": "166747718"
+          "Id": "45577981"
          },
          {
-          "Id": "175238146"
+          "Id": "79542059"
          },
          {
-          "Id": "219205901"
+          "Id": "84162569"
          },
          {
-          "Id": "282301507"
+          "Id": "89975996"
          },
          {
-          "Id": "306996258"
+          "Id": "160873394"
          },
          {
-          "Id": "307372351"
+          "Id": "271782980"
          },
          {
-          "Id": "312410540"
+          "Id": "285702296"
          },
          {
-          "Id": "338867029"
+          "Id": "287090829"
          },
          {
-          "Id": "435688002"
+          "Id": "299862196"
          },
          {
-          "Id": "452746440"
+          "Id": "349133057"
          },
          {
-          "Id": "505914770"
+          "Id": "350414441"
          },
          {
-          "Id": "546259954"
+          "Id": "387729452"
          },
          {
-          "Id": "581485402"
+          "Id": "464856770"
          },
          {
-          "Id": "602692716"
+          "Id": "591778919"
          },
          {
-          "Id": "760580256"
+          "Id": "607186932"
          },
          {
-          "Id": "866940124"
+          "Id": "618541652"
          },
          {
-          "Id": "943204351"
+          "Id": "767721366"
          },
          {
-          "Id": "991176849"
+          "Id": "774812347"
          },
          {
-          "Id": "1053272454"
+          "Id": "804666013"
          },
          {
-          "Id": "1070350176"
-         }
-        ]
-       },
-       {
-        "SwitchValue": {
-         "GroupType": "Switch",
-         "GroupId": "4050929301",
-         "Id": "2185786256",
-         "GUID": "{ADE85F24-97E2-41EA-AF91-21D7ACFDC344}"
-        },
-        "MediaRefs": [
-         {
-          "Id": "68469168"
+          "Id": "808433203"
          },
          {
-          "Id": "752203284"
+          "Id": "816807131"
          },
          {
-          "Id": "830572607"
+          "Id": "856242761"
+         },
+         {
+          "Id": "900261532"
+         },
+         {
+          "Id": "927161079"
+         },
+         {
+          "Id": "947310149"
+         },
+         {
+          "Id": "979031044"
+         },
+         {
+          "Id": "1017019208"
+         },
+         {
+          "Id": "1060488270"
+         },
+         {
+          "Id": "1066736166"
+         },
+         {
+          "Id": "1069163309"
          }
         ]
        },
@@ -1664,10 +1781,11 @@
       "Name": "Play_FSSide",
       "ObjectPath": "\\Events\\Player\\Play_FSSide",
       "GUID": "{83EF0AEC-1A98-4E91-88D3-5ABC730E4FAF}",
+      "Color": "1",
       "MaxAttenuation": "50",
       "DurationType": "OneShot",
       "DurationMin": "0",
-      "DurationMax": "1.75",
+      "DurationMax": "1.5",
       "SwitchContainers": [
        {
         "SwitchValue": {
@@ -1743,25 +1861,6 @@
         "SwitchValue": {
          "GroupType": "Switch",
          "GroupId": "4050929301",
-         "Id": "2185786256",
-         "GUID": "{ADE85F24-97E2-41EA-AF91-21D7ACFDC344}"
-        },
-        "MediaRefs": [
-         {
-          "Id": "68469168"
-         },
-         {
-          "Id": "752203284"
-         },
-         {
-          "Id": "830572607"
-         }
-        ]
-       },
-       {
-        "SwitchValue": {
-         "GroupType": "Switch",
-         "GroupId": "4050929301",
          "Id": "2058049674",
          "GUID": "{01D74985-5AAD-4D47-AB4D-3BEFB42EDB14}",
          "Default": "true"
@@ -1771,16 +1870,46 @@
           "Id": "45625094"
          },
          {
+          "Id": "84162569"
+         },
+         {
           "Id": "190621521"
          },
          {
           "Id": "199929400"
          },
          {
+          "Id": "271782980"
+         },
+         {
           "Id": "282347760"
          },
          {
+          "Id": "299862196"
+         },
+         {
+          "Id": "349133057"
+         },
+         {
+          "Id": "387729452"
+         },
+         {
           "Id": "443176583"
+         },
+         {
+          "Id": "618541652"
+         },
+         {
+          "Id": "774812347"
+         },
+         {
+          "Id": "808433203"
+         },
+         {
+          "Id": "947310149"
+         },
+         {
+          "Id": "1060488270"
          }
         ]
        },
@@ -1826,8 +1955,9 @@
      {
       "Id": "259954442",
       "Name": "Play_Kitchen_Cabinet_Bottom_Close",
-      "ObjectPath": "\\Events\\Default Work Unit\\Cabinets\\Play_Kitchen_Cabinet_Bottom_Close",
+      "ObjectPath": "\\Events\\SFX\\Objects\\Cabinets\\Play_Kitchen_Cabinet_Bottom_Close",
       "GUID": "{FA839368-11C4-4B4E-BF59-BF39D670639D}",
+      "Color": "8",
       "DurationType": "OneShot",
       "DurationMin": "0.981289",
       "DurationMax": "1.0854504",
@@ -1867,8 +1997,9 @@
      {
       "Id": "1437364014",
       "Name": "Play_Kitchen_Cabinet_Bottom_Open",
-      "ObjectPath": "\\Events\\Default Work Unit\\Cabinets\\Play_Kitchen_Cabinet_Bottom_Open",
+      "ObjectPath": "\\Events\\SFX\\Objects\\Cabinets\\Play_Kitchen_Cabinet_Bottom_Open",
       "GUID": "{9D1DDA21-BF4D-40A8-A684-9C16EAF546EE}",
+      "Color": "8",
       "DurationType": "OneShot",
       "DurationMin": "0.76357",
       "DurationMax": "1.04664",
@@ -1908,8 +2039,9 @@
      {
       "Id": "1760803494",
       "Name": "Play_Kitchen_Cabinet_Top_Close",
-      "ObjectPath": "\\Events\\Default Work Unit\\Cabinets\\Play_Kitchen_Cabinet_Top_Close",
+      "ObjectPath": "\\Events\\SFX\\Objects\\Cabinets\\Play_Kitchen_Cabinet_Top_Close",
       "GUID": "{5E568F85-4D51-47A4-9C4B-0CEC5ADC7320}",
+      "Color": "8",
       "DurationType": "OneShot",
       "DurationMin": "0.981289",
       "DurationMax": "1.0854504",
@@ -1949,8 +2081,9 @@
      {
       "Id": "567305970",
       "Name": "Play_Kitchen_Cabinet_Top_Open",
-      "ObjectPath": "\\Events\\Default Work Unit\\Cabinets\\Play_Kitchen_Cabinet_Top_Open",
+      "ObjectPath": "\\Events\\SFX\\Objects\\Cabinets\\Play_Kitchen_Cabinet_Top_Open",
       "GUID": "{B6FE863D-2C11-4625-8037-AD160C9ADADD}",
+      "Color": "8",
       "DurationType": "OneShot",
       "DurationMin": "0.76357",
       "DurationMax": "1.04664",
@@ -2050,6 +2183,6 @@
     ]
    }
   ],
-  "FileHash": "{A22E813E-9F77-6B87-9D3B-F25EBA02B9FD}"
+  "FileHash": "{03ADB255-6CE2-AC41-D089-F8DD61DEEB27}"
  }
 }
