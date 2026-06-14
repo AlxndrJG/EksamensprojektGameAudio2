@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{69C07AC4-2AB0-417A-A9B2-DC14CCE12DE0}",
     "Language": "SFX",
-    "Hash": "{2996F421-4876-6B79-4CD3-16B5BC2E2298}",
+    "Hash": "{86A8EDEA-2B61-8147-E5CD-ECA7C94817B1}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -142,6 +142,14 @@
       "Location": "Memory",
       "ShortName": "EksamensprojektWwise\\Originals\\SFX\\Carpet_Texture-006.wav",
       "CachePath": "A4/{A4C6AFBF-BCBD-32EB-E392-736CEA9D12AD}.wem"
+     },
+     {
+      "Id": "162018684",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "AK_Factory_IR\\Halls\\AK Berlin Teldex.wav",
+      "CachePath": "5A/{5AB56D93-EF18-4D3F-8FE9-78402B3F6085}.wem"
      },
      {
       "Id": "166747718",
@@ -1176,6 +1184,23 @@
       "CachePath": "B6/{B6F9B905-D3E1-C511-51E1-2DDC90456E34}.wem"
      }
     ],
+    "Plugins": {
+     "ShareSets": [
+      {
+       "Id": "3725018352",
+       "Name": "Short_Hall_Stereo",
+       "ObjectPath": "\\Effects\\Factory AK Convolution Reverb Effects Stereo\\Halls\\Short_Hall_Stereo",
+       "GUID": "{7CCA1CF8-86A1-4EF8-B8B1-B236E286390D}",
+       "LibName": "Wwise Convolution Reverb",
+       "LibId": "8323075",
+       "MediaRefs": [
+        {
+         "Id": "162018684"
+        }
+       ]
+      }
+     ]
+    },
     "Events": [
      {
       "Id": "4255376059",
@@ -2135,6 +2160,35 @@
       ]
      }
     ],
+    "Busses": [
+     {
+      "Id": "2246998526",
+      "Name": "Main Audio Bus",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus",
+      "GUID": "{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"
+     },
+     {
+      "Id": "3545700988",
+      "Name": "Reverbs",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Reverbs",
+      "GUID": "{F7A3A2BB-DDD6-4A7B-96BC-2B9D2DADC013}"
+     }
+    ],
+    "AuxBusses": [
+     {
+      "Id": "1188439079",
+      "Name": "RV_Child_Bedroom",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Reverbs\\RV_Child_Bedroom",
+      "GUID": "{B15F643F-9ABD-496D-AA17-3B4A72D4FF66}",
+      "PluginRefs": {
+       "ShareSets": [
+        {
+         "Id": "3725018352"
+        }
+       ]
+      }
+     }
+    ],
     "SwitchGroups": [
      {
       "Id": "4050929301",
@@ -2183,6 +2237,6 @@
     ]
    }
   ],
-  "FileHash": "{03ADB255-6CE2-AC41-D089-F8DD61DEEB27}"
+  "FileHash": "{5A17A2DF-9686-2B3C-D606-4540738F07D7}"
  }
 }

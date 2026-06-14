@@ -55,7 +55,13 @@ namespace AK
     namespace BUSSES
     {
         static const AkUniqueID MAIN_AUDIO_BUS = 2246998526U;
+        static const AkUniqueID REVERBS = 3545700988U;
     } // namespace BUSSES
+
+    namespace AUX_BUSSES
+    {
+        static const AkUniqueID RV_CHILD_BEDROOM = 1188439079U;
+    } // namespace AUX_BUSSES
 
     namespace AUDIO_DEVICES
     {

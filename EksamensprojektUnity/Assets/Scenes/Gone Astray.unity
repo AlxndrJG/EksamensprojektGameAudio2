@@ -29764,6 +29764,7 @@ GameObject:
   - component: {fileID: 1180097813}
   - component: {fileID: 1180097815}
   - component: {fileID: 1180097814}
+  - component: {fileID: 1180097816}
   m_Layer: 0
   m_Name: Room_Child
   m_TagString: Untagged
@@ -29804,7 +29805,7 @@ MonoBehaviour:
   reverbAuxBus:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 710f50099d99d4a82965bb73947a28f8, type: 2}
   reverbLevel: 1
   transmissionLoss: 1
   distanceBehavior: 0
@@ -29835,6 +29836,33 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 4.2, y: 2.5, z: 5.2}
   m_Center: {x: 0.1, y: 1.2, z: -1.6}
+--- !u!54 &1180097816
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1180097812}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1186106791
 GameObject:
   m_ObjectHideFlags: 0
@@ -53736,13 +53764,14 @@ GameObject:
   m_Component:
   - component: {fileID: 492154784002443710}
   - component: {fileID: 492154784002443705}
-  - component: {fileID: 5817381541843796655}
   - component: {fileID: 507717271340823974}
   - component: {fileID: 97958612506077371}
   - component: {fileID: 5817381541843796656}
-  - component: {fileID: 5817381541843796659}
   - component: {fileID: 5817381541843796658}
+  - component: {fileID: 5817381541843796659}
+  - component: {fileID: 5817381541843796655}
   - component: {fileID: 5817381541843796657}
+  - component: {fileID: 5817381541843796660}
   m_Layer: 0
   m_Name: MainCamera
   m_TagString: MainCamera
@@ -54653,6 +54682,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: AK.Wwise.Unity.MonoBehaviour::AkRoomAwareObject
   m_Collider: {fileID: 0}
+--- !u!65 &5817381541843796660
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 492154784002443707}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &6094414423224483685
 MonoBehaviour:
   m_ObjectHideFlags: 0

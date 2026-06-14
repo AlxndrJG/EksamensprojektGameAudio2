@@ -10,11 +10,36 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{E92960CE-24C9-8FFE-7147-5DEFD0EFE4AB}",
+    "Hash": "{01E8F454-399C-9FFC-58FB-E2930ED59911}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
+    "Media": [
+     {
+      "Id": "162018684",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "OtherBank",
+      "ShortName": "AK_Factory_IR\\Halls\\AK Berlin Teldex.wav",
+      "CachePath": "5A/{5AB56D93-EF18-4D3F-8FE9-78402B3F6085}.wem"
+     }
+    ],
     "Plugins": {
+     "ShareSets": [
+      {
+       "Id": "3725018352",
+       "Name": "Short_Hall_Stereo",
+       "ObjectPath": "\\Effects\\Factory AK Convolution Reverb Effects Stereo\\Halls\\Short_Hall_Stereo",
+       "GUID": "{7CCA1CF8-86A1-4EF8-B8B1-B236E286390D}",
+       "LibName": "Wwise Convolution Reverb",
+       "LibId": "8323075",
+       "MediaRefs": [
+        {
+         "Id": "162018684"
+        }
+       ]
+      }
+     ],
      "AudioDevices": [
       {
        "Id": "2317455096",
@@ -40,6 +65,27 @@
       "Name": "Main Audio Bus",
       "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus",
       "GUID": "{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"
+     },
+     {
+      "Id": "3545700988",
+      "Name": "Reverbs",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Reverbs",
+      "GUID": "{F7A3A2BB-DDD6-4A7B-96BC-2B9D2DADC013}"
+     }
+    ],
+    "AuxBusses": [
+     {
+      "Id": "1188439079",
+      "Name": "RV_Child_Bedroom",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Reverbs\\RV_Child_Bedroom",
+      "GUID": "{B15F643F-9ABD-496D-AA17-3B4A72D4FF66}",
+      "PluginRefs": {
+       "ShareSets": [
+        {
+         "Id": "3725018352"
+        }
+       ]
+      }
      }
     ],
     "SwitchGroups": [
@@ -90,6 +136,6 @@
     ]
    }
   ],
-  "FileHash": "{325D3E1E-9D68-4BD0-59B2-268E2174AAC7}"
+  "FileHash": "{8AEFAD12-CDE5-611D-A79A-EE82A16E61B2}"
  }
 }

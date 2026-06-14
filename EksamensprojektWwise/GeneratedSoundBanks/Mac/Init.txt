@@ -1,5 +1,12 @@
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	2246998526	Main Audio Bus			\Default Work Unit\Main Audio Bus	
+	3545700988	Reverbs			\Default Work Unit\Reverbs	
+
+Auxiliary Bus	ID	Name			Wwise Object Path	Notes
+	1188439079	RV_Child_Bedroom			\Default Work Unit\Reverbs\RV_Child_Bedroom	
+
+Effect plug-ins	ID	Name	Type				Notes
+	3725018352	Short_Hall_Stereo	Wwise Convolution Reverb			Impulse response created by Pinguin ing.büro © 2010 Pinguin ing.büro.  All rights reserved. IR Pre-delay: 6ms
 
 Audio Devices	ID	Name	Type				Notes
 	2317455096	No_Output	No Output			

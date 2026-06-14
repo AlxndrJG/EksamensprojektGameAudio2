@@ -23,6 +23,12 @@ Switch	ID	Name	Switch Group			Notes
 	2412606308	Carpet	Materials			
 	2637588553	Tile	Materials			
 
+Auxiliary Bus	ID	Name			Wwise Object Path	Notes
+	1188439079	RV_Child_Bedroom			\Default Work Unit\Reverbs\RV_Child_Bedroom	
+
+Effect plug-ins	ID	Name	Type				Notes
+	3725018352	Short_Hall_Stereo	Wwise Convolution Reverb			Impulse response created by Pinguin ing.büro © 2010 Pinguin ing.büro.  All rights reserved. IR Pre-delay: 6ms
+
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	3654417	Carpet_Step_2-001	.cache\71\{719F61CD-FCDE-1DFA-57A6-06F30815E07E}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\FS_Dirt\FS_Dirt_2-Foot\Carpet_Step_2-001		56946
 	24312501	Wood_Impact-004	.cache\58\{58121ED7-2190-9112-8ED4-04D09F57C4A3}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Wood\FS_Wood_2-Foot\Wood_Impact-004		51892
@@ -169,4 +175,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	1066736166	Carpet_Texture-005	.cache\1E\{1E6E3A2A-F9A4-04E4-D5BB-A73C45C802B3}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Carpet\FS_Carpet_3-Texture\Carpet_Texture-005		33754
 	1069163309	Carpet_Step-002	.cache\97\{97C4015D-FF25-F086-7951-BF9C9D9014BE}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\FS_Carpet\FS_Carpet_2-Foot\Carpet_Step-002		17682
 	1070350176	Carpet_Step-005	.cache\B6\{B6F9B905-D3E1-C511-51E1-2DDC90456E34}.wem		\Containers\Player\Footsteps\FS_Property\FSSide\FS_Carpet\FS_Carpet_1-Foot\Carpet_Step-005		48096
+
+Plug-in Media	ID	Name	Source file	Type	Wwise Object Path	Notes	Data Size
+	162018684	Short_Hall_Stereo	.cache\5A\{5AB56D93-EF18-4D3F-8FE9-78402B3F6085}.wem	Wwise Convolution Reverb (Shared)	\Effects\Factory AK Convolution Reverb Effects Stereo\Halls\Short_Hall_Stereo	Impulse response created by Pinguin ing.büro © 2010 Pinguin ing.büro.  All rights reserved. IR Pre-delay: 6ms	434832
 

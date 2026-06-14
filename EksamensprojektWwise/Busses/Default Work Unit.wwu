@@ -10,6 +10,28 @@
 						</Reference>
 					</ReferenceList>
 				</Bus>
+				<Bus Name="Reverbs" ID="{F7A3A2BB-DDD6-4A7B-96BC-2B9D2DADC013}">
+					<ReferenceList>
+						<Reference Name="AudioDevice" PluginName="System" CompanyID="0" PluginID="174" PluginType="7">
+							<ObjectRef Name="System" ID="{D364DB56-82EC-4887-BA7F-9B458EA45D87}" WorkUnitID="{D1D85E79-25A1-4ACB-A6EF-70D99869F184}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AuxBus Name="RV_Child_Bedroom" ID="{B15F643F-9ABD-496D-AA17-3B4A72D4FF66}">
+							<ObjectLists>
+								<ObjectList Name="Effects">
+									<EffectSlot Name="" ID="{632B22F5-F9E8-4845-A3CC-1E2805B85A74}" ShortID="313599494">
+										<ReferenceList>
+											<Reference Name="Effect" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
+												<ObjectRef Name="Short_Hall_Stereo" ID="{7CCA1CF8-86A1-4EF8-B8B1-B236E286390D}" WorkUnitID="{9D68BE5F-8CA6-43E0-BCE2-C7D59F63E582}"/>
+											</Reference>
+										</ReferenceList>
+									</EffectSlot>
+								</ObjectList>
+							</ObjectLists>
+						</AuxBus>
+					</ChildrenList>
+				</Bus>
 			</ChildrenList>
 		</WorkUnit>
 	</Busses>
