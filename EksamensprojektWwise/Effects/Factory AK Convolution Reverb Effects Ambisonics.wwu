@@ -1758,12 +1758,12 @@ IR Pre-delay: 6ms</Comment>
 							<Flags>5</Flags>
 						</Point>
 						<Point>
-							<XPos>2.32004509607578</XPos>
+							<XPos>2.32005764703654</XPos>
 							<YPos>1653.29971</YPos>
 							<Flags>0</Flags>
 						</Point>
 						<Point>
-							<XPos>3.85104166666667</XPos>
+							<XPos>3.8510625</XPos>
 							<YPos>20</YPos>
 							<Flags>37</Flags>
 						</Point>
@@ -1782,12 +1782,12 @@ IR Pre-delay: 6ms</Comment>
 							<Flags>5</Flags>
 						</Point>
 						<Point>
-							<XPos>1.46209096075778</XPos>
+							<XPos>1.46209887036536</XPos>
 							<YPos>-2.47235</YPos>
 							<Flags>0</Flags>
 						</Point>
 						<Point>
-							<XPos>3.85104166666667</XPos>
+							<XPos>3.8510625</XPos>
 							<YPos>-2.472</YPos>
 							<Flags>37</Flags>
 						</Point>
@@ -1861,12 +1861,12 @@ IR Pre-delay: 6ms</Comment>
 							<Flags>5</Flags>
 						</Point>
 						<Point>
-							<XPos>2.33182146684709</XPos>
+							<XPos>2.33183408151556</XPos>
 							<YPos>4732.65455</YPos>
 							<Flags>0</Flags>
 						</Point>
 						<Point>
-							<XPos>3.85104166666667</XPos>
+							<XPos>3.8510625</XPos>
 							<YPos>20</YPos>
 							<Flags>37</Flags>
 						</Point>
@@ -1885,18 +1885,18 @@ IR Pre-delay: 6ms</Comment>
 							<Flags>5</Flags>
 						</Point>
 						<Point>
-							<XPos>1.80518498212717</XPos>
+							<XPos>1.80519474780194</XPos>
 							<YPos>-0.62827</YPos>
 							<Flags>0</Flags>
 							<SegmentShape>Exp3</SegmentShape>
 						</Point>
 						<Point>
-							<XPos>2.7045852530699</XPos>
+							<XPos>2.70459988431281</XPos>
 							<YPos>-118.74346</YPos>
 							<Flags>0</Flags>
 						</Point>
 						<Point>
-							<XPos>3.85104166666667</XPos>
+							<XPos>3.8510625</XPos>
 							<YPos>-120</YPos>
 							<Flags>37</Flags>
 						</Point>
@@ -1913,6 +1913,7 @@ IR Pre-delay: 6ms</Comment>
 IR Pre-delay: 10ms </Comment>
 							<PropertyList>
 								<Property Name="CenterLevel" Type="Real32" Value="-12"/>
+								<Property Name="ChannelConfigOverride" Type="int64" Value="516"/>
 								<Property Name="IRConvolutionStop" Type="Real64" Value="3.28472916666667"/>
 								<Property Name="IRConvolutionThreshold" Type="Real32">
 									<ValueList>
@@ -1920,7 +1921,7 @@ IR Pre-delay: 10ms </Comment>
 									</ValueList>
 								</Property>
 								<Property Name="IRLPFAutomate" Type="bool" Value="True"/>
-								<Property Name="IRLevel" Type="Real32" Value="-31"/>
+								<Property Name="IRLevel" Type="Real32" Value="-6.9"/>
 								<Property Name="IRStretch" Type="Real32" Value="150"/>
 								<Property Name="PreDelay" Type="Real32" Value="55"/>
 							</PropertyList>
@@ -1969,7 +1970,7 @@ IR Pre-delay: 10ms </Comment>
 							<Flags>5</Flags>
 						</Point>
 						<Point>
-							<XPos>3.28472916666667</XPos>
+							<XPos>3.28475</XPos>
 							<YPos>11478.06452</YPos>
 							<Flags>37</Flags>
 						</Point>
@@ -1988,17 +1989,17 @@ IR Pre-delay: 10ms </Comment>
 							<Flags>5</Flags>
 						</Point>
 						<Point>
-							<XPos>1.04467508921438</XPos>
+							<XPos>1.0446817150466</XPos>
 							<YPos>-4.05124</YPos>
 							<Flags>0</Flags>
 						</Point>
 						<Point>
-							<XPos>2.00506316574726</XPos>
+							<XPos>2.0050758828229</XPos>
 							<YPos>-19.00462</YPos>
 							<Flags>0</Flags>
 						</Point>
 						<Point>
-							<XPos>3.28472916666667</XPos>
+							<XPos>3.28475</XPos>
 							<YPos>-19.005</YPos>
 							<Flags>37</Flags>
 						</Point>
@@ -2878,7 +2879,7 @@ IR Pre-delay: 8ms
 										<Value>-78</Value>
 									</ValueList>
 								</Property>
-								<Property Name="IRLevel" Type="Real32" Value="-23"/>
+								<Property Name="IRLevel" Type="Real32" Value="-25"/>
 								<Property Name="IRStretch" Type="Real32" Value="70"/>
 								<Property Name="PreDelay" Type="Real32" Value="5"/>
 							</PropertyList>
@@ -3299,7 +3300,7 @@ IR Pre-delay: 4ms
 							<Flags>5</Flags>
 						</Point>
 						<Point>
-							<XPos>1.28770833333333</XPos>
+							<XPos>1.28772916666667</XPos>
 							<YPos>20000</YPos>
 							<Flags>37</Flags>
 						</Point>
@@ -3318,7 +3319,7 @@ IR Pre-delay: 4ms
 							<Flags>5</Flags>
 						</Point>
 						<Point>
-							<XPos>1.28770833333333</XPos>
+							<XPos>1.28772916666667</XPos>
 							<YPos>0</YPos>
 							<Flags>37</Flags>
 						</Point>
@@ -3567,7 +3568,7 @@ IR Pre-delay: 5ms </Comment>
 							<Flags>5</Flags>
 						</Point>
 						<Point>
-							<XPos>1.5563125</XPos>
+							<XPos>1.55633333333333</XPos>
 							<YPos>20000</YPos>
 							<Flags>37</Flags>
 						</Point>
@@ -3586,7 +3587,7 @@ IR Pre-delay: 5ms </Comment>
 							<Flags>5</Flags>
 						</Point>
 						<Point>
-							<XPos>1.5563125</XPos>
+							<XPos>1.55633333333333</XPos>
 							<YPos>0</YPos>
 							<Flags>37</Flags>
 						</Point>
@@ -3945,7 +3946,7 @@ IR Pre-delay: 2ms </Comment>
 							<Flags>5</Flags>
 						</Point>
 						<Point>
-							<XPos>1.68779166666667</XPos>
+							<XPos>1.6878125</XPos>
 							<YPos>1094.19315</YPos>
 							<Flags>37</Flags>
 						</Point>
@@ -3964,7 +3965,7 @@ IR Pre-delay: 2ms </Comment>
 							<Flags>5</Flags>
 						</Point>
 						<Point>
-							<XPos>1.68779166666667</XPos>
+							<XPos>1.6878125</XPos>
 							<YPos>0</YPos>
 							<Flags>37</Flags>
 						</Point>

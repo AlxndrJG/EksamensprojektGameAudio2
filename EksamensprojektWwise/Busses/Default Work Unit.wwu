@@ -18,12 +18,52 @@
 					</ReferenceList>
 					<ChildrenList>
 						<AuxBus Name="RV_Child_Bedroom" ID="{B15F643F-9ABD-496D-AA17-3B4A72D4FF66}">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="BusChannelConfig" Type="int32">
+									<ValueList>
+										<Value>516</Value>
+									</ValueList>
+								</Property>
+								<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+								<Property Name="ListenerRelativeRouting" Type="bool" Value="True"/>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="Attenuate_50" ID="{143E31F9-1597-48C4-9436-CFA24A10D321}" WorkUnitID="{E312AA2F-7D32-49AE-9B3F-853E8C0370AC}"/>
+								</Reference>
+							</ReferenceList>
+							<PositioningInfo>
+								<Panner Name="" ID="{199F0F22-0C57-4064-A5B4-DCAD54BBE83E}"/>
+							</PositioningInfo>
 							<ObjectLists>
 								<ObjectList Name="Effects">
 									<EffectSlot Name="" ID="{632B22F5-F9E8-4845-A3CC-1E2805B85A74}" ShortID="313599494">
 										<ReferenceList>
 											<Reference Name="Effect" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
-												<ObjectRef Name="Short_Hall_Stereo" ID="{7CCA1CF8-86A1-4EF8-B8B1-B236E286390D}" WorkUnitID="{9D68BE5F-8CA6-43E0-BCE2-C7D59F63E582}"/>
+												<ObjectRef Name="Petite_Room_Ambisonics" ID="{0913CC91-34FA-4BD0-9D12-B491B69B5328}" WorkUnitID="{1562D13C-41E8-4FA1-A341-D4CB726E2AEC}"/>
+											</Reference>
+										</ReferenceList>
+									</EffectSlot>
+								</ObjectList>
+							</ObjectLists>
+						</AuxBus>
+						<AuxBus Name="RV_Hall" ID="{D5AE201C-E1EF-4AAB-9A25-A89486E31350}">
+							<PropertyList>
+								<Property Name="BusChannelConfig" Type="int32">
+									<ValueList>
+										<Value>516</Value>
+									</ValueList>
+								</Property>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+							</PropertyList>
+							<ObjectLists>
+								<ObjectList Name="Effects">
+									<EffectSlot Name="" ID="{AB5B1C2A-A7B8-4092-89B4-B31B166FA5E4}" ShortID="236808788">
+										<ReferenceList>
+											<Reference Name="Effect" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
+												<ObjectRef Name="Hamburg_Echo_Chamber_Org_Ambisonics" ID="{56C681B4-C7CD-44AD-A4BB-34C5D5059B52}" WorkUnitID="{1562D13C-41E8-4FA1-A341-D4CB726E2AEC}"/>
 											</Reference>
 										</ReferenceList>
 									</EffectSlot>

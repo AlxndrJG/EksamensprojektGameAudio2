@@ -10,32 +10,32 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{01E8F454-399C-9FFC-58FB-E2930ED59911}",
+    "Hash": "{71DA5711-4290-0189-7E83-B9A5E8E6C5E6}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
     "Media": [
      {
-      "Id": "162018684",
+      "Id": "393877766",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "OtherBank",
-      "ShortName": "AK_Factory_IR\\Halls\\AK Berlin Teldex.wav",
-      "CachePath": "5A/{5AB56D93-EF18-4D3F-8FE9-78402B3F6085}.wem"
+      "ShortName": "AK_Factory_IR_Amb\\Rooms\\AK Amb Luna Studio.wav",
+      "CachePath": "84/{84802250-F9F5-8485-CDDC-C86BE04152B7}.wem"
      }
     ],
     "Plugins": {
      "ShareSets": [
       {
-       "Id": "3725018352",
-       "Name": "Short_Hall_Stereo",
-       "ObjectPath": "\\Effects\\Factory AK Convolution Reverb Effects Stereo\\Halls\\Short_Hall_Stereo",
-       "GUID": "{7CCA1CF8-86A1-4EF8-B8B1-B236E286390D}",
+       "Id": "4033730959",
+       "Name": "Petite_Room_Ambisonics",
+       "ObjectPath": "\\Effects\\Factory AK Convolution Reverb Effects Ambisonics\\Rooms\\Petite_Room_Ambisonics",
+       "GUID": "{0913CC91-34FA-4BD0-9D12-B491B69B5328}",
        "LibName": "Wwise Convolution Reverb",
        "LibId": "8323075",
        "MediaRefs": [
         {
-         "Id": "162018684"
+         "Id": "393877766"
         }
        ]
       }
@@ -79,10 +79,11 @@
       "Name": "RV_Child_Bedroom",
       "ObjectPath": "\\Busses\\Default Work Unit\\Reverbs\\RV_Child_Bedroom",
       "GUID": "{B15F643F-9ABD-496D-AA17-3B4A72D4FF66}",
+      "MaxAttenuation": "50",
       "PluginRefs": {
        "ShareSets": [
         {
-         "Id": "3725018352"
+         "Id": "4033730959"
         }
        ]
       }
@@ -136,6 +137,6 @@
     ]
    }
   ],
-  "FileHash": "{8AEFAD12-CDE5-611D-A79A-EE82A16E61B2}"
+  "FileHash": "{0B1E3FF2-2C25-E8F1-06A6-C2227CF43FC0}"
  }
 }

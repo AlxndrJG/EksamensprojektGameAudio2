@@ -9,7 +9,7 @@
 						<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 						<Property Name="GameAuxSendVolume" Type="Real64">
 							<ValueList>
-								<Value>4</Value>
+								<Value>-7</Value>
 							</ValueList>
 						</Property>
 						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
@@ -23,6 +23,9 @@
 						</Reference>
 						<Reference Name="OutputBus">
 							<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+						</Reference>
+						<Reference Name="UserAuxSend0">
+							<ObjectRef Name="RV_Hall" ID="{D5AE201C-E1EF-4AAB-9A25-A89486E31350}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>

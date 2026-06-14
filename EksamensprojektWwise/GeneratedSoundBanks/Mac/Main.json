@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{69C07AC4-2AB0-417A-A9B2-DC14CCE12DE0}",
     "Language": "SFX",
-    "Hash": "{86A8EDEA-2B61-8147-E5CD-ECA7C94817B1}",
+    "Hash": "{EF6F8737-4452-264C-A474-0263522875BA}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -142,14 +142,6 @@
       "Location": "Memory",
       "ShortName": "EksamensprojektWwise\\Originals\\SFX\\Carpet_Texture-006.wav",
       "CachePath": "A4/{A4C6AFBF-BCBD-32EB-E392-736CEA9D12AD}.wem"
-     },
-     {
-      "Id": "162018684",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "AK_Factory_IR\\Halls\\AK Berlin Teldex.wav",
-      "CachePath": "5A/{5AB56D93-EF18-4D3F-8FE9-78402B3F6085}.wem"
      },
      {
       "Id": "166747718",
@@ -446,6 +438,14 @@
       "Location": "Memory",
       "ShortName": "EksamensprojektWwise\\Originals\\SFX\\Cabinet_Open_4.wav",
       "CachePath": "C1/{C190672F-C509-2E7E-CD0B-B534083A885C}.wem"
+     },
+     {
+      "Id": "393877766",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "AK_Factory_IR_Amb\\Rooms\\AK Amb Luna Studio.wav",
+      "CachePath": "84/{84802250-F9F5-8485-CDDC-C86BE04152B7}.wem"
      },
      {
       "Id": "394551106",
@@ -1187,15 +1187,15 @@
     "Plugins": {
      "ShareSets": [
       {
-       "Id": "3725018352",
-       "Name": "Short_Hall_Stereo",
-       "ObjectPath": "\\Effects\\Factory AK Convolution Reverb Effects Stereo\\Halls\\Short_Hall_Stereo",
-       "GUID": "{7CCA1CF8-86A1-4EF8-B8B1-B236E286390D}",
+       "Id": "4033730959",
+       "Name": "Petite_Room_Ambisonics",
+       "ObjectPath": "\\Effects\\Factory AK Convolution Reverb Effects Ambisonics\\Rooms\\Petite_Room_Ambisonics",
+       "GUID": "{0913CC91-34FA-4BD0-9D12-B491B69B5328}",
        "LibName": "Wwise Convolution Reverb",
        "LibId": "8323075",
        "MediaRefs": [
         {
-         "Id": "162018684"
+         "Id": "393877766"
         }
        ]
       }
@@ -2180,10 +2180,11 @@
       "Name": "RV_Child_Bedroom",
       "ObjectPath": "\\Busses\\Default Work Unit\\Reverbs\\RV_Child_Bedroom",
       "GUID": "{B15F643F-9ABD-496D-AA17-3B4A72D4FF66}",
+      "MaxAttenuation": "50",
       "PluginRefs": {
        "ShareSets": [
         {
-         "Id": "3725018352"
+         "Id": "4033730959"
         }
        ]
       }
@@ -2237,6 +2238,6 @@
     ]
    }
   ],
-  "FileHash": "{5A17A2DF-9686-2B3C-D606-4540738F07D7}"
+  "FileHash": "{D4E08B01-6336-AC05-3573-15B91CCDF877}"
  }
 }
