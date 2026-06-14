@@ -69,6 +69,28 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_Cabinet_Draw_Open" ID="{AA086A02-8586-4368-953C-4EC1591E1892}">
+					<ChildrenList>
+						<Action Name="" ID="{B727F834-4408-431E-9AD9-4130E8926A30}" ShortID="256035444">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Cabinet_Draw_Open" ID="{E1B884EF-2748-4155-92FE-D988973EFBDD}" WorkUnitID="{CC65FEA8-FA6B-4248-9B9D-3D7072710284}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Cabinet_Draw_Close" ID="{E8A2427E-3550-49F0-96FD-C4E08AD10E3F}">
+					<ChildrenList>
+						<Action Name="" ID="{64103FBC-83E7-47F6-84D8-84086493D42F}" ShortID="542292347">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Cabinet_Draw_Close" ID="{E5B25F31-3A9A-4150-ABEC-863946167DA5}" WorkUnitID="{CC65FEA8-FA6B-4248-9B9D-3D7072710284}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

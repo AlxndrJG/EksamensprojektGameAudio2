@@ -5,7 +5,7 @@
 			<PropertyList>
 				<Property Name="AudioFileImporter\x64_FilesToImport" Type="string" Value="AAAAAAAAAAA="/>
 				<Property Name="AudioFilesImporter\DestinationFolder" Type="string" Value="Y:\Documents\GitHub\EksamensprojektGameAudio2\EksamensprojektWwise\Originals\SFX\EksamensprojektWwise\Originals\SFX\"/>
-				<Property Name="AudioFilesImporter\Path" Type="string" Value="Y:\Desktop\GameAudio2\Gone Astray\G.A_Lydbibliotek110626\GA_Sounds\SFX\Kitchen\Kitchen_Sink\Water_Metal_Impact\"/>
+				<Property Name="AudioFilesImporter\Path" Type="string" Value="Y:\Desktop\GA_Foley\Foley_Carpet\Carpet_Step\"/>
 				<Property Name="Event Action List\{241637BD-4940-4821-BBC3-535AAAC79395}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{4E61DA24-6F36-4098-A304-755A4FF3E9A5}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{5E568F85-4D51-47A4-9C4B-0CEC5ADC7320}\x64_Expand States" Type="string" Value=""/>
@@ -14,8 +14,10 @@
 				<Property Name="Event Action List\{9B5E6030-2213-47DF-AB48-36874C8AD8D9}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{9D1DDA21-BF4D-40A8-A684-9C16EAF546EE}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{9DED7C3E-60EC-40E0-8488-0D4267B08330}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{AA086A02-8586-4368-953C-4EC1591E1892}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{B6FE863D-2C11-4625-8037-AD160C9ADADD}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{C57D6E7E-C8C6-44CE-832A-3A67880F23A0}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{E8A2427E-3550-49F0-96FD-C4E08AD10E3F}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{FA839368-11C4-4B4E-BF59-BF39D670639D}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="EventView\FilterMode1" Type="int32" Value="2"/>
 				<Property Name="EventView\FilterMode2" Type="int32" Value="2"/>
@@ -142,6 +144,7 @@
 				</Property>
 				<Property Name="SwitchContainerEditorLocation\{1DEDB888-9E4F-4E54-A6C9-191F7A654EA5}\x64_Collapsed States" Type="string" Value=""/>
 				<Property Name="SwitchContainerEditorLocation\{31261704-E034-499E-85B8-05241EC62733}\x64_Collapsed States" Type="string" Value=""/>
+				<Property Name="SwitchContainerEditorLocation\{31D343B3-ABBA-4638-AAFC-D4BB15A472E1}\x64_Collapsed States" Type="string" Value=""/>
 				<Property Name="SwitchContainerEditorLocation\{46CF5B2D-F3FF-4C93-A5A1-68ABE320C1DF}\x64_Collapsed States" Type="string" Value=""/>
 				<Property Name="SwitchContainerEditorLocation\{57EE5F53-692B-4FAF-B02D-7D294D12BA2F}\x64_Collapsed States" Type="string" Value=""/>
 				<Property Name="SwitchContainerEditorLocation\{62CD60CB-2C6D-40FD-AC05-FEA1FDC0A88B}\x64_Collapsed States" Type="string" Value=""/>
@@ -150,6 +153,7 @@
 				<Property Name="SwitchContainerEditorLocation\{72E2A1F7-3487-44FA-A391-D4558B3FCDAB}\x64_Collapsed States" Type="string" Value=""/>
 				<Property Name="SwitchContainerEditorLocation\{AFEBA5C7-64A0-4B43-A1D2-DEDF5B2465DC}\x64_Collapsed States" Type="string" Value=""/>
 				<Property Name="SwitchContainerEditorLocation\{BE7B66DE-2968-4C76-A2BE-CB85A3FAAC96}\x64_Collapsed States" Type="string" Value=""/>
+				<Property Name="SwitchContainerEditorLocation\{CB7BA898-5331-43E4-ACBD-053059D32FD7}\x64_Collapsed States" Type="string" Value=""/>
 				<Property Name="TabPropertyEditor\LayoutInstanceId_PropertyEditorInObjectTabLeft_{031E1E2C-DC25-4332-80C3-FFCC371AC803}\CurrentSearch" Type="string" Value=""/>
 				<Property Name="TabPropertyEditor\LayoutInstanceId_PropertyEditorInObjectTabLeft_{031E1E2C-DC25-4332-80C3-FFCC371AC803}\RecentCategoriesTopCount" Type="int32" Value="0"/>
 				<Property Name="TabPropertyEditor\LayoutInstanceId_PropertyEditorInObjectTabLeft_{031E1E2C-DC25-4332-80C3-FFCC371AC803}\VisualOptions" Type="int32" Value="2"/>

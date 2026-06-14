@@ -6,6 +6,7 @@
 				<WorkUnit Name="Cabinet_Bookshelf" ID="{71EECC52-AA90-49B1-B25E-FBEA4961A280}" PersistMode="Reference"/>
 				<WorkUnit Name="Cabinet_Kitchen_Top" ID="{D662E550-F06B-4CBB-8B50-BB6DF3340AE6}" PersistMode="Reference"/>
 				<WorkUnit Name="Cabinet_Kitchen_Bottom" ID="{6DF0C4E7-1377-44AD-81E3-881E4BBE9A7C}" PersistMode="Reference"/>
+				<WorkUnit Name="Cabinet_Draw" ID="{CC65FEA8-FA6B-4248-9B9D-3D7072710284}" PersistMode="Reference"/>
 			</ChildrenList>
 		</WorkUnit>
 	</Containers>

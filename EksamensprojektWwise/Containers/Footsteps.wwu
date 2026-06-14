@@ -6,16 +6,6 @@
 				<PropertyContainer Name="FS_Property" ID="{02C8498B-0B13-4CA6-98E4-26402CCFF731}" ShortID="617162113">
 					<PropertyList>
 						<Property Name="3DSpatialization" Type="int16" Value="2"/>
-						<Property Name="Highpass" Type="int16">
-							<ValueList>
-								<Value>26</Value>
-							</ValueList>
-						</Property>
-						<Property Name="Lowpass" Type="int16">
-							<ValueList>
-								<Value>47</Value>
-							</ValueList>
-						</Property>
 						<Property Name="SpeakerPanning" Type="int16" Value="1"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
@@ -56,6 +46,9 @@
 							<ChildrenList>
 								<RandomSequenceContainer Name="FS_Tile" ID="{D4C6B3B8-05B0-4D91-B9F5-53AD453514D6}" ShortID="64317691">
 									<PropertyList>
+										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 										<Property Name="RandomOrSequence" Type="int16" Value="0"/>
 									</PropertyList>
 									<ReferenceList>
@@ -221,6 +214,9 @@
 								</RandomSequenceContainer>
 								<RandomSequenceContainer Name="FS_Wood" ID="{B3C430C7-3BFC-4846-A263-96FC83C60BE7}" ShortID="4079074">
 									<PropertyList>
+										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 										<Property Name="RandomOrSequence" Type="int16" Value="0"/>
 									</PropertyList>
 									<ReferenceList>
@@ -252,7 +248,7 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<Sound Name="Footstep_Walking_Hardwood_02" ID="{DB974D16-6B03-44D6-ACD9-F767DAA44154}" ShortID="219047011">
+												<Sound Name="Wood_Impact-001" ID="{55FFEB25-EBB5-4630-9C47-8E0D8FF181E2}" ShortID="293667927">
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
@@ -262,19 +258,24 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="Footstep_Walking_Hardwood_02" ID="{657E9CAD-EFFE-403D-BDFA-30BD06D69556}">
+														<AudioFileSource Name="Wood_Impact-001" ID="{E22BC220-C210-4251-AF1D-748EE4EF7F9C}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.01041"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.04031"/>
+															</PropertyList>
 															<Language>SFX</Language>
-															<AudioFile>EksamensprojektGameAudio2\EksamensprojektWwise\Originals\SFX\WoodSolid\Footstep_Walking_Hardwood_02.wav</AudioFile>
+															<AudioFile>EksamensprojektWwise\Originals\SFX\Wood_Impact-001.wav</AudioFile>
 															<MediaIDList>
-																<MediaID ID="190621521"/>
+																<MediaID ID="738538910"/>
 															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>
-														<ActiveSource Name="Footstep_Walking_Hardwood_02" ID="{657E9CAD-EFFE-403D-BDFA-30BD06D69556}" Platform="Linked"/>
+														<ActiveSource Name="Wood_Impact-001" ID="{E22BC220-C210-4251-AF1D-748EE4EF7F9C}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
-												<Sound Name="Footstep_Walking_Hardwood_03" ID="{050640F6-FE6F-4AA2-A308-7E34B14AC1E8}" ShortID="668777565">
+												<Sound Name="Wood_Impact-002" ID="{C73A1CDB-3C06-429F-BE49-04BDC68A0DBC}" ShortID="12499110">
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
@@ -284,19 +285,24 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="Footstep_Walking_Hardwood_03" ID="{0E9A45A6-F924-4153-BEFD-2358C82B10EC}">
+														<AudioFileSource Name="Wood_Impact-002" ID="{04BF48D1-8233-498B-AA09-A40A194F9326}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.01115"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.02107"/>
+															</PropertyList>
 															<Language>SFX</Language>
-															<AudioFile>EksamensprojektGameAudio2\EksamensprojektWwise\Originals\SFX\WoodSolid\Footstep_Walking_Hardwood_03.wav</AudioFile>
+															<AudioFile>EksamensprojektWwise\Originals\SFX\Wood_Impact-002.wav</AudioFile>
 															<MediaIDList>
-																<MediaID ID="282347760"/>
+																<MediaID ID="84162569"/>
 															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>
-														<ActiveSource Name="Footstep_Walking_Hardwood_03" ID="{0E9A45A6-F924-4153-BEFD-2358C82B10EC}" Platform="Linked"/>
+														<ActiveSource Name="Wood_Impact-002" ID="{04BF48D1-8233-498B-AA09-A40A194F9326}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
-												<Sound Name="Footstep_Walking_Hardwood_04" ID="{A960DC90-C473-4F27-8062-C1570A37D9E1}" ShortID="459857946">
+												<Sound Name="Wood_Impact-003" ID="{73A4EF05-2874-448F-97C8-8F8D401D199E}" ShortID="105779779">
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
@@ -306,19 +312,24 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="Footstep_Walking_Hardwood_04" ID="{5C766107-5ED6-40A0-BC97-4E128816D021}">
+														<AudioFileSource Name="Wood_Impact-003" ID="{D519F910-E280-4E2A-84B5-B288BE44431E}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.01731"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.02455"/>
+															</PropertyList>
 															<Language>SFX</Language>
-															<AudioFile>EksamensprojektGameAudio2\EksamensprojektWwise\Originals\SFX\WoodSolid\Footstep_Walking_Hardwood_04.wav</AudioFile>
+															<AudioFile>EksamensprojektWwise\Originals\SFX\Wood_Impact-003.wav</AudioFile>
 															<MediaIDList>
-																<MediaID ID="199929400"/>
+																<MediaID ID="560497447"/>
 															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>
-														<ActiveSource Name="Footstep_Walking_Hardwood_04" ID="{5C766107-5ED6-40A0-BC97-4E128816D021}" Platform="Linked"/>
+														<ActiveSource Name="Wood_Impact-003" ID="{D519F910-E280-4E2A-84B5-B288BE44431E}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
-												<Sound Name="Footstep_Walking_Hardwood_01" ID="{E479F2CA-A3FE-4C6B-A617-E90D4929E196}" ShortID="266738927">
+												<Sound Name="Wood_Impact-004" ID="{CC3D8D92-E50E-4BE9-90C9-855930C76E23}" ShortID="431685466">
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
@@ -328,19 +339,24 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="Footstep_Walking_Hardwood_01" ID="{349EB427-14F0-484D-AB3C-849795B21DF0}">
+														<AudioFileSource Name="Wood_Impact-004" ID="{11B2F97B-3F27-40DC-9CB6-57947B2B4815}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.01208"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.05673"/>
+															</PropertyList>
 															<Language>SFX</Language>
-															<AudioFile>EksamensprojektGameAudio2\EksamensprojektWwise\Originals\SFX\WoodSolid\Footstep_Walking_Hardwood_01.wav</AudioFile>
+															<AudioFile>EksamensprojektWwise\Originals\SFX\Wood_Impact-004.wav</AudioFile>
 															<MediaIDList>
-																<MediaID ID="45625094"/>
+																<MediaID ID="24312501"/>
 															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>
-														<ActiveSource Name="Footstep_Walking_Hardwood_01" ID="{349EB427-14F0-484D-AB3C-849795B21DF0}" Platform="Linked"/>
+														<ActiveSource Name="Wood_Impact-004" ID="{11B2F97B-3F27-40DC-9CB6-57947B2B4815}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
-												<Sound Name="Footstep_Walking_Hardwood_05" ID="{DA89ED4F-B2B8-48CB-8070-9D56FF7F68B4}" ShortID="303305237">
+												<Sound Name="Wood_Impact-005" ID="{AC4B3D6F-A5C1-475A-B082-BE54E624DED3}" ShortID="74220736">
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
@@ -350,16 +366,156 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="Footstep_Walking_Hardwood_05" ID="{1CBCB685-0517-4935-87DF-938C1C29550C}">
+														<AudioFileSource Name="Wood_Impact-005" ID="{F11332E2-8324-4A3B-BF4C-BA3E5DB31232}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.01771"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.0382"/>
+															</PropertyList>
 															<Language>SFX</Language>
-															<AudioFile>EksamensprojektGameAudio2\EksamensprojektWwise\Originals\SFX\WoodSolid\Footstep_Walking_Hardwood_05.wav</AudioFile>
+															<AudioFile>EksamensprojektWwise\Originals\SFX\Wood_Impact-005.wav</AudioFile>
 															<MediaIDList>
-																<MediaID ID="443176583"/>
+																<MediaID ID="720642648"/>
 															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>
-														<ActiveSource Name="Footstep_Walking_Hardwood_05" ID="{1CBCB685-0517-4935-87DF-938C1C29550C}" Platform="Linked"/>
+														<ActiveSource Name="Wood_Impact-005" ID="{F11332E2-8324-4A3B-BF4C-BA3E5DB31232}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Wood_Impact-006" ID="{C1C6691F-AAB0-4AF1-9EAD-D59CA4BBC713}" ShortID="661257366">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Wood_Impact-006" ID="{7CE59165-2C73-41BB-992A-1884270F83DB}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.01578"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.05081"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>EksamensprojektWwise\Originals\SFX\Wood_Impact-006.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="329975831"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Wood_Impact-006" ID="{7CE59165-2C73-41BB-992A-1884270F83DB}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Wood_Impact-007" ID="{9A1B19CD-FDEB-495F-81E6-2BE8E4D2F7D5}" ShortID="586845486">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Wood_Impact-007" ID="{CA2B406D-15A0-475B-AA0C-531FFECEF74D}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.01283"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.06049"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>EksamensprojektWwise\Originals\SFX\Wood_Impact-007.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="260190266"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Wood_Impact-007" ID="{CA2B406D-15A0-475B-AA0C-531FFECEF74D}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Wood_Impact-008" ID="{92939D06-2031-4948-A542-F520D836877D}" ShortID="494572416">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Wood_Impact-008" ID="{1BE5C175-0AAE-40E6-9946-EE3AB10F2804}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.00609"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.05335"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>EksamensprojektWwise\Originals\SFX\Wood_Impact-008.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="1023266597"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Wood_Impact-008" ID="{1BE5C175-0AAE-40E6-9946-EE3AB10F2804}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Wood_Impact-009" ID="{DBC309ED-B4BF-499A-BAC3-142CE917AB86}" ShortID="881892862">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Wood_Impact-009" ID="{38AA2E5D-2306-47D5-AE57-C26C7DC49AE7}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.00876"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.05265"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>EksamensprojektWwise\Originals\SFX\Wood_Impact-009.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="1030826398"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Wood_Impact-009" ID="{38AA2E5D-2306-47D5-AE57-C26C7DC49AE7}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Wood_Impact-010" ID="{AEF530E2-AAD2-49AF-85E2-33EE2F6E0B7D}" ShortID="390691827">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Wood_Impact-010" ID="{A1467987-6198-4F4B-A5D2-A691FBBD2D5F}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.00517"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.03767"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>EksamensprojektWwise\Originals\SFX\Wood_Impact-010.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="914484002"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Wood_Impact-010" ID="{A1467987-6198-4F4B-A5D2-A691FBBD2D5F}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
 											</ChildrenList>
@@ -403,6 +559,9 @@
 								</RandomSequenceContainer>
 								<RandomSequenceContainer Name="FS_Carpet" ID="{53D607D0-1C08-4185-B2AE-E22BA33F43C4}" ShortID="273847577">
 									<PropertyList>
+										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 										<Property Name="RandomOrSequence" Type="int16" Value="0"/>
 									</PropertyList>
 									<ReferenceList>
@@ -433,6 +592,278 @@
 													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
 												</Reference>
 											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Carpet_Step-001" ID="{3FDB08D4-CAD3-46B4-AB04-BB6ECD1F7E27}" ShortID="955389829">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Carpet_Step-001" ID="{6DAA3DBC-D3B7-44F5-9B83-360B7C15004C}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.00911"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.09411"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>EksamensprojektWwise\Originals\SFX\Carpet_Step-001.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="333689584"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Carpet_Step-001" ID="{6DAA3DBC-D3B7-44F5-9B83-360B7C15004C}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Carpet_Step-002" ID="{0047B4A7-8308-43DD-B5C0-9A701522B401}" ShortID="769045498">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Carpet_Step-002" ID="{6986C295-7E8B-4B95-B14B-6F8B83A1278F}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.01012"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.0769"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>EksamensprojektWwise\Originals\SFX\Carpet_Step-002.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="581056281"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Carpet_Step-002" ID="{6986C295-7E8B-4B95-B14B-6F8B83A1278F}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Carpet_Step-003" ID="{0CF3755E-3E8C-4563-9D7B-7397667C3C3B}" ShortID="45314121">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Carpet_Step-003" ID="{716996E4-002C-4FC5-80DE-3B5D72F9A70E}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.0081"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.04145"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>EksamensprojektWwise\Originals\SFX\Carpet_Step-003.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="395206649"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Carpet_Step-003" ID="{716996E4-002C-4FC5-80DE-3B5D72F9A70E}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Carpet_Step-004" ID="{4C0502C8-71FE-4626-9687-C53EDB495640}" ShortID="867374322">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Carpet_Step-004" ID="{37983202-D39F-431D-9C7B-C1964D5CC79D}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.0081"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.11029"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>EksamensprojektWwise\Originals\SFX\Carpet_Step-004.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="608888312"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Carpet_Step-004" ID="{37983202-D39F-431D-9C7B-C1964D5CC79D}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Carpet_Step-005" ID="{D8F90D85-62FB-4862-86E4-295F07043527}" ShortID="153013407">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Carpet_Step-005" ID="{3772B47D-DC36-4B00-AA0F-2DE3DD8CE7DD}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.00911"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.11135"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>EksamensprojektWwise\Originals\SFX\Carpet_Step-005.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="198614840"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Carpet_Step-005" ID="{3772B47D-DC36-4B00-AA0F-2DE3DD8CE7DD}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Carpet_Step-006" ID="{F0231FB4-AC3B-4856-8A6D-06024D6D40A0}" ShortID="240441708">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Carpet_Step-006" ID="{D5AEEAD2-5266-4FB9-98AA-4C0BCD6E2FEF}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.00911"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.17403"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>EksamensprojektWwise\Originals\SFX\Carpet_Step-006.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="378264715"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Carpet_Step-006" ID="{D5AEEAD2-5266-4FB9-98AA-4C0BCD6E2FEF}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Carpet_Step-007" ID="{540968AE-90F3-4CF2-A9E7-0DC37C08CD48}" ShortID="693169619">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Carpet_Step-007" ID="{E361168C-580D-4B6C-A39C-4A96CFDAD1F6}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.00911"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.13053"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>EksamensprojektWwise\Originals\SFX\Carpet_Step-007.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="847207346"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Carpet_Step-007" ID="{E361168C-580D-4B6C-A39C-4A96CFDAD1F6}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Carpet_Step-008" ID="{B300178F-F789-475D-B620-A62BFBC18172}" ShortID="635825173">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Carpet_Step-008" ID="{BA7BB634-DBCF-48FA-93D2-500F652CC531}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.00911"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.12854"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>EksamensprojektWwise\Originals\SFX\Carpet_Step-008.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="394551106"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Carpet_Step-008" ID="{BA7BB634-DBCF-48FA-93D2-500F652CC531}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Carpet_Step-009" ID="{4564CDE6-EDA2-43D0-BF75-1877399E673D}" ShortID="829820668">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Carpet_Step-009" ID="{EA62A0B1-C832-4FC8-A13C-2D72ECEE557D}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.0081"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.14677"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>EksamensprojektWwise\Originals\SFX\Carpet_Step-009.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="830043247"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Carpet_Step-009" ID="{EA62A0B1-C832-4FC8-A13C-2D72ECEE557D}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Carpet_Step-010" ID="{BBFFA479-56BE-4C45-A279-2C1E078EF86C}" ShortID="9003642">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Carpet_Step-010" ID="{FED73EC2-3D1B-4168-9DEE-001EC632DD49}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.0081"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.11543"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>EksamensprojektWwise\Originals\SFX\Carpet_Step-010.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="1037127939"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Carpet_Step-010" ID="{FED73EC2-3D1B-4168-9DEE-001EC632DD49}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
 										</RandomSequenceContainer>
 										<RandomSequenceContainer Name="FS_Carpet_3-Texture" ID="{ECF4410A-DFD0-4647-A355-30B2BBBC02ED}" ShortID="267809433">
 											<ReferenceList>
@@ -443,6 +874,233 @@
 													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
 												</Reference>
 											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Carpet_Texture-001" ID="{EEDFA883-EBB3-43F5-B1F4-27560B5F5267}" ShortID="125688356">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Carpet_Texture-001" ID="{32C764FC-30FD-459C-B1FC-10207FFE0F24}">
+															<Language>SFX</Language>
+															<AudioFile>EksamensprojektWwise\Originals\SFX\Carpet_Texture-001.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="452746440"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Carpet_Texture-001" ID="{32C764FC-30FD-459C-B1FC-10207FFE0F24}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Carpet_Texture-002" ID="{653A099B-5180-476F-844D-0CE8995DF863}" ShortID="943525237">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Carpet_Texture-002" ID="{E61361C5-2D30-4CF7-ABBC-BFF171D177F7}">
+															<Language>SFX</Language>
+															<AudioFile>EksamensprojektWwise\Originals\SFX\Carpet_Texture-002.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="1053272454"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Carpet_Texture-002" ID="{E61361C5-2D30-4CF7-ABBC-BFF171D177F7}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Carpet_Texture-003" ID="{71D24E3B-0C71-47AC-8BDE-6D0A3028E0A6}" ShortID="476931365">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Carpet_Texture-003" ID="{9CA7B16C-049E-4033-8962-6B410571B813}">
+															<Language>SFX</Language>
+															<AudioFile>EksamensprojektWwise\Originals\SFX\Carpet_Texture-003.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="282301507"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Carpet_Texture-003" ID="{9CA7B16C-049E-4033-8962-6B410571B813}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Carpet_Texture-004" ID="{017BDAB8-00F3-4997-98DC-2AEC8D03C585}" ShortID="675254588">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Carpet_Texture-004" ID="{B349CD40-EE28-45B9-A008-A33FC74B630F}">
+															<Language>SFX</Language>
+															<AudioFile>EksamensprojektWwise\Originals\SFX\Carpet_Texture-004.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="760580256"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Carpet_Texture-004" ID="{B349CD40-EE28-45B9-A008-A33FC74B630F}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Carpet_Texture-005" ID="{CA2FB81A-7327-4CA0-9705-51208F39291F}" ShortID="71339656">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Carpet_Texture-005" ID="{8F09A621-AA1D-4A6F-936B-41A627B9DA23}">
+															<Language>SFX</Language>
+															<AudioFile>EksamensprojektWwise\Originals\SFX\Carpet_Texture-005.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="505914770"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Carpet_Texture-005" ID="{8F09A621-AA1D-4A6F-936B-41A627B9DA23}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Carpet_Texture-006" ID="{877AD77A-9E2B-4B54-9FC2-5167CB821302}" ShortID="394347498">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Carpet_Texture-006" ID="{99170A70-61E0-46E7-BCB1-C3FC233DCF4B}">
+															<Language>SFX</Language>
+															<AudioFile>EksamensprojektWwise\Originals\SFX\Carpet_Texture-006.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="943204351"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Carpet_Texture-006" ID="{99170A70-61E0-46E7-BCB1-C3FC233DCF4B}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Carpet_Texture-007" ID="{93BAAA27-EB46-4A86-9BDE-3ED88E69C4F7}" ShortID="91540714">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Carpet_Texture-007" ID="{65AA3DB1-E4F0-40A0-B5F3-C2CD6606E6D4}">
+															<Language>SFX</Language>
+															<AudioFile>EksamensprojektWwise\Originals\SFX\Carpet_Texture-007.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="166747718"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Carpet_Texture-007" ID="{65AA3DB1-E4F0-40A0-B5F3-C2CD6606E6D4}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Carpet_Texture-008" ID="{6D787EC7-C846-45B1-8E9F-2164C860F842}" ShortID="773356749">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Carpet_Texture-008" ID="{7B100142-A7E8-4918-B909-3843D373C09C}">
+															<Language>SFX</Language>
+															<AudioFile>EksamensprojektWwise\Originals\SFX\Carpet_Texture-008.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="312410540"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Carpet_Texture-008" ID="{7B100142-A7E8-4918-B909-3843D373C09C}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Carpet_Texture-009" ID="{930DDDF9-CB35-4318-9463-322C520730A6}" ShortID="140298236">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Carpet_Texture-009" ID="{091CA924-041D-43AD-BDE8-DC72AED5E422}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.01993"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.08373"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>EksamensprojektWwise\Originals\SFX\Carpet_Texture-009.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="50829802"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Carpet_Texture-009" ID="{091CA924-041D-43AD-BDE8-DC72AED5E422}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Carpet_Texture-010" ID="{03339E23-BEE0-4825-AD3C-F251AE3AF30E}" ShortID="194118009">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Carpet_Texture-010" ID="{BAFCD0D0-E953-4F41-A756-043FEDA33EF4}">
+															<Language>SFX</Language>
+															<AudioFile>EksamensprojektWwise\Originals\SFX\Carpet_Texture-010.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="546259954"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Carpet_Texture-010" ID="{BAFCD0D0-E953-4F41-A756-043FEDA33EF4}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
 										</RandomSequenceContainer>
 									</ChildrenList>
 									<ObjectLists>
@@ -473,6 +1131,9 @@
 								</RandomSequenceContainer>
 								<RandomSequenceContainer Name="FS_Concrete" ID="{C41B8FE7-3CED-410A-A900-C8AFB203E818}" ShortID="8105478">
 									<PropertyList>
+										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 										<Property Name="RandomOrSequence" Type="int16" Value="0"/>
 									</PropertyList>
 									<ReferenceList>
@@ -543,6 +1204,9 @@
 								</RandomSequenceContainer>
 								<RandomSequenceContainer Name="FS_Dirt" ID="{52D1C619-2893-4328-AC36-79E9603267B5}" ShortID="969198306">
 									<PropertyList>
+										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 										<Property Name="RandomOrSequence" Type="int16" Value="0"/>
 									</PropertyList>
 									<ReferenceList>
@@ -574,7 +1238,7 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<Sound Name="FS_Dirt_01" ID="{D3EDE346-B7A8-4641-952A-0923024BDE5B}" ShortID="1068924053">
+												<Sound Name="Carpet_Step_2-001" ID="{16A6909A-9552-4FA5-9F3E-A7B6B949D9E7}" ShortID="424602621">
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
@@ -584,19 +1248,24 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="FS_Dirt_01" ID="{CCA4B8B3-8A11-4876-96BD-C975A744DB1F}">
+														<AudioFileSource Name="Carpet_Step_2-001" ID="{0023E9FD-BF2B-413B-9881-A19023F2022A}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.01673"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.15829"/>
+															</PropertyList>
 															<Language>SFX</Language>
-															<AudioFile>EksamensprojektGameAudio2\EksamensprojektWwise\Originals\SFX\Dirt\FS_Dirt_01.wav</AudioFile>
+															<AudioFile>EksamensprojektWwise\Originals\SFX\Carpet_Step_2-001.wav</AudioFile>
 															<MediaIDList>
-																<MediaID ID="726162783"/>
+																<MediaID ID="341084004"/>
 															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>
-														<ActiveSource Name="FS_Dirt_01" ID="{CCA4B8B3-8A11-4876-96BD-C975A744DB1F}" Platform="Linked"/>
+														<ActiveSource Name="Carpet_Step_2-001" ID="{0023E9FD-BF2B-413B-9881-A19023F2022A}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
-												<Sound Name="FS_Dirt_02" ID="{9E6B1821-530B-48E4-B159-60900EC234E1}" ShortID="684612965">
+												<Sound Name="Carpet_Step_2-002" ID="{1C75DD50-3682-4EF0-B155-EAF67D9A3258}" ShortID="127476653">
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
@@ -606,19 +1275,24 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="FS_Dirt_02" ID="{789248C0-E2BF-43B4-8C45-38A481FDE19E}">
+														<AudioFileSource Name="Carpet_Step_2-002" ID="{8A2772B6-9553-48FE-820B-04CA910A844A}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.0132"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.17027"/>
+															</PropertyList>
 															<Language>SFX</Language>
-															<AudioFile>EksamensprojektGameAudio2\EksamensprojektWwise\Originals\SFX\Dirt\FS_Dirt_02.wav</AudioFile>
+															<AudioFile>EksamensprojektWwise\Originals\SFX\Carpet_Step_2-002.wav</AudioFile>
 															<MediaIDList>
-																<MediaID ID="611354854"/>
+																<MediaID ID="577861633"/>
 															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>
-														<ActiveSource Name="FS_Dirt_02" ID="{789248C0-E2BF-43B4-8C45-38A481FDE19E}" Platform="Linked"/>
+														<ActiveSource Name="Carpet_Step_2-002" ID="{8A2772B6-9553-48FE-820B-04CA910A844A}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
-												<Sound Name="FS_Dirt_03" ID="{8C8824C2-ACCB-4485-AEF7-18C5F89A1487}" ShortID="136497389">
+												<Sound Name="Carpet_Step_2-003" ID="{D9ACBEF7-1A1E-4BBE-B3CD-9624C3709EAE}" ShortID="540948471">
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
@@ -628,19 +1302,24 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="FS_Dirt_03" ID="{85BB8F06-7B3C-4E6F-8F4B-A7EAE1BF598B}">
+														<AudioFileSource Name="Carpet_Step_2-003" ID="{1F38F29C-0215-4E65-BDD0-049C2B11B1C2}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.02261"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.20995"/>
+															</PropertyList>
 															<Language>SFX</Language>
-															<AudioFile>EksamensprojektGameAudio2\EksamensprojektWwise\Originals\SFX\Dirt\FS_Dirt_03.wav</AudioFile>
+															<AudioFile>EksamensprojektWwise\Originals\SFX\Carpet_Step_2-003.wav</AudioFile>
 															<MediaIDList>
-																<MediaID ID="230118352"/>
+																<MediaID ID="467355072"/>
 															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>
-														<ActiveSource Name="FS_Dirt_03" ID="{85BB8F06-7B3C-4E6F-8F4B-A7EAE1BF598B}" Platform="Linked"/>
+														<ActiveSource Name="Carpet_Step_2-003" ID="{1F38F29C-0215-4E65-BDD0-049C2B11B1C2}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
-												<Sound Name="FS_Dirt_04" ID="{73296BDB-4C8E-4612-B664-C1EACA5E8927}" ShortID="260725138">
+												<Sound Name="Carpet_Step_2-004" ID="{62A29504-8B43-48F8-8701-3DE0202657D4}" ShortID="87925234">
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
@@ -650,16 +1329,184 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="FS_Dirt_04" ID="{EB0D18B9-D3AB-475E-80F7-2C6E03E73469}">
+														<AudioFileSource Name="Carpet_Step_2-004" ID="{B52E48A1-F9FF-47D4-965D-BB8D573E6552}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.01271"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.07485"/>
+															</PropertyList>
 															<Language>SFX</Language>
-															<AudioFile>EksamensprojektGameAudio2\EksamensprojektWwise\Originals\SFX\Dirt\FS_Dirt_04.wav</AudioFile>
+															<AudioFile>EksamensprojektWwise\Originals\SFX\Carpet_Step_2-004.wav</AudioFile>
 															<MediaIDList>
-																<MediaID ID="997602928"/>
+																<MediaID ID="325308676"/>
 															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>
-														<ActiveSource Name="FS_Dirt_04" ID="{EB0D18B9-D3AB-475E-80F7-2C6E03E73469}" Platform="Linked"/>
+														<ActiveSource Name="Carpet_Step_2-004" ID="{B52E48A1-F9FF-47D4-965D-BB8D573E6552}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Carpet_Step_2-005" ID="{F2D5031E-98F4-4F29-8C15-B55F1C958FB1}" ShortID="226898078">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Carpet_Step_2-005" ID="{F75B7360-1F01-4B46-83BE-5E396FC0CC25}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.00772"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.09678"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>EksamensprojektWwise\Originals\SFX\Carpet_Step_2-005.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="324876723"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Carpet_Step_2-005" ID="{F75B7360-1F01-4B46-83BE-5E396FC0CC25}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Carpet_Step_2-006" ID="{90749ECE-CAAF-4B6F-BBB4-9E71219EA35C}" ShortID="113976564">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Carpet_Step_2-006" ID="{DA15F156-A9C9-4DE3-B87E-8D4C539A1E6A}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.00744"/>
+																<Property Name="LoopBegin" Type="Real64" Value="0.10788"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.10416"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>EksamensprojektWwise\Originals\SFX\Carpet_Step_2-006.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="32808192"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Carpet_Step_2-006" ID="{DA15F156-A9C9-4DE3-B87E-8D4C539A1E6A}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Carpet_Step_2-007" ID="{B3ADA3CE-61E8-4595-86C3-99423C791343}" ShortID="671107129">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Carpet_Step_2-007" ID="{24FCEFFE-73C4-492E-B704-791DB411786E}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.00768"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.09478"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>EksamensprojektWwise\Originals\SFX\Carpet_Step_2-007.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="480470741"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Carpet_Step_2-007" ID="{24FCEFFE-73C4-492E-B704-791DB411786E}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Carpet_Step_2-008" ID="{FF8C6D69-11EC-4495-9BB2-028E8A947167}" ShortID="694577469">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Carpet_Step_2-008" ID="{BC77B802-A869-4F07-8BE5-F0DEFB0ECD87}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.01187"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.14336"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>EksamensprojektWwise\Originals\SFX\Carpet_Step_2-008.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="832777814"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Carpet_Step_2-008" ID="{BC77B802-A869-4F07-8BE5-F0DEFB0ECD87}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Carpet_Step_2-009" ID="{ADE310AD-7CE7-454E-844E-7A56D91C922A}" ShortID="286118818">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Carpet_Step_2-009" ID="{5B190799-7CA0-44D7-B659-685EB76C5CB8}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.01191"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.13812"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>EksamensprojektWwise\Originals\SFX\Carpet_Step_2-009.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="548011774"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Carpet_Step_2-009" ID="{5B190799-7CA0-44D7-B659-685EB76C5CB8}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Carpet_Step_2-010" ID="{D9929132-CC7E-4E03-8ABD-F1B499CA7B30}" ShortID="418528645">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Carpet_Step_2-010" ID="{9EF3ACA5-23C5-41CD-9CDA-11A3CFA0D44C}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.00708"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.11173"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>EksamensprojektWwise\Originals\SFX\Carpet_Step_2-010.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="337398265"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Carpet_Step_2-010" ID="{9EF3ACA5-23C5-41CD-9CDA-11A3CFA0D44C}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
 											</ChildrenList>
@@ -703,6 +1550,9 @@
 								</RandomSequenceContainer>
 								<RandomSequenceContainer Name="FS_Gravel" ID="{1D72FAE2-9524-483D-BE8C-E04AB026A8AF}" ShortID="382002641">
 									<PropertyList>
+										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 										<Property Name="RandomOrSequence" Type="int16" Value="0"/>
 									</PropertyList>
 									<ReferenceList>
@@ -945,6 +1795,9 @@
 							<ChildrenList>
 								<RandomSequenceContainer Name="FS_Tile" ID="{165B1091-CBDD-4D71-9E16-EF9438BE0390}" ShortID="628790648">
 									<PropertyList>
+										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 										<Property Name="RandomOrSequence" Type="int16" Value="0"/>
 									</PropertyList>
 									<ReferenceList>
@@ -1110,6 +1963,9 @@
 								</RandomSequenceContainer>
 								<RandomSequenceContainer Name="FS_Wood" ID="{02F9B087-BD5E-4B73-9150-5048C6816C3D}" ShortID="157549736">
 									<PropertyList>
+										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 										<Property Name="RandomOrSequence" Type="int16" Value="0"/>
 									</PropertyList>
 									<ReferenceList>
@@ -1130,6 +1986,278 @@
 													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
 												</Reference>
 											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Wood_Impact-001" ID="{33D6C865-A51D-47C2-BC8A-F8085CA533F1}" ShortID="995075008">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Wood_Impact-001" ID="{0B812512-0660-43B9-A486-D612B250F75E}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.01041"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.04292"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>EksamensprojektWwise\Originals\SFX\Wood_Impact-001.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="947310149"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Wood_Impact-001" ID="{0B812512-0660-43B9-A486-D612B250F75E}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Wood_Impact-002" ID="{1F2351F4-2FD5-4B06-AD48-0195FF403164}" ShortID="462297190">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Wood_Impact-002" ID="{51C479E5-A7CB-4579-AD2D-675F0ED0CC57}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.01115"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.02107"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>EksamensprojektWwise\Originals\SFX\Wood_Impact-002.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="84162569"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Wood_Impact-002" ID="{51C479E5-A7CB-4579-AD2D-675F0ED0CC57}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Wood_Impact-003" ID="{89A3A61E-5BBC-4F8F-9E05-92418E36FC0D}" ShortID="463847612">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Wood_Impact-003" ID="{1DF1BB78-09C1-476D-B698-4631003CC119}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.01154"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.02453"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>EksamensprojektWwise\Originals\SFX\Wood_Impact-003.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="618541652"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Wood_Impact-003" ID="{1DF1BB78-09C1-476D-B698-4631003CC119}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Wood_Impact-004" ID="{A74F7DC7-E2C8-4C91-8F8E-633AE287D47D}" ShortID="1032749523">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Wood_Impact-004" ID="{582C5779-FD74-4B9C-95BA-E4602AA34CFB}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.00966"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.05797"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>EksamensprojektWwise\Originals\SFX\Wood_Impact-004.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="349133057"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Wood_Impact-004" ID="{582C5779-FD74-4B9C-95BA-E4602AA34CFB}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Wood_Impact-005" ID="{879E128B-82C4-4C65-8DC8-A0C95EBDD825}" ShortID="526457890">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Wood_Impact-005" ID="{7DE01617-76DA-4975-96F3-CA0CC4B2F350}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.01091"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.04641"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>EksamensprojektWwise\Originals\SFX\Wood_Impact-005.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="1060488270"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Wood_Impact-005" ID="{7DE01617-76DA-4975-96F3-CA0CC4B2F350}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Wood_Impact-006" ID="{A4523A50-24AB-47C1-946A-6D975C5C4E12}" ShortID="800325256">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Wood_Impact-006" ID="{C57ABE91-744B-4575-B9B0-9465AEB5626B}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.01227"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.05615"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>EksamensprojektWwise\Originals\SFX\Wood_Impact-006.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="387729452"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Wood_Impact-006" ID="{C57ABE91-744B-4575-B9B0-9465AEB5626B}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Wood_Impact-007" ID="{61F587A5-6008-405D-9CB4-A8F3E0195885}" ShortID="901975346">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Wood_Impact-007" ID="{09989BCC-8B4A-442E-AD53-B0A32A31F4E4}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.01283"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.06411"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>EksamensprojektWwise\Originals\SFX\Wood_Impact-007.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="299862196"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Wood_Impact-007" ID="{09989BCC-8B4A-442E-AD53-B0A32A31F4E4}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Wood_Impact-008" ID="{4A971DE1-C52B-4AC8-BD9A-C02AF21EE57A}" ShortID="747045004">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Wood_Impact-008" ID="{A08CD9C2-D72E-4EB4-BD0A-6C38FEA56BB5}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.01067"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.05791"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>EksamensprojektWwise\Originals\SFX\Wood_Impact-008.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="774812347"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Wood_Impact-008" ID="{A08CD9C2-D72E-4EB4-BD0A-6C38FEA56BB5}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Wood_Impact-009" ID="{AE411E12-2342-463D-AF98-249CF2F40B37}" ShortID="133289977">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Wood_Impact-009" ID="{1B1EDE65-6B05-4C0E-8F72-E256D57EC9C3}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.0158"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.05264"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>EksamensprojektWwise\Originals\SFX\Wood_Impact-009.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="808433203"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Wood_Impact-009" ID="{1B1EDE65-6B05-4C0E-8F72-E256D57EC9C3}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Wood_Impact-010" ID="{6A7048FD-5B81-4637-B374-017B3FBB029A}" ShortID="431351780">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Wood_Impact-010" ID="{AF7D3534-FDD5-4554-89CA-7D147938A5CE}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.00739"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.03619"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>EksamensprojektWwise\Originals\SFX\Wood_Impact-010.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="271782980"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Wood_Impact-010" ID="{AF7D3534-FDD5-4554-89CA-7D147938A5CE}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
 										</RandomSequenceContainer>
 										<RandomSequenceContainer Name="FS_Wood_2-Foot" ID="{DD4733A0-0EC4-42C8-86FC-9A722B2BBA1F}" ShortID="887293410">
 											<ReferenceList>
@@ -1292,6 +2420,9 @@
 								</RandomSequenceContainer>
 								<RandomSequenceContainer Name="FS_Carpet" ID="{54E759EA-C109-4230-A15C-C224E09C12DA}" ShortID="53200692">
 									<PropertyList>
+										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 										<Property Name="RandomOrSequence" Type="int16" Value="0"/>
 									</PropertyList>
 									<ReferenceList>
@@ -1322,6 +2453,228 @@
 													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
 												</Reference>
 											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Carpet_Step-001" ID="{9518AC4C-3BA0-445D-A8B4-6F14D97AB925}" ShortID="274011447">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Carpet_Step-001" ID="{957040BB-DA1C-4D7D-BB34-7FAA372FEC30}">
+															<Language>SFX</Language>
+															<AudioFile>EksamensprojektWwise\Originals\SFX\Carpet_Step-001.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="866940124"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Carpet_Step-001" ID="{957040BB-DA1C-4D7D-BB34-7FAA372FEC30}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Carpet_Step-002" ID="{75C65321-C635-4E92-ACDD-8282E3129CF7}" ShortID="390901522">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Carpet_Step-002" ID="{9B0D5539-0283-40AA-8D29-23364141822D}">
+															<Language>SFX</Language>
+															<AudioFile>EksamensprojektWwise\Originals\SFX\Carpet_Step-002.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="338867029"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Carpet_Step-002" ID="{9B0D5539-0283-40AA-8D29-23364141822D}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Carpet_Step-003" ID="{AD53A17C-2833-486E-8C26-922120DEA37B}" ShortID="593480084">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Carpet_Step-003" ID="{CFE89E93-CED9-4CC0-A76E-F5B6860088C0}">
+															<Language>SFX</Language>
+															<AudioFile>EksamensprojektWwise\Originals\SFX\Carpet_Step-003.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="306996258"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Carpet_Step-003" ID="{CFE89E93-CED9-4CC0-A76E-F5B6860088C0}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Carpet_Step-004" ID="{82B0649F-C510-4963-BD02-6C933F9E54BB}" ShortID="817714080">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Carpet_Step-004" ID="{DDBE9C1A-1CE9-4F1C-B6F8-056DF3B0F269}">
+															<Language>SFX</Language>
+															<AudioFile>EksamensprojektWwise\Originals\SFX\Carpet_Step-004.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="991176849"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Carpet_Step-004" ID="{DDBE9C1A-1CE9-4F1C-B6F8-056DF3B0F269}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Carpet_Step-005" ID="{66964681-6753-476A-A59F-3A12BD4C0EC5}" ShortID="746739491">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Carpet_Step-005" ID="{8A43467E-6537-4A6A-957F-9E9921E2ADDA}">
+															<Language>SFX</Language>
+															<AudioFile>EksamensprojektWwise\Originals\SFX\Carpet_Step-005.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="1070350176"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Carpet_Step-005" ID="{8A43467E-6537-4A6A-957F-9E9921E2ADDA}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Carpet_Step-006" ID="{4117D0C6-AE72-452D-A4C1-E095802155E7}" ShortID="158959014">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Carpet_Step-006" ID="{BA1BD702-FDCE-442E-B075-E9951C3D5E35}">
+															<Language>SFX</Language>
+															<AudioFile>EksamensprojektWwise\Originals\SFX\Carpet_Step-006.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="581485402"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Carpet_Step-006" ID="{BA1BD702-FDCE-442E-B075-E9951C3D5E35}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Carpet_Step-007" ID="{6B23E38B-5367-4A58-BE2E-F4E1BB6B1A6B}" ShortID="811087167">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Carpet_Step-007" ID="{242D6597-287F-472C-BA96-5E2C83CC0D48}">
+															<Language>SFX</Language>
+															<AudioFile>EksamensprojektWwise\Originals\SFX\Carpet_Step-007.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="602692716"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Carpet_Step-007" ID="{242D6597-287F-472C-BA96-5E2C83CC0D48}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Carpet_Step-008" ID="{B0F2FF97-3F3B-484F-AC3A-001897BDA95E}" ShortID="305156507">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Carpet_Step-008" ID="{05DFE532-C7FD-4849-8758-2008098BD8D3}">
+															<Language>SFX</Language>
+															<AudioFile>EksamensprojektWwise\Originals\SFX\Carpet_Step-008.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="307372351"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Carpet_Step-008" ID="{05DFE532-C7FD-4849-8758-2008098BD8D3}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Carpet_Step-009" ID="{491639C8-9889-4210-8E48-7A51C235F9FE}" ShortID="1051397946">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Carpet_Step-009" ID="{14991B61-61D7-4B91-BF22-09F0155C393E}">
+															<Language>SFX</Language>
+															<AudioFile>EksamensprojektWwise\Originals\SFX\Carpet_Step-009.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="175238146"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Carpet_Step-009" ID="{14991B61-61D7-4B91-BF22-09F0155C393E}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Carpet_Step-010" ID="{BA88F5AF-23CE-48F8-A8D4-4200C269C48A}" ShortID="539155970">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Carpet_Step-010" ID="{72871BF4-AD80-47BD-A96E-87F7CD63FCCA}">
+															<Language>SFX</Language>
+															<AudioFile>EksamensprojektWwise\Originals\SFX\Carpet_Step-010.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="435688002"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Carpet_Step-010" ID="{72871BF4-AD80-47BD-A96E-87F7CD63FCCA}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
 										</RandomSequenceContainer>
 										<RandomSequenceContainer Name="FS_Carpet_3-Texture" ID="{DFFB9639-DF79-46A4-84CD-B5042EE112AE}" ShortID="248913698">
 											<ReferenceList>
@@ -1332,6 +2685,228 @@
 													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
 												</Reference>
 											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Carpet_Texture-001" ID="{FB872765-0647-48EB-890F-0B57A38768A3}" ShortID="999979005">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Carpet_Texture-001" ID="{39227DF6-FF76-401E-8422-383E1CC5DA9E}">
+															<Language>SFX</Language>
+															<AudioFile>EksamensprojektWwise\Originals\SFX\Carpet_Texture-001.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="452746440"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Carpet_Texture-001" ID="{39227DF6-FF76-401E-8422-383E1CC5DA9E}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Carpet_Texture-002" ID="{8F75E8F2-FF68-4745-8D88-161BDA0EBD30}" ShortID="506613731">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Carpet_Texture-002" ID="{0808F3E1-27A2-4855-8A21-8C745FA2FDE1}">
+															<Language>SFX</Language>
+															<AudioFile>EksamensprojektWwise\Originals\SFX\Carpet_Texture-002.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="1053272454"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Carpet_Texture-002" ID="{0808F3E1-27A2-4855-8A21-8C745FA2FDE1}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Carpet_Texture-003" ID="{45A3FAB5-027D-4305-A9D0-0BAF4838CB77}" ShortID="229960076">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Carpet_Texture-003" ID="{DE51CEF9-EE86-414B-8076-1C2898B65A4C}">
+															<Language>SFX</Language>
+															<AudioFile>EksamensprojektWwise\Originals\SFX\Carpet_Texture-003.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="282301507"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Carpet_Texture-003" ID="{DE51CEF9-EE86-414B-8076-1C2898B65A4C}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Carpet_Texture-004" ID="{828466F9-B8E2-4A96-AACB-C7E42B32EF34}" ShortID="542689182">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Carpet_Texture-004" ID="{9400B480-6275-4A97-A5DD-C336BCA9B5AE}">
+															<Language>SFX</Language>
+															<AudioFile>EksamensprojektWwise\Originals\SFX\Carpet_Texture-004.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="760580256"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Carpet_Texture-004" ID="{9400B480-6275-4A97-A5DD-C336BCA9B5AE}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Carpet_Texture-005" ID="{65C304E2-E42E-4804-A4B1-336DCCBE0588}" ShortID="902239975">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Carpet_Texture-005" ID="{4DCDC42B-BD8A-4C17-BFA2-562A78AA8C70}">
+															<Language>SFX</Language>
+															<AudioFile>EksamensprojektWwise\Originals\SFX\Carpet_Texture-005.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="505914770"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Carpet_Texture-005" ID="{4DCDC42B-BD8A-4C17-BFA2-562A78AA8C70}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Carpet_Texture-006" ID="{073E2F21-58DC-4271-8E08-B7B59B0AD9D7}" ShortID="513324803">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Carpet_Texture-006" ID="{37CDBD65-CE52-48F9-9E42-54B77CE20033}">
+															<Language>SFX</Language>
+															<AudioFile>EksamensprojektWwise\Originals\SFX\Carpet_Texture-006.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="943204351"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Carpet_Texture-006" ID="{37CDBD65-CE52-48F9-9E42-54B77CE20033}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Carpet_Texture-007" ID="{A15C349C-BA7B-4A23-8FA7-A58C3975956D}" ShortID="925096568">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Carpet_Texture-007" ID="{AF40FF5A-D972-411B-A27F-D69CC9ABEFD2}">
+															<Language>SFX</Language>
+															<AudioFile>EksamensprojektWwise\Originals\SFX\Carpet_Texture-007.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="166747718"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Carpet_Texture-007" ID="{AF40FF5A-D972-411B-A27F-D69CC9ABEFD2}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Carpet_Texture-008" ID="{7364BFF6-E4F1-492C-8838-B0C180F0DEF3}" ShortID="9683440">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Carpet_Texture-008" ID="{C558ECB5-87C8-4726-9D83-51C7E81BBE53}">
+															<Language>SFX</Language>
+															<AudioFile>EksamensprojektWwise\Originals\SFX\Carpet_Texture-008.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="312410540"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Carpet_Texture-008" ID="{C558ECB5-87C8-4726-9D83-51C7E81BBE53}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Carpet_Texture-009" ID="{9A63691F-E713-4521-BFBD-18E2C3276F6B}" ShortID="120228221">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Carpet_Texture-009" ID="{417E15D6-528A-4E6E-AAA3-3D41C8279319}">
+															<Language>SFX</Language>
+															<AudioFile>EksamensprojektWwise\Originals\SFX\Carpet_Texture-009.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="219205901"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Carpet_Texture-009" ID="{417E15D6-528A-4E6E-AAA3-3D41C8279319}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Carpet_Texture-010" ID="{953F6AD8-A355-44CD-8960-7EE1F68AF3CD}" ShortID="815594701">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Carpet_Texture-010" ID="{9DA26730-4A4E-4ACA-9BB0-94CBB30F143B}">
+															<Language>SFX</Language>
+															<AudioFile>EksamensprojektWwise\Originals\SFX\Carpet_Texture-010.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="546259954"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Carpet_Texture-010" ID="{9DA26730-4A4E-4ACA-9BB0-94CBB30F143B}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
 										</RandomSequenceContainer>
 									</ChildrenList>
 									<ObjectLists>
@@ -1362,6 +2937,9 @@
 								</RandomSequenceContainer>
 								<RandomSequenceContainer Name="FS_Concrete" ID="{D2853CCC-0C5A-4D8B-B85E-7FA2B8E906C4}" ShortID="205860969">
 									<PropertyList>
+										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 										<Property Name="RandomOrSequence" Type="int16" Value="0"/>
 									</PropertyList>
 									<ReferenceList>
@@ -1432,6 +3010,9 @@
 								</RandomSequenceContainer>
 								<RandomSequenceContainer Name="FS_Dirt" ID="{5D6C23F4-8D14-4D93-9E45-0199C9076C35}" ShortID="738520156">
 									<PropertyList>
+										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 										<Property Name="RandomOrSequence" Type="int16" Value="0"/>
 									</PropertyList>
 									<ReferenceList>
@@ -1463,7 +3044,7 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<Sound Name="FS_Dirt_01" ID="{861D0903-ABF5-4CDD-92B0-EE223596669A}" ShortID="519110342">
+												<Sound Name="Carpet_Step_2-001" ID="{D05B2BC5-9673-4F86-9B9A-E5187EA79465}" ShortID="979477545">
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
@@ -1473,19 +3054,31 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="FS_Dirt_01" ID="{81CA2E78-8F43-48F7-8AE3-F9145089121C}">
+														<AudioFileSource Name="Carpet_Step_2-001" ID="{67886EA5-07A8-4D20-AD03-E79F7F293739}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.01521"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.15974"/>
+															</PropertyList>
 															<Language>SFX</Language>
-															<AudioFile>EksamensprojektGameAudio2\EksamensprojektWwise\Originals\SFX\Dirt\FS_Dirt_01.wav</AudioFile>
+															<AudioFile>EksamensprojektWwise\Originals\SFX\Carpet_Step_2-001.wav</AudioFile>
 															<MediaIDList>
-																<MediaID ID="726162783"/>
+																<MediaID ID="3654417"/>
 															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>
-														<ActiveSource Name="FS_Dirt_01" ID="{81CA2E78-8F43-48F7-8AE3-F9145089121C}" Platform="Linked"/>
+														<ActiveSource Name="Carpet_Step_2-001" ID="{67886EA5-07A8-4D20-AD03-E79F7F293739}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
-												<Sound Name="FS_Dirt_02" ID="{785D48A6-3627-402C-AB70-97509DA8205F}" ShortID="684074492">
+												<Sound Name="Carpet_Step_2-002" ID="{F1604213-8CDD-4BE9-B289-92296A0401E8}" ShortID="702309102">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>3</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
@@ -1495,19 +3088,24 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="FS_Dirt_02" ID="{CFE332E8-8D64-4590-81D9-8D2FC0BD5ECF}">
+														<AudioFileSource Name="Carpet_Step_2-002" ID="{25A38910-70FB-42C9-B150-8857AAD116E9}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.0132"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.16762"/>
+															</PropertyList>
 															<Language>SFX</Language>
-															<AudioFile>EksamensprojektGameAudio2\EksamensprojektWwise\Originals\SFX\Dirt\FS_Dirt_02.wav</AudioFile>
+															<AudioFile>EksamensprojektWwise\Originals\SFX\Carpet_Step_2-002.wav</AudioFile>
 															<MediaIDList>
-																<MediaID ID="611354854"/>
+																<MediaID ID="762311839"/>
 															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>
-														<ActiveSource Name="FS_Dirt_02" ID="{CFE332E8-8D64-4590-81D9-8D2FC0BD5ECF}" Platform="Linked"/>
+														<ActiveSource Name="Carpet_Step_2-002" ID="{25A38910-70FB-42C9-B150-8857AAD116E9}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
-												<Sound Name="FS_Dirt_03" ID="{64D6D780-BA95-4073-856A-9D1ABC71E196}" ShortID="873907859">
+												<Sound Name="Carpet_Step_2-003" ID="{269BF7E3-2D06-45E4-B5C3-286E5DB88E60}" ShortID="239305203">
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
@@ -1517,19 +3115,24 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="FS_Dirt_03" ID="{B4BA0ADC-30C5-44C8-80DF-DE4CB2A567EB}">
+														<AudioFileSource Name="Carpet_Step_2-003" ID="{1CC10776-26B7-4B50-9673-616DBE0CBD3B}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.01939"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.21973"/>
+															</PropertyList>
 															<Language>SFX</Language>
-															<AudioFile>EksamensprojektGameAudio2\EksamensprojektWwise\Originals\SFX\Dirt\FS_Dirt_03.wav</AudioFile>
+															<AudioFile>EksamensprojektWwise\Originals\SFX\Carpet_Step_2-003.wav</AudioFile>
 															<MediaIDList>
-																<MediaID ID="230118352"/>
+																<MediaID ID="550477595"/>
 															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>
-														<ActiveSource Name="FS_Dirt_03" ID="{B4BA0ADC-30C5-44C8-80DF-DE4CB2A567EB}" Platform="Linked"/>
+														<ActiveSource Name="Carpet_Step_2-003" ID="{1CC10776-26B7-4B50-9673-616DBE0CBD3B}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
-												<Sound Name="FS_Dirt_04" ID="{5B4F0335-4C96-4B72-A701-2E4F36BC6E76}" ShortID="600444113">
+												<Sound Name="Carpet_Step_2-004" ID="{7FD0EDC6-4C57-446E-8873-4AEBF3BB6FC1}" ShortID="910296254">
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
@@ -1539,16 +3142,183 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="FS_Dirt_04" ID="{6199226C-1E2A-4BF6-B665-B3F74F7C015D}">
+														<AudioFileSource Name="Carpet_Step_2-004" ID="{7493E9B5-A80E-4465-A52F-CD3B6021CB85}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.01271"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.06916"/>
+															</PropertyList>
 															<Language>SFX</Language>
-															<AudioFile>EksamensprojektGameAudio2\EksamensprojektWwise\Originals\SFX\Dirt\FS_Dirt_04.wav</AudioFile>
+															<AudioFile>EksamensprojektWwise\Originals\SFX\Carpet_Step_2-004.wav</AudioFile>
 															<MediaIDList>
-																<MediaID ID="997602928"/>
+																<MediaID ID="957509682"/>
 															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>
-														<ActiveSource Name="FS_Dirt_04" ID="{6199226C-1E2A-4BF6-B665-B3F74F7C015D}" Platform="Linked"/>
+														<ActiveSource Name="Carpet_Step_2-004" ID="{7493E9B5-A80E-4465-A52F-CD3B6021CB85}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Carpet_Step_2-005" ID="{88044914-F37A-45B0-AF17-76A32C5B0AE6}" ShortID="299527482">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Carpet_Step_2-005" ID="{FABD53A3-EAE8-4871-8B16-9A8F39531A69}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.00772"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.09515"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>EksamensprojektWwise\Originals\SFX\Carpet_Step_2-005.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="134987501"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Carpet_Step_2-005" ID="{FABD53A3-EAE8-4871-8B16-9A8F39531A69}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Carpet_Step_2-006" ID="{C37904CD-839F-4720-866D-43EC636CFC6F}" ShortID="857494345">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Carpet_Step_2-006" ID="{453BA11B-932D-4693-8D71-F3AB29EE779F}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.00837"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.10044"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>EksamensprojektWwise\Originals\SFX\Carpet_Step_2-006.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="617751057"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Carpet_Step_2-006" ID="{453BA11B-932D-4693-8D71-F3AB29EE779F}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Carpet_Step_2-007" ID="{E747A8D6-86AC-4191-99B7-13662B59D649}" ShortID="954689604">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Carpet_Step_2-007" ID="{566056C4-C103-4A16-BBE6-3DD892ED9E5A}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.00768"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.09134"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>EksamensprojektWwise\Originals\SFX\Carpet_Step_2-007.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="77414822"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Carpet_Step_2-007" ID="{566056C4-C103-4A16-BBE6-3DD892ED9E5A}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Carpet_Step_2-008" ID="{CF378C1C-1C7D-454B-9E1D-A355DEAA732C}" ShortID="544346744">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Carpet_Step_2-008" ID="{A8FE2410-1732-4EC9-98AD-34EA80A9093F}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.01088"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.13935"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>EksamensprojektWwise\Originals\SFX\Carpet_Step_2-008.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="569093942"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Carpet_Step_2-008" ID="{A8FE2410-1732-4EC9-98AD-34EA80A9093F}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Carpet_Step_2-009" ID="{183C0BBF-21AB-47FD-AADE-1E2E7D6FFDFA}" ShortID="748510515">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Carpet_Step_2-009" ID="{D01BA934-E6B4-491B-975D-861E88F8F4B2}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.02024"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.13453"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>EksamensprojektWwise\Originals\SFX\Carpet_Step_2-009.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="159813447"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Carpet_Step_2-009" ID="{D01BA934-E6B4-491B-975D-861E88F8F4B2}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Carpet_Step_2-010" ID="{F95AD9A7-5508-4D55-9EAE-64DE30427C9F}" ShortID="678019790">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Carpet_Step_2-010" ID="{2A79BFC4-8973-446C-BC4E-521BA32E0519}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.00787"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.10692"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>EksamensprojektWwise\Originals\SFX\Carpet_Step_2-010.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="833701158"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Carpet_Step_2-010" ID="{2A79BFC4-8973-446C-BC4E-521BA32E0519}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
 											</ChildrenList>
@@ -1592,6 +3362,9 @@
 								</RandomSequenceContainer>
 								<RandomSequenceContainer Name="FS_Gravel" ID="{B4CB6A09-F1C6-4C34-883B-B48A48EFB6E6}" ShortID="746854365">
 									<PropertyList>
+										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 										<Property Name="RandomOrSequence" Type="int16" Value="0"/>
 									</PropertyList>
 									<ReferenceList>
@@ -1834,6 +3607,9 @@
 							<ChildrenList>
 								<RandomSequenceContainer Name="FS_Tile" ID="{4056823A-0FD6-4AF2-96E4-92C48D38FF79}" ShortID="939984125">
 									<PropertyList>
+										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 										<Property Name="RandomOrSequence" Type="int16" Value="0"/>
 									</PropertyList>
 									<ReferenceList>
@@ -1870,6 +3646,9 @@
 								</RandomSequenceContainer>
 								<RandomSequenceContainer Name="FS_Wood" ID="{13D4B98C-6871-46C0-9EC6-1917D801EC41}" ShortID="271747905">
 									<PropertyList>
+										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 										<Property Name="RandomOrSequence" Type="int16" Value="0"/>
 									</PropertyList>
 									<ReferenceList>
@@ -2035,6 +3814,8 @@
 								</RandomSequenceContainer>
 								<RandomSequenceContainer Name="FS_Carpet" ID="{4C6F4A98-C060-4E14-A839-CDB2D4FACB50}" ShortID="466732355">
 									<PropertyList>
+										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 										<Property Name="RandomOrSequence" Type="int16" Value="0"/>
 									</PropertyList>
 									<ReferenceList>
@@ -2055,6 +3836,228 @@
 													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
 												</Reference>
 											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Carpet_Step-001" ID="{EF1EC513-5C61-4281-97BC-C1A88CED3510}" ShortID="839429600">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Carpet_Step-001" ID="{9EEE4504-FBA2-444B-8C5A-1816DD9964ED}">
+															<Language>SFX</Language>
+															<AudioFile>EksamensprojektWwise\Originals\SFX\Carpet_Step-001.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="866940124"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Carpet_Step-001" ID="{9EEE4504-FBA2-444B-8C5A-1816DD9964ED}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Carpet_Step-002" ID="{A525E70C-4B2A-4E2B-8AB3-8075F3EA9875}" ShortID="235025618">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Carpet_Step-002" ID="{5DE7E4F1-FE57-4D6D-92D5-859E02B71A21}">
+															<Language>SFX</Language>
+															<AudioFile>EksamensprojektWwise\Originals\SFX\Carpet_Step-002.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="338867029"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Carpet_Step-002" ID="{5DE7E4F1-FE57-4D6D-92D5-859E02B71A21}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Carpet_Step-003" ID="{C2E50071-048F-48B2-8C26-D457209E426A}" ShortID="927948023">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Carpet_Step-003" ID="{46525F6D-AD5F-4A59-9309-D5DC347EE8C2}">
+															<Language>SFX</Language>
+															<AudioFile>EksamensprojektWwise\Originals\SFX\Carpet_Step-003.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="306996258"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Carpet_Step-003" ID="{46525F6D-AD5F-4A59-9309-D5DC347EE8C2}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Carpet_Step-004" ID="{98852DA8-205D-4BE6-8CA7-92C8023158E2}" ShortID="144690043">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Carpet_Step-004" ID="{961F4E24-F07E-43F9-898C-3F48B6D5EABF}">
+															<Language>SFX</Language>
+															<AudioFile>EksamensprojektWwise\Originals\SFX\Carpet_Step-004.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="991176849"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Carpet_Step-004" ID="{961F4E24-F07E-43F9-898C-3F48B6D5EABF}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Carpet_Step-005" ID="{7BAC9245-23B4-4630-8802-75D0E75D1C66}" ShortID="124990258">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Carpet_Step-005" ID="{7C3E3334-DDC1-4900-94C8-D01375F60B05}">
+															<Language>SFX</Language>
+															<AudioFile>EksamensprojektWwise\Originals\SFX\Carpet_Step-005.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="1070350176"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Carpet_Step-005" ID="{7C3E3334-DDC1-4900-94C8-D01375F60B05}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Carpet_Step-006" ID="{1D8BFEA3-9D1C-4BCF-861A-6E6D709422CF}" ShortID="888259362">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Carpet_Step-006" ID="{2C25B225-87DB-428E-8683-CB6AA1F72486}">
+															<Language>SFX</Language>
+															<AudioFile>EksamensprojektWwise\Originals\SFX\Carpet_Step-006.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="581485402"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Carpet_Step-006" ID="{2C25B225-87DB-428E-8683-CB6AA1F72486}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Carpet_Step-007" ID="{01C39813-9AA3-4138-8E3C-5A7E28C4120D}" ShortID="862775622">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Carpet_Step-007" ID="{F846BFB2-7DAF-4DD9-8F48-70732344C8A6}">
+															<Language>SFX</Language>
+															<AudioFile>EksamensprojektWwise\Originals\SFX\Carpet_Step-007.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="602692716"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Carpet_Step-007" ID="{F846BFB2-7DAF-4DD9-8F48-70732344C8A6}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Carpet_Step-008" ID="{A4784588-466C-4A68-B062-BA50FF6EFA53}" ShortID="45928123">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Carpet_Step-008" ID="{4B0D03BC-5E89-4AC2-9AFD-23187BF34229}">
+															<Language>SFX</Language>
+															<AudioFile>EksamensprojektWwise\Originals\SFX\Carpet_Step-008.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="307372351"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Carpet_Step-008" ID="{4B0D03BC-5E89-4AC2-9AFD-23187BF34229}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Carpet_Step-009" ID="{D25DE128-D502-438F-A37D-F7622C5C976A}" ShortID="163201838">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Carpet_Step-009" ID="{384484C1-EB87-40AE-8520-559FB0ED2DE6}">
+															<Language>SFX</Language>
+															<AudioFile>EksamensprojektWwise\Originals\SFX\Carpet_Step-009.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="175238146"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Carpet_Step-009" ID="{384484C1-EB87-40AE-8520-559FB0ED2DE6}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Carpet_Step-010" ID="{A6DB8DD7-4D0E-46CB-9C4E-2196E64671B1}" ShortID="730393824">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Carpet_Step-010" ID="{4FF0426D-F241-4836-BD31-EC168CFE4999}">
+															<Language>SFX</Language>
+															<AudioFile>EksamensprojektWwise\Originals\SFX\Carpet_Step-010.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="435688002"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Carpet_Step-010" ID="{4FF0426D-F241-4836-BD31-EC168CFE4999}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
 										</RandomSequenceContainer>
 										<RandomSequenceContainer Name="FS_Carpet_2-Texture" ID="{CE004D0E-A53D-436F-9317-0760955C42F8}" ShortID="204988642">
 											<ReferenceList>
@@ -2065,6 +4068,228 @@
 													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
 												</Reference>
 											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Carpet_Texture-001" ID="{10A4B7A4-00C8-4CCE-AB2D-F777E7ADD811}" ShortID="868399511">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Carpet_Texture-001" ID="{29DF2B00-8A8F-4D9B-8541-996CAAD0AB56}">
+															<Language>SFX</Language>
+															<AudioFile>EksamensprojektWwise\Originals\SFX\Carpet_Texture-001.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="452746440"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Carpet_Texture-001" ID="{29DF2B00-8A8F-4D9B-8541-996CAAD0AB56}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Carpet_Texture-002" ID="{E945A5DF-77F2-46F2-8608-CB43BA2431DC}" ShortID="598246158">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Carpet_Texture-002" ID="{11E70188-8107-4A02-8B56-325F62BBEBD4}">
+															<Language>SFX</Language>
+															<AudioFile>EksamensprojektWwise\Originals\SFX\Carpet_Texture-002.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="1053272454"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Carpet_Texture-002" ID="{11E70188-8107-4A02-8B56-325F62BBEBD4}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Carpet_Texture-003" ID="{338BD036-BF14-487C-A78F-F235DEE110F9}" ShortID="424842409">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Carpet_Texture-003" ID="{284E895E-1F3D-4923-A4F9-D22EB06523AC}">
+															<Language>SFX</Language>
+															<AudioFile>EksamensprojektWwise\Originals\SFX\Carpet_Texture-003.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="282301507"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Carpet_Texture-003" ID="{284E895E-1F3D-4923-A4F9-D22EB06523AC}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Carpet_Texture-004" ID="{1F0ECD4A-C3B3-4281-ADFB-69299EFA317E}" ShortID="960964096">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Carpet_Texture-004" ID="{0BC9AA8F-23C5-483D-9D3B-85C8EE01C1E9}">
+															<Language>SFX</Language>
+															<AudioFile>EksamensprojektWwise\Originals\SFX\Carpet_Texture-004.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="760580256"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Carpet_Texture-004" ID="{0BC9AA8F-23C5-483D-9D3B-85C8EE01C1E9}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Carpet_Texture-005" ID="{73AAD442-A3ED-487A-A458-08D84C4DF5D4}" ShortID="185118797">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Carpet_Texture-005" ID="{90C83DE3-A2BD-47DD-98C6-CDC0CA20BF54}">
+															<Language>SFX</Language>
+															<AudioFile>EksamensprojektWwise\Originals\SFX\Carpet_Texture-005.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="505914770"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Carpet_Texture-005" ID="{90C83DE3-A2BD-47DD-98C6-CDC0CA20BF54}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Carpet_Texture-006" ID="{AD525888-6A86-4768-A02C-C1ACFA23C291}" ShortID="1008288959">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Carpet_Texture-006" ID="{13FE1F4A-4E9A-4BE6-999C-D9E54865F25E}">
+															<Language>SFX</Language>
+															<AudioFile>EksamensprojektWwise\Originals\SFX\Carpet_Texture-006.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="943204351"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Carpet_Texture-006" ID="{13FE1F4A-4E9A-4BE6-999C-D9E54865F25E}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Carpet_Texture-007" ID="{DA0718E3-4D6F-4FE4-9A31-EF3F9CF64884}" ShortID="435762179">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Carpet_Texture-007" ID="{E44BBABC-7B0D-49B1-8CAE-3FF9D211A5A7}">
+															<Language>SFX</Language>
+															<AudioFile>EksamensprojektWwise\Originals\SFX\Carpet_Texture-007.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="166747718"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Carpet_Texture-007" ID="{E44BBABC-7B0D-49B1-8CAE-3FF9D211A5A7}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Carpet_Texture-008" ID="{C679ABDE-22ED-4A80-8CAA-4C270D987508}" ShortID="207725851">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Carpet_Texture-008" ID="{5A28FFF9-CF17-4C5D-AB11-FFF4319BC8D1}">
+															<Language>SFX</Language>
+															<AudioFile>EksamensprojektWwise\Originals\SFX\Carpet_Texture-008.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="312410540"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Carpet_Texture-008" ID="{5A28FFF9-CF17-4C5D-AB11-FFF4319BC8D1}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Carpet_Texture-009" ID="{B3E7A869-C6E1-4F06-869D-577B95AA3CFE}" ShortID="64303418">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Carpet_Texture-009" ID="{7C277F0E-7CFD-4074-B611-2C2EF975926D}">
+															<Language>SFX</Language>
+															<AudioFile>EksamensprojektWwise\Originals\SFX\Carpet_Texture-009.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="219205901"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Carpet_Texture-009" ID="{7C277F0E-7CFD-4074-B611-2C2EF975926D}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Carpet_Texture-010" ID="{0BABE0B3-A386-4D16-869B-6AEA89CDB093}" ShortID="980770020">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Carpet_Texture-010" ID="{0D3A9702-598A-4FA3-8A95-B3BBD333B049}">
+															<Language>SFX</Language>
+															<AudioFile>EksamensprojektWwise\Originals\SFX\Carpet_Texture-010.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="546259954"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Carpet_Texture-010" ID="{0D3A9702-598A-4FA3-8A95-B3BBD333B049}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
 										</RandomSequenceContainer>
 									</ChildrenList>
 									<ObjectLists>
@@ -2088,6 +4313,9 @@
 								</RandomSequenceContainer>
 								<RandomSequenceContainer Name="FS_Concrete" ID="{92DF7DD8-20E1-49DF-BD56-261A96992433}" ShortID="608898078">
 									<PropertyList>
+										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 										<Property Name="RandomOrSequence" Type="int16" Value="0"/>
 									</PropertyList>
 									<ReferenceList>
@@ -2141,6 +4369,9 @@
 								</RandomSequenceContainer>
 								<RandomSequenceContainer Name="FS_Dirt" ID="{CA44EDFA-95C7-44D9-A5B2-8EA6903D3457}" ShortID="80655086">
 									<PropertyList>
+										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 										<Property Name="RandomOrSequence" Type="int16" Value="0"/>
 									</PropertyList>
 									<ReferenceList>
@@ -2161,6 +4392,258 @@
 													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
 												</Reference>
 											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Carpet_Step_2-001" ID="{2EA3F0D2-2260-47CE-A495-BBD7ADE71C07}" ShortID="963943464">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Carpet_Step_2-001" ID="{C673D55D-A2D3-44F3-87EA-E7CB10E08DFE}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.00914"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.15827"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>EksamensprojektWwise\Originals\SFX\Carpet_Step_2-001.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="500750266"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Carpet_Step_2-001" ID="{C673D55D-A2D3-44F3-87EA-E7CB10E08DFE}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Carpet_Step_2-003" ID="{C81E9802-7C01-462A-8CC0-A0DAF6EB4836}" ShortID="2143912">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>3</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Carpet_Step_2-003" ID="{D2DDB415-29E5-494D-BED1-E8D8D5ED54D6}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.0291"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.21649"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>EksamensprojektWwise\Originals\SFX\Carpet_Step_2-003.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="901203002"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Carpet_Step_2-003" ID="{D2DDB415-29E5-494D-BED1-E8D8D5ED54D6}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Carpet_Step_2-004" ID="{966A60A1-3D6C-4D8A-B774-72768F66D0C5}" ShortID="742266572">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Carpet_Step_2-004" ID="{7E668D45-3DA6-44E9-B671-6520A1B8B527}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.02965"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.06772"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>EksamensprojektWwise\Originals\SFX\Carpet_Step_2-004.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="361823662"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Carpet_Step_2-004" ID="{7E668D45-3DA6-44E9-B671-6520A1B8B527}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Carpet_Step_2-005" ID="{B3B0171A-8854-4E78-8B5C-9D9CD87D63E7}" ShortID="863415026">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Carpet_Step_2-005" ID="{299F25B3-D782-4831-92E0-E63CAED7F62E}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.0163"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.09166"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>EksamensprojektWwise\Originals\SFX\Carpet_Step_2-005.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="674070396"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Carpet_Step_2-005" ID="{299F25B3-D782-4831-92E0-E63CAED7F62E}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Carpet_Step_2-006" ID="{01374DEB-817E-4F86-B23B-ED590F04F42A}" ShortID="493133768">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Carpet_Step_2-006" ID="{91D1CCF2-0D97-4E1C-958C-D8581A7BEE9C}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.01209"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.10044"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>EksamensprojektWwise\Originals\SFX\Carpet_Step_2-006.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="832791625"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Carpet_Step_2-006" ID="{91D1CCF2-0D97-4E1C-958C-D8581A7BEE9C}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Carpet_Step_2-007" ID="{CF17DE8A-2D63-4D50-A847-7B054FDF83E4}" ShortID="186257916">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Carpet_Step_2-007" ID="{16334252-0BB4-4B6C-995C-E9922E293B58}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.00768"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.09556"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>EksamensprojektWwise\Originals\SFX\Carpet_Step_2-007.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="1021846890"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Carpet_Step_2-007" ID="{16334252-0BB4-4B6C-995C-E9922E293B58}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Carpet_Step_2-008" ID="{5364F4CA-6712-4925-9AC6-F722E1F83E71}" ShortID="794611519">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Carpet_Step_2-008" ID="{7B312BAF-67C9-4A6C-BE94-A6FD5CE0FA1E}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.01385"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.13649"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>EksamensprojektWwise\Originals\SFX\Carpet_Step_2-008.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="914877286"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Carpet_Step_2-008" ID="{7B312BAF-67C9-4A6C-BE94-A6FD5CE0FA1E}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Carpet_Step_2-009" ID="{2B11491E-B154-43B7-B883-2FD6718E3372}" ShortID="184615661">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Carpet_Step_2-009" ID="{57869760-7277-4CD8-B6DC-F943F0E1192F}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.02024"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.12741"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>EksamensprojektWwise\Originals\SFX\Carpet_Step_2-009.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="1058161977"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Carpet_Step_2-009" ID="{57869760-7277-4CD8-B6DC-F943F0E1192F}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Carpet_Step_2-010" ID="{F727C2B6-AFE1-48E5-BB74-DCA910389136}" ShortID="582336821">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Carpet_Step_2-010" ID="{D99C1C9F-0C81-49D6-9FEC-5B8F4019CBCA}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.01024"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.10774"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>EksamensprojektWwise\Originals\SFX\Carpet_Step_2-010.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="410437280"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Carpet_Step_2-010" ID="{D99C1C9F-0C81-49D6-9FEC-5B8F4019CBCA}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
 										</RandomSequenceContainer>
 										<RandomSequenceContainer Name="FS_Dirt_2-Texture" ID="{36EEABD6-8398-44C2-85BB-4DE73A021306}" ShortID="510797785">
 											<ReferenceList>
@@ -2171,96 +4654,6 @@
 													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
 												</Reference>
 											</ReferenceList>
-											<ChildrenList>
-												<Sound Name="FS_Dirt_01" ID="{A6BDE13E-ABD8-48D0-9ABE-24F311832E35}" ShortID="333345707">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="FS_Dirt_01" ID="{9943935B-7F44-4D74-A12A-8F5DC6C0B04D}">
-															<Language>SFX</Language>
-															<AudioFile>EksamensprojektGameAudio2\EksamensprojektWwise\Originals\SFX\Dirt\FS_Dirt_01.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="726162783"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="FS_Dirt_01" ID="{9943935B-7F44-4D74-A12A-8F5DC6C0B04D}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="FS_Dirt_02" ID="{7F2C4757-E35F-443F-85EF-96F47378C194}" ShortID="682385712">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="FS_Dirt_02" ID="{89E6A4EE-4178-4CDD-BDF8-A01DB77379D2}">
-															<Language>SFX</Language>
-															<AudioFile>EksamensprojektGameAudio2\EksamensprojektWwise\Originals\SFX\Dirt\FS_Dirt_02.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="611354854"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="FS_Dirt_02" ID="{89E6A4EE-4178-4CDD-BDF8-A01DB77379D2}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="FS_Dirt_03" ID="{F20B7AEB-3794-449F-B42B-C630C1F54A8C}" ShortID="730462569">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="FS_Dirt_03" ID="{33AD9076-8C4A-44A6-B527-D47470E8D23F}">
-															<Language>SFX</Language>
-															<AudioFile>EksamensprojektGameAudio2\EksamensprojektWwise\Originals\SFX\Dirt\FS_Dirt_03.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="230118352"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="FS_Dirt_03" ID="{33AD9076-8C4A-44A6-B527-D47470E8D23F}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="FS_Dirt_04" ID="{B1492F9B-FB79-4BDD-97F0-AB3680590376}" ShortID="941328775">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="FS_Dirt_04" ID="{CE7D0017-6E2A-4273-A2B9-833286ED3831}">
-															<Language>SFX</Language>
-															<AudioFile>EksamensprojektGameAudio2\EksamensprojektWwise\Originals\SFX\Dirt\FS_Dirt_04.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="997602928"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="FS_Dirt_04" ID="{CE7D0017-6E2A-4273-A2B9-833286ED3831}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-											</ChildrenList>
 										</RandomSequenceContainer>
 									</ChildrenList>
 									<ObjectLists>
@@ -2284,6 +4677,9 @@
 								</RandomSequenceContainer>
 								<RandomSequenceContainer Name="FS_Gravel" ID="{57AFBE33-673C-40CF-83D7-C1E57BC8783C}" ShortID="1046519560">
 									<PropertyList>
+										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 										<Property Name="RandomOrSequence" Type="int16" Value="0"/>
 									</PropertyList>
 									<ReferenceList>
