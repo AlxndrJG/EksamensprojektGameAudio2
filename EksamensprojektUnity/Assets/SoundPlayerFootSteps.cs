@@ -2,58 +2,82 @@ using UnityEngine;
 
 public class SoundPlayerFootsteps : MonoBehaviour
 {
+    [Header("Wwise Events")]
     public AK.Wwise.Event Play_FSForward;
     public AK.Wwise.Event Play_FSBack;
     public AK.Wwise.Event Play_FSSide;
 
-    private void Start()
+    [Header("Foot Objects")]
+    public GameObject leftFoot;
+    public GameObject rightFoot;
+
+    [Header("Material")]
+    public string currentMaterial = "Wood";
+
+    [Header("Animator")]
+    public Animator animator;
+    public string verticalParameter = "moveAmountVertical";
+    public string horizontalParameter = "moveAmountHorizontal";
+
+    [Header("Double Trigger Protection")]
+    public float minTimeBetweenFootsteps = 0.05f;
+    private float lastFootstepTime;
+
+    private bool CanPlayFootstep()
     {
-        AkSoundEngine.SetSwitch("Materials", "Wood", gameObject);
-        uint id = Play_FSForward.Post(gameObject);
-        Debug.Log("Playing ID: " + id);
-        Debug.Log("Footstep script started on: " + gameObject.name);
-        Debug.Log("Forward event is null: " + (Play_FSForward == null));
+        if (Time.time - lastFootstepTime < minTimeBetweenFootsteps)
+            return false;
+
+        lastFootstepTime = Time.time;
+        return true;
     }
 
-    public void FSLeftForward()
+    private AK.Wwise.Event GetDominantFootstepEvent()
     {
-        Debug.Log("FSLeftForward");
-        uint id = Play_FSForward.Post(gameObject);
-        Debug.Log("Play_FSForward PlayingID: " + id);
+        float vertical = animator.GetFloat(verticalParameter);
+        float horizontal = animator.GetFloat(horizontalParameter);
+
+        if (Mathf.Abs(horizontal) > Mathf.Abs(vertical))
+        {
+            return Play_FSSide;
+        }
+
+        if (vertical < 0f)
+        {
+            return Play_FSBack;
+        }
+
+        return Play_FSForward;
     }
 
-    public void FSRightForward()
+    private void PlayFootstep(GameObject footObject)
     {
-        Debug.Log("FSRightForward");
-        uint id = Play_FSForward.Post(gameObject);
-        Debug.Log("Play_FSForward PlayingID: " + id);
+        if (!CanPlayFootstep()) return;
+        if (footObject == null) return;
+
+        AK.Wwise.Event footstepEvent = GetDominantFootstepEvent();
+
+        if (footstepEvent == null) return;
+
+        AkSoundEngine.SetSwitch("Materials", currentMaterial, footObject);
+
+        uint playingId = footstepEvent.Post(footObject);
+
+        Debug.Log($"Footstep posted on {footObject.name} | Material: {currentMaterial} | PlayingID: {playingId}");
     }
 
-    public void FSLeftBack()
+    public void SetFootstepMaterial(string newMaterial)
     {
-        Debug.Log("FSLeftBack");
-        uint id = Play_FSBack.Post(gameObject);
-        Debug.Log("Play_FSBack PlayingID: " + id);
+        currentMaterial = newMaterial;
     }
 
-    public void FSRightBack()
+    public void FSLeft()
     {
-        Debug.Log("FSRightBack");
-        uint id = Play_FSBack.Post(gameObject);
-        Debug.Log("Play_FSBack PlayingID: " + id);
+        PlayFootstep(leftFoot);
     }
 
-    public void FSLeftSide()
+    public void FSRight()
     {
-        Debug.Log("FSLeftSide");
-        uint id = Play_FSSide.Post(gameObject);
-        Debug.Log("Play_FSSide PlayingID: " + id);
-    }
-
-    public void FSRightSide()
-    {
-        Debug.Log("FSRightSide");
-        uint id = Play_FSSide.Post(gameObject);
-        Debug.Log("Play_FSSide PlayingID: " + id);
+        PlayFootstep(rightFoot);
     }
 }

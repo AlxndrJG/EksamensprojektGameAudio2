@@ -5,25 +5,53 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2e31d9a8-fdaf-40cd-b541-478bfe29dbec" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.EksamensprojektUnity/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.EksamensprojektUnity/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Animation Controllers/GirlWalk.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Animation Controllers/GirlWalk.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/AnimationFBX/Dwarf Walk.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/AnimationFBX/Dwarf Walk.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/AnimationFBX/Walking Backwards.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/AnimationFBX/Walking Backwards.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AtmosphericHouse/Scripts/SimplePlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AtmosphericHouse/Scripts/SimplePlayerController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Gone Astray.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Gone Astray.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/FirstPersonController/Prefabs/PlayerCapsule.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/StarterAssets/FirstPersonController/Prefabs/PlayerCapsule.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/FirstPersonController/Scripts/FirstPersonController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/StarterAssets/FirstPersonController/Scripts/FirstPersonController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/InputSystem/StarterAssetsInputs.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/StarterAssets/InputSystem/StarterAssetsInputs.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EksamensprojektWwise/Containers/Footsteps.wwu" beforeDir="false" afterPath="$PROJECT_DIR$/../EksamensprojektWwise/Containers/Footsteps.wwu" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SoundPlayerFootSteps.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SoundPlayerFootSteps.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Wwise/API/Editor/WwiseWindows/BrowserIcon.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/API/Editor/WwiseWindows/BrowserIcon.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Wwise/API/Editor/WwiseWindows/BrowserIcons/GraphNode_CollapseAll.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/API/Editor/WwiseWindows/BrowserIcons/GraphNode_CollapseAll.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Wwise/API/Editor/WwiseWindows/BrowserIcons/GraphNode_ExpandAll.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/API/Editor/WwiseWindows/BrowserIcons/GraphNode_ExpandAll.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Wwise/API/Editor/WwiseWindows/TreeViewIcons/acoustictexture_nor.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/API/Editor/WwiseWindows/TreeViewIcons/acoustictexture_nor.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Wwise/API/Editor/WwiseWindows/TreeViewIcons/auxbus_nor.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/API/Editor/WwiseWindows/TreeViewIcons/auxbus_nor.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Wwise/API/Editor/WwiseWindows/TreeViewIcons/blank.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/API/Editor/WwiseWindows/TreeViewIcons/blank.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Wwise/API/Editor/WwiseWindows/TreeViewIcons/bus_nor.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/API/Editor/WwiseWindows/TreeViewIcons/bus_nor.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Wwise/API/Editor/WwiseWindows/TreeViewIcons/event_nor.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/API/Editor/WwiseWindows/TreeViewIcons/event_nor.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Wwise/API/Editor/WwiseWindows/TreeViewIcons/folder_nor.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/API/Editor/WwiseWindows/TreeViewIcons/folder_nor.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Wwise/API/Editor/WwiseWindows/TreeViewIcons/gameparameter_nor.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/API/Editor/WwiseWindows/TreeViewIcons/gameparameter_nor.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Wwise/API/Editor/WwiseWindows/TreeViewIcons/physical_folder_nor.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/API/Editor/WwiseWindows/TreeViewIcons/physical_folder_nor.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Wwise/API/Editor/WwiseWindows/TreeViewIcons/soundbank_nor.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/API/Editor/WwiseWindows/TreeViewIcons/soundbank_nor.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Wwise/API/Editor/WwiseWindows/TreeViewIcons/state_nor.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/API/Editor/WwiseWindows/TreeViewIcons/state_nor.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Wwise/API/Editor/WwiseWindows/TreeViewIcons/stategroup_nor.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/API/Editor/WwiseWindows/TreeViewIcons/stategroup_nor.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Wwise/API/Editor/WwiseWindows/TreeViewIcons/switch_nor.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/API/Editor/WwiseWindows/TreeViewIcons/switch_nor.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Wwise/API/Editor/WwiseWindows/TreeViewIcons/switchgroup_nor.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/API/Editor/WwiseWindows/TreeViewIcons/switchgroup_nor.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Wwise/API/Editor/WwiseWindows/TreeViewIcons/trigger_nor.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/API/Editor/WwiseWindows/TreeViewIcons/trigger_nor.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Wwise/API/Editor/WwiseWindows/TreeViewIcons/workunit_nor.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/API/Editor/WwiseWindows/TreeViewIcons/workunit_nor.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Wwise/API/Editor/WwiseWindows/TreeViewIcons/wproj.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/API/Editor/WwiseWindows/TreeViewIcons/wproj.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Wwise/API/Runtime/Plugins/Mac/DSP/libAkChannelRouter.bundle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Wwise/API/Runtime/Plugins/Mac/DSP/libAkChannelRouter.bundle.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Wwise/API/Runtime/Plugins/Mac/DSP/libAkImpacter.bundle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Wwise/API/Runtime/Plugins/Mac/DSP/libAkImpacter.bundle.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Wwise/API/Runtime/Plugins/Mac/DSP/libAkSoundSeedAir.bundle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Wwise/API/Runtime/Plugins/Mac/DSP/libAkSoundSeedAir.bundle.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Wwise/API/Runtime/Plugins/Mac/DSP/libAuro.bundle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Wwise/API/Runtime/Plugins/Mac/DSP/libAuro.bundle.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Wwise/API/Runtime/Plugins/Windows/x86/DSP/AkChannelRouter.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Wwise/API/Runtime/Plugins/Windows/x86/DSP/AkChannelRouter.dll.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Wwise/API/Runtime/Plugins/Windows/x86/DSP/AkImpacter.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Wwise/API/Runtime/Plugins/Windows/x86/DSP/AkImpacter.dll.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Wwise/API/Runtime/Plugins/Windows/x86_64/DSP/AkChannelRouter.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Wwise/API/Runtime/Plugins/Windows/x86_64/DSP/AkChannelRouter.dll.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Wwise/API/Runtime/Plugins/Windows/x86_64/DSP/AkImpacter.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Wwise/API/Runtime/Plugins/Windows/x86_64/DSP/AkImpacter.dll.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Wwise/Editor.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Wwise/Editor/ProjectData.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Wwise/Gizmos/WwiseAudioSpeaker.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/Gizmos/WwiseAudioSpeaker.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Wwise/Gizmos/wwise_white_on_gray.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/Gizmos/wwise_white_on_gray.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Wwise/LauncherInfo.json" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/LauncherInfo.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Wwise/LauncherInfo.json.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/LauncherInfo.json.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/WwiseSettings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/WwiseSettings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logRunSetup.txt" beforeDir="false" afterPath="$PROJECT_DIR$/logRunSetup.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EksamensprojektWwise/EksamensprojektWwise.crossover.validationcache" beforeDir="false" afterPath="$PROJECT_DIR$/../EksamensprojektWwise/EksamensprojektWwise.crossover.validationcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../EksamensprojektWwise/EksamensprojektWwise.crossover.wsettings" beforeDir="false" afterPath="$PROJECT_DIR$/../EksamensprojektWwise/EksamensprojektWwise.crossover.wsettings" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EksamensprojektWwise/Events/Player.wwu" beforeDir="false" afterPath="$PROJECT_DIR$/../EksamensprojektWwise/Events/Player.wwu" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EksamensprojektWwise/GeneratedSoundBanks/Mac/Main.bnk" beforeDir="false" afterPath="$PROJECT_DIR$/../EksamensprojektWwise/GeneratedSoundBanks/Mac/Main.bnk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EksamensprojektWwise/GeneratedSoundBanks/Mac/Main.json" beforeDir="false" afterPath="$PROJECT_DIR$/../EksamensprojektWwise/GeneratedSoundBanks/Mac/Main.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EksamensprojektWwise/GeneratedSoundBanks/Mac/Main.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../EksamensprojektWwise/GeneratedSoundBanks/Mac/Main.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EksamensprojektWwise/GeneratedSoundBanks/Windows/Main.bnk" beforeDir="false" afterPath="$PROJECT_DIR$/../EksamensprojektWwise/GeneratedSoundBanks/Windows/Main.bnk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EksamensprojektWwise/GeneratedSoundBanks/Windows/Main.json" beforeDir="false" afterPath="$PROJECT_DIR$/../EksamensprojektWwise/GeneratedSoundBanks/Windows/Main.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EksamensprojektWwise/GeneratedSoundBanks/Windows/Main.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../EksamensprojektWwise/GeneratedSoundBanks/Windows/Main.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EksamensprojektWwise/GeneratedSoundBanks/Wwise_IDs.h" beforeDir="false" afterPath="$PROJECT_DIR$/../EksamensprojektWwise/GeneratedSoundBanks/Wwise_IDs.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +62,15 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/AtmosphericHouse/Scripts/DisableAtStart.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/AtmosphericHouse/Scripts/LightOptimize.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/AtmosphericHouse/Scripts/SimpleOpenClose.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/AtmosphericHouse/Scripts/SimplePlayerController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/AtmosphericHouse/Scripts/SimplePlayerUse.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/FootStepEvents.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/SoundPlayerFootSteps.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/StarterAssets/FirstPersonController/Scripts/FirstPersonController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/StarterAssets/InputSystem/StarterAssetsInputs.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
@@ -112,6 +148,7 @@
       <workItem from="1781109250293" duration="3988000" />
       <workItem from="1781352911754" duration="16911000" />
       <workItem from="1781383204538" duration="1141000" />
+      <workItem from="1781429761571" duration="876000" />
     </task>
     <servers />
   </component>

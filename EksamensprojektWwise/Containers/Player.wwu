@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{409268F6-A1BE-4C6D-B73D-C82A96CEEB64}" SchemaVersion="133" RootDocumentID="{08F20BFB-F7C4-40F3-B852-C39F7D674E18}" ParentDocumentID="{08F20BFB-F7C4-40F3-B852-C39F7D674E18}">
+<WwiseDocument Type="WorkUnit" ID="{409268F6-A1BE-4C6D-B73D-C82A96CEEB64}" SchemaVersion="133">
 	<Containers>
-		<WorkUnit Name="Player" ID="{409268F6-A1BE-4C6D-B73D-C82A96CEEB64}" OwnerID="{08F20BFB-F7C4-40F3-B852-C39F7D674E18}" PersistMode="Nested">
+		<WorkUnit Name="Player" ID="{409268F6-A1BE-4C6D-B73D-C82A96CEEB64}" PersistMode="Standalone">
 			<ChildrenList>
 				<WorkUnit Name="Breath" ID="{E203B16C-E92F-436D-95CA-C48E1D6FD512}" PersistMode="Reference"/>
 				<WorkUnit Name="Footsteps" ID="{A21A0D10-AC46-456D-8248-7867DF29135B}" PersistMode="Reference"/>

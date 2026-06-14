@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{69C07AC4-2AB0-417A-A9B2-DC14CCE12DE0}",
     "Language": "SFX",
-    "Hash": "{B518E9AC-F105-447D-85EB-31585DA0C1BE}",
+    "Hash": "{14C487B8-76B5-7618-0731-AB8B70BF1DE9}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -360,6 +360,7 @@
       "Name": "Play_FSBack",
       "ObjectPath": "\\Events\\Player\\Play_FSBack",
       "GUID": "{241637BD-4940-4821-BBC3-535AAAC79395}",
+      "MaxAttenuation": "50",
       "DurationType": "OneShot",
       "DurationMin": "0",
       "DurationMax": "0.49170068",
@@ -463,6 +464,7 @@
       "Name": "Play_FSForward",
       "ObjectPath": "\\Events\\Player\\Play_FSForward",
       "GUID": "{9B5E6030-2213-47DF-AB48-36874C8AD8D9}",
+      "MaxAttenuation": "50",
       "DurationType": "OneShot",
       "DurationMin": "0",
       "DurationMax": "0.49170068",
@@ -566,6 +568,7 @@
       "Name": "Play_FSSide",
       "ObjectPath": "\\Events\\Player\\Play_FSSide",
       "GUID": "{83EF0AEC-1A98-4E91-88D3-5ABC730E4FAF}",
+      "MaxAttenuation": "50",
       "DurationType": "OneShot",
       "DurationMin": "0",
       "DurationMax": "0.49170068",
@@ -866,6 +869,6 @@
     ]
    }
   ],
-  "FileHash": "{DACB750E-3503-9BF4-A554-614E1899B0BB}"
+  "FileHash": "{E790A0D3-3005-D7BE-EDA4-44711FAA3974}"
  }
 }
