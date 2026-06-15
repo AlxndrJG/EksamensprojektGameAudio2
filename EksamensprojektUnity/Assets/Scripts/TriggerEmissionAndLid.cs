@@ -16,7 +16,7 @@ public class TriggerEmissionAndLid : MonoBehaviour
 
     private bool _hasRun = false;
 
-    void Awake()
+    void Start()
     {
         emissionMaterialBlue.EnableKeyword("_EMISSION");
     }
