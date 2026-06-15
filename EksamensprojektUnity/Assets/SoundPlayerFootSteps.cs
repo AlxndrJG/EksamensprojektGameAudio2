@@ -11,9 +11,6 @@ public class SoundPlayerFootsteps : MonoBehaviour
     public GameObject leftFoot;
     public GameObject rightFoot;
 
-    [Header("Material")]
-    public string currentMaterial = "Wood";
-
     [Header("Animator")]
     public Animator animator;
     public string verticalParameter = "moveAmountVertical";
@@ -59,16 +56,9 @@ public class SoundPlayerFootsteps : MonoBehaviour
 
         if (footstepEvent == null) return;
 
-        AkSoundEngine.SetSwitch("Materials", currentMaterial, footObject);
-
         uint playingId = footstepEvent.Post(footObject);
 
-        Debug.Log($"Footstep posted on {footObject.name} | Material: {currentMaterial} | PlayingID: {playingId}");
-    }
-
-    public void SetFootstepMaterial(string newMaterial)
-    {
-        currentMaterial = newMaterial;
+        Debug.Log($"Footstep posted on {footObject.name} | PlayingID: {playingId}");
     }
 
     public void FSLeft()

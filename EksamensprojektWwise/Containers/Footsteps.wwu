@@ -24,9 +24,6 @@
 						<Reference Name="OutputBus">
 							<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
 						</Reference>
-						<Reference Name="UserAuxSend0">
-							<ObjectRef Name="RV_Hall" ID="{D5AE201C-E1EF-4AAB-9A25-A89486E31350}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
-						</Reference>
 					</ReferenceList>
 					<ChildrenList>
 						<SwitchContainer Name="FSBack" ID="{1DEDB888-9E4F-4E54-A6C9-191F7A654EA5}" ShortID="568921124">
@@ -51,7 +48,14 @@
 								<BlendContainer Name="FS_Carpet" ID="{45259CA0-D1FC-4308-9156-B6FDADF4E249}" ShortID="390907217">
 									<PropertyList>
 										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="Color" Type="int16" Value="4"/>
+										<Property Name="OverrideColor" Type="bool" Value="True"/>
 										<Property Name="SpeakerPanning" Type="int16" Value="1"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-8</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Attenuation">
@@ -68,19 +72,14 @@
 										<RandomSequenceContainer Name="FS_Carpet_1-Toe" ID="{4D722873-2C14-4FE2-ABC8-33ED122A901A}" ShortID="91679175">
 											<PropertyList>
 												<Property Name="3DSpatialization" Type="int16" Value="2"/>
-												<Property Name="Highpass" Type="int16">
-													<ValueList>
-														<Value>35</Value>
-													</ValueList>
-												</Property>
 												<Property Name="Lowpass" Type="int16">
 													<ValueList>
-														<Value>70</Value>
+														<Value>51</Value>
 													</ValueList>
 												</Property>
 												<Property Name="Pitch" Type="int32">
 													<ValueList>
-														<Value>120</Value>
+														<Value>700</Value>
 													</ValueList>
 												</Property>
 												<Property Name="SpeakerPanning" Type="int16" Value="1"/>
@@ -102,7 +101,7 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<Sound Name="Wood_Impact-001" ID="{8CE51E10-57EE-4B32-A63A-0FA2D9254D8D}" ShortID="826693579">
+												<Sound Name="Carpet_Toe-001" ID="{88188B7C-74D2-48FA-A30D-86E46D953E30}" ShortID="1025997776">
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
@@ -112,24 +111,26 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="Wood_Impact-001" ID="{D56AE95B-2329-45DD-81B8-B8CC9C9192C2}">
+														<AudioFileSource Name="Carpet_Toe-001" ID="{B052063A-2DBE-4A42-868F-2BE817C0BDDF}">
 															<PropertyList>
-																<Property Name="FadeInDuration" Type="Real64" Value="0.01041"/>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.2105"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.16987"/>
 																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-																<Property Name="TrimBegin" Type="Real64" Value="0.04292"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.1514"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.62596"/>
 															</PropertyList>
 															<Language>SFX</Language>
-															<AudioFile>EksamensprojektWwise\Originals\SFX\Wood_Impact-001.wav</AudioFile>
+															<AudioFile>SFX\EksamensprojektWwise\Originals\SFX\Carpet_Toe-001.wav</AudioFile>
 															<MediaIDList>
-																<MediaID ID="947310149"/>
+																<MediaID ID="1028543953"/>
 															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>
-														<ActiveSource Name="Wood_Impact-001" ID="{D56AE95B-2329-45DD-81B8-B8CC9C9192C2}" Platform="Linked"/>
+														<ActiveSource Name="Carpet_Toe-001" ID="{B052063A-2DBE-4A42-868F-2BE817C0BDDF}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
-												<Sound Name="Wood_Impact-002" ID="{0E5A340E-19D2-4A72-BCDE-BC91351E8686}" ShortID="929766223">
+												<Sound Name="Carpet_Toe-002" ID="{EEF7E375-A092-497D-9F44-FC437B6A0CD2}" ShortID="903039642">
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
@@ -139,24 +140,26 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="Wood_Impact-002" ID="{F4B3B294-0AF0-4248-B54A-0D6DE7BD0A9F}">
+														<AudioFileSource Name="Carpet_Toe-002" ID="{1B0FAFB7-74C5-4246-BDFE-F47FE1DA2B77}">
 															<PropertyList>
-																<Property Name="FadeInDuration" Type="Real64" Value="0.01115"/>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.15919"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.12837"/>
 																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-																<Property Name="TrimBegin" Type="Real64" Value="0.02107"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.07775"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.41472"/>
 															</PropertyList>
 															<Language>SFX</Language>
-															<AudioFile>EksamensprojektWwise\Originals\SFX\Wood_Impact-002.wav</AudioFile>
+															<AudioFile>SFX\EksamensprojektWwise\Originals\SFX\Carpet_Toe-002.wav</AudioFile>
 															<MediaIDList>
-																<MediaID ID="84162569"/>
+																<MediaID ID="49916121"/>
 															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>
-														<ActiveSource Name="Wood_Impact-002" ID="{F4B3B294-0AF0-4248-B54A-0D6DE7BD0A9F}" Platform="Linked"/>
+														<ActiveSource Name="Carpet_Toe-002" ID="{1B0FAFB7-74C5-4246-BDFE-F47FE1DA2B77}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
-												<Sound Name="Wood_Impact-003" ID="{B9F15AC8-88B2-438E-8389-3D2FB169D4E7}" ShortID="9352662">
+												<Sound Name="Carpet_Toe-003" ID="{C35429AD-4BA0-49A7-B108-D243B9B029C3}" ShortID="587391838">
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
@@ -166,24 +169,26 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="Wood_Impact-003" ID="{251D0415-AAF5-4734-A855-4866B928E254}">
+														<AudioFileSource Name="Carpet_Toe-003" ID="{E9D10907-5DA5-4032-9659-C087067D47B9}">
 															<PropertyList>
-																<Property Name="FadeInDuration" Type="Real64" Value="0.01154"/>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.1647"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.17455"/>
 																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-																<Property Name="TrimBegin" Type="Real64" Value="0.02453"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.08726"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.46319"/>
 															</PropertyList>
 															<Language>SFX</Language>
-															<AudioFile>EksamensprojektWwise\Originals\SFX\Wood_Impact-003.wav</AudioFile>
+															<AudioFile>SFX\EksamensprojektWwise\Originals\SFX\Carpet_Toe-003.wav</AudioFile>
 															<MediaIDList>
-																<MediaID ID="618541652"/>
+																<MediaID ID="670737083"/>
 															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>
-														<ActiveSource Name="Wood_Impact-003" ID="{251D0415-AAF5-4734-A855-4866B928E254}" Platform="Linked"/>
+														<ActiveSource Name="Carpet_Toe-003" ID="{E9D10907-5DA5-4032-9659-C087067D47B9}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
-												<Sound Name="Wood_Impact-004" ID="{27E736A3-9BDB-4800-8E3A-432CCE0282D1}" ShortID="335227360">
+												<Sound Name="Carpet_Toe-004" ID="{EE57CBFC-CAE1-452C-886A-7C088F741B1D}" ShortID="380215585">
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
@@ -193,24 +198,33 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="Wood_Impact-004" ID="{93F41B92-906B-4DC9-A7E9-BF9DD887FE08}">
+														<AudioFileSource Name="Carpet_Toe-004" ID="{76C76733-5A99-47F0-8CDC-AFCE8DEC8EF5}">
 															<PropertyList>
-																<Property Name="FadeInDuration" Type="Real64" Value="0.00966"/>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.22174"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.20555"/>
 																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-																<Property Name="TrimBegin" Type="Real64" Value="0.05797"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.1117"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.58916"/>
 															</PropertyList>
 															<Language>SFX</Language>
-															<AudioFile>EksamensprojektWwise\Originals\SFX\Wood_Impact-004.wav</AudioFile>
+															<AudioFile>SFX\EksamensprojektWwise\Originals\SFX\Carpet_Toe-004.wav</AudioFile>
 															<MediaIDList>
-																<MediaID ID="349133057"/>
+																<MediaID ID="297787846"/>
 															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>
-														<ActiveSource Name="Wood_Impact-004" ID="{93F41B92-906B-4DC9-A7E9-BF9DD887FE08}" Platform="Linked"/>
+														<ActiveSource Name="Carpet_Toe-004" ID="{76C76733-5A99-47F0-8CDC-AFCE8DEC8EF5}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
-												<Sound Name="Wood_Impact-006" ID="{452C1099-7692-48D2-A121-CB69B93B1DCA}" ShortID="954938011">
+												<Sound Name="Carpet_Toe-005" ID="{10C59053-FD0E-40DC-8E78-A837EF9E1E4B}" ShortID="358017610">
+													<PropertyList>
+														<Property Name="Highpass" Type="int16">
+															<ValueList>
+																<Value>17</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
@@ -220,24 +234,26 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="Wood_Impact-006" ID="{39086679-6586-4847-9749-EFEF377928CF}">
+														<AudioFileSource Name="Carpet_Toe-005" ID="{2299C376-4B73-4CE6-82C2-337018BE60BD}">
 															<PropertyList>
-																<Property Name="FadeInDuration" Type="Real64" Value="0.01227"/>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.2417"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.17829"/>
 																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-																<Property Name="TrimBegin" Type="Real64" Value="0.05615"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.08572"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.52978"/>
 															</PropertyList>
 															<Language>SFX</Language>
-															<AudioFile>EksamensprojektWwise\Originals\SFX\Wood_Impact-006.wav</AudioFile>
+															<AudioFile>SFX\EksamensprojektWwise\Originals\SFX\Carpet_Toe-005.wav</AudioFile>
 															<MediaIDList>
-																<MediaID ID="387729452"/>
+																<MediaID ID="877779073"/>
 															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>
-														<ActiveSource Name="Wood_Impact-006" ID="{39086679-6586-4847-9749-EFEF377928CF}" Platform="Linked"/>
+														<ActiveSource Name="Carpet_Toe-005" ID="{2299C376-4B73-4CE6-82C2-337018BE60BD}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
-												<Sound Name="Wood_Impact-007" ID="{9C474B6B-4D90-4D1E-B4B6-25732D08B9F6}" ShortID="947669670">
+												<Sound Name="Carpet_Toe-006" ID="{13D161B3-3F09-409F-8B1F-E50FAD4E198A}" ShortID="506178347">
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
@@ -247,24 +263,26 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="Wood_Impact-007" ID="{FAA0DD6C-415D-48EB-B711-C89747879BA6}">
+														<AudioFileSource Name="Carpet_Toe-006" ID="{802ED8EC-9D65-4DC4-9DF7-B94F4BC3350F}">
 															<PropertyList>
-																<Property Name="FadeInDuration" Type="Real64" Value="0.01283"/>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.21937"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.1686"/>
 																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-																<Property Name="TrimBegin" Type="Real64" Value="0.06411"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.15955"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.62363"/>
 															</PropertyList>
 															<Language>SFX</Language>
-															<AudioFile>EksamensprojektWwise\Originals\SFX\Wood_Impact-007.wav</AudioFile>
+															<AudioFile>SFX\EksamensprojektWwise\Originals\SFX\Carpet_Toe-006.wav</AudioFile>
 															<MediaIDList>
-																<MediaID ID="299862196"/>
+																<MediaID ID="131294085"/>
 															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>
-														<ActiveSource Name="Wood_Impact-007" ID="{FAA0DD6C-415D-48EB-B711-C89747879BA6}" Platform="Linked"/>
+														<ActiveSource Name="Carpet_Toe-006" ID="{802ED8EC-9D65-4DC4-9DF7-B94F4BC3350F}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
-												<Sound Name="Wood_Impact-008" ID="{D370A456-D036-46BD-B1AB-9B817FF477E5}" ShortID="584027148">
+												<Sound Name="Carpet_Toe-007" ID="{6ED17E87-DB8F-43E9-B9F1-8257EE23EA34}" ShortID="474916796">
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
@@ -274,24 +292,26 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="Wood_Impact-008" ID="{8B9C5853-FB33-4374-A2EA-D337720B6B2A}">
+														<AudioFileSource Name="Carpet_Toe-007" ID="{A80D306E-579A-4536-878C-CE9D775F121F}">
 															<PropertyList>
-																<Property Name="FadeInDuration" Type="Real64" Value="0.01067"/>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.24157"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.38571"/>
 																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-																<Property Name="TrimBegin" Type="Real64" Value="0.05791"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.07599"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.73435"/>
 															</PropertyList>
 															<Language>SFX</Language>
-															<AudioFile>EksamensprojektWwise\Originals\SFX\Wood_Impact-008.wav</AudioFile>
+															<AudioFile>SFX\EksamensprojektWwise\Originals\SFX\Carpet_Toe-007.wav</AudioFile>
 															<MediaIDList>
-																<MediaID ID="774812347"/>
+																<MediaID ID="482578730"/>
 															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>
-														<ActiveSource Name="Wood_Impact-008" ID="{8B9C5853-FB33-4374-A2EA-D337720B6B2A}" Platform="Linked"/>
+														<ActiveSource Name="Carpet_Toe-007" ID="{A80D306E-579A-4536-878C-CE9D775F121F}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
-												<Sound Name="Wood_Impact-009" ID="{26B89A3C-E34B-4ACE-98ED-46398A190A6B}" ShortID="571035673">
+												<Sound Name="Carpet_Toe-008" ID="{DA43A2BB-0727-42D0-9E5B-87FD2D0183C2}" ShortID="682996893">
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
@@ -301,24 +321,26 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="Wood_Impact-009" ID="{3A8E1A88-D244-4451-8BA3-0349AE114068}">
+														<AudioFileSource Name="Carpet_Toe-008" ID="{A7124052-464C-41E3-8E4F-C9E6B92B2909}">
 															<PropertyList>
-																<Property Name="FadeInDuration" Type="Real64" Value="0.0158"/>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.27445"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.19576"/>
 																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-																<Property Name="TrimBegin" Type="Real64" Value="0.05264"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.09215"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.54118"/>
 															</PropertyList>
 															<Language>SFX</Language>
-															<AudioFile>EksamensprojektWwise\Originals\SFX\Wood_Impact-009.wav</AudioFile>
+															<AudioFile>SFX\EksamensprojektWwise\Originals\SFX\Carpet_Toe-008.wav</AudioFile>
 															<MediaIDList>
-																<MediaID ID="808433203"/>
+																<MediaID ID="15347365"/>
 															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>
-														<ActiveSource Name="Wood_Impact-009" ID="{3A8E1A88-D244-4451-8BA3-0349AE114068}" Platform="Linked"/>
+														<ActiveSource Name="Carpet_Toe-008" ID="{A7124052-464C-41E3-8E4F-C9E6B92B2909}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
-												<Sound Name="Wood_Impact-010" ID="{290E1260-6C26-4A68-88BF-64C5BC283E2E}" ShortID="379757920">
+												<Sound Name="Carpet_Toe-009" ID="{43386EF8-4065-4D4B-A996-7C8F6C8FA46C}" ShortID="565331194">
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
@@ -328,21 +350,81 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="Wood_Impact-010" ID="{C8776C7A-E905-4D79-9D23-E03CEF4A6133}">
+														<AudioFileSource Name="Carpet_Toe-009" ID="{A33F6693-5D2D-430D-BD42-6EB060FCBD08}">
 															<PropertyList>
-																<Property Name="FadeInDuration" Type="Real64" Value="0.00739"/>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.25571"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.2869"/>
 																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-																<Property Name="TrimBegin" Type="Real64" Value="0.03619"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.14971"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.67361"/>
 															</PropertyList>
 															<Language>SFX</Language>
-															<AudioFile>EksamensprojektWwise\Originals\SFX\Wood_Impact-010.wav</AudioFile>
+															<AudioFile>SFX\EksamensprojektWwise\Originals\SFX\Carpet_Toe-009.wav</AudioFile>
 															<MediaIDList>
-																<MediaID ID="271782980"/>
+																<MediaID ID="188821505"/>
 															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>
-														<ActiveSource Name="Wood_Impact-010" ID="{C8776C7A-E905-4D79-9D23-E03CEF4A6133}" Platform="Linked"/>
+														<ActiveSource Name="Carpet_Toe-009" ID="{A33F6693-5D2D-430D-BD42-6EB060FCBD08}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Carpet_Toe-010" ID="{1605759F-B978-4FFB-B9EE-1C1CA1459F14}" ShortID="76692169">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Carpet_Toe-010" ID="{6925DB51-D053-4BAD-A59E-2569A8A12B07}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.30588"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.32241"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.155"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.62213"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>SFX\EksamensprojektWwise\Originals\SFX\Carpet_Toe-010.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="601923523"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Carpet_Toe-010" ID="{6925DB51-D053-4BAD-A59E-2569A8A12B07}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Carpet_Toe-012" ID="{9060BDBA-F62F-49B5-939B-8E0C4446CF3E}" ShortID="81144690">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Carpet_Toe-012" ID="{E858E56B-7ACE-47A7-8B7F-6451B48D27B2}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.36244"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.31651"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.03384"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.43485"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>SFX\EksamensprojektWwise\Originals\SFX\Carpet_Toe-012.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="762593901"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Carpet_Toe-012" ID="{E858E56B-7ACE-47A7-8B7F-6451B48D27B2}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
 											</ChildrenList>
@@ -356,20 +438,25 @@
 												<Property Name="3DSpatialization" Type="int16" Value="2"/>
 												<Property Name="Highpass" Type="int16">
 													<ValueList>
-														<Value>45</Value>
+														<Value>33</Value>
 													</ValueList>
 												</Property>
 												<Property Name="InitialDelay" Type="Real64">
 													<ValueList>
-														<Value>0.1</Value>
+														<Value>0.15</Value>
 													</ValueList>
 												</Property>
 												<Property Name="Lowpass" Type="int16">
 													<ValueList>
-														<Value>68</Value>
+														<Value>73</Value>
 													</ValueList>
 												</Property>
 												<Property Name="SpeakerPanning" Type="int16" Value="1"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>8</Value>
+													</ValueList>
+												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Attenuation">
@@ -396,8 +483,10 @@
 														<AudioFileSource Name="Carpet_Step-001" ID="{6DAA3DBC-D3B7-44F5-9B83-360B7C15004C}">
 															<PropertyList>
 																<Property Name="FadeInDuration" Type="Real64" Value="0.00911"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.06163"/>
 																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 																<Property Name="TrimBegin" Type="Real64" Value="0.09411"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.40461"/>
 															</PropertyList>
 															<Language>SFX</Language>
 															<AudioFile>EksamensprojektWwise\Originals\SFX\Carpet_Step-001.wav</AudioFile>
@@ -423,8 +512,10 @@
 														<AudioFileSource Name="Carpet_Step-002" ID="{6986C295-7E8B-4B95-B14B-6F8B83A1278F}">
 															<PropertyList>
 																<Property Name="FadeInDuration" Type="Real64" Value="0.01012"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.0703"/>
 																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 																<Property Name="TrimBegin" Type="Real64" Value="0.0769"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.24137"/>
 															</PropertyList>
 															<Language>SFX</Language>
 															<AudioFile>EksamensprojektWwise\Originals\SFX\Carpet_Step-002.wav</AudioFile>
@@ -450,8 +541,10 @@
 														<AudioFileSource Name="Carpet_Step-003" ID="{716996E4-002C-4FC5-80DE-3B5D72F9A70E}">
 															<PropertyList>
 																<Property Name="FadeInDuration" Type="Real64" Value="0.0081"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.09461"/>
 																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 																<Property Name="TrimBegin" Type="Real64" Value="0.04145"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.24306"/>
 															</PropertyList>
 															<Language>SFX</Language>
 															<AudioFile>EksamensprojektWwise\Originals\SFX\Carpet_Step-003.wav</AudioFile>
@@ -477,8 +570,10 @@
 														<AudioFileSource Name="Carpet_Step-004" ID="{37983202-D39F-431D-9C7B-C1964D5CC79D}">
 															<PropertyList>
 																<Property Name="FadeInDuration" Type="Real64" Value="0.0081"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.12499"/>
 																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 																<Property Name="TrimBegin" Type="Real64" Value="0.11029"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.31511"/>
 															</PropertyList>
 															<Language>SFX</Language>
 															<AudioFile>EksamensprojektWwise\Originals\SFX\Carpet_Step-004.wav</AudioFile>
@@ -504,8 +599,10 @@
 														<AudioFileSource Name="Carpet_Step-005" ID="{3772B47D-DC36-4B00-AA0F-2DE3DD8CE7DD}">
 															<PropertyList>
 																<Property Name="FadeInDuration" Type="Real64" Value="0.00911"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.15279"/>
 																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 																<Property Name="TrimBegin" Type="Real64" Value="0.11135"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.303"/>
 															</PropertyList>
 															<Language>SFX</Language>
 															<AudioFile>EksamensprojektWwise\Originals\SFX\Carpet_Step-005.wav</AudioFile>
@@ -531,8 +628,10 @@
 														<AudioFileSource Name="Carpet_Step-006" ID="{D5AEEAD2-5266-4FB9-98AA-4C0BCD6E2FEF}">
 															<PropertyList>
 																<Property Name="FadeInDuration" Type="Real64" Value="0.00911"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.21263"/>
 																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-																<Property Name="TrimBegin" Type="Real64" Value="0.17403"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.16012"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.43491"/>
 															</PropertyList>
 															<Language>SFX</Language>
 															<AudioFile>EksamensprojektWwise\Originals\SFX\Carpet_Step-006.wav</AudioFile>
@@ -558,8 +657,10 @@
 														<AudioFileSource Name="Carpet_Step-007" ID="{E361168C-580D-4B6C-A39C-4A96CFDAD1F6}">
 															<PropertyList>
 																<Property Name="FadeInDuration" Type="Real64" Value="0.00911"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.18491"/>
 																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 																<Property Name="TrimBegin" Type="Real64" Value="0.13053"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.3533"/>
 															</PropertyList>
 															<Language>SFX</Language>
 															<AudioFile>EksamensprojektWwise\Originals\SFX\Carpet_Step-007.wav</AudioFile>
@@ -585,8 +686,10 @@
 														<AudioFileSource Name="Carpet_Step-008" ID="{BA7BB634-DBCF-48FA-93D2-500F652CC531}">
 															<PropertyList>
 																<Property Name="FadeInDuration" Type="Real64" Value="0.00911"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.19528"/>
 																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 																<Property Name="TrimBegin" Type="Real64" Value="0.12854"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.41929"/>
 															</PropertyList>
 															<Language>SFX</Language>
 															<AudioFile>EksamensprojektWwise\Originals\SFX\Carpet_Step-008.wav</AudioFile>
@@ -612,8 +715,10 @@
 														<AudioFileSource Name="Carpet_Step-009" ID="{EA62A0B1-C832-4FC8-A13C-2D72ECEE557D}">
 															<PropertyList>
 																<Property Name="FadeInDuration" Type="Real64" Value="0.0081"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.125"/>
 																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 																<Property Name="TrimBegin" Type="Real64" Value="0.14677"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.3646"/>
 															</PropertyList>
 															<Language>SFX</Language>
 															<AudioFile>EksamensprojektWwise\Originals\SFX\Carpet_Step-009.wav</AudioFile>
@@ -639,8 +744,10 @@
 														<AudioFileSource Name="Carpet_Step-010" ID="{FED73EC2-3D1B-4168-9DEE-001EC632DD49}">
 															<PropertyList>
 																<Property Name="FadeInDuration" Type="Real64" Value="0.0081"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.11979"/>
 																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 																<Property Name="TrimBegin" Type="Real64" Value="0.11543"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.35067"/>
 															</PropertyList>
 															<Language>SFX</Language>
 															<AudioFile>EksamensprojektWwise\Originals\SFX\Carpet_Step-010.wav</AudioFile>
@@ -664,23 +771,23 @@
 												<Property Name="3DSpatialization" Type="int16" Value="2"/>
 												<Property Name="Highpass" Type="int16">
 													<ValueList>
-														<Value>20</Value>
+														<Value>33</Value>
 													</ValueList>
 												</Property>
 												<Property Name="Lowpass" Type="int16">
 													<ValueList>
-														<Value>57</Value>
+														<Value>66</Value>
 													</ValueList>
 												</Property>
 												<Property Name="Pitch" Type="int32">
 													<ValueList>
-														<Value>650</Value>
+														<Value>570</Value>
 													</ValueList>
 												</Property>
 												<Property Name="SpeakerPanning" Type="int16" Value="1"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-17</Value>
+														<Value>-10</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -738,12 +845,12 @@
 																<Property Name="FadeInDuration" Type="Real64" Value="0.06804"/>
 																<Property Name="FadeOutDuration" Type="Real64" Value="0.19055"/>
 																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-																<Property Name="TrimEnd" Type="Real64" Value="0.49987"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.37041"/>
 															</PropertyList>
 															<Language>SFX</Language>
 															<AudioFile>EksamensprojektWwise\Originals\SFX\Carpet_Texture-002.wav</AudioFile>
 															<MediaIDList>
-																<MediaID ID="350414441"/>
+																<MediaID ID="989503299"/>
 															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
@@ -765,12 +872,12 @@
 															<PropertyList>
 																<Property Name="FadeOutDuration" Type="Real64" Value="0.10073"/>
 																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-																<Property Name="TrimEnd" Type="Real64" Value="0.34783"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.31117"/>
 															</PropertyList>
 															<Language>SFX</Language>
 															<AudioFile>EksamensprojektWwise\Originals\SFX\Carpet_Texture-003.wav</AudioFile>
 															<MediaIDList>
-																<MediaID ID="285702296"/>
+																<MediaID ID="88393603"/>
 															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
@@ -792,12 +899,12 @@
 															<PropertyList>
 																<Property Name="FadeOutDuration" Type="Real64" Value="0.27571"/>
 																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-																<Property Name="TrimEnd" Type="Real64" Value="0.36846"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.34158"/>
 															</PropertyList>
 															<Language>SFX</Language>
 															<AudioFile>EksamensprojektWwise\Originals\SFX\Carpet_Texture-004.wav</AudioFile>
 															<MediaIDList>
-																<MediaID ID="804666013"/>
+																<MediaID ID="238570229"/>
 															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
@@ -817,14 +924,15 @@
 													<ChildrenList>
 														<AudioFileSource Name="Carpet_Texture-005" ID="{D5FEBD8E-9F4A-498B-8478-297CCA4B1AAB}">
 															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.09487"/>
 																<Property Name="FadeOutDuration" Type="Real64" Value="0.18401"/>
 																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-																<Property Name="TrimEnd" Type="Real64" Value="0.35061"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.40464"/>
 															</PropertyList>
 															<Language>SFX</Language>
 															<AudioFile>EksamensprojektWwise\Originals\SFX\Carpet_Texture-005.wav</AudioFile>
 															<MediaIDList>
-																<MediaID ID="1066736166"/>
+																<MediaID ID="348831891"/>
 															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
@@ -844,14 +952,15 @@
 													<ChildrenList>
 														<AudioFileSource Name="Carpet_Texture-006" ID="{18B29491-1DE4-40E2-8F44-6CA17F1C07CA}">
 															<PropertyList>
-																<Property Name="FadeOutDuration" Type="Real64" Value="0.25125"/>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.07335"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.34688"/>
 																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 																<Property Name="TrimEnd" Type="Real64" Value="0.35926"/>
 															</PropertyList>
 															<Language>SFX</Language>
 															<AudioFile>EksamensprojektWwise\Originals\SFX\Carpet_Texture-006.wav</AudioFile>
 															<MediaIDList>
-																<MediaID ID="160873394"/>
+																<MediaID ID="964639092"/>
 															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
@@ -871,15 +980,15 @@
 													<ChildrenList>
 														<AudioFileSource Name="Carpet_Texture-007" ID="{32BA3082-EBFE-4167-9FD2-3CBB01B3A743}">
 															<PropertyList>
-																<Property Name="FadeInDuration" Type="Real64" Value="0.04418"/>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.19145"/>
 																<Property Name="FadeOutDuration" Type="Real64" Value="0.20613"/>
 																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-																<Property Name="TrimEnd" Type="Real64" Value="0.42186"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.39952"/>
 															</PropertyList>
 															<Language>SFX</Language>
 															<AudioFile>EksamensprojektWwise\Originals\SFX\Carpet_Texture-007.wav</AudioFile>
 															<MediaIDList>
-																<MediaID ID="856242761"/>
+																<MediaID ID="822356084"/>
 															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
@@ -899,14 +1008,15 @@
 													<ChildrenList>
 														<AudioFileSource Name="Carpet_Texture-008" ID="{1D7C6FDA-97A9-4D08-8165-923B6092C22C}">
 															<PropertyList>
-																<Property Name="FadeOutDuration" Type="Real64" Value="0.10305"/>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.18407"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.30616"/>
 																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 																<Property Name="TrimEnd" Type="Real64" Value="0.33206"/>
 															</PropertyList>
 															<Language>SFX</Language>
 															<AudioFile>EksamensprojektWwise\Originals\SFX\Carpet_Texture-008.wav</AudioFile>
 															<MediaIDList>
-																<MediaID ID="900261532"/>
+																<MediaID ID="603017914"/>
 															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
@@ -926,7 +1036,7 @@
 													<ChildrenList>
 														<AudioFileSource Name="Carpet_Texture-009" ID="{7A5E9F7A-4ED0-4FFA-A81D-5D95B48F38C5}">
 															<PropertyList>
-																<Property Name="FadeInDuration" Type="Real64" Value="0.20405"/>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.26558"/>
 																<Property Name="FadeOutDuration" Type="Real64" Value="0.13897"/>
 																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 																<Property Name="TrimEnd" Type="Real64" Value="0.3506"/>
@@ -934,7 +1044,7 @@
 															<Language>SFX</Language>
 															<AudioFile>EksamensprojektWwise\Originals\SFX\Carpet_Texture-009.wav</AudioFile>
 															<MediaIDList>
-																<MediaID ID="979031044"/>
+																<MediaID ID="884268736"/>
 															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
@@ -954,7 +1064,7 @@
 													<ChildrenList>
 														<AudioFileSource Name="Carpet_Texture-010" ID="{0E1B94B3-059D-4EAC-8B54-1C204D316AB3}">
 															<PropertyList>
-																<Property Name="FadeInDuration" Type="Real64" Value="0.26337"/>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.40918"/>
 																<Property Name="FadeOutDuration" Type="Real64" Value="0.38077"/>
 																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 																<Property Name="TrimBegin" Type="Real64" Value="0.21757"/>
@@ -963,7 +1073,7 @@
 															<Language>SFX</Language>
 															<AudioFile>EksamensprojektWwise\Originals\SFX\Carpet_Texture-010.wav</AudioFile>
 															<MediaIDList>
-																<MediaID ID="767721366"/>
+																<MediaID ID="736940525"/>
 															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
@@ -1451,6 +1561,8 @@
 								<BlendContainer Name="FS_Tile" ID="{54AEDF75-3161-4D7E-A92F-C8F8C622CD03}" ShortID="337804272">
 									<PropertyList>
 										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="Color" Type="int16" Value="4"/>
+										<Property Name="OverrideColor" Type="bool" Value="True"/>
 										<Property Name="SpeakerPanning" Type="int16" Value="1"/>
 									</PropertyList>
 									<ReferenceList>
@@ -1465,33 +1577,17 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<RandomSequenceContainer Name="FS_Tile_1-Toe" ID="{01ADA6E7-6CD8-423E-9129-6D2AC1496D5C}" ShortID="709060652">
+										<RandomSequenceContainer Name="FS_Tile_1-Toe" ID="{5C424C78-0B68-40AD-9C37-3A7FA2A82EAA}" ShortID="454069846">
 											<PropertyList>
 												<Property Name="3DSpatialization" Type="int16" Value="2"/>
-												<Property Name="SpeakerPanning" Type="int16" Value="1"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Attenuation">
-													<ObjectRef Name="Attenuate_50" ID="{143E31F9-1597-48C4-9436-CFA24A10D321}" WorkUnitID="{E312AA2F-7D32-49AE-9B3F-853E8C0370AC}"/>
-												</Reference>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
-												</Reference>
-											</ReferenceList>
-											<PositioningInfo>
-												<Panner Name="" ID="{09820D20-E16A-49AC-9765-E0FBB1A944A3}"/>
-												<Position Name="" ID="{624C7999-AE43-46FD-B216-69E501004B06}"/>
-											</PositioningInfo>
-										</RandomSequenceContainer>
-										<RandomSequenceContainer Name="FS_Tile_2-Foot" ID="{59A2BCFB-C899-4100-B9AB-CC0544A8F815}" ShortID="763915418">
-											<PropertyList>
-												<Property Name="3DSpatialization" Type="int16" Value="2"/>
-												<Property Name="InitialDelay" Type="Real64">
+												<Property Name="Highpass" Type="int16">
 													<ValueList>
-														<Value>0.1</Value>
+														<Value>44</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Lowpass" Type="int16">
+													<ValueList>
+														<Value>59</Value>
 													</ValueList>
 												</Property>
 												<Property Name="SpeakerPanning" Type="int16" Value="1"/>
@@ -1507,9 +1603,500 @@
 													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
 												</Reference>
 											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Tiles_Toe-001" ID="{715866C7-7F06-496F-B306-84872BC3E240}" ShortID="731156487">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Tiles_Toe-001" ID="{E059ED02-D695-4973-8DFC-05591B3AE23E}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.01443"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.08794"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>SFX\EksamensprojektWwise\Originals\SFX\Tiles_Toe-001.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="628993111"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Tiles_Toe-001" ID="{E059ED02-D695-4973-8DFC-05591B3AE23E}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Tiles_Toe-002" ID="{B5CDA8B0-E799-4D4E-A5B1-2AED4CA66D6C}" ShortID="666395504">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Tiles_Toe-002" ID="{5D5858CA-9BD5-439C-AF29-B3F1C48DA651}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.01735"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.11111"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>SFX\EksamensprojektWwise\Originals\SFX\Tiles_Toe-002.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="373288275"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Tiles_Toe-002" ID="{5D5858CA-9BD5-439C-AF29-B3F1C48DA651}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Tiles_Toe-003" ID="{2707B4FB-701E-42A4-A95A-D21FB2C11EE1}" ShortID="621766124">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Tiles_Toe-003" ID="{7BE30FF4-7F59-4EA6-9ED5-0CA9FD2FEB7D}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.00665"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.17428"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.10195"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.27623"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>SFX\EksamensprojektWwise\Originals\SFX\Tiles_Toe-003.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="382093892"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Tiles_Toe-003" ID="{7BE30FF4-7F59-4EA6-9ED5-0CA9FD2FEB7D}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Tiles_Toe-004" ID="{099E1693-F27B-400F-8D18-069496985773}" ShortID="736730708">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Tiles_Toe-004" ID="{C8C7C97E-A6CA-4F28-B0A9-9406EE90381E}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.00887"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.22033"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.08357"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>SFX\EksamensprojektWwise\Originals\SFX\Tiles_Toe-004.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="769343266"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Tiles_Toe-004" ID="{C8C7C97E-A6CA-4F28-B0A9-9406EE90381E}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Tiles_Toe-005" ID="{A38B9A55-7A5D-470F-81B1-B8BB82E2129D}" ShortID="72471089">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Tiles_Toe-005" ID="{42810D68-AD5F-480C-B55C-8D463843D9AA}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.0063"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.2271"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.08061"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>SFX\EksamensprojektWwise\Originals\SFX\Tiles_Toe-005.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="28893607"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Tiles_Toe-005" ID="{42810D68-AD5F-480C-B55C-8D463843D9AA}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Tiles_Toe-006" ID="{1AE5F9C4-3953-4C6D-98EE-5EEFFB82E50C}" ShortID="680338604">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Tiles_Toe-006" ID="{CDE5CA91-175B-4689-8F5A-37D70D9C5207}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.00845"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.10675"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.03861"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>SFX\EksamensprojektWwise\Originals\SFX\Tiles_Toe-006.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="292252602"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Tiles_Toe-006" ID="{CDE5CA91-175B-4689-8F5A-37D70D9C5207}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Tiles_Toe-008" ID="{259CA8BE-DD08-4485-8B2F-48CC6E30B206}" ShortID="170289446">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Tiles_Toe-008" ID="{EB8F560A-925A-4084-8730-BA50A220449D}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.02014"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.16415"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.0933"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>SFX\EksamensprojektWwise\Originals\SFX\Tiles_Toe-008.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="700589232"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Tiles_Toe-008" ID="{EB8F560A-925A-4084-8730-BA50A220449D}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Tiles_Toe-009" ID="{8A36E0EA-D84C-48E2-8C48-1202C340F24F}" ShortID="652980155">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Tiles_Toe-009" ID="{713AB994-C4B7-415C-A602-155AD0FBC374}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.00949"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.13456"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.05381"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.26193"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>SFX\EksamensprojektWwise\Originals\SFX\Tiles_Toe-009.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="547255744"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Tiles_Toe-009" ID="{713AB994-C4B7-415C-A602-155AD0FBC374}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Tiles_Toe-010" ID="{16FDD7C3-9AA5-4ACE-8B3D-233BE3629BED}" ShortID="936810995">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Tiles_Toe-010" ID="{02A08CE7-FC09-441B-BBE1-CCFA98B048C1}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.03203"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.16829"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.0838"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>SFX\EksamensprojektWwise\Originals\SFX\Tiles_Toe-010.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="1009104399"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Tiles_Toe-010" ID="{02A08CE7-FC09-441B-BBE1-CCFA98B048C1}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
 											<PositioningInfo>
-												<Panner Name="" ID="{EDB860E8-AB75-435D-BCDF-58DC0B995E65}"/>
-												<Position Name="" ID="{6C53EE6F-EF93-471A-9A9F-77EDF3AB434A}"/>
+												<Panner Name="" ID="{2B46E84C-C975-4B8E-905C-AC016ADD33A8}"/>
+												<Position Name="" ID="{CAFF8654-AF1C-4F49-8138-7943EB5DFE13}"/>
+											</PositioningInfo>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="FS_Tile_2-Foot" ID="{FA58A895-6E1D-471F-B478-BB5541B2AE51}" ShortID="892987507">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="Highpass" Type="int16">
+													<ValueList>
+														<Value>33</Value>
+													</ValueList>
+												</Property>
+												<Property Name="InitialDelay" Type="Real64">
+													<ValueList>
+														<Value>0.12</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Lowpass" Type="int16">
+													<ValueList>
+														<Value>28</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Pitch" Type="int32">
+													<ValueList>
+														<Value>150</Value>
+													</ValueList>
+												</Property>
+												<Property Name="SpeakerPanning" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Attenuate_50" ID="{143E31F9-1597-48C4-9436-CFA24A10D321}" WorkUnitID="{E312AA2F-7D32-49AE-9B3F-853E8C0370AC}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Tiles_Step-002" ID="{5AFA3F42-D0E0-43CB-A108-406157D75428}" ShortID="882296414">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Tiles_Step-002" ID="{74EB2978-2BDA-4FDB-99FF-B682271051DB}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.01472"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.21677"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.06381"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>SFX\EksamensprojektWwise\Originals\SFX\Tiles_Step-002.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="973222798"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Tiles_Step-002" ID="{74EB2978-2BDA-4FDB-99FF-B682271051DB}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Tiles_Step-003" ID="{D249F854-84BF-45B6-B384-D1AAACAE7D80}" ShortID="945786195">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Tiles_Step-003" ID="{CB9EC232-C91A-4E78-9B66-15F33EAE86FB}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.01217"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.0517"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.05705"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>SFX\EksamensprojektWwise\Originals\SFX\Tiles_Step-003.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="21911819"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Tiles_Step-003" ID="{CB9EC232-C91A-4E78-9B66-15F33EAE86FB}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Tiles_Step-004" ID="{B3EDD8D7-9DD9-4ACE-B199-69B25CE866D2}" ShortID="921491948">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Tiles_Step-004" ID="{D68103EF-107A-4286-9E08-6F0C1993E4D4}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.00833"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.08146"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.08336"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>SFX\EksamensprojektWwise\Originals\SFX\Tiles_Step-004.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="37214159"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Tiles_Step-004" ID="{D68103EF-107A-4286-9E08-6F0C1993E4D4}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Tiles_Step-005" ID="{7AE34A2B-88E0-4C54-899D-9958655A9D1F}" ShortID="487146272">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Tiles_Step-005" ID="{0670840F-AE90-4C54-BA14-CEFF8639B84C}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.00686"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.05031"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.07203"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>SFX\EksamensprojektWwise\Originals\SFX\Tiles_Step-005.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="1009764543"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Tiles_Step-005" ID="{0670840F-AE90-4C54-BA14-CEFF8639B84C}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Tiles_Step-006" ID="{BB392590-D5B0-43EB-A4F0-E4FA137F100C}" ShortID="30275717">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Tiles_Step-006" ID="{AF124E69-A00C-458A-942F-F3DAA873C32C}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.01506"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.07612"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>SFX\EksamensprojektWwise\Originals\SFX\Tiles_Step-006.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="943360329"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Tiles_Step-006" ID="{AF124E69-A00C-458A-942F-F3DAA873C32C}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Tiles_Step-007" ID="{BBAF50B3-68FA-4E31-A743-724670EEDEC4}" ShortID="319592700">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Tiles_Step-007" ID="{A3459C1A-EB3A-47BC-8D64-E006625EB4CF}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.01073"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.02146"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.10743"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>SFX\EksamensprojektWwise\Originals\SFX\Tiles_Step-007.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="995734071"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Tiles_Step-007" ID="{A3459C1A-EB3A-47BC-8D64-E006625EB4CF}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Tiles_Step-010" ID="{C2963D5C-A81A-48EF-93E8-2D33F6830CB4}" ShortID="288712157">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Tiles_Step-010" ID="{F51A2C47-E955-4019-99E3-E51D76BF54CF}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.01156"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.052"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>SFX\EksamensprojektWwise\Originals\SFX\Tiles_Step-010.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="801953892"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Tiles_Step-010" ID="{F51A2C47-E955-4019-99E3-E51D76BF54CF}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<PositioningInfo>
+												<Panner Name="" ID="{A30626CF-4555-4260-92EB-B3A4517FA556}"/>
+												<Position Name="" ID="{5656351C-E34E-43A2-88C3-CBAF0264498D}"/>
 											</PositioningInfo>
 										</RandomSequenceContainer>
 									</ChildrenList>
@@ -1521,6 +2108,8 @@
 								<BlendContainer Name="FS_Wood" ID="{22CA71FC-C595-4D23-AE56-199B6AE677BD}" ShortID="313878025">
 									<PropertyList>
 										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="Color" Type="int16" Value="4"/>
+										<Property Name="OverrideColor" Type="bool" Value="True"/>
 										<Property Name="SpeakerPanning" Type="int16" Value="1"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
@@ -1977,6 +2566,8 @@
 								<BlendContainer Name="FS_Wood" ID="{1E8969E5-2C52-41FA-B64F-9D8EAC32FAA8}" ShortID="376520079">
 									<PropertyList>
 										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="Color" Type="int16" Value="4"/>
+										<Property Name="OverrideColor" Type="bool" Value="True"/>
 										<Property Name="SpeakerPanning" Type="int16" Value="1"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
@@ -2500,7 +3091,14 @@
 								<BlendContainer Name="FS_Carpet" ID="{07DB4C62-253B-4909-8DBD-58EB643E47D3}" ShortID="1006683599">
 									<PropertyList>
 										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="Color" Type="int16" Value="4"/>
+										<Property Name="OverrideColor" Type="bool" Value="True"/>
 										<Property Name="SpeakerPanning" Type="int16" Value="1"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-8</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Attenuation">
@@ -2533,6 +3131,11 @@
 													</ValueList>
 												</Property>
 												<Property Name="SpeakerPanning" Type="int16" Value="1"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>8</Value>
+													</ValueList>
+												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Attenuation">
@@ -2852,9 +3455,14 @@
 										<RandomSequenceContainer Name="FS_Carpet_3-Texture" ID="{DFFB9639-DF79-46A4-84CD-B5042EE112AE}" ShortID="248913698">
 											<PropertyList>
 												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="Highpass" Type="int16">
+													<ValueList>
+														<Value>33</Value>
+													</ValueList>
+												</Property>
 												<Property Name="Lowpass" Type="int16">
 													<ValueList>
-														<Value>55</Value>
+														<Value>63</Value>
 													</ValueList>
 												</Property>
 												<Property Name="Pitch" Type="int32">
@@ -2865,7 +3473,7 @@
 												<Property Name="SpeakerPanning" Type="int16" Value="1"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-17</Value>
+														<Value>-10</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -3181,6 +3789,11 @@
 													</ValueList>
 												</Property>
 												<Property Name="SpeakerPanning" Type="int16" Value="1"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>8</Value>
+													</ValueList>
+												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Attenuation">
@@ -3479,6 +4092,8 @@
 								<BlendContainer Name="FS_Tile" ID="{2D5D8305-E5AB-4103-B09F-70E7AEA6292E}" ShortID="481353697">
 									<PropertyList>
 										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="Color" Type="int16" Value="4"/>
+										<Property Name="OverrideColor" Type="bool" Value="True"/>
 										<Property Name="SpeakerPanning" Type="int16" Value="1"/>
 									</PropertyList>
 									<ReferenceList>
@@ -3496,30 +4111,14 @@
 										<RandomSequenceContainer Name="FS_Tile_1-Heel" ID="{B0CDDE9C-328F-49F8-B621-777051E5A8B9}" ShortID="233441100">
 											<PropertyList>
 												<Property Name="3DSpatialization" Type="int16" Value="2"/>
-												<Property Name="SpeakerPanning" Type="int16" Value="1"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Attenuation">
-													<ObjectRef Name="Attenuate_50" ID="{143E31F9-1597-48C4-9436-CFA24A10D321}" WorkUnitID="{E312AA2F-7D32-49AE-9B3F-853E8C0370AC}"/>
-												</Reference>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
-												</Reference>
-											</ReferenceList>
-											<PositioningInfo>
-												<Panner Name="" ID="{7C99494A-C369-4A14-84D3-971D7DD140A8}"/>
-												<Position Name="" ID="{66009419-F220-4809-A0C0-FDD73E395E2C}"/>
-											</PositioningInfo>
-										</RandomSequenceContainer>
-										<RandomSequenceContainer Name="FS_Tile_2-Foot" ID="{744AD156-C1B3-42E0-84B6-CE298D5494BD}" ShortID="746607464">
-											<PropertyList>
-												<Property Name="3DSpatialization" Type="int16" Value="2"/>
-												<Property Name="InitialDelay" Type="Real64">
+												<Property Name="Highpass" Type="int16">
 													<ValueList>
-														<Value>0.1</Value>
+														<Value>33</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Lowpass" Type="int16">
+													<ValueList>
+														<Value>66</Value>
 													</ValueList>
 												</Property>
 												<Property Name="SpeakerPanning" Type="int16" Value="1"/>
@@ -3536,7 +4135,7 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<Sound Name="Footstep_Walking_Hardmetal_05" ID="{7F7D4F8A-9074-45E6-9280-615CA8589E13}" ShortID="547368331">
+												<Sound Name="Tiles_Heel-001" ID="{4FE69A60-4830-4CA4-BF51-FDCC174EA04A}" ShortID="740601930">
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
@@ -3546,19 +4145,26 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="Footstep_Walking_Hardmetal_05" ID="{75E71E3F-01F6-424A-96D8-C76EA6C8AD5A}">
+														<AudioFileSource Name="Tiles_Heel-001" ID="{D57C4CD7-002B-4B0D-9C8B-BAEC47AC5051}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.01326"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.1121"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.04425"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.15635"/>
+															</PropertyList>
 															<Language>SFX</Language>
-															<AudioFile>EksamensprojektGameAudio2\EksamensprojektWwise\Originals\SFX\MetalSheet\Footstep_Walking_Hardmetal_05.wav</AudioFile>
+															<AudioFile>SFX\EksamensprojektWwise\Originals\SFX\Tiles_Heel-001.wav</AudioFile>
 															<MediaIDList>
-																<MediaID ID="991939243"/>
+																<MediaID ID="254589883"/>
 															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>
-														<ActiveSource Name="Footstep_Walking_Hardmetal_05" ID="{75E71E3F-01F6-424A-96D8-C76EA6C8AD5A}" Platform="Linked"/>
+														<ActiveSource Name="Tiles_Heel-001" ID="{D57C4CD7-002B-4B0D-9C8B-BAEC47AC5051}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
-												<Sound Name="Footstep_Walking_Hardmetal_04" ID="{281EFA20-4087-4AD8-A593-0C35C6FB40DA}" ShortID="427405618">
+												<Sound Name="Tiles_Heel-002" ID="{A920F0A5-C30A-47D3-99BF-DE4F461BFC03}" ShortID="1032709151">
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
@@ -3568,19 +4174,26 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="Footstep_Walking_Hardmetal_04" ID="{BAEE62B5-0297-4407-97AF-9B4F1874768C}">
+														<AudioFileSource Name="Tiles_Heel-002" ID="{AF7956F6-931A-4E38-B7E3-0DD51A1ABED1}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.01804"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.18859"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.06791"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.28975"/>
+															</PropertyList>
 															<Language>SFX</Language>
-															<AudioFile>EksamensprojektGameAudio2\EksamensprojektWwise\Originals\SFX\MetalSheet\Footstep_Walking_Hardmetal_04.wav</AudioFile>
+															<AudioFile>SFX\EksamensprojektWwise\Originals\SFX\Tiles_Heel-002.wav</AudioFile>
 															<MediaIDList>
-																<MediaID ID="568086991"/>
+																<MediaID ID="603968308"/>
 															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>
-														<ActiveSource Name="Footstep_Walking_Hardmetal_04" ID="{BAEE62B5-0297-4407-97AF-9B4F1874768C}" Platform="Linked"/>
+														<ActiveSource Name="Tiles_Heel-002" ID="{AF7956F6-931A-4E38-B7E3-0DD51A1ABED1}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
-												<Sound Name="Footstep_Walking_Hardmetal_01" ID="{487EA35A-9BA6-4DFC-9C3E-EE197DE2AC1D}" ShortID="478185315">
+												<Sound Name="Tiles_Heel-003" ID="{9FCC2AF0-C25F-4EB3-B224-637802E5D878}" ShortID="355690168">
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
@@ -3590,19 +4203,26 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="Footstep_Walking_Hardmetal_01" ID="{6B434F7C-C234-4AD3-9A1C-339EEB2BC630}">
+														<AudioFileSource Name="Tiles_Heel-003" ID="{EC644EDD-3750-4B10-AAFD-51A2D57546AA}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.02066"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.19396"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.06035"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.25863"/>
+															</PropertyList>
 															<Language>SFX</Language>
-															<AudioFile>EksamensprojektGameAudio2\EksamensprojektWwise\Originals\SFX\MetalSheet\Footstep_Walking_Hardmetal_01.wav</AudioFile>
+															<AudioFile>SFX\EksamensprojektWwise\Originals\SFX\Tiles_Heel-003.wav</AudioFile>
 															<MediaIDList>
-																<MediaID ID="512419251"/>
+																<MediaID ID="84109249"/>
 															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>
-														<ActiveSource Name="Footstep_Walking_Hardmetal_01" ID="{6B434F7C-C234-4AD3-9A1C-339EEB2BC630}" Platform="Linked"/>
+														<ActiveSource Name="Tiles_Heel-003" ID="{EC644EDD-3750-4B10-AAFD-51A2D57546AA}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
-												<Sound Name="Footstep_Walking_Hardmetal_02" ID="{1936F302-50B3-4F35-B861-9D456DDED355}" ShortID="355171589">
+												<Sound Name="Tiles_Heel-004" ID="{10E95EC3-40F4-4622-8E19-03249F38CC9C}" ShortID="691247370">
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
@@ -3612,19 +4232,26 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="Footstep_Walking_Hardmetal_02" ID="{DE19EC8A-BB49-449F-BC0A-651A4D28D2C2}">
+														<AudioFileSource Name="Tiles_Heel-004" ID="{45D86D74-6BAB-4F5B-B3F3-23CAF88F68BD}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.01307"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.09496"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.0633"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.19954"/>
+															</PropertyList>
 															<Language>SFX</Language>
-															<AudioFile>EksamensprojektGameAudio2\EksamensprojektWwise\Originals\SFX\MetalSheet\Footstep_Walking_Hardmetal_02.wav</AudioFile>
+															<AudioFile>SFX\EksamensprojektWwise\Originals\SFX\Tiles_Heel-004.wav</AudioFile>
 															<MediaIDList>
-																<MediaID ID="124697463"/>
+																<MediaID ID="1067948279"/>
 															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>
-														<ActiveSource Name="Footstep_Walking_Hardmetal_02" ID="{DE19EC8A-BB49-449F-BC0A-651A4D28D2C2}" Platform="Linked"/>
+														<ActiveSource Name="Tiles_Heel-004" ID="{45D86D74-6BAB-4F5B-B3F3-23CAF88F68BD}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
-												<Sound Name="Footstep_Walking_Hardmetal_03" ID="{ADD76396-F5D2-49A7-BD88-67514B797EF4}" ShortID="1049971367">
+												<Sound Name="Tiles_Heel-005" ID="{CAF9A23C-598B-46FF-9A5C-6D19F4D5757F}" ShortID="122752106">
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
@@ -3634,16 +4261,405 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="Footstep_Walking_Hardmetal_03" ID="{AF54E24A-ABF3-4274-A13D-478745EB161E}">
+														<AudioFileSource Name="Tiles_Heel-005" ID="{FCA3874D-B4A4-4B9B-8342-FE118486AA0B}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.01969"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.14188"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.06936"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.28776"/>
+															</PropertyList>
 															<Language>SFX</Language>
-															<AudioFile>EksamensprojektGameAudio2\EksamensprojektWwise\Originals\SFX\MetalSheet\Footstep_Walking_Hardmetal_03.wav</AudioFile>
+															<AudioFile>SFX\EksamensprojektWwise\Originals\SFX\Tiles_Heel-005.wav</AudioFile>
 															<MediaIDList>
-																<MediaID ID="41764518"/>
+																<MediaID ID="192376576"/>
 															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>
-														<ActiveSource Name="Footstep_Walking_Hardmetal_03" ID="{AF54E24A-ABF3-4274-A13D-478745EB161E}" Platform="Linked"/>
+														<ActiveSource Name="Tiles_Heel-005" ID="{FCA3874D-B4A4-4B9B-8342-FE118486AA0B}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Tiles_Heel-006" ID="{C0AB56E8-EE71-4DA2-8C93-3E207DD23DC1}" ShortID="628651815">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Tiles_Heel-006" ID="{D8AAF777-BCDC-4FFA-B61E-3709885C8C6C}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.02391"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.07024"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.07472"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.2474"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>SFX\EksamensprojektWwise\Originals\SFX\Tiles_Heel-006.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="262088695"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Tiles_Heel-006" ID="{D8AAF777-BCDC-4FFA-B61E-3709885C8C6C}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Tiles_Heel-007" ID="{EB781EAA-770B-4007-A520-509A16FB554D}" ShortID="761146203">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Tiles_Heel-007" ID="{98B46BFB-333B-4905-87D5-88270B576F6B}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.01718"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.13742"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.03149"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.22533"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>SFX\EksamensprojektWwise\Originals\SFX\Tiles_Heel-007.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="478441448"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Tiles_Heel-007" ID="{98B46BFB-333B-4905-87D5-88270B576F6B}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Tiles_Heel-008" ID="{091A3667-3A78-4FF4-98AC-DFAA17937764}" ShortID="984135179">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Tiles_Heel-008" ID="{D04A35D4-83FF-4730-8B9C-6106A4A67721}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.0135"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.18493"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.04302"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.24495"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>SFX\EksamensprojektWwise\Originals\SFX\Tiles_Heel-008.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="521251913"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Tiles_Heel-008" ID="{D04A35D4-83FF-4730-8B9C-6106A4A67721}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Tiles_Heel-009" ID="{5E0A1B43-2DE9-46DE-848F-2ACDDF49B3A6}" ShortID="46744487">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Tiles_Heel-009" ID="{A3770BC6-8BD9-429A-A4FA-CC6CD4025C9F}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.01494"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.15442"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.05478"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.24663"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>SFX\EksamensprojektWwise\Originals\SFX\Tiles_Heel-009.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="1036483668"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Tiles_Heel-009" ID="{A3770BC6-8BD9-429A-A4FA-CC6CD4025C9F}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Tiles_Heel-010" ID="{0309CDB5-A803-4932-A601-EE490DB8BE89}" ShortID="253576190">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Tiles_Heel-010" ID="{CE2C0482-CC48-4E67-88FD-E23AB73A5ED6}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.01896"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.11525"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.05372"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.22183"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>SFX\EksamensprojektWwise\Originals\SFX\Tiles_Heel-010.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="418599757"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Tiles_Heel-010" ID="{CE2C0482-CC48-4E67-88FD-E23AB73A5ED6}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<PositioningInfo>
+												<Panner Name="" ID="{7C99494A-C369-4A14-84D3-971D7DD140A8}"/>
+												<Position Name="" ID="{66009419-F220-4809-A0C0-FDD73E395E2C}"/>
+											</PositioningInfo>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="FS_Tile_2-Foot" ID="{744AD156-C1B3-42E0-84B6-CE298D5494BD}" ShortID="746607464">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="Highpass" Type="int16">
+													<ValueList>
+														<Value>38</Value>
+													</ValueList>
+												</Property>
+												<Property Name="InitialDelay" Type="Real64">
+													<ValueList>
+														<Value>0.1</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Lowpass" Type="int16">
+													<ValueList>
+														<Value>28</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Pitch" Type="int32">
+													<ValueList>
+														<Value>150</Value>
+													</ValueList>
+												</Property>
+												<Property Name="SpeakerPanning" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Attenuate_50" ID="{143E31F9-1597-48C4-9436-CFA24A10D321}" WorkUnitID="{E312AA2F-7D32-49AE-9B3F-853E8C0370AC}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Tiles_Step-002" ID="{1F1A9053-3FAA-4216-9EE4-ABDDFDEA748C}" ShortID="450873791">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Tiles_Step-002" ID="{EB5DCB48-2EE9-4BFE-A56A-3C709E098104}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.01472"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.21677"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.06381"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>SFX\EksamensprojektWwise\Originals\SFX\Tiles_Step-002.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="973222798"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Tiles_Step-002" ID="{EB5DCB48-2EE9-4BFE-A56A-3C709E098104}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Tiles_Step-003" ID="{60278AE6-E971-4E5F-9F15-95858090E258}" ShortID="552968972">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Tiles_Step-003" ID="{B0602657-E7FD-40C7-94AC-CAC5FFEAB355}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.01217"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.0517"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.05705"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>SFX\EksamensprojektWwise\Originals\SFX\Tiles_Step-003.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="21911819"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Tiles_Step-003" ID="{B0602657-E7FD-40C7-94AC-CAC5FFEAB355}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Tiles_Step-004" ID="{24356A46-DD7A-4419-94DE-5451048A44E1}" ShortID="687483032">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Tiles_Step-004" ID="{5C18070A-2EE3-4036-89FE-97AF747C59A4}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.00833"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.08146"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.08336"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>SFX\EksamensprojektWwise\Originals\SFX\Tiles_Step-004.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="37214159"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Tiles_Step-004" ID="{5C18070A-2EE3-4036-89FE-97AF747C59A4}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Tiles_Step-005" ID="{EC769A98-890D-4C6A-A93D-A9F48D5230B8}" ShortID="407931555">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Tiles_Step-005" ID="{EF390ADA-045A-416D-852B-E760593BA8E4}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.00686"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.05031"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.07203"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>SFX\EksamensprojektWwise\Originals\SFX\Tiles_Step-005.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="1009764543"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Tiles_Step-005" ID="{EF390ADA-045A-416D-852B-E760593BA8E4}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Tiles_Step-006" ID="{A1103507-F26D-4BAF-A980-F3AAFE8B66B3}" ShortID="376818051">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Tiles_Step-006" ID="{A221A9AF-C115-4FE3-BD71-DB9B2183E9A3}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.01506"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.07612"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>SFX\EksamensprojektWwise\Originals\SFX\Tiles_Step-006.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="943360329"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Tiles_Step-006" ID="{A221A9AF-C115-4FE3-BD71-DB9B2183E9A3}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Tiles_Step-007" ID="{C22172B5-0814-4F4D-A8B9-D464CD513189}" ShortID="451028959">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Tiles_Step-007" ID="{B4729255-F8A4-4A56-B15A-636769CBE5A6}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.01073"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.02146"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.10743"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>SFX\EksamensprojektWwise\Originals\SFX\Tiles_Step-007.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="995734071"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Tiles_Step-007" ID="{B4729255-F8A4-4A56-B15A-636769CBE5A6}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Tiles_Step-010" ID="{2A3FDC12-C264-425B-80A0-76EBA0B99005}" ShortID="224818408">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Tiles_Step-010" ID="{9B3BA076-ADD0-4C8C-80B9-FA2B0CB5803E}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.01156"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.052"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>SFX\EksamensprojektWwise\Originals\SFX\Tiles_Step-010.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="801953892"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Tiles_Step-010" ID="{9B3BA076-ADD0-4C8C-80B9-FA2B0CB5803E}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
 											</ChildrenList>
@@ -4310,6 +5326,8 @@
 								<BlendContainer Name="FS_Tile" ID="{7D26327C-F368-4B28-978F-A9AB34E1961F}" ShortID="32684112">
 									<PropertyList>
 										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="Color" Type="int16" Value="4"/>
+										<Property Name="OverrideColor" Type="bool" Value="True"/>
 										<Property Name="SpeakerPanning" Type="int16" Value="1"/>
 									</PropertyList>
 									<ReferenceList>
@@ -4324,9 +5342,19 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<RandomSequenceContainer Name="FS_Tile_1-Foot" ID="{6E675A6B-9181-4393-BD97-4FC0DCA4349C}" ShortID="365483627">
+										<RandomSequenceContainer Name="FS_Tile_1-Heel" ID="{9EB88003-A531-4ADC-9EAE-F50338A2ED91}" ShortID="538349718">
 											<PropertyList>
 												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="Highpass" Type="int16">
+													<ValueList>
+														<Value>39</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Lowpass" Type="int16">
+													<ValueList>
+														<Value>66</Value>
+													</ValueList>
+												</Property>
 												<Property Name="SpeakerPanning" Type="int16" Value="1"/>
 											</PropertyList>
 											<ReferenceList>
@@ -4340,9 +5368,538 @@
 													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
 												</Reference>
 											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Tiles_Heel-001" ID="{2ED3417D-D9F0-4F68-8366-55C84CE96F01}" ShortID="277353317">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Tiles_Heel-001" ID="{AEDAB5F1-98EF-477A-A42A-12BD6DAB9ED9}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.01326"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.1121"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.04425"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.15635"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>SFX\EksamensprojektWwise\Originals\SFX\Tiles_Heel-001.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="254589883"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Tiles_Heel-001" ID="{AEDAB5F1-98EF-477A-A42A-12BD6DAB9ED9}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Tiles_Heel-002" ID="{B92DA712-3FD4-4085-981F-C23B64221844}" ShortID="908219792">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Tiles_Heel-002" ID="{E5EF9B8C-883C-4C68-85F1-526C35F835EE}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.01804"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.18859"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.06791"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.28975"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>SFX\EksamensprojektWwise\Originals\SFX\Tiles_Heel-002.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="603968308"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Tiles_Heel-002" ID="{E5EF9B8C-883C-4C68-85F1-526C35F835EE}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Tiles_Heel-003" ID="{5BDD29C7-13B3-4622-804B-C33F1FC91E6B}" ShortID="400533568">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Tiles_Heel-003" ID="{CBB5EB0C-A798-470F-AC27-91672694B2F6}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.02066"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.19396"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.06035"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.25863"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>SFX\EksamensprojektWwise\Originals\SFX\Tiles_Heel-003.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="84109249"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Tiles_Heel-003" ID="{CBB5EB0C-A798-470F-AC27-91672694B2F6}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Tiles_Heel-004" ID="{3FB2BD0A-A948-4DF8-8866-C3146C5E4382}" ShortID="262608227">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Tiles_Heel-004" ID="{CCAD5F94-1415-417C-99A7-8E8CE3F02E81}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.01307"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.09496"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.0633"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.19954"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>SFX\EksamensprojektWwise\Originals\SFX\Tiles_Heel-004.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="1067948279"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Tiles_Heel-004" ID="{CCAD5F94-1415-417C-99A7-8E8CE3F02E81}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Tiles_Heel-005" ID="{78825C02-477E-4E1A-BED1-CC5F333B4FA3}" ShortID="18494657">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Tiles_Heel-005" ID="{C4F5E5B9-73F5-42A6-B0DA-C47957CC9F80}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.01969"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.14188"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.06936"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.28776"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>SFX\EksamensprojektWwise\Originals\SFX\Tiles_Heel-005.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="192376576"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Tiles_Heel-005" ID="{C4F5E5B9-73F5-42A6-B0DA-C47957CC9F80}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Tiles_Heel-006" ID="{CBBC5CAA-B89F-447C-94EA-679EB4745D05}" ShortID="639819744">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Tiles_Heel-006" ID="{C9FF16BF-E71F-4EE0-BD65-87D4CC068006}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.02391"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.07024"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.07472"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.2474"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>SFX\EksamensprojektWwise\Originals\SFX\Tiles_Heel-006.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="262088695"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Tiles_Heel-006" ID="{C9FF16BF-E71F-4EE0-BD65-87D4CC068006}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Tiles_Heel-007" ID="{CC501303-13FC-4A76-9557-69961BB68488}" ShortID="176468747">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Tiles_Heel-007" ID="{BD3D1924-83FD-48CB-88E2-5656906A224B}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.01718"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.13742"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.03149"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.22533"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>SFX\EksamensprojektWwise\Originals\SFX\Tiles_Heel-007.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="478441448"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Tiles_Heel-007" ID="{BD3D1924-83FD-48CB-88E2-5656906A224B}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Tiles_Heel-008" ID="{BF6FF3B4-AA87-4252-9A57-E39CA21A3791}" ShortID="176247988">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Tiles_Heel-008" ID="{A60F4ACE-028E-47C7-9B84-14C09A755181}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.0135"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.18493"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.04302"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.24495"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>SFX\EksamensprojektWwise\Originals\SFX\Tiles_Heel-008.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="521251913"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Tiles_Heel-008" ID="{A60F4ACE-028E-47C7-9B84-14C09A755181}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Tiles_Heel-009" ID="{83FE8BA1-019F-4612-AC57-E66C1D81B1E1}" ShortID="418852057">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Tiles_Heel-009" ID="{D0D7668E-9848-47EE-8605-616A96E9AD74}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.01494"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.15442"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.05478"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.24663"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>SFX\EksamensprojektWwise\Originals\SFX\Tiles_Heel-009.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="1036483668"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Tiles_Heel-009" ID="{D0D7668E-9848-47EE-8605-616A96E9AD74}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Tiles_Heel-010" ID="{05BB9CDF-5AF0-494A-AB1A-943F9EF59535}" ShortID="338626786">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Tiles_Heel-010" ID="{FEB0C6D1-9F44-430C-BCFA-54D41B9ADB3C}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.01896"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.11525"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.05372"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.22183"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>SFX\EksamensprojektWwise\Originals\SFX\Tiles_Heel-010.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="418599757"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Tiles_Heel-010" ID="{FEB0C6D1-9F44-430C-BCFA-54D41B9ADB3C}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
 											<PositioningInfo>
-												<Panner Name="" ID="{64CA2D95-41B0-48CA-9BEA-84724F76906D}"/>
-												<Position Name="" ID="{6E3DFD45-7774-473F-89A2-42C62495D76F}"/>
+												<Panner Name="" ID="{F3F33C54-3545-45D1-A924-4B85B2C1310A}"/>
+												<Position Name="" ID="{5FBEB2D8-54B2-4DFF-9219-6D18566BE166}"/>
+											</PositioningInfo>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="FS_Tile_2-Foot" ID="{017CE273-9AF8-4B2F-B123-09ED2ECF2948}" ShortID="628274769">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="Highpass" Type="int16">
+													<ValueList>
+														<Value>38</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Lowpass" Type="int16">
+													<ValueList>
+														<Value>48</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Pitch" Type="int32">
+													<ValueList>
+														<Value>150</Value>
+													</ValueList>
+												</Property>
+												<Property Name="SpeakerPanning" Type="int16" Value="1"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-4</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Attenuate_50" ID="{143E31F9-1597-48C4-9436-CFA24A10D321}" WorkUnitID="{E312AA2F-7D32-49AE-9B3F-853E8C0370AC}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Tiles_Step-002" ID="{A644AECA-EBEE-4B8D-89B0-6100B33C739C}" ShortID="450406479">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Tiles_Step-002" ID="{A4AAF0EF-CD90-439F-B290-EF4C07F7E5E2}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.01472"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.21677"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.06381"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>SFX\EksamensprojektWwise\Originals\SFX\Tiles_Step-002.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="973222798"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Tiles_Step-002" ID="{A4AAF0EF-CD90-439F-B290-EF4C07F7E5E2}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Tiles_Step-003" ID="{896C0841-A18C-4054-A76A-2CEE99E21204}" ShortID="91827182">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Tiles_Step-003" ID="{B0D5C644-C13D-4CDD-9B4F-395549C26DD8}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.01217"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.0517"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.05705"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>SFX\EksamensprojektWwise\Originals\SFX\Tiles_Step-003.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="21911819"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Tiles_Step-003" ID="{B0D5C644-C13D-4CDD-9B4F-395549C26DD8}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Tiles_Step-004" ID="{5EA8BE7A-9DC0-4955-A602-75AE256B8BFF}" ShortID="983795236">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Tiles_Step-004" ID="{CB0802F3-7010-49F5-AE49-49BF977FDC38}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.00833"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.08146"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.08336"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>SFX\EksamensprojektWwise\Originals\SFX\Tiles_Step-004.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="37214159"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Tiles_Step-004" ID="{CB0802F3-7010-49F5-AE49-49BF977FDC38}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Tiles_Step-005" ID="{E9CACCA0-1CBC-4182-9BA7-B46B396C4C75}" ShortID="1006613026">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Tiles_Step-005" ID="{42E0443C-1400-468B-BBBC-E91D3B39BFC8}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.00686"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.05031"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.07203"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>SFX\EksamensprojektWwise\Originals\SFX\Tiles_Step-005.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="1009764543"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Tiles_Step-005" ID="{42E0443C-1400-468B-BBBC-E91D3B39BFC8}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Tiles_Step-006" ID="{06CDFA4C-7EDD-4BDC-9D37-BA75D9497968}" ShortID="403561846">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Tiles_Step-006" ID="{C5B5FD98-18CA-472F-A31E-6A1ED8624B7E}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.01506"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.07612"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>SFX\EksamensprojektWwise\Originals\SFX\Tiles_Step-006.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="943360329"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Tiles_Step-006" ID="{C5B5FD98-18CA-472F-A31E-6A1ED8624B7E}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Tiles_Step-007" ID="{99EEAF29-A066-4F9B-BF5E-0DC598B9550F}" ShortID="84391531">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Tiles_Step-007" ID="{90A7B57F-2498-43A4-9DFE-8B8B4E7D80D0}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.01073"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.02146"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.10743"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>SFX\EksamensprojektWwise\Originals\SFX\Tiles_Step-007.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="995734071"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Tiles_Step-007" ID="{90A7B57F-2498-43A4-9DFE-8B8B4E7D80D0}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Tiles_Step-010" ID="{4C1E35C1-A5DC-4CDD-9F47-8B10681D0EBD}" ShortID="961386238">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Tiles_Step-010" ID="{FBB031DF-6E49-417B-B8D2-7C44A296F184}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.01156"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.052"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>SFX\EksamensprojektWwise\Originals\SFX\Tiles_Step-010.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="801953892"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Tiles_Step-010" ID="{FBB031DF-6E49-417B-B8D2-7C44A296F184}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<PositioningInfo>
+												<Panner Name="" ID="{E1EC1E25-4233-48FF-B923-4F6D89353BA1}"/>
+												<Position Name="" ID="{F3454CC7-4F4F-40E5-9BFA-F274D93B86F7}"/>
 											</PositioningInfo>
 										</RandomSequenceContainer>
 									</ChildrenList>
@@ -4354,6 +5911,8 @@
 								<BlendContainer Name="FS_Wood" ID="{14247BC2-3716-46C7-999C-037D36EFA562}" ShortID="64471074">
 									<PropertyList>
 										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="Color" Type="int16" Value="4"/>
+										<Property Name="OverrideColor" Type="bool" Value="True"/>
 										<Property Name="SpeakerPanning" Type="int16" Value="1"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
@@ -4879,7 +6438,14 @@
 								<BlendContainer Name="FS_Carpet" ID="{AC35C593-BDE4-4E9F-960F-A205F0FF696F}" ShortID="665312862">
 									<PropertyList>
 										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="Color" Type="int16" Value="4"/>
+										<Property Name="OverrideColor" Type="bool" Value="True"/>
 										<Property Name="SpeakerPanning" Type="int16" Value="1"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-8</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Attenuation">
@@ -4896,7 +6462,22 @@
 										<RandomSequenceContainer Name="FS_Carpet_1-Foot" ID="{3BCF1090-9666-4B9A-AF4A-2BA300EB51B5}" ShortID="503841591">
 											<PropertyList>
 												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="Highpass" Type="int16">
+													<ValueList>
+														<Value>45</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Lowpass" Type="int16">
+													<ValueList>
+														<Value>61</Value>
+													</ValueList>
+												</Property>
 												<Property Name="SpeakerPanning" Type="int16" Value="1"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>6</Value>
+													</ValueList>
+												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Attenuation">
@@ -4921,6 +6502,11 @@
 													</ReferenceList>
 													<ChildrenList>
 														<AudioFileSource Name="Carpet_Step-001" ID="{9EEE4504-FBA2-444B-8C5A-1816DD9964ED}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.02866"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.0955"/>
+															</PropertyList>
 															<Language>SFX</Language>
 															<AudioFile>EksamensprojektWwise\Originals\SFX\Carpet_Step-001.wav</AudioFile>
 															<MediaIDList>
@@ -4943,6 +6529,11 @@
 													</ReferenceList>
 													<ChildrenList>
 														<AudioFileSource Name="Carpet_Step-002" ID="{5DE7E4F1-FE57-4D6D-92D5-859E02B71A21}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.01912"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.06683"/>
+															</PropertyList>
 															<Language>SFX</Language>
 															<AudioFile>EksamensprojektWwise\Originals\SFX\Carpet_Step-002.wav</AudioFile>
 															<MediaIDList>
@@ -4965,6 +6556,11 @@
 													</ReferenceList>
 													<ChildrenList>
 														<AudioFileSource Name="Carpet_Step-003" ID="{46525F6D-AD5F-4A59-9309-D5DC347EE8C2}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.03822"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.0391"/>
+															</PropertyList>
 															<Language>SFX</Language>
 															<AudioFile>EksamensprojektWwise\Originals\SFX\Carpet_Step-003.wav</AudioFile>
 															<MediaIDList>
@@ -4987,6 +6583,11 @@
 													</ReferenceList>
 													<ChildrenList>
 														<AudioFileSource Name="Carpet_Step-004" ID="{961F4E24-F07E-43F9-898C-3F48B6D5EABF}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.02951"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.10935"/>
+															</PropertyList>
 															<Language>SFX</Language>
 															<AudioFile>EksamensprojektWwise\Originals\SFX\Carpet_Step-004.wav</AudioFile>
 															<MediaIDList>
@@ -5009,6 +6610,11 @@
 													</ReferenceList>
 													<ChildrenList>
 														<AudioFileSource Name="Carpet_Step-005" ID="{7C3E3334-DDC1-4900-94C8-D01375F60B05}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.03992"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.10415"/>
+															</PropertyList>
 															<Language>SFX</Language>
 															<AudioFile>EksamensprojektWwise\Originals\SFX\Carpet_Step-005.wav</AudioFile>
 															<MediaIDList>
@@ -5031,6 +6637,11 @@
 													</ReferenceList>
 													<ChildrenList>
 														<AudioFileSource Name="Carpet_Step-006" ID="{2C25B225-87DB-428E-8683-CB6AA1F72486}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.04166"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.16232"/>
+															</PropertyList>
 															<Language>SFX</Language>
 															<AudioFile>EksamensprojektWwise\Originals\SFX\Carpet_Step-006.wav</AudioFile>
 															<MediaIDList>
@@ -5053,6 +6664,11 @@
 													</ReferenceList>
 													<ChildrenList>
 														<AudioFileSource Name="Carpet_Step-007" ID="{F846BFB2-7DAF-4DD9-8F48-70732344C8A6}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.05465"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.13021"/>
+															</PropertyList>
 															<Language>SFX</Language>
 															<AudioFile>EksamensprojektWwise\Originals\SFX\Carpet_Step-007.wav</AudioFile>
 															<MediaIDList>
@@ -5075,6 +6691,11 @@
 													</ReferenceList>
 													<ChildrenList>
 														<AudioFileSource Name="Carpet_Step-008" ID="{4B0D03BC-5E89-4AC2-9AFD-23187BF34229}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.05294"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.12671"/>
+															</PropertyList>
 															<Language>SFX</Language>
 															<AudioFile>EksamensprojektWwise\Originals\SFX\Carpet_Step-008.wav</AudioFile>
 															<MediaIDList>
@@ -5097,6 +6718,11 @@
 													</ReferenceList>
 													<ChildrenList>
 														<AudioFileSource Name="Carpet_Step-009" ID="{384484C1-EB87-40AE-8520-559FB0ED2DE6}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.0547"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.14061"/>
+															</PropertyList>
 															<Language>SFX</Language>
 															<AudioFile>EksamensprojektWwise\Originals\SFX\Carpet_Step-009.wav</AudioFile>
 															<MediaIDList>
@@ -5119,6 +6745,11 @@
 													</ReferenceList>
 													<ChildrenList>
 														<AudioFileSource Name="Carpet_Step-010" ID="{4FF0426D-F241-4836-BD31-EC168CFE4999}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.03731"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.10155"/>
+															</PropertyList>
 															<Language>SFX</Language>
 															<AudioFile>EksamensprojektWwise\Originals\SFX\Carpet_Step-010.wav</AudioFile>
 															<MediaIDList>
@@ -5136,10 +6767,30 @@
 												<Position Name="" ID="{EE721EAB-C659-4E04-81FA-F360DFE2D08E}"/>
 											</PositioningInfo>
 										</RandomSequenceContainer>
-										<RandomSequenceContainer Name="FS_Carpet_2-Texture" ID="{CE004D0E-A53D-436F-9317-0760955C42F8}" ShortID="204988642">
+										<RandomSequenceContainer Name="FS_Carpet_3-Texture" ID="{B59851A7-A3C3-4532-A783-F522C0EF911E}" ShortID="158938187">
 											<PropertyList>
 												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="Highpass" Type="int16">
+													<ValueList>
+														<Value>33</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Lowpass" Type="int16">
+													<ValueList>
+														<Value>63</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Pitch" Type="int32">
+													<ValueList>
+														<Value>680</Value>
+													</ValueList>
+												</Property>
 												<Property Name="SpeakerPanning" Type="int16" Value="1"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-10</Value>
+													</ValueList>
+												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Attenuation">
@@ -5153,7 +6804,7 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<Sound Name="Carpet_Texture-001" ID="{10A4B7A4-00C8-4CCE-AB2D-F777E7ADD811}" ShortID="868399511">
+												<Sound Name="Carpet_Texture-001" ID="{2CC09ECD-AD26-4613-8737-CAE9FD2BAF58}" ShortID="293121168">
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
@@ -5163,7 +6814,12 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="Carpet_Texture-001" ID="{29DF2B00-8A8F-4D9B-8541-996CAAD0AB56}">
+														<AudioFileSource Name="Carpet_Texture-001" ID="{4AC186F7-DFDE-46E2-BF9F-98A5468D440E}">
+															<PropertyList>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.08872"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.17388"/>
+															</PropertyList>
 															<Language>SFX</Language>
 															<AudioFile>EksamensprojektWwise\Originals\SFX\Carpet_Texture-001.wav</AudioFile>
 															<MediaIDList>
@@ -5172,10 +6828,10 @@
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>
-														<ActiveSource Name="Carpet_Texture-001" ID="{29DF2B00-8A8F-4D9B-8541-996CAAD0AB56}" Platform="Linked"/>
+														<ActiveSource Name="Carpet_Texture-001" ID="{4AC186F7-DFDE-46E2-BF9F-98A5468D440E}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
-												<Sound Name="Carpet_Texture-002" ID="{E945A5DF-77F2-46F2-8608-CB43BA2431DC}" ShortID="598246158">
+												<Sound Name="Carpet_Texture-002" ID="{EC5C3C33-6904-430B-BBCA-FCB5E31F6071}" ShortID="997520364">
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
@@ -5185,7 +6841,13 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="Carpet_Texture-002" ID="{11E70188-8107-4A02-8B56-325F62BBEBD4}">
+														<AudioFileSource Name="Carpet_Texture-002" ID="{F0EA5118-B7E0-4DA3-B49D-E51EF36F44FC}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.06804"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.19055"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.3344"/>
+															</PropertyList>
 															<Language>SFX</Language>
 															<AudioFile>EksamensprojektWwise\Originals\SFX\Carpet_Texture-002.wav</AudioFile>
 															<MediaIDList>
@@ -5194,10 +6856,10 @@
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>
-														<ActiveSource Name="Carpet_Texture-002" ID="{11E70188-8107-4A02-8B56-325F62BBEBD4}" Platform="Linked"/>
+														<ActiveSource Name="Carpet_Texture-002" ID="{F0EA5118-B7E0-4DA3-B49D-E51EF36F44FC}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
-												<Sound Name="Carpet_Texture-003" ID="{338BD036-BF14-487C-A78F-F235DEE110F9}" ShortID="424842409">
+												<Sound Name="Carpet_Texture-003" ID="{4FAAE1BC-A851-4A5B-A2D3-4E5A65DB0D71}" ShortID="193614115">
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
@@ -5207,7 +6869,12 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="Carpet_Texture-003" ID="{284E895E-1F3D-4923-A4F9-D22EB06523AC}">
+														<AudioFileSource Name="Carpet_Texture-003" ID="{D765C493-4FD4-4EDF-8C60-6F5AA161AF6C}">
+															<PropertyList>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.10073"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.20733"/>
+															</PropertyList>
 															<Language>SFX</Language>
 															<AudioFile>EksamensprojektWwise\Originals\SFX\Carpet_Texture-003.wav</AudioFile>
 															<MediaIDList>
@@ -5216,10 +6883,10 @@
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>
-														<ActiveSource Name="Carpet_Texture-003" ID="{284E895E-1F3D-4923-A4F9-D22EB06523AC}" Platform="Linked"/>
+														<ActiveSource Name="Carpet_Texture-003" ID="{D765C493-4FD4-4EDF-8C60-6F5AA161AF6C}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
-												<Sound Name="Carpet_Texture-004" ID="{1F0ECD4A-C3B3-4281-ADFB-69299EFA317E}" ShortID="960964096">
+												<Sound Name="Carpet_Texture-004" ID="{A592882C-CA55-4EDF-927F-D7A3BEC47BFC}" ShortID="357555577">
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
@@ -5229,7 +6896,12 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="Carpet_Texture-004" ID="{0BC9AA8F-23C5-483D-9D3B-85C8EE01C1E9}">
+														<AudioFileSource Name="Carpet_Texture-004" ID="{45F9148F-496D-4CFC-9893-5ED4DBDBD3C2}">
+															<PropertyList>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.27571"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.29553"/>
+															</PropertyList>
 															<Language>SFX</Language>
 															<AudioFile>EksamensprojektWwise\Originals\SFX\Carpet_Texture-004.wav</AudioFile>
 															<MediaIDList>
@@ -5238,10 +6910,10 @@
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>
-														<ActiveSource Name="Carpet_Texture-004" ID="{0BC9AA8F-23C5-483D-9D3B-85C8EE01C1E9}" Platform="Linked"/>
+														<ActiveSource Name="Carpet_Texture-004" ID="{45F9148F-496D-4CFC-9893-5ED4DBDBD3C2}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
-												<Sound Name="Carpet_Texture-005" ID="{73AAD442-A3ED-487A-A458-08D84C4DF5D4}" ShortID="185118797">
+												<Sound Name="Carpet_Texture-005" ID="{EE51BBD1-BA23-4F21-B42C-620036849B1F}" ShortID="569638652">
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
@@ -5251,7 +6923,12 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="Carpet_Texture-005" ID="{90C83DE3-A2BD-47DD-98C6-CDC0CA20BF54}">
+														<AudioFileSource Name="Carpet_Texture-005" ID="{AEADFB95-540C-45D7-9BBB-EB325D341CBF}">
+															<PropertyList>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.18401"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.27152"/>
+															</PropertyList>
 															<Language>SFX</Language>
 															<AudioFile>EksamensprojektWwise\Originals\SFX\Carpet_Texture-005.wav</AudioFile>
 															<MediaIDList>
@@ -5260,10 +6937,10 @@
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>
-														<ActiveSource Name="Carpet_Texture-005" ID="{90C83DE3-A2BD-47DD-98C6-CDC0CA20BF54}" Platform="Linked"/>
+														<ActiveSource Name="Carpet_Texture-005" ID="{AEADFB95-540C-45D7-9BBB-EB325D341CBF}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
-												<Sound Name="Carpet_Texture-006" ID="{AD525888-6A86-4768-A02C-C1ACFA23C291}" ShortID="1008288959">
+												<Sound Name="Carpet_Texture-006" ID="{4606598B-DA2F-4857-B8F2-E3B106714524}" ShortID="1015297825">
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
@@ -5273,7 +6950,12 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="Carpet_Texture-006" ID="{13FE1F4A-4E9A-4BE6-999C-D9E54865F25E}">
+														<AudioFileSource Name="Carpet_Texture-006" ID="{51E93270-DA30-4B41-AF31-B9FE6C7FB810}">
+															<PropertyList>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.25125"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.29969"/>
+															</PropertyList>
 															<Language>SFX</Language>
 															<AudioFile>EksamensprojektWwise\Originals\SFX\Carpet_Texture-006.wav</AudioFile>
 															<MediaIDList>
@@ -5282,10 +6964,10 @@
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>
-														<ActiveSource Name="Carpet_Texture-006" ID="{13FE1F4A-4E9A-4BE6-999C-D9E54865F25E}" Platform="Linked"/>
+														<ActiveSource Name="Carpet_Texture-006" ID="{51E93270-DA30-4B41-AF31-B9FE6C7FB810}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
-												<Sound Name="Carpet_Texture-007" ID="{DA0718E3-4D6F-4FE4-9A31-EF3F9CF64884}" ShortID="435762179">
+												<Sound Name="Carpet_Texture-007" ID="{D1EDED0A-BF7F-463F-92C3-62E842CB33AF}" ShortID="919849204">
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
@@ -5295,7 +6977,13 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="Carpet_Texture-007" ID="{E44BBABC-7B0D-49B1-8CAE-3FF9D211A5A7}">
+														<AudioFileSource Name="Carpet_Texture-007" ID="{D1B5CCED-77D9-4696-8348-9E7B1A0925B0}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.04418"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.20613"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.30585"/>
+															</PropertyList>
 															<Language>SFX</Language>
 															<AudioFile>EksamensprojektWwise\Originals\SFX\Carpet_Texture-007.wav</AudioFile>
 															<MediaIDList>
@@ -5304,10 +6992,10 @@
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>
-														<ActiveSource Name="Carpet_Texture-007" ID="{E44BBABC-7B0D-49B1-8CAE-3FF9D211A5A7}" Platform="Linked"/>
+														<ActiveSource Name="Carpet_Texture-007" ID="{D1B5CCED-77D9-4696-8348-9E7B1A0925B0}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
-												<Sound Name="Carpet_Texture-008" ID="{C679ABDE-22ED-4A80-8CAA-4C270D987508}" ShortID="207725851">
+												<Sound Name="Carpet_Texture-008" ID="{34922FE1-4EA7-4308-B37A-E38AA903D2DF}" ShortID="9704285">
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
@@ -5317,7 +7005,13 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="Carpet_Texture-008" ID="{5A28FFF9-CF17-4C5D-AB11-FFF4319BC8D1}">
+														<AudioFileSource Name="Carpet_Texture-008" ID="{AAF5F5F5-CA28-4D84-8A32-A4E984969D0A}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.13716"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.35825"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.55602"/>
+															</PropertyList>
 															<Language>SFX</Language>
 															<AudioFile>EksamensprojektWwise\Originals\SFX\Carpet_Texture-008.wav</AudioFile>
 															<MediaIDList>
@@ -5326,10 +7020,10 @@
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>
-														<ActiveSource Name="Carpet_Texture-008" ID="{5A28FFF9-CF17-4C5D-AB11-FFF4319BC8D1}" Platform="Linked"/>
+														<ActiveSource Name="Carpet_Texture-008" ID="{AAF5F5F5-CA28-4D84-8A32-A4E984969D0A}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
-												<Sound Name="Carpet_Texture-009" ID="{B3E7A869-C6E1-4F06-869D-577B95AA3CFE}" ShortID="64303418">
+												<Sound Name="Carpet_Texture-009" ID="{C5589D1D-AD25-41E1-82E6-04BE7E6EBC04}" ShortID="607304805">
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
@@ -5339,7 +7033,13 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="Carpet_Texture-009" ID="{7C277F0E-7CFD-4074-B611-2C2EF975926D}">
+														<AudioFileSource Name="Carpet_Texture-009" ID="{AA6531CB-98E0-4875-9E77-D24685EA4A12}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.20405"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.35768"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.44397"/>
+															</PropertyList>
 															<Language>SFX</Language>
 															<AudioFile>EksamensprojektWwise\Originals\SFX\Carpet_Texture-009.wav</AudioFile>
 															<MediaIDList>
@@ -5348,10 +7048,10 @@
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>
-														<ActiveSource Name="Carpet_Texture-009" ID="{7C277F0E-7CFD-4074-B611-2C2EF975926D}" Platform="Linked"/>
+														<ActiveSource Name="Carpet_Texture-009" ID="{AA6531CB-98E0-4875-9E77-D24685EA4A12}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
-												<Sound Name="Carpet_Texture-010" ID="{0BABE0B3-A386-4D16-869B-6AEA89CDB093}" ShortID="980770020">
+												<Sound Name="Carpet_Texture-010" ID="{98C6C111-C5DC-4787-8624-B24E7B501D13}" ShortID="45031690">
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
@@ -5361,7 +7061,14 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="Carpet_Texture-010" ID="{0D3A9702-598A-4FA3-8A95-B3BBD333B049}">
+														<AudioFileSource Name="Carpet_Texture-010" ID="{7A5EB49F-B0BA-4B80-ADD6-10C37EB8D2A5}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.26337"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.38077"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.32958"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.73982"/>
+															</PropertyList>
 															<Language>SFX</Language>
 															<AudioFile>EksamensprojektWwise\Originals\SFX\Carpet_Texture-010.wav</AudioFile>
 															<MediaIDList>
@@ -5370,13 +7077,13 @@
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>
-														<ActiveSource Name="Carpet_Texture-010" ID="{0D3A9702-598A-4FA3-8A95-B3BBD333B049}" Platform="Linked"/>
+														<ActiveSource Name="Carpet_Texture-010" ID="{7A5EB49F-B0BA-4B80-ADD6-10C37EB8D2A5}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
 											</ChildrenList>
 											<PositioningInfo>
-												<Panner Name="" ID="{6A03C904-5775-4505-9A7B-8CC5773C719B}"/>
-												<Position Name="" ID="{48092F84-B5E9-4CC3-B52E-E7202AB99084}"/>
+												<Panner Name="" ID="{BF997B5A-36EA-4B2C-BC60-DF361E343B52}"/>
+												<Position Name="" ID="{6CA16F51-64EB-4687-8F70-B1AACB265870}"/>
 											</PositioningInfo>
 										</RandomSequenceContainer>
 									</ChildrenList>

@@ -2,6 +2,10 @@
 <WwiseDocument Type="WorkUnit" ID="{71EECC52-AA90-49B1-B25E-FBEA4961A280}" SchemaVersion="133" RootDocumentID="{08F20BFB-F7C4-40F3-B852-C39F7D674E18}" ParentDocumentID="{EAA9C195-5D86-4529-8D52-3AAB6FDD41DF}">
 	<Containers>
 		<WorkUnit Name="Cabinet_Bookshelf" ID="{71EECC52-AA90-49B1-B25E-FBEA4961A280}" OwnerID="{EAA9C195-5D86-4529-8D52-3AAB6FDD41DF}" PersistMode="Nested">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="17"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
 			<ChildrenList>
 				<RandomSequenceContainer Name="Bookshelf_Cabinet_Open" ID="{2184D79C-5D0A-4965-959E-ADF2B9EC35F5}" ShortID="586696356">
 					<PropertyList>

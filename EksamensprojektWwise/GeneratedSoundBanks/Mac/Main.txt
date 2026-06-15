@@ -2,7 +2,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	259954442	Play_Kitchen_Cabinet_Bottom_Close			\SFX\Objects\Cabinets\Play_Kitchen_Cabinet_Bottom_Close	
 	369029778	Play_FSBack			\Player\Play_FSBack	
 	567305970	Play_Kitchen_Cabinet_Top_Open			\SFX\Objects\Cabinets\Play_Kitchen_Cabinet_Top_Open	
-	1329369387	Stop_TV_Static			\Default Work Unit\Stop_TV_Static	
+	1329369387	Stop_TV_Static			\SFX\Objects\TV\Stop_TV_Static	
 	1347786538	Play_Cabinet_Draw_Close			\SFX\Objects\Cabinets\Play_Cabinet_Draw_Close	
 	1437364014	Play_Kitchen_Cabinet_Bottom_Open			\SFX\Objects\Cabinets\Play_Kitchen_Cabinet_Bottom_Open	
 	1660008929	Play_Door_Open			\SFX\Objects\Doors\Play_Door_Open	
@@ -42,116 +42,148 @@ Effect plug-ins	ID	Name	Type				Notes
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	3654417	Carpet_Step_2-001	.cache\71\{719F61CD-FCDE-1DFA-57A6-06F30815E07E}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\FS_Dirt\FS_Dirt_2-Foot\Carpet_Step_2-001		56946
+	15347365	Carpet_Toe-008	.cache\57\{5749D71F-EC3E-EA63-A994-31DF0FEA3343}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Carpet\FS_Carpet_1-Toe\Carpet_Toe-008		43204
+	21911819	Tiles_Step-003	.cache\C7\{C7895EAE-35F1-5990-0024-C0635DF38CCB}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\FS_Tile\FS_Tile_2-Foot\Tiles_Step-003		36708
 	24312501	Wood_Impact-004	.cache\58\{58121ED7-2190-9112-8ED4-04D09F57C4A3}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Wood\FS_Wood_2-Foot\Wood_Impact-004		51892
+	28893607	Tiles_Toe-005	.cache\3A\{3AC353C1-8EB6-3562-D8B2-18F7BB6BD058}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Tile\FS_Tile_1-Toe\Tiles_Toe-005		31118
 	32808192	Carpet_Step_2-006	.cache\09\{09218FF8-BDEE-4F85-0CE0-0691C6EB636E}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Dirt\FS_Dirt_2-Foot\Carpet_Step_2-006		34250
-	41764518	Footstep_Walking_Hardmetal_03	.cache\47\{47F348DA-AEE4-930D-EE89-4939801C9F5F}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\FS_Tile\FS_Tile_2-Foot\Footstep_Walking_Hardmetal_03		37640
+	37214159	Tiles_Step-004	.cache\9E\{9E928E1F-4524-C600-EB26-61009E9CE24E}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\FS_Tile\FS_Tile_2-Foot\Tiles_Step-004		43260
 	42955071	Cabinet_Creak_3	.cache\5A\{5A26F877-7695-B329-6EA0-1CA6A6E4487F}.wem		\Containers\SFX\Objects\Cabinets\Cabinet_Kitchen_Top\Kitchen_Cabinet_Top_Close\Bookshelf_Cabinet_Creak\Cabinet_Creak_3		99272
 	45577981	Carpet_Step-009	.cache\8E\{8ED4228A-E799-856B-F2B3-E2A057B48BF0}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\FS_Carpet\FS_Carpet_2-Foot\Carpet_Step-009		19792
 	45625094	Footstep_Walking_Hardwood_01	.cache\CA\{CA016289-4407-1B84-A9CD-F3F358842D64}.wem		\Containers\Player\Footsteps\FS_Property\FSSide\FS_Wood\FS_Wood_2-Foot\Footstep_Walking_Hardwood_01		22604
+	49916121	Carpet_Toe-002	.cache\48\{484190A7-1370-D770-2A1D-BA8E2F796CFC}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Carpet\FS_Carpet_1-Toe\Carpet_Toe-002		32446
 	77414822	Carpet_Step_2-007	.cache\BC\{BC3977D2-1D69-5C0F-D2D6-34E115801055}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\FS_Dirt\FS_Dirt_2-Foot\Carpet_Step_2-007		31818
 	79542059	Carpet_Step-003	.cache\C6\{C6F790F3-2AD0-D8B8-1539-01E62FC6916F}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\FS_Carpet\FS_Carpet_2-Foot\Carpet_Step-003		9614
+	84109249	Tiles_Heel-003	.cache\EF\{EFE5FEFD-F708-3EAB-0E43-2CA74DF525D7}.wem		\Containers\Player\Footsteps\FS_Property\FSSide\FS_Tile\FS_Tile_1-Heel\Tiles_Heel-003		19130
 	84162569	Wood_Impact-002	.cache\41\{413FD696-EB81-7BCE-604F-2F9FADBA8AE6}.wem		\Containers\Player\Footsteps\FS_Property\FSSide\FS_Wood\FS_Wood_1-Heel\Wood_Impact-002		56844
+	88393603	Carpet_Texture-003	.cache\F7\{F7B7C2CE-09E0-FA91-FCC6-48D6A7786710}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Carpet\FS_Carpet_3-Texture\Carpet_Texture-003		29968
 	89975996	Carpet_Texture-001	.cache\1D\{1DDEC7D7-1377-A365-D184-255F12E768DB}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\FS_Carpet\FS_Carpet_3-Texture\Carpet_Texture-001		33622
 	104982052	Skuffe_Ud-006	.cache\70\{7063BC01-37EC-3B5F-BB6D-A24F3A7CB573}.wem		\Containers\SFX\Objects\Cabinets\Cabinet_Draw\Cabinet_Draw_Close\Cabinet_Close_Slide\Skuffe_Ud-006		71262
-	124697463	Footstep_Walking_Hardmetal_02	.cache\09\{09551186-5F03-97C2-9956-996EDD7B280E}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\FS_Tile\FS_Tile_2-Foot\Footstep_Walking_Hardmetal_02		24180
+	131294085	Carpet_Toe-006	.cache\BB\{BBC6FDB7-FB7B-A813-D39B-18C0EA70CA72}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Carpet\FS_Carpet_1-Toe\Carpet_Toe-006		44648
 	134987501	Carpet_Step_2-005	.cache\F1\{F1BE6C82-976C-6790-DAF5-9A01B7C4D445}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\FS_Dirt\FS_Dirt_2-Foot\Carpet_Step_2-005		31582
 	159813447	Carpet_Step_2-009	.cache\8C\{8CD153A2-48AC-7637-AEDC-73F75085C61F}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\FS_Dirt\FS_Dirt_2-Foot\Carpet_Step_2-009		43654
-	160873394	Carpet_Texture-006	.cache\A4\{A4C6AFBF-BCBD-32EB-E392-736CEA9D12AD}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Carpet\FS_Carpet_3-Texture\Carpet_Texture-006		34584
-	166747718	Carpet_Texture-007	.cache\1E\{1E3543D3-3508-E7F6-5747-09B87691F128}.wem		\Containers\Player\Footsteps\FS_Property\FSSide\FS_Carpet\FS_Carpet_2-Texture\Carpet_Texture-007		82350
-	175238146	Carpet_Step-009	.cache\74\{742CFAC3-84E7-BF02-ABDB-6DE36C49AB20}.wem		\Containers\Player\Footsteps\FS_Property\FSSide\FS_Carpet\FS_Carpet_1-Foot\Carpet_Step-009		48096
+	160873394	Carpet_Texture-006	.cache\A4\{A4C6AFBF-BCBD-32EB-E392-736CEA9D12AD}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\FS_Carpet\FS_Carpet_3-Texture\Carpet_Texture-006		34584
+	166747718	Carpet_Texture-007	.cache\6D\{6D7AE667-BCEF-5AC7-D18C-80D551BADEF8}.wem		\Containers\Player\Footsteps\FS_Property\FSSide\FS_Carpet\FS_Carpet_3-Texture\Carpet_Texture-007		29458
+	175238146	Carpet_Step-009	.cache\22\{22F2DB26-E1F2-654C-5717-322CD5C6146B}.wem		\Containers\Player\Footsteps\FS_Property\FSSide\FS_Carpet\FS_Carpet_1-Foot\Carpet_Step-009		34598
+	188821505	Carpet_Toe-009	.cache\22\{222C3FCE-41C6-7766-260B-40E02E4ED943}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Carpet\FS_Carpet_1-Toe\Carpet_Toe-009		50390
 	190621521	Footstep_Walking_Hardwood_02	.cache\B2\{B21A638F-A494-1C2B-781F-1ED08877F090}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\FS_Wood\FS_Wood_2-Foot\Footstep_Walking_Hardwood_02		24924
 	191063999	Cabinet_Open_1	.cache\76\{761F97E5-3529-3FD1-A542-B854C7662B8F}.wem		\Containers\SFX\Objects\Cabinets\Cabinet_Bookshelf\Bookshelf_Cabinet_Close\Bookshelf_Cabinet_Close_Imp\Cabinet_Open_1		17304
-	198614840	Carpet_Step-005	.cache\A2\{A290AC68-9C23-943B-82CE-9EC7632E4F15}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Carpet\FS_Carpet_2-Foot\Carpet_Step-005		37406
+	192376576	Tiles_Heel-005	.cache\00\{002B3FDE-DE31-3456-BB3D-90C193054074}.wem		\Containers\Player\Footsteps\FS_Property\FSSide\FS_Tile\FS_Tile_1-Heel\Tiles_Heel-005		21062
+	198614840	Carpet_Step-005	.cache\95\{9538588B-52A5-DF6F-E004-16BCAE92D8F2}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Carpet\FS_Carpet_2-Foot\Carpet_Step-005		18494
 	199929400	Footstep_Walking_Hardwood_04	.cache\29\{29F1896E-8A4C-4AFB-6218-D37E1C54DA92}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\FS_Wood\FS_Wood_2-Foot\Footstep_Walking_Hardwood_04		21798
-	219205901	Carpet_Texture-009	.cache\C8\{C8660C01-6FB5-B237-DA9A-BD8DCCDC98AC}.wem		\Containers\Player\Footsteps\FS_Property\FSSide\FS_Carpet\FS_Carpet_2-Texture\Carpet_Texture-009		63080
+	219205901	Carpet_Texture-009	.cache\B3\{B360123D-A5E9-0586-D19B-FB5598D1E3A1}.wem		\Containers\Player\Footsteps\FS_Property\FSSide\FS_Carpet\FS_Carpet_3-Texture\Carpet_Texture-009		42718
+	238570229	Carpet_Texture-004	.cache\76\{76138914-9247-C8A6-03C4-83524513F505}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Carpet\FS_Carpet_3-Texture\Carpet_Texture-004		32888
+	254589883	Tiles_Heel-001	.cache\7A\{7A281A5F-A6F8-FAB5-5850-C2456BD89F92}.wem		\Containers\Player\Footsteps\FS_Property\FSSide\FS_Tile\FS_Tile_1-Heel\Tiles_Heel-001		10858
 	256663500	Cabinet_Creak_4	.cache\A4\{A4443063-7492-218A-93CC-DC87D7CC36FB}.wem		\Containers\SFX\Objects\Cabinets\Cabinet_Kitchen_Top\Kitchen_Cabinet_Top_Close\Bookshelf_Cabinet_Creak\Cabinet_Creak_4		69476
 	260190266	Wood_Impact-007	.cache\D4\{D40CDF02-9DCF-0D40-F43E-5FC42C8ED4E3}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Wood\FS_Wood_2-Foot\Wood_Impact-007		81228
+	262088695	Tiles_Heel-006	.cache\C5\{C59EF2D0-A2CF-E264-72F2-5112EEC204AF}.wem		\Containers\Player\Footsteps\FS_Property\FSSide\FS_Tile\FS_Tile_1-Heel\Tiles_Heel-006		16672
 	271782980	Wood_Impact-010	.cache\8A\{8A45F3AF-4A63-B95D-7763-32572D3587EB}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\FS_Carpet\FS_Carpet_1-Heel\Wood_Impact-010		31632
-	282301507	Carpet_Texture-003	.cache\4D\{4DD2E050-402D-55B4-901C-A4DDEBD93FAF}.wem		\Containers\Player\Footsteps\FS_Property\FSSide\FS_Carpet\FS_Carpet_2-Texture\Carpet_Texture-003		67654
+	282301507	Carpet_Texture-003	.cache\CA\{CA9DDBAD-B133-4BD4-39E2-140E7ADAD0F1}.wem		\Containers\Player\Footsteps\FS_Property\FSSide\FS_Carpet\FS_Carpet_3-Texture\Carpet_Texture-003		20000
 	282347760	Footstep_Walking_Hardwood_03	.cache\42\{42DBC691-6E2E-5F8D-8737-1D657921AFC8}.wem		\Containers\Player\Footsteps\FS_Property\FSSide\FS_Wood\FS_Wood_2-Foot\Footstep_Walking_Hardwood_03		24924
 	285702296	Carpet_Texture-003	.cache\37\{374C3210-C9C6-1CC5-24EF-CF1EEDE1B230}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\FS_Carpet\FS_Carpet_3-Texture\Carpet_Texture-003		33488
 	287090829	Carpet_Step-007	.cache\97\{97A1D675-0875-A601-F18E-787E2119AF6E}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\FS_Carpet\FS_Carpet_2-Foot\Carpet_Step-007		26390
+	292252602	Tiles_Toe-006	.cache\EB\{EBFC9CBE-9EF0-1672-39CA-2E842ADF1955}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Tile\FS_Tile_1-Toe\Tiles_Toe-006		29740
+	297787846	Carpet_Toe-004	.cache\07\{071C07FF-F68E-8DBD-70CB-10D96FD7BC0B}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Carpet\FS_Carpet_1-Toe\Carpet_Toe-004		45932
 	299862196	Wood_Impact-007	.cache\0D\{0DDB55A9-7D05-D70A-CBF1-FCBEBB9D3C58}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\FS_Wood\FS_Wood_1-Heel\Wood_Impact-007		80882
-	306996258	Carpet_Step-003	.cache\8C\{8CAFC5B4-A52A-6589-6EEC-EABBB573B930}.wem		\Containers\Player\Footsteps\FS_Property\FSSide\FS_Carpet\FS_Carpet_1-Foot\Carpet_Step-003		48096
-	307372351	Carpet_Step-008	.cache\3F\{3F80CBB2-841F-EA1F-99E9-AFD04DB605B5}.wem		\Containers\Player\Footsteps\FS_Property\FSSide\FS_Carpet\FS_Carpet_1-Foot\Carpet_Step-008		48096
+	306996258	Carpet_Step-003	.cache\2E\{2E56D006-4B71-10BE-BFBD-E3620DB0876C}.wem		\Containers\Player\Footsteps\FS_Property\FSSide\FS_Carpet\FS_Carpet_1-Foot\Carpet_Step-003		44342
+	307372351	Carpet_Step-008	.cache\4E\{4E4B4CCA-660A-3748-E0CB-1021DDDEE5AC}.wem		\Containers\Player\Footsteps\FS_Property\FSSide\FS_Carpet\FS_Carpet_1-Foot\Carpet_Step-008		35932
 	310145761	Skuffe_Ind-007	.cache\B6\{B6331E4D-A3CA-5B76-3AFE-98E24EACD809}.wem		\Containers\SFX\Objects\Cabinets\Cabinet_Draw\Cabinet_Draw_Open\Cabinet_Open\Skuffe_Ind-007		107720
-	312410540	Carpet_Texture-008	.cache\24\{249F60DE-CB5E-A287-E06F-F03668D8EDA5}.wem		\Containers\Player\Footsteps\FS_Property\FSSide\FS_Carpet\FS_Carpet_2-Texture\Carpet_Texture-008		96096
+	312410540	Carpet_Texture-008	.cache\6B\{6B375230-4326-4AAD-2B63-5C6D63B2F9B4}.wem		\Containers\Player\Footsteps\FS_Property\FSSide\FS_Carpet\FS_Carpet_3-Texture\Carpet_Texture-008		53474
 	324876723	Carpet_Step_2-005	.cache\6D\{6D2AF5A1-6D16-C224-40B3-C15FCE4439D6}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Dirt\FS_Dirt_2-Foot\Carpet_Step_2-005		31426
 	325308676	Carpet_Step_2-004	.cache\F0\{F02A8935-7442-1678-5001-03AD3E9BE918}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Dirt\FS_Dirt_2-Foot\Carpet_Step_2-004		59888
 	329975831	Wood_Impact-006	.cache\DA\{DA759CA8-9762-3FAE-91CB-045822A0C299}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Wood\FS_Wood_2-Foot\Wood_Impact-006		78404
 	330428107	Skuffe_Ind-003	.cache\EA\{EAD88A08-823C-DD19-5632-FA8A32F2AD44}.wem		\Containers\SFX\Objects\Cabinets\Cabinet_Draw\Cabinet_Draw_Open\Cabinet_Open\Skuffe_Ind-003		130064
-	333689584	Carpet_Step-001	.cache\A9\{A9D8F3DA-D11A-5831-5B1F-3BCE7DBFFA67}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Carpet\FS_Carpet_2-Foot\Carpet_Step-001		39062
+	333689584	Carpet_Step-001	.cache\6B\{6B0FE80D-7BBD-9E9D-F41C-D1C92D3A5889}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Carpet\FS_Carpet_2-Foot\Carpet_Step-001		29904
 	336167279	Cabinet_Open_4	.cache\06\{064F453F-0972-24E4-71FD-71114D795EF6}.wem		\Containers\SFX\Objects\Cabinets\Cabinet_Kitchen_Top\Kitchen_Cabinet_Top_Close\Bookshelf_Cabinet_Close_Imp\Cabinet_Open_4		20400
 	337398265	Carpet_Step_2-010	.cache\1A\{1A17DCF5-F56B-7EFF-7B96-A464BC1ECDE5}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Dirt\FS_Dirt_2-Foot\Carpet_Step_2-010		26662
-	338867029	Carpet_Step-002	.cache\B3\{B377CAFB-D297-F5A9-76EB-CD260640DDC5}.wem		\Containers\Player\Footsteps\FS_Property\FSSide\FS_Carpet\FS_Carpet_1-Foot\Carpet_Step-002		48096
+	338867029	Carpet_Step-002	.cache\09\{09ED6D0A-620A-5ABC-AC16-9B398940EFF5}.wem		\Containers\Player\Footsteps\FS_Property\FSSide\FS_Carpet\FS_Carpet_1-Foot\Carpet_Step-002		41680
 	341084004	Carpet_Step_2-001	.cache\F8\{F8694E93-E075-ECF2-596D-E355F254CEBA}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Dirt\FS_Dirt_2-Foot\Carpet_Step_2-001		57086
+	348831891	Carpet_Texture-005	.cache\C5\{C59D7D21-C710-4CC8-8FD4-BA52A525C852}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Carpet\FS_Carpet_3-Texture\Carpet_Texture-005		38942
 	349133057	Wood_Impact-004	.cache\37\{37BB4E01-6E79-0B29-4369-460159B332C0}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\FS_Carpet\FS_Carpet_1-Heel\Wood_Impact-004		51772
 	350414441	Carpet_Texture-002	.cache\4F\{4F331001-140F-904C-3824-5DA039E3D74B}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\FS_Carpet\FS_Carpet_3-Texture\Carpet_Texture-002		48084
 	357550026	Cabinet_Creak_6	.cache\21\{21A95C6C-DE83-E12C-F376-898CCB7D3897}.wem		\Containers\SFX\Objects\Cabinets\Cabinet_Bookshelf\Bookshelf_Cabinet_Open\Bookshelf_Cabinet_Creak\Cabinet_Creak_6		131804
 	361823662	Carpet_Step_2-004	.cache\D0\{D00E3522-2448-7AA4-4C59-941840A6E5C6}.wem		\Containers\Player\Footsteps\FS_Property\FSSide\FS_Dirt\FS_Dirt_1-Foot\Carpet_Step_2-004		60572
 	368103941	Testlyd	.cache\A9\{A9AD2235-3E69-DA71-179A-35C9149ABC8A}.wem		\Containers\Default Work Unit\Testlyd		2064096
 	368131898	Cabinet_Open_3	.cache\57\{5718A884-9192-1B2D-1979-48CC9AFA0C9A}.wem		\Containers\SFX\Objects\Cabinets\Cabinet_Kitchen_Bottom\Kitchen_Cabinet_Bottom_Close\Bookshelf_Cabinet_Close_Imp\Cabinet_Open_3		23676
-	378264715	Carpet_Step-006	.cache\13\{132E3E11-E0D0-C012-A802-05E3C0F0F609}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Carpet\FS_Carpet_2-Foot\Carpet_Step-006		31390
+	373288275	Tiles_Toe-002	.cache\24\{24F1B45E-453E-C9DE-FDB0-9611C08527B1}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Tile\FS_Tile_1-Toe\Tiles_Toe-002		37430
+	378264715	Carpet_Step-006	.cache\9D\{9D6FC5DC-8418-A86C-4EA4-E5D797C1372C}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Carpet\FS_Carpet_2-Foot\Carpet_Step-006		26476
+	382093892	Tiles_Toe-003	.cache\F1\{F1BFC9C5-59F0-9158-56F2-0E9AFF6B2F43}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Tile\FS_Tile_1-Toe\Tiles_Toe-003		16826
 	387729452	Wood_Impact-006	.cache\C8\{C8FEF649-48FA-E629-C025-8BA336F72651}.wem		\Containers\Player\Footsteps\FS_Property\FSSide\FS_Wood\FS_Wood_1-Heel\Wood_Impact-006		77892
 	393372814	Cabinet_Open_4	.cache\C1\{C190672F-C509-2E7E-CD0B-B534083A885C}.wem		\Containers\SFX\Objects\Cabinets\Cabinet_Kitchen_Bottom\Kitchen_Cabinet_Bottom_Open\Bookshelf_Cabinet_Open_Imp\Cabinet_Open_4		147548
-	394551106	Carpet_Step-008	.cache\52\{5209BB5B-3361-F1B7-F469-4BF7A2278FBC}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Carpet\FS_Carpet_2-Foot\Carpet_Step-008		35756
-	395206649	Carpet_Step-003	.cache\B4\{B448127A-6AE2-8419-39F9-69E7C0C07565}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Carpet\FS_Carpet_2-Foot\Carpet_Step-003		44116
+	394551106	Carpet_Step-008	.cache\0B\{0B86946B-4CFA-657F-3DAD-EADEB130A1F7}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Carpet\FS_Carpet_2-Foot\Carpet_Step-008		28008
+	395206649	Carpet_Step-003	.cache\62\{62A355CB-8559-303A-5537-86679725EC71}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Carpet\FS_Carpet_2-Foot\Carpet_Step-003		19450
 	395654687	Cabinet_Open_2	.cache\84\{84225D9B-DBAD-AB3A-0B78-57EA1A54A578}.wem		\Containers\SFX\Objects\Cabinets\Cabinet_Kitchen_Bottom\Kitchen_Cabinet_Bottom_Close\Bookshelf_Cabinet_Close_Imp\Cabinet_Open_2		20396
 	398776290	TV_Static_Loop	.cache\66\{669CF972-311F-8E06-8804-6AB7A5673B24}.wem		\Containers\SFX\Objects\TV\TV_Static\TV_Static_Loop		1152096
 	398815487	Skuffe_Ud-002	.cache\EE\{EE7D07A0-21E7-B228-632D-8A440295C9FB}.wem		\Containers\SFX\Objects\Cabinets\Cabinet_Draw\Cabinet_Draw_Close\Cabinet_Close_Slide\Skuffe_Ud-002		67058
 	410437280	Carpet_Step_2-010	.cache\DE\{DE956542-7A73-1F12-3842-D48F9431B37D}.wem		\Containers\Player\Footsteps\FS_Property\FSSide\FS_Dirt\FS_Dirt_1-Foot\Carpet_Step_2-010		27044
+	418599757	Tiles_Heel-010	.cache\BA\{BA5A5B55-4737-AEE4-449B-C1238EA33279}.wem		\Containers\Player\Footsteps\FS_Property\FSSide\FS_Tile\FS_Tile_1-Heel\Tiles_Heel-010		16234
 	423912907	Cabinet_Open_1	.cache\23\{23FC72F1-90CA-3BC7-0374-2137D60A0ADC}.wem		\Containers\SFX\Objects\Cabinets\Cabinet_Bookshelf\Bookshelf_Cabinet_Open\Bookshelf_Cabinet_Open_Imp\Cabinet_Open_1		146700
-	435688002	Carpet_Step-010	.cache\BF\{BF7B7118-FC22-EFCC-641B-F0230A3EDD7C}.wem		\Containers\Player\Footsteps\FS_Property\FSSide\FS_Carpet\FS_Carpet_1-Foot\Carpet_Step-010		48096
+	435688002	Carpet_Step-010	.cache\11\{113C35F8-0B94-0D33-3344-F704B1005BAD}.wem		\Containers\Player\Footsteps\FS_Property\FSSide\FS_Carpet\FS_Carpet_1-Foot\Carpet_Step-010		38348
 	443176583	Footstep_Walking_Hardwood_05	.cache\1E\{1E015A9E-FA5C-ACF7-0268-011E9F5747D2}.wem		\Containers\Player\Footsteps\FS_Property\FSSide\FS_Wood\FS_Wood_2-Foot\Footstep_Walking_Hardwood_05		28460
-	452746440	Carpet_Texture-001	.cache\E4\{E43026FB-BBDD-596D-8F62-5806E1A61EF7}.wem		\Containers\Player\Footsteps\FS_Property\FSSide\FS_Carpet\FS_Carpet_2-Texture\Carpet_Texture-001		48096
+	452746440	Carpet_Texture-001	.cache\CF\{CFE73C0B-40ED-A83F-5859-4D8DAB52EB41}.wem		\Containers\Player\Footsteps\FS_Property\FSSide\FS_Carpet\FS_Carpet_3-Texture\Carpet_Texture-001		16788
 	464856770	Carpet_Step-004	.cache\43\{436CA268-B85A-429B-A738-172E9E57B6AA}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\FS_Carpet\FS_Carpet_2-Foot\Carpet_Step-004		20340
 	467355072	Carpet_Step_2-003	.cache\D6\{D6BE2AB2-54B4-81D3-1F51-3F55BD7DDCDF}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Dirt\FS_Dirt_2-Foot\Carpet_Step_2-003		56538
+	478441448	Tiles_Heel-007	.cache\7F\{7F32F97E-FE40-EDD9-E4EC-FAA3A263A25A}.wem		\Containers\Player\Footsteps\FS_Property\FSSide\FS_Tile\FS_Tile_1-Heel\Tiles_Heel-007		18704
 	480470741	Carpet_Step_2-007	.cache\8D\{8DD17FAD-12A9-1A7D-92BB-B7C9ACF80348}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Dirt\FS_Dirt_2-Foot\Carpet_Step_2-007		31488
+	482578730	Carpet_Toe-007	.cache\A8\{A87D8601-BB34-CD22-32DF-277641467D65}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Carpet\FS_Carpet_1-Toe\Carpet_Toe-007		63298
 	497409491	Cabinet_Creak_5	.cache\35\{35CE5CD4-D32C-63AA-A0DD-9F48C7F9A521}.wem		\Containers\SFX\Objects\Cabinets\Cabinet_Bookshelf\Bookshelf_Cabinet_Open\Bookshelf_Cabinet_Creak\Cabinet_Creak_5		52864
 	500750266	Carpet_Step_2-001	.cache\68\{68760FB8-D037-D495-C390-52FF8F6E698B}.wem		\Containers\Player\Footsteps\FS_Property\FSSide\FS_Dirt\FS_Dirt_1-Foot\Carpet_Step_2-001		57088
-	505914770	Carpet_Texture-005	.cache\59\{59A306DE-B29D-C931-A94A-F8BA47F387B7}.wem		\Containers\Player\Footsteps\FS_Property\FSSide\FS_Carpet\FS_Carpet_2-Texture\Carpet_Texture-005		72970
-	512419251	Footstep_Walking_Hardmetal_01	.cache\CB\{CB9CD5C8-1278-5978-0A25-55A58AE7A09B}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\FS_Tile\FS_Tile_2-Foot\Footstep_Walking_Hardmetal_01		29912
+	505914770	Carpet_Texture-005	.cache\C3\{C36FF95B-098C-8981-7597-1AA19F348876}.wem		\Containers\Player\Footsteps\FS_Property\FSSide\FS_Carpet\FS_Carpet_3-Texture\Carpet_Texture-005		26162
+	521251913	Tiles_Heel-008	.cache\82\{8240C0DC-7E21-244F-38C8-EE5700F509D2}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\FS_Tile\FS_Tile_1-Heel\Tiles_Heel-008		19482
 	543454134	Skuffe_Ud-007	.cache\BB\{BBAFA040-E354-107F-0B7B-9C61F8D6C439}.wem		\Containers\SFX\Objects\Cabinets\Cabinet_Draw\Cabinet_Draw_Close\Cabinet_Close_Slide\Skuffe_Ud-007		46536
-	546259954	Carpet_Texture-010	.cache\90\{90A9FEB0-B97E-B476-8012-36A5E2FB9E85}.wem		\Containers\Player\Footsteps\FS_Property\FSSide\FS_Carpet\FS_Carpet_2-Texture\Carpet_Texture-010		144096
+	546259954	Carpet_Texture-010	.cache\6C\{6C209D9C-4534-62FD-B692-0FA5DFB55FEA}.wem		\Containers\Player\Footsteps\FS_Property\FSSide\FS_Carpet\FS_Carpet_3-Texture\Carpet_Texture-010		39478
+	547255744	Tiles_Toe-009	.cache\EE\{EEDF56D8-C909-321F-6E76-1170EE3A817F}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Tile\FS_Tile_1-Toe\Tiles_Toe-009		20076
 	548011774	Carpet_Step_2-009	.cache\A8\{A870E30E-631E-C1F3-162C-ADBDEFEF35A1}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Dirt\FS_Dirt_2-Foot\Carpet_Step_2-009		43308
 	548501112	Cabinet_Creak_1	.cache\4D\{4D999DE6-7C93-66CD-D8DD-AC0D2BEDB375}.wem		\Containers\SFX\Objects\Cabinets\Cabinet_Kitchen_Top\Kitchen_Cabinet_Top_Open\Bookshelf_Cabinet_Creak\Cabinet_Creak_1		89864
 	550477595	Carpet_Step_2-003	.cache\32\{32E962DA-5A0F-EDA0-504F-97C32ADF7CD0}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\FS_Dirt\FS_Dirt_2-Foot\Carpet_Step_2-003		55600
 	560497447	Wood_Impact-003	.cache\B7\{B72C35FE-D259-AB59-AACD-9461240A4BA3}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Wood\FS_Wood_2-Foot\Wood_Impact-003		66174
-	568086991	Footstep_Walking_Hardmetal_04	.cache\9B\{9BF9D4DF-CF6B-AE4B-AC2B-31A2FEE53B01}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\FS_Tile\FS_Tile_2-Foot\Footstep_Walking_Hardmetal_04		29644
 	569093942	Carpet_Step_2-008	.cache\33\{3332E025-5476-6AF5-3F05-8E0314CDEBB1}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\FS_Dirt\FS_Dirt_2-Foot\Carpet_Step_2-008		33600
 	577861633	Carpet_Step_2-002	.cache\2C\{2C483210-1D2E-605B-F379-0D7833D1FF54}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Dirt\FS_Dirt_2-Foot\Carpet_Step_2-002		46324
-	581056281	Carpet_Step-002	.cache\4D\{4DAAAEF1-5243-590A-3E3F-58DE99D4F65A}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Carpet\FS_Carpet_2-Foot\Carpet_Step-002		40714
-	581485402	Carpet_Step-006	.cache\FF\{FF71AED0-2298-7931-1CCB-89B7A1F03D36}.wem		\Containers\Player\Footsteps\FS_Property\FSSide\FS_Carpet\FS_Carpet_1-Foot\Carpet_Step-006		48096
+	581056281	Carpet_Step-002	.cache\06\{060978ED-957A-6D0F-E390-D2B8E9384D48}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Carpet\FS_Carpet_2-Foot\Carpet_Step-002		15886
+	581485402	Carpet_Step-006	.cache\3B\{3BA65E74-7AAF-A4A2-7B51-6D978E0EC715}.wem		\Containers\Player\Footsteps\FS_Property\FSSide\FS_Carpet\FS_Carpet_1-Foot\Carpet_Step-006		32514
 	591778919	Carpet_Step-006	.cache\07\{07946D7C-F890-D75D-BC60-5CE247512395}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\FS_Carpet\FS_Carpet_2-Foot\Carpet_Step-006		22264
-	602692716	Carpet_Step-007	.cache\80\{807F0C50-9FEC-AD90-D501-A121DC64B963}.wem		\Containers\Player\Footsteps\FS_Property\FSSide\FS_Carpet\FS_Carpet_1-Foot\Carpet_Step-007		48096
+	601923523	Carpet_Toe-010	.cache\88\{883F75D6-E055-6A10-6A74-84DA6B94A22A}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Carpet\FS_Carpet_1-Toe\Carpet_Toe-010		44940
+	602692716	Carpet_Step-007	.cache\F0\{F0D614FA-8CF9-F844-1F67-BF4F74B2B3A3}.wem		\Containers\Player\Footsteps\FS_Property\FSSide\FS_Carpet\FS_Carpet_1-Foot\Carpet_Step-007		35596
+	603017914	Carpet_Texture-008	.cache\A5\{A5FB5EB3-B7AC-8144-2979-C3C3DD6B52F4}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Carpet\FS_Carpet_3-Texture\Carpet_Texture-008		31974
+	603968308	Tiles_Heel-002	.cache\46\{4650DF45-6FBF-2CE8-50EA-C23AB079A8E4}.wem		\Containers\Player\Footsteps\FS_Property\FSSide\FS_Tile\FS_Tile_1-Heel\Tiles_Heel-002		21392
 	607186932	Carpet_Step-001	.cache\81\{81133419-2D99-6BB3-9D3E-844B6ED13304}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\FS_Carpet\FS_Carpet_2-Foot\Carpet_Step-001		18606
-	608888312	Carpet_Step-004	.cache\E2\{E21E5E1F-DDD5-1D1D-5DFD-53BC08AAB30B}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Carpet\FS_Carpet_2-Foot\Carpet_Step-004		37508
+	608888312	Carpet_Step-004	.cache\00\{00A42B14-AA22-D225-103F-AB7707BFC9F2}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Carpet\FS_Carpet_2-Foot\Carpet_Step-004		19758
 	617751057	Carpet_Step_2-006	.cache\6F\{6FB72CA0-B8C8-C244-B36B-7DAD0B2188A8}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\FS_Dirt\FS_Dirt_2-Foot\Carpet_Step_2-006		34560
-	618541652	Wood_Impact-003	.cache\5C\{5CB590BF-AE0C-4DBD-20D6-6B8A3503B815}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Carpet\FS_Carpet_1-Toe\Wood_Impact-003		66176
+	618541652	Wood_Impact-003	.cache\5C\{5CB590BF-AE0C-4DBD-20D6-6B8A3503B815}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\FS_Wood\FS_Wood_1-Heel\Wood_Impact-003		66176
+	628993111	Tiles_Toe-001	.cache\89\{89730BF7-DFC1-373E-9926-E37424919299}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Tile\FS_Tile_1-Toe\Tiles_Toe-001		29652
+	670737083	Carpet_Toe-003	.cache\9C\{9CE87F5A-1432-C7F6-4A0F-D9277BA292A9}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Carpet\FS_Carpet_1-Toe\Carpet_Toe-003		36186
 	674070396	Carpet_Step_2-005	.cache\2A\{2A3173A1-BA50-5C4C-3EC0-46FD02E31285}.wem		\Containers\Player\Footsteps\FS_Property\FSSide\FS_Dirt\FS_Dirt_1-Foot\Carpet_Step_2-005		31916
 	694716087	Cabinet_Creak_2	.cache\CD\{CD1E1C64-D5A7-DC8B-CF72-4DE5F316C079}.wem		\Containers\SFX\Objects\Cabinets\Cabinet_Kitchen_Bottom\Kitchen_Cabinet_Bottom_Open\Bookshelf_Cabinet_Creak\Cabinet_Creak_2		84768
 	700442964	Skuffe_Ud-004	.cache\63\{636CE91A-422A-B1FC-6D2B-1FFD1D9C8413}.wem		\Containers\SFX\Objects\Cabinets\Cabinet_Draw\Cabinet_Draw_Close\Cabinet_Close_Slide\Skuffe_Ud-004		115250
+	700589232	Tiles_Toe-008	.cache\C1\{C1A9FAC5-B534-1AB5-CE2F-251F037F87C7}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Tile\FS_Tile_1-Toe\Tiles_Toe-008		32402
 	711367062	Skuffe_Ind-008	.cache\89\{8957CDF6-148F-26B2-0C8D-05701AE02846}.wem		\Containers\SFX\Objects\Cabinets\Cabinet_Draw\Cabinet_Draw_Open\Cabinet_Open\Skuffe_Ind-008		123658
+	736940525	Carpet_Texture-010	.cache\C3\{C38446EB-3A44-9B70-624C-8DF9E4F935BF}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Carpet\FS_Carpet_3-Texture\Carpet_Texture-010		51482
 	738538910	Wood_Impact-001	.cache\70\{70BCF5B0-9445-9F85-193B-711AE53EF8EE}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Wood\FS_Wood_2-Foot\Wood_Impact-001		57918
-	760580256	Carpet_Texture-004	.cache\10\{10B52935-FECA-5B86-382D-EAF4335BA96B}.wem		\Containers\Player\Footsteps\FS_Property\FSSide\FS_Carpet\FS_Carpet_2-Texture\Carpet_Texture-004		70844
+	760580256	Carpet_Texture-004	.cache\B5\{B59E6B8F-DFA4-6EFC-BEFE-B19691ED92E8}.wem		\Containers\Player\Footsteps\FS_Property\FSSide\FS_Carpet\FS_Carpet_3-Texture\Carpet_Texture-004		28466
 	762311839	Carpet_Step_2-002	.cache\1A\{1A5A61CD-1610-050C-CE82-241E2572DF63}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\FS_Dirt\FS_Dirt_2-Foot\Carpet_Step_2-002		46578
+	762593901	Carpet_Toe-012	.cache\4C\{4C4794FB-73C2-68FB-3649-68DB64065B4B}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Carpet\FS_Carpet_1-Toe\Carpet_Toe-012		38594
 	767128951	Skuffe_Ud-008	.cache\C3\{C31E5CD3-E468-B8AE-8354-3B7D66FAEC9D}.wem		\Containers\SFX\Objects\Cabinets\Cabinet_Draw\Cabinet_Draw_Close\Cabinet_Close_Slide\Skuffe_Ud-008		72958
 	767721366	Carpet_Texture-010	.cache\70\{70DB5CD9-9153-F245-5170-90B21D869D8E}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\FS_Carpet\FS_Carpet_3-Texture\Carpet_Texture-010		51482
+	769343266	Tiles_Toe-004	.cache\0E\{0EF3DF9B-7757-D1B2-CC7D-28BA3A35CBE8}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Tile\FS_Tile_1-Toe\Tiles_Toe-004		27084
 	774812347	Wood_Impact-008	.cache\65\{6593D3E0-7710-4AA0-9F4B-CD4DF87EAA96}.wem		\Containers\Player\Footsteps\FS_Property\FSSide\FS_Wood\FS_Wood_1-Heel\Wood_Impact-008		66818
-	804666013	Carpet_Texture-004	.cache\08\{08B118D4-AB12-94FF-25A0-601689F07E03}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Carpet\FS_Carpet_3-Texture\Carpet_Texture-004		35468
+	801953892	Tiles_Step-010	.cache\DF\{DFBB127D-BF59-5A61-F1A6-79B6C2A90128}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Tile\FS_Tile_2-Foot\Tiles_Step-010		40746
+	804666013	Carpet_Texture-004	.cache\08\{08B118D4-AB12-94FF-25A0-601689F07E03}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\FS_Carpet\FS_Carpet_3-Texture\Carpet_Texture-004		35468
 	808433203	Wood_Impact-009	.cache\1E\{1E02D83E-7A11-57A0-AD86-F6F32FB29D3C}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\FS_Carpet\FS_Carpet_1-Heel\Wood_Impact-009		78260
 	816807131	Carpet_Step-008	.cache\01\{01AD1C5C-6667-9618-9E55-04879DCFC38D}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\FS_Carpet\FS_Carpet_2-Foot\Carpet_Step-008		20712
 	819172608	Skuffe_Ud-001	.cache\D6\{D6A4DBA2-F064-DFDC-CEF1-6D14A3D1B167}.wem		\Containers\SFX\Objects\Cabinets\Cabinet_Draw\Cabinet_Draw_Close\Cabinet_Close_Slide\Skuffe_Ud-001		44196
-	830043247	Carpet_Step-009	.cache\D3\{D3381E3A-8C9C-9BD4-0EF4-082AE8C77B28}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Carpet\FS_Carpet_2-Foot\Carpet_Step-009		34006
+	822356084	Carpet_Texture-007	.cache\56\{56B99404-0DE8-81A8-4E7F-7BC47C5E561A}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Carpet\FS_Carpet_3-Texture\Carpet_Texture-007		38450
+	830043247	Carpet_Step-009	.cache\55\{5564ED3A-3B35-1FE6-6357-8AF54EB8A342}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Carpet\FS_Carpet_2-Foot\Carpet_Step-009		21008
 	832157666	Skuffe_Ind-004	.cache\72\{725793CD-1EA5-9C34-8F65-56E3BD3D3064}.wem		\Containers\SFX\Objects\Cabinets\Cabinet_Draw\Cabinet_Draw_Open\Cabinet_Open\Skuffe_Ind-004		93434
 	832777814	Carpet_Step_2-008	.cache\7D\{7D216DFE-1741-3570-47A7-ABEA367CB4AF}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Dirt\FS_Dirt_2-Foot\Carpet_Step_2-008		33216
 	832791625	Carpet_Step_2-006	.cache\7E\{7EA853C8-C24D-E8CA-38D4-FCDAC62CA3B3}.wem		\Containers\Player\Footsteps\FS_Property\FSSide\FS_Dirt\FS_Dirt_1-Foot\Carpet_Step_2-006		34560
 	833701158	Carpet_Step_2-010	.cache\6E\{6E4977BF-0D9C-86EF-5103-B183C4C01C43}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\FS_Dirt\FS_Dirt_2-Foot\Carpet_Step_2-010		27124
-	847207346	Carpet_Step-007	.cache\3E\{3E20C047-2E6F-CC81-7015-7A07B5464EC3}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Carpet\FS_Carpet_2-Foot\Carpet_Step-007		35566
+	847207346	Carpet_Step-007	.cache\C6\{C6E63BB2-ED7E-EBE6-C972-F358748F5A21}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Carpet\FS_Carpet_2-Foot\Carpet_Step-007		21482
 	856242761	Carpet_Texture-007	.cache\E9\{E9CCEA23-D49C-707E-E4E2-3F51C8985E86}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\FS_Carpet\FS_Carpet_3-Texture\Carpet_Texture-007		40594
 	860934273	Skuffe_Ud-008	.cache\F4\{F498B60E-59E8-E085-530C-2D57A0DE38DB}.wem		\Containers\SFX\Objects\Cabinets\Cabinet_Draw\Cabinet_Draw_Close\Cabinet_Close_Imp\Skuffe_Ud-008		31570
 	864901128	Skuffe_Ud-002	.cache\9D\{9DD07A93-B602-5E86-2C6C-55DEC46AA4B5}.wem		\Containers\SFX\Objects\Cabinets\Cabinet_Draw\Cabinet_Draw_Close\Cabinet_Close_Imp\Skuffe_Ud-002		27692
-	866940124	Carpet_Step-001	.cache\3D\{3D6DC673-6B0C-A4DC-0DA1-B8CCE0D4B2D6}.wem		\Containers\Player\Footsteps\FS_Property\FSSide\FS_Carpet\FS_Carpet_1-Foot\Carpet_Step-001		48096
+	866940124	Carpet_Step-001	.cache\BE\{BEBAB8B4-AA9D-8882-1FED-A06DEFB5B7DD}.wem		\Containers\Player\Footsteps\FS_Property\FSSide\FS_Carpet\FS_Carpet_1-Foot\Carpet_Step-001		38928
+	877779073	Carpet_Toe-005	.cache\1F\{1F15031D-2B35-2A43-36E0-4AECFD1C2AC9}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Carpet\FS_Carpet_1-Toe\Carpet_Toe-005		42724
+	884268736	Carpet_Texture-009	.cache\44\{4411E55C-A994-7C93-6815-E737FFF9E54E}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Carpet\FS_Carpet_3-Texture\Carpet_Texture-009		33754
 	890991987	Skuffe_Ud-001	.cache\F1\{F1349EA8-EBCD-A186-9CA9-2993D2CE0EC7}.wem		\Containers\SFX\Objects\Cabinets\Cabinet_Draw\Cabinet_Draw_Close\Cabinet_Close_Imp\Skuffe_Ud-001		22148
 	899457694	Skuffe_Ind-006	.cache\3B\{3B3D075B-7752-CF35-830E-B3DF8366CCA3}.wem		\Containers\SFX\Objects\Cabinets\Cabinet_Draw\Cabinet_Draw_Open\Cabinet_Open\Skuffe_Ind-006		108654
 	900261532	Carpet_Texture-008	.cache\7F\{7F1CB5FF-E339-95E1-AFE0-7227D625B47E}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\FS_Carpet\FS_Carpet_3-Texture\Carpet_Texture-008		31974
@@ -160,33 +192,42 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	914484002	Wood_Impact-010	.cache\1E\{1E392449-046D-3A84-8FD7-8E14E78235E3}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Wood\FS_Wood_2-Foot\Wood_Impact-010		31490
 	914877286	Carpet_Step_2-008	.cache\74\{74B412B3-F264-DCEE-956B-5C153255009E}.wem		\Containers\Player\Footsteps\FS_Property\FSSide\FS_Dirt\FS_Dirt_1-Foot\Carpet_Step_2-008		33874
 	927161079	Carpet_Step-005	.cache\C9\{C94D95CC-75AB-20CE-7218-13EEF9EA843D}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\FS_Carpet\FS_Carpet_2-Foot\Carpet_Step-005		28126
-	943204351	Carpet_Texture-006	.cache\D9\{D94E0884-23AB-0FA4-A2F3-6652142F7676}.wem		\Containers\Player\Footsteps\FS_Property\FSSide\FS_Carpet\FS_Carpet_2-Texture\Carpet_Texture-006		76684
+	943204351	Carpet_Texture-006	.cache\7E\{7E6A6A19-0A28-27F5-06B6-6724FFCB38AF}.wem		\Containers\Player\Footsteps\FS_Property\FSSide\FS_Carpet\FS_Carpet_3-Texture\Carpet_Texture-006		28866
+	943360329	Tiles_Step-006	.cache\36\{3669F097-E042-3E5E-7362-C204EA57CE47}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Tile\FS_Tile_2-Foot\Tiles_Step-006		32490
 	946206868	Skuffe_Ud-010	.cache\25\{252D7691-7771-A63D-4C39-189A9FAFCC7B}.wem		\Containers\SFX\Objects\Cabinets\Cabinet_Draw\Cabinet_Draw_Close\Cabinet_Close_Slide\Skuffe_Ud-010		57172
 	947310149	Wood_Impact-001	.cache\9F\{9F0A49D3-94B3-0F6B-4697-84B43E124ABC}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\FS_Wood\FS_Wood_1-Heel\Wood_Impact-001		57668
 	957509682	Carpet_Step_2-004	.cache\69\{6992763B-35DE-EC72-3BF7-63D9413B5817}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\FS_Dirt\FS_Dirt_2-Foot\Carpet_Step_2-004		60434
+	964639092	Carpet_Texture-006	.cache\33\{33B816B4-3CB6-8644-0284-7D0EAF67744A}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Carpet\FS_Carpet_3-Texture\Carpet_Texture-006		34584
+	973222798	Tiles_Step-002	.cache\3B\{3B9665F1-FEDB-680F-39DF-B4606FC27D28}.wem		\Containers\Player\Footsteps\FS_Property\FSSide\FS_Tile\FS_Tile_2-Foot\Tiles_Step-002		32758
 	976496209	Skuffe_Ind-002	.cache\95\{95F9D317-E043-64D4-3D0E-9FAB0D86547E}.wem		\Containers\SFX\Objects\Cabinets\Cabinet_Draw\Cabinet_Draw_Open\Cabinet_Open\Skuffe_Ind-002		125762
 	979031044	Carpet_Texture-009	.cache\19\{1906C09C-3B73-A243-EDCF-9EE9CD32BF3C}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\FS_Carpet\FS_Carpet_3-Texture\Carpet_Texture-009		33754
 	983813656	Cabinet_Open_2	.cache\F5\{F518A565-C2CC-973E-6D47-33BDDB784132}.wem		\Containers\SFX\Objects\Cabinets\Cabinet_Bookshelf\Bookshelf_Cabinet_Open\Bookshelf_Cabinet_Open_Imp\Cabinet_Open_2		174136
-	991176849	Carpet_Step-004	.cache\E4\{E42327B7-5E05-04BD-6F99-46F281D8D4BC}.wem		\Containers\Player\Footsteps\FS_Property\FSSide\FS_Carpet\FS_Carpet_1-Foot\Carpet_Step-004		48096
-	991939243	Footstep_Walking_Hardmetal_05	.cache\E5\{E540F3A0-3D20-BA92-70F6-A4A77053D5EA}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\FS_Tile\FS_Tile_2-Foot\Footstep_Walking_Hardmetal_05		33796
+	989503299	Carpet_Texture-002	.cache\2A\{2A0B782E-7661-DA88-6A4F-D712D7BA1C32}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Carpet\FS_Carpet_3-Texture\Carpet_Texture-002		35656
+	991176849	Carpet_Step-004	.cache\5B\{5B8C6FFE-5029-B396-C889-4C54CCF299F5}.wem		\Containers\Player\Footsteps\FS_Property\FSSide\FS_Carpet\FS_Carpet_1-Foot\Carpet_Step-004		37598
 	994217136	Skuffe_Ud-003	.cache\46\{46BF3DDB-3A79-DFF4-92B1-3EAD2A60374E}.wem		\Containers\SFX\Objects\Cabinets\Cabinet_Draw\Cabinet_Draw_Close\Cabinet_Close_Slide\Skuffe_Ud-003		46680
+	995734071	Tiles_Step-007	.cache\86\{8671B8F6-07AF-54B0-6FBC-3304991938C0}.wem		\Containers\Player\Footsteps\FS_Property\FSSide\FS_Tile\FS_Tile_2-Foot\Tiles_Step-007		26918
 	995851035	Skuffe_Ud-010	.cache\79\{79D5CEBF-F142-3E44-6003-7F5B3ABB4EB5}.wem		\Containers\SFX\Objects\Cabinets\Cabinet_Draw\Cabinet_Draw_Close\Cabinet_Close_Imp\Skuffe_Ud-010		34338
 	1008234588	Skuffe_Ud-009	.cache\66\{666FE0B6-C9D5-5CC5-3588-8155E3D7A372}.wem		\Containers\SFX\Objects\Cabinets\Cabinet_Draw\Cabinet_Draw_Close\Cabinet_Close_Slide\Skuffe_Ud-009		51798
+	1009104399	Tiles_Toe-010	.cache\25\{25534D81-C325-0798-8C36-B32B7FE8C846}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Tile\FS_Tile_1-Toe\Tiles_Toe-010		32328
+	1009764543	Tiles_Step-005	.cache\5D\{5DFDB11E-8BA5-8961-0037-C6FC05F2ADB6}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\FS_Tile\FS_Tile_2-Foot\Tiles_Step-005		56412
 	1013893993	Cabinet_Open_3	.cache\B5\{B53747D8-079D-3B6E-2598-28046F684843}.wem		\Containers\SFX\Objects\Cabinets\Cabinet_Bookshelf\Bookshelf_Cabinet_Open\Bookshelf_Cabinet_Open_Imp\Cabinet_Open_3		188712
 	1017019208	Carpet_Step-010	.cache\F1\{F13AEBAE-AB8D-DBD5-CC37-52F8950389F8}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\FS_Carpet\FS_Carpet_2-Foot\Carpet_Step-010		19976
 	1021846890	Carpet_Step_2-007	.cache\9E\{9E5DF2F2-01DC-55FD-DC0C-E11304A23E74}.wem		\Containers\Player\Footsteps\FS_Property\FSSide\FS_Dirt\FS_Dirt_1-Foot\Carpet_Step_2-007		31412
 	1023266597	Wood_Impact-008	.cache\66\{661D1642-9DF7-0337-B4A6-528796EA1E6B}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Wood\FS_Wood_2-Foot\Wood_Impact-008		67256
+	1028543953	Carpet_Toe-001	.cache\57\{57C1FA8B-F6A5-9282-5D97-D476637F5698}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Carpet\FS_Carpet_1-Toe\Carpet_Toe-001		45654
 	1030826398	Wood_Impact-009	.cache\82\{82B13148-3039-D895-0693-D4A4A557E4EF}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Wood\FS_Wood_2-Foot\Wood_Impact-009		78260
-	1037127939	Carpet_Step-010	.cache\CB\{CBBDE7AE-C52C-44A9-366C-6995C0F2859B}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Carpet\FS_Carpet_2-Foot\Carpet_Step-010		37014
+	1036483668	Tiles_Heel-009	.cache\AE\{AEDE659E-DB78-C1E5-CC33-0AC8DA8C80C8}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\FS_Tile\FS_Tile_1-Heel\Tiles_Heel-009		18514
+	1037127939	Carpet_Step-010	.cache\FA\{FA1A27F3-B3F7-B418-A99D-34487BD98756}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Carpet\FS_Carpet_2-Foot\Carpet_Step-010		22678
 	1041678223	Skuffe_Ind-005	.cache\BD\{BDF9983D-41AC-160E-C99F-FADA425F21B3}.wem		\Containers\SFX\Objects\Cabinets\Cabinet_Draw\Cabinet_Draw_Open\Cabinet_Open\Skuffe_Ind-005		174026
-	1053272454	Carpet_Texture-002	.cache\A8\{A873FB56-D564-6C44-8B57-6FDFDC50BCBA}.wem		\Containers\Player\Footsteps\FS_Property\FSSide\FS_Carpet\FS_Carpet_2-Texture\Carpet_Texture-002		62338
+	1053272454	Carpet_Texture-002	.cache\D1\{D1F3EB8D-DBB9-A308-16D9-0EF8CA96A522}.wem		\Containers\Player\Footsteps\FS_Property\FSSide\FS_Carpet\FS_Carpet_3-Texture\Carpet_Texture-002		32198
 	1058161977	Carpet_Step_2-009	.cache\03\{03AB6667-2B5B-9E5D-4BFD-58146E5AB591}.wem		\Containers\Player\Footsteps\FS_Property\FSSide\FS_Dirt\FS_Dirt_1-Foot\Carpet_Step_2-009		44336
 	1060488270	Wood_Impact-005	.cache\81\{817FD8FB-015E-F63E-8279-880258EAC6DE}.wem		\Containers\Player\Footsteps\FS_Property\FSSide\FS_Wood\FS_Wood_1-Heel\Wood_Impact-005		60334
 	1061979509	Skuffe_Ud-007	.cache\71\{714EAEB9-5E1A-6C70-3439-3B82AB55C670}.wem		\Containers\SFX\Objects\Cabinets\Cabinet_Draw\Cabinet_Draw_Close\Cabinet_Close_Imp\Skuffe_Ud-007		34722
 	1064757920	Skuffe_Ud-009	.cache\E6\{E687E7DC-CF81-82DE-0E78-B2A895CBEF3A}.wem		\Containers\SFX\Objects\Cabinets\Cabinet_Draw\Cabinet_Draw_Close\Cabinet_Close_Imp\Skuffe_Ud-009		17780
-	1066736166	Carpet_Texture-005	.cache\1E\{1E6E3A2A-F9A4-04E4-D5BB-A73C45C802B3}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Carpet\FS_Carpet_3-Texture\Carpet_Texture-005		33754
+	1066736166	Carpet_Texture-005	.cache\1E\{1E6E3A2A-F9A4-04E4-D5BB-A73C45C802B3}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\FS_Carpet\FS_Carpet_3-Texture\Carpet_Texture-005		33754
+	1067948279	Tiles_Heel-004	.cache\85\{85F9BBB7-EAA7-8930-0EF3-357E4B2D0FA8}.wem		\Containers\Player\Footsteps\FS_Property\FSSide\FS_Tile\FS_Tile_1-Heel\Tiles_Heel-004		13176
 	1069163309	Carpet_Step-002	.cache\97\{97C4015D-FF25-F086-7951-BF9C9D9014BE}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\FS_Carpet\FS_Carpet_2-Foot\Carpet_Step-002		17682
-	1070350176	Carpet_Step-005	.cache\B6\{B6F9B905-D3E1-C511-51E1-2DDC90456E34}.wem		\Containers\Player\Footsteps\FS_Property\FSSide\FS_Carpet\FS_Carpet_1-Foot\Carpet_Step-005		48096
+	1070350176	Carpet_Step-005	.cache\94\{944EE87C-EDF5-21A1-BCD7-C0A079629714}.wem		\Containers\Player\Footsteps\FS_Property\FSSide\FS_Carpet\FS_Carpet_1-Foot\Carpet_Step-005		38098
 
 Plug-in Media	ID	Name	Source file	Type	Wwise Object Path	Notes	Data Size
 	393877766	Petite_Room_Ambisonics	.cache\E5\{E5C3B67F-C44E-75E5-D54F-4A40C59EC3BE}.wem	Wwise Convolution Reverb (Shared)	\Effects\Factory AK Convolution Reverb Effects Ambisonics\Rooms\Petite_Room_Ambisonics	Impulse response created by Pinguin ing.büro © 2010 Pinguin ing.büro.  All rights reserved. IR Pre-delay: 8ms  	437696
