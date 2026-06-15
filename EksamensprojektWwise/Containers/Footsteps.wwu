@@ -4193,12 +4193,6 @@
 										</ItemList>
 									</Grouping>
 									<Grouping>
-										<SwitchRef Name="Gravel" ID="{ADE85F24-97E2-41EA-AF91-21D7ACFDC344}"/>
-										<ItemList>
-											<ItemRef Name="Clothes" ID="{23D4021F-25EA-4FCC-A817-E6AD4A7DC2E0}"/>
-										</ItemList>
-									</Grouping>
-									<Grouping>
 										<SwitchRef Name="Wood" ID="{01D74985-5AAD-4D47-AB4D-3BEFB42EDB14}"/>
 										<ItemList>
 											<ItemRef Name="FS_Wood" ID="{1E8969E5-2C52-41FA-B64F-9D8EAC32FAA8}"/>

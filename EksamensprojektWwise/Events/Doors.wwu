@@ -6,6 +6,10 @@
 				<Property Name="Color" Type="int16" Value="8"/>
 				<Property Name="OverrideColor" Type="bool" Value="True"/>
 			</PropertyList>
+			<ChildrenList>
+				<Event Name="Play_Door_Open" ID="{9E3105D9-A544-4D4F-A19A-7FE3457018B7}"/>
+				<Event Name="Play_Door_Close" ID="{5E747AD3-9FE2-4CC6-8986-745585448FBF}"/>
+			</ChildrenList>
 		</WorkUnit>
 	</Events>
 </WwiseDocument>

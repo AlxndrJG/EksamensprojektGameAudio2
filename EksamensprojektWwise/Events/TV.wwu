@@ -6,6 +6,19 @@
 				<Property Name="Color" Type="int16" Value="8"/>
 				<Property Name="OverrideColor" Type="bool" Value="True"/>
 			</PropertyList>
+			<ChildrenList>
+				<Event Name="Play_TV_Static" ID="{8311A8C1-854F-4FC0-87D8-161F3BC8A270}">
+					<ChildrenList>
+						<Action Name="" ID="{DFC408B3-5F46-4A8E-893F-BADB9EDFFACF}" ShortID="214304107">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="TV_Static" ID="{AE8AFA74-232A-4539-AC9B-59EE444ADB83}" WorkUnitID="{39B736E9-3A53-47FA-A130-DCB4295BC736}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
 		</WorkUnit>
 	</Events>
 </WwiseDocument>

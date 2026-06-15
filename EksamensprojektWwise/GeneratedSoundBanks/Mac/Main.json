@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{69C07AC4-2AB0-417A-A9B2-DC14CCE12DE0}",
     "Language": "SFX",
-    "Hash": "{EF6F8737-4452-264C-A474-0263522875BA}",
+    "Hash": "{B4446E5A-5A7C-1C23-3D91-4DC4A92256C7}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -445,7 +445,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "AK_Factory_IR_Amb\\Rooms\\AK Amb Luna Studio.wav",
-      "CachePath": "84/{84802250-F9F5-8485-CDDC-C86BE04152B7}.wem"
+      "CachePath": "E5/{E5C3B67F-C44E-75E5-D54F-4A40C59EC3BE}.wem"
      },
      {
       "Id": "394551106",
@@ -470,6 +470,14 @@
       "Location": "Memory",
       "ShortName": "EksamensprojektWwise\\Originals\\SFX\\Cabinet_Open_2.wav",
       "CachePath": "84/{84225D9B-DBAD-AB3A-0B78-57EA1A54A578}.wem"
+     },
+     {
+      "Id": "398776290",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SFX\\EksamensprojektWwise\\Originals\\SFX\\TV_Static_loop.wav",
+      "CachePath": "66/{669CF972-311F-8E06-8804-6AB7A5673B24}.wem"
      },
      {
       "Id": "398815487",
@@ -912,6 +920,14 @@
       "CachePath": "F1/{F1349EA8-EBCD-A186-9CA9-2993D2CE0EC7}.wem"
      },
      {
+      "Id": "894434445",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "AK_Factory_IR_Amb\\Rooms\\AK Amb Hamburg Echo Chamber.wav",
+      "CachePath": "B3/{B3CC5895-FCCB-E1B2-F179-CA1977D843E7}.wem"
+     },
+     {
       "Id": "899457694",
       "Language": "SFX",
       "Streaming": "false",
@@ -1187,6 +1203,19 @@
     "Plugins": {
      "ShareSets": [
       {
+       "Id": "3763172438",
+       "Name": "Hamburg_Echo_Chamber_Org_Ambisonics",
+       "ObjectPath": "\\Effects\\Factory AK Convolution Reverb Effects Ambisonics\\Rooms\\Hamburg_Echo_Chamber_Org_Ambisonics",
+       "GUID": "{56C681B4-C7CD-44AD-A4BB-34C5D5059B52}",
+       "LibName": "Wwise Convolution Reverb",
+       "LibId": "8323075",
+       "MediaRefs": [
+        {
+         "Id": "894434445"
+        }
+       ]
+      },
+      {
        "Id": "4033730959",
        "Name": "Petite_Room_Ambisonics",
        "ObjectPath": "\\Effects\\Factory AK Convolution Reverb Effects Ambisonics\\Rooms\\Petite_Room_Ambisonics",
@@ -1380,15 +1409,89 @@
       ]
      },
      {
+      "Id": "3919977262",
+      "Name": "Play_Closet_Draw_Close",
+      "ObjectPath": "\\Events\\SFX\\Objects\\Cabinets\\Play_Closet_Draw_Close",
+      "GUID": "{7A825746-3414-48B4-BE54-3AD812C8FE8D}",
+      "Color": "8",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
+      "Id": "2360365162",
+      "Name": "Play_Closet_Draw_Open",
+      "ObjectPath": "\\Events\\SFX\\Objects\\Cabinets\\Play_Closet_Draw_Open",
+      "GUID": "{E8726AFB-1F4E-4DE6-AE84-E5CBDB47EFC3}",
+      "Color": "8",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
+      "Id": "2596423489",
+      "Name": "Play_Closet_Slide_Close",
+      "ObjectPath": "\\Events\\SFX\\Objects\\Cabinets\\Play_Closet_Slide_Close",
+      "GUID": "{49DF6A4C-6E53-4337-994E-110DCD7CE0E7}",
+      "Color": "8",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
+      "Id": "4175337955",
+      "Name": "Play_Closet_Slide_Open",
+      "ObjectPath": "\\Events\\SFX\\Objects\\Cabinets\\Play_Closet_Slide_Open",
+      "GUID": "{F6AE2632-5BD6-460A-8E50-959396FE42BA}",
+      "Color": "8",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
+      "Id": "2292458263",
+      "Name": "Play_Door_Close",
+      "ObjectPath": "\\Events\\SFX\\Objects\\Doors\\Play_Door_Close",
+      "GUID": "{5E747AD3-9FE2-4CC6-8986-745585448FBF}",
+      "Color": "8",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
+      "Id": "1660008929",
+      "Name": "Play_Door_Open",
+      "ObjectPath": "\\Events\\SFX\\Objects\\Doors\\Play_Door_Open",
+      "GUID": "{9E3105D9-A544-4D4F-A19A-7FE3457018B7}",
+      "Color": "8",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
       "Id": "369029778",
       "Name": "Play_FSBack",
       "ObjectPath": "\\Events\\Player\\Play_FSBack",
       "GUID": "{241637BD-4940-4821-BBC3-535AAAC79395}",
       "Color": "1",
-      "MaxAttenuation": "50",
+      "MaxAttenuation": "10",
       "DurationType": "OneShot",
       "DurationMin": "0",
       "DurationMax": "0.945135",
+      "AuxBusRefs": [
+       {
+        "Id": "4147732741",
+        "Name": "RV_Hall",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Reverbs\\RV_Hall",
+        "GUID": "{D5AE201C-E1EF-4AAB-9A25-A89486E31350}"
+       }
+      ],
       "SwitchContainers": [
        {
         "SwitchValue": {
@@ -1573,10 +1676,18 @@
       "ObjectPath": "\\Events\\Player\\Play_FSForward",
       "GUID": "{9B5E6030-2213-47DF-AB48-36874C8AD8D9}",
       "Color": "1",
-      "MaxAttenuation": "50",
+      "MaxAttenuation": "10",
       "DurationType": "OneShot",
       "DurationMin": "0",
       "DurationMax": "0.8366682",
+      "AuxBusRefs": [
+       {
+        "Id": "4147732741",
+        "Name": "RV_Hall",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Reverbs\\RV_Hall",
+        "GUID": "{D5AE201C-E1EF-4AAB-9A25-A89486E31350}"
+       }
+      ],
       "SwitchContainers": [
        {
         "SwitchValue": {
@@ -1807,10 +1918,18 @@
       "ObjectPath": "\\Events\\Player\\Play_FSSide",
       "GUID": "{83EF0AEC-1A98-4E91-88D3-5ABC730E4FAF}",
       "Color": "1",
-      "MaxAttenuation": "50",
+      "MaxAttenuation": "10",
       "DurationType": "OneShot",
       "DurationMin": "0",
       "DurationMax": "1.5",
+      "AuxBusRefs": [
+       {
+        "Id": "4147732741",
+        "Name": "RV_Hall",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Reverbs\\RV_Hall",
+        "GUID": "{D5AE201C-E1EF-4AAB-9A25-A89486E31350}"
+       }
+      ],
       "SwitchContainers": [
        {
         "SwitchValue": {
@@ -2146,6 +2265,28 @@
       ]
      },
      {
+      "Id": "3137613346",
+      "Name": "Play_Kitchen_Draw_Close",
+      "ObjectPath": "\\Events\\SFX\\Objects\\Cabinets\\Play_Kitchen_Draw_Close",
+      "GUID": "{026F7192-7D9B-4E1E-AE48-E0AFBD512A44}",
+      "Color": "8",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
+      "Id": "1911134838",
+      "Name": "Play_Kitchen_Draw_Open",
+      "ObjectPath": "\\Events\\SFX\\Objects\\Cabinets\\Play_Kitchen_Draw_Open",
+      "GUID": "{24035F0C-3470-4905-9EFC-619B2FCB1E5C}",
+      "Color": "8",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
       "Id": "1963904025",
       "Name": "Play_Testlyd",
       "ObjectPath": "\\Events\\Default Work Unit\\Play_Testlyd",
@@ -2158,6 +2299,30 @@
         "Id": "368103941"
        }
       ]
+     },
+     {
+      "Id": "1897478513",
+      "Name": "Play_TV_Static",
+      "ObjectPath": "\\Events\\SFX\\Objects\\TV\\Play_TV_Static",
+      "GUID": "{8311A8C1-854F-4FC0-87D8-161F3BC8A270}",
+      "Color": "8",
+      "MaxAttenuation": "10",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "398776290"
+       }
+      ]
+     },
+     {
+      "Id": "1329369387",
+      "Name": "Stop_TV_Static",
+      "ObjectPath": "\\Events\\Default Work Unit\\Stop_TV_Static",
+      "GUID": "{C13CA462-BDE5-4D0B-A4C3-0F7F988B2A5E}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
      }
     ],
     "Busses": [
@@ -2180,11 +2345,24 @@
       "Name": "RV_Child_Bedroom",
       "ObjectPath": "\\Busses\\Default Work Unit\\Reverbs\\RV_Child_Bedroom",
       "GUID": "{B15F643F-9ABD-496D-AA17-3B4A72D4FF66}",
-      "MaxAttenuation": "50",
+      "MaxAttenuation": "10",
       "PluginRefs": {
        "ShareSets": [
         {
          "Id": "4033730959"
+        }
+       ]
+      }
+     },
+     {
+      "Id": "4147732741",
+      "Name": "RV_Hall",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Reverbs\\RV_Hall",
+      "GUID": "{D5AE201C-E1EF-4AAB-9A25-A89486E31350}",
+      "PluginRefs": {
+       "ShareSets": [
+        {
+         "Id": "3763172438"
         }
        ]
       }
@@ -2210,12 +2388,6 @@
         "GUID": "{01D74985-5AAD-4D47-AB4D-3BEFB42EDB14}"
        },
        {
-        "Id": "2185786256",
-        "Name": "Gravel",
-        "ObjectPath": "\\Switches\\Default Work Unit\\Materials\\Gravel",
-        "GUID": "{ADE85F24-97E2-41EA-AF91-21D7ACFDC344}"
-       },
-       {
         "Id": "2195636714",
         "Name": "Dirt",
         "ObjectPath": "\\Switches\\Default Work Unit\\Materials\\Dirt",
@@ -2238,6 +2410,6 @@
     ]
    }
   ],
-  "FileHash": "{D4E08B01-6336-AC05-3573-15B91CCDF877}"
+  "FileHash": "{33FB2875-9250-22C6-0828-2EC96E1F42CA}"
  }
 }

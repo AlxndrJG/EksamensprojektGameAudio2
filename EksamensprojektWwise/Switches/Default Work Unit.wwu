@@ -10,7 +10,6 @@
 						<Switch Name="Carpet" ID="{20CB2217-9B72-41FC-8CA9-CF9513CA335E}"/>
 						<Switch Name="Concrete" ID="{08B9ED8A-851B-406C-BE22-8A17373FFE72}"/>
 						<Switch Name="Dirt" ID="{EA7FBBC3-42D5-40A1-833B-09A701BB2D0D}"/>
-						<Switch Name="Gravel" ID="{ADE85F24-97E2-41EA-AF91-21D7ACFDC344}"/>
 					</ChildrenList>
 				</SwitchGroup>
 			</ChildrenList>

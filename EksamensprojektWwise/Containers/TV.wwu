@@ -3,10 +3,7 @@
 	<Containers>
 		<WorkUnit Name="TV" ID="{39B736E9-3A53-47FA-A130-DCB4295BC736}" OwnerID="{D751A346-751C-439A-9397-A1FDB4F10230}" PersistMode="Nested">
 			<ChildrenList>
-				<RandomSequenceContainer Name="TV_Sequence" ID="{23EFFBCA-E457-4149-80E4-CFB908CCD52C}" ShortID="19320061">
-					<PropertyList>
-						<Property Name="RandomOrSequence" Type="int16" Value="0"/>
-					</PropertyList>
+				<RandomSequenceContainer Name="TV_Glitchy" ID="{7D894AA6-EBCC-4149-AA7D-C1F6B160E9AF}" ShortID="760930105">
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
@@ -16,7 +13,7 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<RandomSequenceContainer Name="TV_Glitchy" ID="{7D894AA6-EBCC-4149-AA7D-C1F6B160E9AF}" ShortID="760930105">
+						<Sound Name="TV_Glitchy_2" ID="{E4BC1B9B-0E0E-416D-9542-30BF6A61239C}" ShortID="30267147">
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
@@ -26,75 +23,19 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<Sound Name="TV_Glitchy_2" ID="{E4BC1B9B-0E0E-416D-9542-30BF6A61239C}" ShortID="30267147">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="TV_Glitchy_2" ID="{0877A64A-6185-4B03-B6B1-392E96950A37}">
-											<Language>SFX</Language>
-											<AudioFile>EksamensprojektWwise\Originals\SFX\TV_Glitchy_2.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="216229144"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="TV_Glitchy_2" ID="{0877A64A-6185-4B03-B6B1-392E96950A37}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="TV_Glitchy_4" ID="{018C0C76-905E-4B55-9B4E-B458E72A6035}" ShortID="765917689">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="TV_Glitchy_4" ID="{FF933EC2-316B-4A26-B9B4-99F98928B745}">
-											<Language>SFX</Language>
-											<AudioFile>EksamensprojektWwise\Originals\SFX\TV_Glitchy_4.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="711116836"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="TV_Glitchy_4" ID="{FF933EC2-316B-4A26-B9B4-99F98928B745}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="TV_Glitchy_3" ID="{E07ADC9F-88AC-4D71-89AA-290AAE94D2A7}" ShortID="295660399">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="TV_Glitchy_3" ID="{1EE250EC-4575-44BC-98D0-34D027401EF2}">
-											<Language>SFX</Language>
-											<AudioFile>EksamensprojektWwise\Originals\SFX\TV_Glitchy_3.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="1065873495"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="TV_Glitchy_3" ID="{1EE250EC-4575-44BC-98D0-34D027401EF2}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
+								<AudioFileSource Name="TV_Glitchy_2" ID="{0877A64A-6185-4B03-B6B1-392E96950A37}">
+									<Language>SFX</Language>
+									<AudioFile>EksamensprojektWwise\Originals\SFX\TV_Glitchy_2.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="216229144"/>
+									</MediaIDList>
+								</AudioFileSource>
 							</ChildrenList>
-						</RandomSequenceContainer>
-						<RandomSequenceContainer Name="TV_On" ID="{576F8D4B-86FC-4F9D-8C7D-B2BC2896D1D8}" ShortID="682643754">
+							<ActiveSourceList>
+								<ActiveSource Name="TV_Glitchy_2" ID="{0877A64A-6185-4B03-B6B1-392E96950A37}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="TV_Glitchy_4" ID="{018C0C76-905E-4B55-9B4E-B458E72A6035}" ShortID="765917689">
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
@@ -104,119 +45,186 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<Sound Name="TV_On_1" ID="{4B439197-722A-4250-9776-6A0FF21988E0}" ShortID="555219105">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="TV_On_1" ID="{D0405551-BCE0-45BC-AB1E-9D6239D1A2CF}">
-											<Language>SFX</Language>
-											<AudioFile>EksamensprojektWwise\Originals\SFX\TV_On_1.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="565461090"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="TV_On_1" ID="{D0405551-BCE0-45BC-AB1E-9D6239D1A2CF}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="TV_On_3" ID="{59AD6A35-2B99-4C8C-919C-98E2427115F6}" ShortID="8695558">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="TV_On_3" ID="{E5EF3358-8E31-47B1-A126-0D92032E8F20}">
-											<Language>SFX</Language>
-											<AudioFile>EksamensprojektWwise\Originals\SFX\TV_On_3.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="366187573"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="TV_On_3" ID="{E5EF3358-8E31-47B1-A126-0D92032E8F20}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="TV_On_5" ID="{663AEBE1-55D2-40E2-9C40-07FD7B4E9EF6}" ShortID="401300324">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="TV_On_5" ID="{914ECCF9-9A0F-489E-A256-9C16821F5A3E}">
-											<Language>SFX</Language>
-											<AudioFile>EksamensprojektWwise\Originals\SFX\TV_On_5.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="691243126"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="TV_On_5" ID="{914ECCF9-9A0F-489E-A256-9C16821F5A3E}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="TV_On_4" ID="{544EF243-A0F8-4202-B4D9-CD11A03C6CE2}" ShortID="836353291">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="TV_On_4" ID="{C1B2EC92-4D3E-4EC3-958E-5B6C8CD515E5}">
-											<Language>SFX</Language>
-											<AudioFile>EksamensprojektWwise\Originals\SFX\TV_On_4.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="599879927"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="TV_On_4" ID="{C1B2EC92-4D3E-4EC3-958E-5B6C8CD515E5}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="TV_On_2" ID="{2C99BA5E-FF82-43EF-8907-F82BF9BFED4A}" ShortID="143772931">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="TV_On_2" ID="{716F53EA-BB3B-4FC3-AB96-C5469FD6E407}">
-											<Language>SFX</Language>
-											<AudioFile>EksamensprojektWwise\Originals\SFX\TV_On_2.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="293993595"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="TV_On_2" ID="{716F53EA-BB3B-4FC3-AB96-C5469FD6E407}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
+								<AudioFileSource Name="TV_Glitchy_4" ID="{FF933EC2-316B-4A26-B9B4-99F98928B745}">
+									<Language>SFX</Language>
+									<AudioFile>EksamensprojektWwise\Originals\SFX\TV_Glitchy_4.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="711116836"/>
+									</MediaIDList>
+								</AudioFileSource>
 							</ChildrenList>
-						</RandomSequenceContainer>
+							<ActiveSourceList>
+								<ActiveSource Name="TV_Glitchy_4" ID="{FF933EC2-316B-4A26-B9B4-99F98928B745}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="TV_Glitchy_3" ID="{E07ADC9F-88AC-4D71-89AA-290AAE94D2A7}" ShortID="295660399">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="TV_Glitchy_3" ID="{1EE250EC-4575-44BC-98D0-34D027401EF2}">
+									<Language>SFX</Language>
+									<AudioFile>EksamensprojektWwise\Originals\SFX\TV_Glitchy_3.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="1065873495"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="TV_Glitchy_3" ID="{1EE250EC-4575-44BC-98D0-34D027401EF2}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
+				<RandomSequenceContainer Name="TV_On" ID="{576F8D4B-86FC-4F9D-8C7D-B2BC2896D1D8}" ShortID="682643754">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="TV_On_1" ID="{4B439197-722A-4250-9776-6A0FF21988E0}" ShortID="555219105">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="TV_On_1" ID="{D0405551-BCE0-45BC-AB1E-9D6239D1A2CF}">
+									<Language>SFX</Language>
+									<AudioFile>EksamensprojektWwise\Originals\SFX\TV_On_1.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="565461090"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="TV_On_1" ID="{D0405551-BCE0-45BC-AB1E-9D6239D1A2CF}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="TV_On_3" ID="{59AD6A35-2B99-4C8C-919C-98E2427115F6}" ShortID="8695558">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="TV_On_3" ID="{E5EF3358-8E31-47B1-A126-0D92032E8F20}">
+									<Language>SFX</Language>
+									<AudioFile>EksamensprojektWwise\Originals\SFX\TV_On_3.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="366187573"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="TV_On_3" ID="{E5EF3358-8E31-47B1-A126-0D92032E8F20}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="TV_On_5" ID="{663AEBE1-55D2-40E2-9C40-07FD7B4E9EF6}" ShortID="401300324">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="TV_On_5" ID="{914ECCF9-9A0F-489E-A256-9C16821F5A3E}">
+									<Language>SFX</Language>
+									<AudioFile>EksamensprojektWwise\Originals\SFX\TV_On_5.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="691243126"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="TV_On_5" ID="{914ECCF9-9A0F-489E-A256-9C16821F5A3E}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="TV_On_4" ID="{544EF243-A0F8-4202-B4D9-CD11A03C6CE2}" ShortID="836353291">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="TV_On_4" ID="{C1B2EC92-4D3E-4EC3-958E-5B6C8CD515E5}">
+									<Language>SFX</Language>
+									<AudioFile>EksamensprojektWwise\Originals\SFX\TV_On_4.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="599879927"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="TV_On_4" ID="{C1B2EC92-4D3E-4EC3-958E-5B6C8CD515E5}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="TV_On_2" ID="{2C99BA5E-FF82-43EF-8907-F82BF9BFED4A}" ShortID="143772931">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="TV_On_2" ID="{716F53EA-BB3B-4FC3-AB96-C5469FD6E407}">
+									<Language>SFX</Language>
+									<AudioFile>EksamensprojektWwise\Originals\SFX\TV_On_2.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="293993595"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="TV_On_2" ID="{716F53EA-BB3B-4FC3-AB96-C5469FD6E407}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
+				<BlendContainer Name="TV_Static" ID="{AE8AFA74-232A-4539-AC9B-59EE444ADB83}" ShortID="1066853689">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="Attenuate_50" ID="{143E31F9-1597-48C4-9436-CFA24A10D321}" WorkUnitID="{E312AA2F-7D32-49AE-9B3F-853E8C0370AC}"/>
+						</Reference>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
 						<Sound Name="TV_Static_Loop" ID="{E892FB76-DA55-4B76-8974-2EA2FE34CB71}" ShortID="212124483">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
@@ -233,13 +241,23 @@
 										<MediaID ID="347009875"/>
 									</MediaIDList>
 								</AudioFileSource>
+								<AudioFileSource Name="TV_Static_loop_01" ID="{B586B588-7614-4A6D-AFE1-D5A989CB91EC}">
+									<Language>SFX</Language>
+									<AudioFile>SFX\EksamensprojektWwise\Originals\SFX\TV_Static_loop.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="398776290"/>
+									</MediaIDList>
+								</AudioFileSource>
 							</ChildrenList>
 							<ActiveSourceList>
-								<ActiveSource Name="TV_Static_Loop" ID="{ACFE2968-A36E-4F08-8419-FA93EF08EDAC}" Platform="Linked"/>
+								<ActiveSource Name="TV_Static_loop_01" ID="{B586B588-7614-4A6D-AFE1-D5A989CB91EC}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>
-				</RandomSequenceContainer>
+					<PositioningInfo>
+						<Position Name="" ID="{FF53C7E5-1C76-42D2-A66B-CEB6EDF02DC7}"/>
+					</PositioningInfo>
+				</BlendContainer>
 			</ChildrenList>
 		</WorkUnit>
 	</Containers>

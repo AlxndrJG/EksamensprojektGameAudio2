@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{71DA5711-4290-0189-7E83-B9A5E8E6C5E6}",
+    "Hash": "{E2E79A34-DADE-4AA6-001F-5900D5111618}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
@@ -21,11 +21,32 @@
       "Streaming": "false",
       "Location": "OtherBank",
       "ShortName": "AK_Factory_IR_Amb\\Rooms\\AK Amb Luna Studio.wav",
-      "CachePath": "84/{84802250-F9F5-8485-CDDC-C86BE04152B7}.wem"
+      "CachePath": "E5/{E5C3B67F-C44E-75E5-D54F-4A40C59EC3BE}.wem"
+     },
+     {
+      "Id": "894434445",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "OtherBank",
+      "ShortName": "AK_Factory_IR_Amb\\Rooms\\AK Amb Hamburg Echo Chamber.wav",
+      "CachePath": "B3/{B3CC5895-FCCB-E1B2-F179-CA1977D843E7}.wem"
      }
     ],
     "Plugins": {
      "ShareSets": [
+      {
+       "Id": "3763172438",
+       "Name": "Hamburg_Echo_Chamber_Org_Ambisonics",
+       "ObjectPath": "\\Effects\\Factory AK Convolution Reverb Effects Ambisonics\\Rooms\\Hamburg_Echo_Chamber_Org_Ambisonics",
+       "GUID": "{56C681B4-C7CD-44AD-A4BB-34C5D5059B52}",
+       "LibName": "Wwise Convolution Reverb",
+       "LibId": "8323075",
+       "MediaRefs": [
+        {
+         "Id": "894434445"
+        }
+       ]
+      },
       {
        "Id": "4033730959",
        "Name": "Petite_Room_Ambisonics",
@@ -79,11 +100,24 @@
       "Name": "RV_Child_Bedroom",
       "ObjectPath": "\\Busses\\Default Work Unit\\Reverbs\\RV_Child_Bedroom",
       "GUID": "{B15F643F-9ABD-496D-AA17-3B4A72D4FF66}",
-      "MaxAttenuation": "50",
+      "MaxAttenuation": "10",
       "PluginRefs": {
        "ShareSets": [
         {
          "Id": "4033730959"
+        }
+       ]
+      }
+     },
+     {
+      "Id": "4147732741",
+      "Name": "RV_Hall",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Reverbs\\RV_Hall",
+      "GUID": "{D5AE201C-E1EF-4AAB-9A25-A89486E31350}",
+      "PluginRefs": {
+       "ShareSets": [
+        {
+         "Id": "3763172438"
         }
        ]
       }
@@ -109,12 +143,6 @@
         "GUID": "{01D74985-5AAD-4D47-AB4D-3BEFB42EDB14}"
        },
        {
-        "Id": "2185786256",
-        "Name": "Gravel",
-        "ObjectPath": "\\Switches\\Default Work Unit\\Materials\\Gravel",
-        "GUID": "{ADE85F24-97E2-41EA-AF91-21D7ACFDC344}"
-       },
-       {
         "Id": "2195636714",
         "Name": "Dirt",
         "ObjectPath": "\\Switches\\Default Work Unit\\Materials\\Dirt",
@@ -137,6 +165,6 @@
     ]
    }
   ],
-  "FileHash": "{0B1E3FF2-2C25-E8F1-06A6-C2227CF43FC0}"
+  "FileHash": "{3A7CCACC-B45A-967C-F9AC-F72F45C0F38C}"
  }
 }

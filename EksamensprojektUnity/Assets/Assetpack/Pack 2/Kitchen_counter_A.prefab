@@ -341,6 +341,14 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8936983266942079850, guid: cecb8e01d367b964e8e8457f9c06d048, type: 3}
+      propertyPath: akEventOpen.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: d5234ce05de0d451e843859ab41e9246, type: 2}
+    - target: {fileID: 8936983266942079850, guid: cecb8e01d367b964e8e8457f9c06d048, type: 3}
+      propertyPath: akEventClose.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 96c21702b5b494969b8f4ed3d0de665d, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -411,6 +419,14 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8936983266942079850, guid: cecb8e01d367b964e8e8457f9c06d048, type: 3}
+      propertyPath: akEventOpen.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: d5234ce05de0d451e843859ab41e9246, type: 2}
+    - target: {fileID: 8936983266942079850, guid: cecb8e01d367b964e8e8457f9c06d048, type: 3}
+      propertyPath: akEventClose.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 96c21702b5b494969b8f4ed3d0de665d, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

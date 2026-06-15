@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0719a08c641a74099be74c1fce563f02, type: 3}
+  m_Name: 026F7192-7D9B-4E1E-AE48-E0AFBD512A44
+  m_EditorClassIdentifier: AK.Wwise.Unity.API.WwiseTypes::WwiseEventReference
+  objectName: Play_Kitchen_Draw_Close
+  id: 3137613346
+  guid: 026F7192-7D9B-4E1E-AE48-E0AFBD512A44
+  IsInUserDefinedSoundBank: 1

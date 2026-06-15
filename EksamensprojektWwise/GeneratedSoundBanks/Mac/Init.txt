@@ -4,8 +4,10 @@ Audio Bus	ID	Name			Wwise Object Path	Notes
 
 Auxiliary Bus	ID	Name			Wwise Object Path	Notes
 	1188439079	RV_Child_Bedroom			\Default Work Unit\Reverbs\RV_Child_Bedroom	
+	4147732741	RV_Hall			\Default Work Unit\Reverbs\RV_Hall	
 
 Effect plug-ins	ID	Name	Type				Notes
+	3763172438	Hamburg_Echo_Chamber_Org_Ambisonics	Wwise Convolution Reverb			Impulse response created by Pinguin ing.büro © 2010 Pinguin ing.büro.  All rights reserved. IR Pre-delay: 4ms  
 	4033730959	Petite_Room_Ambisonics	Wwise Convolution Reverb			Impulse response created by Pinguin ing.büro © 2010 Pinguin ing.büro.  All rights reserved. IR Pre-delay: 8ms  
 
 Audio Devices	ID	Name	Type				Notes

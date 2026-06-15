@@ -95,6 +95,12 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_Kitchen_Draw_Open" ID="{24035F0C-3470-4905-9EFC-619B2FCB1E5C}"/>
+				<Event Name="Play_Kitchen_Draw_Close" ID="{026F7192-7D9B-4E1E-AE48-E0AFBD512A44}"/>
+				<Event Name="Play_Closet_Slide_Open" ID="{F6AE2632-5BD6-460A-8E50-959396FE42BA}"/>
+				<Event Name="Play_Closet_Slide_Close" ID="{49DF6A4C-6E53-4337-994E-110DCD7CE0E7}"/>
+				<Event Name="Play_Closet_Draw_Open" ID="{E8726AFB-1F4E-4DE6-AE84-E5CBDB47EFC3}"/>
+				<Event Name="Play_Closet_Draw_Close" ID="{7A825746-3414-48B4-BE54-3AD812C8FE8D}"/>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

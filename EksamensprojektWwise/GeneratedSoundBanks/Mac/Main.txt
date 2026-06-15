@@ -2,12 +2,22 @@ Event	ID	Name			Wwise Object Path	Notes
 	259954442	Play_Kitchen_Cabinet_Bottom_Close			\SFX\Objects\Cabinets\Play_Kitchen_Cabinet_Bottom_Close	
 	369029778	Play_FSBack			\Player\Play_FSBack	
 	567305970	Play_Kitchen_Cabinet_Top_Open			\SFX\Objects\Cabinets\Play_Kitchen_Cabinet_Top_Open	
+	1329369387	Stop_TV_Static			\Default Work Unit\Stop_TV_Static	
 	1347786538	Play_Cabinet_Draw_Close			\SFX\Objects\Cabinets\Play_Cabinet_Draw_Close	
 	1437364014	Play_Kitchen_Cabinet_Bottom_Open			\SFX\Objects\Cabinets\Play_Kitchen_Cabinet_Bottom_Open	
+	1660008929	Play_Door_Open			\SFX\Objects\Doors\Play_Door_Open	
 	1760803494	Play_Kitchen_Cabinet_Top_Close			\SFX\Objects\Cabinets\Play_Kitchen_Cabinet_Top_Close	
+	1897478513	Play_TV_Static			\SFX\Objects\TV\Play_TV_Static	
+	1911134838	Play_Kitchen_Draw_Open			\SFX\Objects\Cabinets\Play_Kitchen_Draw_Open	
 	1963904025	Play_Testlyd			\Default Work Unit\Play_Testlyd	
+	2292458263	Play_Door_Close			\SFX\Objects\Doors\Play_Door_Close	
+	2360365162	Play_Closet_Draw_Open			\SFX\Objects\Cabinets\Play_Closet_Draw_Open	
 	2481548253	Play_Bookshelf_Cabinet_Open			\SFX\Objects\Cabinets\Play_Bookshelf_Cabinet_Open	
+	2596423489	Play_Closet_Slide_Close			\SFX\Objects\Cabinets\Play_Closet_Slide_Close	
+	3137613346	Play_Kitchen_Draw_Close			\SFX\Objects\Cabinets\Play_Kitchen_Draw_Close	
 	3148743426	Play_FSForward			\Player\Play_FSForward	
+	3919977262	Play_Closet_Draw_Close			\SFX\Objects\Cabinets\Play_Closet_Draw_Close	
+	4175337955	Play_Closet_Slide_Open			\SFX\Objects\Cabinets\Play_Closet_Slide_Open	
 	4244553126	Play_FSSide			\Player\Play_FSSide	
 	4255376059	Play_Bookshelf_Cabinet_Close			\SFX\Objects\Cabinets\Play_Bookshelf_Cabinet_Close	
 	4258792910	Play_Cabinet_Draw_Open			\SFX\Objects\Cabinets\Play_Cabinet_Draw_Open	
@@ -18,15 +28,16 @@ Switch Group	ID	Name			Wwise Object Path	Notes
 Switch	ID	Name	Switch Group			Notes
 	841620460	Concrete	Materials			
 	2058049674	Wood	Materials			
-	2185786256	Gravel	Materials			
 	2195636714	Dirt	Materials			
 	2412606308	Carpet	Materials			
 	2637588553	Tile	Materials			
 
 Auxiliary Bus	ID	Name			Wwise Object Path	Notes
 	1188439079	RV_Child_Bedroom			\Default Work Unit\Reverbs\RV_Child_Bedroom	
+	4147732741	RV_Hall			\Default Work Unit\Reverbs\RV_Hall	
 
 Effect plug-ins	ID	Name	Type				Notes
+	3763172438	Hamburg_Echo_Chamber_Org_Ambisonics	Wwise Convolution Reverb			Impulse response created by Pinguin ing.büro © 2010 Pinguin ing.büro.  All rights reserved. IR Pre-delay: 4ms  
 	4033730959	Petite_Room_Ambisonics	Wwise Convolution Reverb			Impulse response created by Pinguin ing.büro © 2010 Pinguin ing.büro.  All rights reserved. IR Pre-delay: 8ms  
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
@@ -86,6 +97,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	394551106	Carpet_Step-008	.cache\52\{5209BB5B-3361-F1B7-F469-4BF7A2278FBC}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Carpet\FS_Carpet_2-Foot\Carpet_Step-008		35756
 	395206649	Carpet_Step-003	.cache\B4\{B448127A-6AE2-8419-39F9-69E7C0C07565}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Carpet\FS_Carpet_2-Foot\Carpet_Step-003		44116
 	395654687	Cabinet_Open_2	.cache\84\{84225D9B-DBAD-AB3A-0B78-57EA1A54A578}.wem		\Containers\SFX\Objects\Cabinets\Cabinet_Kitchen_Bottom\Kitchen_Cabinet_Bottom_Close\Bookshelf_Cabinet_Close_Imp\Cabinet_Open_2		20396
+	398776290	TV_Static_Loop	.cache\66\{669CF972-311F-8E06-8804-6AB7A5673B24}.wem		\Containers\SFX\Objects\TV\TV_Static\TV_Static_Loop		1152096
 	398815487	Skuffe_Ud-002	.cache\EE\{EE7D07A0-21E7-B228-632D-8A440295C9FB}.wem		\Containers\SFX\Objects\Cabinets\Cabinet_Draw\Cabinet_Draw_Close\Cabinet_Close_Slide\Skuffe_Ud-002		67058
 	410437280	Carpet_Step_2-010	.cache\DE\{DE956542-7A73-1F12-3842-D48F9431B37D}.wem		\Containers\Player\Footsteps\FS_Property\FSSide\FS_Dirt\FS_Dirt_1-Foot\Carpet_Step_2-010		27044
 	423912907	Cabinet_Open_1	.cache\23\{23FC72F1-90CA-3BC7-0374-2137D60A0ADC}.wem		\Containers\SFX\Objects\Cabinets\Cabinet_Bookshelf\Bookshelf_Cabinet_Open\Bookshelf_Cabinet_Open_Imp\Cabinet_Open_1		146700
@@ -177,5 +189,6 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	1070350176	Carpet_Step-005	.cache\B6\{B6F9B905-D3E1-C511-51E1-2DDC90456E34}.wem		\Containers\Player\Footsteps\FS_Property\FSSide\FS_Carpet\FS_Carpet_1-Foot\Carpet_Step-005		48096
 
 Plug-in Media	ID	Name	Source file	Type	Wwise Object Path	Notes	Data Size
-	393877766	Petite_Room_Ambisonics	.cache\84\{84802250-F9F5-8485-CDDC-C86BE04152B7}.wem	Wwise Convolution Reverb (Shared)	\Effects\Factory AK Convolution Reverb Effects Ambisonics\Rooms\Petite_Room_Ambisonics	Impulse response created by Pinguin ing.büro © 2010 Pinguin ing.büro.  All rights reserved. IR Pre-delay: 8ms  	437696
+	393877766	Petite_Room_Ambisonics	.cache\E5\{E5C3B67F-C44E-75E5-D54F-4A40C59EC3BE}.wem	Wwise Convolution Reverb (Shared)	\Effects\Factory AK Convolution Reverb Effects Ambisonics\Rooms\Petite_Room_Ambisonics	Impulse response created by Pinguin ing.büro © 2010 Pinguin ing.büro.  All rights reserved. IR Pre-delay: 8ms  	437696
+	894434445	Hamburg_Echo_Chamber_Org_Ambisonics	.cache\B3\{B3CC5895-FCCB-E1B2-F179-CA1977D843E7}.wem	Wwise Convolution Reverb (Shared)	\Effects\Factory AK Convolution Reverb Effects Ambisonics\Rooms\Hamburg_Echo_Chamber_Org_Ambisonics	Impulse response created by Pinguin ing.büro © 2010 Pinguin ing.büro.  All rights reserved. IR Pre-delay: 4ms  	453600
 

@@ -14,6 +14,20 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Stop_TV_Static" ID="{C13CA462-BDE5-4D0B-A4C3-0F7F988B2A5E}">
+					<ChildrenList>
+						<Action Name="" ID="{224458A1-C8F8-410B-804C-3CDAE22CACE8}" ShortID="630892866">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="TV_Static" ID="{AE8AFA74-232A-4539-AC9B-59EE444ADB83}" WorkUnitID="{39B736E9-3A53-47FA-A130-DCB4295BC736}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

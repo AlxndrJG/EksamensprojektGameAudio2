@@ -292,15 +292,20 @@
 					<PropertyList>
 						<Property Name="ConeAttenuation" Type="Real64">
 							<ValueList>
-								<Value>-28</Value>
+								<Value>-1</Value>
 							</ValueList>
 						</Property>
-						<Property Name="ConeUse" Type="bool">
+						<Property Name="ConeHighPassFilterValue" Type="int32">
 							<ValueList>
-								<Value>True</Value>
+								<Value>14</Value>
 							</ValueList>
 						</Property>
-						<Property Name="RadiusMax" Type="Real64" Value="50"/>
+						<Property Name="ConeLowPassFilterValue" Type="int32">
+							<ValueList>
+								<Value>12</Value>
+							</ValueList>
+						</Property>
+						<Property Name="RadiusMax" Type="Real64" Value="10"/>
 					</PropertyList>
 					<CurveUsageInfoList>
 						<VolumeDryUsage>
@@ -316,7 +321,7 @@
 											<Flags>5</Flags>
 										</Point>
 										<Point>
-											<XPos>50</XPos>
+											<XPos>10</XPos>
 											<YPos>-200</YPos>
 											<Flags>37</Flags>
 										</Point>
