@@ -9,6 +9,8 @@
 			<ChildrenList>
 				<RandomSequenceContainer Name="Kitchen_Cabinet_Bottom_Close" ID="{057DC1CC-5F0B-4B61-A0CE-3472B0E49A3D}" ShortID="161676061">
 					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 						<Property Name="Lowpass" Type="int16">
 							<ModifierList>
 								<ModifierInfo>
@@ -63,6 +65,9 @@
 						</Property>
 					</PropertyList>
 					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="Objects" ID="{39FADBB5-CB61-4430-A335-DE2B6E800699}" WorkUnitID="{C7388D37-C676-4204-9D08-21F86132814E}"/>
+						</Reference>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
 						</Reference>
@@ -421,6 +426,8 @@
 				</RandomSequenceContainer>
 				<RandomSequenceContainer Name="Kitchen_Cabinet_Bottom_Open" ID="{0F4F1438-4F28-4420-BE02-E6668E022AE0}" ShortID="322428553">
 					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 						<Property Name="Lowpass" Type="int16">
 							<ModifierList>
 								<ModifierInfo>
@@ -475,6 +482,9 @@
 						</Property>
 					</PropertyList>
 					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="Objects" ID="{39FADBB5-CB61-4430-A335-DE2B6E800699}" WorkUnitID="{C7388D37-C676-4204-9D08-21F86132814E}"/>
+						</Reference>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
 						</Reference>

@@ -63,7 +63,135 @@
 									<EffectSlot Name="" ID="{AB5B1C2A-A7B8-4092-89B4-B31B166FA5E4}" ShortID="236808788">
 										<ReferenceList>
 											<Reference Name="Effect" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
-												<ObjectRef Name="Hamburg_Echo_Chamber_Org_Ambisonics" ID="{56C681B4-C7CD-44AD-A4BB-34C5D5059B52}" WorkUnitID="{1562D13C-41E8-4FA1-A341-D4CB726E2AEC}"/>
+												<ObjectRef Name="Intimate_Room_Ambisonics" ID="{2096611A-9E6C-41BA-AE28-EAB92A55392D}" WorkUnitID="{1562D13C-41E8-4FA1-A341-D4CB726E2AEC}"/>
+											</Reference>
+										</ReferenceList>
+									</EffectSlot>
+								</ObjectList>
+							</ObjectLists>
+						</AuxBus>
+						<AuxBus Name="RV_Kitchen" ID="{4B88EDFB-F1E8-4886-9E34-B9873E1E873B}">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="BusChannelConfig" Type="int32">
+									<ValueList>
+										<Value>516</Value>
+									</ValueList>
+								</Property>
+								<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+								<Property Name="ListenerRelativeRouting" Type="bool" Value="True"/>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="Attenuate_50" ID="{143E31F9-1597-48C4-9436-CFA24A10D321}" WorkUnitID="{E312AA2F-7D32-49AE-9B3F-853E8C0370AC}"/>
+								</Reference>
+							</ReferenceList>
+							<PositioningInfo>
+								<Panner Name="" ID="{E5A63BDB-4BBE-4677-B8AF-EFFBB4259C1D}"/>
+							</PositioningInfo>
+							<ObjectLists>
+								<ObjectList Name="Effects">
+									<EffectSlot Name="" ID="{2CCBE1D9-362C-4FFF-8EB6-4E4E52E7A1AA}" ShortID="333372554">
+										<ReferenceList>
+											<Reference Name="Effect" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
+												<ObjectRef Name="Blue_Reflective_Room_Ambisonics" ID="{DF16104F-35E9-4AE7-A0DA-4986D0005B05}" WorkUnitID="{1562D13C-41E8-4FA1-A341-D4CB726E2AEC}"/>
+											</Reference>
+										</ReferenceList>
+									</EffectSlot>
+								</ObjectList>
+							</ObjectLists>
+						</AuxBus>
+						<AuxBus Name="RV_LivingRoom" ID="{6895C640-922A-4C6D-8075-268A0DC19ACC}">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="BusChannelConfig" Type="int32">
+									<ValueList>
+										<Value>516</Value>
+									</ValueList>
+								</Property>
+								<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+								<Property Name="ListenerRelativeRouting" Type="bool" Value="True"/>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="Attenuate_50" ID="{143E31F9-1597-48C4-9436-CFA24A10D321}" WorkUnitID="{E312AA2F-7D32-49AE-9B3F-853E8C0370AC}"/>
+								</Reference>
+							</ReferenceList>
+							<PositioningInfo>
+								<Panner Name="" ID="{569D65F7-39B2-41BF-8292-E44C17E49643}"/>
+							</PositioningInfo>
+							<ObjectLists>
+								<ObjectList Name="Effects">
+									<EffectSlot Name="" ID="{637FB190-510A-4662-B31F-7433349C35B7}" ShortID="425801504">
+										<ReferenceList>
+											<Reference Name="Effect" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
+												<ObjectRef Name="BlueNoise_Room_03_Org_Ambisonics" ID="{65FCF379-2654-4170-BB37-F59661A0A90E}" WorkUnitID="{1562D13C-41E8-4FA1-A341-D4CB726E2AEC}"/>
+											</Reference>
+										</ReferenceList>
+									</EffectSlot>
+								</ObjectList>
+							</ObjectLists>
+						</AuxBus>
+						<AuxBus Name="RV_Child_Bedroom_03" ID="{AAC2ABC7-D2C3-46DB-A220-9C6495F0EFE7}">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="BusChannelConfig" Type="int32">
+									<ValueList>
+										<Value>516</Value>
+									</ValueList>
+								</Property>
+								<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+								<Property Name="ListenerRelativeRouting" Type="bool" Value="True"/>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="Attenuate_50" ID="{143E31F9-1597-48C4-9436-CFA24A10D321}" WorkUnitID="{E312AA2F-7D32-49AE-9B3F-853E8C0370AC}"/>
+								</Reference>
+							</ReferenceList>
+							<PositioningInfo>
+								<Panner Name="" ID="{5159C2A3-B0D2-4A45-8C3B-301D896279D2}"/>
+							</PositioningInfo>
+							<ObjectLists>
+								<ObjectList Name="Effects">
+									<EffectSlot Name="" ID="{BB481183-2768-425C-B6E5-44BC88ED471C}" ShortID="629146498">
+										<ReferenceList>
+											<Reference Name="Effect" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
+												<ObjectRef Name="Petite_Room_Ambisonics" ID="{0913CC91-34FA-4BD0-9D12-B491B69B5328}" WorkUnitID="{1562D13C-41E8-4FA1-A341-D4CB726E2AEC}"/>
+											</Reference>
+										</ReferenceList>
+									</EffectSlot>
+								</ObjectList>
+							</ObjectLists>
+						</AuxBus>
+						<AuxBus Name="RV_Child_Bedroom_04" ID="{8DCFC99A-5A80-47A3-9EF4-CC75ED495FE4}">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="BusChannelConfig" Type="int32">
+									<ValueList>
+										<Value>516</Value>
+									</ValueList>
+								</Property>
+								<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+								<Property Name="ListenerRelativeRouting" Type="bool" Value="True"/>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="Attenuate_50" ID="{143E31F9-1597-48C4-9436-CFA24A10D321}" WorkUnitID="{E312AA2F-7D32-49AE-9B3F-853E8C0370AC}"/>
+								</Reference>
+							</ReferenceList>
+							<PositioningInfo>
+								<Panner Name="" ID="{2DDDAA12-AF55-4D80-B610-E0F00DC619C0}"/>
+							</PositioningInfo>
+							<ObjectLists>
+								<ObjectList Name="Effects">
+									<EffectSlot Name="" ID="{89D67D7E-01E5-49C0-A31E-A1E54E3571F0}" ShortID="649194036">
+										<ReferenceList>
+											<Reference Name="Effect" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
+												<ObjectRef Name="Petite_Room_Ambisonics" ID="{0913CC91-34FA-4BD0-9D12-B491B69B5328}" WorkUnitID="{1562D13C-41E8-4FA1-A341-D4CB726E2AEC}"/>
 											</Reference>
 										</ReferenceList>
 									</EffectSlot>
@@ -71,6 +199,34 @@
 							</ObjectLists>
 						</AuxBus>
 					</ChildrenList>
+				</Bus>
+				<Bus Name="MusicBus" ID="{18F321D0-4EFC-44E0-BF7B-B20135A03D73}">
+					<ReferenceList>
+						<Reference Name="AudioDevice" PluginName="System" CompanyID="0" PluginID="174" PluginType="7">
+							<ObjectRef Name="System" ID="{D364DB56-82EC-4887-BA7F-9B458EA45D87}" WorkUnitID="{D1D85E79-25A1-4ACB-A6EF-70D99869F184}"/>
+						</Reference>
+					</ReferenceList>
+				</Bus>
+				<Bus Name="SFXBus" ID="{43951B2B-3007-4E4B-80F5-27EB6808E543}">
+					<ReferenceList>
+						<Reference Name="AudioDevice" PluginName="System" CompanyID="0" PluginID="174" PluginType="7">
+							<ObjectRef Name="System" ID="{D364DB56-82EC-4887-BA7F-9B458EA45D87}" WorkUnitID="{D1D85E79-25A1-4ACB-A6EF-70D99869F184}"/>
+						</Reference>
+					</ReferenceList>
+				</Bus>
+				<Bus Name="PlayerBus" ID="{6D0A3ED0-0CC3-4D5E-B2D6-88B842981215}">
+					<ReferenceList>
+						<Reference Name="AudioDevice" PluginName="System" CompanyID="0" PluginID="174" PluginType="7">
+							<ObjectRef Name="System" ID="{D364DB56-82EC-4887-BA7F-9B458EA45D87}" WorkUnitID="{D1D85E79-25A1-4ACB-A6EF-70D99869F184}"/>
+						</Reference>
+					</ReferenceList>
+				</Bus>
+				<Bus Name="AmbianceBus" ID="{BA2F131B-8DB9-4E33-BA8A-F0CDB85441A4}">
+					<ReferenceList>
+						<Reference Name="AudioDevice" PluginName="System" CompanyID="0" PluginID="174" PluginType="7">
+							<ObjectRef Name="System" ID="{D364DB56-82EC-4887-BA7F-9B458EA45D87}" WorkUnitID="{D1D85E79-25A1-4ACB-A6EF-70D99869F184}"/>
+						</Reference>
+					</ReferenceList>
 				</Bus>
 			</ChildrenList>
 		</WorkUnit>

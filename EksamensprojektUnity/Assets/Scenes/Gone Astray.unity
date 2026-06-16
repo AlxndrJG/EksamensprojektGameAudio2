@@ -1580,7 +1580,9 @@ Transform:
   m_Children:
   - {fileID: 1180097813}
   - {fileID: 1691977176}
+  - {fileID: 1145423093}
   - {fileID: 149249375}
+  - {fileID: 606321226}
   - {fileID: 1266628087}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4055,6 +4057,80 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!1 &93143925
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 93143926}
+  - component: {fileID: 93143928}
+  - component: {fileID: 93143927}
+  m_Layer: 0
+  m_Name: Bedroom Floor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &93143926
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 93143925}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 6.8, y: -1.25, z: -6.25}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2022182741}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &93143927
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 93143925}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 741c73adb1e244c18afed32368af0f75, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  material:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: c4020d66acbf94e179e008e9bbe80952, type: 2}
+  rightFoot: {fileID: 2028113188}
+  leftFoot: {fileID: 260595674}
+--- !u!65 &93143928
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 93143925}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 4.2, y: 2.5, z: 5.2}
+  m_Center: {x: 0.1, y: 1.2, z: -1.6}
 --- !u!1 &95380232
 GameObject:
   m_ObjectHideFlags: 0
@@ -6024,7 +6100,6 @@ GameObject:
   - component: {fileID: 149249377}
   - component: {fileID: 149249376}
   - component: {fileID: 149249378}
-  - component: {fileID: 149249379}
   m_Layer: 0
   m_Name: Room_Kitchen
   m_TagString: Untagged
@@ -6061,13 +6136,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: AK.Wwise.Unity.MonoBehaviour::AkRoom
   triggerList: f7e1664c
   useOtherObject: 0
-  priority: 0
+  priority: 1
   reverbAuxBus:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 188a67a5ea08842d7a15d09675e7a96c, type: 2}
   reverbLevel: 1
-  transmissionLoss: 1
+  transmissionLoss: 0.785
   distanceBehavior: 0
   roomToneEvent:
     idInternal: 0
@@ -6094,8 +6169,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 5.1, y: 2.5, z: 5.2}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 12.142796, y: 2.5, z: 13.287526}
+  m_Center: {x: 3.2180147, y: 0, z: -3.977672}
 --- !u!54 &149249378
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6123,26 +6198,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &149249379
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 149249374}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 741c73adb1e244c18afed32368af0f75, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: '::'
-  material:
-    idInternal: 0
-    valueGuidInternal: 
-    groupIdInternal: 0
-    groupGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: f3125efd60d594cef99f3e1a80d17008, type: 2}
-  rightFoot: {fileID: 2028113188}
-  leftFoot: {fileID: 260595674}
 --- !u!1 &161753329
 GameObject:
   m_ObjectHideFlags: 0
@@ -8554,6 +8609,156 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!1 &223724508
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 223724509}
+  - component: {fileID: 223724514}
+  - component: {fileID: 223724513}
+  - component: {fileID: 223724512}
+  - component: {fileID: 223724511}
+  - component: {fileID: 223724510}
+  m_Layer: 0
+  m_Name: Kitchen_Zink
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &223724509
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 223724508}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.1161201, y: 0.11204004, z: -0.1079998}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 877002439}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &223724510
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 223724508}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 0.915074, z: 1}
+  m_Center: {x: 0, y: -0.042463005, z: 0}
+--- !u!54 &223724511
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 223724508}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &223724512
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 223724508}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd68a0d638e41449f9e0e6164144fa62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: AK.Wwise.Unity.MonoBehaviour::AkRoomAwareObject
+  m_Collider: {fileID: 0}
+--- !u!114 &223724513
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 223724508}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be93e494638654385bac2940f4e0df09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: AK.Wwise.Unity.MonoBehaviour::AkEvent
+  triggerList: f7e1664c
+  useOtherObject: 0
+  actionOnEventType: 0
+  curveInterpolation: 4
+  enableActionOnEvent: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 68ed3539435e2438e827227e6fcff6b5, type: 2}
+  useCallbacks: 0
+  stopSoundOnDestroy: 1
+  Callbacks: []
+  soundEmitterObject: {fileID: 0}
+  transitionDuration: 0
+  eventIdInternal: 0
+  valueGuidInternal: 
+  m_callbackDataInternal: {fileID: 0}
+--- !u!114 &223724514
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 223724508}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18007ef524e524cd3ac60a70663703c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: AK.Wwise.Unity.MonoBehaviour::AkGameObj
+  m_listeners:
+    initialListenerList: []
+    useDefaultListeners: 1
+  isEnvironmentAware: 1
+  isStaticObject: 0
+  usePositionOffsetData: 0
+  m_positionOffsetData:
+    KeepMe: 1
+    positionOffset: {x: 0, y: 0, z: 0}
+  scalingFactor: 1
+  m_posOffsetData: {fileID: 0}
+  listenerMask: 1
 --- !u!1 &241194761
 GameObject:
   m_ObjectHideFlags: 0
@@ -18314,7 +18519,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 2.08, z: 2.41}
+  m_Size: {x: 1, y: 2.08, z: 3.84}
   m_Center: {x: 0, y: 0.08974588, z: -0.01086311}
 --- !u!4 &587048030
 Transform:
@@ -18509,6 +18714,116 @@ Mesh:
       - serializedVersion: 1
         m_IndexStart: 0
         m_IndexCount: 0
+--- !u!1 &606321225
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 606321226}
+  - component: {fileID: 606321229}
+  - component: {fileID: 606321228}
+  - component: {fileID: 606321227}
+  m_Layer: 0
+  m_Name: Room_Kitchen (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &606321226
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 606321225}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -6.8, y: 1.25, z: 6.25}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 27554082}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &606321227
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 606321225}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &606321228
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 606321225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8c097f54aff044b79eddaa284bc58de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: AK.Wwise.Unity.MonoBehaviour::AkRoom
+  triggerList: f7e1664c
+  useOtherObject: 0
+  priority: 0
+  reverbAuxBus:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 188a67a5ea08842d7a15d09675e7a96c, type: 2}
+  reverbLevel: 1
+  transmissionLoss: 1
+  distanceBehavior: 0
+  roomToneEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  roomToneAuxSend: 0
+  isStatic: 0
+--- !u!65 &606321229
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 606321225}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 5.1, y: 2.5, z: 5.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &607704818
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25022,6 +25337,38 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4865088895493082, guid: 7c3da15a1669db842bb4eba1a7db1554, type: 3}
   m_PrefabInstance: {fileID: 876714109}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &877002438
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 877002439}
+  m_Layer: 0
+  m_Name: SOUNDSFX
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &877002439
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 877002438}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.60612, y: 0.79704, z: 10.325}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 223724509}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &881139895
 GameObject:
   m_ObjectHideFlags: 0
@@ -27222,6 +27569,80 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5309050690091044763, guid: d910175233b0947e4a61cb5c3994a598, type: 3}
   m_PrefabInstance: {fileID: 1026280768}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1028069670
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1028069671}
+  - component: {fileID: 1028069673}
+  - component: {fileID: 1028069672}
+  m_Layer: 0
+  m_Name: Kitchen Floor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1028069671
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1028069670}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2022182741}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1028069672
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1028069670}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 741c73adb1e244c18afed32368af0f75, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  material:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: f3125efd60d594cef99f3e1a80d17008, type: 2}
+  rightFoot: {fileID: 2028113188}
+  leftFoot: {fileID: 260595674}
+--- !u!65 &1028069673
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1028069670}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 5.1, y: 2.5, z: 5.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1029959110
 GameObject:
   m_ObjectHideFlags: 0
@@ -29866,9 +30287,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cadfbfbc794c7490d93591c00fb78f3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: AK.Wwise.Unity.MonoBehaviour::AkRoomPortal
-  triggerList: f7e1664c
+  triggerList: 
   useOtherObject: 0
-  initialState: 1
+  initialState: 0
   closePortalTriggerList: 
   rooms:
   - {fileID: 1180097814}
@@ -29893,7 +30314,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 2.0908, z: 1}
+  m_Size: {x: 1, y: 2.0908, z: 3.7}
   m_Center: {x: 0, y: 0.08974588, z: 0}
 --- !u!4 &1134739272
 Transform:
@@ -29910,6 +30331,116 @@ Transform:
   m_Children: []
   m_Father: {fileID: 754854017}
   m_LocalEulerAnglesHint: {x: 0, y: 270, z: 0}
+--- !u!1 &1145423092
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1145423093}
+  - component: {fileID: 1145423096}
+  - component: {fileID: 1145423095}
+  - component: {fileID: 1145423094}
+  m_Layer: 0
+  m_Name: Room_Hall (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1145423093
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1145423092}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -3, y: 1.25, z: 2.25}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 27554082}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &1145423094
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1145423092}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &1145423095
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1145423092}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8c097f54aff044b79eddaa284bc58de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: AK.Wwise.Unity.MonoBehaviour::AkRoom
+  triggerList: f7e1664c
+  useOtherObject: 0
+  priority: 0
+  reverbAuxBus:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 09e5a018e31b64e10b8559155ea5483a, type: 2}
+  reverbLevel: 1
+  transmissionLoss: 1
+  distanceBehavior: 0
+  roomToneEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  roomToneAuxSend: 0
+  isStatic: 0
+--- !u!65 &1145423096
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1145423092}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.85, y: 2.5, z: 13}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1159670406
 GameObject:
   m_ObjectHideFlags: 0
@@ -30450,7 +30981,6 @@ GameObject:
   - component: {fileID: 1180097815}
   - component: {fileID: 1180097814}
   - component: {fileID: 1180097816}
-  - component: {fileID: 1180097817}
   m_Layer: 0
   m_Name: Room_Child
   m_TagString: Untagged
@@ -30487,13 +31017,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: AK.Wwise.Unity.MonoBehaviour::AkRoom
   triggerList: f7e1664c
   useOtherObject: 0
-  priority: 0
+  priority: 3
   reverbAuxBus:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 710f50099d99d4a82965bb73947a28f8, type: 2}
   reverbLevel: 1
-  transmissionLoss: 1
+  transmissionLoss: 0.884
   distanceBehavior: 0
   roomToneEvent:
     idInternal: 0
@@ -30520,8 +31050,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 4.2, y: 2.5, z: 5.2}
-  m_Center: {x: 0.1, y: 1.2, z: -1.6}
+  m_Size: {x: 4.109933, y: 2.5, z: 5.2}
+  m_Center: {x: 0.14503348, y: 1.2, z: -1.5999999}
 --- !u!54 &1180097816
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -30549,26 +31079,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &1180097817
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1180097812}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 741c73adb1e244c18afed32368af0f75, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: '::'
-  material:
-    idInternal: 0
-    valueGuidInternal: 
-    groupIdInternal: 0
-    groupGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: c4020d66acbf94e179e008e9bbe80952, type: 2}
-  rightFoot: {fileID: 2028113188}
-  leftFoot: {fileID: 260595674}
 --- !u!1 &1186106791
 GameObject:
   m_ObjectHideFlags: 0
@@ -33060,7 +33570,6 @@ GameObject:
   - component: {fileID: 1266628089}
   - component: {fileID: 1266628088}
   - component: {fileID: 1266628090}
-  - component: {fileID: 1266628091}
   m_Layer: 0
   m_Name: Room_Livingroom
   m_TagString: Untagged
@@ -33097,11 +33606,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: AK.Wwise.Unity.MonoBehaviour::AkRoom
   triggerList: f7e1664c
   useOtherObject: 0
-  priority: 0
+  priority: 1
   reverbAuxBus:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 0af27c3e6278543beb71aae8ed6a7d70, type: 2}
   reverbLevel: 1
   transmissionLoss: 1
   distanceBehavior: 0
@@ -33130,8 +33639,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 5.1, y: 2.5, z: 7.9}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 5.2026553, y: 2.5, z: 8.211073}
+  m_Center: {x: -0.20531106, y: 0, z: -0.15553665}
 --- !u!54 &1266628090
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -33159,26 +33668,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &1266628091
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1266628086}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 741c73adb1e244c18afed32368af0f75, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: '::'
-  material:
-    idInternal: 0
-    valueGuidInternal: 
-    groupIdInternal: 0
-    groupGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 838988a8aad0d4f5395d7658e5cecfa7, type: 2}
-  rightFoot: {fileID: 2028113188}
-  leftFoot: {fileID: 260595674}
 --- !u!43 &1288082861
 Mesh:
   m_ObjectHideFlags: 0
@@ -36406,6 +36895,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 5198b66f88042491283484b406a34abd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1366819347}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 5198b66f88042491283484b406a34abd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1366819351}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 5198b66f88042491283484b406a34abd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1366819352}
   m_SourcePrefab: {fileID: 100100000, guid: 5198b66f88042491283484b406a34abd, type: 3}
 --- !u!4 &1366819346 stripped
 Transform:
@@ -36497,6 +36992,59 @@ MonoBehaviour:
   scalingFactor: 1
   m_posOffsetData: {fileID: 0}
   listenerMask: 1
+--- !u!114 &1366819351
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1063507152}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be93e494638654385bac2940f4e0df09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: AK.Wwise.Unity.MonoBehaviour::AkEvent
+  triggerList: f7e1664c
+  useOtherObject: 0
+  actionOnEventType: 0
+  curveInterpolation: 4
+  enableActionOnEvent: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: f0f4cfa05e23943ae8e40eac5e783c84, type: 2}
+  useCallbacks: 0
+  stopSoundOnDestroy: 1
+  Callbacks: []
+  soundEmitterObject: {fileID: 0}
+  transitionDuration: 0
+  eventIdInternal: 0
+  valueGuidInternal: 
+  m_callbackDataInternal: {fileID: 0}
+--- !u!114 &1366819352
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1063507152}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76dba9a3bf472408eb01fff1eb4405f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: AK.Wwise.Unity.MonoBehaviour::AkState
+  triggerList: f7e1664c
+  useOtherObject: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 149b87b585efe4be3924e017009025f3, type: 2}
+  valueIdInternal: 0
+  groupIdInternal: 0
+  valueGuidInternal: 
+  groupGuidInternal: 
 --- !u!1001 &1368006454
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -39856,6 +40404,80 @@ Transform:
   m_Children: []
   m_Father: {fileID: 182072687}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1473185103
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1473185104}
+  - component: {fileID: 1473185106}
+  - component: {fileID: 1473185105}
+  m_Layer: 0
+  m_Name: Hallway Floor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1473185104
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1473185103}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 3.8000002, y: 0, z: -4}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2022182741}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1473185105
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1473185103}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 741c73adb1e244c18afed32368af0f75, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  material:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 838988a8aad0d4f5395d7658e5cecfa7, type: 2}
+  rightFoot: {fileID: 2028113188}
+  leftFoot: {fileID: 260595674}
+--- !u!65 &1473185106
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1473185103}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.85, y: 2.5, z: 13}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1482194065
 GameObject:
   m_ObjectHideFlags: 0
@@ -43734,7 +44356,6 @@ GameObject:
   - component: {fileID: 1691977178}
   - component: {fileID: 1691977177}
   - component: {fileID: 1691977179}
-  - component: {fileID: 1691977180}
   m_Layer: 0
   m_Name: Room_Hall
   m_TagString: Untagged
@@ -43771,13 +44392,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: AK.Wwise.Unity.MonoBehaviour::AkRoom
   triggerList: f7e1664c
   useOtherObject: 0
-  priority: 0
+  priority: 2
   reverbAuxBus:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 09e5a018e31b64e10b8559155ea5483a, type: 2}
   reverbLevel: 1
-  transmissionLoss: 1
+  transmissionLoss: 0.81
   distanceBehavior: 0
   roomToneEvent:
     idInternal: 0
@@ -43804,8 +44425,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.85, y: 2.5, z: 13}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 6.4070287, y: 2.5, z: 13.295249}
+  m_Center: {x: 2.2785141, y: 0, z: 0.1476245}
 --- !u!54 &1691977179
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -43833,26 +44454,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &1691977180
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1691977175}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 741c73adb1e244c18afed32368af0f75, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: '::'
-  material:
-    idInternal: 0
-    valueGuidInternal: 
-    groupIdInternal: 0
-    groupGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 838988a8aad0d4f5395d7658e5cecfa7, type: 2}
-  rightFoot: {fileID: 2028113188}
-  leftFoot: {fileID: 260595674}
 --- !u!1 &1704324639 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8334179894128421414, guid: 26c01f3bb51474fc182e54c336137241, type: 3}
@@ -46613,6 +47214,80 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef9d65a997f0dbe44a8a0730f6e55a01, type: 3}
+--- !u!1 &1854343972
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1854343973}
+  - component: {fileID: 1854343975}
+  - component: {fileID: 1854343974}
+  m_Layer: 0
+  m_Name: Livingroom Floor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1854343973
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1854343972}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -6.55}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2022182741}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1854343974
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1854343972}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 741c73adb1e244c18afed32368af0f75, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  material:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 838988a8aad0d4f5395d7658e5cecfa7, type: 2}
+  rightFoot: {fileID: 2028113188}
+  leftFoot: {fileID: 260595674}
+--- !u!65 &1854343975
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1854343972}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 5.1, y: 2.5, z: 7.9}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1855789591
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -52840,6 +53515,41 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 75943260464685024, guid: feea053c6cfd3d74e899308463261b6d, type: 3}
   m_PrefabInstance: {fileID: 1687495484}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2022182740
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2022182741}
+  m_Layer: 0
+  m_Name: Floor Triggers
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2022182741
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2022182740}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.6103401, y: 1.275, z: 7.87877}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 93143926}
+  - {fileID: 1028069671}
+  - {fileID: 1473185104}
+  - {fileID: 1854343973}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2028113188 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 357539428798605582, guid: 223f9d9626567495ab4be14904dbd9a4, type: 3}
@@ -56741,10 +57451,12 @@ SceneRoots:
   - {fileID: 1808128618}
   - {fileID: 44017050}
   - {fileID: 727839604}
+  - {fileID: 877002439}
   - {fileID: 6147380270236922077}
   - {fileID: 1259085310}
   - {fileID: 862273618}
   - {fileID: 1323653720}
+  - {fileID: 2022182741}
   - {fileID: 27554082}
   - {fileID: 754854017}
   - {fileID: 388743567}

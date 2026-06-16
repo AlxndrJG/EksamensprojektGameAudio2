@@ -17,6 +17,7 @@ namespace AK
         static const AkUniqueID PLAY_BOOKSHELF_CABINET_OPEN = 2481548253U;
         static const AkUniqueID PLAY_CABINET_DRAW_CLOSE = 1347786538U;
         static const AkUniqueID PLAY_CABINET_DRAW_OPEN = 4258792910U;
+        static const AkUniqueID PLAY_CLOCKSWITCH = 1136407996U;
         static const AkUniqueID PLAY_CLOSET_DRAW_CLOSE = 3919977262U;
         static const AkUniqueID PLAY_CLOSET_DRAW_OPEN = 2360365162U;
         static const AkUniqueID PLAY_CLOSET_SLIDE_CLOSE = 2596423489U;
@@ -32,10 +33,28 @@ namespace AK
         static const AkUniqueID PLAY_KITCHEN_CABINET_TOP_OPEN = 567305970U;
         static const AkUniqueID PLAY_KITCHEN_DRAW_CLOSE = 3137613346U;
         static const AkUniqueID PLAY_KITCHEN_DRAW_OPEN = 1911134838U;
+        static const AkUniqueID PLAY_KITCHEN_SINK_LOOP = 1645146637U;
         static const AkUniqueID PLAY_TESTLYD = 1963904025U;
         static const AkUniqueID PLAY_TV_STATIC = 1897478513U;
         static const AkUniqueID STOP_TV_STATIC = 1329369387U;
     } // namespace EVENTS
+
+    namespace STATES
+    {
+        namespace CLOCKSTATES
+        {
+            static const AkUniqueID GROUP = 3726222863U;
+
+            namespace STATE
+            {
+                static const AkUniqueID NONE = 748895195U;
+                static const AkUniqueID RING = 2598345275U;
+                static const AkUniqueID RINGFAST = 4072779321U;
+                static const AkUniqueID TICKTOCK = 3226369787U;
+            } // namespace STATE
+        } // namespace CLOCKSTATES
+
+    } // namespace STATES
 
     namespace SWITCHES
     {
@@ -63,14 +82,22 @@ namespace AK
 
     namespace BUSSES
     {
+        static const AkUniqueID AMBIANCEBUS = 2332707381U;
         static const AkUniqueID MAIN_AUDIO_BUS = 2246998526U;
+        static const AkUniqueID MUSICBUS = 2886307548U;
+        static const AkUniqueID PLAYERBUS = 3966895392U;
         static const AkUniqueID REVERBS = 3545700988U;
+        static const AkUniqueID SFXBUS = 3803850708U;
     } // namespace BUSSES
 
     namespace AUX_BUSSES
     {
         static const AkUniqueID RV_CHILD_BEDROOM = 1188439079U;
+        static const AkUniqueID RV_CHILD_BEDROOM_03 = 916691049U;
+        static const AkUniqueID RV_CHILD_BEDROOM_04 = 916691054U;
         static const AkUniqueID RV_HALL = 4147732741U;
+        static const AkUniqueID RV_KITCHEN = 2393538980U;
+        static const AkUniqueID RV_LIVINGROOM = 2788550546U;
     } // namespace AUX_BUSSES
 
     namespace AUDIO_DEVICES

@@ -6,6 +6,19 @@
 				<Property Name="Color" Type="int16" Value="8"/>
 				<Property Name="OverrideColor" Type="bool" Value="True"/>
 			</PropertyList>
+			<ChildrenList>
+				<Event Name="Play_Kitchen_Sink_Loop" ID="{8779187A-E6D8-4223-8D8E-FFB24CB605A7}">
+					<ChildrenList>
+						<Action Name="" ID="{C4A77730-132F-4A2E-AD2B-6D50C025F4BD}" ShortID="911515886">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Kitchen_Sink_Loop" ID="{B86D0560-BFD7-4794-B5DB-70A10FA24A2F}" WorkUnitID="{9EACD1AD-FFB9-402E-A191-1BEE50C3B9D8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
 		</WorkUnit>
 	</Events>
 </WwiseDocument>

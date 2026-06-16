@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{A150E059-3840-43D9-9785-846B3A2DF8DE}" SchemaVersion="133">
 	<States>
-		<WorkUnit Name="Default Work Unit" ID="{A150E059-3840-43D9-9785-846B3A2DF8DE}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{A150E059-3840-43D9-9785-846B3A2DF8DE}" PersistMode="Standalone">
+			<ChildrenList>
+				<StateGroup Name="ClockStates" ID="{CC53C455-8EBE-41CA-9E9D-47C889125FA4}">
+					<ChildrenList>
+						<State Name="None" ID="{8097CAE6-486A-4674-82DB-C29DEC507F6E}"/>
+						<State Name="TickTock" ID="{D657EDEE-06B8-4BC4-96C1-FF1C22640219}"/>
+						<State Name="Ring" ID="{F6B00304-A218-43AE-A8E7-EE5D060D7F4E}"/>
+						<State Name="RingFast" ID="{5D1AE01A-F61C-41A2-9EB9-DE1E7FCFC8BB}"/>
+					</ChildrenList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
 	</States>
 </WwiseDocument>

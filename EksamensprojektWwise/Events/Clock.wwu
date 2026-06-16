@@ -6,6 +6,19 @@
 				<Property Name="Color" Type="int16" Value="8"/>
 				<Property Name="OverrideColor" Type="bool" Value="True"/>
 			</PropertyList>
+			<ChildrenList>
+				<Event Name="Play_ClockSwitch" ID="{656ACBE1-22BA-492D-B79F-865A0596A049}">
+					<ChildrenList>
+						<Action Name="" ID="{168B0EC4-F73C-47D6-B6F7-A6B883991792}" ShortID="980842322">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="ClockSwitch" ID="{59A92F7E-E53A-486D-95FB-8534A04B9FA9}" WorkUnitID="{6F7C04D4-30B2-43D6-8171-AF664137D730}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
 		</WorkUnit>
 	</Events>
 </WwiseDocument>

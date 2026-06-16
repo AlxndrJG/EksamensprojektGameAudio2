@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b596f218b3d5849c59ea4034ec1681d6, type: 3}
+  m_Name: 6895C640-922A-4C6D-8075-268A0DC19ACC
+  m_EditorClassIdentifier: AK.Wwise.Unity.API.WwiseTypes::WwiseAuxBusReference
+  objectName: RV_LivingRoom
+  id: 2788550546
+  guid: 6895C640-922A-4C6D-8075-268A0DC19ACC

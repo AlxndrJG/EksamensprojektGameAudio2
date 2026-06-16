@@ -2,9 +2,11 @@ Event	ID	Name			Wwise Object Path	Notes
 	259954442	Play_Kitchen_Cabinet_Bottom_Close			\SFX\Objects\Cabinets\Play_Kitchen_Cabinet_Bottom_Close	
 	369029778	Play_FSBack			\Player\Play_FSBack	
 	567305970	Play_Kitchen_Cabinet_Top_Open			\SFX\Objects\Cabinets\Play_Kitchen_Cabinet_Top_Open	
+	1136407996	Play_ClockSwitch			\SFX\Objects\Clock\Play_ClockSwitch	
 	1329369387	Stop_TV_Static			\SFX\Objects\TV\Stop_TV_Static	
 	1347786538	Play_Cabinet_Draw_Close			\SFX\Objects\Cabinets\Play_Cabinet_Draw_Close	
 	1437364014	Play_Kitchen_Cabinet_Bottom_Open			\SFX\Objects\Cabinets\Play_Kitchen_Cabinet_Bottom_Open	
+	1645146637	Play_Kitchen_Sink_Loop			\SFX\Objects\Kitchen_Sink\Play_Kitchen_Sink_Loop	
 	1660008929	Play_Door_Open			\SFX\Objects\Doors\Play_Door_Open	
 	1760803494	Play_Kitchen_Cabinet_Top_Close			\SFX\Objects\Cabinets\Play_Kitchen_Cabinet_Top_Close	
 	1897478513	Play_TV_Static			\SFX\Objects\TV\Play_TV_Static	
@@ -32,204 +34,312 @@ Switch	ID	Name	Switch Group			Notes
 	2412606308	Carpet	Materials			
 	2637588553	Tile	Materials			
 
+State Group	ID	Name			Wwise Object Path	Notes
+	3726222863	ClockStates			\Default Work Unit\ClockStates	
+
+State	ID	Name	State Group			Notes
+	748895195	None	ClockStates			
+	2598345275	Ring	ClockStates			
+	3226369787	TickTock	ClockStates			
+	4072779321	RingFast	ClockStates			
+
 Auxiliary Bus	ID	Name			Wwise Object Path	Notes
+	916691049	RV_Child_Bedroom_03			\Default Work Unit\Reverbs\RV_Child_Bedroom_03	
+	916691054	RV_Child_Bedroom_04			\Default Work Unit\Reverbs\RV_Child_Bedroom_04	
 	1188439079	RV_Child_Bedroom			\Default Work Unit\Reverbs\RV_Child_Bedroom	
+	2393538980	RV_Kitchen			\Default Work Unit\Reverbs\RV_Kitchen	
+	2788550546	RV_LivingRoom			\Default Work Unit\Reverbs\RV_LivingRoom	
 	4147732741	RV_Hall			\Default Work Unit\Reverbs\RV_Hall	
 
 Effect plug-ins	ID	Name	Type				Notes
-	3763172438	Hamburg_Echo_Chamber_Org_Ambisonics	Wwise Convolution Reverb			Impulse response created by Pinguin ing.büro © 2010 Pinguin ing.büro.  All rights reserved. IR Pre-delay: 4ms  
+	921191769	BlueNoise_Room_03_Org_Ambisonics	Wwise Convolution Reverb			Impulse response created by Pinguin ing.büro © 2010 Pinguin ing.büro.  All rights reserved. IR Pre-delay: 3ms  
+	1870980652	Blue_Reflective_Room_Ambisonics	Wwise Convolution Reverb			Impulse response created by Pinguin ing.büro © 2010 Pinguin ing.büro.  All rights reserved. IR Pre-delay: 8ms  
+	3041976937	Intimate_Room_Ambisonics	Wwise Convolution Reverb			Impulse response created by Pinguin ing.büro © 2010 Pinguin ing.büro.  All rights reserved. IR Pre-delay: 5ms  
 	4033730959	Petite_Room_Ambisonics	Wwise Convolution Reverb			Impulse response created by Pinguin ing.büro © 2010 Pinguin ing.büro.  All rights reserved. IR Pre-delay: 8ms  
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	3654417	Carpet_Step_2-001	.cache\71\{719F61CD-FCDE-1DFA-57A6-06F30815E07E}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\FS_Dirt\FS_Dirt_2-Foot\Carpet_Step_2-001		56946
+	5429533	tøj_Ben_Højre-007_01	.cache\62\{62CE86B4-6BC2-CAF2-585C-4D97668B6F17}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\Clothes\Clothes_Walking_Left\tøj_Ben_Højre-007_01		39838
+	10155013	Concrete_Heel-001	.cache\69\{69E53E19-5DD5-9CFF-A160-2834146CE2CA}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\FS_Concrete\FS_Concrete_4_Heel\Concrete_Heel-001		43552
 	15347365	Carpet_Toe-008	.cache\57\{5749D71F-EC3E-EA63-A994-31DF0FEA3343}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Carpet\FS_Carpet_1-Toe\Carpet_Toe-008		43204
 	21911819	Tiles_Step-003	.cache\C7\{C7895EAE-35F1-5990-0024-C0635DF38CCB}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\FS_Tile\FS_Tile_2-Foot\Tiles_Step-003		36708
 	24312501	Wood_Impact-004	.cache\58\{58121ED7-2190-9112-8ED4-04D09F57C4A3}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Wood\FS_Wood_2-Foot\Wood_Impact-004		51892
 	28893607	Tiles_Toe-005	.cache\3A\{3AC353C1-8EB6-3562-D8B2-18F7BB6BD058}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Tile\FS_Tile_1-Toe\Tiles_Toe-005		31118
-	32808192	Carpet_Step_2-006	.cache\09\{09218FF8-BDEE-4F85-0CE0-0691C6EB636E}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Dirt\FS_Dirt_2-Foot\Carpet_Step_2-006		34250
+	32808192	Carpet_Step_2-006	.cache\C3\{C3E60523-14A3-68F5-8730-E78D1B6C2702}.wem		\Containers\Player\Footsteps\FS_Property\FSSide\FS_Dirt\FS_Dirt_2-Foot\Carpet_Step_2-006		24518
+	36999298	Water_Tap_Singles_4	.cache\2E\{2EDE7A11-2B86-8CA6-0C11-4AB90C1C7E44}.wem		\Containers\SFX\Objects\Kitchen_Sink\Kitchen_Sink_Loop\Kitchen_Sink_Water_Tapping\Water_Tap\Water_Tap_Singles_4		17284
 	37214159	Tiles_Step-004	.cache\9E\{9E928E1F-4524-C600-EB26-61009E9CE24E}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\FS_Tile\FS_Tile_2-Foot\Tiles_Step-004		43260
 	42955071	Cabinet_Creak_3	.cache\5A\{5A26F877-7695-B329-6EA0-1CA6A6E4487F}.wem		\Containers\SFX\Objects\Cabinets\Cabinet_Kitchen_Top\Kitchen_Cabinet_Top_Close\Bookshelf_Cabinet_Creak\Cabinet_Creak_3		99272
 	45577981	Carpet_Step-009	.cache\8E\{8ED4228A-E799-856B-F2B3-E2A057B48BF0}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\FS_Carpet\FS_Carpet_2-Foot\Carpet_Step-009		19792
 	45625094	Footstep_Walking_Hardwood_01	.cache\CA\{CA016289-4407-1B84-A9CD-F3F358842D64}.wem		\Containers\Player\Footsteps\FS_Property\FSSide\FS_Wood\FS_Wood_2-Foot\Footstep_Walking_Hardwood_01		22604
 	49916121	Carpet_Toe-002	.cache\48\{484190A7-1370-D770-2A1D-BA8E2F796CFC}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Carpet\FS_Carpet_1-Toe\Carpet_Toe-002		32446
-	77414822	Carpet_Step_2-007	.cache\BC\{BC3977D2-1D69-5C0F-D2D6-34E115801055}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\FS_Dirt\FS_Dirt_2-Foot\Carpet_Step_2-007		31818
+	72868023	tøj_Ben_Venstre-003	.cache\18\{183AA6D3-31B5-B451-492D-5C0F8CEB9856}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\Clothes\Clothes_Walking_Left\tøj_Ben_Venstre-003		35654
 	79542059	Carpet_Step-003	.cache\C6\{C6F790F3-2AD0-D8B8-1539-01E62FC6916F}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\FS_Carpet\FS_Carpet_2-Foot\Carpet_Step-003		9614
+	83294258	tøj_Ben_Højre-001	.cache\C7\{C70BBE3F-178D-195F-CAE6-DFD707E2A22D}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\Clothes\Clothes_Walking_Right\tøj_Ben_Højre-001		27808
 	84109249	Tiles_Heel-003	.cache\EF\{EFE5FEFD-F708-3EAB-0E43-2CA74DF525D7}.wem		\Containers\Player\Footsteps\FS_Property\FSSide\FS_Tile\FS_Tile_1-Heel\Tiles_Heel-003		19130
 	84162569	Wood_Impact-002	.cache\41\{413FD696-EB81-7BCE-604F-2F9FADBA8AE6}.wem		\Containers\Player\Footsteps\FS_Property\FSSide\FS_Wood\FS_Wood_1-Heel\Wood_Impact-002		56844
 	88393603	Carpet_Texture-003	.cache\F7\{F7B7C2CE-09E0-FA91-FCC6-48D6A7786710}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Carpet\FS_Carpet_3-Texture\Carpet_Texture-003		29968
+	89778146	tøj_Ben_Venstre-001_01	.cache\8D\{8D67629E-EF23-09F4-8AE0-11A7851D1BFD}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\Clothes\Clothes_Walking_Right\tøj_Ben_Venstre-001_01		29054
 	89975996	Carpet_Texture-001	.cache\1D\{1DDEC7D7-1377-A365-D184-255F12E768DB}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\FS_Carpet\FS_Carpet_3-Texture\Carpet_Texture-001		33622
 	104982052	Skuffe_Ud-006	.cache\70\{7063BC01-37EC-3B5F-BB6D-A24F3A7CB573}.wem		\Containers\SFX\Objects\Cabinets\Cabinet_Draw\Cabinet_Draw_Close\Cabinet_Close_Slide\Skuffe_Ud-006		71262
+	108596002	Water_Tap_Singles_15	.cache\A7\{A7EF7AD9-3FEA-6910-5E8C-A348240EF1F8}.wem		\Containers\SFX\Objects\Kitchen_Sink\Kitchen_Sink_Loop\Kitchen_Sink_Water_Tapping\Water_Tap\Water_Tap_Singles_15		15572
+	116752336	Dirt_Texture-006	.cache\46\{464D6F5E-9268-F9CC-BB3B-0CE2D8EEB64D}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Dirt\FS_Dirt_3-Texture\Dirt_Texture-006		39586
+	119226732	Concrete_Foot-004	.cache\88\{889118CF-5F04-21DB-D612-305B6DCD2314}.wem		\Containers\Player\Footsteps\FS_Property\FSSide\FS_Concrete\FS_Concrete_2-Foot\Concrete_Foot-004		26360
+	122381313	Water_Tap_Multiples_1	.cache\DB\{DB46B80E-52F9-4960-7350-80718BB0D84C}.wem		\Containers\SFX\Objects\Kitchen_Sink\Kitchen_Sink_Loop\Kitchen_Sink_Water_Tapping\Water_Tap\Water_Tap_Multiples_1		41484
 	131294085	Carpet_Toe-006	.cache\BB\{BBC6FDB7-FB7B-A813-D39B-18C0EA70CA72}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Carpet\FS_Carpet_1-Toe\Carpet_Toe-006		44648
-	134987501	Carpet_Step_2-005	.cache\F1\{F1BE6C82-976C-6790-DAF5-9A01B7C4D445}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\FS_Dirt\FS_Dirt_2-Foot\Carpet_Step_2-005		31582
-	159813447	Carpet_Step_2-009	.cache\8C\{8CD153A2-48AC-7637-AEDC-73F75085C61F}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\FS_Dirt\FS_Dirt_2-Foot\Carpet_Step_2-009		43654
+	152894249	Water_Tap_Singles_8	.cache\AA\{AA40D83A-92D1-C8D8-3155-55148CBF6FC9}.wem		\Containers\SFX\Objects\Kitchen_Sink\Kitchen_Sink_Loop\Kitchen_Sink_Water_Tapping\Water_Tap\Water_Tap_Singles_8		18612
+	156226617	Water_Metal_Impact_10	.cache\73\{733BFB36-21C4-0528-C851-C98016B61F94}.wem		\Containers\SFX\Objects\Kitchen_Sink\Kitchen_Sink_Loop\Kitchen_Sink_Water_Tapping\Metal_Impact\Water_Metal_Impact_10		80220
 	160873394	Carpet_Texture-006	.cache\A4\{A4C6AFBF-BCBD-32EB-E392-736CEA9D12AD}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\FS_Carpet\FS_Carpet_3-Texture\Carpet_Texture-006		34584
+	161588475	Water_Tap_Singles_14	.cache\3D\{3DDD2004-4C2D-9274-74AA-C855A1CF9E6F}.wem		\Containers\SFX\Objects\Kitchen_Sink\Kitchen_Sink_Loop\Kitchen_Sink_Water_Tapping\Water_Tap\Water_Tap_Singles_14		22552
 	166747718	Carpet_Texture-007	.cache\6D\{6D7AE667-BCEF-5AC7-D18C-80D551BADEF8}.wem		\Containers\Player\Footsteps\FS_Property\FSSide\FS_Carpet\FS_Carpet_3-Texture\Carpet_Texture-007		29458
+	170721692	Concrete_Toe-004	.cache\E3\{E30EBBD7-9F54-8DB3-AEA6-2BC9652B1759}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Concrete\FS_Concrete_1-Toe\Concrete_Toe-004		44200
 	175238146	Carpet_Step-009	.cache\22\{22F2DB26-E1F2-654C-5717-322CD5C6146B}.wem		\Containers\Player\Footsteps\FS_Property\FSSide\FS_Carpet\FS_Carpet_1-Foot\Carpet_Step-009		34598
 	188821505	Carpet_Toe-009	.cache\22\{222C3FCE-41C6-7766-260B-40E02E4ED943}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Carpet\FS_Carpet_1-Toe\Carpet_Toe-009		50390
 	190621521	Footstep_Walking_Hardwood_02	.cache\B2\{B21A638F-A494-1C2B-781F-1ED08877F090}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\FS_Wood\FS_Wood_2-Foot\Footstep_Walking_Hardwood_02		24924
 	191063999	Cabinet_Open_1	.cache\76\{761F97E5-3529-3FD1-A542-B854C7662B8F}.wem		\Containers\SFX\Objects\Cabinets\Cabinet_Bookshelf\Bookshelf_Cabinet_Close\Bookshelf_Cabinet_Close_Imp\Cabinet_Open_1		17304
 	192376576	Tiles_Heel-005	.cache\00\{002B3FDE-DE31-3456-BB3D-90C193054074}.wem		\Containers\Player\Footsteps\FS_Property\FSSide\FS_Tile\FS_Tile_1-Heel\Tiles_Heel-005		21062
 	198614840	Carpet_Step-005	.cache\95\{9538588B-52A5-DF6F-E004-16BCAE92D8F2}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Carpet\FS_Carpet_2-Foot\Carpet_Step-005		18494
+	199146222	tøj_Ben_Højre-008_01	.cache\D4\{D4088CA4-B1D5-892B-5DE6-4D37E69BB5E1}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\Clothes\Clothes_Walking_Left\tøj_Ben_Højre-008_01		35830
+	199726435	Concrete_Foot-001	.cache\B4\{B40CFDFF-B929-1630-D595-C661B22EA6F9}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Concrete\FS_Concrete_2-Foot\Concrete_Foot-001		26572
 	199929400	Footstep_Walking_Hardwood_04	.cache\29\{29F1896E-8A4C-4AFB-6218-D37E1C54DA92}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\FS_Wood\FS_Wood_2-Foot\Footstep_Walking_Hardwood_04		21798
+	209127710	tøj_Ben_Højre-003	.cache\23\{23B8F3D6-BD93-2E08-3DE5-F2A8BA2ED26F}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\Clothes\Clothes_Walking_Right\tøj_Ben_Højre-003		23028
+	215137000	Water_Tap_Singles_1	.cache\3A\{3A56D3BC-FDDA-4DCC-CF83-9A4DC6FD795D}.wem		\Containers\SFX\Objects\Kitchen_Sink\Kitchen_Sink_Loop\Kitchen_Sink_Water_Tapping\Water_Tap\Water_Tap_Singles_1		15492
+	215236301	Concrete_Foot-003	.cache\CB\{CBEDE4A7-2A0B-1BFC-F088-BC0F9955C079}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Concrete\FS_Concrete_2-Foot\Concrete_Foot-003		32224
+	215588902	Dirt_Toe-002	.cache\CA\{CAEF6374-530D-271B-33F4-54544DA11B43}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Dirt\FS_Dirt_1-Toe\Dirt_Toe-002		48508
 	219205901	Carpet_Texture-009	.cache\B3\{B360123D-A5E9-0586-D19B-FB5598D1E3A1}.wem		\Containers\Player\Footsteps\FS_Property\FSSide\FS_Carpet\FS_Carpet_3-Texture\Carpet_Texture-009		42718
+	233495086	Concrete_Foot-006	.cache\0F\{0FADB605-442F-470C-D301-196754FC942A}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\FS_Concrete\FS_Concrete_2-Foot\Concrete_Foot-006		25288
 	238570229	Carpet_Texture-004	.cache\76\{76138914-9247-C8A6-03C4-83524513F505}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Carpet\FS_Carpet_3-Texture\Carpet_Texture-004		32888
+	244709766	Water_Metal_Impact_3	.cache\96\{96CD0E55-2F2A-1DF8-DFE4-E821018282DC}.wem		\Containers\SFX\Objects\Kitchen_Sink\Kitchen_Sink_Loop\Kitchen_Sink_Water_Tapping\Metal_Impact\Water_Metal_Impact_3		82356
+	250790566	Water_Metal_Impact_8	.cache\A6\{A68B4259-5B17-52D3-D250-03FA1ED4F8C8}.wem		\Containers\SFX\Objects\Kitchen_Sink\Kitchen_Sink_Loop\Kitchen_Sink_Water_Tapping\Metal_Impact\Water_Metal_Impact_8		50982
 	254589883	Tiles_Heel-001	.cache\7A\{7A281A5F-A6F8-FAB5-5850-C2456BD89F92}.wem		\Containers\Player\Footsteps\FS_Property\FSSide\FS_Tile\FS_Tile_1-Heel\Tiles_Heel-001		10858
+	254961685	Concrete_Toe-007	.cache\D8\{D8EDFA59-F453-5C51-096E-DEADE12BF2C4}.wem		\Containers\Player\Footsteps\FS_Property\FSSide\FS_Concrete\FS_Concrete_1-Toe\Concrete_Toe-007		41680
 	256663500	Cabinet_Creak_4	.cache\A4\{A4443063-7492-218A-93CC-DC87D7CC36FB}.wem		\Containers\SFX\Objects\Cabinets\Cabinet_Kitchen_Top\Kitchen_Cabinet_Top_Close\Bookshelf_Cabinet_Creak\Cabinet_Creak_4		69476
 	260190266	Wood_Impact-007	.cache\D4\{D40CDF02-9DCF-0D40-F43E-5FC42C8ED4E3}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Wood\FS_Wood_2-Foot\Wood_Impact-007		81228
 	262088695	Tiles_Heel-006	.cache\C5\{C59EF2D0-A2CF-E264-72F2-5112EEC204AF}.wem		\Containers\Player\Footsteps\FS_Property\FSSide\FS_Tile\FS_Tile_1-Heel\Tiles_Heel-006		16672
+	264215878	Concrete_Heel-007	.cache\53\{534610DE-100A-7855-62A6-1204EAA4269B}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\FS_Concrete\FS_Concrete_4_Heel\Concrete_Heel-007		43028
 	271782980	Wood_Impact-010	.cache\8A\{8A45F3AF-4A63-B95D-7763-32572D3587EB}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\FS_Carpet\FS_Carpet_1-Heel\Wood_Impact-010		31632
+	279684925	Water_Tap_Multiples_4	.cache\44\{44505941-7629-E092-978A-324959D9122C}.wem		\Containers\SFX\Objects\Kitchen_Sink\Kitchen_Sink_Loop\Kitchen_Sink_Water_Tapping\Water_Tap\Water_Tap_Multiples_4		21192
 	282301507	Carpet_Texture-003	.cache\CA\{CA9DDBAD-B133-4BD4-39E2-140E7ADAD0F1}.wem		\Containers\Player\Footsteps\FS_Property\FSSide\FS_Carpet\FS_Carpet_3-Texture\Carpet_Texture-003		20000
 	282347760	Footstep_Walking_Hardwood_03	.cache\42\{42DBC691-6E2E-5F8D-8737-1D657921AFC8}.wem		\Containers\Player\Footsteps\FS_Property\FSSide\FS_Wood\FS_Wood_2-Foot\Footstep_Walking_Hardwood_03		24924
 	285702296	Carpet_Texture-003	.cache\37\{374C3210-C9C6-1CC5-24EF-CF1EEDE1B230}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\FS_Carpet\FS_Carpet_3-Texture\Carpet_Texture-003		33488
 	287090829	Carpet_Step-007	.cache\97\{97A1D675-0875-A601-F18E-787E2119AF6E}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\FS_Carpet\FS_Carpet_2-Foot\Carpet_Step-007		26390
 	292252602	Tiles_Toe-006	.cache\EB\{EBFC9CBE-9EF0-1672-39CA-2E842ADF1955}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Tile\FS_Tile_1-Toe\Tiles_Toe-006		29740
+	294041007	tøj_Ben_Højre-005	.cache\85\{8508B09F-793C-45D8-B43A-5C4D004835F7}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\Clothes\Clothes_Walking_Right\tøj_Ben_Højre-005		24574
 	297787846	Carpet_Toe-004	.cache\07\{071C07FF-F68E-8DBD-70CB-10D96FD7BC0B}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Carpet\FS_Carpet_1-Toe\Carpet_Toe-004		45932
+	298646003	Water_Tap_Multiples_14	.cache\EC\{ECE85083-ABA4-BF9A-ABEB-91BD5F685EE5}.wem		\Containers\SFX\Objects\Kitchen_Sink\Kitchen_Sink_Loop\Kitchen_Sink_Water_Tapping\Water_Tap\Water_Tap_Multiples_14		26804
 	299862196	Wood_Impact-007	.cache\0D\{0DDB55A9-7D05-D70A-CBF1-FCBEBB9D3C58}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\FS_Wood\FS_Wood_1-Heel\Wood_Impact-007		80882
 	306996258	Carpet_Step-003	.cache\2E\{2E56D006-4B71-10BE-BFBD-E3620DB0876C}.wem		\Containers\Player\Footsteps\FS_Property\FSSide\FS_Carpet\FS_Carpet_1-Foot\Carpet_Step-003		44342
 	307372351	Carpet_Step-008	.cache\4E\{4E4B4CCA-660A-3748-E0CB-1021DDDEE5AC}.wem		\Containers\Player\Footsteps\FS_Property\FSSide\FS_Carpet\FS_Carpet_1-Foot\Carpet_Step-008		35932
+	308875793	Water_Tap_Multiples_8	.cache\48\{48C56CE2-14CF-DC32-9FF7-815F5E730B99}.wem		\Containers\SFX\Objects\Kitchen_Sink\Kitchen_Sink_Loop\Kitchen_Sink_Water_Tapping\Water_Tap\Water_Tap_Multiples_8		19724
 	310145761	Skuffe_Ind-007	.cache\B6\{B6331E4D-A3CA-5B76-3AFE-98E24EACD809}.wem		\Containers\SFX\Objects\Cabinets\Cabinet_Draw\Cabinet_Draw_Open\Cabinet_Open\Skuffe_Ind-007		107720
 	312410540	Carpet_Texture-008	.cache\6B\{6B375230-4326-4AAD-2B63-5C6D63B2F9B4}.wem		\Containers\Player\Footsteps\FS_Property\FSSide\FS_Carpet\FS_Carpet_3-Texture\Carpet_Texture-008		53474
-	324876723	Carpet_Step_2-005	.cache\6D\{6D2AF5A1-6D16-C224-40B3-C15FCE4439D6}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Dirt\FS_Dirt_2-Foot\Carpet_Step_2-005		31426
-	325308676	Carpet_Step_2-004	.cache\F0\{F02A8935-7442-1678-5001-03AD3E9BE918}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Dirt\FS_Dirt_2-Foot\Carpet_Step_2-004		59888
+	317693023	Dirt_Texture-008	.cache\E6\{E6CD31AF-6240-FE08-F2DF-F0A249BDF676}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\FS_Dirt\FS_Dirt_3-Texture\Dirt_Texture-008		40100
+	320846986	tøj_Ben_Venstre-003_01	.cache\A0\{A0862C97-515B-F7A5-2432-C33469B3F444}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\Clothes\Clothes_Walking_Right\tøj_Ben_Venstre-003_01		33322
+	324876723	Carpet_Step_2-005	.cache\42\{42A603E6-FE0C-E525-EC7C-EF74720D6905}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\FS_Dirt\FS_Dirt_2-Foot\Carpet_Step_2-005		26408
+	325308676	Carpet_Step_2-004	.cache\01\{01D31C44-2AF4-44D9-6DC4-05A8CA96E6A5}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\FS_Dirt\FS_Dirt_2-Foot\Carpet_Step_2-004		29384
+	327770689	tøj_Ben_Højre-004_01	.cache\9D\{9DB8EDDE-3FD6-985E-5EE5-B90016CD7F58}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\Clothes\Clothes_Walking_Left\tøj_Ben_Højre-004_01		24008
+	329876546	tøj_Ben_Venstre-005	.cache\74\{74EEB7B9-9813-C0EC-138B-F88E10C94A56}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\Clothes\Clothes_Walking_Left\tøj_Ben_Venstre-005		27196
 	329975831	Wood_Impact-006	.cache\DA\{DA759CA8-9762-3FAE-91CB-045822A0C299}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Wood\FS_Wood_2-Foot\Wood_Impact-006		78404
 	330428107	Skuffe_Ind-003	.cache\EA\{EAD88A08-823C-DD19-5632-FA8A32F2AD44}.wem		\Containers\SFX\Objects\Cabinets\Cabinet_Draw\Cabinet_Draw_Open\Cabinet_Open\Skuffe_Ind-003		130064
 	333689584	Carpet_Step-001	.cache\6B\{6B0FE80D-7BBD-9E9D-F41C-D1C92D3A5889}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Carpet\FS_Carpet_2-Foot\Carpet_Step-001		29904
+	335060465	Concrete_Texture-008	.cache\7B\{7BA23601-CA51-055B-3D28-FD5F9109994C}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Concrete\FS_Concrete_3-Texture\Concrete_Texture-008		53804
+	335465821	Concrete_Texture-002	.cache\B6\{B65818FB-2C20-3B67-02DB-68AB3F1B578D}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Concrete\FS_Concrete_3-Texture\Concrete_Texture-002		44500
+	336136840	Water_Tap_Multiples_3	.cache\3A\{3A6449CF-C06F-3EFB-E860-32B7B0C0BE86}.wem		\Containers\SFX\Objects\Kitchen_Sink\Kitchen_Sink_Loop\Kitchen_Sink_Water_Tapping\Water_Tap\Water_Tap_Multiples_3		28496
 	336167279	Cabinet_Open_4	.cache\06\{064F453F-0972-24E4-71FD-71114D795EF6}.wem		\Containers\SFX\Objects\Cabinets\Cabinet_Kitchen_Top\Kitchen_Cabinet_Top_Close\Bookshelf_Cabinet_Close_Imp\Cabinet_Open_4		20400
-	337398265	Carpet_Step_2-010	.cache\1A\{1A17DCF5-F56B-7EFF-7B96-A464BC1ECDE5}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Dirt\FS_Dirt_2-Foot\Carpet_Step_2-010		26662
+	337398265	Carpet_Step_2-010	.cache\A5\{A53A035C-8FDB-5FC5-97EA-F1E03C0D8D5E}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Dirt\FS_Dirt_2-Foot\Carpet_Step_2-010		21982
 	338867029	Carpet_Step-002	.cache\09\{09ED6D0A-620A-5ABC-AC16-9B398940EFF5}.wem		\Containers\Player\Footsteps\FS_Property\FSSide\FS_Carpet\FS_Carpet_1-Foot\Carpet_Step-002		41680
-	341084004	Carpet_Step_2-001	.cache\F8\{F8694E93-E075-ECF2-596D-E355F254CEBA}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Dirt\FS_Dirt_2-Foot\Carpet_Step_2-001		57086
+	348192053	Dirt_Toe-003	.cache\81\{81BDB650-01E5-21BB-AD55-0DCF99A6030E}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\FS_Dirt\FS_Dirt_1-Toe\Dirt_Toe-003		38964
 	348831891	Carpet_Texture-005	.cache\C5\{C59D7D21-C710-4CC8-8FD4-BA52A525C852}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Carpet\FS_Carpet_3-Texture\Carpet_Texture-005		38942
 	349133057	Wood_Impact-004	.cache\37\{37BB4E01-6E79-0B29-4369-460159B332C0}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\FS_Carpet\FS_Carpet_1-Heel\Wood_Impact-004		51772
 	350414441	Carpet_Texture-002	.cache\4F\{4F331001-140F-904C-3824-5DA039E3D74B}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\FS_Carpet\FS_Carpet_3-Texture\Carpet_Texture-002		48084
+	354238923	Concrete_Heel-002	.cache\AB\{ABDADEE0-830F-F3AB-F47D-2AA4F809A2A5}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\FS_Concrete\FS_Concrete_4_Heel\Concrete_Heel-002		36208
+	356377069	Concrete_Toe-006	.cache\29\{2940E574-CDA7-C925-129F-CDC5E66C53B6}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Concrete\FS_Concrete_1-Toe\Concrete_Toe-006		37012
 	357550026	Cabinet_Creak_6	.cache\21\{21A95C6C-DE83-E12C-F376-898CCB7D3897}.wem		\Containers\SFX\Objects\Cabinets\Cabinet_Bookshelf\Bookshelf_Cabinet_Open\Bookshelf_Cabinet_Creak\Cabinet_Creak_6		131804
-	361823662	Carpet_Step_2-004	.cache\D0\{D00E3522-2448-7AA4-4C59-941840A6E5C6}.wem		\Containers\Player\Footsteps\FS_Property\FSSide\FS_Dirt\FS_Dirt_1-Foot\Carpet_Step_2-004		60572
+	359626329	Concrete_Toe-003	.cache\97\{97B2A58C-31FA-4D7F-672B-43383B2BC56B}.wem		\Containers\Player\Footsteps\FS_Property\FSSide\FS_Concrete\FS_Concrete_1-Toe\Concrete_Toe-003		39348
 	368103941	Testlyd	.cache\A9\{A9AD2235-3E69-DA71-179A-35C9149ABC8A}.wem		\Containers\Default Work Unit\Testlyd		2064096
 	368131898	Cabinet_Open_3	.cache\57\{5718A884-9192-1B2D-1979-48CC9AFA0C9A}.wem		\Containers\SFX\Objects\Cabinets\Cabinet_Kitchen_Bottom\Kitchen_Cabinet_Bottom_Close\Bookshelf_Cabinet_Close_Imp\Cabinet_Open_3		23676
+	372064601	Water_Tap_Singles_12	.cache\0C\{0C1627F2-09B9-420E-9D22-5940E6207D1D}.wem		\Containers\SFX\Objects\Kitchen_Sink\Kitchen_Sink_Loop\Kitchen_Sink_Water_Tapping\Water_Tap\Water_Tap_Singles_12		12864
 	373288275	Tiles_Toe-002	.cache\24\{24F1B45E-453E-C9DE-FDB0-9611C08527B1}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Tile\FS_Tile_1-Toe\Tiles_Toe-002		37430
 	378264715	Carpet_Step-006	.cache\9D\{9D6FC5DC-8418-A86C-4EA4-E5D797C1372C}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Carpet\FS_Carpet_2-Foot\Carpet_Step-006		26476
 	382093892	Tiles_Toe-003	.cache\F1\{F1BFC9C5-59F0-9158-56F2-0E9AFF6B2F43}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Tile\FS_Tile_1-Toe\Tiles_Toe-003		16826
+	383099956	Concrete_Foot-007	.cache\F9\{F99EBEAE-CC71-560C-0C34-75A97F9C5B7B}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Concrete\FS_Concrete_2-Foot\Concrete_Foot-007		21316
+	383233640	Concrete_Toe-005	.cache\83\{833FCD99-430E-82B2-BFB7-A8F5F2A9FD55}.wem		\Containers\Player\Footsteps\FS_Property\FSSide\FS_Concrete\FS_Concrete_1-Toe\Concrete_Toe-005		36672
 	387729452	Wood_Impact-006	.cache\C8\{C8FEF649-48FA-E629-C025-8BA336F72651}.wem		\Containers\Player\Footsteps\FS_Property\FSSide\FS_Wood\FS_Wood_1-Heel\Wood_Impact-006		77892
+	390138988	Concrete_Toe-002	.cache\F1\{F138A040-46B3-7117-9D3F-B87CDE860903}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\FS_Concrete\FS_Concrete_1-Toe\Concrete_Toe-002		37740
+	391083536	Concrete_Texture-008_01	.cache\A4\{A4433F67-A0D4-23E3-C6BF-CDAC7C29A8D4}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\FS_Concrete\FS_Concrete_3-Texture\Concrete_Texture-008_01		53808
 	393372814	Cabinet_Open_4	.cache\C1\{C190672F-C509-2E7E-CD0B-B534083A885C}.wem		\Containers\SFX\Objects\Cabinets\Cabinet_Kitchen_Bottom\Kitchen_Cabinet_Bottom_Open\Bookshelf_Cabinet_Open_Imp\Cabinet_Open_4		147548
 	394551106	Carpet_Step-008	.cache\0B\{0B86946B-4CFA-657F-3DAD-EADEB130A1F7}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Carpet\FS_Carpet_2-Foot\Carpet_Step-008		28008
 	395206649	Carpet_Step-003	.cache\62\{62A355CB-8559-303A-5537-86679725EC71}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Carpet\FS_Carpet_2-Foot\Carpet_Step-003		19450
 	395654687	Cabinet_Open_2	.cache\84\{84225D9B-DBAD-AB3A-0B78-57EA1A54A578}.wem		\Containers\SFX\Objects\Cabinets\Cabinet_Kitchen_Bottom\Kitchen_Cabinet_Bottom_Close\Bookshelf_Cabinet_Close_Imp\Cabinet_Open_2		20396
 	398776290	TV_Static_Loop	.cache\66\{669CF972-311F-8E06-8804-6AB7A5673B24}.wem		\Containers\SFX\Objects\TV\TV_Static\TV_Static_Loop		1152096
 	398815487	Skuffe_Ud-002	.cache\EE\{EE7D07A0-21E7-B228-632D-8A440295C9FB}.wem		\Containers\SFX\Objects\Cabinets\Cabinet_Draw\Cabinet_Draw_Close\Cabinet_Close_Slide\Skuffe_Ud-002		67058
-	410437280	Carpet_Step_2-010	.cache\DE\{DE956542-7A73-1F12-3842-D48F9431B37D}.wem		\Containers\Player\Footsteps\FS_Property\FSSide\FS_Dirt\FS_Dirt_1-Foot\Carpet_Step_2-010		27044
+	405351695	Concrete_Toe-010	.cache\0D\{0D74573E-ACD3-9A27-CCB7-0C149994DB42}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Concrete\FS_Concrete_1-Toe\Concrete_Toe-010		35980
 	418599757	Tiles_Heel-010	.cache\BA\{BA5A5B55-4737-AEE4-449B-C1238EA33279}.wem		\Containers\Player\Footsteps\FS_Property\FSSide\FS_Tile\FS_Tile_1-Heel\Tiles_Heel-010		16234
 	423912907	Cabinet_Open_1	.cache\23\{23FC72F1-90CA-3BC7-0374-2137D60A0ADC}.wem		\Containers\SFX\Objects\Cabinets\Cabinet_Bookshelf\Bookshelf_Cabinet_Open\Bookshelf_Cabinet_Open_Imp\Cabinet_Open_1		146700
 	435688002	Carpet_Step-010	.cache\11\{113C35F8-0B94-0D33-3344-F704B1005BAD}.wem		\Containers\Player\Footsteps\FS_Property\FSSide\FS_Carpet\FS_Carpet_1-Foot\Carpet_Step-010		38348
 	443176583	Footstep_Walking_Hardwood_05	.cache\1E\{1E015A9E-FA5C-ACF7-0268-011E9F5747D2}.wem		\Containers\Player\Footsteps\FS_Property\FSSide\FS_Wood\FS_Wood_2-Foot\Footstep_Walking_Hardwood_05		28460
+	449568335	Concrete_Texture-009	.cache\89\{89166E90-F677-D55D-B86B-E7C3351C44A5}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Concrete\FS_Concrete_3-Texture\Concrete_Texture-009		54300
 	452746440	Carpet_Texture-001	.cache\CF\{CFE73C0B-40ED-A83F-5859-4D8DAB52EB41}.wem		\Containers\Player\Footsteps\FS_Property\FSSide\FS_Carpet\FS_Carpet_3-Texture\Carpet_Texture-001		16788
+	461500473	tøj_Ben_Venstre-006_01	.cache\E8\{E84D55E2-3D9F-FB40-75C0-98DDDF25D7C0}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\Clothes\Clothes_Walking_Right\tøj_Ben_Venstre-006_01		35810
+	464125871	tøj_Ben_Højre-001_01	.cache\D0\{D0CF06BC-C224-AE9C-0CA9-4B2202AC4561}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\Clothes\Clothes_Walking_Left\tøj_Ben_Højre-001_01		30028
 	464856770	Carpet_Step-004	.cache\43\{436CA268-B85A-429B-A738-172E9E57B6AA}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\FS_Carpet\FS_Carpet_2-Foot\Carpet_Step-004		20340
-	467355072	Carpet_Step_2-003	.cache\D6\{D6BE2AB2-54B4-81D3-1F51-3F55BD7DDCDF}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Dirt\FS_Dirt_2-Foot\Carpet_Step_2-003		56538
+	467355072	Carpet_Step_2-003	.cache\7A\{7A46762D-16A5-C08C-3714-642855B0925A}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\FS_Dirt\FS_Dirt_2-Foot\Carpet_Step_2-003		32032
+	467378241	Water_Tap_Singles_6	.cache\92\{92F0251B-212F-BA11-48A0-BD608AC6863C}.wem		\Containers\SFX\Objects\Kitchen_Sink\Kitchen_Sink_Loop\Kitchen_Sink_Water_Tapping\Water_Tap\Water_Tap_Singles_6		17428
+	477720806	Concrete_Texture-004	.cache\1E\{1E9252E2-B2C8-78D8-284F-4BE9AD038F13}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Concrete\FS_Concrete_3-Texture\Concrete_Texture-004		53416
 	478441448	Tiles_Heel-007	.cache\7F\{7F32F97E-FE40-EDD9-E4EC-FAA3A263A25A}.wem		\Containers\Player\Footsteps\FS_Property\FSSide\FS_Tile\FS_Tile_1-Heel\Tiles_Heel-007		18704
-	480470741	Carpet_Step_2-007	.cache\8D\{8DD17FAD-12A9-1A7D-92BB-B7C9ACF80348}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Dirt\FS_Dirt_2-Foot\Carpet_Step_2-007		31488
+	478989125	Concrete_Texture-008_02	.cache\67\{67B59172-C55A-43E4-350F-E14FBC341E4B}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\FS_Concrete\FS_Concrete_3-Texture\Concrete_Texture-008_02		53400
+	480470741	Carpet_Step_2-007	.cache\8E\{8E05E002-B568-AE20-E8AE-79BEFB78BA1C}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\FS_Dirt\FS_Dirt_2-Foot\Carpet_Step_2-007		20258
 	482578730	Carpet_Toe-007	.cache\A8\{A87D8601-BB34-CD22-32DF-277641467D65}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Carpet\FS_Carpet_1-Toe\Carpet_Toe-007		63298
+	495671222	Water_Metal_Impact_7	.cache\30\{3087B921-48C5-1F3E-7D69-D05EAFC1F437}.wem		\Containers\SFX\Objects\Kitchen_Sink\Kitchen_Sink_Loop\Kitchen_Sink_Water_Tapping\Metal_Impact\Water_Metal_Impact_7		67754
 	497409491	Cabinet_Creak_5	.cache\35\{35CE5CD4-D32C-63AA-A0DD-9F48C7F9A521}.wem		\Containers\SFX\Objects\Cabinets\Cabinet_Bookshelf\Bookshelf_Cabinet_Open\Bookshelf_Cabinet_Creak\Cabinet_Creak_5		52864
-	500750266	Carpet_Step_2-001	.cache\68\{68760FB8-D037-D495-C390-52FF8F6E698B}.wem		\Containers\Player\Footsteps\FS_Property\FSSide\FS_Dirt\FS_Dirt_1-Foot\Carpet_Step_2-001		57088
+	499300089	Concrete_Toe-009	.cache\5C\{5CBFE98B-CE7A-AB65-F84D-13316FFB2B3F}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Concrete\FS_Concrete_1-Toe\Concrete_Toe-009		35036
 	505914770	Carpet_Texture-005	.cache\C3\{C36FF95B-098C-8981-7597-1AA19F348876}.wem		\Containers\Player\Footsteps\FS_Property\FSSide\FS_Carpet\FS_Carpet_3-Texture\Carpet_Texture-005		26162
+	507133250	tøj_Ben_Højre-006	.cache\0E\{0EE638CD-658B-C7E5-FC98-C14922A407DE}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\Clothes\Clothes_Walking_Right\tøj_Ben_Højre-006		20200
+	518144614	Dirt_Texture-007	.cache\6C\{6CFD4ACA-A301-6451-EAFA-B76FA7C6A3A4}.wem		\Containers\Player\Footsteps\FS_Property\FSSide\FS_Dirt\FS_Dirt_3-Texture\Dirt_Texture-007		48048
 	521251913	Tiles_Heel-008	.cache\82\{8240C0DC-7E21-244F-38C8-EE5700F509D2}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\FS_Tile\FS_Tile_1-Heel\Tiles_Heel-008		19482
+	524490257	Water_Tap_Multiples_6	.cache\F7\{F799A336-7C63-EF69-F118-36F42B34CF20}.wem		\Containers\SFX\Objects\Kitchen_Sink\Kitchen_Sink_Loop\Kitchen_Sink_Water_Tapping\Water_Tap\Water_Tap_Multiples_6		28028
+	530376271	Water_Tap_Singles_3	.cache\67\{67CBB9B1-4BED-65AC-7090-285B2022E533}.wem		\Containers\SFX\Objects\Kitchen_Sink\Kitchen_Sink_Loop\Kitchen_Sink_Water_Tapping\Water_Tap\Water_Tap_Singles_3		14232
 	543454134	Skuffe_Ud-007	.cache\BB\{BBAFA040-E354-107F-0B7B-9C61F8D6C439}.wem		\Containers\SFX\Objects\Cabinets\Cabinet_Draw\Cabinet_Draw_Close\Cabinet_Close_Slide\Skuffe_Ud-007		46536
 	546259954	Carpet_Texture-010	.cache\6C\{6C209D9C-4534-62FD-B692-0FA5DFB55FEA}.wem		\Containers\Player\Footsteps\FS_Property\FSSide\FS_Carpet\FS_Carpet_3-Texture\Carpet_Texture-010		39478
 	547255744	Tiles_Toe-009	.cache\EE\{EEDF56D8-C909-321F-6E76-1170EE3A817F}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Tile\FS_Tile_1-Toe\Tiles_Toe-009		20076
-	548011774	Carpet_Step_2-009	.cache\A8\{A870E30E-631E-C1F3-162C-ADBDEFEF35A1}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Dirt\FS_Dirt_2-Foot\Carpet_Step_2-009		43308
+	548011774	Carpet_Step_2-009	.cache\59\{594EDA3C-6EB3-E207-B44D-1B0BB4CAA302}.wem		\Containers\Player\Footsteps\FS_Property\FSSide\FS_Dirt\FS_Dirt_2-Foot\Carpet_Step_2-009		27648
 	548501112	Cabinet_Creak_1	.cache\4D\{4D999DE6-7C93-66CD-D8DD-AC0D2BEDB375}.wem		\Containers\SFX\Objects\Cabinets\Cabinet_Kitchen_Top\Kitchen_Cabinet_Top_Open\Bookshelf_Cabinet_Creak\Cabinet_Creak_1		89864
-	550477595	Carpet_Step_2-003	.cache\32\{32E962DA-5A0F-EDA0-504F-97C32ADF7CD0}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\FS_Dirt\FS_Dirt_2-Foot\Carpet_Step_2-003		55600
+	557925974	Concrete_Heel-003	.cache\DD\{DDB0B207-F472-A81D-A8F8-3EBA8132E5D5}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\FS_Concrete\FS_Concrete_4_Heel\Concrete_Heel-003		49840
 	560497447	Wood_Impact-003	.cache\B7\{B72C35FE-D259-AB59-AACD-9461240A4BA3}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Wood\FS_Wood_2-Foot\Wood_Impact-003		66174
-	569093942	Carpet_Step_2-008	.cache\33\{3332E025-5476-6AF5-3F05-8E0314CDEBB1}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\FS_Dirt\FS_Dirt_2-Foot\Carpet_Step_2-008		33600
-	577861633	Carpet_Step_2-002	.cache\2C\{2C483210-1D2E-605B-F379-0D7833D1FF54}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Dirt\FS_Dirt_2-Foot\Carpet_Step_2-002		46324
+	564010101	Water_Tap_Multiples_10	.cache\C1\{C127C571-3EE2-647A-1542-2644B12D913B}.wem		\Containers\SFX\Objects\Kitchen_Sink\Kitchen_Sink_Loop\Kitchen_Sink_Water_Tapping\Water_Tap\Water_Tap_Multiples_10		20460
+	577861633	Carpet_Step_2-002	.cache\2C\{2C483210-1D2E-605B-F379-0D7833D1FF54}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\FS_Dirt\FS_Dirt_2-Foot\Carpet_Step_2-002		46324
+	578541975	Water_Tap_Multiples_7	.cache\C6\{C653B48B-D771-17AB-6C4F-57C69B47D2C2}.wem		\Containers\SFX\Objects\Kitchen_Sink\Kitchen_Sink_Loop\Kitchen_Sink_Water_Tapping\Water_Tap\Water_Tap_Multiples_7		46112
+	579249509	Concrete_Foot-002	.cache\E9\{E9CA3171-21B8-04B4-CBB3-8888B7EF55EA}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Concrete\FS_Concrete_2-Foot\Concrete_Foot-002		27784
 	581056281	Carpet_Step-002	.cache\06\{060978ED-957A-6D0F-E390-D2B8E9384D48}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Carpet\FS_Carpet_2-Foot\Carpet_Step-002		15886
 	581485402	Carpet_Step-006	.cache\3B\{3BA65E74-7AAF-A4A2-7B51-6D978E0EC715}.wem		\Containers\Player\Footsteps\FS_Property\FSSide\FS_Carpet\FS_Carpet_1-Foot\Carpet_Step-006		32514
+	590760502	Concrete_Heel-006	.cache\9E\{9EC8A303-5198-8F00-55F1-69AEC70F9869}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\FS_Concrete\FS_Concrete_4_Heel\Concrete_Heel-006		53056
 	591778919	Carpet_Step-006	.cache\07\{07946D7C-F890-D75D-BC60-5CE247512395}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\FS_Carpet\FS_Carpet_2-Foot\Carpet_Step-006		22264
 	601923523	Carpet_Toe-010	.cache\88\{883F75D6-E055-6A10-6A74-84DA6B94A22A}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Carpet\FS_Carpet_1-Toe\Carpet_Toe-010		44940
 	602692716	Carpet_Step-007	.cache\F0\{F0D614FA-8CF9-F844-1F67-BF4F74B2B3A3}.wem		\Containers\Player\Footsteps\FS_Property\FSSide\FS_Carpet\FS_Carpet_1-Foot\Carpet_Step-007		35596
 	603017914	Carpet_Texture-008	.cache\A5\{A5FB5EB3-B7AC-8144-2979-C3C3DD6B52F4}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Carpet\FS_Carpet_3-Texture\Carpet_Texture-008		31974
 	603968308	Tiles_Heel-002	.cache\46\{4650DF45-6FBF-2CE8-50EA-C23AB079A8E4}.wem		\Containers\Player\Footsteps\FS_Property\FSSide\FS_Tile\FS_Tile_1-Heel\Tiles_Heel-002		21392
+	605947183	Water_Metal_Impact_4	.cache\45\{4565879C-5F55-6B4C-3CC8-3DB8DBC70111}.wem		\Containers\SFX\Objects\Kitchen_Sink\Kitchen_Sink_Loop\Kitchen_Sink_Water_Tapping\Metal_Impact\Water_Metal_Impact_4		65384
 	607186932	Carpet_Step-001	.cache\81\{81133419-2D99-6BB3-9D3E-844B6ED13304}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\FS_Carpet\FS_Carpet_2-Foot\Carpet_Step-001		18606
+	608112164	Dirt_Toe-001	.cache\48\{48E3359B-9614-ECEA-787F-F48AC47701BB}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\FS_Dirt\FS_Dirt_1-Toe\Dirt_Toe-001		57768
 	608888312	Carpet_Step-004	.cache\00\{00A42B14-AA22-D225-103F-AB7707BFC9F2}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Carpet\FS_Carpet_2-Foot\Carpet_Step-004		19758
-	617751057	Carpet_Step_2-006	.cache\6F\{6FB72CA0-B8C8-C244-B36B-7DAD0B2188A8}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\FS_Dirt\FS_Dirt_2-Foot\Carpet_Step_2-006		34560
+	613209508	Concrete_Texture-003	.cache\F2\{F231EA32-29BA-15D0-6354-FCA0FA780A00}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Concrete\FS_Concrete_3-Texture\Concrete_Texture-003		40036
+	613851330	Water_Tap_Multiples_13	.cache\30\{308ED2C0-C9BE-FE78-5954-9253F4AE06E7}.wem		\Containers\SFX\Objects\Kitchen_Sink\Kitchen_Sink_Loop\Kitchen_Sink_Water_Tapping\Water_Tap\Water_Tap_Multiples_13		17404
 	618541652	Wood_Impact-003	.cache\5C\{5CB590BF-AE0C-4DBD-20D6-6B8A3503B815}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\FS_Wood\FS_Wood_1-Heel\Wood_Impact-003		66176
+	623892796	tøj_Ben_Venstre-002_01	.cache\9E\{9E5A2DE6-EF99-11F7-D9EA-ECD3C8740B2F}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\Clothes\Clothes_Walking_Right\tøj_Ben_Venstre-002_01		35036
 	628993111	Tiles_Toe-001	.cache\89\{89730BF7-DFC1-373E-9926-E37424919299}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Tile\FS_Tile_1-Toe\Tiles_Toe-001		29652
+	636377678	Water_Tap_Multiples_2	.cache\A5\{A5A4574E-EBBD-2613-E29E-119DB549B286}.wem		\Containers\SFX\Objects\Kitchen_Sink\Kitchen_Sink_Loop\Kitchen_Sink_Water_Tapping\Water_Tap\Water_Tap_Multiples_2		20100
+	657761468	tøj_Ben_Venstre-002	.cache\DB\{DBD9AD8B-B934-F5D6-F76C-EB7E502AE9DC}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\Clothes\Clothes_Walking_Left\tøj_Ben_Venstre-002		24940
+	665190260	Concrete_Texture-007	.cache\6A\{6ACBC286-F490-9DAB-F3C6-860BC9320EC0}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\FS_Concrete\FS_Concrete_3-Texture\Concrete_Texture-007		53968
+	667051225	tøj_Ben_Venstre-006	.cache\A5\{A5DA7E30-085A-DA18-6D93-5B624E4F8F0A}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\Clothes\Clothes_Walking_Left\tøj_Ben_Venstre-006		26812
+	667575423	Water_Tap_Singles_13	.cache\B0\{B028B853-4B99-31BD-B773-55394EF5C0E7}.wem		\Containers\SFX\Objects\Kitchen_Sink\Kitchen_Sink_Loop\Kitchen_Sink_Water_Tapping\Water_Tap\Water_Tap_Singles_13		18524
 	670737083	Carpet_Toe-003	.cache\9C\{9CE87F5A-1432-C7F6-4A0F-D9277BA292A9}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Carpet\FS_Carpet_1-Toe\Carpet_Toe-003		36186
-	674070396	Carpet_Step_2-005	.cache\2A\{2A3173A1-BA50-5C4C-3EC0-46FD02E31285}.wem		\Containers\Player\Footsteps\FS_Property\FSSide\FS_Dirt\FS_Dirt_1-Foot\Carpet_Step_2-005		31916
+	692418967	tøj_Ben_Venstre-001	.cache\14\{14849CFC-9727-34AA-73FC-F0B472E3B91A}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\Clothes\Clothes_Walking_Left\tøj_Ben_Venstre-001		21666
 	694716087	Cabinet_Creak_2	.cache\CD\{CD1E1C64-D5A7-DC8B-CF72-4DE5F316C079}.wem		\Containers\SFX\Objects\Cabinets\Cabinet_Kitchen_Bottom\Kitchen_Cabinet_Bottom_Open\Bookshelf_Cabinet_Creak\Cabinet_Creak_2		84768
-	700442964	Skuffe_Ud-004	.cache\63\{636CE91A-422A-B1FC-6D2B-1FFD1D9C8413}.wem		\Containers\SFX\Objects\Cabinets\Cabinet_Draw\Cabinet_Draw_Close\Cabinet_Close_Slide\Skuffe_Ud-004		115250
+	700442964	Skuffe_Ud-004	.cache\42\{421EFE66-0D65-D2F3-179F-B14F5F2A9458}.wem		\Containers\SFX\Objects\Cabinets\Cabinet_Draw\Cabinet_Draw_Close\Cabinet_Close_Slide\Skuffe_Ud-004		72502
 	700589232	Tiles_Toe-008	.cache\C1\{C1A9FAC5-B534-1AB5-CE2F-251F037F87C7}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Tile\FS_Tile_1-Toe\Tiles_Toe-008		32402
+	702271446	Concrete_Texture-001	.cache\D1\{D10A3641-5AE7-F20F-2CFC-F2C3F401C9DF}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\FS_Concrete\FS_Concrete_3-Texture\Concrete_Texture-001		57932
+	706924221	Water_Tap_Singles_11	.cache\1E\{1EBC6C54-400A-D3A8-05C4-8983A1510CA4}.wem		\Containers\SFX\Objects\Kitchen_Sink\Kitchen_Sink_Loop\Kitchen_Sink_Water_Tapping\Water_Tap\Water_Tap_Singles_11		14076
 	711367062	Skuffe_Ind-008	.cache\89\{8957CDF6-148F-26B2-0C8D-05701AE02846}.wem		\Containers\SFX\Objects\Cabinets\Cabinet_Draw\Cabinet_Draw_Open\Cabinet_Open\Skuffe_Ind-008		123658
+	715145102	Water_Tap_Multiples_5	.cache\BD\{BD019508-58E4-D034-4FA2-3CF3EDC1FE47}.wem		\Containers\SFX\Objects\Kitchen_Sink\Kitchen_Sink_Loop\Kitchen_Sink_Water_Tapping\Water_Tap\Water_Tap_Multiples_5		39828
+	715331280	tøj_Ben_Højre-003_01	.cache\96\{9657B213-6CD3-8251-EF10-4F12CEBEA0C2}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\Clothes\Clothes_Walking_Left\tøj_Ben_Højre-003_01		24768
+	715853598	Water_Metal_Impact_5	.cache\EE\{EE09868B-B039-74C9-E6EF-27E50E23E4CC}.wem		\Containers\SFX\Objects\Kitchen_Sink\Kitchen_Sink_Loop\Kitchen_Sink_Water_Tapping\Metal_Impact\Water_Metal_Impact_5		84312
+	722315689	Water_Metal_Impact_1	.cache\C5\{C5F83A18-78EE-5297-0143-8926207C6C7E}.wem		\Containers\SFX\Objects\Kitchen_Sink\Kitchen_Sink_Loop\Kitchen_Sink_Water_Tapping\Metal_Impact\Water_Metal_Impact_1		54722
+	725432678	Water_Tap_Multiples_9	.cache\78\{78EB7080-A948-05A7-B4E8-46C021C160D3}.wem		\Containers\SFX\Objects\Kitchen_Sink\Kitchen_Sink_Loop\Kitchen_Sink_Water_Tapping\Water_Tap\Water_Tap_Multiples_9		41400
+	730136227	Water_Metal_Impact_9	.cache\1A\{1A8F88EF-5955-DFCD-4AC9-5768AB5D4BE1}.wem		\Containers\SFX\Objects\Kitchen_Sink\Kitchen_Sink_Loop\Kitchen_Sink_Water_Tapping\Metal_Impact\Water_Metal_Impact_9		106810
 	736940525	Carpet_Texture-010	.cache\C3\{C38446EB-3A44-9B70-624C-8DF9E4F935BF}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Carpet\FS_Carpet_3-Texture\Carpet_Texture-010		51482
+	737010438	Water_Tap_Singles_9	.cache\AD\{AD40124D-2AE5-CECE-EA91-4A5A0909D0B7}.wem		\Containers\SFX\Objects\Kitchen_Sink\Kitchen_Sink_Loop\Kitchen_Sink_Water_Tapping\Water_Tap\Water_Tap_Singles_9		18224
 	738538910	Wood_Impact-001	.cache\70\{70BCF5B0-9445-9F85-193B-711AE53EF8EE}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Wood\FS_Wood_2-Foot\Wood_Impact-001		57918
+	748226737	Water_Tap_Multiples_15	.cache\9D\{9DE380C1-1655-E836-BFEB-7AC3B0F2CE58}.wem		\Containers\SFX\Objects\Kitchen_Sink\Kitchen_Sink_Loop\Kitchen_Sink_Water_Tapping\Water_Tap\Water_Tap_Multiples_15		22844
+	758569696	Concrete_Texture-010	.cache\1B\{1BA4E173-51EC-6F15-591C-21B82732C528}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\FS_Concrete\FS_Concrete_3-Texture\Concrete_Texture-010		36872
 	760580256	Carpet_Texture-004	.cache\B5\{B59E6B8F-DFA4-6EFC-BEFE-B19691ED92E8}.wem		\Containers\Player\Footsteps\FS_Property\FSSide\FS_Carpet\FS_Carpet_3-Texture\Carpet_Texture-004		28466
-	762311839	Carpet_Step_2-002	.cache\1A\{1A5A61CD-1610-050C-CE82-241E2572DF63}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\FS_Dirt\FS_Dirt_2-Foot\Carpet_Step_2-002		46578
 	762593901	Carpet_Toe-012	.cache\4C\{4C4794FB-73C2-68FB-3649-68DB64065B4B}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Carpet\FS_Carpet_1-Toe\Carpet_Toe-012		38594
-	767128951	Skuffe_Ud-008	.cache\C3\{C31E5CD3-E468-B8AE-8354-3B7D66FAEC9D}.wem		\Containers\SFX\Objects\Cabinets\Cabinet_Draw\Cabinet_Draw_Close\Cabinet_Close_Slide\Skuffe_Ud-008		72958
+	767128951	Skuffe_Ud-008	.cache\4C\{4C31A75B-1EA9-74C9-DE2E-F07276F10994}.wem		\Containers\SFX\Objects\Cabinets\Cabinet_Draw\Cabinet_Draw_Close\Cabinet_Close_Slide\Skuffe_Ud-008		69458
 	767721366	Carpet_Texture-010	.cache\70\{70DB5CD9-9153-F245-5170-90B21D869D8E}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\FS_Carpet\FS_Carpet_3-Texture\Carpet_Texture-010		51482
 	769343266	Tiles_Toe-004	.cache\0E\{0EF3DF9B-7757-D1B2-CC7D-28BA3A35CBE8}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Tile\FS_Tile_1-Toe\Tiles_Toe-004		27084
 	774812347	Wood_Impact-008	.cache\65\{6593D3E0-7710-4AA0-9F4B-CD4DF87EAA96}.wem		\Containers\Player\Footsteps\FS_Property\FSSide\FS_Wood\FS_Wood_1-Heel\Wood_Impact-008		66818
+	789356201	tøj_Ben_Højre-007	.cache\E0\{E034F008-0E0E-1B02-08D7-FA180D369D3C}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\Clothes\Clothes_Walking_Right\tøj_Ben_Højre-007		30474
 	801953892	Tiles_Step-010	.cache\DF\{DFBB127D-BF59-5A61-F1A6-79B6C2A90128}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Tile\FS_Tile_2-Foot\Tiles_Step-010		40746
+	804630151	Concrete_Toe-001	.cache\41\{415BA2FF-B6A9-CAF5-E562-CB8D59B0C648}.wem		\Containers\Player\Footsteps\FS_Property\FSSide\FS_Concrete\FS_Concrete_1-Toe\Concrete_Toe-001		45092
 	804666013	Carpet_Texture-004	.cache\08\{08B118D4-AB12-94FF-25A0-601689F07E03}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\FS_Carpet\FS_Carpet_3-Texture\Carpet_Texture-004		35468
 	808433203	Wood_Impact-009	.cache\1E\{1E02D83E-7A11-57A0-AD86-F6F32FB29D3C}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\FS_Carpet\FS_Carpet_1-Heel\Wood_Impact-009		78260
+	813635729	Concrete_Toe-008	.cache\D1\{D1C5E06D-44AE-14A5-D625-A56774D6F7ED}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Concrete\FS_Concrete_1-Toe\Concrete_Toe-008		37296
 	816807131	Carpet_Step-008	.cache\01\{01AD1C5C-6667-9618-9E55-04879DCFC38D}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\FS_Carpet\FS_Carpet_2-Foot\Carpet_Step-008		20712
 	819172608	Skuffe_Ud-001	.cache\D6\{D6A4DBA2-F064-DFDC-CEF1-6D14A3D1B167}.wem		\Containers\SFX\Objects\Cabinets\Cabinet_Draw\Cabinet_Draw_Close\Cabinet_Close_Slide\Skuffe_Ud-001		44196
+	821231081	tøj_Ben_Højre-006_01	.cache\C7\{C7F188CE-6EF5-5871-80FD-02000B641EA2}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\Clothes\Clothes_Walking_Left\tøj_Ben_Højre-006_01		40312
 	822356084	Carpet_Texture-007	.cache\56\{56B99404-0DE8-81A8-4E7F-7BC47C5E561A}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Carpet\FS_Carpet_3-Texture\Carpet_Texture-007		38450
 	830043247	Carpet_Step-009	.cache\55\{5564ED3A-3B35-1FE6-6357-8AF54EB8A342}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Carpet\FS_Carpet_2-Foot\Carpet_Step-009		21008
 	832157666	Skuffe_Ind-004	.cache\72\{725793CD-1EA5-9C34-8F65-56E3BD3D3064}.wem		\Containers\SFX\Objects\Cabinets\Cabinet_Draw\Cabinet_Draw_Open\Cabinet_Open\Skuffe_Ind-004		93434
-	832777814	Carpet_Step_2-008	.cache\7D\{7D216DFE-1741-3570-47A7-ABEA367CB4AF}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Dirt\FS_Dirt_2-Foot\Carpet_Step_2-008		33216
-	832791625	Carpet_Step_2-006	.cache\7E\{7EA853C8-C24D-E8CA-38D4-FCDAC62CA3B3}.wem		\Containers\Player\Footsteps\FS_Property\FSSide\FS_Dirt\FS_Dirt_1-Foot\Carpet_Step_2-006		34560
-	833701158	Carpet_Step_2-010	.cache\6E\{6E4977BF-0D9C-86EF-5103-B183C4C01C43}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\FS_Dirt\FS_Dirt_2-Foot\Carpet_Step_2-010		27124
+	832777814	Carpet_Step_2-008	.cache\5D\{5D9E5BA1-43A4-30A1-561C-AB8E131EDBD8}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\FS_Dirt\FS_Dirt_2-Foot\Carpet_Step_2-008		30368
+	836151234	Water_Tap_Singles_10	.cache\41\{418A3335-A3CB-90A3-FA63-D693060CDA82}.wem		\Containers\SFX\Objects\Kitchen_Sink\Kitchen_Sink_Loop\Kitchen_Sink_Water_Tapping\Water_Tap\Water_Tap_Singles_10		12896
+	846616987	Water_Tap_Singles_7	.cache\7A\{7A55044D-98A6-1310-0C3B-9EA98CFF79FE}.wem		\Containers\SFX\Objects\Kitchen_Sink\Kitchen_Sink_Loop\Kitchen_Sink_Water_Tapping\Water_Tap\Water_Tap_Singles_7		31820
 	847207346	Carpet_Step-007	.cache\C6\{C6E63BB2-ED7E-EBE6-C972-F358748F5A21}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Carpet\FS_Carpet_2-Foot\Carpet_Step-007		21482
 	856242761	Carpet_Texture-007	.cache\E9\{E9CCEA23-D49C-707E-E4E2-3F51C8985E86}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\FS_Carpet\FS_Carpet_3-Texture\Carpet_Texture-007		40594
 	860934273	Skuffe_Ud-008	.cache\F4\{F498B60E-59E8-E085-530C-2D57A0DE38DB}.wem		\Containers\SFX\Objects\Cabinets\Cabinet_Draw\Cabinet_Draw_Close\Cabinet_Close_Imp\Skuffe_Ud-008		31570
+	861515863	Water_Tap_Singes_2	.cache\9D\{9D200624-A58A-319D-2820-045380CF8AD9}.wem		\Containers\SFX\Objects\Kitchen_Sink\Kitchen_Sink_Loop\Kitchen_Sink_Water_Tapping\Water_Tap\Water_Tap_Singes_2		16688
+	864005805	Dirt_Texture-009	.cache\4B\{4B105D6D-0449-E505-3774-D8177C9CDDE8}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Dirt\FS_Dirt_3-Texture\Dirt_Texture-009		55150
 	864901128	Skuffe_Ud-002	.cache\9D\{9DD07A93-B602-5E86-2C6C-55DEC46AA4B5}.wem		\Containers\SFX\Objects\Cabinets\Cabinet_Draw\Cabinet_Draw_Close\Cabinet_Close_Imp\Skuffe_Ud-002		27692
 	866940124	Carpet_Step-001	.cache\BE\{BEBAB8B4-AA9D-8882-1FED-A06DEFB5B7DD}.wem		\Containers\Player\Footsteps\FS_Property\FSSide\FS_Carpet\FS_Carpet_1-Foot\Carpet_Step-001		38928
+	869247556	Concrete_Texture-011_01	.cache\D5\{D56F4E8B-F5F0-7C57-CFCC-A4BA43755942}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\FS_Concrete\FS_Concrete_3-Texture\Concrete_Texture-011_01		36216
 	877779073	Carpet_Toe-005	.cache\1F\{1F15031D-2B35-2A43-36E0-4AECFD1C2AC9}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Carpet\FS_Carpet_1-Toe\Carpet_Toe-005		42724
 	884268736	Carpet_Texture-009	.cache\44\{4411E55C-A994-7C93-6815-E737FFF9E54E}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Carpet\FS_Carpet_3-Texture\Carpet_Texture-009		33754
 	890991987	Skuffe_Ud-001	.cache\F1\{F1349EA8-EBCD-A186-9CA9-2993D2CE0EC7}.wem		\Containers\SFX\Objects\Cabinets\Cabinet_Draw\Cabinet_Draw_Close\Cabinet_Close_Imp\Skuffe_Ud-001		22148
 	899457694	Skuffe_Ind-006	.cache\3B\{3B3D075B-7752-CF35-830E-B3DF8366CCA3}.wem		\Containers\SFX\Objects\Cabinets\Cabinet_Draw\Cabinet_Draw_Open\Cabinet_Open\Skuffe_Ind-006		108654
 	900261532	Carpet_Texture-008	.cache\7F\{7F1CB5FF-E339-95E1-AFE0-7227D625B47E}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\FS_Carpet\FS_Carpet_3-Texture\Carpet_Texture-008		31974
-	901203002	Carpet_Step_2-003	.cache\4C\{4C403C55-A194-BD64-22A5-271B3296ADA8}.wem		\Containers\Player\Footsteps\FS_Property\FSSide\FS_Dirt\FS_Dirt_1-Foot\Carpet_Step_2-003		55910
+	906161376	Water_Metal_Impact_6	.cache\4F\{4F089731-375F-5ED2-7D42-51257A352E8D}.wem		\Containers\SFX\Objects\Kitchen_Sink\Kitchen_Sink_Loop\Kitchen_Sink_Water_Tapping\Metal_Impact\Water_Metal_Impact_6		76750
+	908896640	Water_Tap_Multiples_11	.cache\40\{40A4CC77-BFBD-B8B3-BFA9-B815B2AF4BC6}.wem		\Containers\SFX\Objects\Kitchen_Sink\Kitchen_Sink_Loop\Kitchen_Sink_Water_Tapping\Water_Tap\Water_Tap_Multiples_11		25348
 	909903587	Skuffe_Ind-009	.cache\24\{24039283-E27F-D7FD-AD1B-4632663EABC2}.wem		\Containers\SFX\Objects\Cabinets\Cabinet_Draw\Cabinet_Draw_Open\Cabinet_Open\Skuffe_Ind-009		121940
 	914484002	Wood_Impact-010	.cache\1E\{1E392449-046D-3A84-8FD7-8E14E78235E3}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Wood\FS_Wood_2-Foot\Wood_Impact-010		31490
-	914877286	Carpet_Step_2-008	.cache\74\{74B412B3-F264-DCEE-956B-5C153255009E}.wem		\Containers\Player\Footsteps\FS_Property\FSSide\FS_Dirt\FS_Dirt_1-Foot\Carpet_Step_2-008		33874
+	926597305	Water_Tap_Multiples_12	.cache\C4\{C43ABBBC-9EE5-33F6-F987-F17B3F3D4C3F}.wem		\Containers\SFX\Objects\Kitchen_Sink\Kitchen_Sink_Loop\Kitchen_Sink_Water_Tapping\Water_Tap\Water_Tap_Multiples_12		19964
 	927161079	Carpet_Step-005	.cache\C9\{C94D95CC-75AB-20CE-7218-13EEF9EA843D}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\FS_Carpet\FS_Carpet_2-Foot\Carpet_Step-005		28126
+	936268650	Concrete_Foot-005	.cache\3E\{3E8D2B93-9F60-2EBE-AC62-1CA9608B3A53}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\FS_Concrete\FS_Concrete_2-Foot\Concrete_Foot-005		29324
 	943204351	Carpet_Texture-006	.cache\7E\{7E6A6A19-0A28-27F5-06B6-6724FFCB38AF}.wem		\Containers\Player\Footsteps\FS_Property\FSSide\FS_Carpet\FS_Carpet_3-Texture\Carpet_Texture-006		28866
 	943360329	Tiles_Step-006	.cache\36\{3669F097-E042-3E5E-7362-C204EA57CE47}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Tile\FS_Tile_2-Foot\Tiles_Step-006		32490
 	946206868	Skuffe_Ud-010	.cache\25\{252D7691-7771-A63D-4C39-189A9FAFCC7B}.wem		\Containers\SFX\Objects\Cabinets\Cabinet_Draw\Cabinet_Draw_Close\Cabinet_Close_Slide\Skuffe_Ud-010		57172
 	947310149	Wood_Impact-001	.cache\9F\{9F0A49D3-94B3-0F6B-4697-84B43E124ABC}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\FS_Wood\FS_Wood_1-Heel\Wood_Impact-001		57668
-	957509682	Carpet_Step_2-004	.cache\69\{6992763B-35DE-EC72-3BF7-63D9413B5817}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\FS_Dirt\FS_Dirt_2-Foot\Carpet_Step_2-004		60434
+	951429150	Concrete_Texture-006	.cache\63\{639D6C9E-DB97-8387-B07B-437B11A33B75}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\FS_Concrete\FS_Concrete_3-Texture\Concrete_Texture-006		52176
 	964639092	Carpet_Texture-006	.cache\33\{33B816B4-3CB6-8644-0284-7D0EAF67744A}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Carpet\FS_Carpet_3-Texture\Carpet_Texture-006		34584
+	971794443	Concrete_Heel-004	.cache\B2\{B2E28A3A-A79B-196B-4724-02FBCAB6FF89}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\FS_Concrete\FS_Concrete_4_Heel\Concrete_Heel-004		37676
 	973222798	Tiles_Step-002	.cache\3B\{3B9665F1-FEDB-680F-39DF-B4606FC27D28}.wem		\Containers\Player\Footsteps\FS_Property\FSSide\FS_Tile\FS_Tile_2-Foot\Tiles_Step-002		32758
 	976496209	Skuffe_Ind-002	.cache\95\{95F9D317-E043-64D4-3D0E-9FAB0D86547E}.wem		\Containers\SFX\Objects\Cabinets\Cabinet_Draw\Cabinet_Draw_Open\Cabinet_Open\Skuffe_Ind-002		125762
 	979031044	Carpet_Texture-009	.cache\19\{1906C09C-3B73-A243-EDCF-9EE9CD32BF3C}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\FS_Carpet\FS_Carpet_3-Texture\Carpet_Texture-009		33754
+	979228277	Concrete_Texture-005	.cache\17\{173887EA-CA82-C0B2-AF92-822B85D4DD50}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Concrete\FS_Concrete_3-Texture\Concrete_Texture-005		52472
+	982784764	Concrete_Heel-005	.cache\16\{16DC14AA-6035-6C99-E94C-D6DA3DB21C31}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\FS_Concrete\FS_Concrete_4_Heel\Concrete_Heel-005		62372
 	983813656	Cabinet_Open_2	.cache\F5\{F518A565-C2CC-973E-6D47-33BDDB784132}.wem		\Containers\SFX\Objects\Cabinets\Cabinet_Bookshelf\Bookshelf_Cabinet_Open\Bookshelf_Cabinet_Open_Imp\Cabinet_Open_2		174136
+	984302823	tøj_Ben_Højre-008	.cache\3F\{3F5EBF05-09D7-3AF1-5A50-E1F8F8257620}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\Clothes\Clothes_Walking_Right\tøj_Ben_Højre-008		32318
 	989503299	Carpet_Texture-002	.cache\2A\{2A0B782E-7661-DA88-6A4F-D712D7BA1C32}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Carpet\FS_Carpet_3-Texture\Carpet_Texture-002		35656
 	991176849	Carpet_Step-004	.cache\5B\{5B8C6FFE-5029-B396-C889-4C54CCF299F5}.wem		\Containers\Player\Footsteps\FS_Property\FSSide\FS_Carpet\FS_Carpet_1-Foot\Carpet_Step-004		37598
-	994217136	Skuffe_Ud-003	.cache\46\{46BF3DDB-3A79-DFF4-92B1-3EAD2A60374E}.wem		\Containers\SFX\Objects\Cabinets\Cabinet_Draw\Cabinet_Draw_Close\Cabinet_Close_Slide\Skuffe_Ud-003		46680
+	994217136	Skuffe_Ud-003	.cache\A1\{A1750847-7C25-2DD5-7D53-A45A54B2624D}.wem		\Containers\SFX\Objects\Cabinets\Cabinet_Draw\Cabinet_Draw_Close\Cabinet_Close_Slide\Skuffe_Ud-003		55934
 	995734071	Tiles_Step-007	.cache\86\{8671B8F6-07AF-54B0-6FBC-3304991938C0}.wem		\Containers\Player\Footsteps\FS_Property\FSSide\FS_Tile\FS_Tile_2-Foot\Tiles_Step-007		26918
 	995851035	Skuffe_Ud-010	.cache\79\{79D5CEBF-F142-3E44-6003-7F5B3ABB4EB5}.wem		\Containers\SFX\Objects\Cabinets\Cabinet_Draw\Cabinet_Draw_Close\Cabinet_Close_Imp\Skuffe_Ud-010		34338
-	1008234588	Skuffe_Ud-009	.cache\66\{666FE0B6-C9D5-5CC5-3588-8155E3D7A372}.wem		\Containers\SFX\Objects\Cabinets\Cabinet_Draw\Cabinet_Draw_Close\Cabinet_Close_Slide\Skuffe_Ud-009		51798
+	1007782491	Water_Metal_Impact_2	.cache\0F\{0F274EF4-E3E5-33F6-F960-B694493AC425}.wem		\Containers\SFX\Objects\Kitchen_Sink\Kitchen_Sink_Loop\Kitchen_Sink_Water_Tapping\Metal_Impact\Water_Metal_Impact_2		42554
+	1008234588	Skuffe_Ud-009	.cache\B1\{B1F84497-E67E-B93D-A1D2-FD1BB66939B9}.wem		\Containers\SFX\Objects\Cabinets\Cabinet_Draw\Cabinet_Draw_Close\Cabinet_Close_Slide\Skuffe_Ud-009		46360
 	1009104399	Tiles_Toe-010	.cache\25\{25534D81-C325-0798-8C36-B32B7FE8C846}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Tile\FS_Tile_1-Toe\Tiles_Toe-010		32328
 	1009764543	Tiles_Step-005	.cache\5D\{5DFDB11E-8BA5-8961-0037-C6FC05F2ADB6}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\FS_Tile\FS_Tile_2-Foot\Tiles_Step-005		56412
 	1013893993	Cabinet_Open_3	.cache\B5\{B53747D8-079D-3B6E-2598-28046F684843}.wem		\Containers\SFX\Objects\Cabinets\Cabinet_Bookshelf\Bookshelf_Cabinet_Open\Bookshelf_Cabinet_Open_Imp\Cabinet_Open_3		188712
 	1017019208	Carpet_Step-010	.cache\F1\{F13AEBAE-AB8D-DBD5-CC37-52F8950389F8}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\FS_Carpet\FS_Carpet_2-Foot\Carpet_Step-010		19976
-	1021846890	Carpet_Step_2-007	.cache\9E\{9E5DF2F2-01DC-55FD-DC0C-E11304A23E74}.wem		\Containers\Player\Footsteps\FS_Property\FSSide\FS_Dirt\FS_Dirt_1-Foot\Carpet_Step_2-007		31412
 	1023266597	Wood_Impact-008	.cache\66\{661D1642-9DF7-0337-B4A6-528796EA1E6B}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Wood\FS_Wood_2-Foot\Wood_Impact-008		67256
 	1028543953	Carpet_Toe-001	.cache\57\{57C1FA8B-F6A5-9282-5D97-D476637F5698}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Carpet\FS_Carpet_1-Toe\Carpet_Toe-001		45654
 	1030826398	Wood_Impact-009	.cache\82\{82B13148-3039-D895-0693-D4A4A557E4EF}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Wood\FS_Wood_2-Foot\Wood_Impact-009		78260
 	1036483668	Tiles_Heel-009	.cache\AE\{AEDE659E-DB78-C1E5-CC33-0AC8DA8C80C8}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\FS_Tile\FS_Tile_1-Heel\Tiles_Heel-009		18514
 	1037127939	Carpet_Step-010	.cache\FA\{FA1A27F3-B3F7-B418-A99D-34487BD98756}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Carpet\FS_Carpet_2-Foot\Carpet_Step-010		22678
+	1040617972	Concrete_Texture-011	.cache\AF\{AF81BC3F-075B-93B6-4D4D-E769A270B2E1}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\FS_Concrete\FS_Concrete_3-Texture\Concrete_Texture-011		33020
 	1041678223	Skuffe_Ind-005	.cache\BD\{BDF9983D-41AC-160E-C99F-FADA425F21B3}.wem		\Containers\SFX\Objects\Cabinets\Cabinet_Draw\Cabinet_Draw_Open\Cabinet_Open\Skuffe_Ind-005		174026
+	1046478347	tøj_Ben_Venstre-005_01	.cache\28\{287735A7-DE12-DF87-1631-14F72978AF38}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\Clothes\Clothes_Walking_Right\tøj_Ben_Venstre-005_01		37980
+	1047715996	Dirt_Toe-004	.cache\A9\{A953655D-D7D5-E4D0-F021-A86FB322BC03}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Dirt\FS_Dirt_1-Toe\Dirt_Toe-004		56536
+	1048691574	tøj_Ben_Højre-004	.cache\25\{25D28F70-6238-F75C-41D2-48F583C2A262}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\Clothes\Clothes_Walking_Right\tøj_Ben_Højre-004		18620
 	1053272454	Carpet_Texture-002	.cache\D1\{D1F3EB8D-DBB9-A308-16D9-0EF8CA96A522}.wem		\Containers\Player\Footsteps\FS_Property\FSSide\FS_Carpet\FS_Carpet_3-Texture\Carpet_Texture-002		32198
-	1058161977	Carpet_Step_2-009	.cache\03\{03AB6667-2B5B-9E5D-4BFD-58146E5AB591}.wem		\Containers\Player\Footsteps\FS_Property\FSSide\FS_Dirt\FS_Dirt_1-Foot\Carpet_Step_2-009		44336
+	1056241564	ClockTick	.cache\62\{6236BBF8-2602-DEE3-AB9E-9744D0919D03}.wem		\Containers\SFX\Objects\Clock\ClockSwitch\ClockTick		9168664
 	1060488270	Wood_Impact-005	.cache\81\{817FD8FB-015E-F63E-8279-880258EAC6DE}.wem		\Containers\Player\Footsteps\FS_Property\FSSide\FS_Wood\FS_Wood_1-Heel\Wood_Impact-005		60334
+	1060976376	tøj_Ben_Højre-005_01	.cache\2C\{2CA098DE-F082-392C-EF3E-22D54E4BB13C}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\Clothes\Clothes_Walking_Left\tøj_Ben_Højre-005_01		46150
 	1061979509	Skuffe_Ud-007	.cache\71\{714EAEB9-5E1A-6C70-3439-3B82AB55C670}.wem		\Containers\SFX\Objects\Cabinets\Cabinet_Draw\Cabinet_Draw_Close\Cabinet_Close_Imp\Skuffe_Ud-007		34722
 	1064757920	Skuffe_Ud-009	.cache\E6\{E687E7DC-CF81-82DE-0E78-B2A895CBEF3A}.wem		\Containers\SFX\Objects\Cabinets\Cabinet_Draw\Cabinet_Draw_Close\Cabinet_Close_Imp\Skuffe_Ud-009		17780
 	1066736166	Carpet_Texture-005	.cache\1E\{1E6E3A2A-F9A4-04E4-D5BB-A73C45C802B3}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\FS_Carpet\FS_Carpet_3-Texture\Carpet_Texture-005		33754
 	1067948279	Tiles_Heel-004	.cache\85\{85F9BBB7-EAA7-8930-0EF3-357E4B2D0FA8}.wem		\Containers\Player\Footsteps\FS_Property\FSSide\FS_Tile\FS_Tile_1-Heel\Tiles_Heel-004		13176
 	1069163309	Carpet_Step-002	.cache\97\{97C4015D-FF25-F086-7951-BF9C9D9014BE}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\FS_Carpet\FS_Carpet_2-Foot\Carpet_Step-002		17682
 	1070350176	Carpet_Step-005	.cache\94\{944EE87C-EDF5-21A1-BCD7-C0A079629714}.wem		\Containers\Player\Footsteps\FS_Property\FSSide\FS_Carpet\FS_Carpet_1-Foot\Carpet_Step-005		38098
+	1070944068	Water_Tap_Singles_5	.cache\FF\{FF14ED9E-7A8D-70C1-61C4-790ADCFAD8DC}.wem		\Containers\SFX\Objects\Kitchen_Sink\Kitchen_Sink_Loop\Kitchen_Sink_Water_Tapping\Water_Tap\Water_Tap_Singles_5		16884
 
 Plug-in Media	ID	Name	Source file	Type	Wwise Object Path	Notes	Data Size
+	134859353	Blue_Reflective_Room_Ambisonics	.cache\2E\{2E1E4DC5-9D5D-93EC-D0FF-6580436EF16F}.wem	Wwise Convolution Reverb (Shared)	\Effects\Factory AK Convolution Reverb Effects Ambisonics\Rooms\Blue_Reflective_Room_Ambisonics	Impulse response created by Pinguin ing.büro © 2010 Pinguin ing.büro.  All rights reserved. IR Pre-delay: 8ms  	274352
+	227649971	BlueNoise_Room_03_Org_Ambisonics	.cache\DF\{DF7899DA-894D-6198-E219-D332D72A4F68}.wem	Wwise Convolution Reverb (Shared)	\Effects\Factory AK Convolution Reverb Effects Ambisonics\Rooms\BlueNoise_Room_03_Org_Ambisonics	Impulse response created by Pinguin ing.büro © 2010 Pinguin ing.büro.  All rights reserved. IR Pre-delay: 3ms  	168336
 	393877766	Petite_Room_Ambisonics	.cache\E5\{E5C3B67F-C44E-75E5-D54F-4A40C59EC3BE}.wem	Wwise Convolution Reverb (Shared)	\Effects\Factory AK Convolution Reverb Effects Ambisonics\Rooms\Petite_Room_Ambisonics	Impulse response created by Pinguin ing.büro © 2010 Pinguin ing.büro.  All rights reserved. IR Pre-delay: 8ms  	437696
-	894434445	Hamburg_Echo_Chamber_Org_Ambisonics	.cache\B3\{B3CC5895-FCCB-E1B2-F179-CA1977D843E7}.wem	Wwise Convolution Reverb (Shared)	\Effects\Factory AK Convolution Reverb Effects Ambisonics\Rooms\Hamburg_Echo_Chamber_Org_Ambisonics	Impulse response created by Pinguin ing.büro © 2010 Pinguin ing.büro.  All rights reserved. IR Pre-delay: 4ms  	453600
+	637171648	Intimate_Room_Ambisonics	.cache\DB\{DB43E092-DB59-FCA4-32C1-0563F7269C8A}.wem	Wwise Convolution Reverb (Shared)	\Effects\Factory AK Convolution Reverb Effects Ambisonics\Rooms\Intimate_Room_Ambisonics	Impulse response created by Pinguin ing.büro © 2010 Pinguin ing.büro.  All rights reserved. IR Pre-delay: 5ms  	340384
 
