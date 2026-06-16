@@ -1,6 +1,733 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{6EAF16B6-45BD-452D-978D-F9751CB48531}" SchemaVersion="133" RootDocumentID="{08F20BFB-F7C4-40F3-B852-C39F7D674E18}" ParentDocumentID="{D751A346-751C-439A-9397-A1FDB4F10230}">
 	<Containers>
-		<WorkUnit Name="Closet" ID="{6EAF16B6-45BD-452D-978D-F9751CB48531}" OwnerID="{D751A346-751C-439A-9397-A1FDB4F10230}" PersistMode="Nested"/>
+		<WorkUnit Name="Closet" ID="{6EAF16B6-45BD-452D-978D-F9751CB48531}" OwnerID="{D751A346-751C-439A-9397-A1FDB4F10230}" PersistMode="Nested">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="26"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
+			<ChildrenList>
+				<RandomSequenceContainer Name="Closet_Open" ID="{95862787-8C42-48C9-815F-2AB9B5F09841}" ShortID="343286891">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="4"/>
+						<Property Name="Lowpass" Type="int16">
+							<ValueList>
+								<Value>6</Value>
+							</ValueList>
+						</Property>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+						<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+						<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
+						<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0"/>
+						<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+						<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<RandomSequenceContainer Name="Closet_Open_1" ID="{E71A41AB-12FF-4744-87FF-7C2843430C28}" ShortID="593844705">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="4"/>
+								<Property Name="Lowpass" Type="int16">
+									<ValueList>
+										<Value>38</Value>
+									</ValueList>
+								</Property>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-2</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="SkydeLåger-002" ID="{7BF6892A-D8D7-408A-B5EB-090ED57AE43B}" ShortID="871449039">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SkydeLåger-002" ID="{3AC6B449-20FA-4873-AFBB-6F641665D85E}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.10446"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.15665"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.02497"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>EksamensprojektWwise\Originals\SFX\SkydeLåger-002.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="883803744"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SkydeLåger-002" ID="{3AC6B449-20FA-4873-AFBB-6F641665D85E}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SkydeLåger-004" ID="{3933D4AA-D190-40C4-8320-437353947956}" ShortID="927211024">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SkydeLåger-004" ID="{2DEB85B7-FF59-4089-80DF-D4CCF979B155}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.1835"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.15864"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.17729"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>EksamensprojektWwise\Originals\SFX\SkydeLåger-004.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="884114505"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SkydeLåger-004" ID="{2DEB85B7-FF59-4089-80DF-D4CCF979B155}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SkydeLåger-006" ID="{80A3DCB2-F751-43C5-BB32-3F6287092432}" ShortID="350501955">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SkydeLåger-006" ID="{6824EFC9-F9DB-40A4-B051-A91A5701A48C}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.09547"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.20017"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.12011"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>EksamensprojektWwise\Originals\SFX\SkydeLåger-006.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="158777578"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SkydeLåger-006" ID="{6824EFC9-F9DB-40A4-B051-A91A5701A48C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SkydeLåger-007" ID="{7192341A-247A-4001-A04C-FE5417D444C0}" ShortID="12753147">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SkydeLåger-007" ID="{138408A1-8E9D-4F2D-8AAD-C75DB81C6A66}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.22789"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.20018"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>EksamensprojektWwise\Originals\SFX\SkydeLåger-007.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="176195844"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SkydeLåger-007" ID="{138408A1-8E9D-4F2D-8AAD-C75DB81C6A66}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SkydeLåger-008" ID="{07259E65-0521-4A4F-B93D-7F4921C3E174}" ShortID="167863946">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SkydeLåger-008" ID="{A50FEDA1-B00D-459B-9C8A-1856BB850040}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.17381"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.2623"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>EksamensprojektWwise\Originals\SFX\SkydeLåger-008.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="511347462"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SkydeLåger-008" ID="{A50FEDA1-B00D-459B-9C8A-1856BB850040}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SkydeLåger-010" ID="{6F1E91B8-421F-41E2-8AD7-153883E9B9F9}" ShortID="656072878">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SkydeLåger-010" ID="{30073E97-B9D6-44BD-A543-8361DFD56982}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.07485"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.1477"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.13152"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>EksamensprojektWwise\Originals\SFX\SkydeLåger-010.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="603746285"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SkydeLåger-010" ID="{30073E97-B9D6-44BD-A543-8361DFD56982}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SkydeLåger-012" ID="{8495D15D-0FEC-482B-91E7-23861B3BA3E2}" ShortID="285963070">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SkydeLåger-012" ID="{97694340-2112-498A-801D-3720C7D84D1B}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0707"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.17885"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.16222"/>
+												<Property Name="TrimEnd" Type="Real64" Value="1.53047"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>EksamensprojektWwise\Originals\SFX\SkydeLåger-012.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="620205234"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SkydeLåger-012" ID="{97694340-2112-498A-801D-3720C7D84D1B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SkydeLåger-013" ID="{63D7C18C-C775-4DCD-B373-3C69A1F86CFA}" ShortID="982943428">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SkydeLåger-013" ID="{0D11B8FE-2214-4BEC-AF0B-F97A69EEDA50}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.23077"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.37651"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.05466"/>
+												<Property Name="TrimEnd" Type="Real64" Value="1.35422"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>EksamensprojektWwise\Originals\SFX\SkydeLåger-013.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="859082375"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SkydeLåger-013" ID="{0D11B8FE-2214-4BEC-AF0B-F97A69EEDA50}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SkydeLåger-014" ID="{3188E9F2-6B99-48A0-BBC8-436EE1AC97EE}" ShortID="605126623">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SkydeLåger-014" ID="{08257EDF-738B-45A1-9565-0844B1F8214C}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.1343"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.3792"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.50165"/>
+												<Property Name="TrimEnd" Type="Real64" Value="1.75768"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>EksamensprojektWwise\Originals\SFX\SkydeLåger-014.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="573098764"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SkydeLåger-014" ID="{08257EDF-738B-45A1-9565-0844B1F8214C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SkydeLåger-015" ID="{584FC948-80A1-469C-A4F6-BC38A4151F1D}" ShortID="707087124">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SkydeLåger-015" ID="{048BF63E-D8A9-4852-9A9C-EDE0AD13BEEB}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.22269"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.32794"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.32386"/>
+												<Property Name="TrimEnd" Type="Real64" Value="1.62345"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>EksamensprojektWwise\Originals\SFX\SkydeLåger-015.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="923797572"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SkydeLåger-015" ID="{048BF63E-D8A9-4852-9A9C-EDE0AD13BEEB}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Closet_Open_2" ID="{AD4B872A-7946-4152-829A-86065FFC6205}" ShortID="365996418">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Wood_Knirken-001" ID="{5D919E07-2CCE-443F-AB46-35E4B14E7435}" ShortID="401780274">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Wood_Knirken-001" ID="{8CD6EEB6-D906-4D93-9DE1-9946BA09D11E}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.17494"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.20906"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.10677"/>
+												<Property Name="TrimEnd" Type="Real64" Value="1.07261"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>EksamensprojektWwise\Originals\SFX\Wood_Knirken-001.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="293685092"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Wood_Knirken-001" ID="{8CD6EEB6-D906-4D93-9DE1-9946BA09D11E}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Wood_Knirken-003" ID="{6E861856-E537-4247-8AB6-D48368CBB311}" ShortID="837781043">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Wood_Knirken-003" ID="{95101763-B689-49D6-A695-9F36DD3E40EC}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.16705"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.24675"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>EksamensprojektWwise\Originals\SFX\Wood_Knirken-003.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="333663231"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Wood_Knirken-003" ID="{95101763-B689-49D6-A695-9F36DD3E40EC}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Wood_Knirken-004" ID="{0C07329C-C69E-4A97-8792-F0F80B901AC7}" ShortID="119458007">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Wood_Knirken-004" ID="{8157B2C9-89B4-4B27-A14F-2717E18E5A10}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.12051"/>
+												<Property Name="LoopBegin" Type="Real64" Value="0"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>EksamensprojektWwise\Originals\SFX\Wood_Knirken-004.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="717984090"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Wood_Knirken-004" ID="{8157B2C9-89B4-4B27-A14F-2717E18E5A10}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Wood_Knirken-005" ID="{8961CA81-3CB3-4AEA-9875-2E67ACADA4A6}" ShortID="253601273">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Wood_Knirken-005" ID="{39F1BE0F-6C99-4B1E-9226-CD03255C8A5C}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.18633"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.16586"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>EksamensprojektWwise\Originals\SFX\Wood_Knirken-005.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="798840555"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Wood_Knirken-005" ID="{39F1BE0F-6C99-4B1E-9226-CD03255C8A5C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+					</ChildrenList>
+					<ObjectLists>
+						<ObjectList Name="Playlist">
+							<PluginInnerObject Name="" ID="{A60B31AE-4F6D-4847-9178-F02EA9C245F6}" PluginName="PlaylistSlot" CompanyID="0" PluginID="86">
+								<ReferenceList>
+									<Reference Name="PlaylistObject">
+										<ObjectRef Name="Closet_Open_1" ID="{E71A41AB-12FF-4744-87FF-7C2843430C28}" WorkUnitID="{6EAF16B6-45BD-452D-978D-F9751CB48531}"/>
+									</Reference>
+								</ReferenceList>
+							</PluginInnerObject>
+							<PluginInnerObject Name="" ID="{42755100-9848-4463-AEE3-6401A8E11CC6}" PluginName="PlaylistSlot" CompanyID="0" PluginID="86">
+								<ReferenceList>
+									<Reference Name="PlaylistObject">
+										<ObjectRef Name="Closet_Open_2" ID="{AD4B872A-7946-4152-829A-86065FFC6205}" WorkUnitID="{6EAF16B6-45BD-452D-978D-F9751CB48531}"/>
+									</Reference>
+								</ReferenceList>
+							</PluginInnerObject>
+						</ObjectList>
+					</ObjectLists>
+				</RandomSequenceContainer>
+				<RandomSequenceContainer Name="Closet_Close" ID="{1BB8253B-6EDB-4644-8759-F21AEB4647A5}" ShortID="813130819">
+					<PropertyList>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{46C2BE0C-C967-4A9B-A4CA-3671C4EA48CC}"/>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+						<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
+						<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0"/>
+						<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+						<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<RandomSequenceContainer Name="Closet_Close_1" ID="{5D410C29-A457-447A-AF3F-8EB9444C8801}" ShortID="841081921">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{7197A203-272D-4187-876B-13F67B030D66}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="200"/>
+													<Property Name="Min" Type="Real64" Value="-100"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{87D744A8-B156-4295-8739-D98487C97093}"/>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="SkydeLåger-003" ID="{01295E4B-7FFD-4041-BC7D-5CADCA1EA6FB}" ShortID="963470199">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SkydeLåger-003" ID="{B29C78D0-B610-45C5-B298-7AAA0AE69EE2}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0743"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.13764"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.13759"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>EksamensprojektWwise\Originals\SFX\SkydeLåger-003.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="25147514"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SkydeLåger-003" ID="{B29C78D0-B610-45C5-B298-7AAA0AE69EE2}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SkydeLåger-001" ID="{7F76CF28-7B42-42E7-82FB-8E345013F514}" ShortID="887416959">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SkydeLåger-001" ID="{3D081AD2-6290-4931-98BF-3BCE9850DB26}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0505"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.14314"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.17121"/>
+												<Property Name="TrimEnd" Type="Real64" Value="1.38656"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>EksamensprojektWwise\Originals\SFX\SkydeLåger-001.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="93577101"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SkydeLåger-001" ID="{3D081AD2-6290-4931-98BF-3BCE9850DB26}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Closet_Close_2" ID="{6E0344E2-C368-44FC-AD74-0E46B04DE637}" ShortID="850686192">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{0FFF6C3C-275B-421B-8720-F368914310D2}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="100"/>
+													<Property Name="Min" Type="Real64" Value="-100"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Wood_Knirken-006" ID="{B5214A15-80F3-485B-987A-D6E26F392F53}" ShortID="63246851">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Wood_Knirken-006" ID="{A6A0E15C-8BE0-4278-9F0D-5B6A353D6871}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.22747"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.24667"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="1.09253"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>EksamensprojektWwise\Originals\SFX\Wood_Knirken-006.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="701340615"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Wood_Knirken-006" ID="{A6A0E15C-8BE0-4278-9F0D-5B6A353D6871}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Wood_Knirken-007" ID="{7FDE643B-9C7D-4787-B8F3-672A42F1C29C}" ShortID="895634324">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Wood_Knirken-007" ID="{E51EC64E-E916-402D-B799-2CB3885F8D13}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.17876"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.20766"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="1.03292"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>EksamensprojektWwise\Originals\SFX\Wood_Knirken-007.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="941050492"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Wood_Knirken-007" ID="{E51EC64E-E916-402D-B799-2CB3885F8D13}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Wood_Knirken-008" ID="{CD738146-B02E-41AC-AA1A-0B453F683C91}" ShortID="121291472">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Wood_Knirken-008" ID="{E10599CC-315F-44CA-9F1C-D215FEFED7E5}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.17662"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.29525"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="1.00157"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>EksamensprojektWwise\Originals\SFX\Wood_Knirken-008.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="422932171"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Wood_Knirken-008" ID="{E10599CC-315F-44CA-9F1C-D215FEFED7E5}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+					</ChildrenList>
+					<ObjectLists>
+						<ObjectList Name="Playlist">
+							<PluginInnerObject Name="" ID="{52D8D169-2833-4825-BD1C-7B2E2CFB997B}" PluginName="PlaylistSlot" CompanyID="0" PluginID="86">
+								<ReferenceList>
+									<Reference Name="PlaylistObject">
+										<ObjectRef Name="Closet_Close_1" ID="{5D410C29-A457-447A-AF3F-8EB9444C8801}" WorkUnitID="{6EAF16B6-45BD-452D-978D-F9751CB48531}"/>
+									</Reference>
+								</ReferenceList>
+							</PluginInnerObject>
+							<PluginInnerObject Name="" ID="{B2626A3F-799D-4CA8-8FA1-929B30FEDDD6}" PluginName="PlaylistSlot" CompanyID="0" PluginID="86">
+								<ReferenceList>
+									<Reference Name="PlaylistObject">
+										<ObjectRef Name="Closet_Close_2" ID="{6E0344E2-C368-44FC-AD74-0E46B04DE637}" WorkUnitID="{6EAF16B6-45BD-452D-978D-F9751CB48531}"/>
+									</Reference>
+								</ReferenceList>
+							</PluginInnerObject>
+						</ObjectList>
+					</ObjectLists>
+				</RandomSequenceContainer>
+			</ChildrenList>
+		</WorkUnit>
 	</Containers>
 </WwiseDocument>

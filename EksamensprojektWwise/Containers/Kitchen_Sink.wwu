@@ -2,12 +2,29 @@
 <WwiseDocument Type="WorkUnit" ID="{9EACD1AD-FFB9-402E-A191-1BEE50C3B9D8}" SchemaVersion="133" RootDocumentID="{08F20BFB-F7C4-40F3-B852-C39F7D674E18}" ParentDocumentID="{D751A346-751C-439A-9397-A1FDB4F10230}">
 	<Containers>
 		<WorkUnit Name="Kitchen_Sink" ID="{9EACD1AD-FFB9-402E-A191-1BEE50C3B9D8}" OwnerID="{D751A346-751C-439A-9397-A1FDB4F10230}" PersistMode="Nested">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="4"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
 			<ChildrenList>
 				<RandomSequenceContainer Name="Kitchen_Sink_Water_Tapping" ID="{E4F7E484-23BF-4C3B-88A2-1EF5C562C49C}" ShortID="607707048">
 					<PropertyList>
+						<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 						<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
 						<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
-						<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0"/>
+						<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{56AD8724-7555-4D88-9C91-29629B14C9BB}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="0.2"/>
+											<Property Name="Min" Type="Real64" Value="-0.5"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
 						<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 						<Property Name="RandomOrSequence" Type="int16" Value="0"/>
 					</PropertyList>
@@ -22,7 +39,11 @@
 					<ChildrenList>
 						<RandomSequenceContainer Name="Metal_Impact" ID="{0395B3A6-10C0-4F61-AD4B-16EE4E547707}" ShortID="750685825">
 							<PropertyList>
+								<Property Name="Color" Type="int16" Value="4"/>
 								<Property Name="InitialDelay" Type="Real64">
+									<ValueList>
+										<Value>0.05</Value>
+									</ValueList>
 									<ModifierList>
 										<ModifierInfo>
 											<Modifier Name="" ID="{9286CEE2-254E-46FE-BE2E-EB3A1FCB3A0B}">
@@ -32,6 +53,30 @@
 											</Modifier>
 										</ModifierInfo>
 									</ModifierList>
+								</Property>
+								<Property Name="MakeUpGain" Type="Real64">
+									<ValueList>
+										<Value>-4</Value>
+									</ValueList>
+								</Property>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{ADCB588E-DCE8-486C-A928-7F7157F41E81}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="100"/>
+													<Property Name="Min" Type="Real64" Value="-100"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-13</Value>
+									</ValueList>
 								</Property>
 							</PropertyList>
 							<ReferenceList>
@@ -54,6 +99,12 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="Water_Metal_Impact_1" ID="{88BA39F2-AC8F-49A6-B616-07EB43C469CA}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.02554"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.10457"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.03165"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>EksamensprojektWwise\Originals\SFX\Water_Metal_Impact_1.wav</AudioFile>
 											<MediaIDList>
@@ -76,6 +127,12 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="Water_Metal_Impact_2" ID="{08B7F7CB-A8DD-43B1-B872-F0D3EA14C2D3}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.01277"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.06389"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.04321"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>EksamensprojektWwise\Originals\SFX\Water_Metal_Impact_2.wav</AudioFile>
 											<MediaIDList>
@@ -98,6 +155,11 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="Water_Metal_Impact_3" ID="{441F9887-7249-4A95-8AC6-B466482A44D4}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.03084"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.03999"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>EksamensprojektWwise\Originals\SFX\Water_Metal_Impact_3.wav</AudioFile>
 											<MediaIDList>
@@ -120,6 +182,11 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="Water_Metal_Impact_4" ID="{243CB296-A63C-4C04-9F8A-02A28D79366F}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.02347"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.044"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>EksamensprojektWwise\Originals\SFX\Water_Metal_Impact_4.wav</AudioFile>
 											<MediaIDList>
@@ -142,6 +209,11 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="Water_Metal_Impact_5" ID="{93776BE8-4A30-4FE2-88F0-0C23FA82506A}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.02469"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.06078"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>EksamensprojektWwise\Originals\SFX\Water_Metal_Impact_5.wav</AudioFile>
 											<MediaIDList>
@@ -164,6 +236,11 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="Water_Metal_Impact_6" ID="{B34A3801-8F26-4A09-A7AB-D4AC022EDB04}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.01529"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.04079"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>EksamensprojektWwise\Originals\SFX\Water_Metal_Impact_6.wav</AudioFile>
 											<MediaIDList>
@@ -186,6 +263,11 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="Water_Metal_Impact_7" ID="{F2C7FD05-5D4D-4F3F-BC7D-A80D5D75C2D9}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.01517"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.04399"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>EksamensprojektWwise\Originals\SFX\Water_Metal_Impact_7.wav</AudioFile>
 											<MediaIDList>
@@ -208,6 +290,11 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="Water_Metal_Impact_8" ID="{85213756-7131-4A06-806C-82565A599710}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.02279"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.06236"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>EksamensprojektWwise\Originals\SFX\Water_Metal_Impact_8.wav</AudioFile>
 											<MediaIDList>
@@ -230,6 +317,11 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="Water_Metal_Impact_9" ID="{9A7EE4BC-219F-4335-B836-A4ABCD9988D1}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.03314"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.05679"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>EksamensprojektWwise\Originals\SFX\Water_Metal_Impact_9.wav</AudioFile>
 											<MediaIDList>
@@ -252,6 +344,11 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="Water_Metal_Impact_10" ID="{4A212B5B-F43C-4D82-9E5F-DE9A9B30525F}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.07676"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.35023"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>EksamensprojektWwise\Originals\SFX\Water_Metal_Impact_10.wav</AudioFile>
 											<MediaIDList>
@@ -267,6 +364,7 @@
 						</RandomSequenceContainer>
 						<RandomSequenceContainer Name="Water_Tap" ID="{3A76B270-EBC9-4CF9-B7CB-3DCB32CA57ED}" ShortID="126051432">
 							<PropertyList>
+								<Property Name="Color" Type="int16" Value="4"/>
 								<Property Name="InitialDelay" Type="Real64">
 									<ModifierList>
 										<ModifierInfo>
@@ -279,23 +377,38 @@
 									</ModifierList>
 								</Property>
 								<Property Name="Lowpass" Type="int16">
+									<ValueList>
+										<Value>14</Value>
+									</ValueList>
 									<ModifierList>
 										<ModifierInfo>
 											<Modifier Name="" ID="{9D08DB2F-DCA4-48E1-A21D-0930FB49FEFE}"/>
 										</ModifierInfo>
 									</ModifierList>
 								</Property>
+								<Property Name="MakeUpGain" Type="Real64">
+									<ValueList>
+										<Value>-2</Value>
+									</ValueList>
+								</Property>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
 								<Property Name="Pitch" Type="int32">
 									<ModifierList>
 										<ModifierInfo>
 											<Modifier Name="" ID="{2A8B329C-F7EE-4858-9C1E-494247EC1C6B}">
 												<PropertyList>
 													<Property Name="Enabled" Type="bool" Value="True"/>
-													<Property Name="Max" Type="Real64" Value="2"/>
+													<Property Name="Max" Type="Real64" Value="150"/>
+													<Property Name="Min" Type="Real64" Value="-100"/>
 												</PropertyList>
 											</Modifier>
 										</ModifierInfo>
 									</ModifierList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>8</Value>
+									</ValueList>
 								</Property>
 							</PropertyList>
 							<ReferenceList>
@@ -308,6 +421,13 @@
 							</ReferenceList>
 							<ChildrenList>
 								<Sound Name="Water_Tap_Singes_2" ID="{73E74B3D-A808-4CD6-99C1-A23CA7F53787}" ShortID="477646715">
+									<PropertyList>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>39</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
@@ -318,6 +438,13 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="Water_Tap_Singes_2" ID="{819289D7-4F83-4DFA-A7AA-A8A0DEBD96F6}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.01924"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.03739"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.17406"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.26048"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>EksamensprojektWwise\Originals\SFX\Water_Tap_Singes_2.wav</AudioFile>
 											<MediaIDList>
@@ -330,6 +457,13 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="Water_Tap_Singles_1" ID="{E55D82ED-B2D2-4EC8-8B6D-C0AE48CD7CD8}" ShortID="84081188">
+									<PropertyList>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>42</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
@@ -340,6 +474,13 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="Water_Tap_Singles_1" ID="{E71EDC15-BB8E-4652-BD05-1E7A0224E80C}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.02266"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.03705"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.16158"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.24178"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>EksamensprojektWwise\Originals\SFX\Water_Tap_Singles_1.wav</AudioFile>
 											<MediaIDList>
@@ -352,6 +493,13 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="Water_Tap_Singles_3" ID="{FBE64465-AAB3-4873-8D86-86FF999AB751}" ShortID="1041106727">
+									<PropertyList>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>37</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
@@ -362,6 +510,13 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="Water_Tap_Singles_3" ID="{B99FFBDA-76F7-427C-9950-178DA1A186C4}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.01489"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.01677"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.19845"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.27207"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>EksamensprojektWwise\Originals\SFX\Water_Tap_Singles_3.wav</AudioFile>
 											<MediaIDList>
@@ -374,6 +529,13 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="Water_Tap_Singles_4" ID="{D449063C-05F4-49A5-8634-388E2CCF2AD1}" ShortID="470618777">
+									<PropertyList>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>44</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
@@ -384,6 +546,13 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="Water_Tap_Singles_4" ID="{7EB06114-E171-492A-BD68-2128AE6478D8}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.01234"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.02059"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.21499"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.30452"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>EksamensprojektWwise\Originals\SFX\Water_Tap_Singles_4.wav</AudioFile>
 											<MediaIDList>
@@ -396,6 +565,13 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="Water_Tap_Singles_5" ID="{07E23A9E-C6DC-4C5F-B6AD-F65BACEDBF96}" ShortID="459165680">
+									<PropertyList>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>45</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
@@ -406,6 +582,13 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="Water_Tap_Singles_5" ID="{10D6C180-5F12-4CD2-91A3-1875B593C663}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.01046"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.02532"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.20437"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.29181"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>EksamensprojektWwise\Originals\SFX\Water_Tap_Singles_5.wav</AudioFile>
 											<MediaIDList>
@@ -418,6 +601,13 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="Water_Tap_Singles_6" ID="{FDE49A5D-710A-47C4-9F81-EB1A4AAD7432}" ShortID="1049230589">
+									<PropertyList>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>42</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
@@ -428,6 +618,13 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="Water_Tap_Singles_6" ID="{D7164E8E-AC36-4129-B677-31A3F9738126}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0136"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.02552"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.18213"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.2724"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>EksamensprojektWwise\Originals\SFX\Water_Tap_Singles_6.wav</AudioFile>
 											<MediaIDList>
@@ -440,6 +637,13 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="Water_Tap_Singles_7" ID="{1E910A9B-BEA0-4ED0-A34C-F4C40E9FA9D1}" ShortID="384163171">
+									<PropertyList>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>43</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
@@ -450,6 +654,13 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="Water_Tap_Singles_7" ID="{E38B7F55-3461-4565-9B91-D4FDC1163F7C}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.01769"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.02501"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.05795"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.22318"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>EksamensprojektWwise\Originals\SFX\Water_Tap_Singles_7.wav</AudioFile>
 											<MediaIDList>
@@ -462,6 +673,13 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="Water_Tap_Singles_8" ID="{F299BF43-FEED-4B6D-AF7E-643305A240C4}" ShortID="77612771">
+									<PropertyList>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>48</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
@@ -472,6 +690,13 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="Water_Tap_Singles_8" ID="{4721F722-26BF-4CF3-94BC-C9AA0DD84605}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.01354"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.029"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.23179"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.32823"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>EksamensprojektWwise\Originals\SFX\Water_Tap_Singles_8.wav</AudioFile>
 											<MediaIDList>
@@ -484,6 +709,13 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="Water_Tap_Singles_9" ID="{F5231B4D-6465-49F2-A43C-5D20EC590868}" ShortID="1010906749">
+									<PropertyList>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>40</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
@@ -494,6 +726,13 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="Water_Tap_Singles_9" ID="{0C79AD80-805F-498D-BDB5-AC49D097CFFD}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.00713"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.01268"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.18796"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.28237"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>EksamensprojektWwise\Originals\SFX\Water_Tap_Singles_9.wav</AudioFile>
 											<MediaIDList>
@@ -506,6 +745,13 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="Water_Tap_Singles_10" ID="{65081817-5CD3-477C-BF22-80CBB025ABFC}" ShortID="225752598">
+									<PropertyList>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>42</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
@@ -516,6 +762,13 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="Water_Tap_Singles_10" ID="{D621C106-FA60-488C-9595-252AC3229707}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.01151"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.01867"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.19811"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.26479"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>EksamensprojektWwise\Originals\SFX\Water_Tap_Singles_10.wav</AudioFile>
 											<MediaIDList>
@@ -528,6 +781,13 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="Water_Tap_Singles_11" ID="{D1F80BD9-B6C8-4B28-A065-C8E7452EF7BD}" ShortID="588416171">
+									<PropertyList>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>48</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
@@ -538,6 +798,13 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="Water_Tap_Singles_11" ID="{F0DA0ED2-D82C-4C9F-8D56-4A1428673B1C}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.01034"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.01402"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.21508"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.28791"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>EksamensprojektWwise\Originals\SFX\Water_Tap_Singles_11.wav</AudioFile>
 											<MediaIDList>
@@ -550,6 +817,13 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="Water_Tap_Singles_12" ID="{6D27E28A-1CF3-4C8A-AC55-FF1707A8AD12}" ShortID="980424879">
+									<PropertyList>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>42</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
@@ -560,6 +834,13 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="Water_Tap_Singles_12" ID="{96B8AFD7-A913-4DE3-A4D4-B1371650EA81}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.01156"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.03107"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.19885"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.26536"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>EksamensprojektWwise\Originals\SFX\Water_Tap_Singles_12.wav</AudioFile>
 											<MediaIDList>
@@ -572,6 +853,13 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="Water_Tap_Singles_13" ID="{A792E8FE-C12F-4367-8B07-928630F94781}" ShortID="592623000">
+									<PropertyList>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>44</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
@@ -582,6 +870,13 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="Water_Tap_Singles_13" ID="{D57A150A-E6D8-42C1-9B5E-9BD73E0E627F}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0126"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.02328"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.20739"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.30336"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>EksamensprojektWwise\Originals\SFX\Water_Tap_Singles_13.wav</AudioFile>
 											<MediaIDList>
@@ -594,6 +889,13 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="Water_Tap_Singles_14" ID="{DFEB2FC3-A957-4650-854D-8459F4AF217C}" ShortID="965637018">
+									<PropertyList>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>43</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
@@ -604,6 +906,13 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="Water_Tap_Singles_14" ID="{880F195A-2ECA-4C52-B0DE-D9A0C2DC35D9}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.01752"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.03029"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.18637"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.30333"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>EksamensprojektWwise\Originals\SFX\Water_Tap_Singles_14.wav</AudioFile>
 											<MediaIDList>
@@ -616,6 +925,13 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="Water_Tap_Singles_15" ID="{47401194-46FD-4FC8-90EA-93A6525FD3F1}" ShortID="663936410">
+									<PropertyList>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>40</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
@@ -626,6 +942,13 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="Water_Tap_Singles_15" ID="{9A19A049-D22E-4B25-A4E7-9D629CE46A8A}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.01529"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.0221"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.19697"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.27757"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>EksamensprojektWwise\Originals\SFX\Water_Tap_Singles_15.wav</AudioFile>
 											<MediaIDList>
@@ -638,6 +961,13 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="Water_Tap_Multiples_1" ID="{39947AEA-B11D-4098-8FC2-7E877B37F57C}" ShortID="911693222">
+									<PropertyList>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>47</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
@@ -648,6 +978,13 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="Water_Tap_Multiples_1" ID="{4178BCFF-E168-45C4-AF8E-01CBDCDAB1B5}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.05543"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.15652"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.27717"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.49249"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>EksamensprojektWwise\Originals\SFX\Water_Tap_Multiples_1.wav</AudioFile>
 											<MediaIDList>
@@ -660,6 +997,13 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="Water_Tap_Multiples_2" ID="{E1359611-2617-4DA6-BDB7-3F12880DFD16}" ShortID="640558476">
+									<PropertyList>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>41</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
@@ -670,6 +1014,13 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="Water_Tap_Multiples_2" ID="{6BB7965C-5D13-4DA3-A375-EA4849AA86F5}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.03911"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.09416"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.1782"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.2824"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>EksamensprojektWwise\Originals\SFX\Water_Tap_Multiples_2.wav</AudioFile>
 											<MediaIDList>
@@ -682,6 +1033,13 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="Water_Tap_Multiples_3" ID="{FDEB43D7-7675-4C11-931E-A88CBC620EDB}" ShortID="183099638">
+									<PropertyList>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>47</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
@@ -692,6 +1050,13 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="Water_Tap_Multiples_3" ID="{4D1B51DB-2E92-49CD-9584-3EF0E05B789D}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.03259"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.11522"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.21522"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.36315"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>EksamensprojektWwise\Originals\SFX\Water_Tap_Multiples_3.wav</AudioFile>
 											<MediaIDList>
@@ -704,6 +1069,13 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="Water_Tap_Multiples_4" ID="{C351E78A-E268-4377-B38F-B07BE2983419}" ShortID="49038664">
+									<PropertyList>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>42</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
@@ -714,6 +1086,13 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="Water_Tap_Multiples_4" ID="{B32B3B23-8FD3-4BDD-B231-0C7BE8472F42}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.05105"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.0589"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.19499"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.30487"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>EksamensprojektWwise\Originals\SFX\Water_Tap_Multiples_4.wav</AudioFile>
 											<MediaIDList>
@@ -726,6 +1105,13 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="Water_Tap_Multiples_5" ID="{BD3A70D7-9D2B-48FD-A803-705442044B4B}" ShortID="1046070838">
+									<PropertyList>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>43</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
@@ -736,6 +1122,13 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="Water_Tap_Multiples_5" ID="{A1229231-DD9A-49B8-92D8-68D90938856B}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.05343"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.12354"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.16363"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.37057"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>EksamensprojektWwise\Originals\SFX\Water_Tap_Multiples_5.wav</AudioFile>
 											<MediaIDList>
@@ -748,6 +1141,13 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="Water_Tap_Multiples_6" ID="{C1123A20-8D20-4DAA-84B2-CB69B57E0FF3}" ShortID="809065430">
+									<PropertyList>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>43</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
@@ -758,6 +1158,13 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="Water_Tap_Multiples_6" ID="{323C7D3B-59C5-488E-849D-C0778684D4AC}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.03375"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.04008"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.70653"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.85202"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>EksamensprojektWwise\Originals\SFX\Water_Tap_Multiples_6.wav</AudioFile>
 											<MediaIDList>
@@ -770,6 +1177,13 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="Water_Tap_Multiples_7" ID="{98E7C483-0B5F-4FC3-8B83-3D0930196EC5}" ShortID="387247546">
+									<PropertyList>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>44</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
@@ -780,6 +1194,13 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="Water_Tap_Multiples_7" ID="{4E63D0F6-146B-47F4-8B8E-DA3C4706E191}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.03922"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.05231"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.50983"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.74951"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>EksamensprojektWwise\Originals\SFX\Water_Tap_Multiples_7.wav</AudioFile>
 											<MediaIDList>
@@ -792,6 +1213,13 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="Water_Tap_Multiples_8" ID="{0FA7EDDF-46CF-44E8-BCF3-623A3DEAEC79}" ShortID="170777360">
+									<PropertyList>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>40</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
@@ -802,6 +1230,13 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="Water_Tap_Multiples_8" ID="{0A73D1BA-B553-472F-956D-0D228BB407B4}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0296"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.04035"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.19374"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.29598"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>EksamensprojektWwise\Originals\SFX\Water_Tap_Multiples_8.wav</AudioFile>
 											<MediaIDList>
@@ -814,6 +1249,13 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="Water_Tap_Multiples_9" ID="{80BD9E07-0E14-4B6F-AB8C-16E541A9B3BD}" ShortID="457246249">
+									<PropertyList>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>33</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
@@ -824,6 +1266,13 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="Water_Tap_Multiples_9" ID="{E0461102-31D7-41C0-BE2B-F5633B61E0BE}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.05235"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.07563"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="1.62283"/>
+												<Property Name="TrimEnd" Type="Real64" Value="1.83796"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>EksamensprojektWwise\Originals\SFX\Water_Tap_Multiples_9.wav</AudioFile>
 											<MediaIDList>
@@ -836,6 +1285,13 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="Water_Tap_Multiples_10" ID="{BB56DB0D-651A-4C86-9668-BB9235BE87D0}" ShortID="339136934">
+									<PropertyList>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>44</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
@@ -846,6 +1302,13 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="Water_Tap_Multiples_10" ID="{E77BC669-421B-4D15-AAD1-1C83342C902B}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.02976"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.04464"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.17484"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.28091"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>EksamensprojektWwise\Originals\SFX\Water_Tap_Multiples_10.wav</AudioFile>
 											<MediaIDList>
@@ -858,6 +1321,13 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="Water_Tap_Multiples_11" ID="{E9F168F5-F6CA-4E39-A4EF-28B09D546B7B}" ShortID="671914289">
+									<PropertyList>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>41</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
@@ -868,6 +1338,13 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="Water_Tap_Multiples_11" ID="{8F7D4991-CD7C-4536-9E2F-7F07687E6265}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.04045"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.03033"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.94044"/>
+												<Property Name="TrimEnd" Type="Real64" Value="1.07196"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>EksamensprojektWwise\Originals\SFX\Water_Tap_Multiples_11.wav</AudioFile>
 											<MediaIDList>
@@ -880,6 +1357,13 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="Water_Tap_Multiples_12" ID="{B2476D68-7740-457E-BD76-722F3901AD46}" ShortID="495819704">
+									<PropertyList>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>38</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
@@ -890,6 +1374,13 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="Water_Tap_Multiples_12" ID="{16580104-4405-4D51-AF7D-B9FA7414845A}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.01326"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.03448"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.35004"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.45353"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>EksamensprojektWwise\Originals\SFX\Water_Tap_Multiples_12.wav</AudioFile>
 											<MediaIDList>
@@ -902,6 +1393,13 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="Water_Tap_Multiples_13" ID="{F7623920-2600-4317-B547-8309435B58BC}" ShortID="1000618513">
+									<PropertyList>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>28</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
@@ -912,6 +1410,13 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="Water_Tap_Multiples_13" ID="{2201310A-1FAD-423C-9609-26B84F1042DE}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0263"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.03006"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.48648"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.57664"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>EksamensprojektWwise\Originals\SFX\Water_Tap_Multiples_13.wav</AudioFile>
 											<MediaIDList>
@@ -924,6 +1429,13 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="Water_Tap_Multiples_14" ID="{67AB1DAC-13FA-4B3D-A2E4-3AF69625E817}" ShortID="213013166">
+									<PropertyList>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>34</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
@@ -934,6 +1446,13 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="Water_Tap_Multiples_14" ID="{A09F8536-2CF9-4438-A393-B6C4E5E933DB}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.03544"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.05453"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.66541"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.80452"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>EksamensprojektWwise\Originals\SFX\Water_Tap_Multiples_14.wav</AudioFile>
 											<MediaIDList>
@@ -946,6 +1465,13 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="Water_Tap_Multiples_15" ID="{82E3D4A1-1EFB-440B-84D6-7D8E7E2C7B0C}" ShortID="154007405">
+									<PropertyList>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>37</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
@@ -956,6 +1482,13 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="Water_Tap_Multiples_15" ID="{C9E9B4B4-3F1E-4657-9A7E-6481FD3F2C2A}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.01581"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.05535"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.22531"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.34379"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>EksamensprojektWwise\Originals\SFX\Water_Tap_Multiples_15.wav</AudioFile>
 											<MediaIDList>

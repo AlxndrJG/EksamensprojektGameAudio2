@@ -2,84 +2,15 @@
 <WwiseDocument Type="WorkUnit" ID="{6F7C04D4-30B2-43D6-8171-AF664137D730}" SchemaVersion="133" RootDocumentID="{08F20BFB-F7C4-40F3-B852-C39F7D674E18}" ParentDocumentID="{D751A346-751C-439A-9397-A1FDB4F10230}">
 	<Containers>
 		<WorkUnit Name="Clock" ID="{6F7C04D4-30B2-43D6-8171-AF664137D730}" OwnerID="{D751A346-751C-439A-9397-A1FDB4F10230}" PersistMode="Nested">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="4"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
 			<ChildrenList>
-				<Sound Name="Grandfather_Clock" ID="{B887E48F-CC63-48F9-8694-016264FB981C}" ShortID="704845257">
-					<PropertyList>
-						<Property Name="Inclusion" Type="bool">
-							<ValueList>
-								<Value>False</Value>
-							</ValueList>
-						</Property>
-						<Property Name="Soundly:ActiveChannels" Type="string" Value="[]"/>
-						<Property Name="Soundly:FileID" Type="string" Value="SND102394"/>
-						<Property Name="Soundly:FileName" Type="string" Value="/var/folders/zr/kps3qgzs5k75vxd6930jxhm00000gn/T/tmpnp200l6s/afcache/1426367345Ff4sxqvM_wkFwGSND102394sfy.sfy"/>
-						<Property Name="Soundly:HandleStartTime" Type="string" Value="0"/>
-						<Property Name="Soundly:HandleStopTime" Type="string" Value="47.75295833333333"/>
-						<Property Name="Soundly:LibraryID" Type="string" Value="1426367345Ff4sxqvM_wkFwG"/>
-						<Property Name="Soundly:LibraryLocation" Type="string" Value="Cloud"/>
-						<Property Name="Soundly:PlaybackSpeed" Type="string" Value="1.0"/>
-						<Property Name="Soundly:ProcessList" Type="string" Value="[]"/>
-						<Property Name="Soundly:RenderedFileBitRate" Type="string" Value="3"/>
-						<Property Name="Soundly:RenderedFilePath" Type="string" Value="/Users/alxndrjg/Documents/Soundly Audio/Clocks, Tick, Grandfather Clock, 1920, Pendulum Ticking SND102394 1.wav"/>
-						<Property Name="Soundly:RenderedFileSampleRate" Type="string" Value="48000"/>
-						<Property Name="Soundly:SelectionStartTime" Type="string" Value="0"/>
-						<Property Name="Soundly:SelectionStopTime" Type="string" Value="1"/>
-					</PropertyList>
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="Clocks, Tick, Grandfather Clock, 1920, Pendulum Ticking SND102394 1" ID="{4277EDBF-09A5-4BD1-BEDB-C6559211ACA5}">
-							<PropertyList>
-								<Property Name="Soundly:FileIDForAudioSource" Type="string" Value="SND102394"/>
-							</PropertyList>
-							<Language>SFX</Language>
-							<AudioFile>Soundly Audio\Clocks, Tick, Grandfather Clock, 1920, Pendulum Ticking SND102394 1.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="530748181"/>
-							</MediaIDList>
-						</AudioFileSource>
-					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="Clocks, Tick, Grandfather Clock, 1920, Pendulum Ticking SND102394 1" ID="{4277EDBF-09A5-4BD1-BEDB-C6559211ACA5}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
-				<Sound Name="Clocks, Chime, Grandfather Clock Tick, Dong SND124043" ID="{AF74BDEE-6CA6-4858-9B8C-ADD2D57FEBEC}" ShortID="48025375">
-					<PropertyList>
-						<Property Name="Inclusion" Type="bool">
-							<ValueList>
-								<Value>False</Value>
-							</ValueList>
-						</Property>
-					</PropertyList>
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="Clocks, Chime, Grandfather Clock Tick, Dong SND124043" ID="{E147B4D3-5923-4EA6-8DE5-1CF076417F7F}">
-							<Language>SFX</Language>
-							<AudioFile>EksamensprojektGameAudio2\EksamensprojektWwise\Originals\SFX\Clocks, Chime, Grandfather Clock Tick, Dong SND124043.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="894544207"/>
-							</MediaIDList>
-						</AudioFileSource>
-					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="Clocks, Chime, Grandfather Clock Tick, Dong SND124043" ID="{E147B4D3-5923-4EA6-8DE5-1CF076417F7F}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
 				<RandomSequenceContainer Name="Clock_Creak" ID="{7D5E9FFA-4A7F-4D3B-8178-8126D13B1249}" ShortID="961548015">
 					<PropertyList>
+						<Property Name="Color" Type="int16" Value="4"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
 						<Property Name="RandomOrSequence" Type="int16" Value="0"/>
 					</PropertyList>
 					<ReferenceList>
@@ -92,111 +23,30 @@
 					</ReferenceList>
 					<ChildrenList>
 						<RandomSequenceContainer Name="Clock_Creak" ID="{85971533-7645-4DA5-BA5E-F548DE45CD91}" ShortID="682536669">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<Sound Name="Clock_Creak_2" ID="{D182C1EB-6D32-47C7-98DD-E0014FAFF4ED}" ShortID="772681701">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="Clock_Creak_2" ID="{E2231530-828E-4B10-93AC-2A7937BA6FD3}">
-											<Language>SFX</Language>
-											<AudioFile>EksamensprojektWwise\Originals\SFX\Clock_Creak_2.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="209140223"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="Clock_Creak_2" ID="{E2231530-828E-4B10-93AC-2A7937BA6FD3}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="Clock_Creak_1" ID="{34BF16FC-24F0-4721-A0A4-8AA92FA15973}" ShortID="821179468">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="Clock_Creak_1" ID="{1A6B1ADF-23FC-4456-9BFB-B28039E10859}">
-											<Language>SFX</Language>
-											<AudioFile>EksamensprojektWwise\Originals\SFX\Clock_Creak_1.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="64084281"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="Clock_Creak_1" ID="{1A6B1ADF-23FC-4456-9BFB-B28039E10859}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="Clock_Creak_3" ID="{E0D89B26-238A-400B-9A57-A7EE5465707C}" ShortID="968080265">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="Clock_Creak_3" ID="{BD3E2E80-DF7D-4574-A72A-BD4D73D0D75A}">
-											<Language>SFX</Language>
-											<AudioFile>EksamensprojektWwise\Originals\SFX\Clock_Creak_3.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="546718180"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="Clock_Creak_3" ID="{BD3E2E80-DF7D-4574-A72A-BD4D73D0D75A}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-							</ChildrenList>
-						</RandomSequenceContainer>
-						<Sound Name="Clock_Chiming_1" ID="{4FFEF60D-6046-4011-ACFC-67467E104FD2}" ShortID="128317675">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="Clock_Chiming_1" ID="{994AF37F-8E9D-4C3F-96B5-7494904AB468}">
-									<Language>SFX</Language>
-									<AudioFile>EksamensprojektWwise\Originals\SFX\Clock_Chiming_1.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="883383851"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="Clock_Chiming_1" ID="{994AF37F-8E9D-4C3F-96B5-7494904AB468}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="Clock_Ticking_Loop_2" ID="{467BF1F8-1426-4822-B27D-E2586A9EB660}" ShortID="298752640">
 							<PropertyList>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>1</Value>
-									</ValueList>
+								<Property Name="Lowpass" Type="int16">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{69129162-9E75-4B0A-8C29-436C995F204E}">
+												<PropertyList>
+													<Property Name="Max" Type="Real64" Value="100"/>
+													<Property Name="Min" Type="Real64" Value="-100"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{1A88B7D1-8E9D-4423-8EC0-0AF954F6F651}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Min" Type="Real64" Value="-300"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
 								</Property>
 							</PropertyList>
 							<ReferenceList>
@@ -208,18 +58,491 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="Clock_Ticking_Loop_2" ID="{5DD51B71-8DD0-4981-9E1B-709D5E4491AA}">
-									<Language>SFX</Language>
-									<AudioFile>EksamensprojektWwise\Originals\SFX\Clock_Ticking_Loop_2.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="336224531"/>
-									</MediaIDList>
-								</AudioFileSource>
+								<Sound Name="Wood_Knirken-001" ID="{E5CE74AD-B5F5-45F4-A4C9-6B8D6C1AE2D5}" ShortID="656688831">
+									<PropertyList>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>40</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-1180</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Wood_Knirken-001" ID="{9C6CB5F8-AEEE-47A1-9734-611FC06A1AED}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.12032"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.04512"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="1.06028"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>EksamensprojektWwise\Originals\SFX\Wood_Knirken-001.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="780301543"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Wood_Knirken-001" ID="{9C6CB5F8-AEEE-47A1-9734-611FC06A1AED}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Wood_Knirken-002" ID="{7E31232A-6FAB-4236-BAFD-A5926E405DE7}" ShortID="988536127">
+									<PropertyList>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>55</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-800</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Wood_Knirken-002" ID="{70AAAB7A-EF76-49A2-A55E-989C027DF1A1}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.04918"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.08746"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.15849"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.78146"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>EksamensprojektWwise\Originals\SFX\Wood_Knirken-002.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="975536938"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Wood_Knirken-002" ID="{70AAAB7A-EF76-49A2-A55E-989C027DF1A1}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Wood_Knirken-003" ID="{8391E94C-2ACB-4901-BE86-1779C76811AB}" ShortID="1011890994">
+									<PropertyList>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>64</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-1270</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Wood_Knirken-003" ID="{1212F73B-2FA6-4406-9D46-545A9D3B0B42}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.18815"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.16464"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.68533"/>
+												<Property Name="TrimEnd" Type="Real64" Value="1.37727"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>EksamensprojektWwise\Originals\SFX\Wood_Knirken-003.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="801993291"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Wood_Knirken-003" ID="{1212F73B-2FA6-4406-9D46-545A9D3B0B42}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Wood_Knirken-004" ID="{19C04361-C432-4AB3-AA48-A1A43F08D44F}" ShortID="837309279">
+									<PropertyList>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>50</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-1130</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Wood_Knirken-004" ID="{D2A1E6D7-D9A8-436B-97FC-2A21BC13B5BE}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.07196"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.19253"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.94337"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>EksamensprojektWwise\Originals\SFX\Wood_Knirken-004.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="537528076"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Wood_Knirken-004" ID="{D2A1E6D7-D9A8-436B-97FC-2A21BC13B5BE}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Wood_Knirken-005" ID="{4D0DD38D-C161-4883-9DF5-251533F6336A}" ShortID="913158334">
+									<PropertyList>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>61</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-1200</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Wood_Knirken-005" ID="{A115006C-BC7D-4839-BD7A-DEBF06FEAD0B}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.1848"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.01908"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.08604"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.7741"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>EksamensprojektWwise\Originals\SFX\Wood_Knirken-005.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="244901316"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Wood_Knirken-005" ID="{A115006C-BC7D-4839-BD7A-DEBF06FEAD0B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Wood_Knirken-007" ID="{90119A2F-D0B2-4585-9D00-57DE98DA83F5}" ShortID="474461384">
+									<PropertyList>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>42</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-1670</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Wood_Knirken-007" ID="{5AF18367-92D9-415E-8635-B12BFBE6DC6B}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.09394"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.05298"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.20229"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.52011"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>EksamensprojektWwise\Originals\SFX\Wood_Knirken-007.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="602215491"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Wood_Knirken-007" ID="{5AF18367-92D9-415E-8635-B12BFBE6DC6B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Wood_Knirken-008" ID="{C64BAB9A-C5C6-4CDD-B331-6EF042E430B3}" ShortID="336102580">
+									<PropertyList>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>52</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-1280</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Wood_Knirken-008" ID="{0CA13A14-283B-4E32-8B27-681A60BA8550}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.23078"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.17006"/>
+												<Property Name="LoopBegin" Type="Real64" Value="0.8138"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.21557"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>EksamensprojektWwise\Originals\SFX\Wood_Knirken-008.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="476887035"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Wood_Knirken-008" ID="{0CA13A14-283B-4E32-8B27-681A60BA8550}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Wood_Knirken-009" ID="{97FD89D5-2FC4-4DB1-AF74-87EFD93FB675}" ShortID="212394897">
+									<PropertyList>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>41</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-1280</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Wood_Knirken-009" ID="{95607800-4500-4FB7-B624-B6D5091754C7}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.21866"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.24293"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.12957"/>
+												<Property Name="TrimEnd" Type="Real64" Value="1.59105"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>EksamensprojektWwise\Originals\SFX\Wood_Knirken-009.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="842055869"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Wood_Knirken-009" ID="{95607800-4500-4FB7-B624-B6D5091754C7}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Wood_Knirken-010" ID="{7E857143-E736-43D4-BDC6-771088367419}" ShortID="506872975">
+									<PropertyList>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>57</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-1480</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Wood_Knirken-010" ID="{4C695A17-A2E2-4CC0-8267-2EAB804331A5}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.082"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.16703"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.10021"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>EksamensprojektWwise\Originals\SFX\Wood_Knirken-010.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="442788584"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Wood_Knirken-010" ID="{4C695A17-A2E2-4CC0-8267-2EAB804331A5}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Wood_Knirken-011" ID="{9735736A-B310-472B-92E1-1000E8EEE358}" ShortID="97282408">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-1230</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Wood_Knirken-011" ID="{AD3D8629-6A33-464D-A6B6-E631794E6E18}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.06973"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.03237"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.27644"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.46827"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>EksamensprojektWwise\Originals\SFX\Wood_Knirken-011.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="480259463"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Wood_Knirken-011" ID="{AD3D8629-6A33-464D-A6B6-E631794E6E18}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Wood_Knirken-012" ID="{5C23AA54-46B9-4F05-A10D-7CB50DE9D76D}" ShortID="917217028">
+									<PropertyList>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>49</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-1400</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Wood_Knirken-012" ID="{B7DBDA7E-DC0B-4A93-99DC-567EAA951FA9}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.16107"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.14868"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.98291"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>EksamensprojektWwise\Originals\SFX\Wood_Knirken-012.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="727635394"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Wood_Knirken-012" ID="{B7DBDA7E-DC0B-4A93-99DC-567EAA951FA9}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Wood_Knirken-013" ID="{02BEA454-D20F-4C59-A648-4A89D3C72419}" ShortID="261215256">
+									<PropertyList>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>57</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-1300</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Wood_Knirken-013" ID="{A5BD46FD-E129-4A8D-89D2-0DBCAB197363}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.08152"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.01967"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.07307"/>
+												<Property Name="TrimEnd" Type="Real64" Value="1.13285"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>EksamensprojektWwise\Originals\SFX\Wood_Knirken-013.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1036064127"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Wood_Knirken-013" ID="{A5BD46FD-E129-4A8D-89D2-0DBCAB197363}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
 							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="Clock_Ticking_Loop_2" ID="{5DD51B71-8DD0-4981-9E1B-709D5E4491AA}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
+						</RandomSequenceContainer>
 					</ChildrenList>
 				</RandomSequenceContainer>
 				<PropertyContainer Name="TickTock" ID="{1420A5A3-8C19-4130-AF81-2C267B50A772}" ShortID="50708425">
@@ -231,6 +554,60 @@
 							<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
 						</Reference>
 					</ReferenceList>
+					<ChildrenList>
+						<RandomSequenceContainer Name="Clock_Tick" ID="{2745FE92-A0AD-425E-9BEA-3E749B4B7A57}" ShortID="321436987">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Clocks, Tick, Grandfather Clock, 1920, Pendulum Ticking SND102394" ID="{428F0201-8A5D-45D9-93C5-E4740060F5D7}" ShortID="841766087">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>32</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-20</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Clocks, Tick, Grandfather Clock, 1920, Pendulum Ticking SND102394" ID="{B54AC6A5-2061-4D45-8EDE-57EC2077068C}">
+											<PropertyList>
+												<Property Name="LoopBegin" Type="Real64" Value="0"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="39.73687"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>EksamensprojektWwise\Originals\SFX\Clocks, Tick, Grandfather Clock, 1920, Pendulum Ticking SND102394.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="387100387"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Clocks, Tick, Grandfather Clock, 1920, Pendulum Ticking SND102394" ID="{B54AC6A5-2061-4D45-8EDE-57EC2077068C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+					</ChildrenList>
 				</PropertyContainer>
 			</ChildrenList>
 		</WorkUnit>

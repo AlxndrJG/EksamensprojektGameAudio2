@@ -2,9 +2,38 @@
 <WwiseDocument Type="WorkUnit" ID="{D662E550-F06B-4CBB-8B50-BB6DF3340AE6}" SchemaVersion="133" RootDocumentID="{08F20BFB-F7C4-40F3-B852-C39F7D674E18}" ParentDocumentID="{EAA9C195-5D86-4529-8D52-3AAB6FDD41DF}">
 	<Containers>
 		<WorkUnit Name="Cabinet_Kitchen_Top" ID="{D662E550-F06B-4CBB-8B50-BB6DF3340AE6}" OwnerID="{EAA9C195-5D86-4529-8D52-3AAB6FDD41DF}" PersistMode="Nested">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="4"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
 			<ChildrenList>
 				<RandomSequenceContainer Name="Kitchen_Cabinet_Top_Close" ID="{E514BF91-2021-46F3-9537-C1653454D5CB}" ShortID="690991322">
 					<PropertyList>
+						<Property Name="Lowpass" Type="int16">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{9D15FC51-6F0A-4B6F-ADF2-C7C19044D2F7}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="50"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{DCFDE96D-B052-4966-97BA-18F98CAA6951}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="150"/>
+											<Property Name="Min" Type="Real64" Value="-150"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
 						<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
 						<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
 						<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.7">
@@ -16,6 +45,22 @@
 						</Property>
 						<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 						<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>6</Value>
+							</ValueList>
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{25F79A47-8C0A-49F7-AA1A-3BD1A1B5D88F}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="1"/>
+											<Property Name="Min" Type="Real64" Value="-2"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
@@ -376,6 +421,31 @@
 				</RandomSequenceContainer>
 				<RandomSequenceContainer Name="Kitchen_Cabinet_Top_Open" ID="{E97936AD-4FC6-41BB-A750-74D4CD3F1D8C}" ShortID="847613152">
 					<PropertyList>
+						<Property Name="Lowpass" Type="int16">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{1A5C89C7-7056-47B1-AA4E-C19B8CBD79B3}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="50"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{B68AC457-BD60-4ED7-A766-DB0DD0CD35F0}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="150"/>
+											<Property Name="Min" Type="Real64" Value="-150"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
 						<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
 						<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
 						<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.3">
@@ -387,6 +457,22 @@
 						</Property>
 						<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 						<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>6</Value>
+							</ValueList>
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{6C8FCF5D-2A77-4CB8-842B-171FE180AD3B}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="1"/>
+											<Property Name="Min" Type="Real64" Value="-2"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">

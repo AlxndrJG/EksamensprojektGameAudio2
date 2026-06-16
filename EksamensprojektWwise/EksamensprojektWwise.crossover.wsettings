@@ -4,8 +4,8 @@
 		<UserProjectSettings Name="" ID="{32286640-6FF3-4AFD-ABFA-F55A5691F156}">
 			<PropertyList>
 				<Property Name="AudioFileImporter\x64_FilesToImport" Type="string" Value="AAAAAAAAAAA="/>
-				<Property Name="AudioFilesImporter\DestinationFolder" Type="string" Value="Y:\Dev\GitHub\EksamensprojektGameAudio2\EksamensprojektWwise\Originals\SFX\SFX\EksamensprojektWwise\Originals\SFX\"/>
-				<Property Name="AudioFilesImporter\Path" Type="string" Value="Y:\Dev\Sound Library\GA_Foley\Foley_Tiles\Tiles_Heel\"/>
+				<Property Name="AudioFilesImporter\DestinationFolder" Type="string" Value="Y:\Documents\GitHub\EksamensprojektGameAudio2\EksamensprojektWwise\Originals\SFX\EksamensprojektWwise\Originals\SFX\"/>
+				<Property Name="AudioFilesImporter\Path" Type="string" Value="Y:\Desktop\GA_Foley\Hus_Knirken\"/>
 				<Property Name="Event Action List\{026F7192-7D9B-4E1E-AE48-E0AFBD512A44}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{24035F0C-3470-4905-9EFC-619B2FCB1E5C}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{241637BD-4940-4821-BBC3-535AAAC79395}\x64_Expand States" Type="string" Value=""/>
@@ -68,6 +68,7 @@
 				<Property Name="OverrideCacheFolder\Path" Type="string" Value=".cache"/>
 				<Property Name="OverrideOriginalFolder\Active" Type="bool" Value="False"/>
 				<Property Name="OverrideOriginalFolder\Path" Type="string" Value="Originals"/>
+				<Property Name="PlaylistViewCtrl\x64_{95862787-8C42-48C9-815F-2AB9B5F09841}Collapse StatesPath1" Type="string" Value="LwBDAGwAbwBzAGUAdABfAE8AcABlAG4AXwAyAAAAAADZvxEAAAAAAH6EGgEAAAAACMERAAAAAADgwBEAAAAAAAjBEQAAAAAA4MARAAAAAAAUtBYDAAAAAAAAuhUAAAAADAAAAAAAAAAgwREAAAAAAICjXxYAAAAAIMQRAAAAAABIAAAAAAAAAAIQAAAAAAAASAAAAAAAAABIAAAAAAAAAAIQAAAAAAAAPKwCcAEAAAAwZGoWAAAAAAsAACAAAAABaAAAAAAAAAACEAAAAAAAAAAAuhUAAAAAMJQCcAEAAAACEAAAAAAAADysAnABAAAAiGPvAwAAAAAAALoVAAAAAADDEQAAAAAAMAAAAAAAAAAw/lkWAAAAAP//////////mAAAAAAAAABwAAAAAAAAAJgAAAAAAAAAmAAAAAAAAAACEAAAAAAAAAIQAAAAAAAAAAAKAwAAAABcngJwAQAAAAIQAAAAAAAAPKwCcAEAAAD/////////HwAAAAAAAAAABwAAAAAAAABkM2qvAwAAAAAAuhUAAAAAAAC6FQAAAADowBEAAAAAAAAAuhUAAAAAdgAAAAAAAAD//////////7C1rhYAAAAAHgAAAAAAAACYwREAAAAAADUAAAAAAAAAgP1ZFgAAAABweHAHAAAAAMz9WRYAAAAA67ECcAEAAAA="/>
 				<Property Name="PluginUserAcknowledge\ConvolutionReverb" Type="bool" Value="True"/>
 				<Property Name="ProjectExplorer\SelectionChannel_1\Audio_FocusedObject" Type="string" Value="{22CA71FC-C595-4D23-AE56-199B6AE677BD}"/>
 				<Property Name="ProjectExplorer\SelectionChannel_1\CurrentSearch" Type="string" Value=""/>
@@ -153,8 +154,8 @@
 						<Value Platform="Windows"></Value>
 					</ValueList>
 				</Property>
-				<Property Name="SoundEngine\BusMapping\{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" Type="string" Value="{D364DB56-82EC-4887-BA7F-9B458EA45D87}2818519378"/>
-				<Property Name="SoundEngine\BusMapping\{F7A3A2BB-DDD6-4A7B-96BC-2B9D2DADC013}" Type="string" Value="{D364DB56-82EC-4887-BA7F-9B458EA45D87}2818519378"/>
+				<Property Name="SoundEngine\BusMapping\{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" Type="string" Value="{D364DB56-82EC-4887-BA7F-9B458EA45D87}1448521862"/>
+				<Property Name="SoundEngine\BusMapping\{F7A3A2BB-DDD6-4A7B-96BC-2B9D2DADC013}" Type="string" Value="{D364DB56-82EC-4887-BA7F-9B458EA45D87}1448521862"/>
 				<Property Name="SwitchContainerEditorLocation\{1DEDB888-9E4F-4E54-A6C9-191F7A654EA5}\x64_Collapsed States" Type="string" Value=""/>
 				<Property Name="SwitchContainerEditorLocation\{31261704-E034-499E-85B8-05241EC62733}\x64_Collapsed States" Type="string" Value=""/>
 				<Property Name="SwitchContainerEditorLocation\{31D343B3-ABBA-4638-AAFC-D4BB15A472E1}\x64_Collapsed States" Type="string" Value=""/>

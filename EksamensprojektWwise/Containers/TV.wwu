@@ -2,8 +2,34 @@
 <WwiseDocument Type="WorkUnit" ID="{39B736E9-3A53-47FA-A130-DCB4295BC736}" SchemaVersion="133" RootDocumentID="{08F20BFB-F7C4-40F3-B852-C39F7D674E18}" ParentDocumentID="{D751A346-751C-439A-9397-A1FDB4F10230}">
 	<Containers>
 		<WorkUnit Name="TV" ID="{39B736E9-3A53-47FA-A130-DCB4295BC736}" OwnerID="{D751A346-751C-439A-9397-A1FDB4F10230}" PersistMode="Nested">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="4"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
 			<ChildrenList>
 				<RandomSequenceContainer Name="TV_Glitchy" ID="{7D894AA6-EBCC-4149-AA7D-C1F6B160E9AF}" ShortID="760930105">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="4"/>
+						<Property Name="Inclusion" Type="bool">
+							<ValueList>
+								<Value>False</Value>
+							</ValueList>
+						</Property>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{1B659AE8-0813-48FA-9606-236D630AC2A2}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="200"/>
+											<Property Name="Min" Type="Real64" Value="-201"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
@@ -82,6 +108,23 @@
 					</ChildrenList>
 				</RandomSequenceContainer>
 				<RandomSequenceContainer Name="TV_On" ID="{576F8D4B-86FC-4F9D-8C7D-B2BC2896D1D8}" ShortID="682643754">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="4"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{40FBEA34-4B48-446D-A2D0-4601779B5291}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="200"/>
+											<Property Name="Min" Type="Real64" Value="-201"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
@@ -92,6 +135,28 @@
 					</ReferenceList>
 					<ChildrenList>
 						<Sound Name="TV_On_1" ID="{4B439197-722A-4250-9776-6A0FF21988E0}" ShortID="555219105">
+							<PropertyList>
+								<Property Name="Lowpass" Type="int16">
+									<ValueList>
+										<Value>18</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>780</Value>
+									</ValueList>
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{52810CED-BCA0-4A52-B7C6-7AFD1A64887B}">
+												<PropertyList>
+													<Property Name="Max" Type="Real64" Value="200"/>
+													<Property Name="Min" Type="Real64" Value="-201"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
@@ -102,6 +167,12 @@
 							</ReferenceList>
 							<ChildrenList>
 								<AudioFileSource Name="TV_On_1" ID="{D0405551-BCE0-45BC-AB1E-9D6239D1A2CF}">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.01924"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.05536"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="0.05853"/>
+									</PropertyList>
 									<Language>SFX</Language>
 									<AudioFile>EksamensprojektWwise\Originals\SFX\TV_On_1.wav</AudioFile>
 									<MediaIDList>
@@ -114,6 +185,13 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="TV_On_3" ID="{59AD6A35-2B99-4C8C-919C-98E2427115F6}" ShortID="8695558">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>-430</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
@@ -124,6 +202,13 @@
 							</ReferenceList>
 							<ChildrenList>
 								<AudioFileSource Name="TV_On_3" ID="{E5EF3358-8E31-47B1-A126-0D92032E8F20}">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.0088"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.0188"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="0.0576"/>
+										<Property Name="TrimEnd" Type="Real64" Value="0.19209"/>
+									</PropertyList>
 									<Language>SFX</Language>
 									<AudioFile>EksamensprojektWwise\Originals\SFX\TV_On_3.wav</AudioFile>
 									<MediaIDList>
@@ -136,6 +221,13 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="TV_On_5" ID="{663AEBE1-55D2-40E2-9C40-07FD7B4E9EF6}" ShortID="401300324">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>450</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
@@ -146,6 +238,12 @@
 							</ReferenceList>
 							<ChildrenList>
 								<AudioFileSource Name="TV_On_5" ID="{914ECCF9-9A0F-489E-A256-9C16821F5A3E}">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.028"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.0292"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="0.0072"/>
+									</PropertyList>
 									<Language>SFX</Language>
 									<AudioFile>EksamensprojektWwise\Originals\SFX\TV_On_5.wav</AudioFile>
 									<MediaIDList>
@@ -158,6 +256,13 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="TV_On_4" ID="{544EF243-A0F8-4202-B4D9-CD11A03C6CE2}" ShortID="836353291">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>340</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
@@ -168,6 +273,12 @@
 							</ReferenceList>
 							<ChildrenList>
 								<AudioFileSource Name="TV_On_4" ID="{C1B2EC92-4D3E-4EC3-958E-5B6C8CD515E5}">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.02478"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.02478"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="0.01932"/>
+									</PropertyList>
 									<Language>SFX</Language>
 									<AudioFile>EksamensprojektWwise\Originals\SFX\TV_On_4.wav</AudioFile>
 									<MediaIDList>
@@ -180,6 +291,13 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="TV_On_2" ID="{2C99BA5E-FF82-43EF-8907-F82BF9BFED4A}" ShortID="143772931">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>750</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
@@ -190,6 +308,12 @@
 							</ReferenceList>
 							<ChildrenList>
 								<AudioFileSource Name="TV_On_2" ID="{716F53EA-BB3B-4FC3-AB96-C5469FD6E407}">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.03228"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.0547"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimEnd" Type="Real64" Value="0.2043"/>
+									</PropertyList>
 									<Language>SFX</Language>
 									<AudioFile>EksamensprojektWwise\Originals\SFX\TV_On_2.wav</AudioFile>
 									<MediaIDList>
@@ -206,7 +330,9 @@
 				<BlendContainer Name="TV_Static" ID="{AE8AFA74-232A-4539-AC9B-59EE444ADB83}" ShortID="1066853689">
 					<PropertyList>
 						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="Color" Type="int16" Value="4"/>
 						<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
 						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 					</PropertyList>
 					<ReferenceList>

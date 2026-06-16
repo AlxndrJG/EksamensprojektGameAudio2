@@ -2,9 +2,19 @@
 <WwiseDocument Type="WorkUnit" ID="{76B5CC4A-DF79-4C1D-BE39-7BD9231E4A3F}" SchemaVersion="133" RootDocumentID="{08F20BFB-F7C4-40F3-B852-C39F7D674E18}" ParentDocumentID="{D751A346-751C-439A-9397-A1FDB4F10230}">
 	<Containers>
 		<WorkUnit Name="Doors" ID="{76B5CC4A-DF79-4C1D-BE39-7BD9231E4A3F}" OwnerID="{D751A346-751C-439A-9397-A1FDB4F10230}" PersistMode="Nested">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="26"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
 			<ChildrenList>
 				<RandomSequenceContainer Name="Door_Open" ID="{17B1A747-7899-4F6A-86C2-AB4DE9773EE1}" ShortID="300273612">
 					<PropertyList>
+						<Property Name="Color" Type="int16" Value="4"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+						<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+						<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
+						<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.1"/>
+						<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 						<Property Name="RandomOrSequence" Type="int16" Value="0"/>
 					</PropertyList>
 					<ReferenceList>
@@ -16,7 +26,40 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<RandomSequenceContainer Name="Door_Creak" ID="{D43E4505-40FD-4E12-9DAB-AD1580381174}" ShortID="427874114">
+						<RandomSequenceContainer Name="Door_åben" ID="{D43E4505-40FD-4E12-9DAB-AD1580381174}" ShortID="427874114">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="4"/>
+								<Property Name="Lowpass" Type="int16">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{87D782BC-0A6B-4DF6-8E37-5884A3CAA86A}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="10"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{52421594-31A6-4B0E-B4DF-8FF38EC81834}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="200"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-4</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
@@ -25,14 +68,903 @@
 									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
 								</Reference>
 							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Dør_Åben-003" ID="{1EF8AC45-0B04-4BA4-BF20-85276040D85C}" ShortID="457626835">
+									<PropertyList>
+										<Property Name="Color" Type="int16" Value="4"/>
+										<Property Name="OverrideColor" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Dør_Åben-003" ID="{C3F0B760-273C-41C8-81A0-63D99059BC62}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.06937"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.15254"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.0614"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>EksamensprojektWwise\Originals\SFX\Dør_Åben-003.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="889503622"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Dør_Åben-003" ID="{C3F0B760-273C-41C8-81A0-63D99059BC62}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Dør_Åben-005" ID="{11CF9AD5-1EA2-4232-9D80-4A10FD212415}" ShortID="837496355">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Dør_Åben-005" ID="{4AF3E934-0D8D-4647-B19F-273FB4622331}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.20068"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.15916"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.18338"/>
+												<Property Name="TrimEnd" Type="Real64" Value="1.36685"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>EksamensprojektWwise\Originals\SFX\Dør_Åben-005.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="941440164"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Dør_Åben-005" ID="{4AF3E934-0D8D-4647-B19F-273FB4622331}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Dør_Åben-004" ID="{9F941734-0759-48E2-82BE-8BD2E5D5AB91}" ShortID="56292362">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Dør_Åben-004" ID="{9601965D-7B93-4EBA-B61B-D995DB346605}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.07584"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.06636"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.07821"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.81074"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>EksamensprojektWwise\Originals\SFX\Dør_Åben-004.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="692306209"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Dør_Åben-004" ID="{9601965D-7B93-4EBA-B61B-D995DB346605}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Dør_Åben-007" ID="{1A644275-19DD-4BE6-8780-6435AE9B6CD4}" ShortID="188013634">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Dør_Åben-007" ID="{A72885C2-4373-47FB-ADE5-9124E8421571}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.10095"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.15864"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.08656"/>
+												<Property Name="TrimEnd" Type="Real64" Value="1.61993"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>EksamensprojektWwise\Originals\SFX\Dør_Åben-007.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="884897319"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Dør_Åben-007" ID="{A72885C2-4373-47FB-ADE5-9124E8421571}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Door_Håndtag" ID="{608298AF-9DBA-44C3-A906-054BCAD65122}" ShortID="407908846">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="4"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-5</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Dør_Håndtag-002" ID="{6A8CB172-7266-4956-B5D0-0388C01B229B}" ShortID="1023114497">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Dør_Håndtag-002" ID="{8F374629-731A-4F25-BE21-96674033E461}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.02651"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.02839"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.18251"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>EksamensprojektWwise\Originals\SFX\Dør_Håndtag-002.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="286133783"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Dør_Håndtag-002" ID="{8F374629-731A-4F25-BE21-96674033E461}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Dør_Håndtag-003" ID="{2040AD77-0256-4ACE-B938-38858B9E26B3}" ShortID="711235079">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Dør_Håndtag-003" ID="{D46C1B79-3697-44A0-A0D4-39A322DA8C92}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.11144"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.09352"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.27661"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.73852"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>EksamensprojektWwise\Originals\SFX\Dør_Håndtag-003.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="112147081"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Dør_Håndtag-003" ID="{D46C1B79-3697-44A0-A0D4-39A322DA8C92}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Dør_Håndtag-004" ID="{978B0B7C-D7DB-4DE0-8AE6-0899C3A4FC63}" ShortID="561818657">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Dør_Håndtag-004" ID="{CC676312-F871-4A64-A174-4A4F344C7725}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.07053"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.14608"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.06887"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.5876"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>EksamensprojektWwise\Originals\SFX\Dør_Håndtag-004.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="233941020"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Dør_Håndtag-004" ID="{CC676312-F871-4A64-A174-4A4F344C7725}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Dør_Håndtag-006" ID="{0220556E-3A79-42F6-96C0-D1EDED69EF10}" ShortID="211371009">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Dør_Håndtag-006" ID="{35B146A0-0254-48B0-8FE6-AEA5C0B10BCD}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.04188"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.10151"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.22555"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.59942"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>EksamensprojektWwise\Originals\SFX\Dør_Håndtag-006.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="250734746"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Dør_Håndtag-006" ID="{35B146A0-0254-48B0-8FE6-AEA5C0B10BCD}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
 						</RandomSequenceContainer>
 					</ChildrenList>
 					<ObjectLists>
 						<ObjectList Name="Playlist">
-							<PluginInnerObject Name="" ID="{F2AB9E2E-A68C-43F3-B739-AAD7A05C7AA3}" PluginName="PlaylistSlot" CompanyID="0" PluginID="86">
+							<PluginInnerObject Name="" ID="{D3CCE496-BAC9-4DC6-85D0-32C2C164A0EA}" PluginName="PlaylistSlot" CompanyID="0" PluginID="86">
 								<ReferenceList>
 									<Reference Name="PlaylistObject">
-										<ObjectRef Name="Door_Creak" ID="{D43E4505-40FD-4E12-9DAB-AD1580381174}" WorkUnitID="{76B5CC4A-DF79-4C1D-BE39-7BD9231E4A3F}"/>
+										<ObjectRef Name="Door_Håndtag" ID="{608298AF-9DBA-44C3-A906-054BCAD65122}" WorkUnitID="{76B5CC4A-DF79-4C1D-BE39-7BD9231E4A3F}"/>
+									</Reference>
+								</ReferenceList>
+							</PluginInnerObject>
+							<PluginInnerObject Name="" ID="{23C624C2-405B-45D3-95C9-6AA55CA8B77E}" PluginName="PlaylistSlot" CompanyID="0" PluginID="86">
+								<ReferenceList>
+									<Reference Name="PlaylistObject">
+										<ObjectRef Name="Door_åben" ID="{D43E4505-40FD-4E12-9DAB-AD1580381174}" WorkUnitID="{76B5CC4A-DF79-4C1D-BE39-7BD9231E4A3F}"/>
+									</Reference>
+								</ReferenceList>
+							</PluginInnerObject>
+						</ObjectList>
+					</ObjectLists>
+				</RandomSequenceContainer>
+				<RandomSequenceContainer Name="Door_Close" ID="{D7C99537-81E9-499C-9C83-81767F4013CB}" ShortID="757684388">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="4"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+						<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+						<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
+						<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.2"/>
+						<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+						<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<RandomSequenceContainer Name="Door_Close" ID="{235533F1-5C8D-449A-8E26-BA4713E6293C}" ShortID="676324310">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="4"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Dør_Luk-001" ID="{47CB1AD2-EDB2-44D9-B858-D1DB1FD7FDF7}" ShortID="801322249">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Dør_Luk-001" ID="{CACB5929-C2AA-4094-BC1E-14D35D68D1C5}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.10346"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.24293"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.02699"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.94673"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>EksamensprojektWwise\Originals\SFX\Dør_Luk-001.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="994051441"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Dør_Luk-001" ID="{CACB5929-C2AA-4094-BC1E-14D35D68D1C5}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Dør_Luk-002" ID="{BA6B53DC-35DF-4607-BB3B-3D643B626ACF}" ShortID="188214580">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Dør_Luk-002" ID="{55018C7E-B4FE-4958-862C-FA6FD7FDAA52}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.16526"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.19226"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.21927"/>
+												<Property Name="TrimEnd" Type="Real64" Value="1.31223"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>EksamensprojektWwise\Originals\SFX\Dør_Luk-002.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="336680327"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Dør_Luk-002" ID="{55018C7E-B4FE-4958-862C-FA6FD7FDAA52}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Dør_Luk-003" ID="{6A120F89-F62E-4BA7-A080-0C055722557D}" ShortID="916285469">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Dør_Luk-003" ID="{DFE01C55-0A69-47B6-B46F-08680BF200EB}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.14352"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.14053"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.1794"/>
+												<Property Name="TrimEnd" Type="Real64" Value="1.18394"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>EksamensprojektWwise\Originals\SFX\Dør_Luk-003.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="288973665"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Dør_Luk-003" ID="{DFE01C55-0A69-47B6-B46F-08680BF200EB}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Dør_Luk-004" ID="{FE005738-56AF-472D-8701-022284832741}" ShortID="389579902">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Dør_Luk-004" ID="{0E4D7114-12D9-4744-9822-B93681E9D342}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.15972"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.26242"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.18638"/>
+												<Property Name="TrimEnd" Type="Real64" Value="1.22081"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>EksamensprojektWwise\Originals\SFX\Dør_Luk-004.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1022705281"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Dør_Luk-004" ID="{0E4D7114-12D9-4744-9822-B93681E9D342}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Dør_Luk-005" ID="{3D26E02A-D46B-4BDD-944D-55845CAA8F1C}" ShortID="641646167">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Dør_Åben-002" ID="{F90DF050-33B3-4475-AAB4-4DAC0C7DE90E}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.07766"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.08561"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.10949"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.83056"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>EksamensprojektWwise\Originals\SFX\Dør_Åben-002.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="423075615"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Dør_Åben-002" ID="{F90DF050-33B3-4475-AAB4-4DAC0C7DE90E}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Door_Handle" ID="{9730DC0D-1CFA-47AC-B5FF-DD50E776D9A3}" ShortID="306870651">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="4"/>
+								<Property Name="Lowpass" Type="int16">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{F395377B-AAC5-4EDF-AFA3-6528EF39A9A4}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="10"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{A7AF51FB-AB30-4B3F-91D8-C1E3B8B0E8A1}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="100"/>
+													<Property Name="Min" Type="Real64" Value="-100"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Dør_Håndtag-002" ID="{A5205A79-EC4F-452F-84A2-14B20F056B1B}" ShortID="877840580">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Dør_Håndtag-002" ID="{70FBC121-C7C3-4602-A75D-AADAE6233587}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.03407"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.06336"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.19292"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>EksamensprojektWwise\Originals\SFX\Dør_Håndtag-002.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="756564909"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Dør_Håndtag-002" ID="{70FBC121-C7C3-4602-A75D-AADAE6233587}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Dør_Håndtag-003" ID="{24048758-0D44-4E51-A59D-8BB908749F5F}" ShortID="1020245588">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Dør_Håndtag-003" ID="{7D1D6716-DB3F-4DEF-806D-A007A9507AFA}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.14328"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.13534"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.34032"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.74845"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>EksamensprojektWwise\Originals\SFX\Dør_Håndtag-003.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="57747351"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Dør_Håndtag-003" ID="{7D1D6716-DB3F-4DEF-806D-A007A9507AFA}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Dør_Håndtag-004" ID="{ACAB473C-46DF-4BB8-A049-482A45F5C53B}" ShortID="930707434">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Dør_Håndtag-004" ID="{014169DA-EFFA-496A-BC22-13F2114B88E3}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.06381"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.08394"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.08063"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.55401"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>EksamensprojektWwise\Originals\SFX\Dør_Håndtag-004.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="740324785"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Dør_Håndtag-004" ID="{014169DA-EFFA-496A-BC22-13F2114B88E3}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Dør_Håndtag-005" ID="{B363859B-10E7-4B13-8E5C-60D31FD77C9A}" ShortID="209659884">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Dør_Håndtag-005" ID="{F073FA98-90D7-4001-8268-96F01DB558CB}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.04968"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.07925"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.10342"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.37884"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>EksamensprojektWwise\Originals\SFX\Dør_Håndtag-005.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="819899302"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Dør_Håndtag-005" ID="{F073FA98-90D7-4001-8268-96F01DB558CB}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Dør_Håndtag-006" ID="{481A83DD-68F3-4B54-9838-78B0C43A8DE0}" ShortID="115341436">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Dør_Håndtag-006" ID="{1A3C9357-AF0E-4556-9DCA-61174372DEAF}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.06766"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.09828"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.21913"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.58333"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>EksamensprojektWwise\Originals\SFX\Dør_Håndtag-006.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="283513185"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Dør_Håndtag-006" ID="{1A3C9357-AF0E-4556-9DCA-61174372DEAF}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Dør_Håndtag-005_01" ID="{E416CBDD-F7C4-466B-916B-D85DED95CE97}" ShortID="926830989">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Dør_Håndtag-005" ID="{B6D042F9-5116-4AAE-9FDB-5BAFA66CCDC5}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.07387"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.13429"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.08998"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.42449"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>EksamensprojektWwise\Originals\SFX\Dør_Håndtag-005.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="721374981"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Dør_Håndtag-005" ID="{B6D042F9-5116-4AAE-9FDB-5BAFA66CCDC5}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Door_Close_Impact" ID="{2D7C9B2D-7A8D-4A0C-A563-97746D2787E9}" ShortID="393158731">
+							<PropertyList>
+								<Property Name="Inclusion" Type="bool">
+									<ValueList>
+										<Value>False</Value>
+									</ValueList>
+								</Property>
+								<Property Name="InitialDelay" Type="Real64">
+									<ValueList>
+										<Value>0.8</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Lowpass" Type="int16">
+									<ValueList>
+										<Value>66</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{8F09993C-CCCB-4A5F-B782-8E4D0F00007A}"/>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Dør_Ud-001" ID="{755B5C1A-9293-4410-8042-E4C27633AFC1}" ShortID="147333874">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Skuffe_Ud-001" ID="{8190459C-5B42-4255-A653-9EC09B6D14B6}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.00422"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.01054"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.81135"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>EksamensprojektWwise\Originals\SFX\Skuffe_Ud-001.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="890991987"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Skuffe_Ud-001" ID="{8190459C-5B42-4255-A653-9EC09B6D14B6}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Skuffe_Ud-002" ID="{67E1E565-6BE3-4D9C-BB9C-7C7233FC6563}" ShortID="724776897">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Skuffe_Ud-002" ID="{A68AE203-8615-4952-9B54-057FDCB1E4F2}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.01249"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.04371"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="1.25615"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>EksamensprojektWwise\Originals\SFX\Skuffe_Ud-002.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="864901128"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Skuffe_Ud-002" ID="{A68AE203-8615-4952-9B54-057FDCB1E4F2}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Skuffe_Ud-007" ID="{57A8A6AF-44EC-437F-8802-04493F7874D4}" ShortID="145402990">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Skuffe_Ud-007" ID="{1E86BDD6-12D4-48AE-A028-9734B3964590}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.01877"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.05214"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.6695"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>EksamensprojektWwise\Originals\SFX\Skuffe_Ud-007.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1061979509"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Skuffe_Ud-007" ID="{1E86BDD6-12D4-48AE-A028-9734B3964590}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Skuffe_Ud-008" ID="{F8A71490-87BE-453C-9A1A-D429C94F0FB3}" ShortID="468262583">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Skuffe_Ud-008" ID="{7DAEBA44-A859-4CF0-95AF-0833741F1238}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.02126"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.01519"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="1.17215"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>EksamensprojektWwise\Originals\SFX\Skuffe_Ud-008.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="860934273"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Skuffe_Ud-008" ID="{7DAEBA44-A859-4CF0-95AF-0833741F1238}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Skuffe_Ud-009" ID="{5F626456-59A6-410B-9A26-2E837B073654}" ShortID="782364129">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Skuffe_Ud-009" ID="{4B0BAF01-D032-40D2-A89E-34820EBE83DF}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.01821"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.02628"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.81579"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>EksamensprojektWwise\Originals\SFX\Skuffe_Ud-009.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1064757920"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Skuffe_Ud-009" ID="{4B0BAF01-D032-40D2-A89E-34820EBE83DF}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Skuffe_Ud-010" ID="{9A14B4B9-CFB6-4681-8E7F-E6122EBFE0D9}" ShortID="658561660">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Skuffe_Ud-010" ID="{4E13E8D7-D5A6-4ECC-8B65-DE9ADE81C3EE}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.01734"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.04707"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.86711"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>EksamensprojektWwise\Originals\SFX\Skuffe_Ud-010.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="995851035"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Skuffe_Ud-010" ID="{4E13E8D7-D5A6-4ECC-8B65-DE9ADE81C3EE}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+					</ChildrenList>
+					<ObjectLists>
+						<ObjectList Name="Playlist">
+							<PluginInnerObject Name="" ID="{FC2A2818-6E89-42E6-B166-63E5F6400CB9}" PluginName="PlaylistSlot" CompanyID="0" PluginID="86">
+								<ReferenceList>
+									<Reference Name="PlaylistObject">
+										<ObjectRef Name="Door_Handle" ID="{9730DC0D-1CFA-47AC-B5FF-DD50E776D9A3}" WorkUnitID="{76B5CC4A-DF79-4C1D-BE39-7BD9231E4A3F}"/>
+									</Reference>
+								</ReferenceList>
+							</PluginInnerObject>
+							<PluginInnerObject Name="" ID="{9C5B00DD-4C41-4B9B-8540-CE6BF623D177}" PluginName="PlaylistSlot" CompanyID="0" PluginID="86">
+								<ReferenceList>
+									<Reference Name="PlaylistObject">
+										<ObjectRef Name="Door_Close" ID="{235533F1-5C8D-449A-8E26-BA4713E6293C}" WorkUnitID="{76B5CC4A-DF79-4C1D-BE39-7BD9231E4A3F}"/>
+									</Reference>
+								</ReferenceList>
+							</PluginInnerObject>
+							<PluginInnerObject Name="" ID="{27CFC7AC-0D60-4D82-A78D-5628F1BAB0FA}" PluginName="PlaylistSlot" CompanyID="0" PluginID="86">
+								<ReferenceList>
+									<Reference Name="PlaylistObject">
+										<ObjectRef Name="Door_Close_Impact" ID="{2D7C9B2D-7A8D-4A0C-A563-97746D2787E9}" WorkUnitID="{76B5CC4A-DF79-4C1D-BE39-7BD9231E4A3F}"/>
 									</Reference>
 								</ReferenceList>
 							</PluginInnerObject>

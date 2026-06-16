@@ -3,7 +3,7 @@
 	<Containers>
 		<WorkUnit Name="Player" ID="{409268F6-A1BE-4C6D-B73D-C82A96CEEB64}" PersistMode="Standalone">
 			<PropertyList>
-				<Property Name="Color" Type="int16" Value="2"/>
+				<Property Name="Color" Type="int16" Value="4"/>
 				<Property Name="OverrideColor" Type="bool" Value="True"/>
 			</PropertyList>
 			<ChildrenList>
