@@ -103,7 +103,7 @@
 										<AudioFileSource Name="SkydeLåger-006" ID="{6824EFC9-F9DB-40A4-B051-A91A5701A48C}">
 											<PropertyList>
 												<Property Name="FadeInDuration" Type="Real64" Value="0.09547"/>
-												<Property Name="FadeOutDuration" Type="Real64" Value="0.36033"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.36957"/>
 												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 												<Property Name="TrimBegin" Type="Real64" Value="0.12011"/>
 												<Property Name="TrimEnd" Type="Real64" Value="0.89608"/>
@@ -132,7 +132,7 @@
 										<AudioFileSource Name="SkydeLåger-007" ID="{138408A1-8E9D-4F2D-8AAD-C75DB81C6A66}">
 											<PropertyList>
 												<Property Name="FadeInDuration" Type="Real64" Value="0.22789"/>
-												<Property Name="FadeOutDuration" Type="Real64" Value="0.38806"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.36342"/>
 												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 												<Property Name="TrimEnd" Type="Real64" Value="0.72056"/>
 											</PropertyList>
@@ -167,7 +167,7 @@
 										<AudioFileSource Name="SkydeLåger-012" ID="{97694340-2112-498A-801D-3720C7D84D1B}">
 											<PropertyList>
 												<Property Name="FadeInDuration" Type="Real64" Value="0.0707"/>
-												<Property Name="FadeOutDuration" Type="Real64" Value="0.37852"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.34941"/>
 												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 												<Property Name="TrimBegin" Type="Real64" Value="0.16222"/>
 												<Property Name="TrimEnd" Type="Real64" Value="1.03549"/>
@@ -203,7 +203,7 @@
 										<AudioFileSource Name="SkydeLåger-013" ID="{0D11B8FE-2214-4BEC-AF0B-F97A69EEDA50}">
 											<PropertyList>
 												<Property Name="FadeInDuration" Type="Real64" Value="0.23077"/>
-												<Property Name="FadeOutDuration" Type="Real64" Value="0.36439"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.37654"/>
 												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 												<Property Name="TrimBegin" Type="Real64" Value="0.05466"/>
 												<Property Name="TrimEnd" Type="Real64" Value="0.85621"/>
@@ -239,7 +239,7 @@
 										<AudioFileSource Name="SkydeLåger-014" ID="{08257EDF-738B-45A1-9565-0844B1F8214C}">
 											<PropertyList>
 												<Property Name="FadeInDuration" Type="Real64" Value="0.1343"/>
-												<Property Name="FadeOutDuration" Type="Real64" Value="0.5135"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.5293"/>
 												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 												<Property Name="TrimBegin" Type="Real64" Value="0.58855"/>
 												<Property Name="TrimEnd" Type="Real64" Value="1.42193"/>
@@ -268,7 +268,7 @@
 										<AudioFileSource Name="SkydeLåger-004" ID="{5CA820AE-E3C1-452A-BF81-DFDF742BFDDB}">
 											<PropertyList>
 												<Property Name="FadeInDuration" Type="Real64" Value="0.1835"/>
-												<Property Name="FadeOutDuration" Type="Real64" Value="0.29549"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.27371"/>
 												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 												<Property Name="TrimBegin" Type="Real64" Value="0.79019"/>
 											</PropertyList>
@@ -303,7 +303,7 @@
 										<AudioFileSource Name="SkydeLåger-006" ID="{049288C8-9076-41FF-8D38-1A65EBD932E9}">
 											<PropertyList>
 												<Property Name="FadeInDuration" Type="Real64" Value="0.09547"/>
-												<Property Name="FadeOutDuration" Type="Real64" Value="0.20017"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.22173"/>
 												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 												<Property Name="TrimBegin" Type="Real64" Value="0.72985"/>
 												<Property Name="TrimEnd" Type="Real64" Value="1.47195"/>
@@ -332,7 +332,7 @@
 										<AudioFileSource Name="SkydeLåger-007" ID="{58030529-7B6C-4C0A-8577-78E832746E87}">
 											<PropertyList>
 												<Property Name="FadeInDuration" Type="Real64" Value="0.22789"/>
-												<Property Name="FadeOutDuration" Type="Real64" Value="0.26486"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.27718"/>
 												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 												<Property Name="TrimBegin" Type="Real64" Value="0.72055"/>
 												<Property Name="TrimEnd" Type="Real64" Value="1.37339"/>
@@ -361,7 +361,7 @@
 										<AudioFileSource Name="SkydeLåger-008" ID="{BD20B6C0-1A05-46C0-84CC-5A3A2D992FDA}">
 											<PropertyList>
 												<Property Name="FadeInDuration" Type="Real64" Value="0.17381"/>
-												<Property Name="FadeOutDuration" Type="Real64" Value="0.2623"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.27494"/>
 												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 												<Property Name="TrimBegin" Type="Real64" Value="0.6732"/>
 												<Property Name="TrimEnd" Type="Real64" Value="1.35585"/>
@@ -397,7 +397,7 @@
 										<AudioFileSource Name="SkydeLåger-012" ID="{6224B403-7972-4107-A55A-C46A1F2FDAED}">
 											<PropertyList>
 												<Property Name="FadeInDuration" Type="Real64" Value="0.17052"/>
-												<Property Name="FadeOutDuration" Type="Real64" Value="0.17885"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.19549"/>
 												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 												<Property Name="TrimBegin" Type="Real64" Value="0.34931"/>
 												<Property Name="TrimEnd" Type="Real64" Value="1.27678"/>
@@ -433,7 +433,7 @@
 										<AudioFileSource Name="SkydeLåger-013" ID="{00D0894D-1626-4627-87F3-B16A04B40A73}">
 											<PropertyList>
 												<Property Name="FadeInDuration" Type="Real64" Value="0.23077"/>
-												<Property Name="FadeOutDuration" Type="Real64" Value="0.17914"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.19129"/>
 												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 												<Property Name="TrimBegin" Type="Real64" Value="0.71661"/>
 												<Property Name="TrimEnd" Type="Real64" Value="1.32687"/>
@@ -519,7 +519,7 @@
 									<ChildrenList>
 										<AudioFileSource Name="Skuffe_Ud-001" ID="{662B04BA-83FD-4EC7-87A1-3B6E423FF640}">
 											<PropertyList>
-												<Property Name="FadeInDuration" Type="Real64" Value="0.00422"/>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.00842"/>
 												<Property Name="FadeOutDuration" Type="Real64" Value="0.01054"/>
 												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 												<Property Name="TrimBegin" Type="Real64" Value="0.824"/>
@@ -548,7 +548,7 @@
 										<AudioFileSource Name="Skuffe_Ud-002" ID="{E2707E83-8290-431C-B344-0C030760BD7C}">
 											<PropertyList>
 												<Property Name="FadeInDuration" Type="Real64" Value="0.00969"/>
-												<Property Name="FadeOutDuration" Type="Real64" Value="0.04371"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.05308"/>
 												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 												<Property Name="TrimBegin" Type="Real64" Value="1.25615"/>
 											</PropertyList>
@@ -576,14 +576,14 @@
 										<AudioFileSource Name="Skuffe_Ud-007" ID="{6CFB9987-97C6-465A-9903-E03ECEA755AB}">
 											<PropertyList>
 												<Property Name="FadeInDuration" Type="Real64" Value="0.01877"/>
-												<Property Name="FadeOutDuration" Type="Real64" Value="0.05214"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.06258"/>
 												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 												<Property Name="TrimBegin" Type="Real64" Value="0.6695"/>
 											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>EksamensprojektWwise\Originals\SFX\Skuffe_Ud-007.wav</AudioFile>
 											<MediaIDList>
-												<MediaID ID="1061979509"/>
+												<MediaID ID="948365375"/>
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
@@ -604,14 +604,14 @@
 										<AudioFileSource Name="Skuffe_Ud-008" ID="{CEFBF431-16DA-4C6F-A558-0CD7FD1F6645}">
 											<PropertyList>
 												<Property Name="FadeInDuration" Type="Real64" Value="0.02126"/>
-												<Property Name="FadeOutDuration" Type="Real64" Value="0.01519"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.03645"/>
 												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 												<Property Name="TrimBegin" Type="Real64" Value="1.17215"/>
 											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>EksamensprojektWwise\Originals\SFX\Skuffe_Ud-008.wav</AudioFile>
 											<MediaIDList>
-												<MediaID ID="860934273"/>
+												<MediaID ID="721261236"/>
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
@@ -639,14 +639,14 @@
 										<AudioFileSource Name="Skuffe_Ud-009" ID="{5344FCC5-F474-4000-B230-8668C4538FDE}">
 											<PropertyList>
 												<Property Name="FadeInDuration" Type="Real64" Value="0.01821"/>
-												<Property Name="FadeOutDuration" Type="Real64" Value="0.02628"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.03235"/>
 												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 												<Property Name="TrimBegin" Type="Real64" Value="0.81579"/>
 											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>EksamensprojektWwise\Originals\SFX\Skuffe_Ud-009.wav</AudioFile>
 											<MediaIDList>
-												<MediaID ID="1064757920"/>
+												<MediaID ID="186430990"/>
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
@@ -667,14 +667,14 @@
 										<AudioFileSource Name="Skuffe_Ud-010" ID="{9E635E60-A69C-4F7E-83D0-FF0780FEFF65}">
 											<PropertyList>
 												<Property Name="FadeInDuration" Type="Real64" Value="0.01734"/>
-												<Property Name="FadeOutDuration" Type="Real64" Value="0.04707"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.0669"/>
 												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 												<Property Name="TrimBegin" Type="Real64" Value="0.86711"/>
 											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>EksamensprojektWwise\Originals\SFX\Skuffe_Ud-010.wav</AudioFile>
 											<MediaIDList>
-												<MediaID ID="995851035"/>
+												<MediaID ID="643062445"/>
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
