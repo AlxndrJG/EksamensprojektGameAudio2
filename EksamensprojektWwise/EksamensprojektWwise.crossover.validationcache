@@ -1,52 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ValidationCache Version="1" SchemaVersion="133">
-	<ValidationCacheItem File="Y:\Dev\GitHub\EksamensprojektGameAudio2\EksamensprojektWwise\Attenuations\Default Work Unit.wwu" DateLow="1780061970" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Dev\GitHub\EksamensprojektGameAudio2\EksamensprojektWwise\Attenuations\Default Work Unit.wwu" DateLow="1781641934" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Dev\GitHub\EksamensprojektGameAudio2\EksamensprojektWwise\Attenuations\Factory Attenuations.wwu" DateLow="1781526916" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Dev\GitHub\EksamensprojektGameAudio2\EksamensprojektWwise\Busses\Default Work Unit.wwu" DateLow="1781474214" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Dev\GitHub\EksamensprojektGameAudio2\EksamensprojektWwise\Busses\Default Work Unit.wwu" DateLow="1781632424" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Dev\GitHub\EksamensprojektGameAudio2\EksamensprojektWwise\Containers\Breath.wwu" DateLow="1781622709" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Dev\GitHub\EksamensprojektGameAudio2\EksamensprojektWwise\Containers\Cabinet.wwu" DateLow="1781347992" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Dev\GitHub\EksamensprojektGameAudio2\EksamensprojektWwise\Containers\Cabinet_Bookshelf.wwu" DateLow="1781532053" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Dev\GitHub\EksamensprojektGameAudio2\EksamensprojektWwise\Containers\Cabinet_Draw.wwu" DateLow="1781622709" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Dev\GitHub\EksamensprojektGameAudio2\EksamensprojektWwise\Containers\Cabinet_Kitchen_Bottom.wwu" DateLow="1781622709" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Dev\GitHub\EksamensprojektGameAudio2\EksamensprojektWwise\Containers\Cabinet_Kitchen_Top.wwu" DateLow="1781622709" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Dev\GitHub\EksamensprojektGameAudio2\EksamensprojektWwise\Containers\Cabinet_Bookshelf.wwu" DateLow="1781641934" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Dev\GitHub\EksamensprojektGameAudio2\EksamensprojektWwise\Containers\Cabinet_Draw.wwu" DateLow="1781641934" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Dev\GitHub\EksamensprojektGameAudio2\EksamensprojektWwise\Containers\Cabinet_Kitchen_Bottom.wwu" DateLow="1781641934" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Dev\GitHub\EksamensprojektGameAudio2\EksamensprojektWwise\Containers\Cabinet_Kitchen_Top.wwu" DateLow="1781641934" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Dev\GitHub\EksamensprojektGameAudio2\EksamensprojektWwise\Containers\Cabinets.wwu" DateLow="1781622709" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Dev\GitHub\EksamensprojektGameAudio2\EksamensprojektWwise\Containers\Clock.wwu" DateLow="1781622709" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Dev\GitHub\EksamensprojektGameAudio2\EksamensprojektWwise\Containers\Clock.wwu" DateLow="1781641934" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Dev\GitHub\EksamensprojektGameAudio2\EksamensprojektWwise\Containers\Closet.wwu" DateLow="1781622709" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Dev\GitHub\EksamensprojektGameAudio2\EksamensprojektWwise\Containers\Default Work Unit.wwu" DateLow="1780061970" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Dev\GitHub\EksamensprojektGameAudio2\EksamensprojektWwise\Containers\Doors.wwu" DateLow="1781622709" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Dev\GitHub\EksamensprojektGameAudio2\EksamensprojektWwise\Containers\Factory Synth One.wwu" DateLow="1780061970" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Dev\GitHub\EksamensprojektGameAudio2\EksamensprojektWwise\Containers\Fan.wwu" DateLow="1781266053" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Dev\GitHub\EksamensprojektGameAudio2\EksamensprojektWwise\Containers\Footsteps.wwu" DateLow="1781622709" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Dev\GitHub\EksamensprojektGameAudio2\EksamensprojektWwise\Containers\Footsteps.wwu" DateLow="1781641934" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Dev\GitHub\EksamensprojektGameAudio2\EksamensprojektWwise\Containers\Fridge.wwu" DateLow="1781622709" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Dev\GitHub\EksamensprojektGameAudio2\EksamensprojektWwise\Containers\Kitchen_Sink.wwu" DateLow="1781622709" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Dev\GitHub\EksamensprojektGameAudio2\EksamensprojektWwise\Containers\Kitchen_Sink.wwu" DateLow="1781632014" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Dev\GitHub\EksamensprojektGameAudio2\EksamensprojektWwise\Containers\Music.wwu" DateLow="1781455911" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Dev\GitHub\EksamensprojektGameAudio2\EksamensprojektWwise\Containers\Objects.wwu" DateLow="1781622709" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Dev\GitHub\EksamensprojektGameAudio2\EksamensprojektWwise\Containers\Player.wwu" DateLow="1781622709" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Dev\GitHub\EksamensprojektGameAudio2\EksamensprojektWwise\Containers\SFX.wwu" DateLow="1781622709" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Dev\GitHub\EksamensprojektGameAudio2\EksamensprojektWwise\Containers\Soundly.wwu" DateLow="1781274503" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Dev\GitHub\EksamensprojektGameAudio2\EksamensprojektWwise\Containers\TV.wwu" DateLow="1781622709" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Dev\GitHub\EksamensprojektGameAudio2\EksamensprojektWwise\Containers\Soundly.wwu" DateLow="1781636812" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Dev\GitHub\EksamensprojektGameAudio2\EksamensprojektWwise\Containers\TV.wwu" DateLow="1781635815" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Dev\GitHub\EksamensprojektGameAudio2\EksamensprojektWwise\Control Surface Sessions\Default Work Unit.wwu" DateLow="1780061970" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Dev\GitHub\EksamensprojektGameAudio2\EksamensprojektWwise\Conversion Settings\Default Work Unit.wwu" DateLow="1780061970" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Dev\GitHub\EksamensprojektGameAudio2\EksamensprojektWwise\Conversion Settings\Factory Conversion Settings.wwu" DateLow="1780061970" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Dev\GitHub\EksamensprojektGameAudio2\EksamensprojektWwise\Devices\Default Work Unit.wwu" DateLow="1781473074" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Dev\GitHub\EksamensprojektGameAudio2\EksamensprojektWwise\Dynamic Dialogue\Default Work Unit.wwu" DateLow="1780061970" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Dev\GitHub\EksamensprojektGameAudio2\EksamensprojektWwise\Effects\Default Work Unit.wwu" DateLow="1781471315" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Dev\GitHub\EksamensprojektGameAudio2\EksamensprojektWwise\Effects\Factory AK Convolution Reverb Effects Ambisonics.wwu" DateLow="1781474214" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Dev\GitHub\EksamensprojektGameAudio2\EksamensprojektWwise\Effects\Factory AK Convolution Reverb Effects Ambisonics.wwu" DateLow="1781632014" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Dev\GitHub\EksamensprojektGameAudio2\EksamensprojektWwise\Effects\Factory AK Convolution Reverb Effects Stereo.wwu" DateLow="1781473074" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Dev\GitHub\EksamensprojektGameAudio2\EksamensprojektWwise\Effects\Factory AK Custom Panner.wwu" DateLow="1780061970" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Dev\GitHub\EksamensprojektGameAudio2\EksamensprojektWwise\Effects\Factory Effects.wwu" DateLow="1780061970" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Dev\GitHub\EksamensprojektGameAudio2\EksamensprojektWwise\Effects\Factory Mastering Suite.wwu" DateLow="1780061970" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Dev\GitHub\EksamensprojektGameAudio2\EksamensprojektWwise\Effects\Factory Reflect Physically-Based.wwu" DateLow="1780061970" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Dev\GitHub\EksamensprojektGameAudio2\EksamensprojektWwise\Effects\Factory Reflect.wwu" DateLow="1780061970" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Dev\GitHub\EksamensprojektGameAudio2\EksamensprojektWwise\EksamensprojektWwise.crossover.wsettings" DateLow="1781622709" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Dev\GitHub\EksamensprojektGameAudio2\EksamensprojektWwise\EksamensprojektWwise.crossover.wsettings" DateLow="1781641937" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Dev\GitHub\EksamensprojektGameAudio2\EksamensprojektWwise\EksamensprojektWwise.wproj" DateLow="1781471543" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Dev\GitHub\EksamensprojektGameAudio2\EksamensprojektWwise\Events\Cabinets.wwu" DateLow="1781520403" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Dev\GitHub\EksamensprojektGameAudio2\EksamensprojektWwise\Events\Clock.wwu" DateLow="1781456043" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Dev\GitHub\EksamensprojektGameAudio2\EksamensprojektWwise\Events\Default Work Unit.wwu" DateLow="1781537602" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Dev\GitHub\EksamensprojektGameAudio2\EksamensprojektWwise\Events\Clock.wwu" DateLow="1781637570" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Dev\GitHub\EksamensprojektGameAudio2\EksamensprojektWwise\Events\Default Work Unit.wwu" DateLow="1781637570" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Dev\GitHub\EksamensprojektGameAudio2\EksamensprojektWwise\Events\Doors.wwu" DateLow="1781518751" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Dev\GitHub\EksamensprojektGameAudio2\EksamensprojektWwise\Events\Fan.wwu" DateLow="1781456043" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Dev\GitHub\EksamensprojektGameAudio2\EksamensprojektWwise\Events\Fridge.wwu" DateLow="1781456043" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Dev\GitHub\EksamensprojektGameAudio2\EksamensprojektWwise\Events\Kitchen_Sink.wwu" DateLow="1781456043" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Dev\GitHub\EksamensprojektGameAudio2\EksamensprojektWwise\Events\Kitchen_Sink.wwu" DateLow="1781637570" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Dev\GitHub\EksamensprojektGameAudio2\EksamensprojektWwise\Events\Music.wwu" DateLow="1781455880" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Dev\GitHub\EksamensprojektGameAudio2\EksamensprojektWwise\Events\Objects.wwu" DateLow="1781518200" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Dev\GitHub\EksamensprojektGameAudio2\EksamensprojektWwise\Events\Player.wwu" DateLow="1781455880" DateHigh="0"/>
@@ -63,9 +63,9 @@
 	<ValidationCacheItem File="Y:\Dev\GitHub\EksamensprojektGameAudio2\EksamensprojektWwise\Queries\Default Work Unit.wwu" DateLow="1780061970" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Dev\GitHub\EksamensprojektGameAudio2\EksamensprojektWwise\Queries\Factory Queries.wwu" DateLow="1780061970" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Dev\GitHub\EksamensprojektGameAudio2\EksamensprojektWwise\Sidechain Mixes\Default Work Unit.wwu" DateLow="1780061970" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Dev\GitHub\EksamensprojektGameAudio2\EksamensprojektWwise\SoundBanks\Default Work Unit.wwu" DateLow="1781471494" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Dev\GitHub\EksamensprojektGameAudio2\EksamensprojektWwise\SoundBanks\Default Work Unit.wwu" DateLow="1781637713" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Dev\GitHub\EksamensprojektGameAudio2\EksamensprojektWwise\Soundcaster Sessions\Default Work Unit.wwu" DateLow="1780061970" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Dev\GitHub\EksamensprojektGameAudio2\EksamensprojektWwise\States\Default Work Unit.wwu" DateLow="1780061970" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Dev\GitHub\EksamensprojektGameAudio2\EksamensprojektWwise\States\Default Work Unit.wwu" DateLow="1781636812" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Dev\GitHub\EksamensprojektGameAudio2\EksamensprojektWwise\Switches\Default Work Unit.wwu" DateLow="1781539479" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Dev\GitHub\EksamensprojektGameAudio2\EksamensprojektWwise\Triggers\Default Work Unit.wwu" DateLow="1780061970" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Dev\GitHub\EksamensprojektGameAudio2\EksamensprojektWwise\Virtual Acoustics\Default Work Unit.wwu" DateLow="1780061970" DateHigh="0"/>
@@ -137,5 +137,5 @@
 	<ValidationCacheItem File="Y:\Documents\GitHub\EksamensprojektGameAudio2\EksamensprojektWwise\Switches\Default Work Unit.wwu" DateLow="1781603639" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Documents\GitHub\EksamensprojektGameAudio2\EksamensprojektWwise\Triggers\Default Work Unit.wwu" DateLow="1781089978" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Documents\GitHub\EksamensprojektGameAudio2\EksamensprojektWwise\Virtual Acoustics\Default Work Unit.wwu" DateLow="1781089978" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Library\Application Support\Audiokinetic\MediaPool\2\MediaPoolQuery.wsettings" DateLow="1781622974" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Library\Application Support\Audiokinetic\MediaPool\2\MediaPoolQuery.wsettings" DateLow="1781641938" DateHigh="0"/>
 </ValidationCache>

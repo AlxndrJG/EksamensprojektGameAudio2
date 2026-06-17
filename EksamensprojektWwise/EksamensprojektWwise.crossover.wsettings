@@ -165,8 +165,12 @@
 						<Value Platform="Windows"></Value>
 					</ValueList>
 				</Property>
-				<Property Name="SoundEngine\BusMapping\{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" Type="string" Value="{D364DB56-82EC-4887-BA7F-9B458EA45D87}509324739"/>
-				<Property Name="SoundEngine\BusMapping\{F7A3A2BB-DDD6-4A7B-96BC-2B9D2DADC013}" Type="string" Value="{D364DB56-82EC-4887-BA7F-9B458EA45D87}509324739"/>
+				<Property Name="SoundEngine\BusMapping\{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" Type="string" Value="{D364DB56-82EC-4887-BA7F-9B458EA45D87}534096705"/>
+				<Property Name="SoundEngine\BusMapping\{18F321D0-4EFC-44E0-BF7B-B20135A03D73}" Type="string" Value=""/>
+				<Property Name="SoundEngine\BusMapping\{43951B2B-3007-4E4B-80F5-27EB6808E543}" Type="string" Value=""/>
+				<Property Name="SoundEngine\BusMapping\{6D0A3ED0-0CC3-4D5E-B2D6-88B842981215}" Type="string" Value=""/>
+				<Property Name="SoundEngine\BusMapping\{BA2F131B-8DB9-4E33-BA8A-F0CDB85441A4}" Type="string" Value=""/>
+				<Property Name="SoundEngine\BusMapping\{F7A3A2BB-DDD6-4A7B-96BC-2B9D2DADC013}" Type="string" Value="{D364DB56-82EC-4887-BA7F-9B458EA45D87}534096705"/>
 				<Property Name="SwitchContainerEditorLocation\{1DEDB888-9E4F-4E54-A6C9-191F7A654EA5}\x64_Collapsed States" Type="string" Value=""/>
 				<Property Name="SwitchContainerEditorLocation\{31261704-E034-499E-85B8-05241EC62733}\x64_Collapsed States" Type="string" Value=""/>
 				<Property Name="SwitchContainerEditorLocation\{31D343B3-ABBA-4638-AAFC-D4BB15A472E1}\x64_Collapsed States" Type="string" Value=""/>

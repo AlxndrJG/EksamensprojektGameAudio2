@@ -7,8 +7,28 @@
 				<Property Name="OverrideColor" Type="bool" Value="True"/>
 			</PropertyList>
 			<ChildrenList>
-				<Event Name="Play_Door_Open" ID="{9E3105D9-A544-4D4F-A19A-7FE3457018B7}"/>
-				<Event Name="Play_Door_Close" ID="{5E747AD3-9FE2-4CC6-8986-745585448FBF}"/>
+				<Event Name="Play_Door_Open" ID="{9E3105D9-A544-4D4F-A19A-7FE3457018B7}">
+					<ChildrenList>
+						<Action Name="" ID="{7F6C0E5B-9C67-49D0-9F02-2F22A4F0089B}" ShortID="67725154">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Door_Open" ID="{17B1A747-7899-4F6A-86C2-AB4DE9773EE1}" WorkUnitID="{76B5CC4A-DF79-4C1D-BE39-7BD9231E4A3F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Door_Close" ID="{5E747AD3-9FE2-4CC6-8986-745585448FBF}">
+					<ChildrenList>
+						<Action Name="" ID="{52F02990-74EF-40EB-9E91-9D848F80C8E4}" ShortID="326790782">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Door_Close" ID="{D7C99537-81E9-499C-9C83-81767F4013CB}" WorkUnitID="{76B5CC4A-DF79-4C1D-BE39-7BD9231E4A3F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
