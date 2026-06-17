@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{69C07AC4-2AB0-417A-A9B2-DC14CCE12DE0}",
     "Language": "SFX",
-    "Hash": "{7569CAE1-86EC-4611-E85E-10116BC8A30B}",
+    "Hash": "{7550F8A2-0A7F-EADD-2B9C-A4B21AA946B2}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -120,14 +120,6 @@
       "CachePath": "48/{484190A7-1370-D770-2A1D-BA8E2F796CFC}.wem"
      },
      {
-      "Id": "57747351",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "EksamensprojektWwise\\Originals\\SFX\\Dør_Håndtag-003.wav",
-      "CachePath": "CC/{CC5E44A9-8663-9E60-9CBA-EA4C36072A2B}.wem"
-     },
-     {
       "Id": "72868023",
       "Language": "SFX",
       "Streaming": "false",
@@ -200,6 +192,14 @@
       "CachePath": "0B/{0B44B39E-BC7E-69BB-8D9C-84CE83977E84}.wem"
      },
      {
+      "Id": "94758386",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "EksamensprojektWwise\\Originals\\SFX\\SkydeLåger-013.wav",
+      "CachePath": "CF/{CF9F90F9-4435-CBEB-6FE0-AECD4EDF01C5}.wem"
+     },
+     {
       "Id": "104982052",
       "Language": "SFX",
       "Streaming": "false",
@@ -221,7 +221,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "EksamensprojektWwise\\Originals\\SFX\\Dør_Håndtag-003.wav",
-      "CachePath": "33/{335137CF-93A1-364F-3F25-01502E1D191E}.wem"
+      "CachePath": "20/{207FE659-636A-9341-16C6-39754F269332}.wem"
      },
      {
       "Id": "116752336",
@@ -256,6 +256,14 @@
       "CachePath": "BB/{BBC6FDB7-FB7B-A813-D39B-18C0EA70CA72}.wem"
      },
      {
+      "Id": "133098967",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "EksamensprojektWwise\\Originals\\SFX\\Skuffe_Ud-001.wav",
+      "CachePath": "DB/{DB1E5BD2-3B06-024A-B349-BF5045BDA206}.wem"
+     },
+     {
       "Id": "134859353",
       "Language": "SFX",
       "Streaming": "false",
@@ -285,7 +293,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "EksamensprojektWwise\\Originals\\SFX\\SkydeLåger-006.wav",
-      "CachePath": "11/{11149FC5-D5E2-DBE1-0C37-56C35FF79EB4}.wem"
+      "CachePath": "01/{01C03182-33B1-D670-54BE-C8F87FEB4E52}.wem"
      },
      {
       "Id": "160873394",
@@ -333,7 +341,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "EksamensprojektWwise\\Originals\\SFX\\SkydeLåger-007.wav",
-      "CachePath": "4E/{4E495C06-30F2-5CBE-20B7-7CB2B9F7B9C2}.wem"
+      "CachePath": "81/{81FADFAB-D41C-6C99-8399-024D9EB2BABD}.wem"
      },
      {
       "Id": "188821505",
@@ -461,7 +469,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "EksamensprojektWwise\\Originals\\SFX\\Dør_Håndtag-004.wav",
-      "CachePath": "D4/{D4602660-9A62-0C65-4D84-2CB6EB3807F3}.wem"
+      "CachePath": "76/{76FFF987-AA24-7763-004A-885978E307A1}.wem"
      },
      {
       "Id": "238570229",
@@ -493,7 +501,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "EksamensprojektWwise\\Originals\\SFX\\Dør_Håndtag-006.wav",
-      "CachePath": "AC/{AC344E27-3675-7111-3F2E-4C7D5C093E15}.wem"
+      "CachePath": "6B/{6BCE1549-A5E5-FCAF-550E-DD33A4A08919}.wem"
      },
      {
       "Id": "250790566",
@@ -584,14 +592,6 @@
       "CachePath": "42/{42DBC691-6E2E-5F8D-8737-1D657921AFC8}.wem"
      },
      {
-      "Id": "283513185",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "EksamensprojektWwise\\Originals\\SFX\\Dør_Håndtag-006.wav",
-      "CachePath": "C0/{C029A676-42EA-DFC2-E0B9-869DAFACAAD6}.wem"
-     },
-     {
       "Id": "285702296",
       "Language": "SFX",
       "Streaming": "false",
@@ -605,7 +605,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "EksamensprojektWwise\\Originals\\SFX\\Dør_Håndtag-002.wav",
-      "CachePath": "9E/{9EC23644-A8EE-457A-5277-F3B59D747798}.wem"
+      "CachePath": "9D/{9D1B79EE-9BD3-1E96-BEBD-5956DC27D60B}.wem"
      },
      {
       "Id": "287090829",
@@ -616,28 +616,12 @@
       "CachePath": "97/{97A1D675-0875-A601-F18E-787E2119AF6E}.wem"
      },
      {
-      "Id": "288973665",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "EksamensprojektWwise\\Originals\\SFX\\Dør_Luk-003.wav",
-      "CachePath": "8A/{8AA89B9D-2511-24EC-C6A3-B2C5D6B99A51}.wem"
-     },
-     {
       "Id": "292252602",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "SFX\\EksamensprojektWwise\\Originals\\SFX\\Tiles_Toe-006.wav",
       "CachePath": "EB/{EBFC9CBE-9EF0-1672-39CA-2E842ADF1955}.wem"
-     },
-     {
-      "Id": "293685092",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "EksamensprojektWwise\\Originals\\SFX\\Wood_Knirken-001.wav",
-      "CachePath": "BA/{BA759F7C-AE1E-75B6-850D-1882990218FF}.wem"
      },
      {
       "Id": "293993595",
@@ -784,14 +768,6 @@
       "CachePath": "EA/{EAD88A08-823C-DD19-5632-FA8A32F2AD44}.wem"
      },
      {
-      "Id": "333663231",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "EksamensprojektWwise\\Originals\\SFX\\Wood_Knirken-003.wav",
-      "CachePath": "72/{72348A81-43B8-5232-E986-17F0F43709D0}.wem"
-     },
-     {
       "Id": "333689584",
       "Language": "SFX",
       "Streaming": "false",
@@ -837,7 +813,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "EksamensprojektWwise\\Originals\\SFX\\Dør_Luk-002.wav",
-      "CachePath": "08/{08C90EED-8B06-0C04-7268-0E536DC59F83}.wem"
+      "CachePath": "6B/{6BE6F200-EEE7-3670-0CC7-357C0955FCC6}.wem"
      },
      {
       "Id": "337398265",
@@ -886,6 +862,14 @@
       "Location": "Memory",
       "ShortName": "EksamensprojektWwise\\Originals\\SFX\\Carpet_Texture-002.wav",
       "CachePath": "4F/{4F331001-140F-904C-3824-5DA039E3D74B}.wem"
+     },
+     {
+      "Id": "350634037",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "EksamensprojektWwise\\Originals\\SFX\\Dør_Åben-004.wav",
+      "CachePath": "BB/{BB38D6D3-0C02-FBEF-73C8-424D74018ED2}.wem"
      },
      {
       "Id": "354238923",
@@ -974,6 +958,14 @@
       "Location": "Memory",
       "ShortName": "SFX\\EksamensprojektWwise\\Originals\\SFX\\Tiles_Toe-003.wav",
       "CachePath": "F1/{F1BFC9C5-59F0-9158-56F2-0E9AFF6B2F43}.wem"
+     },
+     {
+      "Id": "382675816",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "EksamensprojektWwise\\Originals\\SFX\\SkydeLåger-004.wav",
+      "CachePath": "38/{38D6F496-320B-270A-1286-805D423C428D}.wem"
      },
      {
       "Id": "383099956",
@@ -1088,20 +1080,20 @@
       "CachePath": "BA/{BA5A5B55-4737-AEE4-449B-C1238EA33279}.wem"
      },
      {
-      "Id": "423075615",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "EksamensprojektWwise\\Originals\\SFX\\Dør_Åben-002.wav",
-      "CachePath": "CF/{CF642014-F4EB-89C9-5FB0-A04BF7B189A8}.wem"
-     },
-     {
       "Id": "423912907",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "EksamensprojektWwise\\Originals\\SFX\\Cabinet_Open_1.wav",
       "CachePath": "23/{23FC72F1-90CA-3BC7-0374-2137D60A0ADC}.wem"
+     },
+     {
+      "Id": "431027051",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "EksamensprojektWwise\\Originals\\SFX\\SkydeLåger-006.wav",
+      "CachePath": "0C/{0C6CEC23-156C-9B09-A211-9F0A351CCFAD}.wem"
      },
      {
       "Id": "435688002",
@@ -1280,14 +1272,6 @@
       "CachePath": "0E/{0EE638CD-658B-C7E5-FC98-C14922A407DE}.wem"
      },
      {
-      "Id": "511347462",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "EksamensprojektWwise\\Originals\\SFX\\SkydeLåger-008.wav",
-      "CachePath": "CD/{CD54C62E-ADE4-B77C-ABB7-228207C79209}.wem"
-     },
-     {
       "Id": "518144614",
       "Language": "SFX",
       "Streaming": "false",
@@ -1405,7 +1389,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "EksamensprojektWwise\\Originals\\SFX\\SkydeLåger-014.wav",
-      "CachePath": "16/{16F9D4E4-6BE3-DFF5-02D3-D9EF6DE595FD}.wem"
+      "CachePath": "5D/{5D81027F-8537-848B-1376-76664EA9001B}.wem"
      },
      {
       "Id": "577861633",
@@ -1504,14 +1488,6 @@
       "CachePath": "A5/{A5FB5EB3-B7AC-8144-2979-C3C3DD6B52F4}.wem"
      },
      {
-      "Id": "603746285",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "EksamensprojektWwise\\Originals\\SFX\\SkydeLåger-010.wav",
-      "CachePath": "C4/{C4084D13-BD6E-5CA5-9BD8-4885BCAB35DE}.wem"
-     },
-     {
       "Id": "603968308",
       "Language": "SFX",
       "Streaming": "false",
@@ -1581,7 +1557,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "EksamensprojektWwise\\Originals\\SFX\\SkydeLåger-012.wav",
-      "CachePath": "47/{470BB593-E3F3-05BD-FBC1-51EEAC5B3962}.wem"
+      "CachePath": "1B/{1BC36987-B7FE-CE34-DC5E-C980BF5CEDED}.wem"
      },
      {
       "Id": "623892796",
@@ -1664,14 +1640,6 @@
       "CachePath": "30/{30DD137E-48C3-FE20-7BE7-14293D899185}.wem"
      },
      {
-      "Id": "692306209",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "EksamensprojektWwise\\Originals\\SFX\\Dør_Åben-004.wav",
-      "CachePath": "51/{51A021A8-5E85-7DAD-AEA5-C461D5A90D7B}.wem"
-     },
-     {
       "Id": "692418967",
       "Language": "SFX",
       "Streaming": "false",
@@ -1752,22 +1720,6 @@
       "CachePath": "EE/{EE09868B-B039-74C9-E6EF-27E50E23E4CC}.wem"
      },
      {
-      "Id": "717984090",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "EksamensprojektWwise\\Originals\\SFX\\Wood_Knirken-004.wav",
-      "CachePath": "2F/{2F667C6E-E9A0-CDA6-08C0-64A1AC96F440}.wem"
-     },
-     {
-      "Id": "721374981",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "EksamensprojektWwise\\Originals\\SFX\\Dør_Håndtag-005.wav",
-      "CachePath": "E8/{E887222A-6C74-4135-7E3B-D30F5419F164}.wem"
-     },
-     {
       "Id": "722315689",
       "Language": "SFX",
       "Streaming": "false",
@@ -1824,14 +1776,6 @@
       "CachePath": "70/{70BCF5B0-9445-9F85-193B-711AE53EF8EE}.wem"
      },
      {
-      "Id": "740324785",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "EksamensprojektWwise\\Originals\\SFX\\Dør_Håndtag-004.wav",
-      "CachePath": "F6/{F6E68EFB-E310-F550-8D76-ADA266F6114F}.wem"
-     },
-     {
       "Id": "748226737",
       "Language": "SFX",
       "Streaming": "false",
@@ -1840,20 +1784,20 @@
       "CachePath": "9D/{9DE380C1-1655-E836-BFEB-7AC3B0F2CE58}.wem"
      },
      {
-      "Id": "756564909",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "EksamensprojektWwise\\Originals\\SFX\\Dør_Håndtag-002.wav",
-      "CachePath": "6E/{6E087413-8F2D-E734-225C-BA26D62AA15A}.wem"
-     },
-     {
       "Id": "758569696",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "EksamensprojektWwise\\Originals\\SFX\\Concrete_Texture-010.wav",
       "CachePath": "1B/{1BA4E173-51EC-6F15-591C-21B82732C528}.wem"
+     },
+     {
+      "Id": "760053701",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "EksamensprojektWwise\\Originals\\SFX\\SkydeLåger-012.wav",
+      "CachePath": "3F/{3F5DCBBC-FAD4-C78F-BF1D-6C1AE693C04D}.wem"
      },
      {
       "Id": "760580256",
@@ -1920,14 +1864,6 @@
       "CachePath": "E0/{E034F008-0E0E-1B02-08D7-FA180D369D3C}.wem"
      },
      {
-      "Id": "798840555",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "EksamensprojektWwise\\Originals\\SFX\\Wood_Knirken-005.wav",
-      "CachePath": "C5/{C5C346F2-4468-0010-E9D5-DCC731BB14B5}.wem"
-     },
-     {
       "Id": "801953892",
       "Language": "SFX",
       "Streaming": "false",
@@ -1968,6 +1904,14 @@
       "CachePath": "1E/{1E02D83E-7A11-57A0-AD86-F6F32FB29D3C}.wem"
      },
      {
+      "Id": "811425530",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "EksamensprojektWwise\\Originals\\SFX\\Dør_Åben-005.wav",
+      "CachePath": "AA/{AAE2EBD2-AB2E-2D2F-A012-533992982763}.wem"
+     },
+     {
       "Id": "813635729",
       "Language": "SFX",
       "Streaming": "false",
@@ -1992,14 +1936,6 @@
       "CachePath": "D6/{D6A4DBA2-F064-DFDC-CEF1-6D14A3D1B167}.wem"
      },
      {
-      "Id": "819899302",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "EksamensprojektWwise\\Originals\\SFX\\Dør_Håndtag-005.wav",
-      "CachePath": "3F/{3F6C5711-3B7E-778D-E49B-7B08FFA1BE16}.wem"
-     },
-     {
       "Id": "821231081",
       "Language": "SFX",
       "Streaming": "false",
@@ -2014,6 +1950,14 @@
       "Location": "Memory",
       "ShortName": "EksamensprojektWwise\\Originals\\SFX\\Carpet_Texture-007.wav",
       "CachePath": "56/{56B99404-0DE8-81A8-4E7F-7BC47C5E561A}.wem"
+     },
+     {
+      "Id": "825609899",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "EksamensprojektWwise\\Originals\\SFX\\SkydeLåger-008.wav",
+      "CachePath": "92/{928E15CB-1B9E-2276-F65B-DE9BA75582F9}.wem"
      },
      {
       "Id": "830043247",
@@ -2085,7 +2029,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "EksamensprojektWwise\\Originals\\SFX\\SkydeLåger-013.wav",
-      "CachePath": "DE/{DE14B95C-D6AC-C95E-BCF0-BC13A96E780F}.wem"
+      "CachePath": "90/{905A9828-A93B-4DFD-53F9-CACDC9667843}.wem"
      },
      {
       "Id": "860934273",
@@ -2102,6 +2046,14 @@
       "Location": "Memory",
       "ShortName": "EksamensprojektWwise\\Originals\\SFX\\Water_Tap_Singes_2.wav",
       "CachePath": "9D/{9D200624-A58A-319D-2820-045380CF8AD9}.wem"
+     },
+     {
+      "Id": "862538480",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "EksamensprojektWwise\\Originals\\SFX\\Skuffe_Ud-002.wav",
+      "CachePath": "CB/{CBA04F63-DC06-1504-FF9B-BAFA98837829}.wem"
      },
      {
       "Id": "864005805",
@@ -2144,22 +2096,6 @@
       "CachePath": "1F/{1F15031D-2B35-2A43-36E0-4AECFD1C2AC9}.wem"
      },
      {
-      "Id": "883803744",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "EksamensprojektWwise\\Originals\\SFX\\SkydeLåger-002.wav",
-      "CachePath": "41/{416DFA6D-A1BC-05C8-E5F4-782894F91FBF}.wem"
-     },
-     {
-      "Id": "884114505",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "EksamensprojektWwise\\Originals\\SFX\\SkydeLåger-004.wav",
-      "CachePath": "A5/{A563FB19-CC26-5922-B82D-239BC0D72CDB}.wem"
-     },
-     {
       "Id": "884268736",
       "Language": "SFX",
       "Streaming": "false",
@@ -2173,15 +2109,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "EksamensprojektWwise\\Originals\\SFX\\Dør_Åben-007.wav",
-      "CachePath": "53/{53F8F30F-2E13-D568-5D88-52D3BA6EC817}.wem"
-     },
-     {
-      "Id": "889503622",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "EksamensprojektWwise\\Originals\\SFX\\Dør_Åben-003.wav",
-      "CachePath": "09/{0909A7F5-3A2C-B29E-CEDC-3E4F22151721}.wem"
+      "CachePath": "1F/{1F7F4894-02EB-84F7-E728-B29AB26CD2F5}.wem"
      },
      {
       "Id": "890991987",
@@ -2190,6 +2118,14 @@
       "Location": "Memory",
       "ShortName": "EksamensprojektWwise\\Originals\\SFX\\Skuffe_Ud-001.wav",
       "CachePath": "F1/{F1349EA8-EBCD-A186-9CA9-2993D2CE0EC7}.wem"
+     },
+     {
+      "Id": "891127014",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "EksamensprojektWwise\\Originals\\SFX\\SkydeLåger-007.wav",
+      "CachePath": "A6/{A63DE7E4-96A5-605E-5916-7483D4F173FA}.wem"
      },
      {
       "Id": "899457694",
@@ -2240,14 +2176,6 @@
       "CachePath": "1E/{1E392449-046D-3A84-8FD7-8E14E78235E3}.wem"
      },
      {
-      "Id": "923797572",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "EksamensprojektWwise\\Originals\\SFX\\SkydeLåger-015.wav",
-      "CachePath": "A5/{A5BCD4C1-BD15-8DB1-D8F5-5E474BB13622}.wem"
-     },
-     {
       "Id": "926597305",
       "Language": "SFX",
       "Streaming": "false",
@@ -2270,14 +2198,6 @@
       "Location": "Memory",
       "ShortName": "EksamensprojektWwise\\Originals\\SFX\\Concrete_Foot-005.wav",
       "CachePath": "3E/{3E8D2B93-9F60-2EBE-AC62-1CA9608B3A53}.wem"
-     },
-     {
-      "Id": "941440164",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "EksamensprojektWwise\\Originals\\SFX\\Dør_Åben-005.wav",
-      "CachePath": "2C/{2C1907CF-8AB0-7ABB-7CBA-23250385634B}.wem"
      },
      {
       "Id": "943204351",
@@ -2421,7 +2341,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "EksamensprojektWwise\\Originals\\SFX\\Dør_Luk-001.wav",
-      "CachePath": "02/{02771E77-142E-ADD1-F9D4-E1792A2A17B0}.wem"
+      "CachePath": "52/{52ABE6B6-BBB2-853B-DB80-DC11E0EABD85}.wem"
      },
      {
       "Id": "994217136",
@@ -2494,14 +2414,6 @@
       "Location": "Memory",
       "ShortName": "EksamensprojektWwise\\Originals\\SFX\\Carpet_Step-010.wav",
       "CachePath": "F1/{F13AEBAE-AB8D-DBD5-CC37-52F8950389F8}.wem"
-     },
-     {
-      "Id": "1022705281",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "EksamensprojektWwise\\Originals\\SFX\\Dør_Luk-004.wav",
-      "CachePath": "E4/{E4C0BC93-CC3D-E4D5-F4B8-2FB9514DC70E}.wem"
      },
      {
       "Id": "1023266597",
@@ -2678,6 +2590,14 @@
       "Location": "Memory",
       "ShortName": "EksamensprojektWwise\\Originals\\SFX\\Water_Tap_Singles_5.wav",
       "CachePath": "FF/{FF14ED9E-7A8D-70C1-61C4-790ADCFAD8DC}.wem"
+     },
+     {
+      "Id": "1073520552",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "EksamensprojektWwise\\Originals\\SFX\\Dør_Luk-001.wav",
+      "CachePath": "52/{5261D3C9-EA29-7EB5-A30B-A3F1DABDA241}.wem"
      }
     ],
     "Plugins": {
@@ -3095,9 +3015,15 @@
       "Color": "4",
       "MaxAttenuation": "100",
       "DurationType": "OneShot",
-      "DurationMin": "0.96584",
-      "DurationMax": "1.6595",
+      "DurationMin": "1.2032765",
+      "DurationMax": "1.8061047",
       "MediaRefs": [
+       {
+        "Id": "94758386"
+       },
+       {
+        "Id": "133098967"
+       },
        {
         "Id": "158777578"
        },
@@ -3105,40 +3031,43 @@
         "Id": "176195844"
        },
        {
-        "Id": "293685092"
+        "Id": "382675816"
        },
        {
-        "Id": "333663231"
-       },
-       {
-        "Id": "511347462"
+        "Id": "431027051"
        },
        {
         "Id": "573098764"
        },
        {
-        "Id": "603746285"
-       },
-       {
         "Id": "620205234"
        },
        {
-        "Id": "717984090"
+        "Id": "760053701"
        },
        {
-        "Id": "798840555"
+        "Id": "825609899"
        },
        {
         "Id": "859082375"
        },
        {
-        "Id": "883803744"
+        "Id": "860934273"
        },
        {
-        "Id": "884114505"
+        "Id": "862538480"
        },
        {
-        "Id": "923797572"
+        "Id": "891127014"
+       },
+       {
+        "Id": "995851035"
+       },
+       {
+        "Id": "1061979509"
+       },
+       {
+        "Id": "1064757920"
        }
       ]
      },
@@ -3150,9 +3079,15 @@
       "Color": "4",
       "MaxAttenuation": "100",
       "DurationType": "OneShot",
-      "DurationMin": "0.96584",
-      "DurationMax": "1.6595",
+      "DurationMin": "1.2032765",
+      "DurationMax": "1.8061047",
       "MediaRefs": [
+       {
+        "Id": "94758386"
+       },
+       {
+        "Id": "133098967"
+       },
        {
         "Id": "158777578"
        },
@@ -3160,40 +3095,43 @@
         "Id": "176195844"
        },
        {
-        "Id": "293685092"
+        "Id": "382675816"
        },
        {
-        "Id": "333663231"
-       },
-       {
-        "Id": "511347462"
+        "Id": "431027051"
        },
        {
         "Id": "573098764"
        },
        {
-        "Id": "603746285"
-       },
-       {
         "Id": "620205234"
        },
        {
-        "Id": "717984090"
+        "Id": "760053701"
        },
        {
-        "Id": "798840555"
+        "Id": "825609899"
        },
        {
         "Id": "859082375"
        },
        {
-        "Id": "883803744"
+        "Id": "860934273"
        },
        {
-        "Id": "884114505"
+        "Id": "862538480"
        },
        {
-        "Id": "923797572"
+        "Id": "891127014"
+       },
+       {
+        "Id": "995851035"
+       },
+       {
+        "Id": "1061979509"
+       },
+       {
+        "Id": "1064757920"
        }
       ]
      },
@@ -3205,41 +3143,35 @@
       "Color": "4",
       "MaxAttenuation": "100",
       "DurationType": "OneShot",
-      "DurationMin": "1.5455642",
-      "DurationMax": "2.2395353",
+      "DurationMin": "1.4335364",
+      "DurationMax": "2.19275",
       "MediaRefs": [
        {
-        "Id": "57747351"
-       },
-       {
-        "Id": "283513185"
-       },
-       {
-        "Id": "288973665"
+        "Id": "133098967"
        },
        {
         "Id": "336680327"
        },
        {
-        "Id": "423075615"
+        "Id": "860934273"
        },
        {
-        "Id": "721374981"
-       },
-       {
-        "Id": "740324785"
-       },
-       {
-        "Id": "756564909"
-       },
-       {
-        "Id": "819899302"
+        "Id": "862538480"
        },
        {
         "Id": "994051441"
        },
        {
-        "Id": "1022705281"
+        "Id": "995851035"
+       },
+       {
+        "Id": "1061979509"
+       },
+       {
+        "Id": "1064757920"
+       },
+       {
+        "Id": "1073520552"
        }
       ]
      },
@@ -3251,8 +3183,8 @@
       "Color": "4",
       "MaxAttenuation": "100",
       "DurationType": "OneShot",
-      "DurationMin": "1.2763301",
-      "DurationMax": "2.863901",
+      "DurationMin": "0.6478554",
+      "DurationMax": "1.4658059",
       "MediaRefs": [
        {
         "Id": "112147081"
@@ -3267,16 +3199,13 @@
         "Id": "286133783"
        },
        {
-        "Id": "692306209"
+        "Id": "350634037"
+       },
+       {
+        "Id": "811425530"
        },
        {
         "Id": "884897319"
-       },
-       {
-        "Id": "889503622"
-       },
-       {
-        "Id": "941440164"
        }
       ]
      },
@@ -5422,6 +5351,6 @@
     ]
    }
   ],
-  "FileHash": "{A02A0329-2CDE-449D-C5ED-B74133FCBDE9}"
+  "FileHash": "{225D2A22-27E8-ED00-A193-004A2E3D5D92}"
  }
 }
