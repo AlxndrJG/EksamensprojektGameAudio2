@@ -9,7 +9,6 @@
 			<ChildrenList>
 				<RandomSequenceContainer Name="Cabinet_Draw_Open" ID="{E1B884EF-2748-4155-92FE-D988973EFBDD}" ShortID="173032115">
 					<PropertyList>
-						<Property Name="3DSpatialization" Type="int16" Value="2"/>
 						<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 						<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
 						<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
@@ -28,6 +27,13 @@
 					</ReferenceList>
 					<ChildrenList>
 						<RandomSequenceContainer Name="Cabinet_Open" ID="{810387D9-8055-4BC5-AFF0-3E0814F39F98}" ShortID="642263607">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-14</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
@@ -69,11 +75,12 @@
 									<ChildrenList>
 										<AudioFileSource Name="Skuffe_Ind-002" ID="{30AD1745-A6B0-4E70-9500-478DF6A355A2}">
 											<PropertyList>
-												<Property Name="FadeInDuration" Type="Real64" Value="0.06328"/>
-												<Property Name="FadeOutDuration" Type="Real64" Value="0.0666"/>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.1499"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.34635"/>
+												<Property Name="FadeOutShape" Type="int16" Value="6"/>
 												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-												<Property Name="TrimBegin" Type="Real64" Value="0.23645"/>
-												<Property Name="TrimEnd" Type="Real64" Value="1.54547"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.73605"/>
+												<Property Name="TrimEnd" Type="Real64" Value="1.33898"/>
 											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>EksamensprojektWwise\Originals\SFX\Skuffe_Ind-002.wav</AudioFile>
@@ -118,11 +125,12 @@
 									<ChildrenList>
 										<AudioFileSource Name="Skuffe_Ind-003" ID="{91FBF50B-847D-42A0-9479-F769782ED687}">
 											<PropertyList>
-												<Property Name="FadeInDuration" Type="Real64" Value="0.0859"/>
-												<Property Name="FadeOutDuration" Type="Real64" Value="0.02665"/>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.24289"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.64297"/>
+												<Property Name="FadeOutShape" Type="int16" Value="6"/>
 												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-												<Property Name="TrimBegin" Type="Real64" Value="0.10068"/>
-												<Property Name="TrimEnd" Type="Real64" Value="1.45452"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.27543"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.9184"/>
 											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>EksamensprojektWwise\Originals\SFX\Skuffe_Ind-003.wav</AudioFile>
@@ -139,7 +147,7 @@
 									<PropertyList>
 										<Property Name="Lowpass" Type="int16">
 											<ValueList>
-												<Value>3</Value>
+												<Value>34</Value>
 											</ValueList>
 										</Property>
 										<Property Name="Pitch" Type="int32">
@@ -172,11 +180,11 @@
 									<ChildrenList>
 										<AudioFileSource Name="Skuffe_Ind-004" ID="{5A530362-608B-4F00-8ADF-610EF29E7290}">
 											<PropertyList>
-												<Property Name="FadeInDuration" Type="Real64" Value="0.0525"/>
-												<Property Name="FadeOutDuration" Type="Real64" Value="0.042"/>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.1638"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.4116"/>
+												<Property Name="FadeOutShape" Type="int16" Value="6"/>
 												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-												<Property Name="TrimBegin" Type="Real64" Value="0.0252"/>
-												<Property Name="TrimEnd" Type="Real64" Value="0.99748"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.4851"/>
 											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>EksamensprojektWwise\Originals\SFX\Skuffe_Ind-004.wav</AudioFile>
@@ -187,55 +195,6 @@
 									</ChildrenList>
 									<ActiveSourceList>
 										<ActiveSource Name="Skuffe_Ind-004" ID="{5A530362-608B-4F00-8ADF-610EF29E7290}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="Skuffe_Ind-005" ID="{EE26EB71-33AF-4609-888A-3E7BA27DA2BD}" ShortID="1032458004">
-									<PropertyList>
-										<Property Name="Lowpass" Type="int16">
-											<ValueList>
-												<Value>4</Value>
-											</ValueList>
-										</Property>
-										<Property Name="Pitch" Type="int32">
-											<ModifierList>
-												<ModifierInfo>
-													<Modifier Name="" ID="{7672B08D-68AC-4465-B29A-7577C7244FD8}">
-														<PropertyList>
-															<Property Name="Enabled" Type="bool" Value="True"/>
-															<Property Name="Max" Type="Real64" Value="1"/>
-															<Property Name="Min" Type="Real64" Value="-1"/>
-														</PropertyList>
-													</Modifier>
-												</ModifierInfo>
-											</ModifierList>
-										</Property>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="Skuffe_Ind-005" ID="{33CD9EFC-0DF6-4E09-BCC2-FFD1595934A3}">
-											<PropertyList>
-												<Property Name="FadeInDuration" Type="Real64" Value="0.16194"/>
-												<Property Name="FadeOutDuration" Type="Real64" Value="0.16193"/>
-												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-												<Property Name="TrimBegin" Type="Real64" Value="0.21254"/>
-												<Property Name="TrimEnd" Type="Real64" Value="2.02432"/>
-											</PropertyList>
-											<Language>SFX</Language>
-											<AudioFile>EksamensprojektWwise\Originals\SFX\Skuffe_Ind-005.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="1041678223"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="Skuffe_Ind-005" ID="{33CD9EFC-0DF6-4E09-BCC2-FFD1595934A3}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="Skuffe_Ind-006" ID="{BB0052F5-651B-4481-9307-D5A459ABFFBC}" ShortID="632893605">
@@ -275,11 +234,12 @@
 									<ChildrenList>
 										<AudioFileSource Name="Skuffe_Ind-006" ID="{C4C1E74D-EE5C-410C-990C-1C561ADA8D82}">
 											<PropertyList>
-												<Property Name="FadeInDuration" Type="Real64" Value="0.05249"/>
-												<Property Name="FadeOutDuration" Type="Real64" Value="0.03038"/>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.19624"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.42844"/>
+												<Property Name="FadeOutShape" Type="int16" Value="6"/>
 												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-												<Property Name="TrimBegin" Type="Real64" Value="0.10499"/>
-												<Property Name="TrimEnd" Type="Real64" Value="1.23582"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.73812"/>
+												<Property Name="TrimEnd" Type="Real64" Value="1.3076"/>
 											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>EksamensprojektWwise\Originals\SFX\Skuffe_Ind-006.wav</AudioFile>
@@ -325,10 +285,11 @@
 										<AudioFileSource Name="Skuffe_Ind-007" ID="{EEC07216-179C-4A83-B9E1-DAB678C7A647}">
 											<PropertyList>
 												<Property Name="FadeInDuration" Type="Real64" Value="0.03904"/>
-												<Property Name="FadeOutDuration" Type="Real64" Value="0.03301"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.45666"/>
+												<Property Name="FadeOutShape" Type="int16" Value="6"/>
 												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-												<Property Name="TrimBegin" Type="Real64" Value="0.16212"/>
-												<Property Name="TrimEnd" Type="Real64" Value="1.28321"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.5467"/>
+												<Property Name="TrimEnd" Type="Real64" Value="1.15401"/>
 											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>EksamensprojektWwise\Originals\SFX\Skuffe_Ind-007.wav</AudioFile>
@@ -373,11 +334,12 @@
 									<ChildrenList>
 										<AudioFileSource Name="Skuffe_Ind-008" ID="{1E3C0DB1-9752-4E8B-953A-5463806B116F}">
 											<PropertyList>
-												<Property Name="FadeInDuration" Type="Real64" Value="0.06721"/>
-												<Property Name="FadeOutDuration" Type="Real64" Value="0.08963"/>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.2945"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.33932"/>
+												<Property Name="FadeOutShape" Type="int16" Value="6"/>
 												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-												<Property Name="TrimBegin" Type="Real64" Value="0.17283"/>
-												<Property Name="TrimEnd" Type="Real64" Value="1.45993"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.87078"/>
+												<Property Name="TrimEnd" Type="Real64" Value="1.57515"/>
 											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>EksamensprojektWwise\Originals\SFX\Skuffe_Ind-008.wav</AudioFile>
@@ -388,59 +350,6 @@
 									</ChildrenList>
 									<ActiveSourceList>
 										<ActiveSource Name="Skuffe_Ind-008" ID="{1E3C0DB1-9752-4E8B-953A-5463806B116F}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="Skuffe_Ind-009" ID="{818EF912-76CA-4271-981B-960E99153246}" ShortID="387499461">
-									<PropertyList>
-										<Property Name="Lowpass" Type="int16">
-											<ValueList>
-												<Value>5</Value>
-											</ValueList>
-										</Property>
-										<Property Name="Pitch" Type="int32">
-											<ModifierList>
-												<ModifierInfo>
-													<Modifier Name="" ID="{38D4312C-2EA4-4A23-85B5-A545F7BDB5D4}">
-														<PropertyList>
-															<Property Name="Enabled" Type="bool" Value="True"/>
-															<Property Name="Min" Type="Real64" Value="-1"/>
-														</PropertyList>
-													</Modifier>
-												</ModifierInfo>
-											</ModifierList>
-										</Property>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-6</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="Skuffe_Ind-009" ID="{490A50DF-2891-40E6-91C8-E8C4C441223F}">
-											<PropertyList>
-												<Property Name="FadeInDuration" Type="Real64" Value="0.06381"/>
-												<Property Name="FadeOutDuration" Type="Real64" Value="0.06985"/>
-												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-												<Property Name="TrimBegin" Type="Real64" Value="0.18219"/>
-												<Property Name="TrimEnd" Type="Real64" Value="1.4514"/>
-											</PropertyList>
-											<Language>SFX</Language>
-											<AudioFile>EksamensprojektWwise\Originals\SFX\Skuffe_Ind-009.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="909903587"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="Skuffe_Ind-009" ID="{490A50DF-2891-40E6-91C8-E8C4C441223F}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
@@ -460,7 +369,6 @@
 				</RandomSequenceContainer>
 				<RandomSequenceContainer Name="Cabinet_Draw_Close" ID="{E5B25F31-3A9A-4150-ABEC-863946167DA5}" ShortID="266578561">
 					<PropertyList>
-						<Property Name="3DSpatialization" Type="int16" Value="2"/>
 						<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 						<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
 						<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
@@ -480,193 +388,6 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<RandomSequenceContainer Name="Cabinet_Close_Imp" ID="{10645D13-3874-477A-BD27-7EA25321647B}" ShortID="908919569">
-							<PropertyList>
-								<Property Name="Lowpass" Type="int16">
-									<ValueList>
-										<Value>73</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<Sound Name="Skuffe_Ud-001" ID="{9B344D19-C056-4448-8728-6B6B2DB0A5C8}" ShortID="571353024">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="Skuffe_Ud-001" ID="{1DCE7D2D-9E61-4494-BC72-3BE54D3854BB}">
-											<PropertyList>
-												<Property Name="FadeInDuration" Type="Real64" Value="0.00422"/>
-												<Property Name="FadeOutDuration" Type="Real64" Value="0.01054"/>
-												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-												<Property Name="TrimBegin" Type="Real64" Value="0.81135"/>
-											</PropertyList>
-											<Language>SFX</Language>
-											<AudioFile>EksamensprojektWwise\Originals\SFX\Skuffe_Ud-001.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="890991987"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="Skuffe_Ud-001" ID="{1DCE7D2D-9E61-4494-BC72-3BE54D3854BB}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="Skuffe_Ud-002" ID="{EBC944F7-4DD8-4A81-B51D-76C3DB566530}" ShortID="441618267">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="Skuffe_Ud-002" ID="{C802FF11-91A0-4853-85E6-D75DF7110D2B}">
-											<PropertyList>
-												<Property Name="FadeInDuration" Type="Real64" Value="0.01249"/>
-												<Property Name="FadeOutDuration" Type="Real64" Value="0.04371"/>
-												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-												<Property Name="TrimBegin" Type="Real64" Value="1.25615"/>
-											</PropertyList>
-											<Language>SFX</Language>
-											<AudioFile>EksamensprojektWwise\Originals\SFX\Skuffe_Ud-002.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="864901128"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="Skuffe_Ud-002" ID="{C802FF11-91A0-4853-85E6-D75DF7110D2B}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="Skuffe_Ud-007" ID="{44C784DD-AC56-4E04-90F9-46276A5663B7}" ShortID="996392879">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="Skuffe_Ud-007" ID="{41CFFF38-405C-40D0-97A9-6AE1353AAC1B}">
-											<PropertyList>
-												<Property Name="FadeInDuration" Type="Real64" Value="0.01877"/>
-												<Property Name="FadeOutDuration" Type="Real64" Value="0.05214"/>
-												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-												<Property Name="TrimBegin" Type="Real64" Value="0.6695"/>
-											</PropertyList>
-											<Language>SFX</Language>
-											<AudioFile>EksamensprojektWwise\Originals\SFX\Skuffe_Ud-007.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="1061979509"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="Skuffe_Ud-007" ID="{41CFFF38-405C-40D0-97A9-6AE1353AAC1B}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="Skuffe_Ud-008" ID="{ED4A1C85-E509-4830-93A6-B5E60C095DA5}" ShortID="193039669">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="Skuffe_Ud-008" ID="{4811B23A-2C24-424F-A6E4-3E8A43803350}">
-											<PropertyList>
-												<Property Name="FadeInDuration" Type="Real64" Value="0.02126"/>
-												<Property Name="FadeOutDuration" Type="Real64" Value="0.01519"/>
-												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-												<Property Name="TrimBegin" Type="Real64" Value="1.17215"/>
-											</PropertyList>
-											<Language>SFX</Language>
-											<AudioFile>EksamensprojektWwise\Originals\SFX\Skuffe_Ud-008.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="860934273"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="Skuffe_Ud-008" ID="{4811B23A-2C24-424F-A6E4-3E8A43803350}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="Skuffe_Ud-009" ID="{AD81BE9E-C704-42F2-A109-E82017D3484A}" ShortID="454059008">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="Skuffe_Ud-009" ID="{A15CE936-1C89-4EAD-82D9-4BEF8DA8A141}">
-											<PropertyList>
-												<Property Name="FadeInDuration" Type="Real64" Value="0.01821"/>
-												<Property Name="FadeOutDuration" Type="Real64" Value="0.02628"/>
-												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-												<Property Name="TrimBegin" Type="Real64" Value="0.81579"/>
-											</PropertyList>
-											<Language>SFX</Language>
-											<AudioFile>EksamensprojektWwise\Originals\SFX\Skuffe_Ud-009.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="1064757920"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="Skuffe_Ud-009" ID="{A15CE936-1C89-4EAD-82D9-4BEF8DA8A141}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="Skuffe_Ud-010" ID="{1168EFCD-2072-479C-97EF-AC501D808AE2}" ShortID="941417394">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="Skuffe_Ud-010" ID="{26EE449C-7C3E-4151-82CA-09F4F18990E5}">
-											<PropertyList>
-												<Property Name="FadeInDuration" Type="Real64" Value="0.01734"/>
-												<Property Name="FadeOutDuration" Type="Real64" Value="0.04707"/>
-												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-												<Property Name="TrimBegin" Type="Real64" Value="0.86711"/>
-											</PropertyList>
-											<Language>SFX</Language>
-											<AudioFile>EksamensprojektWwise\Originals\SFX\Skuffe_Ud-010.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="995851035"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="Skuffe_Ud-010" ID="{26EE449C-7C3E-4151-82CA-09F4F18990E5}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-							</ChildrenList>
-						</RandomSequenceContainer>
 						<RandomSequenceContainer Name="Cabinet_Close_Slide" ID="{BE157EA0-A149-475C-84AF-AD118AAA18C3}" ShortID="937700269">
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -703,11 +424,12 @@
 									<ChildrenList>
 										<AudioFileSource Name="Skuffe_Ud-001" ID="{2AE89203-19ED-4CFB-A249-15AAA3ABA4A1}">
 											<PropertyList>
-												<Property Name="FadeInDuration" Type="Real64" Value="0.05899"/>
-												<Property Name="FadeOutDuration" Type="Real64" Value="0.06954"/>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.34768"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.38562"/>
+												<Property Name="FadeOutShape" Type="int16" Value="6"/>
 												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 												<Property Name="TrimBegin" Type="Real64" Value="0.07591"/>
-												<Property Name="TrimEnd" Type="Real64" Value="0.53529"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.66802"/>
 											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>EksamensprojektWwise\Originals\SFX\Skuffe_Ud-001.wav</AudioFile>
@@ -732,12 +454,13 @@
 									<ChildrenList>
 										<AudioFileSource Name="Skuffe_Ud-002" ID="{9FB5C507-5F4D-4466-932A-EA93AC993546}">
 											<PropertyList>
-												<Property Name="FadeInDuration" Type="Real64" Value="0.03747"/>
-												<Property Name="FadeOutDuration" Type="Real64" Value="0.04372"/>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.23743"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.46866"/>
+												<Property Name="FadeOutShape" Type="int16" Value="6"/>
 												<Property Name="LoopBegin" Type="Real64" Value="0.59681"/>
 												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 												<Property Name="TrimBegin" Type="Real64" Value="0.09371"/>
-												<Property Name="TrimEnd" Type="Real64" Value="0.79073"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.64698"/>
 											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>EksamensprojektWwise\Originals\SFX\Skuffe_Ud-002.wav</AudioFile>
@@ -759,7 +482,7 @@
 										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-15</Value>
+												<Value>-23</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -774,10 +497,12 @@
 									<ChildrenList>
 										<AudioFileSource Name="Skuffe_Ud-003" ID="{6560A9AF-E694-46D3-A294-813C8DF37A26}">
 											<PropertyList>
-												<Property Name="FadeInDuration" Type="Real64" Value="0.01401"/>
-												<Property Name="FadeOutDuration" Type="Real64" Value="0.10511"/>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.12788"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.29603"/>
+												<Property Name="FadeOutShape" Type="int16" Value="6"/>
 												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-												<Property Name="TrimEnd" Type="Real64" Value="0.58164"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.25573"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.74978"/>
 											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>EksamensprojektWwise\Originals\SFX\Skuffe_Ud-003.wav</AudioFile>
@@ -802,11 +527,12 @@
 									<ChildrenList>
 										<AudioFileSource Name="Skuffe_Ud-004" ID="{1208C392-CD4C-4509-93E6-EBF6B02743CF}">
 											<PropertyList>
-												<Property Name="FadeInDuration" Type="Real64" Value="0.09109"/>
-												<Property Name="FadeOutDuration" Type="Real64" Value="0.07084"/>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.2429"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.45569"/>
+												<Property Name="FadeOutShape" Type="int16" Value="6"/>
 												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 												<Property Name="TrimBegin" Type="Real64" Value="0.4706"/>
-												<Property Name="TrimEnd" Type="Real64" Value="1.22483"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.92629"/>
 											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>EksamensprojektWwise\Originals\SFX\Skuffe_Ud-004.wav</AudioFile>
@@ -820,6 +546,13 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="Skuffe_Ud-006" ID="{381C3E43-44C9-4C75-933F-2DE0AD602FF1}" ShortID="728669982">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-4</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
@@ -831,11 +564,12 @@
 									<ChildrenList>
 										<AudioFileSource Name="Skuffe_Ud-006" ID="{A5303ADF-9821-4D7F-8BA5-9D02121251FA}">
 											<PropertyList>
-												<Property Name="FadeInDuration" Type="Real64" Value="0.03194"/>
-												<Property Name="FadeOutDuration" Type="Real64" Value="0.01596"/>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.21081"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.51133"/>
+												<Property Name="FadeOutShape" Type="int16" Value="6"/>
 												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 												<Property Name="TrimBegin" Type="Real64" Value="0.07343"/>
-												<Property Name="TrimEnd" Type="Real64" Value="0.81475"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.69654"/>
 											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>EksamensprojektWwise\Originals\SFX\Skuffe_Ud-006.wav</AudioFile>
@@ -846,35 +580,6 @@
 									</ChildrenList>
 									<ActiveSourceList>
 										<ActiveSource Name="Skuffe_Ud-006" ID="{A5303ADF-9821-4D7F-8BA5-9D02121251FA}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="Skuffe_Ud-007" ID="{0FCB1724-A685-4311-96E5-3389907F6AF7}" ShortID="672217037">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="Skuffe_Ud-007" ID="{438E9F3A-4B58-429A-8446-02D760BE4074}">
-											<PropertyList>
-												<Property Name="FadeInDuration" Type="Real64" Value="0.03131"/>
-												<Property Name="FadeOutDuration" Type="Real64" Value="0.03339"/>
-												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-												<Property Name="TrimBegin" Type="Real64" Value="0.19394"/>
-												<Property Name="TrimEnd" Type="Real64" Value="0.67769"/>
-											</PropertyList>
-											<Language>SFX</Language>
-											<AudioFile>EksamensprojektWwise\Originals\SFX\Skuffe_Ud-007.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="543454134"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="Skuffe_Ud-007" ID="{438E9F3A-4B58-429A-8446-02D760BE4074}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="Skuffe_Ud-008" ID="{1B2BDF2F-142D-431E-BBF3-67838918F552}" ShortID="835387091">
@@ -889,11 +594,12 @@
 									<ChildrenList>
 										<AudioFileSource Name="Skuffe_Ud-008" ID="{5AD10012-1851-40CE-8B15-B730180AE3D6}">
 											<PropertyList>
-												<Property Name="FadeInDuration" Type="Real64" Value="0.04252"/>
-												<Property Name="FadeOutDuration" Type="Real64" Value="0.02127"/>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.1792"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.54057"/>
+												<Property Name="FadeOutShape" Type="int16" Value="6"/>
 												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 												<Property Name="TrimBegin" Type="Real64" Value="0.41304"/>
-												<Property Name="TrimEnd" Type="Real64" Value="1.13557"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.98983"/>
 											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>EksamensprojektWwise\Originals\SFX\Skuffe_Ud-008.wav</AudioFile>
@@ -918,11 +624,12 @@
 									<ChildrenList>
 										<AudioFileSource Name="Skuffe_Ud-009" ID="{5D525CEF-18E2-4B9E-A11A-81BCFEAD6087}">
 											<PropertyList>
-												<Property Name="FadeInDuration" Type="Real64" Value="0.05057"/>
-												<Property Name="FadeOutDuration" Type="Real64" Value="0.01819"/>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.12746"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.41697"/>
+												<Property Name="FadeOutShape" Type="int16" Value="6"/>
 												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-												<Property Name="TrimBegin" Type="Real64" Value="0.27528"/>
-												<Property Name="TrimEnd" Type="Real64" Value="0.75718"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.21054"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.7045"/>
 											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>EksamensprojektWwise\Originals\SFX\Skuffe_Ud-009.wav</AudioFile>
@@ -947,11 +654,12 @@
 									<ChildrenList>
 										<AudioFileSource Name="Skuffe_Ud-010" ID="{C4441ABA-61E6-4D4C-8539-757EC2F876BC}">
 											<PropertyList>
-												<Property Name="FadeInDuration" Type="Real64" Value="0.0446"/>
-												<Property Name="FadeOutDuration" Type="Real64" Value="0.03471"/>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.23038"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.36173"/>
+												<Property Name="FadeOutShape" Type="int16" Value="6"/>
 												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-												<Property Name="TrimBegin" Type="Real64" Value="0.27248"/>
-												<Property Name="TrimEnd" Type="Real64" Value="0.86702"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.09161"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.60445"/>
 											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>EksamensprojektWwise\Originals\SFX\Skuffe_Ud-010.wav</AudioFile>
@@ -973,13 +681,6 @@
 								<ReferenceList>
 									<Reference Name="PlaylistObject">
 										<ObjectRef Name="Cabinet_Close_Slide" ID="{BE157EA0-A149-475C-84AF-AD118AAA18C3}" WorkUnitID="{CC65FEA8-FA6B-4248-9B9D-3D7072710284}"/>
-									</Reference>
-								</ReferenceList>
-							</PluginInnerObject>
-							<PluginInnerObject Name="" ID="{F00E9319-7029-4C94-A7BD-5F7CCC83DB83}" PluginName="PlaylistSlot" CompanyID="0" PluginID="86">
-								<ReferenceList>
-									<Reference Name="PlaylistObject">
-										<ObjectRef Name="Cabinet_Close_Imp" ID="{10645D13-3874-477A-BD27-7EA25321647B}" WorkUnitID="{CC65FEA8-FA6B-4248-9B9D-3D7072710284}"/>
 									</Reference>
 								</ReferenceList>
 							</PluginInnerObject>

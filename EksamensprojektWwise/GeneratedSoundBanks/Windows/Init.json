@@ -281,6 +281,26 @@
     ],
     "SwitchGroups": [
      {
+      "Id": "2088086403",
+      "Name": "RoomCheck_Switch",
+      "ObjectPath": "\\Switches\\Default Work Unit\\RoomCheck_Switch",
+      "GUID": "{85FD0BEB-E56F-4430-96ED-E4A775AF0BE2}",
+      "Switches": [
+       {
+        "Id": "249825411",
+        "Name": "OutsideRoom",
+        "ObjectPath": "\\Switches\\Default Work Unit\\RoomCheck_Switch\\OutsideRoom",
+        "GUID": "{2D9812ED-5981-4EB1-A7D8-C78515AACC52}"
+       },
+       {
+        "Id": "2924291032",
+        "Name": "InsideRoom",
+        "ObjectPath": "\\Switches\\Default Work Unit\\RoomCheck_Switch\\InsideRoom",
+        "GUID": "{3A2A8D1A-D82B-4F3B-A890-24A24E3B0B28}"
+       }
+      ]
+     },
+     {
       "Id": "4050929301",
       "Name": "Materials",
       "ObjectPath": "\\Switches\\Default Work Unit\\Materials",
@@ -321,6 +341,6 @@
     ]
    }
   ],
-  "FileHash": "{B9F49962-FE5C-906F-D47A-C0D79D9DDC49}"
+  "FileHash": "{B9A05F91-7C7D-0D14-F2D1-91D56C851505}"
  }
 }
