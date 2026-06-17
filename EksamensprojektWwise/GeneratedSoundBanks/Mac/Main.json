@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{69C07AC4-2AB0-417A-A9B2-DC14CCE12DE0}",
     "Language": "SFX",
-    "Hash": "{D235CEDA-B331-4797-AC8E-FD034AE42632}",
+    "Hash": "{3D3D657F-F853-62B6-C249-A4883A4B2A90}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -3198,8 +3198,8 @@
       "Color": "1",
       "MaxAttenuation": "10",
       "DurationType": "OneShot",
-      "DurationMin": "0.30081967",
-      "DurationMax": "1.0216262",
+      "DurationMin": "0.31447",
+      "DurationMax": "0.945135",
       "SwitchContainers": [
        {
         "SwitchValue": {
@@ -3574,8 +3574,8 @@
       "Color": "1",
       "MaxAttenuation": "10",
       "DurationType": "OneShot",
-      "DurationMin": "0.19730617",
-      "DurationMax": "0.91239315",
+      "DurationMin": "0.2151639",
+      "DurationMax": "0.8366682",
       "SwitchContainers": [
        {
         "SwitchValue": {
@@ -4349,8 +4349,8 @@
       "Color": "1",
       "MaxAttenuation": "10",
       "DurationType": "OneShot",
-      "DurationMin": "0.19428766",
-      "DurationMax": "1.1168181",
+      "DurationMin": "0.20282142",
+      "DurationMax": "1.0241266",
       "SwitchContainers": [
        {
         "SwitchValue": {
@@ -5300,6 +5300,6 @@
     ]
    }
   ],
-  "FileHash": "{6BC57A74-86FD-1EB5-4A1D-AE63956EEAE3}"
+  "FileHash": "{F6BCE422-4EDF-D84F-56A8-7760CA867FCA}"
  }
 }
