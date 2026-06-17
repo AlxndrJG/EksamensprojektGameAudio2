@@ -17,6 +17,7 @@ namespace AK
         static const AkUniqueID PLAY_BOOKSHELF_CABINET_OPEN = 2481548253U;
         static const AkUniqueID PLAY_CABINET_DRAW_CLOSE = 1347786538U;
         static const AkUniqueID PLAY_CABINET_DRAW_OPEN = 4258792910U;
+        static const AkUniqueID PLAY_CLOCK_CREAK = 4027104577U;
         static const AkUniqueID PLAY_CLOCKSWITCH = 1136407996U;
         static const AkUniqueID PLAY_CLOSET_DRAW_CLOSE = 3919977262U;
         static const AkUniqueID PLAY_CLOSET_DRAW_OPEN = 2360365162U;
@@ -24,6 +25,7 @@ namespace AK
         static const AkUniqueID PLAY_CLOSET_SLIDE_OPEN = 4175337955U;
         static const AkUniqueID PLAY_DOOR_CLOSE = 2292458263U;
         static const AkUniqueID PLAY_DOOR_OPEN = 1660008929U;
+        static const AkUniqueID PLAY_FRIDGE_LOOP = 1351264462U;
         static const AkUniqueID PLAY_FSBACK = 369029778U;
         static const AkUniqueID PLAY_FSFORWARD = 3148743426U;
         static const AkUniqueID PLAY_FSSIDE = 4244553126U;
@@ -35,6 +37,7 @@ namespace AK
         static const AkUniqueID PLAY_KITCHEN_DRAW_OPEN = 1911134838U;
         static const AkUniqueID PLAY_KITCHEN_SINK_LOOP = 1645146637U;
         static const AkUniqueID PLAY_TESTLYD = 1963904025U;
+        static const AkUniqueID PLAY_TV_ONOFF = 1847523583U;
         static const AkUniqueID PLAY_TV_STATIC = 1897478513U;
         static const AkUniqueID STOP_TV_STATIC = 1329369387U;
     } // namespace EVENTS
