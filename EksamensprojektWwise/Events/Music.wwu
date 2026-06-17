@@ -7,8 +7,87 @@
 				<Property Name="OverrideColor" Type="bool" Value="True"/>
 			</PropertyList>
 			<ChildrenList>
-				<Event Name="InsideRoom_Music" ID="{59552ECE-2C97-4222-A870-D41DA5561CA3}"/>
+				<Event Name="InsideRoom_Music" ID="{59552ECE-2C97-4222-A870-D41DA5561CA3}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="4"/>
+					</PropertyList>
+				</Event>
 				<Event Name="Silence" ID="{06C43C7D-752D-4935-BB57-9A7670D978C8}"/>
+				<Event Name="Play_IntroMusic_SwitchContainer" ID="{F58B7498-8C86-4903-88E0-B10D0262764E}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="4"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Action Name="" ID="{088463E6-2D44-4356-B8E2-BDAB97258E5E}" ShortID="95829577">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="23"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="InsideRoom" ID="{3A2A8D1A-D82B-4F3B-A890-24A24E3B0B28}" WorkUnitID="{C544A994-E66C-4856-857D-603276E136B3}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{D8CCB467-2DEC-4E5C-8FCB-A75BBE1A13F2}" ShortID="752970166">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="IntroMusic_SwitchContainer" ID="{2BFDAFE4-C5FA-493F-9091-CDF80DD90EB9}" WorkUnitID="{EF5E08E1-9B7B-4014-B697-16BA7A26C9C6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_ClockSus_SwitchContainer" ID="{DDE48CF4-EFB4-4910-B2AF-6C6D82ECFF2F}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="4"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Action Name="" ID="{0DE505F3-0138-46C2-887C-F6822FC17790}" ShortID="105675153">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="23"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="TriggerOff" ID="{704EBA13-D240-4E44-A537-24B13482CD76}" WorkUnitID="{C544A994-E66C-4856-857D-603276E136B3}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{BA688853-C602-4F02-B0AC-6A5953679F06}" ShortID="206952779">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="ClockSus_SwitchContainer" ID="{7F6932D1-5FF8-4ABC-915A-FCDDC4FE0524}" WorkUnitID="{EF5E08E1-9B7B-4014-B697-16BA7A26C9C6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_OutroMusic_SwitchContainer" ID="{5C92A248-25B0-4E61-8911-964F04B68F0D}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="4"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Action Name="" ID="{559C87F3-0E20-42C5-B5E6-1D6C252523C3}" ShortID="116824292">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="23"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Inside" ID="{6AB774A5-5E5E-469F-A7A2-23396FEF36D2}" WorkUnitID="{C544A994-E66C-4856-857D-603276E136B3}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{C54A985C-5BE4-4C09-B260-461D09C72CEA}" ShortID="146417192">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="OutroMusic_SwitchContainer" ID="{5090C6FA-4331-43B5-97CE-F1E4AF07CD60}" WorkUnitID="{EF5E08E1-9B7B-4014-B697-16BA7A26C9C6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

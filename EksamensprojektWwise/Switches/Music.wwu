@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{C544A994-E66C-4856-857D-603276E136B3}" SchemaVersion="133">
+	<Switches>
+		<WorkUnit Name="Music" ID="{C544A994-E66C-4856-857D-603276E136B3}" PersistMode="Standalone">
+			<ChildrenList>
+				<SwitchGroup Name="IntroRoom_RoomCheck" ID="{85FD0BEB-E56F-4430-96ED-E4A775AF0BE2}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="4"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Switch Name="InsideRoom" ID="{3A2A8D1A-D82B-4F3B-A890-24A24E3B0B28}"/>
+						<Switch Name="OutsideRoom" ID="{2D9812ED-5981-4EB1-A7D8-C78515AACC52}"/>
+					</ChildrenList>
+				</SwitchGroup>
+				<SwitchGroup Name="ClockSus_TriggerCheck" ID="{DA10E6CF-DA8F-40F7-8CB8-8CE9E16B88C0}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="4"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Switch Name="TriggerOn" ID="{79DEFFDE-B5B6-4922-9BCB-C3626BB467B4}"/>
+						<Switch Name="TriggerOff" ID="{704EBA13-D240-4E44-A537-24B13482CD76}"/>
+					</ChildrenList>
+				</SwitchGroup>
+				<SwitchGroup Name="Outro_InsideCheck" ID="{FB5B7D68-C089-4AFA-9BD5-A3492088962D}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="4"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Switch Name="Inside" ID="{6AB774A5-5E5E-469F-A7A2-23396FEF36D2}"/>
+						<Switch Name="Outside" ID="{8738D379-BEE7-4FEB-BCA6-EF23C085A6FA}"/>
+					</ChildrenList>
+				</SwitchGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</Switches>
+</WwiseDocument>

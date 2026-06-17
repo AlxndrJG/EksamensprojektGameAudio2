@@ -3,9 +3,2615 @@
 	<Containers>
 		<WorkUnit Name="Music" ID="{EF5E08E1-9B7B-4014-B697-16BA7A26C9C6}" PersistMode="Standalone">
 			<PropertyList>
-				<Property Name="Color" Type="int16" Value="11"/>
+				<Property Name="Color" Type="int16" Value="4"/>
 				<Property Name="OverrideColor" Type="bool" Value="True"/>
 			</PropertyList>
+			<ChildrenList>
+				<Folder Name="IntroMusic" ID="{AFC45404-1911-4EB2-BA7A-ADCCA9AC89B4}" ShortID="677537918">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="4"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<MusicSwitchContainer Name="IntroMusic_SwitchContainer" ID="{2BFDAFE4-C5FA-493F-9091-CDF80DD90EB9}" ShortID="290982773">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+								</Reference>
+								<Reference Name="TransitionRoot">
+									<Custom>
+										<MusicTransition Name="Root" ID="{27049CCF-00B2-4B77-964C-3675FE1F06FF}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<ChildrenList>
+												<MusicTransition Name="Transition" ID="{043D148F-144A-47DB-9CDE-7238945FDE6A}">
+													<TransitionInfo/>
+												</MusicTransition>
+												<MusicTransition Name="BedroomPadToSilence" ID="{BC252879-5931-4739-A052-2AA6CA35FB39}">
+													<PropertyList>
+														<Property Name="DestinationContextType" Type="int16" Value="2"/>
+														<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
+														<Property Name="EnableTransitionFadeIn" Type="bool" Value="True"/>
+														<Property Name="ExitSourceAt" Type="int16" Value="0"/>
+														<Property Name="SourceContextType" Type="int16" Value="2"/>
+														<Property Name="UseTransitionObject" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="DestinationContextObject">
+															<ObjectRef Name="Silence" ID="{A53E51E5-5574-4CF3-9431-DA6CDB505052}" WorkUnitID="{EF5E08E1-9B7B-4014-B697-16BA7A26C9C6}"/>
+														</Reference>
+														<Reference Name="SourceContextObject">
+															<ObjectRef Name="IntroMusic_BedroomPad" ID="{0F0E1101-5881-4893-A692-74BC39A97283}" WorkUnitID="{EF5E08E1-9B7B-4014-B697-16BA7A26C9C6}"/>
+														</Reference>
+													</ReferenceList>
+													<TransitionInfo>
+														<TransitionObjectRef Name="IntroMusic_Stinger" ID="{7891F4A5-196F-488C-9B25-6CDF25AA11AF}" WorkUnitID="{EF5E08E1-9B7B-4014-B697-16BA7A26C9C6}"/>
+														<SourceFadeOut>
+															<MusicFade Name="Source Fade-out" ID="{55AF1199-2051-4F4A-8FD9-152E0DC59FB6}">
+																<PropertyList>
+																	<Property Name="FadeCurve" Type="int16" Value="6"/>
+																	<Property Name="FadeOffset" Type="Real64" Value="0.9"/>
+																	<Property Name="FadeTime" Type="Real64" Value="0.4"/>
+																	<Property Name="FadeType" Type="int16" Value="1"/>
+																</PropertyList>
+															</MusicFade>
+														</SourceFadeOut>
+														<TransitionFadeIn>
+															<MusicFade Name="Transition Fade-in" ID="{6344FE35-972F-4512-B6EB-BF4CD0AA4ABF}">
+																<PropertyList>
+																	<Property Name="FadeCurve" Type="int16" Value="6"/>
+																	<Property Name="FadeOffset" Type="Real64" Value="-0.7"/>
+																	<Property Name="FadeTime" Type="Real64" Value="0.8"/>
+																</PropertyList>
+															</MusicFade>
+														</TransitionFadeIn>
+													</TransitionInfo>
+												</MusicTransition>
+											</ChildrenList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</Custom>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicPlaylistContainer Name="Silence" ID="{A53E51E5-5574-4CF3-9431-DA6CDB505052}" ShortID="610636422">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+										<Reference Name="PlaylistRoot">
+											<Custom>
+												<MusicPlaylistItem Name="" ID="{DFC780E2-CDF5-49EB-8869-33DC41534E36}" ShortID="391672193">
+													<PropertyList>
+														<Property Name="LoopCount" Type="int16" Value="0"/>
+													</PropertyList>
+													<ChildrenList>
+														<MusicPlaylistItem Name="" ID="{7A242605-9984-4B2F-BD2A-2BD0F3810E17}" ShortID="435970409">
+															<PropertyList>
+																<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Segment">
+																	<ObjectRef Name="Silence" ID="{56CCC029-DE60-452B-B33C-1948A943CFDF}" WorkUnitID="{EF5E08E1-9B7B-4014-B697-16BA7A26C9C6}"/>
+																</Reference>
+															</ReferenceList>
+														</MusicPlaylistItem>
+													</ChildrenList>
+												</MusicPlaylistItem>
+											</Custom>
+										</Reference>
+										<Reference Name="TransitionRoot">
+											<Custom>
+												<MusicTransition Name="Root" ID="{E3D32DEB-E3ED-4556-B931-7E17DDF2EB39}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<ChildrenList>
+														<MusicTransition Name="Transition" ID="{ECC2069C-2F09-4C9D-850E-D15C8E843680}">
+															<TransitionInfo/>
+														</MusicTransition>
+													</ChildrenList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</Custom>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicSegment Name="Silence" ID="{56CCC029-DE60-452B-B33C-1948A943CFDF}" ShortID="796470757">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+												</Reference>
+											</ReferenceList>
+											<ObjectLists>
+												<ObjectList Name="Cues">
+													<MusicCue Name="Entry Cue" ID="{7BADB902-9D8A-43D0-8847-BDE147E5C530}"/>
+													<MusicCue Name="Exit Cue" ID="{5899F95D-1686-4673-9261-0E29C2A51E09}">
+														<PropertyList>
+															<Property Name="CueType" Type="int16" Value="1"/>
+															<Property Name="TimeMs" Type="Real64" Value="1000"/>
+														</PropertyList>
+													</MusicCue>
+												</ObjectList>
+											</ObjectLists>
+										</MusicSegment>
+									</ChildrenList>
+								</MusicPlaylistContainer>
+								<MusicSegment Name="IntroMusic_BedroomPad" ID="{0F0E1101-5881-4893-A692-74BC39A97283}" ShortID="53819160">
+									<PropertyList>
+										<Property Name="EndPosition" Type="Real64" Value="50158.1027667984"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>8</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicTrack Name="GoneAstray_Intro_EeriePad" ID="{2D298378-FBD1-4E24-A8BE-B0BC066D8BE9}" ShortID="466121622">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+												</Reference>
+												<Reference Name="TransitionRoot">
+													<Custom>
+														<MusicTransition Name="Root" ID="{A419B7CB-FC48-4498-B269-71F690F5D4A5}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</Custom>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="GoneAstray_Intro_EeriePad" ID="{A71036A2-BABA-4266-9D64-EAB07AA294AB}">
+													<Language>SFX</Language>
+													<AudioFile>GoneAstray_Intro_EeriePad.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1016695201"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<MusicTrackSequence Name="" ID="{BBF79237-F822-44DC-BC22-CB51797BC389}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<MusicClip Name="GoneAstray_Intro_EeriePad" ID="{D6E35D0B-5887-479C-841C-0B1A6A4F4851}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="45000"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="GoneAstray_Intro_EeriePad" ID="{A71036A2-BABA-4266-9D64-EAB07AA294AB}"/>
+																</MusicClip>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+										<MusicTrack Name="GoneAstray_Intro_WhiteLightPad" ID="{C00F6405-9148-4400-8EFF-3F1F6117A584}" ShortID="125154755">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+												</Reference>
+												<Reference Name="TransitionRoot">
+													<Custom>
+														<MusicTransition Name="Root" ID="{022DA7F3-59E7-495B-AAF1-C59C24EAA6FE}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</Custom>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="GoneAstray_Intro_WhiteLightPad" ID="{6149436B-D23D-431A-BE5C-742F2AB068CF}">
+													<Language>SFX</Language>
+													<AudioFile>GoneAstray_Intro_WhiteLightPad.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="47628912"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<MusicTrackSequence Name="" ID="{B20D0883-551B-4DAA-8889-AFF9D4260A09}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<MusicClip Name="GoneAstray_Intro_WhiteLightPad" ID="{DE299EA1-FBBD-4E7F-B159-07D7481EB8DB}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="45000"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="GoneAstray_Intro_WhiteLightPad" ID="{6149436B-D23D-431A-BE5C-742F2AB068CF}"/>
+																</MusicClip>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+										<MusicTrack Name="New Random Music Track_01" ID="{731DA952-4A0A-4A1D-A9FF-05E830BF5C93}" ShortID="45053128">
+											<PropertyList>
+												<Property Name="MusicTrackType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+												</Reference>
+												<Reference Name="TransitionRoot">
+													<Custom>
+														<MusicTransition Name="Root" ID="{7E442490-5512-4577-994D-4086ABADBA48}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</Custom>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="GoneAstray_Intro_Melofrase1" ID="{D0EC2DFF-9BBF-48B2-8F46-796DF9EDB51F}">
+													<Language>SFX</Language>
+													<AudioFile>GoneAstray_Intro_Melofrase1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1058457310"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="GoneAstray_Intro_Melofrase2" ID="{B791E18D-506B-45CD-97D9-DF610F3EAEC8}">
+													<Language>SFX</Language>
+													<AudioFile>GoneAstray_Intro_Melofrase2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="717961820"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<MusicTrackSequence Name="" ID="{A5DBB8A8-2F58-4452-80A6-651C9B10C3C7}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<MusicClip Name="GoneAstray_Intro_Melofrase1" ID="{5A11E0B1-E1B4-43E2-B497-95FCC0CDF132}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="45000"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="GoneAstray_Intro_Melofrase1" ID="{D0EC2DFF-9BBF-48B2-8F46-796DF9EDB51F}"/>
+																</MusicClip>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+													<MusicTrackSequence Name="" ID="{1C72C9B1-3376-45DE-811E-293C136A6DC5}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<MusicClip Name="GoneAstray_Intro_Melofrase2" ID="{C5A4A6D9-76A2-4289-87E3-832322C1CCA6}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="45000"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="GoneAstray_Intro_Melofrase2" ID="{B791E18D-506B-45CD-97D9-DF610F3EAEC8}"/>
+																</MusicClip>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+													<MusicTrackSequence Name="" ID="{F01C8CDA-C023-4042-AA22-F4DD5380D476}"/>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+										<MusicTrack Name="New Random Music Track" ID="{E13B1268-CAD4-46B9-B40E-77ACE70FFE3C}" ShortID="856959420">
+											<PropertyList>
+												<Property Name="MusicTrackType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+												</Reference>
+												<Reference Name="TransitionRoot">
+													<Custom>
+														<MusicTransition Name="Root" ID="{2DEABA8C-D467-4408-AA7C-08D7A95BF578}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</Custom>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="GoneAstray_Tone_C#4" ID="{0AC502AF-E7FB-47FD-8D8D-B626CF488A7F}">
+													<Language>SFX</Language>
+													<AudioFile>GoneAstray_Tone_C#4.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1055282842"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="GoneAstray_Tone_C4" ID="{BB2B465A-8184-4A5B-AE5F-679F63413431}">
+													<Language>SFX</Language>
+													<AudioFile>GoneAstray_Tone_C4.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="801337456"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="GoneAstray_Tone_F#4" ID="{3DEA3D9D-DF0C-4DDE-8C8B-D2FE176291F0}">
+													<Language>SFX</Language>
+													<AudioFile>GoneAstray_Tone_F#4.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="161693148"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="GoneAstray_Tone_F4" ID="{BCC62088-DA7C-4A2E-9459-9D08DA3DBCBF}">
+													<Language>SFX</Language>
+													<AudioFile>GoneAstray_Tone_F4.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="400834290"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<MusicTrackSequence Name="" ID="{9F07310A-9813-4F17-A607-98CE3C156CC5}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<MusicClip Name="GoneAstray_Tone_C#4" ID="{41522913-F0CF-493A-A9DE-CC6F7CF1B146}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="6000"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																		<Property Name="PlayAt" Type="Real64" Value="2845.84980237154"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="GoneAstray_Tone_C#4" ID="{0AC502AF-E7FB-47FD-8D8D-B626CF488A7F}"/>
+																</MusicClip>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+													<MusicTrackSequence Name="" ID="{3DEF023D-179B-4761-BF51-5579789EF6E6}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<MusicClip Name="GoneAstray_Tone_C4" ID="{944CA412-3FE2-4231-B737-070AD4B4099D}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="6000"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																		<Property Name="PlayAt" Type="Real64" Value="20000"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="GoneAstray_Tone_C4" ID="{BB2B465A-8184-4A5B-AE5F-679F63413431}"/>
+																</MusicClip>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+													<MusicTrackSequence Name="" ID="{4FE8086B-C02E-4637-8D65-E3DD683438BD}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<MusicClip Name="GoneAstray_Tone_F#4" ID="{77221BD8-2785-4F9B-9FD2-1FF99A2DDD86}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="6000"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																		<Property Name="PlayAt" Type="Real64" Value="7025.69169960475"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="GoneAstray_Tone_F#4" ID="{3DEA3D9D-DF0C-4DDE-8C8B-D2FE176291F0}"/>
+																</MusicClip>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+													<MusicTrackSequence Name="" ID="{B98CC942-379C-4180-BDEB-D909B8E05E25}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<MusicClip Name="GoneAstray_Tone_F4" ID="{DA4CF8E2-E5B0-4506-B1A9-FC37B155F3C6}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="6000"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																		<Property Name="PlayAt" Type="Real64" Value="33883.3992094861"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="GoneAstray_Tone_F4" ID="{BCC62088-DA7C-4A2E-9459-9D08DA3DBCBF}"/>
+																</MusicClip>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+													<MusicTrackSequence Name="" ID="{37F98551-247F-45E1-B7E4-453BE413CA2A}"/>
+													<MusicTrackSequence Name="" ID="{86125303-6098-42B5-8D73-97FE36F93D10}"/>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Cues">
+											<MusicCue Name="Entry Cue" ID="{10A9070A-05BE-47AC-87BC-95DEB6DE0BAF}">
+												<PropertyList>
+													<Property Name="TimeMs" Type="Real64" Value="3000"/>
+												</PropertyList>
+											</MusicCue>
+											<MusicCue Name="Exit Cue" ID="{90E08A4A-0EB7-4768-A705-6447B7E719DE}">
+												<PropertyList>
+													<Property Name="CueType" Type="int16" Value="1"/>
+													<Property Name="TimeMs" Type="Real64" Value="39000"/>
+												</PropertyList>
+											</MusicCue>
+										</ObjectList>
+									</ObjectLists>
+								</MusicSegment>
+								<MusicSegment Name="IntroMusic_Stinger" ID="{7891F4A5-196F-488C-9B25-6CDF25AA11AF}" ShortID="62970886">
+									<PropertyList>
+										<Property Name="EndPosition" Type="Real64" Value="13500"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>8</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicTrack Name="GoneAstray_IntroStinger_ EerieStrings" ID="{A7B76E84-6778-43F4-A3B3-1BF7C012AD3F}" ShortID="828424288">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+												</Reference>
+												<Reference Name="TransitionRoot">
+													<Custom>
+														<MusicTransition Name="Root" ID="{5EA9D0DB-810A-4D85-B3CB-8020AADB3560}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</Custom>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="GoneAstray_IntroStinger_ EerieStrings" ID="{10BE23CD-D949-4D2A-96B3-AB4AD86294D4}">
+													<Language>SFX</Language>
+													<AudioFile>GoneAstray_IntroStinger_ EerieStrings.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="286471465"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<MusicTrackSequence Name="" ID="{8D14AA4E-B633-4F6F-8FEA-C311EFFF5731}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<MusicClip Name="GoneAstray_IntroStinger_ EerieStrings" ID="{C7245F34-8616-408A-9108-4CF77FF7D2D4}">
+																	<PropertyList>
+																		<Property Name="BeginTrimOffset" Type="Real64" Value="3000"/>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="12000"/>
+																		<Property Name="FadeInDuration" Type="Real64" Value="1000.76086956522"/>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="2744.02173913043"/>
+																		<Property Name="PlayAt" Type="Real64" Value="-3000"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="GoneAstray_IntroStinger_ EerieStrings" ID="{10BE23CD-D949-4D2A-96B3-AB4AD86294D4}"/>
+																	<PropertyCurveList>
+																		<PropertyCurve PropertyName="Highpass">
+																			<Curve Name="" ID="{10F849EA-0F17-4497-927C-B4FDD6BF7D19}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="1"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>3</XPos>
+																						<YPos>0</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>12</XPos>
+																						<YPos>0</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</PropertyCurve>
+																		<PropertyCurve PropertyName="Lowpass">
+																			<Curve Name="" ID="{D451DC95-E22E-46A6-9933-807E00C20342}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="1"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>3</XPos>
+																						<YPos>0</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>12</XPos>
+																						<YPos>0</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</PropertyCurve>
+																		<PropertyCurve PropertyName="Volume">
+																			<Curve Name="" ID="{F120D423-6C9F-44B8-8825-EF3BB75A02C5}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="3"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>3</XPos>
+																						<YPos>-0</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>12</XPos>
+																						<YPos>0</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</PropertyCurve>
+																	</PropertyCurveList>
+																</MusicClip>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+										<MusicTrack Name="GoneAstray_IntroStinger_ ReverseKlaver" ID="{2599C218-6453-4268-BB49-D074F3227689}" ShortID="67796031">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+												</Reference>
+												<Reference Name="TransitionRoot">
+													<Custom>
+														<MusicTransition Name="Root" ID="{A0BF189D-E79D-4862-AA1F-775444CA1571}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</Custom>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="GoneAstray_IntroStinger_ ReverseKlaver" ID="{39ACE2E3-D488-40AE-9BBA-1E3450DDA600}">
+													<Language>SFX</Language>
+													<AudioFile>GoneAstray_IntroStinger_ ReverseKlaver.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="998935566"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<MusicTrackSequence Name="" ID="{2781985B-460B-47C2-8E81-61A5A99F0C02}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<MusicClip Name="GoneAstray_IntroStinger_ ReverseKlaver" ID="{4B603CA9-A349-46EC-B86D-3431099634E4}">
+																	<PropertyList>
+																		<Property Name="BeginTrimOffset" Type="Real64" Value="3000"/>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="12000"/>
+																		<Property Name="FadeInDuration" Type="Real64" Value="968.478260869565"/>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="2614.89130434783"/>
+																		<Property Name="PlayAt" Type="Real64" Value="-3000"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="GoneAstray_IntroStinger_ ReverseKlaver" ID="{39ACE2E3-D488-40AE-9BBA-1E3450DDA600}"/>
+																	<PropertyCurveList>
+																		<PropertyCurve PropertyName="Highpass">
+																			<Curve Name="" ID="{A748226A-1309-4C70-9186-C55D36C889E5}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="1"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>3</XPos>
+																						<YPos>0</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>12</XPos>
+																						<YPos>0</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</PropertyCurve>
+																		<PropertyCurve PropertyName="Lowpass">
+																			<Curve Name="" ID="{EB7C595A-6CF8-463D-935B-6A8FA9A5F1CE}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="1"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>3</XPos>
+																						<YPos>0</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>12</XPos>
+																						<YPos>0</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</PropertyCurve>
+																		<PropertyCurve PropertyName="Volume">
+																			<Curve Name="" ID="{8FD6CF10-038D-4F93-9416-F86F836237CD}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="3"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>3</XPos>
+																						<YPos>0</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>12</XPos>
+																						<YPos>0</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</PropertyCurve>
+																	</PropertyCurveList>
+																</MusicClip>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+										<MusicTrack Name="GoneAstray_IntroStinger_Spøgelsesklaver" ID="{4BE31C03-37E2-4453-85F5-9E25B6EC7370}" ShortID="243908882">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+												</Reference>
+												<Reference Name="TransitionRoot">
+													<Custom>
+														<MusicTransition Name="Root" ID="{D6AF6769-DC99-458F-B85E-37F71CDE743F}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</Custom>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="GoneAstray_IntroStinger_Spøgelsesklaver" ID="{174B3532-5099-4D9D-9F98-8CF6B5ED603E}">
+													<Language>SFX</Language>
+													<AudioFile>GoneAstray_IntroStinger_Spøgelsesklaver.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="202305316"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<MusicTrackSequence Name="" ID="{7AD0B6C5-EEC4-497B-8D56-912D05BFC261}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<MusicClip Name="GoneAstray_IntroStinger_Spøgelsesklaver" ID="{B89E384E-1643-49E5-A83D-1FD045EDF680}">
+																	<PropertyList>
+																		<Property Name="BeginTrimOffset" Type="Real64" Value="3000"/>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="12000"/>
+																		<Property Name="FadeInDuration" Type="Real64" Value="1000.76086956522"/>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="2582.60869565217"/>
+																		<Property Name="PlayAt" Type="Real64" Value="-3000"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="GoneAstray_IntroStinger_Spøgelsesklaver" ID="{174B3532-5099-4D9D-9F98-8CF6B5ED603E}"/>
+																	<PropertyCurveList>
+																		<PropertyCurve PropertyName="Highpass">
+																			<Curve Name="" ID="{4C2DE8DF-12D0-41FF-9FFF-798D21775A38}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="1"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>3</XPos>
+																						<YPos>0</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>12</XPos>
+																						<YPos>0</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</PropertyCurve>
+																		<PropertyCurve PropertyName="Lowpass">
+																			<Curve Name="" ID="{59F43D1D-2D3F-4DDF-AC61-8A440C1F1690}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="1"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>3</XPos>
+																						<YPos>0</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>12</XPos>
+																						<YPos>0</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</PropertyCurve>
+																		<PropertyCurve PropertyName="Volume">
+																			<Curve Name="" ID="{B188B57C-C818-41C5-88B7-6BC9A9C12749}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="3"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>3</XPos>
+																						<YPos>0</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>12</XPos>
+																						<YPos>0</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</PropertyCurve>
+																	</PropertyCurveList>
+																</MusicClip>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+										<MusicTrack Name="GoneAstray_IntroStinger_WhiteLightPad" ID="{F43C8CF4-2C4D-4460-ABD5-4ECF0350280B}" ShortID="829395399">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+												</Reference>
+												<Reference Name="TransitionRoot">
+													<Custom>
+														<MusicTransition Name="Root" ID="{341035E4-1C2F-4676-9EBA-CD77AF985A5F}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</Custom>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="GoneAstray_IntroStinger_WhiteLightPad" ID="{BB4A3599-2F0B-4738-AA68-85A0EF03C0BB}">
+													<Language>SFX</Language>
+													<AudioFile>GoneAstray_IntroStinger_WhiteLightPad.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="267968090"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<MusicTrackSequence Name="" ID="{04F0F650-88EE-46D9-8702-B64E0C04703E}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<MusicClip Name="GoneAstray_IntroStinger_WhiteLightPad" ID="{16442251-A4BB-4177-9DC6-395348D2C3D5}">
+																	<PropertyList>
+																		<Property Name="BeginTrimOffset" Type="Real64" Value="3000"/>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="12000"/>
+																		<Property Name="FadeInDuration" Type="Real64" Value="1000.76086956522"/>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="2518.04347826087"/>
+																		<Property Name="PlayAt" Type="Real64" Value="-3000"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="GoneAstray_IntroStinger_WhiteLightPad" ID="{BB4A3599-2F0B-4738-AA68-85A0EF03C0BB}"/>
+																	<PropertyCurveList>
+																		<PropertyCurve PropertyName="Highpass">
+																			<Curve Name="" ID="{23D59A7D-B56C-47E1-A12C-4ABF61E76E71}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="1"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>3</XPos>
+																						<YPos>0</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>12</XPos>
+																						<YPos>0</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</PropertyCurve>
+																		<PropertyCurve PropertyName="Lowpass">
+																			<Curve Name="" ID="{47CBE481-6E4A-48F1-8A77-93DF4584F604}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="1"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>3</XPos>
+																						<YPos>0</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>12</XPos>
+																						<YPos>0</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</PropertyCurve>
+																		<PropertyCurve PropertyName="Volume">
+																			<Curve Name="" ID="{0DCEA872-3325-44BE-879E-6CDB6BCDC6ED}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="3"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>3</XPos>
+																						<YPos>0</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>12</XPos>
+																						<YPos>0</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</PropertyCurve>
+																	</PropertyCurveList>
+																</MusicClip>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Cues">
+											<MusicCue Name="Entry Cue" ID="{990DED55-CEA3-4CDE-B4D1-7370279EB0E5}">
+												<PropertyList>
+													<Property Name="TimeMs" Type="Real64" Value="1000"/>
+												</PropertyList>
+											</MusicCue>
+											<MusicCue Name="Exit Cue" ID="{CFB8D7E0-AD5D-4B33-8F16-45976B820F7F}">
+												<PropertyList>
+													<Property Name="CueType" Type="int16" Value="1"/>
+													<Property Name="TimeMs" Type="Real64" Value="7000"/>
+												</PropertyList>
+											</MusicCue>
+										</ObjectList>
+									</ObjectLists>
+								</MusicSegment>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="Arguments">
+									<PluginInnerObject Name="" ID="{A9BB18C6-4158-46BB-A5D9-6F37B68DFA64}" PluginName="MusicArgumentsSlot" CompanyID="0" PluginID="89">
+										<ReferenceList>
+											<Reference Name="Argument">
+												<ObjectRef Name="IntroRoom_RoomCheck" ID="{85FD0BEB-E56F-4430-96ED-E4A775AF0BE2}" WorkUnitID="{C544A994-E66C-4856-857D-603276E136B3}"/>
+											</Reference>
+										</ReferenceList>
+									</PluginInnerObject>
+								</ObjectList>
+								<ObjectList Name="Entries">
+									<MultiSwitchEntry Name="" ID="{073E621D-96E4-4512-8D68-4AE2F9C7DB70}">
+										<ReferenceList>
+											<Reference Name="AudioNode">
+												<ObjectRef Name="IntroMusic_BedroomPad" ID="{0F0E1101-5881-4893-A692-74BC39A97283}" WorkUnitID="{EF5E08E1-9B7B-4014-B697-16BA7A26C9C6}"/>
+											</Reference>
+										</ReferenceList>
+										<ObjectLists>
+											<ObjectList Name="EntryPath">
+												<PluginInnerObject Name="" ID="{3229A389-1287-4EA2-A63F-C50CE43A674D}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+													<ReferenceList>
+														<Reference Name="EntryPathObject">
+															<ObjectRef Name="InsideRoom" ID="{3A2A8D1A-D82B-4F3B-A890-24A24E3B0B28}" WorkUnitID="{C544A994-E66C-4856-857D-603276E136B3}"/>
+														</Reference>
+													</ReferenceList>
+												</PluginInnerObject>
+											</ObjectList>
+										</ObjectLists>
+									</MultiSwitchEntry>
+									<MultiSwitchEntry Name="" ID="{4901BE3F-5716-4ECB-B583-F5E443BD71EE}">
+										<ReferenceList>
+											<Reference Name="AudioNode">
+												<ObjectRef Name="Silence" ID="{A53E51E5-5574-4CF3-9431-DA6CDB505052}" WorkUnitID="{EF5E08E1-9B7B-4014-B697-16BA7A26C9C6}"/>
+											</Reference>
+										</ReferenceList>
+										<ObjectLists>
+											<ObjectList Name="EntryPath">
+												<PluginInnerObject Name="" ID="{46587BB5-A480-4515-B5DA-ED19B433CA67}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+													<ReferenceList>
+														<Reference Name="EntryPathObject">
+															<ObjectRef Name="OutsideRoom" ID="{2D9812ED-5981-4EB1-A7D8-C78515AACC52}" WorkUnitID="{C544A994-E66C-4856-857D-603276E136B3}"/>
+														</Reference>
+													</ReferenceList>
+												</PluginInnerObject>
+											</ObjectList>
+										</ObjectLists>
+									</MultiSwitchEntry>
+								</ObjectList>
+							</ObjectLists>
+						</MusicSwitchContainer>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="ClockSuspenseMusic" ID="{B0866CDE-F09D-4272-B78C-8CBBF5BDB26B}" ShortID="307903864">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="4"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<MusicSwitchContainer Name="ClockSus_SwitchContainer" ID="{7F6932D1-5FF8-4ABC-915A-FCDDC4FE0524}" ShortID="525483002">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+								</Reference>
+								<Reference Name="TransitionRoot">
+									<Custom>
+										<MusicTransition Name="Root" ID="{357ACB0A-404E-4590-BC29-807CA6E4AA96}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<ChildrenList>
+												<MusicTransition Name="Transition" ID="{51E99E63-4A50-41F6-AC0C-FA94015FC601}">
+													<TransitionInfo/>
+												</MusicTransition>
+												<MusicTransition Name="HallwayPadToSilence" ID="{FF44340B-CAD5-4D9C-8F6F-0B594F37A293}">
+													<PropertyList>
+														<Property Name="DestinationContextType" Type="int16" Value="2"/>
+														<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
+														<Property Name="EnableTransitionFadeIn" Type="bool" Value="True"/>
+														<Property Name="ExitSourceAt" Type="int16" Value="3"/>
+														<Property Name="SourceContextType" Type="int16" Value="2"/>
+														<Property Name="UseTransitionObject" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="DestinationContextObject">
+															<ObjectRef Name="Silence" ID="{135A621D-58C0-4EF8-A2CB-80B9DD269123}" WorkUnitID="{EF5E08E1-9B7B-4014-B697-16BA7A26C9C6}"/>
+														</Reference>
+														<Reference Name="SourceContextObject">
+															<ObjectRef Name="ClockSusMusic_HallwayPad" ID="{B0BDEFAB-C0DC-4BC7-A8C4-50DD881FAE62}" WorkUnitID="{EF5E08E1-9B7B-4014-B697-16BA7A26C9C6}"/>
+														</Reference>
+													</ReferenceList>
+													<TransitionInfo>
+														<TransitionObjectRef Name="ClockSusMusic_Stinger" ID="{FA42E6CD-7BEA-4AF6-A2CE-03D87A31D6C5}" WorkUnitID="{EF5E08E1-9B7B-4014-B697-16BA7A26C9C6}"/>
+														<SourceFadeOut>
+															<MusicFade Name="Source Fade-out" ID="{8E004EAA-91C4-42FB-B14C-D21E2F0B6782}">
+																<PropertyList>
+																	<Property Name="FadeCurve" Type="int16" Value="7"/>
+																	<Property Name="FadeOffset" Type="Real64" Value="0.9"/>
+																	<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+																	<Property Name="FadeType" Type="int16" Value="1"/>
+																</PropertyList>
+															</MusicFade>
+														</SourceFadeOut>
+														<TransitionFadeIn>
+															<MusicFade Name="Transition Fade-in" ID="{3E7A024E-E6F0-478B-B2CF-5E39A462B79D}">
+																<PropertyList>
+																	<Property Name="FadeCurve" Type="int16" Value="6"/>
+																	<Property Name="FadeOffset" Type="Real64" Value="-0.6"/>
+																	<Property Name="FadeTime" Type="Real64" Value="0.7"/>
+																</PropertyList>
+															</MusicFade>
+														</TransitionFadeIn>
+													</TransitionInfo>
+												</MusicTransition>
+											</ChildrenList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</Custom>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicPlaylistContainer Name="Silence" ID="{135A621D-58C0-4EF8-A2CB-80B9DD269123}" ShortID="469121161">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+										<Reference Name="PlaylistRoot">
+											<Custom>
+												<MusicPlaylistItem Name="" ID="{55B3120A-255B-494E-82D8-E0357812DC01}" ShortID="1021080420">
+													<PropertyList>
+														<Property Name="LoopCount" Type="int16" Value="0"/>
+													</PropertyList>
+													<ChildrenList>
+														<MusicPlaylistItem Name="" ID="{AAE9CB73-B1B5-44C3-81AD-106855E2C4D0}" ShortID="178756273">
+															<PropertyList>
+																<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Segment">
+																	<ObjectRef Name="Silence" ID="{C01337C0-96AD-4D57-80C8-D6460B6BF78B}" WorkUnitID="{EF5E08E1-9B7B-4014-B697-16BA7A26C9C6}"/>
+																</Reference>
+															</ReferenceList>
+														</MusicPlaylistItem>
+													</ChildrenList>
+												</MusicPlaylistItem>
+											</Custom>
+										</Reference>
+										<Reference Name="TransitionRoot">
+											<Custom>
+												<MusicTransition Name="Root" ID="{CB1E5FF2-6D20-4704-94EB-CF63C8947B62}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<ChildrenList>
+														<MusicTransition Name="Transition" ID="{20926797-9A44-44CF-930C-FE0A3BF19958}">
+															<TransitionInfo/>
+														</MusicTransition>
+													</ChildrenList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</Custom>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicSegment Name="Silence" ID="{C01337C0-96AD-4D57-80C8-D6460B6BF78B}" ShortID="355089069">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+												</Reference>
+											</ReferenceList>
+											<ObjectLists>
+												<ObjectList Name="Cues">
+													<MusicCue Name="Entry Cue" ID="{DF033C0E-92CF-4B82-9977-BB089BB55C52}"/>
+													<MusicCue Name="Exit Cue" ID="{DF02E9AE-DAB8-4D2F-9227-DBB3DC767E4E}">
+														<PropertyList>
+															<Property Name="CueType" Type="int16" Value="1"/>
+															<Property Name="TimeMs" Type="Real64" Value="1000"/>
+														</PropertyList>
+													</MusicCue>
+												</ObjectList>
+											</ObjectLists>
+										</MusicSegment>
+									</ChildrenList>
+								</MusicPlaylistContainer>
+								<MusicSegment Name="ClockSusMusic_HallwayPad" ID="{B0BDEFAB-C0DC-4BC7-A8C4-50DD881FAE62}" ShortID="881467891">
+									<PropertyList>
+										<Property Name="EndPosition" Type="Real64" Value="33282.1368948247"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicTrack Name="GoneAstray_Outro_ Clock" ID="{49AECDEA-EAD6-401B-BA79-B8E30616CDF3}" ShortID="943474483">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+												</Reference>
+												<Reference Name="TransitionRoot">
+													<Custom>
+														<MusicTransition Name="Root" ID="{8AB63B9E-BB1C-4ADF-B57C-6C96A6766004}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</Custom>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="GoneAstray_Outro_ Clock" ID="{736F48D9-F178-4563-AE81-2C0FFF4020E7}">
+													<Language>SFX</Language>
+													<AudioFile>GoneAstray_Outro_ Clock.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="457145754"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<MusicTrackSequence Name="" ID="{F3E02792-2C4B-449A-8979-35AB2A509A37}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<MusicClip Name="GoneAstray_Outro_ Clock" ID="{91938907-A0A2-463D-AEF6-EE9AE7A21B8D}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="32000"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="GoneAstray_Outro_ Clock" ID="{736F48D9-F178-4563-AE81-2C0FFF4020E7}"/>
+																</MusicClip>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+										<MusicTrack Name="GoneAstray_Outro_TritonusPad" ID="{848D2559-A197-4B7A-9A58-1FF0A8E9D8B7}" ShortID="416872547">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+												</Reference>
+												<Reference Name="TransitionRoot">
+													<Custom>
+														<MusicTransition Name="Root" ID="{D8903605-2DC8-4C4E-AB34-83F7941B237D}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</Custom>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="GoneAstray_Outro_TritonusPad" ID="{117AE66E-926A-4A0A-BF71-B66A017B128D}">
+													<Language>SFX</Language>
+													<AudioFile>GoneAstray_Outro_TritonusPad.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="351395096"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<MusicTrackSequence Name="" ID="{42AC2C11-77BB-4E5E-A874-7EB44CC04760}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<MusicClip Name="GoneAstray_Outro_TritonusPad" ID="{4AC49D05-5D5E-4375-A412-FA39F58111A2}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="32000"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="GoneAstray_Outro_TritonusPad" ID="{117AE66E-926A-4A0A-BF71-B66A017B128D}"/>
+																</MusicClip>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Cues">
+											<MusicCue Name="Entry Cue" ID="{52A13271-3429-4417-9F38-8F3660BD21B5}">
+												<PropertyList>
+													<Property Name="TimeMs" Type="Real64" Value="1000"/>
+												</PropertyList>
+											</MusicCue>
+											<MusicCue Name="Exit Cue" ID="{B2023D7B-23D1-4CB9-AE8C-2C426805E7CE}">
+												<PropertyList>
+													<Property Name="CueType" Type="int16" Value="1"/>
+													<Property Name="TimeMs" Type="Real64" Value="12000"/>
+												</PropertyList>
+											</MusicCue>
+										</ObjectList>
+									</ObjectLists>
+								</MusicSegment>
+								<MusicSegment Name="ClockSusMusic_Stinger" ID="{FA42E6CD-7BEA-4AF6-A2CE-03D87A31D6C5}" ShortID="815193574">
+									<PropertyList>
+										<Property Name="EndPosition" Type="Real64" Value="18000"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicTrack Name="GoneAstray_OutroStinger_ClockDistortHit" ID="{4FA39C52-E7F0-4002-B566-3EE92AF84F60}" ShortID="952507501">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+												</Reference>
+												<Reference Name="TransitionRoot">
+													<Custom>
+														<MusicTransition Name="Root" ID="{BB51B4BD-0B21-4227-BD08-EFFEDEB8F903}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</Custom>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="GoneAstray_OutroStinger_ClockDistortHit" ID="{1EB35CEB-2450-4663-AF3B-1C21676EC5E7}">
+													<Language>SFX</Language>
+													<AudioFile>GoneAstray_OutroStinger_ClockDistortHit.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="460231350"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<MusicTrackSequence Name="" ID="{B87CD746-6C5A-47BF-87A7-0FE4563E51E7}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<MusicClip Name="GoneAstray_OutroStinger_ClockDistortHit" ID="{B2202310-A3F5-4810-ACEA-1126322F8055}">
+																	<PropertyList>
+																		<Property Name="BeginTrimOffset" Type="Real64" Value="2500"/>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="8500"/>
+																		<Property Name="FadeInDuration" Type="Real64" Value="991.652754590985"/>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="3966.61101836394"/>
+																		<Property Name="PlayAt" Type="Real64" Value="-2500"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="GoneAstray_OutroStinger_ClockDistortHit" ID="{1EB35CEB-2450-4663-AF3B-1C21676EC5E7}"/>
+																	<PropertyCurveList>
+																		<PropertyCurve PropertyName="Highpass">
+																			<Curve Name="" ID="{D2A9884F-78E2-4AAA-98AB-5D3FECA5CEEF}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="1"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>2.5</XPos>
+																						<YPos>0</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>8.5</XPos>
+																						<YPos>0</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</PropertyCurve>
+																		<PropertyCurve PropertyName="Lowpass">
+																			<Curve Name="" ID="{E8813947-CCCB-4CE8-933C-B629DCE404D5}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="1"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>2.5</XPos>
+																						<YPos>0</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>8.5</XPos>
+																						<YPos>0</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</PropertyCurve>
+																		<PropertyCurve PropertyName="Volume">
+																			<Curve Name="" ID="{4483B435-B226-4E3A-BABD-1D298871FA35}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="3"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>2.5</XPos>
+																						<YPos>0</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>8.5</XPos>
+																						<YPos>0</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</PropertyCurve>
+																	</PropertyCurveList>
+																</MusicClip>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+										<MusicTrack Name="GoneAstray_OutroStinger_PadRiser" ID="{4FF24818-6C11-41F3-8C1B-7C5EDCE07C20}" ShortID="291076087">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+												</Reference>
+												<Reference Name="TransitionRoot">
+													<Custom>
+														<MusicTransition Name="Root" ID="{C1BC06B8-A3A5-4DDE-82C3-4E43378B10D7}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</Custom>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="GoneAstray_OutroStinger_PadRiser" ID="{73C0A635-4B77-4544-90A4-BDD33A66A4FD}">
+													<Language>SFX</Language>
+													<AudioFile>GoneAstray_OutroStinger_PadRiser.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="449590241"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<MusicTrackSequence Name="" ID="{22504A70-6B43-4DBA-8EB3-CD79F7A83D97}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<MusicClip Name="GoneAstray_OutroStinger_PadRiser" ID="{0121763B-7491-4289-9D15-6F4A90487460}">
+																	<PropertyList>
+																		<Property Name="BeginTrimOffset" Type="Real64" Value="2500"/>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="8500"/>
+																		<Property Name="FadeInDuration" Type="Real64" Value="961.602671118531"/>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="3966.61101836394"/>
+																		<Property Name="PlayAt" Type="Real64" Value="-2500"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="GoneAstray_OutroStinger_PadRiser" ID="{73C0A635-4B77-4544-90A4-BDD33A66A4FD}"/>
+																	<PropertyCurveList>
+																		<PropertyCurve PropertyName="Highpass">
+																			<Curve Name="" ID="{DB3C4CA6-8F84-470F-ACAC-A6713611442C}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="1"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>2.5</XPos>
+																						<YPos>0</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>8.5</XPos>
+																						<YPos>0</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</PropertyCurve>
+																		<PropertyCurve PropertyName="Lowpass">
+																			<Curve Name="" ID="{7C66F3AC-1EEF-4D73-8216-95F68522CA05}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="1"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>2.5</XPos>
+																						<YPos>0</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>8.5</XPos>
+																						<YPos>0</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</PropertyCurve>
+																		<PropertyCurve PropertyName="Volume">
+																			<Curve Name="" ID="{6F90A795-F555-4204-97FA-C2968579D152}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="3"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>2.5</XPos>
+																						<YPos>0</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>8.5</XPos>
+																						<YPos>0</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</PropertyCurve>
+																	</PropertyCurveList>
+																</MusicClip>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+										<MusicTrack Name="GoneAstray_OutroStinger_TritonusPad" ID="{38EC9FD0-30D2-4D72-BC2C-B7248843F506}" ShortID="1673922">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+												</Reference>
+												<Reference Name="TransitionRoot">
+													<Custom>
+														<MusicTransition Name="Root" ID="{E4D9CCE9-57D8-480F-AB91-D90B255221D1}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</Custom>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="GoneAstray_OutroStinger_TritonusPad" ID="{8D6CD444-07F3-42A3-A0FD-52798E491610}">
+													<Language>SFX</Language>
+													<AudioFile>GoneAstray_OutroStinger_TritonusPad.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1032132753"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<MusicTrackSequence Name="" ID="{0147EC3B-7460-409F-BEEB-4A059C81BD31}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<MusicClip Name="GoneAstray_OutroStinger_TritonusPad" ID="{2D0AC40C-F0B8-4015-9736-2F59AA5AA400}">
+																	<PropertyList>
+																		<Property Name="BeginTrimOffset" Type="Real64" Value="2500"/>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="8500"/>
+																		<Property Name="FadeInDuration" Type="Real64" Value="991.652754590985"/>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="3996.66110183639"/>
+																		<Property Name="PlayAt" Type="Real64" Value="-2500"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="GoneAstray_OutroStinger_TritonusPad" ID="{8D6CD444-07F3-42A3-A0FD-52798E491610}"/>
+																	<PropertyCurveList>
+																		<PropertyCurve PropertyName="Highpass">
+																			<Curve Name="" ID="{84AC3D89-EA2B-41AC-B685-D3EE2737D902}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="1"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>2.5</XPos>
+																						<YPos>0</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>8.5</XPos>
+																						<YPos>0</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</PropertyCurve>
+																		<PropertyCurve PropertyName="Lowpass">
+																			<Curve Name="" ID="{36CDDCA4-FD6A-4128-8AD2-9269E8CCDAF1}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="1"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>2.5</XPos>
+																						<YPos>0</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>8.5</XPos>
+																						<YPos>0</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</PropertyCurve>
+																		<PropertyCurve PropertyName="Volume">
+																			<Curve Name="" ID="{64A3D267-9E8B-4B21-9E3D-E08586B73108}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="3"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>2.5</XPos>
+																						<YPos>0</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>8.5</XPos>
+																						<YPos>0</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</PropertyCurve>
+																	</PropertyCurveList>
+																</MusicClip>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Cues">
+											<MusicCue Name="Entry Cue" ID="{239E4C6F-7B33-4158-99D5-1FE0BB1005AE}">
+												<PropertyList>
+													<Property Name="TimeMs" Type="Real64" Value="1000"/>
+												</PropertyList>
+											</MusicCue>
+											<MusicCue Name="Exit Cue" ID="{15F01695-D939-459F-A998-3C6F248E11A3}">
+												<PropertyList>
+													<Property Name="CueType" Type="int16" Value="1"/>
+													<Property Name="TimeMs" Type="Real64" Value="6000"/>
+												</PropertyList>
+											</MusicCue>
+										</ObjectList>
+									</ObjectLists>
+								</MusicSegment>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="Arguments">
+									<PluginInnerObject Name="" ID="{FC67D6B9-5C58-4AE5-B3E9-AE62D71EC20D}" PluginName="MusicArgumentsSlot" CompanyID="0" PluginID="89">
+										<ReferenceList>
+											<Reference Name="Argument">
+												<ObjectRef Name="ClockSus_TriggerCheck" ID="{DA10E6CF-DA8F-40F7-8CB8-8CE9E16B88C0}" WorkUnitID="{C544A994-E66C-4856-857D-603276E136B3}"/>
+											</Reference>
+										</ReferenceList>
+									</PluginInnerObject>
+								</ObjectList>
+								<ObjectList Name="Entries">
+									<MultiSwitchEntry Name="" ID="{B7BAB11A-7CF2-46D9-AA66-53804758776E}">
+										<ReferenceList>
+											<Reference Name="AudioNode">
+												<ObjectRef Name="ClockSusMusic_HallwayPad" ID="{B0BDEFAB-C0DC-4BC7-A8C4-50DD881FAE62}" WorkUnitID="{EF5E08E1-9B7B-4014-B697-16BA7A26C9C6}"/>
+											</Reference>
+										</ReferenceList>
+										<ObjectLists>
+											<ObjectList Name="EntryPath">
+												<PluginInnerObject Name="" ID="{2D314608-FBE6-4BA3-9C93-EBE397A5583F}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+													<ReferenceList>
+														<Reference Name="EntryPathObject">
+															<ObjectRef Name="TriggerOff" ID="{704EBA13-D240-4E44-A537-24B13482CD76}" WorkUnitID="{C544A994-E66C-4856-857D-603276E136B3}"/>
+														</Reference>
+													</ReferenceList>
+												</PluginInnerObject>
+											</ObjectList>
+										</ObjectLists>
+									</MultiSwitchEntry>
+									<MultiSwitchEntry Name="" ID="{739C8475-6FC0-4A94-9898-7BE85D741CB2}">
+										<ReferenceList>
+											<Reference Name="AudioNode">
+												<ObjectRef Name="Silence" ID="{135A621D-58C0-4EF8-A2CB-80B9DD269123}" WorkUnitID="{EF5E08E1-9B7B-4014-B697-16BA7A26C9C6}"/>
+											</Reference>
+										</ReferenceList>
+										<ObjectLists>
+											<ObjectList Name="EntryPath">
+												<PluginInnerObject Name="" ID="{1510307F-86BA-4E00-A0C9-620114AF4CA8}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+													<ReferenceList>
+														<Reference Name="EntryPathObject">
+															<ObjectRef Name="TriggerOn" ID="{79DEFFDE-B5B6-4922-9BCB-C3626BB467B4}" WorkUnitID="{C544A994-E66C-4856-857D-603276E136B3}"/>
+														</Reference>
+													</ReferenceList>
+												</PluginInnerObject>
+											</ObjectList>
+										</ObjectLists>
+									</MultiSwitchEntry>
+								</ObjectList>
+							</ObjectLists>
+						</MusicSwitchContainer>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="OutroMusic" ID="{3FD042A1-2232-401F-87EE-F1E8ABFF78AB}" ShortID="124135206">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="4"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<MusicSwitchContainer Name="OutroMusic_SwitchContainer" ID="{5090C6FA-4331-43B5-97CE-F1E4AF07CD60}" ShortID="81239834">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+								</Reference>
+								<Reference Name="TransitionRoot">
+									<Custom>
+										<MusicTransition Name="Root" ID="{610FBF51-19C7-4C2E-BF45-ED099A51B9F3}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<ChildrenList>
+												<MusicTransition Name="Transition" ID="{25512B80-B8CA-46FF-80F3-8C90873F17BE}">
+													<TransitionInfo/>
+												</MusicTransition>
+												<MusicTransition Name="OutroToSilence" ID="{3D6B0476-0CF9-4006-B56D-7E5A6942D94F}">
+													<PropertyList>
+														<Property Name="DestinationContextType" Type="int16" Value="2"/>
+														<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
+														<Property Name="EnableTransitionFadeIn" Type="bool" Value="True"/>
+														<Property Name="ExitSourceAt" Type="int16" Value="3"/>
+														<Property Name="SourceContextType" Type="int16" Value="2"/>
+														<Property Name="UseTransitionObject" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="DestinationContextObject">
+															<ObjectRef Name="Silence" ID="{F5BD0832-678A-44DF-9ACC-2ACE5CB11192}" WorkUnitID="{EF5E08E1-9B7B-4014-B697-16BA7A26C9C6}"/>
+														</Reference>
+														<Reference Name="SourceContextObject">
+															<ObjectRef Name="OutroMusic_HecticHallway" ID="{55657A33-EA02-4387-9D92-05689C8C4A52}" WorkUnitID="{EF5E08E1-9B7B-4014-B697-16BA7A26C9C6}"/>
+														</Reference>
+													</ReferenceList>
+													<TransitionInfo>
+														<TransitionObjectRef Name="OutroMusic_Stinger" ID="{567C5504-62F3-400A-BE95-1B889D82D054}" WorkUnitID="{EF5E08E1-9B7B-4014-B697-16BA7A26C9C6}"/>
+														<SourceFadeOut>
+															<MusicFade Name="Source Fade-out" ID="{2C5242A8-EF17-40D6-83E7-553D610A0E53}">
+																<PropertyList>
+																	<Property Name="FadeCurve" Type="int16" Value="7"/>
+																	<Property Name="FadeOffset" Type="Real64" Value="0.9"/>
+																	<Property Name="FadeTime" Type="Real64" Value="0.4"/>
+																	<Property Name="FadeType" Type="int16" Value="1"/>
+																</PropertyList>
+															</MusicFade>
+														</SourceFadeOut>
+														<TransitionFadeIn>
+															<MusicFade Name="Transition Fade-in" ID="{D6567FA7-6D3F-4D13-85AA-A8562161DFC7}">
+																<PropertyList>
+																	<Property Name="FadeCurve" Type="int16" Value="6"/>
+																	<Property Name="FadeOffset" Type="Real64" Value="-0.6"/>
+																	<Property Name="FadeTime" Type="Real64" Value="0.4"/>
+																</PropertyList>
+															</MusicFade>
+														</TransitionFadeIn>
+													</TransitionInfo>
+												</MusicTransition>
+											</ChildrenList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</Custom>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicPlaylistContainer Name="Silence" ID="{F5BD0832-678A-44DF-9ACC-2ACE5CB11192}" ShortID="29637474">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+										<Reference Name="PlaylistRoot">
+											<Custom>
+												<MusicPlaylistItem Name="" ID="{607EDE0B-5D2B-420B-9DA6-9957C0EB77F8}" ShortID="148897555">
+													<PropertyList>
+														<Property Name="LoopCount" Type="int16" Value="0"/>
+													</PropertyList>
+													<ChildrenList>
+														<MusicPlaylistItem Name="" ID="{CCB877C3-4DE0-472C-8D78-05C5D8D29A37}" ShortID="9161084">
+															<PropertyList>
+																<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Segment">
+																	<ObjectRef Name="Silence" ID="{883F9D5C-4975-4F08-9BCA-21F971FD7CCF}" WorkUnitID="{EF5E08E1-9B7B-4014-B697-16BA7A26C9C6}"/>
+																</Reference>
+															</ReferenceList>
+														</MusicPlaylistItem>
+													</ChildrenList>
+												</MusicPlaylistItem>
+											</Custom>
+										</Reference>
+										<Reference Name="TransitionRoot">
+											<Custom>
+												<MusicTransition Name="Root" ID="{2C884402-5D9E-4237-8BF0-838D7B83C47C}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<ChildrenList>
+														<MusicTransition Name="Transition" ID="{A6C5D072-70D1-4E4A-8EEF-FC0EF5358289}">
+															<TransitionInfo/>
+														</MusicTransition>
+													</ChildrenList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</Custom>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicSegment Name="Silence" ID="{883F9D5C-4975-4F08-9BCA-21F971FD7CCF}" ShortID="1018142061">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+												</Reference>
+											</ReferenceList>
+											<ObjectLists>
+												<ObjectList Name="Cues">
+													<MusicCue Name="Entry Cue" ID="{22E2BED6-DBE7-4D6D-A4FE-E6EAFF6AD865}"/>
+													<MusicCue Name="Exit Cue" ID="{FD7D6163-E62A-40D3-848B-C0A484FAE9B8}">
+														<PropertyList>
+															<Property Name="CueType" Type="int16" Value="1"/>
+															<Property Name="TimeMs" Type="Real64" Value="1000"/>
+														</PropertyList>
+													</MusicCue>
+												</ObjectList>
+											</ObjectLists>
+										</MusicSegment>
+									</ChildrenList>
+								</MusicPlaylistContainer>
+								<MusicSegment Name="OutroMusic_HecticHallway" ID="{55657A33-EA02-4387-9D92-05689C8C4A52}" ShortID="1069846848">
+									<PropertyList>
+										<Property Name="EndPosition" Type="Real64" Value="34066.3333333334"/>
+										<Property Name="OverrideClockSettings" Type="bool" Value="True"/>
+										<Property Name="TimeSignatureUpper" Type="int16" Value="7"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicTrack Name="GoneAstray_ClockGoOff_Bell" ID="{F41B75F5-EDB9-4861-9928-8C9E15127B20}" ShortID="356384415">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+												</Reference>
+												<Reference Name="TransitionRoot">
+													<Custom>
+														<MusicTransition Name="Root" ID="{D356C7CC-EABB-4CD5-8CAF-6930E6D64435}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</Custom>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="GoneAstray_ClockGoOff_Bell" ID="{D364842B-94B9-431C-B34C-6285B9E09FB6}">
+													<Language>SFX</Language>
+													<AudioFile>GoneAstray_ClockGoOff_Bell.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="33492631"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<MusicTrackSequence Name="" ID="{4889381D-C013-46FE-BA41-26BE52969E18}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<MusicClip Name="GoneAstray_ClockGoOff_Bell" ID="{72C52F07-8A2B-4918-AD69-F0EF38D45018}">
+																	<PropertyList>
+																		<Property Name="BeginTrimOffset" Type="Real64" Value="2348.61151675606"/>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="34066.3333333333"/>
+																		<Property Name="FadeInDuration" Type="Real64" Value="533.470903312721"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																		<Property Name="PlayAt" Type="Real64" Value="-2348.61151675606"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="GoneAstray_ClockGoOff_Bell" ID="{D364842B-94B9-431C-B34C-6285B9E09FB6}"/>
+																	<PropertyCurveList>
+																		<PropertyCurve PropertyName="Highpass">
+																			<Curve Name="" ID="{5AF0A807-6A11-4A11-97F8-42FE7B3D50CF}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="1"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>2.34861</XPos>
+																						<YPos>0</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>34.0663333333333</XPos>
+																						<YPos>0</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</PropertyCurve>
+																		<PropertyCurve PropertyName="Lowpass">
+																			<Curve Name="" ID="{E3F39F5A-4799-4030-94E5-5ED3A9D78B36}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="1"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>2.34861</XPos>
+																						<YPos>0</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>34.0663333333333</XPos>
+																						<YPos>0</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</PropertyCurve>
+																		<PropertyCurve PropertyName="Volume">
+																			<Curve Name="" ID="{895EF878-FD32-454F-8068-1D1EE9D8F026}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="3"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>2.34861</XPos>
+																						<YPos>0</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>34.0663333333333</XPos>
+																						<YPos>0</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</PropertyCurve>
+																	</PropertyCurveList>
+																</MusicClip>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+										<MusicTrack Name="GoneAstray_ClockGoOff_Clock 1" ID="{85F9779F-D72C-475F-BE95-CCD53F8EFA8E}" ShortID="456532793">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+												</Reference>
+												<Reference Name="TransitionRoot">
+													<Custom>
+														<MusicTransition Name="Root" ID="{674AFE20-DF23-426F-94C6-2B4EC8A315A6}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</Custom>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="GoneAstray_ClockGoOff_Clock 1" ID="{845D8A6B-5CF2-4324-8BF8-CD1A66CB3A75}">
+													<Language>SFX</Language>
+													<AudioFile>GoneAstray_ClockGoOff_Clock 1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="328270525"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<MusicTrackSequence Name="" ID="{7C8EB196-9827-4A53-8232-823DACF8ACA8}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<MusicClip Name="GoneAstray_ClockGoOff_Clock 1" ID="{DFA98033-CC3C-427A-B91E-20C7F5C13930}">
+																	<PropertyList>
+																		<Property Name="BeginTrimOffset" Type="Real64" Value="2348.61151675606"/>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="34066.3333333333"/>
+																		<Property Name="FadeInDuration" Type="Real64" Value="533.470903312721"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																		<Property Name="PlayAt" Type="Real64" Value="-2348.61151675606"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="GoneAstray_ClockGoOff_Clock 1" ID="{845D8A6B-5CF2-4324-8BF8-CD1A66CB3A75}"/>
+																	<PropertyCurveList>
+																		<PropertyCurve PropertyName="Highpass">
+																			<Curve Name="" ID="{A5E5B1E1-53C7-4492-9D23-C5A7C2E173BB}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="1"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>2.34861</XPos>
+																						<YPos>0</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>34.0663333333333</XPos>
+																						<YPos>0</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</PropertyCurve>
+																		<PropertyCurve PropertyName="Lowpass">
+																			<Curve Name="" ID="{4C47E69D-383F-4365-AEAC-1110E8DC94EE}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="1"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>2.34861</XPos>
+																						<YPos>0</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>34.0663333333333</XPos>
+																						<YPos>0</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</PropertyCurve>
+																		<PropertyCurve PropertyName="Volume">
+																			<Curve Name="" ID="{3AD31CAB-7179-4393-ACD5-E69142CCD1ED}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="3"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>2.34861</XPos>
+																						<YPos>0</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>34.0663333333333</XPos>
+																						<YPos>0</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</PropertyCurve>
+																	</PropertyCurveList>
+																</MusicClip>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+										<MusicTrack Name="GoneAstray_ClockGoOff_ClockHit1" ID="{91DC1276-1BF7-4246-A31E-7AF0E258649C}" ShortID="621671217">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+												</Reference>
+												<Reference Name="TransitionRoot">
+													<Custom>
+														<MusicTransition Name="Root" ID="{2B8B42B7-DF21-489F-B3F2-0DCB0C1651F7}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</Custom>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="GoneAstray_ClockGoOff_ClockHit1" ID="{507CEA47-A22D-43D8-8948-6E13D0B8797B}">
+													<Language>SFX</Language>
+													<AudioFile>GoneAstray_ClockGoOff_ClockHit1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="823154029"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<MusicTrackSequence Name="" ID="{EB7B194E-F960-47F6-9673-24E4F2D962CE}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<MusicClip Name="GoneAstray_ClockGoOff_ClockHit1" ID="{C854A133-7D33-498F-A5A6-1C29E3883433}">
+																	<PropertyList>
+																		<Property Name="BeginTrimOffset" Type="Real64" Value="2348.61151675606"/>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="34066.3333333333"/>
+																		<Property Name="FadeInDuration" Type="Real64" Value="495.365838790384"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																		<Property Name="PlayAt" Type="Real64" Value="-2348.61151675606"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="GoneAstray_ClockGoOff_ClockHit1" ID="{507CEA47-A22D-43D8-8948-6E13D0B8797B}"/>
+																	<PropertyCurveList>
+																		<PropertyCurve PropertyName="Highpass">
+																			<Curve Name="" ID="{BF47C52A-FC65-4446-A306-1F2253D95051}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="1"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>2.34861</XPos>
+																						<YPos>0</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>34.0663333333333</XPos>
+																						<YPos>0</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</PropertyCurve>
+																		<PropertyCurve PropertyName="Lowpass">
+																			<Curve Name="" ID="{73CC2F34-9504-4096-A3B5-16FDE509C48E}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="1"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>2.34861</XPos>
+																						<YPos>0</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>34.0663333333333</XPos>
+																						<YPos>0</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</PropertyCurve>
+																		<PropertyCurve PropertyName="Volume">
+																			<Curve Name="" ID="{0436CB00-0280-4EBC-8235-C9FB5E9D6433}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="3"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>2.34861</XPos>
+																						<YPos>0</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>34.0663333333333</XPos>
+																						<YPos>0</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</PropertyCurve>
+																	</PropertyCurveList>
+																</MusicClip>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+										<MusicTrack Name="GoneAstray_ClockGoOff_TritonusPad" ID="{0F742D79-4C12-462C-A700-B3577B3A57EA}" ShortID="610575622">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+												</Reference>
+												<Reference Name="TransitionRoot">
+													<Custom>
+														<MusicTransition Name="Root" ID="{A905DFCE-DA2B-491B-999F-A8072EFC50CB}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</Custom>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="GoneAstray_ClockGoOff_TritonusPad" ID="{3EB31FBC-A354-4421-80B5-B9689C3F7CA8}">
+													<Language>SFX</Language>
+													<AudioFile>GoneAstray_ClockGoOff_TritonusPad.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="558060360"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<MusicTrackSequence Name="" ID="{FAA1DD4C-AA1F-4F25-891D-77FBF948FA2A}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<MusicClip Name="GoneAstray_ClockGoOff_TritonusPad" ID="{488C5A89-84FF-4D6B-8A34-687414818AD2}">
+																	<PropertyList>
+																		<Property Name="BeginTrimOffset" Type="Real64" Value="2348.61151675606"/>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="34066.3333333333"/>
+																		<Property Name="FadeInDuration" Type="Real64" Value="514.418371051553"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																		<Property Name="PlayAt" Type="Real64" Value="-2348.61151675606"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="GoneAstray_ClockGoOff_TritonusPad" ID="{3EB31FBC-A354-4421-80B5-B9689C3F7CA8}"/>
+																	<PropertyCurveList>
+																		<PropertyCurve PropertyName="Highpass">
+																			<Curve Name="" ID="{D099049D-3D18-4D04-B002-30EF2805EF3F}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="1"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>2.34861</XPos>
+																						<YPos>0</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>34.0663333333333</XPos>
+																						<YPos>0</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</PropertyCurve>
+																		<PropertyCurve PropertyName="Lowpass">
+																			<Curve Name="" ID="{A4E1E892-378B-49CF-9086-3E99241254B3}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="1"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>2.34861</XPos>
+																						<YPos>0</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>34.0663333333333</XPos>
+																						<YPos>0</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</PropertyCurve>
+																		<PropertyCurve PropertyName="Volume">
+																			<Curve Name="" ID="{3A3892CA-F0DE-45F4-A6AA-341FC40EB16E}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="3"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>2.34861</XPos>
+																						<YPos>0</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>34.0663333333333</XPos>
+																						<YPos>0</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</PropertyCurve>
+																	</PropertyCurveList>
+																</MusicClip>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Cues">
+											<MusicCue Name="Entry Cue" ID="{137DB140-E48A-4945-BBCE-400AE9863EA1}">
+												<PropertyList>
+													<Property Name="TimeMs" Type="Real64" Value="1500"/>
+												</PropertyList>
+											</MusicCue>
+											<MusicCue Name="Exit Cue" ID="{8656523D-130E-40AB-9E46-C120D7849513}">
+												<PropertyList>
+													<Property Name="CueType" Type="int16" Value="1"/>
+													<Property Name="TimeMs" Type="Real64" Value="19000"/>
+												</PropertyList>
+											</MusicCue>
+										</ObjectList>
+									</ObjectLists>
+								</MusicSegment>
+								<MusicSegment Name="OutroMusic_Stinger" ID="{567C5504-62F3-400A-BE95-1B889D82D054}" ShortID="894048879">
+									<PropertyList>
+										<Property Name="EndPosition" Type="Real64" Value="18000"/>
+										<Property Name="OverrideClockSettings" Type="bool" Value="True"/>
+										<Property Name="TimeSignatureUpper" Type="int16" Value="7"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicTrack Name="GoneAstray_OutroStinger_ClockDistortHit" ID="{2D2B2A59-B03F-4A43-B94E-21258365AEFF}" ShortID="450321443">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+												</Reference>
+												<Reference Name="TransitionRoot">
+													<Custom>
+														<MusicTransition Name="Root" ID="{55E1D24D-8E0A-4370-936A-58BF11B63BD0}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</Custom>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="GoneAstray_OutroStinger_ClockDistortHit" ID="{7319AC50-EFFA-403D-99CC-6197061A0B98}">
+													<Language>SFX</Language>
+													<AudioFile>GoneAstray_OutroStinger_ClockDistortHit.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="460231350"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<MusicTrackSequence Name="" ID="{A87D9AB5-7198-4577-B4C3-8942CB0618A3}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<MusicClip Name="GoneAstray_OutroStinger_ClockDistortHit" ID="{7288AC3D-AE23-4455-87F2-2620CA684128}">
+																	<PropertyList>
+																		<Property Name="BeginTrimOffset" Type="Real64" Value="2500"/>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="9000.00000000001"/>
+																		<Property Name="FadeInDuration" Type="Real64" Value="991.652754590985"/>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="3966.61101836394"/>
+																		<Property Name="PlayAt" Type="Real64" Value="-2500"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="GoneAstray_OutroStinger_ClockDistortHit" ID="{7319AC50-EFFA-403D-99CC-6197061A0B98}"/>
+																	<PropertyCurveList>
+																		<PropertyCurve PropertyName="Highpass">
+																			<Curve Name="" ID="{71BA3524-F098-447A-95FF-A1580A1DD511}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="1"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>2.5</XPos>
+																						<YPos>0</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>9</XPos>
+																						<YPos>0</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</PropertyCurve>
+																		<PropertyCurve PropertyName="Lowpass">
+																			<Curve Name="" ID="{CA1D19B9-D4A4-49B0-B048-B3D9C516F76D}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="1"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>2.5</XPos>
+																						<YPos>0</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>9</XPos>
+																						<YPos>0</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</PropertyCurve>
+																		<PropertyCurve PropertyName="Volume">
+																			<Curve Name="" ID="{48D21074-F6B9-4B49-9837-3A8C8BA0CF3A}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="3"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>2.5</XPos>
+																						<YPos>0</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>9</XPos>
+																						<YPos>0</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</PropertyCurve>
+																	</PropertyCurveList>
+																</MusicClip>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+										<MusicTrack Name="GoneAstray_OutroStinger_PadRiser" ID="{3B313345-7013-4E26-95B9-A798FABE3FDE}" ShortID="694136586">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+												</Reference>
+												<Reference Name="TransitionRoot">
+													<Custom>
+														<MusicTransition Name="Root" ID="{82AF3144-827A-4660-930F-2A155E2AABD5}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</Custom>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="GoneAstray_OutroStinger_PadRiser" ID="{D4DF5604-053E-4C81-A65E-FE892B7F50BB}">
+													<Language>SFX</Language>
+													<AudioFile>GoneAstray_OutroStinger_PadRiser.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="449590241"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<MusicTrackSequence Name="" ID="{6639093B-473F-4835-9364-8D43D44D3217}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<MusicClip Name="GoneAstray_OutroStinger_PadRiser" ID="{4B3CB86C-A9AD-4D07-909A-57D8CAA87F50}">
+																	<PropertyList>
+																		<Property Name="BeginTrimOffset" Type="Real64" Value="2500"/>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="9000.00000000001"/>
+																		<Property Name="FadeInDuration" Type="Real64" Value="961.602671118531"/>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="3966.61101836394"/>
+																		<Property Name="PlayAt" Type="Real64" Value="-2500"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="GoneAstray_OutroStinger_PadRiser" ID="{D4DF5604-053E-4C81-A65E-FE892B7F50BB}"/>
+																	<PropertyCurveList>
+																		<PropertyCurve PropertyName="Highpass">
+																			<Curve Name="" ID="{018E2C5F-E00E-4960-BC90-E50F2524C72B}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="1"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>2.5</XPos>
+																						<YPos>0</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>9</XPos>
+																						<YPos>0</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</PropertyCurve>
+																		<PropertyCurve PropertyName="Lowpass">
+																			<Curve Name="" ID="{B069E904-479A-46DE-B81B-3B4860B13F18}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="1"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>2.5</XPos>
+																						<YPos>0</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>9</XPos>
+																						<YPos>0</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</PropertyCurve>
+																		<PropertyCurve PropertyName="Volume">
+																			<Curve Name="" ID="{8F5A52F0-2E57-4719-8A37-3C3446396A1F}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="3"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>2.5</XPos>
+																						<YPos>0</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>9</XPos>
+																						<YPos>0</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</PropertyCurve>
+																	</PropertyCurveList>
+																</MusicClip>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+										<MusicTrack Name="GoneAstray_OutroStinger_TritonusPad" ID="{A3629AC1-BAEC-48AF-B9E1-A0C4E99520A1}" ShortID="687362302">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+												</Reference>
+												<Reference Name="TransitionRoot">
+													<Custom>
+														<MusicTransition Name="Root" ID="{DECEBCC2-D96F-489C-8BE1-0FFEA83D757E}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</Custom>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="GoneAstray_OutroStinger_TritonusPad" ID="{C023C36E-EF77-4B90-A718-ECA69569D67A}">
+													<Language>SFX</Language>
+													<AudioFile>GoneAstray_OutroStinger_TritonusPad.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1032132753"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<MusicTrackSequence Name="" ID="{597FF2C0-3877-466C-97F3-188496637F01}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<MusicClip Name="GoneAstray_OutroStinger_TritonusPad" ID="{12148CBD-FCB9-434A-87D5-EAE51EFA032D}">
+																	<PropertyList>
+																		<Property Name="BeginTrimOffset" Type="Real64" Value="2500"/>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="9000.00000000001"/>
+																		<Property Name="FadeInDuration" Type="Real64" Value="991.652754590985"/>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="3996.66110183639"/>
+																		<Property Name="PlayAt" Type="Real64" Value="-2500"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="GoneAstray_OutroStinger_TritonusPad" ID="{C023C36E-EF77-4B90-A718-ECA69569D67A}"/>
+																	<PropertyCurveList>
+																		<PropertyCurve PropertyName="Highpass">
+																			<Curve Name="" ID="{09BAEE44-2D28-4367-AEC0-ED0B192BEFD0}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="1"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>2.5</XPos>
+																						<YPos>0</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>9</XPos>
+																						<YPos>0</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</PropertyCurve>
+																		<PropertyCurve PropertyName="Lowpass">
+																			<Curve Name="" ID="{0276B676-0B7A-46C8-91A4-1E07C863BCFE}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="1"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>2.5</XPos>
+																						<YPos>0</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>9</XPos>
+																						<YPos>0</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</PropertyCurve>
+																		<PropertyCurve PropertyName="Volume">
+																			<Curve Name="" ID="{BDAAA928-3BDA-44B5-BB24-DCD53777E96D}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="3"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>2.5</XPos>
+																						<YPos>0</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>9</XPos>
+																						<YPos>0</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</PropertyCurve>
+																	</PropertyCurveList>
+																</MusicClip>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Cues">
+											<MusicCue Name="Entry Cue" ID="{431D2BA7-DE3C-4F54-AFA3-215C7F8E1852}">
+												<PropertyList>
+													<Property Name="TimeMs" Type="Real64" Value="1000"/>
+												</PropertyList>
+											</MusicCue>
+											<MusicCue Name="Exit Cue" ID="{DA3C7F74-2D6C-4C5D-8B87-377955060D0E}">
+												<PropertyList>
+													<Property Name="CueType" Type="int16" Value="1"/>
+													<Property Name="TimeMs" Type="Real64" Value="6500"/>
+												</PropertyList>
+											</MusicCue>
+										</ObjectList>
+									</ObjectLists>
+								</MusicSegment>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="Arguments">
+									<PluginInnerObject Name="" ID="{6D8D21B4-35CF-43F0-A62B-110364E02413}" PluginName="MusicArgumentsSlot" CompanyID="0" PluginID="89">
+										<ReferenceList>
+											<Reference Name="Argument">
+												<ObjectRef Name="Outro_InsideCheck" ID="{FB5B7D68-C089-4AFA-9BD5-A3492088962D}" WorkUnitID="{C544A994-E66C-4856-857D-603276E136B3}"/>
+											</Reference>
+										</ReferenceList>
+									</PluginInnerObject>
+								</ObjectList>
+								<ObjectList Name="Entries">
+									<MultiSwitchEntry Name="" ID="{0A73EE04-2D6D-4BF3-A3B4-62AB4C808018}">
+										<ReferenceList>
+											<Reference Name="AudioNode">
+												<ObjectRef Name="OutroMusic_HecticHallway" ID="{55657A33-EA02-4387-9D92-05689C8C4A52}" WorkUnitID="{EF5E08E1-9B7B-4014-B697-16BA7A26C9C6}"/>
+											</Reference>
+										</ReferenceList>
+										<ObjectLists>
+											<ObjectList Name="EntryPath">
+												<PluginInnerObject Name="" ID="{7625BC1D-2A97-4490-A9ED-C106CA044B18}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+													<ReferenceList>
+														<Reference Name="EntryPathObject">
+															<ObjectRef Name="Inside" ID="{6AB774A5-5E5E-469F-A7A2-23396FEF36D2}" WorkUnitID="{C544A994-E66C-4856-857D-603276E136B3}"/>
+														</Reference>
+													</ReferenceList>
+												</PluginInnerObject>
+											</ObjectList>
+										</ObjectLists>
+									</MultiSwitchEntry>
+									<MultiSwitchEntry Name="" ID="{53AA4B41-C580-4CA7-892C-716BD73293FE}">
+										<ReferenceList>
+											<Reference Name="AudioNode">
+												<ObjectRef Name="Silence" ID="{F5BD0832-678A-44DF-9ACC-2ACE5CB11192}" WorkUnitID="{EF5E08E1-9B7B-4014-B697-16BA7A26C9C6}"/>
+											</Reference>
+										</ReferenceList>
+										<ObjectLists>
+											<ObjectList Name="EntryPath">
+												<PluginInnerObject Name="" ID="{78AFA9E2-A00E-4D93-A7A2-83717F2130C2}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+													<ReferenceList>
+														<Reference Name="EntryPathObject">
+															<ObjectRef Name="Outside" ID="{8738D379-BEE7-4FEB-BCA6-EF23C085A6FA}" WorkUnitID="{C544A994-E66C-4856-857D-603276E136B3}"/>
+														</Reference>
+													</ReferenceList>
+												</PluginInnerObject>
+											</ObjectList>
+										</ObjectLists>
+									</MultiSwitchEntry>
+								</ObjectList>
+							</ObjectLists>
+						</MusicSwitchContainer>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
 		</WorkUnit>
 	</Containers>
 </WwiseDocument>
