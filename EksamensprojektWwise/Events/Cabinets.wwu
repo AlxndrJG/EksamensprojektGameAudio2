@@ -3,7 +3,7 @@
 	<Events>
 		<WorkUnit Name="Cabinets" ID="{5C18DC07-E11B-4CA0-A076-43E3E27DCED6}" OwnerID="{5650F0CA-A7DF-477A-9756-F5E563667C96}" PersistMode="Nested">
 			<PropertyList>
-				<Property Name="Color" Type="int16" Value="8"/>
+				<Property Name="Color" Type="int16" Value="4"/>
 				<Property Name="OverrideColor" Type="bool" Value="True"/>
 			</PropertyList>
 			<ChildrenList>
@@ -95,12 +95,72 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Play_Kitchen_Draw_Open" ID="{24035F0C-3470-4905-9EFC-619B2FCB1E5C}"/>
-				<Event Name="Play_Kitchen_Draw_Close" ID="{026F7192-7D9B-4E1E-AE48-E0AFBD512A44}"/>
-				<Event Name="Play_Closet_Slide_Open" ID="{F6AE2632-5BD6-460A-8E50-959396FE42BA}"/>
-				<Event Name="Play_Closet_Slide_Close" ID="{49DF6A4C-6E53-4337-994E-110DCD7CE0E7}"/>
-				<Event Name="Play_Closet_Draw_Open" ID="{E8726AFB-1F4E-4DE6-AE84-E5CBDB47EFC3}"/>
-				<Event Name="Play_Closet_Draw_Close" ID="{7A825746-3414-48B4-BE54-3AD812C8FE8D}"/>
+				<Event Name="Play_Kitchen_Draw_Open" ID="{24035F0C-3470-4905-9EFC-619B2FCB1E5C}">
+					<ChildrenList>
+						<Action Name="" ID="{9BE83425-5F53-4943-9AF7-A87B3CEA53B3}" ShortID="69241548">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Cabinet_Draw_Open" ID="{E1B884EF-2748-4155-92FE-D988973EFBDD}" WorkUnitID="{CC65FEA8-FA6B-4248-9B9D-3D7072710284}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Kitchen_Draw_Close" ID="{026F7192-7D9B-4E1E-AE48-E0AFBD512A44}">
+					<ChildrenList>
+						<Action Name="" ID="{4DFBAC35-011D-4FB6-A848-A67D3593FB50}" ShortID="444210816">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Cabinet_Draw_Close" ID="{E5B25F31-3A9A-4150-ABEC-863946167DA5}" WorkUnitID="{CC65FEA8-FA6B-4248-9B9D-3D7072710284}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Closet_Slide_Open" ID="{F6AE2632-5BD6-460A-8E50-959396FE42BA}">
+					<ChildrenList>
+						<Action Name="" ID="{E914E52E-5285-4444-BBAB-EC66B09ED37F}" ShortID="501855234">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Closet_Slide" ID="{95862787-8C42-48C9-815F-2AB9B5F09841}" WorkUnitID="{6EAF16B6-45BD-452D-978D-F9751CB48531}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Closet_Slide_Close" ID="{49DF6A4C-6E53-4337-994E-110DCD7CE0E7}">
+					<ChildrenList>
+						<Action Name="" ID="{0D9282C5-5B51-449D-B4BD-127D5C30E9DA}" ShortID="1055746027">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Closet_Slide" ID="{95862787-8C42-48C9-815F-2AB9B5F09841}" WorkUnitID="{6EAF16B6-45BD-452D-978D-F9751CB48531}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Closet_Draw_Open" ID="{E8726AFB-1F4E-4DE6-AE84-E5CBDB47EFC3}">
+					<ChildrenList>
+						<Action Name="" ID="{BB861F31-065D-4514-9601-697CD31EA6C1}" ShortID="475528710">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Cabinet_Draw_Open" ID="{E1B884EF-2748-4155-92FE-D988973EFBDD}" WorkUnitID="{CC65FEA8-FA6B-4248-9B9D-3D7072710284}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Closet_Draw_Close" ID="{7A825746-3414-48B4-BE54-3AD812C8FE8D}">
+					<ChildrenList>
+						<Action Name="" ID="{7975D38B-4E45-4AFF-B2AE-9056DC53C790}" ShortID="66025468">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Cabinet_Draw_Close" ID="{E5B25F31-3A9A-4150-ABEC-863946167DA5}" WorkUnitID="{CC65FEA8-FA6B-4248-9B9D-3D7072710284}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

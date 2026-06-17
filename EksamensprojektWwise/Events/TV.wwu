@@ -3,7 +3,7 @@
 	<Events>
 		<WorkUnit Name="TV" ID="{E2AB566E-40F0-47CA-BA46-76EC80410D4E}" OwnerID="{5650F0CA-A7DF-477A-9756-F5E563667C96}" PersistMode="Nested">
 			<PropertyList>
-				<Property Name="Color" Type="int16" Value="8"/>
+				<Property Name="Color" Type="int16" Value="4"/>
 				<Property Name="OverrideColor" Type="bool" Value="True"/>
 			</PropertyList>
 			<ChildrenList>
@@ -27,6 +27,17 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="TV_Static" ID="{AE8AFA74-232A-4539-AC9B-59EE444ADB83}" WorkUnitID="{39B736E9-3A53-47FA-A130-DCB4295BC736}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_TV_OnOff" ID="{6CD7EC95-CA06-4BC8-9C2E-AEAAA58ED67F}">
+					<ChildrenList>
+						<Action Name="" ID="{4B4E606E-4A35-4EA9-B0E2-91D4BBFAD601}" ShortID="814758955">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="TV_On" ID="{576F8D4B-86FC-4F9D-8C7D-B2BC2896D1D8}" WorkUnitID="{39B736E9-3A53-47FA-A130-DCB4295BC736}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

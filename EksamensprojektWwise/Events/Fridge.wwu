@@ -3,9 +3,22 @@
 	<Events>
 		<WorkUnit Name="Fridge" ID="{F5320B92-6B8A-417C-9C68-C9C98B4740B1}" OwnerID="{5650F0CA-A7DF-477A-9756-F5E563667C96}" PersistMode="Nested">
 			<PropertyList>
-				<Property Name="Color" Type="int16" Value="8"/>
+				<Property Name="Color" Type="int16" Value="4"/>
 				<Property Name="OverrideColor" Type="bool" Value="True"/>
 			</PropertyList>
+			<ChildrenList>
+				<Event Name="Play_Fridge_Loop" ID="{FAB71C14-CB67-4E41-AD74-C3270C4FFC47}">
+					<ChildrenList>
+						<Action Name="" ID="{7DFFFA0E-82BC-49FD-92EB-30B4AFE49D23}" ShortID="772791999">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Fridge_Hum_Loop" ID="{45D5CC39-A854-42D6-B722-7F0D28B1F9D7}" WorkUnitID="{3FC2F755-5E02-4AF3-B9B2-BD8F28326426}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
 		</WorkUnit>
 	</Events>
 </WwiseDocument>

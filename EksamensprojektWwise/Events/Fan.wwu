@@ -3,7 +3,7 @@
 	<Events>
 		<WorkUnit Name="Fan" ID="{B220945B-82F4-48A5-955C-0E2D019BFDFF}" OwnerID="{5650F0CA-A7DF-477A-9756-F5E563667C96}" PersistMode="Nested">
 			<PropertyList>
-				<Property Name="Color" Type="int16" Value="8"/>
+				<Property Name="Color" Type="int16" Value="4"/>
 				<Property Name="OverrideColor" Type="bool" Value="True"/>
 			</PropertyList>
 		</WorkUnit>

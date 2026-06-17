@@ -3,7 +3,7 @@
 	<Events>
 		<WorkUnit Name="SFX" ID="{592E4948-4B95-4D07-A8F5-57224D983201}" PersistMode="Standalone">
 			<PropertyList>
-				<Property Name="Color" Type="int16" Value="8"/>
+				<Property Name="Color" Type="int16" Value="4"/>
 				<Property Name="OverrideColor" Type="bool" Value="True"/>
 			</PropertyList>
 			<ChildrenList>

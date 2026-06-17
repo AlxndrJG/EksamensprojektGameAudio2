@@ -3,7 +3,7 @@
 	<Events>
 		<WorkUnit Name="Kitchen_Sink" ID="{13ED91BD-CE1F-474C-A161-849FB33FDE31}" OwnerID="{5650F0CA-A7DF-477A-9756-F5E563667C96}" PersistMode="Nested">
 			<PropertyList>
-				<Property Name="Color" Type="int16" Value="8"/>
+				<Property Name="Color" Type="int16" Value="4"/>
 				<Property Name="OverrideColor" Type="bool" Value="True"/>
 			</PropertyList>
 			<ChildrenList>

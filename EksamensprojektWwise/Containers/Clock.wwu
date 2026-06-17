@@ -668,6 +668,16 @@
 						<Sound Name="ClockTick" ID="{C29E9D43-E503-40C1-B37E-9A0926E7197D}" ShortID="776896676">
 							<PropertyList>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Lowpass" Type="int16">
+									<ValueList>
+										<Value>19</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>-80</Value>
+									</ValueList>
+								</Property>
 								<Property Name="Soundly:ActiveChannels" Type="string" Value="[]"/>
 								<Property Name="Soundly:FileID" Type="string" Value="SND102394"/>
 								<Property Name="Soundly:FileName" Type="string" Value="https://signing-274265463422.us-central1.run.app/?Type=GetFile&amp;SessionID=1781636509kA3mQsaSLn3hnAMfhJ-new&amp;File=soundlyeu/1426367345Ff4sxqvM_wkFwG/SND102394/sfy_PrPOFUOcSqgXXoGJbWifkPhsqtGEqr"/>

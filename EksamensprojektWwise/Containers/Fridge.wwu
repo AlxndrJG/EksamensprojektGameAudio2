@@ -8,7 +8,13 @@
 			</PropertyList>
 			<ChildrenList>
 				<Sound Name="Fridge_Hum_Loop" ID="{45D5CC39-A854-42D6-B722-7F0D28B1F9D7}" ShortID="522878940">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+					</PropertyList>
 					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="Objects" ID="{39FADBB5-CB61-4430-A335-DE2B6E800699}" WorkUnitID="{C7388D37-C676-4204-9D08-21F86132814E}"/>
+						</Reference>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
 						</Reference>

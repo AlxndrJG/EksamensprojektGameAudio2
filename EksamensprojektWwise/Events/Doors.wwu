@@ -3,7 +3,7 @@
 	<Events>
 		<WorkUnit Name="Doors" ID="{527A38F7-0B26-4C6D-B8CC-4EE6D6E126D1}" OwnerID="{5650F0CA-A7DF-477A-9756-F5E563667C96}" PersistMode="Nested">
 			<PropertyList>
-				<Property Name="Color" Type="int16" Value="8"/>
+				<Property Name="Color" Type="int16" Value="4"/>
 				<Property Name="OverrideColor" Type="bool" Value="True"/>
 			</PropertyList>
 			<ChildrenList>
