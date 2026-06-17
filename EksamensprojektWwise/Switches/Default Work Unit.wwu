@@ -15,6 +15,12 @@
 						<Switch Name="Dirt" ID="{EA7FBBC3-42D5-40A1-833B-09A701BB2D0D}"/>
 					</ChildrenList>
 				</SwitchGroup>
+				<SwitchGroup Name="RoomCheck_Switch" ID="{85FD0BEB-E56F-4430-96ED-E4A775AF0BE2}">
+					<ChildrenList>
+						<Switch Name="InsideRoom" ID="{3A2A8D1A-D82B-4F3B-A890-24A24E3B0B28}"/>
+						<Switch Name="OutsideRoom" ID="{2D9812ED-5981-4EB1-A7D8-C78515AACC52}"/>
+					</ChildrenList>
+				</SwitchGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</Switches>

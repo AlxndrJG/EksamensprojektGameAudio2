@@ -13,6 +13,7 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID INSIDEROOM_MUSIC = 4278613964U;
         static const AkUniqueID PLAY_BOOKSHELF_CABINET_CLOSE = 4255376059U;
         static const AkUniqueID PLAY_BOOKSHELF_CABINET_OPEN = 2481548253U;
         static const AkUniqueID PLAY_CABINET_DRAW_CLOSE = 1347786538U;
@@ -39,6 +40,7 @@ namespace AK
         static const AkUniqueID PLAY_TESTLYD = 1963904025U;
         static const AkUniqueID PLAY_TV_ONOFF = 1847523583U;
         static const AkUniqueID PLAY_TV_STATIC = 1897478513U;
+        static const AkUniqueID SILENCE = 3041563226U;
         static const AkUniqueID STOP_TV_STATIC = 1329369387U;
     } // namespace EVENTS
 
@@ -74,6 +76,17 @@ namespace AK
                 static const AkUniqueID WOOD = 2058049674U;
             } // namespace SWITCH
         } // namespace MATERIALS
+
+        namespace ROOMCHECK_SWITCH
+        {
+            static const AkUniqueID GROUP = 2088086403U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID INSIDEROOM = 2924291032U;
+                static const AkUniqueID OUTSIDEROOM = 249825411U;
+            } // namespace SWITCH
+        } // namespace ROOMCHECK_SWITCH
 
     } // namespace SWITCHES
 

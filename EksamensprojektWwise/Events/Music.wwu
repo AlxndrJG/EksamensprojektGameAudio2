@@ -6,6 +6,10 @@
 				<Property Name="Color" Type="int16" Value="11"/>
 				<Property Name="OverrideColor" Type="bool" Value="True"/>
 			</PropertyList>
+			<ChildrenList>
+				<Event Name="InsideRoom_Music" ID="{59552ECE-2C97-4222-A870-D41DA5561CA3}"/>
+				<Event Name="Silence" ID="{06C43C7D-752D-4935-BB57-9A7670D978C8}"/>
+			</ChildrenList>
 		</WorkUnit>
 	</Events>
 </WwiseDocument>

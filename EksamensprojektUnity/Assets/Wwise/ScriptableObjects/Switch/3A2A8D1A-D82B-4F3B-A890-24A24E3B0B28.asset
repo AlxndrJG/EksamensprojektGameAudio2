@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0dab723e216c3450a9d3cdb6663b0826, type: 3}
+  m_Name: 3A2A8D1A-D82B-4F3B-A890-24A24E3B0B28
+  m_EditorClassIdentifier: AK.Wwise.Unity.API.WwiseTypes::WwiseSwitchReference
+  objectName: InsideRoom
+  id: 2924291032
+  guid: 3A2A8D1A-D82B-4F3B-A890-24A24E3B0B28
+  WwiseSwitchGroupReference: {fileID: 11400000, guid: bfdb12f7cc7f04683bdc09a1998c5f21, type: 2}
