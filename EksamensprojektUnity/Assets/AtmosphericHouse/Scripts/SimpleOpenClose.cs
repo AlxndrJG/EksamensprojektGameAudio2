@@ -10,14 +10,20 @@ namespace FS_Atmo
     {
         private Animator myAnimator;
         private Animator additionalAnimator;
+        
         public bool objectOpen;
         public bool objectOpenAdditional;
+        
         public GameObject animateAdditional;
+        
         private bool hasAdditional = false;
         float myNormalizedTime;
         
         public AK.Wwise.Event akEventOpen;
         public AK.Wwise.Event akEventClose;
+        
+        public AkRoomPortal portal;
+
         
         // Open or close animator state in start depending on selection.
         // Additional object with animator. For example another door when double doors. 
@@ -65,7 +71,7 @@ namespace FS_Atmo
                         myAnimator.Play("Close", 0, 0.0f);
                         objectOpen = false;
                         akEventClose.Post(gameObject);
-
+                        portal.Close();
                     }
 
                     else
@@ -73,6 +79,7 @@ namespace FS_Atmo
                         myAnimator.Play("Open", 0, 0.0f);
                         objectOpen = true;
                         akEventOpen.Post(gameObject);
+                        portal.Open();
                     }
                 }
             }
