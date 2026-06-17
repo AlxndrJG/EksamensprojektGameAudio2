@@ -5,15 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2e31d9a8-fdaf-40cd-b541-478bfe29dbec" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.EksamensprojektUnity/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.EksamensprojektUnity/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AtmosphericHouse/Scripts/SimpleOpenClose.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AtmosphericHouse/Scripts/SimpleOpenClose.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Hvid Glow.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Hvid Glow.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Gone Astray.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Gone Astray.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SoundPlayerFootSteps.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SoundPlayerFootSteps.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EksamensprojektWwise/Containers/Footsteps.wwu" beforeDir="false" afterPath="$PROJECT_DIR$/../EksamensprojektWwise/Containers/Footsteps.wwu" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EksamensprojektWwise/EksamensprojektWwise.crossover.wsettings" beforeDir="false" afterPath="$PROJECT_DIR$/../EksamensprojektWwise/EksamensprojektWwise.crossover.wsettings" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EksamensprojektWwise/Events/Default Work Unit.wwu" beforeDir="false" afterPath="$PROJECT_DIR$/../EksamensprojektWwise/Events/Default Work Unit.wwu" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EksamensprojektWwise/Events/TV.wwu" beforeDir="false" afterPath="$PROJECT_DIR$/../EksamensprojektWwise/Events/TV.wwu" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EksamensprojektWwise/GeneratedSoundBanks/Mac/Main.bnk" beforeDir="false" afterPath="$PROJECT_DIR$/../EksamensprojektWwise/GeneratedSoundBanks/Mac/Main.bnk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EksamensprojektWwise/GeneratedSoundBanks/Mac/Main.json" beforeDir="false" afterPath="$PROJECT_DIR$/../EksamensprojektWwise/GeneratedSoundBanks/Mac/Main.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EksamensprojektWwise/GeneratedSoundBanks/Mac/Main.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../EksamensprojektWwise/GeneratedSoundBanks/Mac/Main.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EksamensprojektWwise/EksamensprojektWwise.crossover.validationcache" beforeDir="false" afterPath="$PROJECT_DIR$/../EksamensprojektWwise/EksamensprojektWwise.crossover.validationcache" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,6 +110,8 @@
       <workItem from="1781383204538" duration="1141000" />
       <workItem from="1781429761571" duration="1493000" />
       <workItem from="1781463289724" duration="11154000" />
+      <workItem from="1781691409984" duration="1000" />
+      <workItem from="1781691434621" duration="324000" />
     </task>
     <servers />
   </component>
