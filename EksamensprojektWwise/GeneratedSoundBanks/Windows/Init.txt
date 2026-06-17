@@ -1,5 +1,33 @@
+State Group	ID	Name			Wwise Object Path	Notes
+	3726222863	ClockStates			\Default Work Unit\ClockStates	
+
+State	ID	Name	State Group			Notes
+	748895195	None	ClockStates			
+	2598345275	Ring	ClockStates			
+	3226369787	TickTock	ClockStates			
+	4072779321	RingFast	ClockStates			
+
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	2246998526	Main Audio Bus			\Default Work Unit\Main Audio Bus	
+	2332707381	AmbianceBus			\Default Work Unit\AmbianceBus	
+	2886307548	MusicBus			\Default Work Unit\MusicBus	
+	3545700988	Reverbs			\Default Work Unit\Reverbs	
+	3803850708	SFXBus			\Default Work Unit\SFXBus	
+	3966895392	PlayerBus			\Default Work Unit\PlayerBus	
+
+Auxiliary Bus	ID	Name			Wwise Object Path	Notes
+	916691049	RV_Child_Bedroom_03			\Default Work Unit\Reverbs\RV_Child_Bedroom_03	
+	916691054	RV_Child_Bedroom_04			\Default Work Unit\Reverbs\RV_Child_Bedroom_04	
+	1188439079	RV_Child_Bedroom			\Default Work Unit\Reverbs\RV_Child_Bedroom	
+	2393538980	RV_Kitchen			\Default Work Unit\Reverbs\RV_Kitchen	
+	2788550546	RV_LivingRoom			\Default Work Unit\Reverbs\RV_LivingRoom	
+	4147732741	RV_Hall			\Default Work Unit\Reverbs\RV_Hall	
+
+Effect plug-ins	ID	Name	Type				Notes
+	921191769	BlueNoise_Room_03_Org_Ambisonics	Wwise Convolution Reverb			Impulse response created by Pinguin ing.büro © 2010 Pinguin ing.büro.  All rights reserved. IR Pre-delay: 3ms  
+	1870980652	Blue_Reflective_Room_Ambisonics	Wwise Convolution Reverb			Impulse response created by Pinguin ing.büro © 2010 Pinguin ing.büro.  All rights reserved. IR Pre-delay: 8ms  
+	3041976937	Intimate_Room_Ambisonics	Wwise Convolution Reverb			Impulse response created by Pinguin ing.büro © 2010 Pinguin ing.büro.  All rights reserved. IR Pre-delay: 5ms  
+	4033730959	Petite_Room_Ambisonics	Wwise Convolution Reverb			Impulse response created by Pinguin ing.büro © 2010 Pinguin ing.büro.  All rights reserved. IR Pre-delay: 8ms  
 
 Audio Devices	ID	Name	Type				Notes
 	2317455096	No_Output	No Output			

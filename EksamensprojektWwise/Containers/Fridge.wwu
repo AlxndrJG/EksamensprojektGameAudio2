@@ -10,6 +10,7 @@
 				<Sound Name="Fridge_Hum_Loop" ID="{45D5CC39-A854-42D6-B722-7F0D28B1F9D7}" ShortID="522878940">
 					<PropertyList>
 						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Attenuation">
