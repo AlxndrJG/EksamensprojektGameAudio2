@@ -7,14 +7,19 @@
 				<Property Name="OverrideColor" Type="bool" Value="True"/>
 			</PropertyList>
 			<ChildrenList>
-				<RandomSequenceContainer Name="Breathing" ID="{6A563BC6-A71D-4A3F-AFE4-C351EC2CBCE3}" ShortID="722376562">
+				<RandomSequenceContainer Name="Breathing" ID="{2CC0FFC7-A2C1-46D7-864B-1A7198F005CC}" ShortID="401265391">
 					<PropertyList>
 						<Property Name="Color" Type="int16" Value="4"/>
+						<Property Name="GameAuxSendVolume" Type="Real64">
+							<ValueList>
+								<Value>-7</Value>
+							</ValueList>
+						</Property>
 						<Property Name="OverrideColor" Type="bool" Value="True"/>
 						<Property Name="Pitch" Type="int32">
 							<ModifierList>
 								<ModifierInfo>
-									<Modifier Name="" ID="{90C3FE6A-D586-4EB0-B6CB-BF2042887018}">
+									<Modifier Name="" ID="{B2F406D7-9BC8-4F94-929E-9E2897C09B8F}">
 										<PropertyList>
 											<Property Name="Max" Type="Real64" Value="25"/>
 											<Property Name="Min" Type="Real64" Value="-25"/>
@@ -28,7 +33,7 @@
 						<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="1.22">
 							<ModifierList>
 								<ModifierInfo>
-									<Modifier Name="" ID="{093E3130-4AD2-476C-9030-6B73BF3B47A5}">
+									<Modifier Name="" ID="{D0C4DB9A-622C-4499-8008-2DDF2BE12F48}">
 										<PropertyList>
 											<Property Name="Enabled" Type="bool" Value="True"/>
 											<Property Name="Max" Type="Real64" Value="0.1"/>
@@ -40,10 +45,14 @@
 						</Property>
 						<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 						<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-10</Value>
+							</ValueList>
 							<ModifierList>
 								<ModifierInfo>
-									<Modifier Name="" ID="{A689E367-72D8-47AB-83BF-969782E1CC41}">
+									<Modifier Name="" ID="{6AC128CE-B6E6-491B-BC53-619FFF00897C}">
 										<PropertyList>
 											<Property Name="Enabled" Type="bool" Value="True"/>
 											<Property Name="Max" Type="Real64" Value="1"/>
@@ -55,6 +64,9 @@
 						</Property>
 					</PropertyList>
 					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="Attenuate_50" ID="{143E31F9-1597-48C4-9436-CFA24A10D321}" WorkUnitID="{2A830985-BB9C-43E5-BEB6-A0EA9412F107}"/>
+						</Reference>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
 						</Reference>
@@ -63,12 +75,12 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<RandomSequenceContainer Name="Inhale" ID="{7C516E47-2760-4E10-8C8B-A0446A636DD4}" ShortID="799803042">
+						<RandomSequenceContainer Name="Inhale" ID="{4F006B35-58D1-4439-B491-5CA01A73DB78}" ShortID="113392488">
 							<PropertyList>
 								<Property Name="Pitch" Type="int32">
 									<ModifierList>
 										<ModifierInfo>
-											<Modifier Name="" ID="{6C04A0D6-5A35-4F48-B0A3-C19FE3420343}">
+											<Modifier Name="" ID="{C0B2D214-EB7B-46EC-A458-14BAC8881421}">
 												<PropertyList>
 													<Property Name="Enabled" Type="bool" Value="True"/>
 													<Property Name="Max" Type="Real64" Value="50"/>
@@ -84,7 +96,7 @@
 									</ValueList>
 									<ModifierList>
 										<ModifierInfo>
-											<Modifier Name="" ID="{56073DA6-0412-41DE-A460-8F93CEC5C68D}">
+											<Modifier Name="" ID="{5C5BAA1A-2E56-414F-A5AC-E5E7E7821442}">
 												<PropertyList>
 													<Property Name="Enabled" Type="bool" Value="True"/>
 													<Property Name="Max" Type="Real64" Value="1"/>
@@ -104,7 +116,7 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<Sound Name="Breathing_Inhale-003" ID="{BFFCD567-5F07-46B9-8698-639D0DCD5849}" ShortID="649651003">
+								<Sound Name="Breathing_Inhale-003" ID="{D8FE9A33-72D1-4D24-8630-2B403F1821C7}" ShortID="993170610">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
@@ -114,13 +126,13 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="Breathing_Inhale-003" ID="{B08091DF-740B-4DE4-ACFE-58FA080E284E}">
+										<AudioFileSource Name="Breathing_Inhale-003" ID="{BE827B91-4236-4423-8A58-ACE9F4AE46FD}">
 											<PropertyList>
 												<Property Name="FadeInDuration" Type="Real64" Value="0.18824"/>
 												<Property Name="FadeOutDuration" Type="Real64" Value="0.32186"/>
 												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-												<Property Name="TrimBegin" Type="Real64" Value="0.42507"/>
-												<Property Name="TrimEnd" Type="Real64" Value="2.65384"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.99012"/>
+												<Property Name="TrimEnd" Type="Real64" Value="2.49457"/>
 											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>EksamensprojektWwise\Originals\SFX\Breathing_Inhale-003.wav</AudioFile>
@@ -130,10 +142,10 @@
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
-										<ActiveSource Name="Breathing_Inhale-003" ID="{B08091DF-740B-4DE4-ACFE-58FA080E284E}" Platform="Linked"/>
+										<ActiveSource Name="Breathing_Inhale-003" ID="{BE827B91-4236-4423-8A58-ACE9F4AE46FD}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="Breathing_Inhale-004" ID="{4FE18B4D-83CE-4A95-9CA3-10A3B0194540}" ShortID="19450684">
+								<Sound Name="Breathing_Inhale-004" ID="{C625C5C0-55AC-43BB-AEC2-99AF0FF065AB}" ShortID="595851636">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
@@ -143,7 +155,7 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="Breathing_Inhale-004" ID="{183FCE0D-B406-4AB2-A7AE-EB2BF6F324D1}">
+										<AudioFileSource Name="Breathing_Inhale-004" ID="{976C6454-DFDA-44E6-BE9D-80F1D2496535}">
 											<PropertyList>
 												<Property Name="FadeInDuration" Type="Real64" Value="0.05772"/>
 												<Property Name="FadeOutDuration" Type="Real64" Value="0.1488"/>
@@ -158,10 +170,10 @@
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
-										<ActiveSource Name="Breathing_Inhale-004" ID="{183FCE0D-B406-4AB2-A7AE-EB2BF6F324D1}" Platform="Linked"/>
+										<ActiveSource Name="Breathing_Inhale-004" ID="{976C6454-DFDA-44E6-BE9D-80F1D2496535}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="Breathing_Inhale-005" ID="{EAAD6A55-E760-46E7-A705-332F854C3710}" ShortID="997250561">
+								<Sound Name="Breathing_Inhale-005" ID="{2C096B0D-7C81-4A8C-B0D0-1B6E24F63EA1}" ShortID="972754176">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
@@ -171,7 +183,7 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="Breathing_Inhale-005" ID="{CE96D2A8-CEE9-428C-ADB4-929C2901F7A9}">
+										<AudioFileSource Name="Breathing_Inhale-005" ID="{838456F7-FDCF-4CA5-869C-64882FD23014}">
 											<PropertyList>
 												<Property Name="FadeInDuration" Type="Real64" Value="0.08807"/>
 												<Property Name="FadeOutDuration" Type="Real64" Value="0.08504"/>
@@ -187,10 +199,10 @@
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
-										<ActiveSource Name="Breathing_Inhale-005" ID="{CE96D2A8-CEE9-428C-ADB4-929C2901F7A9}" Platform="Linked"/>
+										<ActiveSource Name="Breathing_Inhale-005" ID="{838456F7-FDCF-4CA5-869C-64882FD23014}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="Breathing_Inhale-006" ID="{DDCD1698-3558-4208-B397-CFCF4C1E0BD3}" ShortID="510227884">
+								<Sound Name="Breathing_Inhale-006" ID="{A3C96C95-8B78-4383-BA98-9B3DCA5961D9}" ShortID="601609847">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
@@ -200,7 +212,7 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="Breathing_Inhale-006" ID="{6CE09FA0-B07B-45FC-9AB0-0F844E97F84C}">
+										<AudioFileSource Name="Breathing_Inhale-006" ID="{3B613692-1812-4EDF-85E0-36650265A108}">
 											<PropertyList>
 												<Property Name="FadeInDuration" Type="Real64" Value="0.05883"/>
 												<Property Name="FadeOutDuration" Type="Real64" Value="0.10741"/>
@@ -216,10 +228,10 @@
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
-										<ActiveSource Name="Breathing_Inhale-006" ID="{6CE09FA0-B07B-45FC-9AB0-0F844E97F84C}" Platform="Linked"/>
+										<ActiveSource Name="Breathing_Inhale-006" ID="{3B613692-1812-4EDF-85E0-36650265A108}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="Breathing_Inhale-007" ID="{C7F6E3F1-D5E1-4ECB-8A7F-492167E134FE}" ShortID="68551344">
+								<Sound Name="Breathing_Inhale-007" ID="{72FB0BC9-6E9C-4BF4-9BF5-084E38ED6F20}" ShortID="477833842">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
@@ -229,7 +241,7 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="Breathing_Inhale-007" ID="{089CADB7-B40E-4960-9DB2-FF1E332E9FF3}">
+										<AudioFileSource Name="Breathing_Inhale-007" ID="{638A82C7-4C2B-4183-8AD6-9C18015155C0}">
 											<PropertyList>
 												<Property Name="FadeInDuration" Type="Real64" Value="0.03237"/>
 												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
@@ -243,17 +255,17 @@
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
-										<ActiveSource Name="Breathing_Inhale-007" ID="{089CADB7-B40E-4960-9DB2-FF1E332E9FF3}" Platform="Linked"/>
+										<ActiveSource Name="Breathing_Inhale-007" ID="{638A82C7-4C2B-4183-8AD6-9C18015155C0}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
 						</RandomSequenceContainer>
-						<RandomSequenceContainer Name="Exhale" ID="{2398BF88-6AF3-4EB4-9C71-2AE743644FFB}" ShortID="229874859">
+						<RandomSequenceContainer Name="Exhale" ID="{BC77439A-67F5-4D0D-8A00-1E7BF898EBF7}" ShortID="313343965">
 							<PropertyList>
 								<Property Name="Lowpass" Type="int16">
 									<ModifierList>
 										<ModifierInfo>
-											<Modifier Name="" ID="{1DB4C268-F7AE-4A72-85E7-AC8A858E30FF}">
+											<Modifier Name="" ID="{C3E95250-B31F-4704-9017-19E134FC0E89}">
 												<PropertyList>
 													<Property Name="Enabled" Type="bool" Value="True"/>
 												</PropertyList>
@@ -264,7 +276,7 @@
 								<Property Name="Pitch" Type="int32">
 									<ModifierList>
 										<ModifierInfo>
-											<Modifier Name="" ID="{C9AC0ED6-4DA4-46E3-AA3D-5D7677D4165B}">
+											<Modifier Name="" ID="{B34E5B4C-E8B8-4906-B5E6-638410A6B734}">
 												<PropertyList>
 													<Property Name="Enabled" Type="bool" Value="True"/>
 													<Property Name="Max" Type="Real64" Value="50"/>
@@ -280,7 +292,7 @@
 									</ValueList>
 									<ModifierList>
 										<ModifierInfo>
-											<Modifier Name="" ID="{1678091D-C2E4-4F47-9545-3626CEDA22B1}">
+											<Modifier Name="" ID="{DDA9C455-A6AA-4439-99D9-3AFFFCA1BCD6}">
 												<PropertyList>
 													<Property Name="Enabled" Type="bool" Value="True"/>
 													<Property Name="Max" Type="Real64" Value="1"/>
@@ -300,7 +312,7 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<Sound Name="Breathing_Exhale-003" ID="{0064312B-E455-4648-AF11-5B7B78FFD6D7}" ShortID="89212328">
+								<Sound Name="Breathing_Exhale-003" ID="{98A78488-3E99-49DF-AC62-501AABD05225}" ShortID="381452219">
 									<PropertyList>
 										<Property Name="Lowpass" Type="int16">
 											<ValueList>
@@ -322,7 +334,7 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="Breathing_Exhale-003" ID="{B8085B46-8AF9-4C48-BB8D-2FA4202C8E6B}">
+										<AudioFileSource Name="Breathing_Exhale-003" ID="{B79B3CEE-79B0-40F9-BA0B-C7C8BF9EE250}">
 											<PropertyList>
 												<Property Name="FadeInDuration" Type="Real64" Value="0.09719"/>
 												<Property Name="FadeOutDuration" Type="Real64" Value="0.04859"/>
@@ -337,10 +349,10 @@
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
-										<ActiveSource Name="Breathing_Exhale-003" ID="{B8085B46-8AF9-4C48-BB8D-2FA4202C8E6B}" Platform="Linked"/>
+										<ActiveSource Name="Breathing_Exhale-003" ID="{B79B3CEE-79B0-40F9-BA0B-C7C8BF9EE250}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="Breathing_Exhale-004" ID="{A7B522AC-9718-442C-88D6-87635785B534}" ShortID="113258888">
+								<Sound Name="Breathing_Exhale-004" ID="{7030BCD6-52D7-4C4E-9232-9C4574682E41}" ShortID="784000316">
 									<PropertyList>
 										<Property Name="Lowpass" Type="int16">
 											<ValueList>
@@ -357,7 +369,7 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="Breathing_Exhale-004" ID="{D79FFD1D-0EA3-4FE7-89C9-4703D45A1C95}">
+										<AudioFileSource Name="Breathing_Exhale-004" ID="{B8A096EC-5022-453B-AAEF-8B5BE7DEA9C8}">
 											<PropertyList>
 												<Property Name="FadeInDuration" Type="Real64" Value="0.06172"/>
 												<Property Name="FadeOutDuration" Type="Real64" Value="0.13665"/>
@@ -373,10 +385,10 @@
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
-										<ActiveSource Name="Breathing_Exhale-004" ID="{D79FFD1D-0EA3-4FE7-89C9-4703D45A1C95}" Platform="Linked"/>
+										<ActiveSource Name="Breathing_Exhale-004" ID="{B8A096EC-5022-453B-AAEF-8B5BE7DEA9C8}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="Breathing_Exhale-007" ID="{B3B47ABB-BFC6-42DD-A6E8-CCFD0790D1E7}" ShortID="820809215">
+								<Sound Name="Breathing_Exhale-007" ID="{6329AA77-BB8F-462A-BFD2-96CECF68BF4D}" ShortID="255941380">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
@@ -386,7 +398,7 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="Breathing_Exhale-007" ID="{FF280DFD-2EBD-44C0-8818-69E4CBFC8960}">
+										<AudioFileSource Name="Breathing_Exhale-007" ID="{5097A981-D678-4E25-AD5F-43BEC7494600}">
 											<PropertyList>
 												<Property Name="FadeInDuration" Type="Real64" Value="0.10629"/>
 												<Property Name="FadeOutDuration" Type="Real64" Value="0.07896"/>
@@ -402,10 +414,10 @@
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
-										<ActiveSource Name="Breathing_Exhale-007" ID="{FF280DFD-2EBD-44C0-8818-69E4CBFC8960}" Platform="Linked"/>
+										<ActiveSource Name="Breathing_Exhale-007" ID="{5097A981-D678-4E25-AD5F-43BEC7494600}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="Breathing_Exhale-008" ID="{D38AAF6E-DE2B-4319-9606-822F5C2C02D8}" ShortID="825486028">
+								<Sound Name="Breathing_Exhale-008" ID="{8A866EFA-B99D-4C87-97B9-9EEE18620FED}" ShortID="1056880213">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
@@ -415,7 +427,7 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="Breathing_Exhale-008" ID="{F184286B-1264-42CD-83D5-A7D19EB822EE}">
+										<AudioFileSource Name="Breathing_Exhale-008" ID="{89128D66-5B4B-4F13-9EA4-71CD4E90BD26}">
 											<PropertyList>
 												<Property Name="FadeInDuration" Type="Real64" Value="0.05479"/>
 												<Property Name="FadeOutDuration" Type="Real64" Value="0.11422"/>
@@ -429,10 +441,10 @@
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
-										<ActiveSource Name="Breathing_Exhale-008" ID="{F184286B-1264-42CD-83D5-A7D19EB822EE}" Platform="Linked"/>
+										<ActiveSource Name="Breathing_Exhale-008" ID="{89128D66-5B4B-4F13-9EA4-71CD4E90BD26}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="Breathing_Exhale-009" ID="{E91D0627-E184-460A-B0EB-98F6117B0064}" ShortID="170135519">
+								<Sound Name="Breathing_Exhale-009" ID="{256D6505-3429-40B4-92AF-AF38C19364E9}" ShortID="879225925">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
@@ -442,7 +454,7 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="Breathing_Inhale-009" ID="{95651519-A251-4239-A78A-199FB499415A}">
+										<AudioFileSource Name="Breathing_Inhale-009" ID="{D4BBCB48-5705-4FA0-A477-9C3C5D3CDABF}">
 											<PropertyList>
 												<Property Name="FadeInDuration" Type="Real64" Value="0.09615"/>
 												<Property Name="FadeOutDuration" Type="Real64" Value="0.11132"/>
@@ -457,10 +469,10 @@
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
-										<ActiveSource Name="Breathing_Inhale-009" ID="{95651519-A251-4239-A78A-199FB499415A}" Platform="Linked"/>
+										<ActiveSource Name="Breathing_Inhale-009" ID="{D4BBCB48-5705-4FA0-A477-9C3C5D3CDABF}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="Breathing_Exhale-010" ID="{3C30C04E-A5A5-4207-96CD-69EAAEADF72C}" ShortID="1000679826">
+								<Sound Name="Breathing_Exhale-010" ID="{910623B1-3093-4D20-ABC0-BCCCAAE96C6E}" ShortID="927424738">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
@@ -470,7 +482,7 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="Breathing_Inhale-010" ID="{76C4CC88-0FA9-441B-B389-46D31C8D1292}">
+										<AudioFileSource Name="Breathing_Inhale-010" ID="{B50F5CB6-30B8-40DE-A44E-8C65C8DEC60B}">
 											<PropertyList>
 												<Property Name="FadeInDuration" Type="Real64" Value="0.08326"/>
 												<Property Name="FadeOutDuration" Type="Real64" Value="0.26748"/>
@@ -484,25 +496,29 @@
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
-										<ActiveSource Name="Breathing_Inhale-010" ID="{76C4CC88-0FA9-441B-B389-46D31C8D1292}" Platform="Linked"/>
+										<ActiveSource Name="Breathing_Inhale-010" ID="{B50F5CB6-30B8-40DE-A44E-8C65C8DEC60B}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
 						</RandomSequenceContainer>
 					</ChildrenList>
+					<PositioningInfo>
+						<Panner Name="" ID="{34E36F99-E384-4626-8A98-66465D5966EC}"/>
+						<Position Name="" ID="{791E48EA-7D4D-41AB-A4DB-E8C80879B117}"/>
+					</PositioningInfo>
 					<ObjectLists>
 						<ObjectList Name="Playlist">
-							<PluginInnerObject Name="" ID="{5401513A-AD91-4041-AA69-947AA854EE1C}" PluginName="PlaylistSlot" CompanyID="0" PluginID="86">
+							<PluginInnerObject Name="" ID="{ACA2FFCE-E9DB-4C05-B738-6E81810FB5E5}" PluginName="PlaylistSlot" CompanyID="0" PluginID="86">
 								<ReferenceList>
 									<Reference Name="PlaylistObject">
-										<ObjectRef Name="Inhale" ID="{7C516E47-2760-4E10-8C8B-A0446A636DD4}" WorkUnitID="{E203B16C-E92F-436D-95CA-C48E1D6FD512}"/>
+										<ObjectRef Name="Inhale" ID="{4F006B35-58D1-4439-B491-5CA01A73DB78}" WorkUnitID="{E203B16C-E92F-436D-95CA-C48E1D6FD512}"/>
 									</Reference>
 								</ReferenceList>
 							</PluginInnerObject>
-							<PluginInnerObject Name="" ID="{18403EDA-6CCC-4A02-801C-89FB1CE4F7AA}" PluginName="PlaylistSlot" CompanyID="0" PluginID="86">
+							<PluginInnerObject Name="" ID="{E0D24CC3-FD0D-48E6-AF89-C990A9BFA0EE}" PluginName="PlaylistSlot" CompanyID="0" PluginID="86">
 								<ReferenceList>
 									<Reference Name="PlaylistObject">
-										<ObjectRef Name="Exhale" ID="{2398BF88-6AF3-4EB4-9C71-2AE743644FFB}" WorkUnitID="{E203B16C-E92F-436D-95CA-C48E1D6FD512}"/>
+										<ObjectRef Name="Exhale" ID="{BC77439A-67F5-4D0D-8A00-1E7BF898EBF7}" WorkUnitID="{E203B16C-E92F-436D-95CA-C48E1D6FD512}"/>
 									</Reference>
 								</ReferenceList>
 							</PluginInnerObject>

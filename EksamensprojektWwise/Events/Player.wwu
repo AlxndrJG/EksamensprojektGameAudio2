@@ -40,6 +40,31 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_Breathing" ID="{5170D4C3-F643-4FE2-977C-8DE0EFB25860}">
+					<ChildrenList>
+						<Action Name="" ID="{40FA0DD4-1BCD-4F6D-8803-F5FA72BDA74A}" ShortID="287933678">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{D5DEB605-E336-4A1D-AA0A-39E282F79283}">
+												<PropertyList>
+													<Property Name="Max" Type="Real64" Value="2"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Probability" Type="Real64" Value="9"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Breathing" ID="{2CC0FFC7-A2C1-46D7-864B-1A7198F005CC}" WorkUnitID="{E203B16C-E92F-436D-95CA-C48E1D6FD512}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
