@@ -1,4 +1,6 @@
 Event	ID	Name			Wwise Object Path	Notes
+	133076249	Play_RT_LivingRoom			\Ambisonics\Play_RT_LivingRoom	
+	248599327	Play_Rt_OutdoorsAmbiX			\Ambisonics\Play_Rt_OutdoorsAmbiX	
 	259954442	Play_Kitchen_Cabinet_Bottom_Close			\SFX\Objects\Cabinets\Play_Kitchen_Cabinet_Bottom_Close	
 	369029778	Play_FSBack			\Player\Play_FSBack	
 	567305970	Play_Kitchen_Cabinet_Top_Open			\SFX\Objects\Cabinets\Play_Kitchen_Cabinet_Top_Open	
@@ -8,7 +10,6 @@ Event	ID	Name			Wwise Object Path	Notes
 	1351264462	Play_Fridge_Loop			\SFX\Objects\Fridge\Play_Fridge_Loop	
 	1402222415	Play_ClockSus_SwitchContainer			\Music\Play_ClockSus_SwitchContainer	
 	1437364014	Play_Kitchen_Cabinet_Bottom_Open			\SFX\Objects\Cabinets\Play_Kitchen_Cabinet_Bottom_Open	
-	1498325373	Play_RT_Bedroom			\Ambisonics\Play_RT_Bedroom	
 	1645146637	Play_Kitchen_Sink_Loop			\SFX\Objects\Kitchen_Sink\Play_Kitchen_Sink_Loop	
 	1660008929	Play_Door_Open			\SFX\Objects\Doors\Play_Door_Open	
 	1760803494	Play_Kitchen_Cabinet_Top_Close			\SFX\Objects\Cabinets\Play_Kitchen_Cabinet_Top_Close	
@@ -16,16 +17,19 @@ Event	ID	Name			Wwise Object Path	Notes
 	1897478513	Play_TV_Static			\SFX\Objects\TV\Play_TV_Static	
 	1911134838	Play_Kitchen_Draw_Open			\SFX\Objects\Cabinets\Play_Kitchen_Draw_Open	
 	1963904025	Play_Testlyd			\Default Work Unit\Play_Testlyd	
+	2049265138	Play_Rt_Bedroom_quiet2			\Ambisonics\Play_Rt_Bedroom_quiet2	
 	2292458263	Play_Door_Close			\SFX\Objects\Doors\Play_Door_Close	
 	2337892720	Play_OutroMusic_SwitchContainer			\Music\Play_OutroMusic_SwitchContainer	
 	2360365162	Play_Closet_Draw_Open			\SFX\Objects\Cabinets\Play_Closet_Draw_Open	
 	2481548253	Play_Bookshelf_Cabinet_Open			\SFX\Objects\Cabinets\Play_Bookshelf_Cabinet_Open	
+	2589829285	Play_RT_Kitchen			\Ambisonics\Play_RT_Kitchen	
 	2596423489	Play_Closet_Slide_Close			\SFX\Objects\Cabinets\Play_Closet_Slide_Close	
 	3137613346	Play_Kitchen_Draw_Close			\SFX\Objects\Cabinets\Play_Kitchen_Draw_Close	
 	3148743426	Play_FSForward			\Player\Play_FSForward	
 	3694200493	Play_IntroMusic_SwitchContainer			\Music\Play_IntroMusic_SwitchContainer	
 	3919977262	Play_Closet_Draw_Close			\SFX\Objects\Cabinets\Play_Closet_Draw_Close	
 	4027104577	Play_Clock_Creak			\SFX\Objects\Clock\Play_Clock_Creak	
+	4054260100	Play_GoneAstray_Hallway			\Ambisonics\Play_GoneAstray_Hallway	
 	4093367312	Play_Breathing			\Player\Play_Breathing	
 	4175337955	Play_Closet_Slide_Open			\SFX\Objects\Cabinets\Play_Closet_Slide_Open	
 	4244553126	Play_FSSide			\Player\Play_FSSide	
@@ -88,7 +92,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	37214159	Tiles_Step-004	.cache\9E\{9E928E1F-4524-C600-EB26-61009E9CE24E}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\FS_Tile\FS_Tile_2-Foot\Tiles_Step-004		43260
 	42955071	Cabinet_Creak_3	.cache\5A\{5A26F877-7695-B329-6EA0-1CA6A6E4487F}.wem		\Containers\SFX\Objects\Cabinets\Cabinet_Kitchen_Top\Kitchen_Cabinet_Top_Close\Bookshelf_Cabinet_Creak\Cabinet_Creak_3		99272
 	45625094	Footstep_Walking_Hardwood_01	.cache\B7\{B7968686-8CD9-7782-737C-BA3EC9D35520}.wem		\Containers\Player\Footsteps\FS_Property\FSSide\FS_Wood\FS_Wood_2-Foot\Footstep_Walking_Hardwood_01		13548
-	47628912	GoneAstray_Intro_WhiteLightPad	.cache\A2\{A2C90679-0964-C9F9-43C8-59B666AC9905}.wem		\Containers\Music\IntroMusic\IntroMusic_SwitchContainer\IntroMusic_BedroomPad\GoneAstray_Intro_WhiteLightPad		8640096
+	47628912	GoneAstray_Intro_WhiteLightPad	.cache\A2\{A2C90679-0964-C9F9-43C8-59B666AC9905}.wem		\Containers\Music\IntroMusic\IntroMusic_SwitchContainer\IntroMusic\IntroMusic_BedroomPad_01\GoneAstray_Intro_WhiteLightPad		8640096
 	52152227	Breathing_Exhale-009	.cache\DA\{DA0F1D53-642A-E738-2A8E-CE499FDDEA9F}.wem		\Containers\Player\Breath\Breathing\Exhale\Breathing_Exhale-009		212404
 	56376927	Carpet_Step_2-005	.cache\C6\{C6E931D6-3121-F33C-C927-C89ED207CFFE}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Dirt\FS_Dirt_2-Foot\Carpet_Step_2-005		18062
 	71628625	Breathing_Exhale-008	.cache\B8\{B863816D-A141-76CA-9122-83FB7539BF2F}.wem		\Containers\Player\Breath\Breathing\Exhale\Breathing_Exhale-008		108456
@@ -98,7 +102,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	84109249	Tiles_Heel-003	.cache\EF\{EFE5FEFD-F708-3EAB-0E43-2CA74DF525D7}.wem		\Containers\Player\Footsteps\FS_Property\FSSide\FS_Tile\FS_Tile_1-Heel\Tiles_Heel-003		19130
 	84162569	Wood_Impact-002	.cache\AE\{AEC3CCAD-11B1-CF52-C901-6164CCC41E86}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Wood\FS_Wood_2-Foot\Wood_Impact-002		20110
 	89778146	tøj_Ben_Venstre-001_01	.cache\8D\{8D67629E-EF23-09F4-8AE0-11A7851D1BFD}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\Clothes\Clothes_Walking_Right\tøj_Ben_Venstre-001_01		29054
-	90207738	Fridge_Hum_Loop	.cache\0B\{0B44B39E-BC7E-69BB-8D9C-84CE83977E84}.wem		\Containers\SFX\Objects\Fridge\Fridge_Hum_Loop		3175296
+	90207738	Fridge_Hum_Loop	.cache\10\{1032E16D-A46D-CF02-C079-AFC460648529}.wem		\Containers\SFX\Objects\Fridge\Fridge_Hum_Loop		3175296
 	94758386	SkydeLåger-013_01	.cache\D9\{D98BBD6E-96B9-26A2-2659-CCF3D5AD9507}.wem		\Containers\SFX\Objects\Closet\Closet_Slide\Closet_Open_1\SkydeLåger-013_01		58682
 	102357744	Footstep_Walking_Hardwood_02	.cache\5D\{5D58A2B6-7D7E-B549-4979-AB075FD548D1}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\FS_Wood\FS_Wood_2-Foot\Footstep_Walking_Hardwood_02		18884
 	104982052	Skuffe_Ud-006	.cache\AB\{AB3EF6B8-2EC2-75DA-5578-6DEAC69BDC78}.wem		\Containers\SFX\Objects\Cabinets\Cabinet_Draw\Cabinet_Draw_Close\Cabinet_Close_Slide\Skuffe_Ud-006		59914
@@ -119,7 +123,8 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	158777578	SkydeLåger-006	.cache\BD\{BDC0CFF9-6097-86D2-B10F-57B082CDD9D6}.wem		\Containers\SFX\Objects\Closet\Closet_Slide\Closet_Open_1\SkydeLåger-006		74590
 	159813447	Carpet_Step_2-009	.cache\ED\{ED0C4481-929E-DDC0-D66E-0959ADF04361}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\FS_Dirt\FS_Dirt_2-Foot\Carpet_Step_2-009		26490
 	161588475	Water_Tap_Singles_14	.cache\3D\{3DDD2004-4C2D-9274-74AA-C855A1CF9E6F}.wem		\Containers\SFX\Objects\Kitchen_Sink\Kitchen_Sink_Loop\Kitchen_Sink_Water_Tapping\Water_Tap\Water_Tap_Singles_14		22552
-	161693148	New Random Music Track	.cache\42\{424FA2DE-B3E0-D6F5-E477-40BFFB36E90E}.wem		\Containers\Music\IntroMusic\IntroMusic_SwitchContainer\IntroMusic_BedroomPad\New Random Music Track		1152096
+	161693148	New Random Music Track	.cache\42\{424FA2DE-B3E0-D6F5-E477-40BFFB36E90E}.wem		\Containers\Music\IntroMusic\IntroMusic_SwitchContainer\IntroMusic\IntroMusic_BedroomPad_01\New Random Music Track		1152096
+	165350269	GoneAstray_Hallway	.cache\58\{5875F008-7B3E-8311-C6D8-A3A87995D05C}.wem		\Containers\Ambisonics\RoomTones\GoneAstray_Hallway		26419704
 	166747718	Carpet_Texture-007	.cache\6D\{6D7AE667-BCEF-5AC7-D18C-80D551BADEF8}.wem		\Containers\Player\Footsteps\FS_Property\FSSide\FS_Carpet\FS_Carpet_3-Texture\Carpet_Texture-007		29458
 	170721692	Concrete_Toe-004	.cache\E3\{E30EBBD7-9F54-8DB3-AEA6-2BC9652B1759}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Concrete\FS_Concrete_1-Toe\Concrete_Toe-004		44200
 	175238146	Carpet_Step-009	.cache\23\{238EBB78-3A4F-88CC-764D-77017BE58865}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\FS_Carpet\FS_Carpet_1-Foot\Carpet_Step-009		8068
@@ -220,8 +225,9 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	395654687	Cabinet_Open_2	.cache\84\{84225D9B-DBAD-AB3A-0B78-57EA1A54A578}.wem		\Containers\SFX\Objects\Cabinets\Cabinet_Kitchen_Bottom\Kitchen_Cabinet_Bottom_Close\Bookshelf_Cabinet_Close_Imp\Cabinet_Open_2		20396
 	398776290	TV_Static_Loop	.cache\66\{669CF972-311F-8E06-8804-6AB7A5673B24}.wem		\Containers\SFX\Objects\TV\TV_Static\TV_Static_Loop		1152096
 	398815487	Skuffe_Ud-002	.cache\40\{4000803D-B17F-2E01-0F46-25BB52AA53BF}.wem		\Containers\SFX\Objects\Cabinets\Cabinet_Draw\Cabinet_Draw_Close\Cabinet_Close_Slide\Skuffe_Ud-002		53258
-	400834290	New Random Music Track	.cache\B2\{B2D7541C-A727-722A-071E-FA29713A54E0}.wem		\Containers\Music\IntroMusic\IntroMusic_SwitchContainer\IntroMusic_BedroomPad\New Random Music Track		1152096
+	400834290	New Random Music Track	.cache\B2\{B2D7541C-A727-722A-071E-FA29713A54E0}.wem		\Containers\Music\IntroMusic\IntroMusic_SwitchContainer\IntroMusic\IntroMusic_BedroomPad_01\New Random Music Track		1152096
 	405351695	Concrete_Toe-010	.cache\0D\{0D74573E-ACD3-9A27-CCB7-0C149994DB42}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Concrete\FS_Concrete_1-Toe\Concrete_Toe-010		35980
+	412448464	RT_LivingRoom	.cache\C5\{C5DFEF1F-8854-0A37-26CC-0312EE212799}.wem		\Containers\Ambisonics\RoomTones\RT_LivingRoom		22615848
 	418599757	Tiles_Heel-010	.cache\BA\{BA5A5B55-4737-AEE4-449B-C1238EA33279}.wem		\Containers\Player\Footsteps\FS_Property\FSSide\FS_Tile\FS_Tile_1-Heel\Tiles_Heel-010		16234
 	422690016	Carpet_Step_2-007	.cache\EF\{EF8E93F3-D7FF-E43A-A6FD-17A6CCC04489}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Dirt\FS_Dirt_2-Foot\Carpet_Step_2-007		16654
 	422722377	Breathing_Exhale-007	.cache\7D\{7D75347E-6CE8-549C-280B-3DB875584533}.wem		\Containers\Player\Breath\Breathing\Exhale\Breathing_Exhale-007		97456
@@ -289,7 +295,6 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	608112164	Dirt_Toe-001	.cache\48\{48E3359B-9614-ECEA-787F-F48AC47701BB}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Dirt\FS_Dirt_1-Toe\Dirt_Toe-001		57768
 	613209508	Concrete_Texture-003	.cache\F2\{F231EA32-29BA-15D0-6354-FCA0FA780A00}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Concrete\FS_Concrete_3-Texture\Concrete_Texture-003		40036
 	613851330	Water_Tap_Multiples_13	.cache\30\{308ED2C0-C9BE-FE78-5954-9253F4AE06E7}.wem		\Containers\SFX\Objects\Kitchen_Sink\Kitchen_Sink_Loop\Kitchen_Sink_Water_Tapping\Water_Tap\Water_Tap_Multiples_13		17404
-	614025624	GoneAstray_ChildBedroom3	.cache\AB\{AB9219DF-45D3-2FB7-5A67-74477CE22BE0}.wem		\Containers\Ambisonics\RoomTones\GoneAstray_ChildBedroom3		32559840
 	618541652	Wood_Impact-003	.cache\09\{09E4F05F-5DF1-7418-FC50-86775BFD34C0}.wem		\Containers\Player\Footsteps\FS_Property\FSSide\FS_Wood\FS_Wood_1-Heel\Wood_Impact-003		17194
 	620205234	SkydeLåger-012	.cache\2D\{2D1D28BD-AD4B-60E4-6839-81C9FAA20F80}.wem		\Containers\SFX\Objects\Closet\Closet_Slide\Closet_Open_1\SkydeLåger-012		83930
 	623767893	Wood_Impact-002	.cache\AA\{AA236506-38F2-F872-BEAB-71CFE341496F}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\FS_Wood\FS_Wood_1-Heel\Wood_Impact-002		20012
@@ -316,13 +321,14 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	715145102	Water_Tap_Multiples_5	.cache\BD\{BD019508-58E4-D034-4FA2-3CF3EDC1FE47}.wem		\Containers\SFX\Objects\Kitchen_Sink\Kitchen_Sink_Loop\Kitchen_Sink_Water_Tapping\Water_Tap\Water_Tap_Multiples_5		39828
 	715331280	tøj_Ben_Højre-003_01	.cache\96\{9657B213-6CD3-8251-EF10-4F12CEBEA0C2}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\Clothes\Clothes_Walking_Left\tøj_Ben_Højre-003_01		24768
 	715853598	Water_Metal_Impact_5	.cache\EE\{EE09868B-B039-74C9-E6EF-27E50E23E4CC}.wem		\Containers\SFX\Objects\Kitchen_Sink\Kitchen_Sink_Loop\Kitchen_Sink_Water_Tapping\Metal_Impact\Water_Metal_Impact_5		84312
-	717961820	New Random Music Track_01	.cache\90\{906D755E-5510-05F5-15B6-60045A9D9B98}.wem		\Containers\Music\IntroMusic\IntroMusic_SwitchContainer\IntroMusic_BedroomPad\New Random Music Track_01		8640096
+	717961820	New Random Music Track_01	.cache\90\{906D755E-5510-05F5-15B6-60045A9D9B98}.wem		\Containers\Music\IntroMusic\IntroMusic_SwitchContainer\IntroMusic\IntroMusic_BedroomPad_01\New Random Music Track_01		8640096
 	721261236	Skuffe_Ud-008	.cache\C4\{C44C9E85-CBE2-8FAE-22F8-850CF1E5ED4C}.wem		\Containers\SFX\Objects\Closet\Closet_Slide\Closet_Impact\Skuffe_Ud-008		31570
 	722315689	Water_Metal_Impact_1	.cache\C5\{C5F83A18-78EE-5297-0143-8926207C6C7E}.wem		\Containers\SFX\Objects\Kitchen_Sink\Kitchen_Sink_Loop\Kitchen_Sink_Water_Tapping\Metal_Impact\Water_Metal_Impact_1		54722
 	722813382	tøj_Ben_Venstre-005_01	.cache\91\{919E456C-0FF4-2D7B-5B05-E2CD29ACFD9A}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\Clothes\Clothes_Walking_Right\tøj_Ben_Venstre-005_01		18002
 	725432678	Water_Tap_Multiples_9	.cache\78\{78EB7080-A948-05A7-B4E8-46C021C160D3}.wem		\Containers\SFX\Objects\Kitchen_Sink\Kitchen_Sink_Loop\Kitchen_Sink_Water_Tapping\Water_Tap\Water_Tap_Multiples_9		41400
 	727635394	Wood_Knirken-012	.cache\A4\{A447D628-ABEF-B9FB-F6EC-337DDFC9E655}.wem		\Containers\SFX\Objects\Clock\Clock_Creak\Clock_Creak\Wood_Knirken-012		94456
 	730136227	Water_Metal_Impact_9	.cache\1A\{1A8F88EF-5955-DFCD-4AC9-5768AB5D4BE1}.wem		\Containers\SFX\Objects\Kitchen_Sink\Kitchen_Sink_Loop\Kitchen_Sink_Water_Tapping\Metal_Impact\Water_Metal_Impact_9		106810
+	734362545	Rt_Bedroom_quiet2	.cache\DC\{DCBAB799-E25F-4079-0F0C-965D7D875108}.wem		\Containers\Ambisonics\RoomTones\Rt_Bedroom_quiet2		26419448
 	737010438	Water_Tap_Singles_9	.cache\AD\{AD40124D-2AE5-CECE-EA91-4A5A0909D0B7}.wem		\Containers\SFX\Objects\Kitchen_Sink\Kitchen_Sink_Loop\Kitchen_Sink_Water_Tapping\Water_Tap\Water_Tap_Singles_9		18224
 	738538910	Wood_Impact-001	.cache\25\{25EFF939-958D-0F06-4F4E-0EC9EA36902E}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Wood\FS_Wood_2-Foot\Wood_Impact-001		18734
 	748226737	Water_Tap_Multiples_15	.cache\9D\{9DE380C1-1655-E836-BFEB-7AC3B0F2CE58}.wem		\Containers\SFX\Objects\Kitchen_Sink\Kitchen_Sink_Loop\Kitchen_Sink_Water_Tapping\Water_Tap\Water_Tap_Multiples_15		22844
@@ -332,12 +338,13 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	762148009	Wood_Impact-004	.cache\1B\{1B967ECD-5383-6D7C-8C8A-E1447EA47190}.wem		\Containers\Player\Footsteps\FS_Property\FSSide\FS_Carpet\FS_Wood_1-Heel\Wood_Impact-004		16582
 	766264832	Carpet_Step_2-004	.cache\76\{766C1028-1C32-45B7-7BF6-D86401D3EA19}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\FS_Dirt\FS_Dirt_2-Foot\Carpet_Step_2-004		20904
 	767128951	Skuffe_Ud-008	.cache\3F\{3FBAA1AC-F0F5-7BA4-84D4-5A4D62D5CCBD}.wem		\Containers\SFX\Objects\Cabinets\Cabinet_Draw\Cabinet_Draw_Close\Cabinet_Close_Slide\Skuffe_Ud-008		55468
+	767371912	RT_Kitchen	.cache\D0\{D0DC1FBA-E6BE-25AA-A7C6-3EBEFA4900E8}.wem		\Containers\Ambisonics\RoomTones\RT_Kitchen		23994712
 	769343266	Tiles_Toe-004	.cache\0E\{0EF3DF9B-7757-D1B2-CC7D-28BA3A35CBE8}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Tile\FS_Tile_1-Toe\Tiles_Toe-004		27084
 	774812347	Wood_Impact-008	.cache\EE\{EE1CCCC1-A74C-4C45-6ACD-4D60E263FC98}.wem		\Containers\Player\Footsteps\FS_Property\FSSide\FS_Wood\FS_Wood_1-Heel\Wood_Impact-008		12352
 	780003102	Dirt_Texture-007	.cache\47\{47EFE806-9ECD-DC61-3D15-0D72D3809A0C}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Dirt\FS_Dirt_3-Texture\Dirt_Texture-007		35444
 	780301543	Wood_Knirken-001	.cache\DB\{DB6F30DC-AD4D-6142-65C2-06C9B1086710}.wem		\Containers\SFX\Objects\Clock\Clock_Creak\Clock_Creak\Wood_Knirken-001		76602
 	789356201	tøj_Ben_Højre-007	.cache\E0\{E034F008-0E0E-1B02-08D7-FA180D369D3C}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\Clothes\Clothes_Walking_Right\tøj_Ben_Højre-007		30474
-	801337456	New Random Music Track	.cache\3E\{3E2EC7F8-59C5-A34C-3962-24CFC98BC5A4}.wem		\Containers\Music\IntroMusic\IntroMusic_SwitchContainer\IntroMusic_BedroomPad\New Random Music Track		1152096
+	801337456	New Random Music Track	.cache\3E\{3E2EC7F8-59C5-A34C-3962-24CFC98BC5A4}.wem		\Containers\Music\IntroMusic\IntroMusic_SwitchContainer\IntroMusic\IntroMusic_BedroomPad_01\New Random Music Track		1152096
 	801953892	Tiles_Step-010	.cache\DF\{DFBB127D-BF59-5A61-F1A6-79B6C2A90128}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Tile\FS_Tile_2-Foot\Tiles_Step-010		40746
 	801993291	Wood_Knirken-003	.cache\41\{41688FC2-162D-80F9-F992-8D6D5309834B}.wem		\Containers\SFX\Objects\Clock\Clock_Creak\Clock_Creak\Wood_Knirken-003		66522
 	803876534	tøj_Ben_Venstre-002_01	.cache\76\{7675ADB2-E665-D03E-FEDF-56385EAA0898}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\Clothes\Clothes_Walking_Right\tøj_Ben_Venstre-002_01		24528
@@ -380,6 +387,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	926597305	Water_Tap_Multiples_12	.cache\C4\{C43ABBBC-9EE5-33F6-F987-F17B3F3D4C3F}.wem		\Containers\SFX\Objects\Kitchen_Sink\Kitchen_Sink_Loop\Kitchen_Sink_Water_Tapping\Water_Tap\Water_Tap_Multiples_12		19964
 	932754104	Carpet_Step_2-009	.cache\C3\{C33240CA-FE93-910E-B034-7DC3D66BB72D}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Dirt\FS_Dirt_2-Foot\Carpet_Step_2-009		18464
 	936268650	Concrete_Foot-005	.cache\3E\{3E8D2B93-9F60-2EBE-AC62-1CA9608B3A53}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\FS_Concrete\FS_Concrete_2-Foot\Concrete_Foot-005		29324
+	938324684	Rt_OutdoorsAmbiX	.cache\FD\{FD62AD90-8755-5C14-2FF9-6851A08FA46B}.wem		\Containers\Ambisonics\RoomTones\Rt_OutdoorsAmbiX		34883952
 	943204351	Carpet_Texture-006	.cache\7E\{7E6A6A19-0A28-27F5-06B6-6724FFCB38AF}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Carpet\FS_Carpet_3-Texture\Carpet_Texture-006		28866
 	943360329	Tiles_Step-006	.cache\36\{3669F097-E042-3E5E-7362-C204EA57CE47}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Tile\FS_Tile_2-Foot\Tiles_Step-006		32490
 	946206868	Skuffe_Ud-010	.cache\F9\{F90B8D22-D401-F544-BAB1-B37D30231015}.wem		\Containers\SFX\Objects\Cabinets\Cabinet_Draw\Cabinet_Draw_Close\Cabinet_Close_Slide\Skuffe_Ud-010		49330
@@ -406,7 +414,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	1009104399	Tiles_Toe-010	.cache\25\{25534D81-C325-0798-8C36-B32B7FE8C846}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Tile\FS_Tile_1-Toe\Tiles_Toe-010		32328
 	1009764543	Tiles_Step-005	.cache\5D\{5DFDB11E-8BA5-8961-0037-C6FC05F2ADB6}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\FS_Tile\FS_Tile_2-Foot\Tiles_Step-005		56412
 	1013893993	Cabinet_Open_3	.cache\B5\{B53747D8-079D-3B6E-2598-28046F684843}.wem		\Containers\SFX\Objects\Cabinets\Cabinet_Bookshelf\Bookshelf_Cabinet_Open\Bookshelf_Cabinet_Open_Imp\Cabinet_Open_3		188712
-	1016695201	GoneAstray_Intro_EeriePad	.cache\8F\{8FC10ADD-DB40-D75C-7202-F88CEB0C6AF0}.wem		\Containers\Music\IntroMusic\IntroMusic_SwitchContainer\IntroMusic_BedroomPad\GoneAstray_Intro_EeriePad		8640096
+	1016695201	GoneAstray_Intro_EeriePad	.cache\8F\{8FC10ADD-DB40-D75C-7202-F88CEB0C6AF0}.wem		\Containers\Music\IntroMusic\IntroMusic_SwitchContainer\IntroMusic\IntroMusic_BedroomPad\GoneAstray_Intro_EeriePad		8640096
 	1022166016	tøj_Ben_Venstre-005	.cache\80\{807DCE8C-4C92-65C5-986F-24DDB75A5DFB}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\Clothes\Clothes_Walking_Left\tøj_Ben_Venstre-005		20044
 	1023266597	Wood_Impact-008	.cache\15\{15C22953-09DE-A9D5-1D6D-7B26D116A127}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Wood\FS_Wood_2-Foot\Wood_Impact-008		23934
 	1028521125	Wood_Impact-003	.cache\C3\{C375E477-4A0D-A852-3F4C-7681F6A9F233}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\FS_Carpet\FS_Wood_1-Heel\Wood_Impact-003		17194
@@ -420,9 +428,9 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	1048691574	tøj_Ben_Højre-004	.cache\25\{25D28F70-6238-F75C-41D2-48F583C2A262}.wem		\Containers\Player\Footsteps\FS_Property\FSForward\Clothes\Clothes_Walking_Right\tøj_Ben_Højre-004		18620
 	1053272454	Carpet_Texture-002	.cache\D1\{D1F3EB8D-DBB9-A308-16D9-0EF8CA96A522}.wem		\Containers\Player\Footsteps\FS_Property\FSSide\FS_Carpet\FS_Carpet_3-Texture\Carpet_Texture-002		32198
 	1054553199	Carpet_Step_2-008	.cache\33\{33598819-2C01-2F76-3103-702E36AE2CD6}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Dirt\FS_Dirt_2-Foot\Carpet_Step_2-008		22178
-	1055282842	New Random Music Track	.cache\B6\{B633C16B-49D4-7D42-00C4-DD82C73F8696}.wem		\Containers\Music\IntroMusic\IntroMusic_SwitchContainer\IntroMusic_BedroomPad\New Random Music Track		1152096
+	1055282842	New Random Music Track	.cache\B6\{B633C16B-49D4-7D42-00C4-DD82C73F8696}.wem		\Containers\Music\IntroMusic\IntroMusic_SwitchContainer\IntroMusic\IntroMusic_BedroomPad_01\New Random Music Track		1152096
 	1056241564	ClockTick	.cache\62\{6236BBF8-2602-DEE3-AB9E-9744D0919D03}.wem		\Containers\SFX\Objects\Clock\ClockSwitch\ClockTick		9168664
-	1058457310	New Random Music Track_01	.cache\24\{247F078F-E383-D3C0-487A-C3DEC21B1786}.wem		\Containers\Music\IntroMusic\IntroMusic_SwitchContainer\IntroMusic_BedroomPad\New Random Music Track_01		8640096
+	1058457310	New Random Music Track_01	.cache\24\{247F078F-E383-D3C0-487A-C3DEC21B1786}.wem		\Containers\Music\IntroMusic\IntroMusic_SwitchContainer\IntroMusic\IntroMusic_BedroomPad_01\New Random Music Track_01		8640096
 	1060488270	Wood_Impact-005	.cache\7B\{7BE05270-70DE-A0EB-C72F-9FB6F3A64CDA}.wem		\Containers\Player\Footsteps\FS_Property\FSSide\FS_Wood\FS_Wood_1-Heel\Wood_Impact-005		18136
 	1060976376	tøj_Ben_Højre-005_01	.cache\2C\{2CA098DE-F082-392C-EF3E-22D54E4BB13C}.wem		\Containers\Player\Footsteps\FS_Property\FSSide\Clothes\Clothes_Walking_Left\tøj_Ben_Højre-005_01		46150
 	1061141745	Dirt_Texture-008	.cache\FE\{FEB61FF5-097E-4B49-6C3D-A3D34BD5ADB2}.wem		\Containers\Player\Footsteps\FS_Property\FSBack\FS_Dirt\FS_Dirt_3-Texture\Dirt_Texture-008		28652

@@ -37,15 +37,11 @@
 														<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
 														<Property Name="EnableTransitionFadeIn" Type="bool" Value="True"/>
 														<Property Name="ExitSourceAt" Type="int16" Value="0"/>
-														<Property Name="SourceContextType" Type="int16" Value="2"/>
 														<Property Name="UseTransitionObject" Type="bool" Value="True"/>
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="DestinationContextObject">
 															<ObjectRef Name="Silence" ID="{A53E51E5-5574-4CF3-9431-DA6CDB505052}" WorkUnitID="{EF5E08E1-9B7B-4014-B697-16BA7A26C9C6}"/>
-														</Reference>
-														<Reference Name="SourceContextObject">
-															<ObjectRef Name="IntroMusic_BedroomPad" ID="{0F0E1101-5881-4893-A692-74BC39A97283}" WorkUnitID="{EF5E08E1-9B7B-4014-B697-16BA7A26C9C6}"/>
 														</Reference>
 													</ReferenceList>
 													<TransitionInfo>
@@ -147,320 +143,12 @@
 										</MusicSegment>
 									</ChildrenList>
 								</MusicPlaylistContainer>
-								<MusicSegment Name="IntroMusic_BedroomPad" ID="{0F0E1101-5881-4893-A692-74BC39A97283}" ShortID="53819160">
-									<PropertyList>
-										<Property Name="EndPosition" Type="Real64" Value="50158.1027667984"/>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>12</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<MusicTrack Name="GoneAstray_Intro_EeriePad" ID="{2D298378-FBD1-4E24-A8BE-B0BC066D8BE9}" ShortID="466121622">
-											<ReferenceList>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
-												</Reference>
-												<Reference Name="TransitionRoot">
-													<Custom>
-														<MusicTransition Name="Root" ID="{A419B7CB-FC48-4498-B269-71F690F5D4A5}">
-															<PropertyList>
-																<Property Name="IsFolder" Type="bool" Value="True"/>
-															</PropertyList>
-															<TransitionInfo/>
-														</MusicTransition>
-													</Custom>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="GoneAstray_Intro_EeriePad" ID="{A71036A2-BABA-4266-9D64-EAB07AA294AB}">
-													<Language>SFX</Language>
-													<AudioFile>GoneAstray_Intro_EeriePad.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="1016695201"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ObjectLists>
-												<ObjectList Name="Sequences">
-													<MusicTrackSequence Name="" ID="{BBF79237-F822-44DC-BC22-CB51797BC389}">
-														<ObjectLists>
-															<ObjectList Name="Clips">
-																<MusicClip Name="GoneAstray_Intro_EeriePad" ID="{D6E35D0B-5887-479C-841C-0B1A6A4F4851}">
-																	<PropertyList>
-																		<Property Name="EndTrimOffset" Type="Real64" Value="45000"/>
-																		<Property Name="FadeInMode" Type="int16" Value="0"/>
-																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
-																	</PropertyList>
-																	<AudioSourceRef Name="GoneAstray_Intro_EeriePad" ID="{A71036A2-BABA-4266-9D64-EAB07AA294AB}"/>
-																</MusicClip>
-															</ObjectList>
-														</ObjectLists>
-													</MusicTrackSequence>
-												</ObjectList>
-											</ObjectLists>
-										</MusicTrack>
-										<MusicTrack Name="GoneAstray_Intro_WhiteLightPad" ID="{C00F6405-9148-4400-8EFF-3F1F6117A584}" ShortID="125154755">
-											<ReferenceList>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
-												</Reference>
-												<Reference Name="TransitionRoot">
-													<Custom>
-														<MusicTransition Name="Root" ID="{022DA7F3-59E7-495B-AAF1-C59C24EAA6FE}">
-															<PropertyList>
-																<Property Name="IsFolder" Type="bool" Value="True"/>
-															</PropertyList>
-															<TransitionInfo/>
-														</MusicTransition>
-													</Custom>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="GoneAstray_Intro_WhiteLightPad" ID="{6149436B-D23D-431A-BE5C-742F2AB068CF}">
-													<Language>SFX</Language>
-													<AudioFile>GoneAstray_Intro_WhiteLightPad.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="47628912"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ObjectLists>
-												<ObjectList Name="Sequences">
-													<MusicTrackSequence Name="" ID="{B20D0883-551B-4DAA-8889-AFF9D4260A09}">
-														<ObjectLists>
-															<ObjectList Name="Clips">
-																<MusicClip Name="GoneAstray_Intro_WhiteLightPad" ID="{DE299EA1-FBBD-4E7F-B159-07D7481EB8DB}">
-																	<PropertyList>
-																		<Property Name="EndTrimOffset" Type="Real64" Value="45000"/>
-																		<Property Name="FadeInMode" Type="int16" Value="0"/>
-																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
-																	</PropertyList>
-																	<AudioSourceRef Name="GoneAstray_Intro_WhiteLightPad" ID="{6149436B-D23D-431A-BE5C-742F2AB068CF}"/>
-																</MusicClip>
-															</ObjectList>
-														</ObjectLists>
-													</MusicTrackSequence>
-												</ObjectList>
-											</ObjectLists>
-										</MusicTrack>
-										<MusicTrack Name="New Random Music Track_01" ID="{731DA952-4A0A-4A1D-A9FF-05E830BF5C93}" ShortID="45053128">
-											<PropertyList>
-												<Property Name="MusicTrackType" Type="int16" Value="1"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
-												</Reference>
-												<Reference Name="TransitionRoot">
-													<Custom>
-														<MusicTransition Name="Root" ID="{7E442490-5512-4577-994D-4086ABADBA48}">
-															<PropertyList>
-																<Property Name="IsFolder" Type="bool" Value="True"/>
-															</PropertyList>
-															<TransitionInfo/>
-														</MusicTransition>
-													</Custom>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="GoneAstray_Intro_Melofrase1" ID="{D0EC2DFF-9BBF-48B2-8F46-796DF9EDB51F}">
-													<Language>SFX</Language>
-													<AudioFile>GoneAstray_Intro_Melofrase1.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="1058457310"/>
-													</MediaIDList>
-												</AudioFileSource>
-												<AudioFileSource Name="GoneAstray_Intro_Melofrase2" ID="{B791E18D-506B-45CD-97D9-DF610F3EAEC8}">
-													<Language>SFX</Language>
-													<AudioFile>GoneAstray_Intro_Melofrase2.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="717961820"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ObjectLists>
-												<ObjectList Name="Sequences">
-													<MusicTrackSequence Name="" ID="{A5DBB8A8-2F58-4452-80A6-651C9B10C3C7}">
-														<ObjectLists>
-															<ObjectList Name="Clips">
-																<MusicClip Name="GoneAstray_Intro_Melofrase1" ID="{5A11E0B1-E1B4-43E2-B497-95FCC0CDF132}">
-																	<PropertyList>
-																		<Property Name="EndTrimOffset" Type="Real64" Value="45000"/>
-																		<Property Name="FadeInMode" Type="int16" Value="0"/>
-																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
-																	</PropertyList>
-																	<AudioSourceRef Name="GoneAstray_Intro_Melofrase1" ID="{D0EC2DFF-9BBF-48B2-8F46-796DF9EDB51F}"/>
-																</MusicClip>
-															</ObjectList>
-														</ObjectLists>
-													</MusicTrackSequence>
-													<MusicTrackSequence Name="" ID="{1C72C9B1-3376-45DE-811E-293C136A6DC5}">
-														<ObjectLists>
-															<ObjectList Name="Clips">
-																<MusicClip Name="GoneAstray_Intro_Melofrase2" ID="{C5A4A6D9-76A2-4289-87E3-832322C1CCA6}">
-																	<PropertyList>
-																		<Property Name="EndTrimOffset" Type="Real64" Value="45000"/>
-																		<Property Name="FadeInMode" Type="int16" Value="0"/>
-																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
-																	</PropertyList>
-																	<AudioSourceRef Name="GoneAstray_Intro_Melofrase2" ID="{B791E18D-506B-45CD-97D9-DF610F3EAEC8}"/>
-																</MusicClip>
-															</ObjectList>
-														</ObjectLists>
-													</MusicTrackSequence>
-													<MusicTrackSequence Name="" ID="{F01C8CDA-C023-4042-AA22-F4DD5380D476}"/>
-												</ObjectList>
-											</ObjectLists>
-										</MusicTrack>
-										<MusicTrack Name="New Random Music Track" ID="{E13B1268-CAD4-46B9-B40E-77ACE70FFE3C}" ShortID="856959420">
-											<PropertyList>
-												<Property Name="MusicTrackType" Type="int16" Value="1"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
-												</Reference>
-												<Reference Name="TransitionRoot">
-													<Custom>
-														<MusicTransition Name="Root" ID="{2DEABA8C-D467-4408-AA7C-08D7A95BF578}">
-															<PropertyList>
-																<Property Name="IsFolder" Type="bool" Value="True"/>
-															</PropertyList>
-															<TransitionInfo/>
-														</MusicTransition>
-													</Custom>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="GoneAstray_Tone_C#4" ID="{0AC502AF-E7FB-47FD-8D8D-B626CF488A7F}">
-													<Language>SFX</Language>
-													<AudioFile>GoneAstray_Tone_C#4.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="1055282842"/>
-													</MediaIDList>
-												</AudioFileSource>
-												<AudioFileSource Name="GoneAstray_Tone_C4" ID="{BB2B465A-8184-4A5B-AE5F-679F63413431}">
-													<Language>SFX</Language>
-													<AudioFile>GoneAstray_Tone_C4.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="801337456"/>
-													</MediaIDList>
-												</AudioFileSource>
-												<AudioFileSource Name="GoneAstray_Tone_F#4" ID="{3DEA3D9D-DF0C-4DDE-8C8B-D2FE176291F0}">
-													<Language>SFX</Language>
-													<AudioFile>GoneAstray_Tone_F#4.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="161693148"/>
-													</MediaIDList>
-												</AudioFileSource>
-												<AudioFileSource Name="GoneAstray_Tone_F4" ID="{BCC62088-DA7C-4A2E-9459-9D08DA3DBCBF}">
-													<Language>SFX</Language>
-													<AudioFile>GoneAstray_Tone_F4.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="400834290"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ObjectLists>
-												<ObjectList Name="Sequences">
-													<MusicTrackSequence Name="" ID="{9F07310A-9813-4F17-A607-98CE3C156CC5}">
-														<ObjectLists>
-															<ObjectList Name="Clips">
-																<MusicClip Name="GoneAstray_Tone_C#4" ID="{41522913-F0CF-493A-A9DE-CC6F7CF1B146}">
-																	<PropertyList>
-																		<Property Name="EndTrimOffset" Type="Real64" Value="6000"/>
-																		<Property Name="FadeInMode" Type="int16" Value="0"/>
-																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
-																		<Property Name="PlayAt" Type="Real64" Value="2845.84980237154"/>
-																	</PropertyList>
-																	<AudioSourceRef Name="GoneAstray_Tone_C#4" ID="{0AC502AF-E7FB-47FD-8D8D-B626CF488A7F}"/>
-																</MusicClip>
-															</ObjectList>
-														</ObjectLists>
-													</MusicTrackSequence>
-													<MusicTrackSequence Name="" ID="{3DEF023D-179B-4761-BF51-5579789EF6E6}">
-														<ObjectLists>
-															<ObjectList Name="Clips">
-																<MusicClip Name="GoneAstray_Tone_C4" ID="{944CA412-3FE2-4231-B737-070AD4B4099D}">
-																	<PropertyList>
-																		<Property Name="EndTrimOffset" Type="Real64" Value="6000"/>
-																		<Property Name="FadeInMode" Type="int16" Value="0"/>
-																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
-																		<Property Name="PlayAt" Type="Real64" Value="20000"/>
-																	</PropertyList>
-																	<AudioSourceRef Name="GoneAstray_Tone_C4" ID="{BB2B465A-8184-4A5B-AE5F-679F63413431}"/>
-																</MusicClip>
-															</ObjectList>
-														</ObjectLists>
-													</MusicTrackSequence>
-													<MusicTrackSequence Name="" ID="{4FE8086B-C02E-4637-8D65-E3DD683438BD}">
-														<ObjectLists>
-															<ObjectList Name="Clips">
-																<MusicClip Name="GoneAstray_Tone_F#4" ID="{77221BD8-2785-4F9B-9FD2-1FF99A2DDD86}">
-																	<PropertyList>
-																		<Property Name="EndTrimOffset" Type="Real64" Value="6000"/>
-																		<Property Name="FadeInMode" Type="int16" Value="0"/>
-																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
-																		<Property Name="PlayAt" Type="Real64" Value="7025.69169960475"/>
-																	</PropertyList>
-																	<AudioSourceRef Name="GoneAstray_Tone_F#4" ID="{3DEA3D9D-DF0C-4DDE-8C8B-D2FE176291F0}"/>
-																</MusicClip>
-															</ObjectList>
-														</ObjectLists>
-													</MusicTrackSequence>
-													<MusicTrackSequence Name="" ID="{B98CC942-379C-4180-BDEB-D909B8E05E25}">
-														<ObjectLists>
-															<ObjectList Name="Clips">
-																<MusicClip Name="GoneAstray_Tone_F4" ID="{DA4CF8E2-E5B0-4506-B1A9-FC37B155F3C6}">
-																	<PropertyList>
-																		<Property Name="EndTrimOffset" Type="Real64" Value="6000"/>
-																		<Property Name="FadeInMode" Type="int16" Value="0"/>
-																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
-																		<Property Name="PlayAt" Type="Real64" Value="33883.3992094861"/>
-																	</PropertyList>
-																	<AudioSourceRef Name="GoneAstray_Tone_F4" ID="{BCC62088-DA7C-4A2E-9459-9D08DA3DBCBF}"/>
-																</MusicClip>
-															</ObjectList>
-														</ObjectLists>
-													</MusicTrackSequence>
-													<MusicTrackSequence Name="" ID="{37F98551-247F-45E1-B7E4-453BE413CA2A}"/>
-													<MusicTrackSequence Name="" ID="{86125303-6098-42B5-8D73-97FE36F93D10}"/>
-												</ObjectList>
-											</ObjectLists>
-										</MusicTrack>
-									</ChildrenList>
-									<ObjectLists>
-										<ObjectList Name="Cues">
-											<MusicCue Name="Entry Cue" ID="{10A9070A-05BE-47AC-87BC-95DEB6DE0BAF}">
-												<PropertyList>
-													<Property Name="TimeMs" Type="Real64" Value="3000"/>
-												</PropertyList>
-											</MusicCue>
-											<MusicCue Name="Exit Cue" ID="{90E08A4A-0EB7-4768-A705-6447B7E719DE}">
-												<PropertyList>
-													<Property Name="CueType" Type="int16" Value="1"/>
-													<Property Name="TimeMs" Type="Real64" Value="39000"/>
-												</PropertyList>
-											</MusicCue>
-										</ObjectList>
-									</ObjectLists>
-								</MusicSegment>
 								<MusicSegment Name="IntroMusic_Stinger" ID="{7891F4A5-196F-488C-9B25-6CDF25AA11AF}" ShortID="62970886">
 									<PropertyList>
 										<Property Name="EndPosition" Type="Real64" Value="13500"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>12</Value>
+												<Value>-3</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -910,6 +598,679 @@
 										</ObjectList>
 									</ObjectLists>
 								</MusicSegment>
+								<MusicPlaylistContainer Name="IntroMusic" ID="{74CE2AE3-D819-4BD0-A86C-408A52F4A91D}" ShortID="593497233">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+										</Reference>
+										<Reference Name="PlaylistRoot">
+											<Custom>
+												<MusicPlaylistItem Name="" ID="{6DE45D8D-5F23-4195-8DE4-F9ED584494A9}" ShortID="335831499">
+													<ChildrenList>
+														<MusicPlaylistItem Name="" ID="{0E789453-8106-48EC-A98B-DFBD14134B8E}" ShortID="522682810">
+															<PropertyList>
+																<Property Name="LoopCount" Type="int16" Value="0"/>
+																<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Segment">
+																	<ObjectRef Name="IntroMusic_BedroomPad" ID="{0F0E1101-5881-4893-A692-74BC39A97283}" WorkUnitID="{EF5E08E1-9B7B-4014-B697-16BA7A26C9C6}"/>
+																</Reference>
+															</ReferenceList>
+														</MusicPlaylistItem>
+														<MusicPlaylistItem Name="" ID="{DE55C0BD-C786-490C-AF79-FE36219EEDD9}" ShortID="469993113">
+															<PropertyList>
+																<Property Name="LoopCount" Type="int16" Value="0"/>
+																<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Segment">
+																	<ObjectRef Name="IntroMusic_BedroomPad_01" ID="{055BDB90-2F39-46C3-A605-341D1300436A}" WorkUnitID="{EF5E08E1-9B7B-4014-B697-16BA7A26C9C6}"/>
+																</Reference>
+															</ReferenceList>
+														</MusicPlaylistItem>
+													</ChildrenList>
+												</MusicPlaylistItem>
+											</Custom>
+										</Reference>
+										<Reference Name="TransitionRoot">
+											<Custom>
+												<MusicTransition Name="Root" ID="{78603BD4-F37C-40B6-A815-D0A2CC209100}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<ChildrenList>
+														<MusicTransition Name="Transition" ID="{3D07B176-DA45-4598-B091-5E7862351B50}">
+															<TransitionInfo/>
+														</MusicTransition>
+													</ChildrenList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</Custom>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicSegment Name="IntroMusic_BedroomPad" ID="{0F0E1101-5881-4893-A692-74BC39A97283}" ShortID="53819160">
+											<PropertyList>
+												<Property Name="EndPosition" Type="Real64" Value="50158.1027667984"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-7</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<MusicTrack Name="GoneAstray_Intro_EeriePad" ID="{2D298378-FBD1-4E24-A8BE-B0BC066D8BE9}" ShortID="466121622">
+													<ReferenceList>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+														<Reference Name="TransitionRoot">
+															<Custom>
+																<MusicTransition Name="Root" ID="{A419B7CB-FC48-4498-B269-71F690F5D4A5}">
+																	<PropertyList>
+																		<Property Name="IsFolder" Type="bool" Value="True"/>
+																	</PropertyList>
+																	<TransitionInfo/>
+																</MusicTransition>
+															</Custom>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="GoneAstray_Intro_EeriePad" ID="{A71036A2-BABA-4266-9D64-EAB07AA294AB}">
+															<Language>SFX</Language>
+															<AudioFile>GoneAstray_Intro_EeriePad.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="1016695201"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists>
+														<ObjectList Name="Sequences">
+															<MusicTrackSequence Name="" ID="{BBF79237-F822-44DC-BC22-CB51797BC389}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<MusicClip Name="GoneAstray_Intro_EeriePad" ID="{D6E35D0B-5887-479C-841C-0B1A6A4F4851}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="45000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="GoneAstray_Intro_EeriePad" ID="{A71036A2-BABA-4266-9D64-EAB07AA294AB}"/>
+																		</MusicClip>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</ObjectList>
+													</ObjectLists>
+												</MusicTrack>
+												<MusicTrack Name="GoneAstray_Intro_WhiteLightPad" ID="{C00F6405-9148-4400-8EFF-3F1F6117A584}" ShortID="125154755">
+													<ReferenceList>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+														<Reference Name="TransitionRoot">
+															<Custom>
+																<MusicTransition Name="Root" ID="{022DA7F3-59E7-495B-AAF1-C59C24EAA6FE}">
+																	<PropertyList>
+																		<Property Name="IsFolder" Type="bool" Value="True"/>
+																	</PropertyList>
+																	<TransitionInfo/>
+																</MusicTransition>
+															</Custom>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="GoneAstray_Intro_WhiteLightPad" ID="{6149436B-D23D-431A-BE5C-742F2AB068CF}">
+															<Language>SFX</Language>
+															<AudioFile>GoneAstray_Intro_WhiteLightPad.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="47628912"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists>
+														<ObjectList Name="Sequences">
+															<MusicTrackSequence Name="" ID="{B20D0883-551B-4DAA-8889-AFF9D4260A09}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<MusicClip Name="GoneAstray_Intro_WhiteLightPad" ID="{DE299EA1-FBBD-4E7F-B159-07D7481EB8DB}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="45000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="GoneAstray_Intro_WhiteLightPad" ID="{6149436B-D23D-431A-BE5C-742F2AB068CF}"/>
+																		</MusicClip>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</ObjectList>
+													</ObjectLists>
+												</MusicTrack>
+												<MusicTrack Name="New Random Music Track_01" ID="{731DA952-4A0A-4A1D-A9FF-05E830BF5C93}" ShortID="45053128">
+													<PropertyList>
+														<Property Name="MusicTrackType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+														<Reference Name="TransitionRoot">
+															<Custom>
+																<MusicTransition Name="Root" ID="{7E442490-5512-4577-994D-4086ABADBA48}">
+																	<PropertyList>
+																		<Property Name="IsFolder" Type="bool" Value="True"/>
+																	</PropertyList>
+																	<TransitionInfo/>
+																</MusicTransition>
+															</Custom>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="GoneAstray_Intro_Melofrase1" ID="{D0EC2DFF-9BBF-48B2-8F46-796DF9EDB51F}">
+															<Language>SFX</Language>
+															<AudioFile>GoneAstray_Intro_Melofrase1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="1058457310"/>
+															</MediaIDList>
+														</AudioFileSource>
+														<AudioFileSource Name="GoneAstray_Intro_Melofrase2" ID="{B791E18D-506B-45CD-97D9-DF610F3EAEC8}">
+															<Language>SFX</Language>
+															<AudioFile>GoneAstray_Intro_Melofrase2.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="717961820"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists>
+														<ObjectList Name="Sequences">
+															<MusicTrackSequence Name="" ID="{A5DBB8A8-2F58-4452-80A6-651C9B10C3C7}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<MusicClip Name="GoneAstray_Intro_Melofrase1" ID="{5A11E0B1-E1B4-43E2-B497-95FCC0CDF132}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="45000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="GoneAstray_Intro_Melofrase1" ID="{D0EC2DFF-9BBF-48B2-8F46-796DF9EDB51F}"/>
+																		</MusicClip>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+															<MusicTrackSequence Name="" ID="{1C72C9B1-3376-45DE-811E-293C136A6DC5}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<MusicClip Name="GoneAstray_Intro_Melofrase2" ID="{C5A4A6D9-76A2-4289-87E3-832322C1CCA6}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="45000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="GoneAstray_Intro_Melofrase2" ID="{B791E18D-506B-45CD-97D9-DF610F3EAEC8}"/>
+																		</MusicClip>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+															<MusicTrackSequence Name="" ID="{F01C8CDA-C023-4042-AA22-F4DD5380D476}"/>
+														</ObjectList>
+													</ObjectLists>
+												</MusicTrack>
+												<MusicTrack Name="New Random Music Track" ID="{E13B1268-CAD4-46B9-B40E-77ACE70FFE3C}" ShortID="856959420">
+													<PropertyList>
+														<Property Name="MusicTrackType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+														<Reference Name="TransitionRoot">
+															<Custom>
+																<MusicTransition Name="Root" ID="{2DEABA8C-D467-4408-AA7C-08D7A95BF578}">
+																	<PropertyList>
+																		<Property Name="IsFolder" Type="bool" Value="True"/>
+																	</PropertyList>
+																	<TransitionInfo/>
+																</MusicTransition>
+															</Custom>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="GoneAstray_Tone_C#4" ID="{0AC502AF-E7FB-47FD-8D8D-B626CF488A7F}">
+															<Language>SFX</Language>
+															<AudioFile>GoneAstray_Tone_C#4.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="1055282842"/>
+															</MediaIDList>
+														</AudioFileSource>
+														<AudioFileSource Name="GoneAstray_Tone_C4" ID="{BB2B465A-8184-4A5B-AE5F-679F63413431}">
+															<Language>SFX</Language>
+															<AudioFile>GoneAstray_Tone_C4.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="801337456"/>
+															</MediaIDList>
+														</AudioFileSource>
+														<AudioFileSource Name="GoneAstray_Tone_F#4" ID="{3DEA3D9D-DF0C-4DDE-8C8B-D2FE176291F0}">
+															<Language>SFX</Language>
+															<AudioFile>GoneAstray_Tone_F#4.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="161693148"/>
+															</MediaIDList>
+														</AudioFileSource>
+														<AudioFileSource Name="GoneAstray_Tone_F4" ID="{BCC62088-DA7C-4A2E-9459-9D08DA3DBCBF}">
+															<Language>SFX</Language>
+															<AudioFile>GoneAstray_Tone_F4.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="400834290"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists>
+														<ObjectList Name="Sequences">
+															<MusicTrackSequence Name="" ID="{9F07310A-9813-4F17-A607-98CE3C156CC5}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<MusicClip Name="GoneAstray_Tone_C#4" ID="{41522913-F0CF-493A-A9DE-CC6F7CF1B146}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="6000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																				<Property Name="PlayAt" Type="Real64" Value="2845.84980237154"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="GoneAstray_Tone_C#4" ID="{0AC502AF-E7FB-47FD-8D8D-B626CF488A7F}"/>
+																		</MusicClip>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+															<MusicTrackSequence Name="" ID="{3DEF023D-179B-4761-BF51-5579789EF6E6}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<MusicClip Name="GoneAstray_Tone_C4" ID="{944CA412-3FE2-4231-B737-070AD4B4099D}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="6000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																				<Property Name="PlayAt" Type="Real64" Value="20000"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="GoneAstray_Tone_C4" ID="{BB2B465A-8184-4A5B-AE5F-679F63413431}"/>
+																		</MusicClip>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+															<MusicTrackSequence Name="" ID="{4FE8086B-C02E-4637-8D65-E3DD683438BD}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<MusicClip Name="GoneAstray_Tone_F#4" ID="{77221BD8-2785-4F9B-9FD2-1FF99A2DDD86}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="6000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																				<Property Name="PlayAt" Type="Real64" Value="7025.69169960475"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="GoneAstray_Tone_F#4" ID="{3DEA3D9D-DF0C-4DDE-8C8B-D2FE176291F0}"/>
+																		</MusicClip>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+															<MusicTrackSequence Name="" ID="{B98CC942-379C-4180-BDEB-D909B8E05E25}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<MusicClip Name="GoneAstray_Tone_F4" ID="{DA4CF8E2-E5B0-4506-B1A9-FC37B155F3C6}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="6000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																				<Property Name="PlayAt" Type="Real64" Value="33883.3992094861"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="GoneAstray_Tone_F4" ID="{BCC62088-DA7C-4A2E-9459-9D08DA3DBCBF}"/>
+																		</MusicClip>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+															<MusicTrackSequence Name="" ID="{37F98551-247F-45E1-B7E4-453BE413CA2A}"/>
+															<MusicTrackSequence Name="" ID="{86125303-6098-42B5-8D73-97FE36F93D10}"/>
+														</ObjectList>
+													</ObjectLists>
+												</MusicTrack>
+											</ChildrenList>
+											<ObjectLists>
+												<ObjectList Name="Cues">
+													<MusicCue Name="Entry Cue" ID="{10A9070A-05BE-47AC-87BC-95DEB6DE0BAF}">
+														<PropertyList>
+															<Property Name="TimeMs" Type="Real64" Value="3000"/>
+														</PropertyList>
+													</MusicCue>
+													<MusicCue Name="Exit Cue" ID="{90E08A4A-0EB7-4768-A705-6447B7E719DE}">
+														<PropertyList>
+															<Property Name="CueType" Type="int16" Value="1"/>
+															<Property Name="TimeMs" Type="Real64" Value="39000"/>
+														</PropertyList>
+													</MusicCue>
+												</ObjectList>
+											</ObjectLists>
+										</MusicSegment>
+										<MusicSegment Name="IntroMusic_BedroomPad_01" ID="{055BDB90-2F39-46C3-A605-341D1300436A}" ShortID="500459782">
+											<PropertyList>
+												<Property Name="EndPosition" Type="Real64" Value="50158.1027667984"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-7</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<MusicTrack Name="GoneAstray_Intro_EeriePad" ID="{2EBB4868-F59E-4624-8C78-D651BF5B4685}" ShortID="60249485">
+													<ReferenceList>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+														<Reference Name="TransitionRoot">
+															<Custom>
+																<MusicTransition Name="Root" ID="{8B4AB7E1-F984-4F19-95F2-C2EB02F56531}">
+																	<PropertyList>
+																		<Property Name="IsFolder" Type="bool" Value="True"/>
+																	</PropertyList>
+																	<TransitionInfo/>
+																</MusicTransition>
+															</Custom>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="GoneAstray_Intro_EeriePad" ID="{63F02C1C-F71D-4D03-A0D5-A6368E27197D}">
+															<Language>SFX</Language>
+															<AudioFile>GoneAstray_Intro_EeriePad.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="1016695201"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists>
+														<ObjectList Name="Sequences">
+															<MusicTrackSequence Name="" ID="{706205C1-7F54-4687-9D99-68D492EAB402}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<MusicClip Name="GoneAstray_Intro_EeriePad" ID="{EABA3CB8-6876-477E-8F1D-80F5903138B3}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="45000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="GoneAstray_Intro_EeriePad" ID="{63F02C1C-F71D-4D03-A0D5-A6368E27197D}"/>
+																		</MusicClip>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</ObjectList>
+													</ObjectLists>
+												</MusicTrack>
+												<MusicTrack Name="GoneAstray_Intro_WhiteLightPad" ID="{CA93B825-0307-4319-8037-BCD7F63CF1A5}" ShortID="294722489">
+													<ReferenceList>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+														<Reference Name="TransitionRoot">
+															<Custom>
+																<MusicTransition Name="Root" ID="{C220AD3E-ECD2-4B1F-8866-A1CDE0A505CC}">
+																	<PropertyList>
+																		<Property Name="IsFolder" Type="bool" Value="True"/>
+																	</PropertyList>
+																	<TransitionInfo/>
+																</MusicTransition>
+															</Custom>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="GoneAstray_Intro_WhiteLightPad" ID="{74CAB0C8-D102-411B-92DA-160CB9D16B3B}">
+															<Language>SFX</Language>
+															<AudioFile>GoneAstray_Intro_WhiteLightPad.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="47628912"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists>
+														<ObjectList Name="Sequences">
+															<MusicTrackSequence Name="" ID="{7CCFE350-4AA5-475D-B34B-C518AC8E7C89}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<MusicClip Name="GoneAstray_Intro_WhiteLightPad" ID="{623E957D-73EE-49A8-8C20-D9486B7E1478}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="45000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="GoneAstray_Intro_WhiteLightPad" ID="{74CAB0C8-D102-411B-92DA-160CB9D16B3B}"/>
+																		</MusicClip>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</ObjectList>
+													</ObjectLists>
+												</MusicTrack>
+												<MusicTrack Name="New Random Music Track_01" ID="{E8EFF275-D015-4F0B-B61E-CF941EA8E828}" ShortID="996191136">
+													<PropertyList>
+														<Property Name="MusicTrackType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+														<Reference Name="TransitionRoot">
+															<Custom>
+																<MusicTransition Name="Root" ID="{F6E4E6E2-EFD1-4978-860A-0F67AA8C4231}">
+																	<PropertyList>
+																		<Property Name="IsFolder" Type="bool" Value="True"/>
+																	</PropertyList>
+																	<TransitionInfo/>
+																</MusicTransition>
+															</Custom>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="GoneAstray_Intro_Melofrase1" ID="{5E3B7111-0375-40C6-BEC2-833AA0A81411}">
+															<Language>SFX</Language>
+															<AudioFile>GoneAstray_Intro_Melofrase1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="1058457310"/>
+															</MediaIDList>
+														</AudioFileSource>
+														<AudioFileSource Name="GoneAstray_Intro_Melofrase2" ID="{D7A4C47A-8E22-45A5-8844-B592680FEBE2}">
+															<Language>SFX</Language>
+															<AudioFile>GoneAstray_Intro_Melofrase2.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="717961820"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists>
+														<ObjectList Name="Sequences">
+															<MusicTrackSequence Name="" ID="{1D74E274-06CA-4AA0-B65B-1C74B07B4097}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<MusicClip Name="GoneAstray_Intro_Melofrase1" ID="{9BB6A811-1146-45A5-934B-B0A511D111FD}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="45000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="GoneAstray_Intro_Melofrase1" ID="{5E3B7111-0375-40C6-BEC2-833AA0A81411}"/>
+																		</MusicClip>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+															<MusicTrackSequence Name="" ID="{89030FAA-593D-49F3-8D99-AB80AB13B603}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<MusicClip Name="GoneAstray_Intro_Melofrase2" ID="{3BD59CEA-D7DC-4A35-B8A6-38B24EFE67D8}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="45000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="GoneAstray_Intro_Melofrase2" ID="{D7A4C47A-8E22-45A5-8844-B592680FEBE2}"/>
+																		</MusicClip>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+															<MusicTrackSequence Name="" ID="{1A652F39-C422-44D3-9C40-430BDC708FCD}"/>
+														</ObjectList>
+													</ObjectLists>
+												</MusicTrack>
+												<MusicTrack Name="New Random Music Track" ID="{2F0A4517-573D-423D-8BA0-2CAE3F273D4B}" ShortID="29322343">
+													<PropertyList>
+														<Property Name="MusicTrackType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+														</Reference>
+														<Reference Name="TransitionRoot">
+															<Custom>
+																<MusicTransition Name="Root" ID="{C5C4C0B6-4D7D-4AD4-B07B-96782F7028FA}">
+																	<PropertyList>
+																		<Property Name="IsFolder" Type="bool" Value="True"/>
+																	</PropertyList>
+																	<TransitionInfo/>
+																</MusicTransition>
+															</Custom>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="GoneAstray_Tone_C#4" ID="{A3881CD5-17FD-4614-975C-9888FB0CB5F5}">
+															<Language>SFX</Language>
+															<AudioFile>GoneAstray_Tone_C#4.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="1055282842"/>
+															</MediaIDList>
+														</AudioFileSource>
+														<AudioFileSource Name="GoneAstray_Tone_C4" ID="{F291A75F-A886-4880-A0C5-D526D84A17E6}">
+															<Language>SFX</Language>
+															<AudioFile>GoneAstray_Tone_C4.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="801337456"/>
+															</MediaIDList>
+														</AudioFileSource>
+														<AudioFileSource Name="GoneAstray_Tone_F#4" ID="{14ABB24F-6B3E-4592-9BF9-5968CEECE68E}">
+															<Language>SFX</Language>
+															<AudioFile>GoneAstray_Tone_F#4.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="161693148"/>
+															</MediaIDList>
+														</AudioFileSource>
+														<AudioFileSource Name="GoneAstray_Tone_F4" ID="{6DF28991-C987-40AB-8984-07984F4E7657}">
+															<Language>SFX</Language>
+															<AudioFile>GoneAstray_Tone_F4.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="400834290"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists>
+														<ObjectList Name="Sequences">
+															<MusicTrackSequence Name="" ID="{30FC2730-373C-4643-AC1D-FE56127F1D79}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<MusicClip Name="GoneAstray_Tone_C#4" ID="{D04058C2-254D-430A-802C-3AC9735F8FCE}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="6000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																				<Property Name="PlayAt" Type="Real64" Value="2845.84980237154"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="GoneAstray_Tone_C#4" ID="{A3881CD5-17FD-4614-975C-9888FB0CB5F5}"/>
+																		</MusicClip>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+															<MusicTrackSequence Name="" ID="{DFBF18DD-6D64-4EB3-8EAC-38510CC72048}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<MusicClip Name="GoneAstray_Tone_C4" ID="{A4FD42AC-3016-4C8B-B7C0-7D1CFF27521C}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="6000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																				<Property Name="PlayAt" Type="Real64" Value="20000"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="GoneAstray_Tone_C4" ID="{F291A75F-A886-4880-A0C5-D526D84A17E6}"/>
+																		</MusicClip>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+															<MusicTrackSequence Name="" ID="{E387E59D-CA9C-4EE4-9BDA-14BEA71CC7C9}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<MusicClip Name="GoneAstray_Tone_F#4" ID="{3F5B6040-066C-4529-BBC3-3F7BBB805DE8}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="6000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																				<Property Name="PlayAt" Type="Real64" Value="7025.69169960475"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="GoneAstray_Tone_F#4" ID="{14ABB24F-6B3E-4592-9BF9-5968CEECE68E}"/>
+																		</MusicClip>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+															<MusicTrackSequence Name="" ID="{D7854722-4510-4485-AA09-877824B0169B}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<MusicClip Name="GoneAstray_Tone_F4" ID="{04E10A73-CDC9-4EC6-B970-9FA63A8FB51A}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="6000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																				<Property Name="PlayAt" Type="Real64" Value="33883.3992094861"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="GoneAstray_Tone_F4" ID="{6DF28991-C987-40AB-8984-07984F4E7657}"/>
+																		</MusicClip>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+															<MusicTrackSequence Name="" ID="{7A97EFEA-41BF-410C-80F0-CC0EA14C6E66}"/>
+															<MusicTrackSequence Name="" ID="{B6CCC078-98D8-46C4-8C78-ED31B0E2995C}"/>
+														</ObjectList>
+													</ObjectLists>
+												</MusicTrack>
+											</ChildrenList>
+											<ObjectLists>
+												<ObjectList Name="Cues">
+													<MusicCue Name="Entry Cue" ID="{2A01DF41-37BF-41BF-A34D-C347FD35C1B3}">
+														<PropertyList>
+															<Property Name="TimeMs" Type="Real64" Value="3000"/>
+														</PropertyList>
+													</MusicCue>
+													<MusicCue Name="Exit Cue" ID="{BD1B3944-A619-4D14-A105-D92538258BAB}">
+														<PropertyList>
+															<Property Name="CueType" Type="int16" Value="1"/>
+															<Property Name="TimeMs" Type="Real64" Value="39000"/>
+														</PropertyList>
+													</MusicCue>
+												</ObjectList>
+											</ObjectLists>
+										</MusicSegment>
+									</ChildrenList>
+								</MusicPlaylistContainer>
 							</ChildrenList>
 							<ObjectLists>
 								<ObjectList Name="Arguments">
@@ -925,7 +1286,7 @@
 									<MultiSwitchEntry Name="" ID="{073E621D-96E4-4512-8D68-4AE2F9C7DB70}">
 										<ReferenceList>
 											<Reference Name="AudioNode">
-												<ObjectRef Name="IntroMusic_BedroomPad" ID="{0F0E1101-5881-4893-A692-74BC39A97283}" WorkUnitID="{EF5E08E1-9B7B-4014-B697-16BA7A26C9C6}"/>
+												<ObjectRef Name="IntroMusic" ID="{74CE2AE3-D819-4BD0-A86C-408A52F4A91D}" WorkUnitID="{EF5E08E1-9B7B-4014-B697-16BA7A26C9C6}"/>
 											</Reference>
 										</ReferenceList>
 										<ObjectLists>
@@ -970,6 +1331,13 @@
 					</PropertyList>
 					<ChildrenList>
 						<MusicSwitchContainer Name="ClockSus_SwitchContainer" ID="{7F6932D1-5FF8-4ABC-915A-FCDDC4FE0524}" ShortID="525483002">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-1.5</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
@@ -1108,7 +1476,7 @@
 										<Property Name="EndPosition" Type="Real64" Value="33282.1368948247"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-9</Value>
+												<Value>-12</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -1231,7 +1599,7 @@
 										<Property Name="EndPosition" Type="Real64" Value="18000"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-9</Value>
+												<Value>-12</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -1636,6 +2004,13 @@
 					</PropertyList>
 					<ChildrenList>
 						<MusicSwitchContainer Name="OutroMusic_SwitchContainer" ID="{5090C6FA-4331-43B5-97CE-F1E4AF07CD60}" ShortID="81239834">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-1.5</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
@@ -1776,7 +2151,7 @@
 										<Property Name="TimeSignatureUpper" Type="int16" Value="7"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-9</Value>
+												<Value>-16</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -1821,11 +2196,11 @@
 															<ObjectList Name="Clips">
 																<MusicClip Name="GoneAstray_ClockGoOff_Bell" ID="{72C52F07-8A2B-4918-AD69-F0EF38D45018}">
 																	<PropertyList>
-																		<Property Name="BeginTrimOffset" Type="Real64" Value="1339.39863656112"/>
+																		<Property Name="BeginTrimOffset" Type="Real64" Value="2339.39863656112"/>
 																		<Property Name="EndTrimOffset" Type="Real64" Value="34066.3333333333"/>
 																		<Property Name="FadeInDuration" Type="Real64" Value="533.470903312721"/>
 																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
-																		<Property Name="PlayAt" Type="Real64" Value="-1339.39863656112"/>
+																		<Property Name="PlayAt" Type="Real64" Value="-2339.39863656112"/>
 																	</PropertyList>
 																	<AudioSourceRef Name="GoneAstray_ClockGoOff_Bell" ID="{D364842B-94B9-431C-B34C-6285B9E09FB6}"/>
 																	<PropertyCurveList>
@@ -1836,7 +2211,7 @@
 																				</PropertyList>
 																				<PointList>
 																					<Point>
-																						<XPos>1.3394</XPos>
+																						<XPos>2.3394</XPos>
 																						<YPos>0</YPos>
 																						<Flags>5</Flags>
 																					</Point>
@@ -1855,7 +2230,7 @@
 																				</PropertyList>
 																				<PointList>
 																					<Point>
-																						<XPos>1.3394</XPos>
+																						<XPos>2.3394</XPos>
 																						<YPos>0</YPos>
 																						<Flags>5</Flags>
 																					</Point>
@@ -1874,7 +2249,7 @@
 																				</PropertyList>
 																				<PointList>
 																					<Point>
-																						<XPos>1.3394</XPos>
+																						<XPos>2.3394</XPos>
 																						<YPos>0</YPos>
 																						<Flags>5</Flags>
 																					</Point>
@@ -1926,11 +2301,11 @@
 															<ObjectList Name="Clips">
 																<MusicClip Name="GoneAstray_ClockGoOff_Clock 1" ID="{DFA98033-CC3C-427A-B91E-20C7F5C13930}">
 																	<PropertyList>
-																		<Property Name="BeginTrimOffset" Type="Real64" Value="1339.39863656112"/>
+																		<Property Name="BeginTrimOffset" Type="Real64" Value="2339.39863656112"/>
 																		<Property Name="EndTrimOffset" Type="Real64" Value="34066.3333333333"/>
 																		<Property Name="FadeInDuration" Type="Real64" Value="533.470903312721"/>
 																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
-																		<Property Name="PlayAt" Type="Real64" Value="-1339.39863656112"/>
+																		<Property Name="PlayAt" Type="Real64" Value="-2339.39863656112"/>
 																	</PropertyList>
 																	<AudioSourceRef Name="GoneAstray_ClockGoOff_Clock 1" ID="{845D8A6B-5CF2-4324-8BF8-CD1A66CB3A75}"/>
 																	<PropertyCurveList>
@@ -1941,7 +2316,7 @@
 																				</PropertyList>
 																				<PointList>
 																					<Point>
-																						<XPos>1.3394</XPos>
+																						<XPos>2.3394</XPos>
 																						<YPos>0</YPos>
 																						<Flags>5</Flags>
 																					</Point>
@@ -1960,7 +2335,7 @@
 																				</PropertyList>
 																				<PointList>
 																					<Point>
-																						<XPos>1.3394</XPos>
+																						<XPos>2.3394</XPos>
 																						<YPos>0</YPos>
 																						<Flags>5</Flags>
 																					</Point>
@@ -1979,7 +2354,7 @@
 																				</PropertyList>
 																				<PointList>
 																					<Point>
-																						<XPos>1.3394</XPos>
+																						<XPos>2.3394</XPos>
 																						<YPos>0</YPos>
 																						<Flags>5</Flags>
 																					</Point>
@@ -2031,11 +2406,11 @@
 															<ObjectList Name="Clips">
 																<MusicClip Name="GoneAstray_ClockGoOff_ClockHit1" ID="{C854A133-7D33-498F-A5A6-1C29E3883433}">
 																	<PropertyList>
-																		<Property Name="BeginTrimOffset" Type="Real64" Value="1339.39863656112"/>
+																		<Property Name="BeginTrimOffset" Type="Real64" Value="2339.39863656112"/>
 																		<Property Name="EndTrimOffset" Type="Real64" Value="34066.3333333333"/>
 																		<Property Name="FadeInDuration" Type="Real64" Value="495.365838790384"/>
 																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
-																		<Property Name="PlayAt" Type="Real64" Value="-1339.39863656112"/>
+																		<Property Name="PlayAt" Type="Real64" Value="-2339.39863656112"/>
 																	</PropertyList>
 																	<AudioSourceRef Name="GoneAstray_ClockGoOff_ClockHit1" ID="{507CEA47-A22D-43D8-8948-6E13D0B8797B}"/>
 																	<PropertyCurveList>
@@ -2046,7 +2421,7 @@
 																				</PropertyList>
 																				<PointList>
 																					<Point>
-																						<XPos>1.3394</XPos>
+																						<XPos>2.3394</XPos>
 																						<YPos>0</YPos>
 																						<Flags>5</Flags>
 																					</Point>
@@ -2065,7 +2440,7 @@
 																				</PropertyList>
 																				<PointList>
 																					<Point>
-																						<XPos>1.3394</XPos>
+																						<XPos>2.3394</XPos>
 																						<YPos>0</YPos>
 																						<Flags>5</Flags>
 																					</Point>
@@ -2084,7 +2459,7 @@
 																				</PropertyList>
 																				<PointList>
 																					<Point>
-																						<XPos>1.3394</XPos>
+																						<XPos>2.3394</XPos>
 																						<YPos>0</YPos>
 																						<Flags>5</Flags>
 																					</Point>
@@ -2136,11 +2511,11 @@
 															<ObjectList Name="Clips">
 																<MusicClip Name="GoneAstray_ClockGoOff_TritonusPad" ID="{488C5A89-84FF-4D6B-8A34-687414818AD2}">
 																	<PropertyList>
-																		<Property Name="BeginTrimOffset" Type="Real64" Value="1339.39863656112"/>
+																		<Property Name="BeginTrimOffset" Type="Real64" Value="2339.39863656112"/>
 																		<Property Name="EndTrimOffset" Type="Real64" Value="34066.3333333333"/>
 																		<Property Name="FadeInDuration" Type="Real64" Value="514.418371051553"/>
 																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
-																		<Property Name="PlayAt" Type="Real64" Value="-1339.39863656112"/>
+																		<Property Name="PlayAt" Type="Real64" Value="-2339.39863656112"/>
 																	</PropertyList>
 																	<AudioSourceRef Name="GoneAstray_ClockGoOff_TritonusPad" ID="{3EB31FBC-A354-4421-80B5-B9689C3F7CA8}"/>
 																	<PropertyCurveList>
@@ -2151,7 +2526,7 @@
 																				</PropertyList>
 																				<PointList>
 																					<Point>
-																						<XPos>1.3394</XPos>
+																						<XPos>2.3394</XPos>
 																						<YPos>0</YPos>
 																						<Flags>5</Flags>
 																					</Point>
@@ -2170,7 +2545,7 @@
 																				</PropertyList>
 																				<PointList>
 																					<Point>
-																						<XPos>1.3394</XPos>
+																						<XPos>2.3394</XPos>
 																						<YPos>0</YPos>
 																						<Flags>5</Flags>
 																					</Point>
@@ -2189,7 +2564,7 @@
 																				</PropertyList>
 																				<PointList>
 																					<Point>
-																						<XPos>1.3394</XPos>
+																						<XPos>2.3394</XPos>
 																						<YPos>0</YPos>
 																						<Flags>5</Flags>
 																					</Point>
@@ -2214,7 +2589,7 @@
 										<ObjectList Name="Cues">
 											<MusicCue Name="Entry Cue" ID="{137DB140-E48A-4945-BBCE-400AE9863EA1}">
 												<PropertyList>
-													<Property Name="TimeMs" Type="Real64" Value="2509.21288019494"/>
+													<Property Name="TimeMs" Type="Real64" Value="1500"/>
 												</PropertyList>
 											</MusicCue>
 											<MusicCue Name="Exit Cue" ID="{8656523D-130E-40AB-9E46-C120D7849513}">
@@ -2233,7 +2608,7 @@
 										<Property Name="TimeSignatureUpper" Type="int16" Value="7"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-9</Value>
+												<Value>-16</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>

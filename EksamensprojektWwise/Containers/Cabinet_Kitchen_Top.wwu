@@ -49,7 +49,7 @@
 						<Property Name="RandomOrSequence" Type="int16" Value="0"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>6</Value>
+								<Value>2</Value>
 							</ValueList>
 							<ModifierList>
 								<ModifierInfo>
@@ -466,7 +466,7 @@
 						<Property Name="RandomOrSequence" Type="int16" Value="0"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>6</Value>
+								<Value>2</Value>
 							</ValueList>
 							<ModifierList>
 								<ModifierInfo>

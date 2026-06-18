@@ -23,7 +23,7 @@
 								</Reference>
 							</ReferenceList>
 						</Action>
-						<Action Name="" ID="{D8CCB467-2DEC-4E5C-8FCB-A75BBE1A13F2}" ShortID="752970166">
+						<Action Name="" ID="{2997CC97-1FCE-4D07-BEA3-417316E090DF}" ShortID="1001534597">
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="IntroMusic_SwitchContainer" ID="{2BFDAFE4-C5FA-493F-9091-CDF80DD90EB9}" WorkUnitID="{EF5E08E1-9B7B-4014-B697-16BA7A26C9C6}"/>

@@ -24,6 +24,11 @@
 						<Sound Name="Rt_Bedroom_quiet2" ID="{699DA079-DB0B-4A68-8FF5-3E48AE5F2119}" ShortID="41010399">
 							<PropertyList>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-2</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -153,6 +158,11 @@
 						<Sound Name="Rt_OutdoorsAmbiX" ID="{99A43518-E5EB-438D-9F76-DA5B022501DC}" ShortID="1044680053">
 							<PropertyList>
 								<Property Name="OverrideGameAuxSends" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>0.5</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">

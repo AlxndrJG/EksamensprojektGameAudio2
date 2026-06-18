@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{4C89ADBE-1366-9C6C-7FBC-6035DDDB5557}",
+    "Hash": "{D6425CD5-2906-D797-79DE-D9FC005BD836}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
@@ -166,7 +166,7 @@
       "Name": "RV_Child_Bedroom_03",
       "ObjectPath": "\\Busses\\Default Work Unit\\Reverbs\\RV_Child_Bedroom_03",
       "GUID": "{AAC2ABC7-D2C3-46DB-A220-9C6495F0EFE7}",
-      "MaxAttenuation": "10",
+      "MaxAttenuation": "6",
       "PluginRefs": {
        "ShareSets": [
         {
@@ -180,7 +180,7 @@
       "Name": "RV_Child_Bedroom_04",
       "ObjectPath": "\\Busses\\Default Work Unit\\Reverbs\\RV_Child_Bedroom_04",
       "GUID": "{8DCFC99A-5A80-47A3-9EF4-CC75ED495FE4}",
-      "MaxAttenuation": "10",
+      "MaxAttenuation": "6",
       "PluginRefs": {
        "ShareSets": [
         {
@@ -194,7 +194,7 @@
       "Name": "RV_Child_Bedroom",
       "ObjectPath": "\\Busses\\Default Work Unit\\Reverbs\\RV_Child_Bedroom",
       "GUID": "{B15F643F-9ABD-496D-AA17-3B4A72D4FF66}",
-      "MaxAttenuation": "10",
+      "MaxAttenuation": "6",
       "PluginRefs": {
        "ShareSets": [
         {
@@ -208,7 +208,7 @@
       "Name": "RV_Kitchen",
       "ObjectPath": "\\Busses\\Default Work Unit\\Reverbs\\RV_Kitchen",
       "GUID": "{4B88EDFB-F1E8-4886-9E34-B9873E1E873B}",
-      "MaxAttenuation": "10",
+      "MaxAttenuation": "6",
       "PluginRefs": {
        "ShareSets": [
         {
@@ -222,7 +222,7 @@
       "Name": "RV_LivingRoom",
       "ObjectPath": "\\Busses\\Default Work Unit\\Reverbs\\RV_LivingRoom",
       "GUID": "{6895C640-922A-4C6D-8075-268A0DC19ACC}",
-      "MaxAttenuation": "10",
+      "MaxAttenuation": "6",
       "PluginRefs": {
        "ShareSets": [
         {
@@ -390,6 +390,6 @@
     ]
    }
   ],
-  "FileHash": "{2EE4D0BC-C834-1349-794C-5DAD50EB76FC}"
+  "FileHash": "{A8ADD35D-CD09-BBC5-0A37-4D1E4E59C6F1}"
  }
 }

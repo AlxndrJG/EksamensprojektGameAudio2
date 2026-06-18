@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{69C07AC4-2AB0-417A-A9B2-DC14CCE12DE0}",
     "Language": "SFX",
-    "Hash": "{6B6B965E-4E03-BCF3-0250-CFF8208F72EB}",
+    "Hash": "{5C4E6E19-BE39-7B0A-C33F-5A9102CB28E9}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -205,7 +205,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "EksamensprojektWwise\\Originals\\SFX\\Fridge_Hum_Loop.wav",
-      "CachePath": "0B/{0B44B39E-BC7E-69BB-8D9C-84CE83977E84}.wem"
+      "CachePath": "10/{1032E16D-A46D-CF02-C079-AFC460648529}.wem"
      },
      {
       "Id": "94758386",
@@ -2991,7 +2991,7 @@
       "ObjectPath": "\\Events\\SFX\\Objects\\Cabinets\\Play_Bookshelf_Cabinet_Close",
       "GUID": "{C57D6E7E-C8C6-44CE-832A-3A67880F23A0}",
       "Color": "4",
-      "MaxAttenuation": "100",
+      "MaxAttenuation": "6",
       "DurationType": "OneShot",
       "DurationMin": "0.981289",
       "DurationMax": "1.0854504",
@@ -3034,7 +3034,7 @@
       "ObjectPath": "\\Events\\SFX\\Objects\\Cabinets\\Play_Bookshelf_Cabinet_Open",
       "GUID": "{8ADA70CC-8C1E-4E94-BE7A-873BD6F8E89F}",
       "Color": "4",
-      "MaxAttenuation": "100",
+      "MaxAttenuation": "6",
       "DurationType": "OneShot",
       "DurationMin": "0.76357",
       "DurationMax": "1.04664",
@@ -3077,7 +3077,7 @@
       "ObjectPath": "\\Events\\Player\\Play_Breathing",
       "GUID": "{5170D4C3-F643-4FE2-977C-8DE0EFB25860}",
       "Color": "1",
-      "MaxAttenuation": "10",
+      "MaxAttenuation": "6",
       "DurationType": "OneShot",
       "DurationMin": "0",
       "DurationMax": "3.596343",
@@ -3123,7 +3123,7 @@
       "ObjectPath": "\\Events\\SFX\\Objects\\Cabinets\\Play_Cabinet_Draw_Close",
       "GUID": "{E8A2427E-3550-49F0-96FD-C4E08AD10E3F}",
       "Color": "4",
-      "MaxAttenuation": "100",
+      "MaxAttenuation": "6",
       "DurationType": "OneShot",
       "DurationMin": "0.45569",
       "DurationMax": "0.62311",
@@ -3160,7 +3160,7 @@
       "ObjectPath": "\\Events\\SFX\\Objects\\Cabinets\\Play_Cabinet_Draw_Open",
       "GUID": "{AA086A02-8586-4368-953C-4EC1591E1892}",
       "Color": "4",
-      "MaxAttenuation": "100",
+      "MaxAttenuation": "6",
       "DurationType": "OneShot",
       "DurationMin": "0.5519561",
       "DurationMax": "0.704777",
@@ -3191,7 +3191,7 @@
       "ObjectPath": "\\Events\\SFX\\Objects\\Clock\\Play_Clock_Creak",
       "GUID": "{9DFF41F8-A57B-448E-A28E-F6767C89D70E}",
       "Color": "4",
-      "MaxAttenuation": "100",
+      "MaxAttenuation": "6",
       "DurationType": "OneShot",
       "DurationMin": "0",
       "DurationMax": "0",
@@ -3288,7 +3288,7 @@
       "ObjectPath": "\\Events\\SFX\\Objects\\Clock\\Play_ClockSwitch",
       "GUID": "{656ACBE1-22BA-492D-B79F-865A0596A049}",
       "Color": "4",
-      "MaxAttenuation": "100",
+      "MaxAttenuation": "30",
       "DurationType": "Infinite",
       "SwitchContainers": [
        {
@@ -3313,7 +3313,7 @@
       "ObjectPath": "\\Events\\SFX\\Objects\\Cabinets\\Play_Closet_Draw_Close",
       "GUID": "{7A825746-3414-48B4-BE54-3AD812C8FE8D}",
       "Color": "4",
-      "MaxAttenuation": "100",
+      "MaxAttenuation": "6",
       "DurationType": "OneShot",
       "DurationMin": "0.45569",
       "DurationMax": "0.62311",
@@ -3350,7 +3350,7 @@
       "ObjectPath": "\\Events\\SFX\\Objects\\Cabinets\\Play_Closet_Draw_Open",
       "GUID": "{E8726AFB-1F4E-4DE6-AE84-E5CBDB47EFC3}",
       "Color": "4",
-      "MaxAttenuation": "100",
+      "MaxAttenuation": "6",
       "DurationType": "OneShot",
       "DurationMin": "0.5519561",
       "DurationMax": "0.704777",
@@ -3381,7 +3381,7 @@
       "ObjectPath": "\\Events\\SFX\\Objects\\Cabinets\\Play_Closet_Slide_Close",
       "GUID": "{49DF6A4C-6E53-4337-994E-110DCD7CE0E7}",
       "Color": "4",
-      "MaxAttenuation": "100",
+      "MaxAttenuation": "6",
       "DurationType": "OneShot",
       "DurationMin": "1.2032765",
       "DurationMax": "1.8061047",
@@ -3445,7 +3445,7 @@
       "ObjectPath": "\\Events\\SFX\\Objects\\Cabinets\\Play_Closet_Slide_Open",
       "GUID": "{F6AE2632-5BD6-460A-8E50-959396FE42BA}",
       "Color": "4",
-      "MaxAttenuation": "100",
+      "MaxAttenuation": "6",
       "DurationType": "OneShot",
       "DurationMin": "1.2032765",
       "DurationMax": "1.8061047",
@@ -3509,7 +3509,7 @@
       "ObjectPath": "\\Events\\SFX\\Objects\\Doors\\Play_Door_Close",
       "GUID": "{5E747AD3-9FE2-4CC6-8986-745585448FBF}",
       "Color": "4",
-      "MaxAttenuation": "100",
+      "MaxAttenuation": "6",
       "DurationType": "OneShot",
       "DurationMin": "1.4335364",
       "DurationMax": "2.19275",
@@ -3549,7 +3549,7 @@
       "ObjectPath": "\\Events\\SFX\\Objects\\Doors\\Play_Door_Open",
       "GUID": "{9E3105D9-A544-4D4F-A19A-7FE3457018B7}",
       "Color": "4",
-      "MaxAttenuation": "100",
+      "MaxAttenuation": "6",
       "DurationType": "OneShot",
       "DurationMin": "0.6478554",
       "DurationMax": "1.4658059",
@@ -3583,10 +3583,8 @@
       "ObjectPath": "\\Events\\SFX\\Objects\\Fridge\\Play_Fridge_Loop",
       "GUID": "{FAB71C14-CB67-4E41-AD74-C3270C4FFC47}",
       "Color": "4",
-      "MaxAttenuation": "100",
-      "DurationType": "OneShot",
-      "DurationMin": "18",
-      "DurationMax": "18",
+      "MaxAttenuation": "6",
+      "DurationType": "Infinite",
       "MediaRefs": [
        {
         "Id": "90207738"
@@ -3599,7 +3597,7 @@
       "ObjectPath": "\\Events\\Player\\Play_FSBack",
       "GUID": "{241637BD-4940-4821-BBC3-535AAAC79395}",
       "Color": "1",
-      "MaxAttenuation": "10",
+      "MaxAttenuation": "6",
       "DurationType": "OneShot",
       "DurationMin": "0.20347638",
       "DurationMax": "0.6551298",
@@ -4332,7 +4330,7 @@
       "ObjectPath": "\\Events\\Player\\Play_FSForward",
       "GUID": "{9B5E6030-2213-47DF-AB48-36874C8AD8D9}",
       "Color": "1",
-      "MaxAttenuation": "10",
+      "MaxAttenuation": "6",
       "DurationType": "OneShot",
       "DurationMin": "0.17542802",
       "DurationMax": "0.65369165",
@@ -5080,7 +5078,7 @@
       "ObjectPath": "\\Events\\Player\\Play_FSSide",
       "GUID": "{83EF0AEC-1A98-4E91-88D3-5ABC730E4FAF}",
       "Color": "1",
-      "MaxAttenuation": "10",
+      "MaxAttenuation": "6",
       "DurationType": "OneShot",
       "DurationMin": "0.12654887",
       "DurationMax": "0.6866159",
@@ -5767,7 +5765,7 @@
       "Name": "Play_GoneAstray_Hallway",
       "ObjectPath": "\\Events\\Ambisonics\\Play_GoneAstray_Hallway",
       "GUID": "{65C474B9-E63B-478D-9A58-9010A49AD27A}",
-      "MaxAttenuation": "10",
+      "MaxAttenuation": "6",
       "DurationType": "Infinite",
       "MediaRefs": [
        {
@@ -5850,7 +5848,7 @@
       "ObjectPath": "\\Events\\SFX\\Objects\\Cabinets\\Play_Kitchen_Cabinet_Bottom_Close",
       "GUID": "{FA839368-11C4-4B4E-BF59-BF39D670639D}",
       "Color": "4",
-      "MaxAttenuation": "100",
+      "MaxAttenuation": "6",
       "DurationType": "OneShot",
       "DurationMin": "0.9579432",
       "DurationMax": "1.1203368",
@@ -5893,7 +5891,7 @@
       "ObjectPath": "\\Events\\SFX\\Objects\\Cabinets\\Play_Kitchen_Cabinet_Bottom_Open",
       "GUID": "{9D1DDA21-BF4D-40A8-A684-9C16EAF546EE}",
       "Color": "4",
-      "MaxAttenuation": "100",
+      "MaxAttenuation": "6",
       "DurationType": "OneShot",
       "DurationMin": "0.7001968",
       "DurationMax": "1.1142168",
@@ -5936,7 +5934,7 @@
       "ObjectPath": "\\Events\\SFX\\Objects\\Cabinets\\Play_Kitchen_Cabinet_Top_Close",
       "GUID": "{5E568F85-4D51-47A4-9C4B-0CEC5ADC7320}",
       "Color": "4",
-      "MaxAttenuation": "100",
+      "MaxAttenuation": "6",
       "DurationType": "OneShot",
       "DurationMin": "0.9579432",
       "DurationMax": "1.1203368",
@@ -5979,7 +5977,7 @@
       "ObjectPath": "\\Events\\SFX\\Objects\\Cabinets\\Play_Kitchen_Cabinet_Top_Open",
       "GUID": "{B6FE863D-2C11-4625-8037-AD160C9ADADD}",
       "Color": "4",
-      "MaxAttenuation": "100",
+      "MaxAttenuation": "6",
       "DurationType": "OneShot",
       "DurationMin": "0.7001968",
       "DurationMax": "1.1142168",
@@ -6022,7 +6020,7 @@
       "ObjectPath": "\\Events\\SFX\\Objects\\Cabinets\\Play_Kitchen_Draw_Close",
       "GUID": "{026F7192-7D9B-4E1E-AE48-E0AFBD512A44}",
       "Color": "4",
-      "MaxAttenuation": "100",
+      "MaxAttenuation": "6",
       "DurationType": "OneShot",
       "DurationMin": "0.45569",
       "DurationMax": "0.62311",
@@ -6059,7 +6057,7 @@
       "ObjectPath": "\\Events\\SFX\\Objects\\Cabinets\\Play_Kitchen_Draw_Open",
       "GUID": "{24035F0C-3470-4905-9EFC-619B2FCB1E5C}",
       "Color": "4",
-      "MaxAttenuation": "100",
+      "MaxAttenuation": "6",
       "DurationType": "OneShot",
       "DurationMin": "0.5519561",
       "DurationMax": "0.704777",
@@ -6090,7 +6088,7 @@
       "ObjectPath": "\\Events\\SFX\\Objects\\Kitchen_Sink\\Play_Kitchen_Sink_Loop",
       "GUID": "{8779187A-E6D8-4223-8D8E-FFB24CB605A7}",
       "Color": "4",
-      "MaxAttenuation": "10",
+      "MaxAttenuation": "6",
       "DurationType": "Infinite",
       "MediaRefs": [
        {
@@ -6274,7 +6272,7 @@
       "Name": "Play_Rt_Bedroom_quiet2",
       "ObjectPath": "\\Events\\Ambisonics\\Play_Rt_Bedroom_quiet2",
       "GUID": "{4FCEF198-2EF0-4FEB-A583-FD2DAB51A305}",
-      "MaxAttenuation": "10",
+      "MaxAttenuation": "6",
       "DurationType": "Infinite",
       "MediaRefs": [
        {
@@ -6287,7 +6285,7 @@
       "Name": "Play_RT_Kitchen",
       "ObjectPath": "\\Events\\Ambisonics\\Play_RT_Kitchen",
       "GUID": "{4ADA9F86-7745-4224-87E3-B8754D905A75}",
-      "MaxAttenuation": "10",
+      "MaxAttenuation": "6",
       "DurationType": "Infinite",
       "MediaRefs": [
        {
@@ -6300,7 +6298,7 @@
       "Name": "Play_RT_LivingRoom",
       "ObjectPath": "\\Events\\Ambisonics\\Play_RT_LivingRoom",
       "GUID": "{96DDD343-1A44-4130-8E78-C8A11F27F566}",
-      "MaxAttenuation": "10",
+      "MaxAttenuation": "6",
       "DurationType": "Infinite",
       "MediaRefs": [
        {
@@ -6313,7 +6311,7 @@
       "Name": "Play_Rt_OutdoorsAmbiX",
       "ObjectPath": "\\Events\\Ambisonics\\Play_Rt_OutdoorsAmbiX",
       "GUID": "{E30FE4CC-AB9B-4355-89BD-5805F7B85C48}",
-      "MaxAttenuation": "10",
+      "MaxAttenuation": "6",
       "DurationType": "OneShot",
       "DurationMin": "90.84325",
       "DurationMax": "90.84325",
@@ -6343,7 +6341,7 @@
       "ObjectPath": "\\Events\\SFX\\Objects\\TV\\Play_TV_OnOff",
       "GUID": "{6CD7EC95-CA06-4BC8-9C2E-AEAAA58ED67F}",
       "Color": "4",
-      "MaxAttenuation": "100",
+      "MaxAttenuation": "6",
       "DurationType": "OneShot",
       "DurationMin": "0.11801928",
       "DurationMax": "0.24183774",
@@ -6435,7 +6433,7 @@
       "Name": "RV_Child_Bedroom_03",
       "ObjectPath": "\\Busses\\Default Work Unit\\Reverbs\\RV_Child_Bedroom_03",
       "GUID": "{AAC2ABC7-D2C3-46DB-A220-9C6495F0EFE7}",
-      "MaxAttenuation": "10",
+      "MaxAttenuation": "6",
       "PluginRefs": {
        "ShareSets": [
         {
@@ -6449,7 +6447,7 @@
       "Name": "RV_Child_Bedroom_04",
       "ObjectPath": "\\Busses\\Default Work Unit\\Reverbs\\RV_Child_Bedroom_04",
       "GUID": "{8DCFC99A-5A80-47A3-9EF4-CC75ED495FE4}",
-      "MaxAttenuation": "10",
+      "MaxAttenuation": "6",
       "PluginRefs": {
        "ShareSets": [
         {
@@ -6463,7 +6461,7 @@
       "Name": "RV_Child_Bedroom",
       "ObjectPath": "\\Busses\\Default Work Unit\\Reverbs\\RV_Child_Bedroom",
       "GUID": "{B15F643F-9ABD-496D-AA17-3B4A72D4FF66}",
-      "MaxAttenuation": "10",
+      "MaxAttenuation": "6",
       "PluginRefs": {
        "ShareSets": [
         {
@@ -6477,7 +6475,7 @@
       "Name": "RV_Kitchen",
       "ObjectPath": "\\Busses\\Default Work Unit\\Reverbs\\RV_Kitchen",
       "GUID": "{4B88EDFB-F1E8-4886-9E34-B9873E1E873B}",
-      "MaxAttenuation": "10",
+      "MaxAttenuation": "6",
       "PluginRefs": {
        "ShareSets": [
         {
@@ -6491,7 +6489,7 @@
       "Name": "RV_LivingRoom",
       "ObjectPath": "\\Busses\\Default Work Unit\\Reverbs\\RV_LivingRoom",
       "GUID": "{6895C640-922A-4C6D-8075-268A0DC19ACC}",
-      "MaxAttenuation": "10",
+      "MaxAttenuation": "6",
       "PluginRefs": {
        "ShareSets": [
         {
@@ -6659,6 +6657,6 @@
     ]
    }
   ],
-  "FileHash": "{7628A720-AAD6-2C66-759B-D38F6DCD034E}"
+  "FileHash": "{E74538BA-006E-9A64-6FE3-4C808D647E05}"
  }
 }
