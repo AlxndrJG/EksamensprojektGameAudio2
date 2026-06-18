@@ -6149,7 +6149,7 @@ MonoBehaviour:
   roomToneEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: ab9585b88ce5c48bca3951b3bb7fda28, type: 2}
   roomToneAuxSend: 0
   isStatic: 0
 --- !u!65 &149249377
@@ -32168,7 +32168,7 @@ MonoBehaviour:
   roomToneEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: cfcfeb32bd54b466ba4971c4fb2bf24d, type: 2}
   roomToneAuxSend: 0
   isStatic: 0
 --- !u!65 &1180097815
@@ -34075,7 +34075,7 @@ MonoBehaviour:
   roomToneEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 4c573e93762eb462a99bff2f620f6647, type: 2}
   roomToneAuxSend: 0
   isStatic: 0
 --- !u!135 &1239648829
@@ -34097,7 +34097,7 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 41.87
+  m_Radius: 200
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1245948618
 GameObject:
@@ -34867,7 +34867,7 @@ MonoBehaviour:
   roomToneEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: e0d23ee4b630e4bf688199e40e183b2d, type: 2}
   roomToneAuxSend: 0
   isStatic: 0
 --- !u!65 &1266628089
@@ -46204,7 +46204,7 @@ MonoBehaviour:
   roomToneEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 8e7993b9544574d6fa294edb2b61a62b, type: 2}
   roomToneAuxSend: 0
   isStatic: 0
 --- !u!65 &1691977178
