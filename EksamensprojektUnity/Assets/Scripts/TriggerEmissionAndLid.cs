@@ -11,14 +11,20 @@ public class TriggerEmissionAndLid : MonoBehaviour
     public Material emissionMaterialBlue;
 
     [Header ("Sound")]
-    public AK.Wwise.Event clockOn;
+    //public AK.Wwise.Event clockOn;
     public AK.Wwise.Event tvOff;
 
-    private bool _hasRun = false;
+    [Header ("Gameobjects")]
+    public GameObject clockSuspenseTrigger;
+    public GameObject clockStingerTrigger;
+
+    //private bool _hasRun = false;
 
     void Start()
     {
         emissionMaterialBlue.EnableKeyword("_EMISSION");
+        clockSuspenseTrigger.SetActive(false);
+        clockStingerTrigger.SetActive(false);
     }
 
     void OnTriggerStay(Collider other)
@@ -29,8 +35,11 @@ public class TriggerEmissionAndLid : MonoBehaviour
             emissionMaterialBlue.DisableKeyword("_EMISSION");
             spotLight.SetActive(false);
             tvOff.Post(tvGameObject);
-            clockOn.Post(clockGameObject);
-            _hasRun = true;
+            clockSuspenseTrigger.SetActive(true);
+            clockStingerTrigger.SetActive(true);
+            //clockOn.Post(clockGameObject);
+            //_hasRun = true;
+
         }
     }
 }

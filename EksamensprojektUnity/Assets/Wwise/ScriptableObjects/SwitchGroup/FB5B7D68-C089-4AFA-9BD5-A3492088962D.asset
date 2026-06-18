@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: faa9e0917ab3c4db586c253c1bd5b985, type: 3}
-  m_Name: 85FD0BEB-E56F-4430-96ED-E4A775AF0BE2
+  m_Name: FB5B7D68-C089-4AFA-9BD5-A3492088962D
   m_EditorClassIdentifier: AK.Wwise.Unity.API.WwiseTypes::WwiseSwitchGroupReference
-  objectName: IntroRoom_RoomCheck
-  id: 2977570674
-  guid: 85FD0BEB-E56F-4430-96ED-E4A775AF0BE2
+  objectName: Outro_InsideCheck
+  id: 2951404499
+  guid: FB5B7D68-C089-4AFA-9BD5-A3492088962D

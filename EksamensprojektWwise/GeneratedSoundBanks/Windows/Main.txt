@@ -21,7 +21,6 @@ Event	ID	Name			Wwise Object Path	Notes
 	2360365162	Play_Closet_Draw_Open			\SFX\Objects\Cabinets\Play_Closet_Draw_Open	
 	2481548253	Play_Bookshelf_Cabinet_Open			\SFX\Objects\Cabinets\Play_Bookshelf_Cabinet_Open	
 	2596423489	Play_Closet_Slide_Close			\SFX\Objects\Cabinets\Play_Closet_Slide_Close	
-	3041563226	Silence			\Music\Silence	
 	3137613346	Play_Kitchen_Draw_Close			\SFX\Objects\Cabinets\Play_Kitchen_Draw_Close	
 	3148743426	Play_FSForward			\Player\Play_FSForward	
 	3694200493	Play_IntroMusic_SwitchContainer			\Music\Play_IntroMusic_SwitchContainer	
@@ -31,7 +30,6 @@ Event	ID	Name			Wwise Object Path	Notes
 	4244553126	Play_FSSide			\Player\Play_FSSide	
 	4255376059	Play_Bookshelf_Cabinet_Close			\SFX\Objects\Cabinets\Play_Bookshelf_Cabinet_Close	
 	4258792910	Play_Cabinet_Draw_Open			\SFX\Objects\Cabinets\Play_Cabinet_Draw_Open	
-	4278613964	InsideRoom_Music			\Music\InsideRoom_Music	
 
 Switch Group	ID	Name			Wwise Object Path	Notes
 	1684197371	ClockSus_TriggerCheck			\Music\ClockSus_TriggerCheck	

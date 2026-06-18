@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{69C07AC4-2AB0-417A-A9B2-DC14CCE12DE0}",
     "Language": "SFX",
-    "Hash": "{A0FBF305-52B6-EEFB-D2A6-55B8D737591B}",
+    "Hash": "{C58E5C2B-D33B-5381-DA04-1FA647304ABF}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -2842,17 +2842,6 @@
     },
     "Events": [
      {
-      "Id": "4278613964",
-      "Name": "InsideRoom_Music",
-      "ObjectPath": "\\Events\\Music\\InsideRoom_Music",
-      "GUID": "{59552ECE-2C97-4222-A870-D41DA5561CA3}",
-      "Color": "11",
-      "MaxAttenuation": "0",
-      "DurationType": "OneShot",
-      "DurationMin": "0",
-      "DurationMax": "0"
-     },
-     {
       "Id": "4255376059",
       "Name": "Play_Bookshelf_Cabinet_Close",
       "ObjectPath": "\\Events\\SFX\\Objects\\Cabinets\\Play_Bookshelf_Cabinet_Close",
@@ -5439,17 +5428,6 @@
       ]
      },
      {
-      "Id": "3041563226",
-      "Name": "Silence",
-      "ObjectPath": "\\Events\\Music\\Silence",
-      "GUID": "{06C43C7D-752D-4935-BB57-9A7670D978C8}",
-      "Color": "11",
-      "MaxAttenuation": "0",
-      "DurationType": "OneShot",
-      "DurationMin": "0",
-      "DurationMax": "0"
-     },
-     {
       "Id": "1329369387",
       "Name": "Stop_TV_Static",
       "ObjectPath": "\\Events\\SFX\\Objects\\TV\\Stop_TV_Static",
@@ -5729,6 +5707,6 @@
     ]
    }
   ],
-  "FileHash": "{54DFDB70-A32A-8D75-F6DE-F9FC97C865D3}"
+  "FileHash": "{A89EC2A7-C50E-0FE4-63B5-C76EB7739BBF}"
  }
 }
