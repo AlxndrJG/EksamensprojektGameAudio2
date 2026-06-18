@@ -4,24 +4,33 @@ public class ClockStingerTrigger : MonoBehaviour
 {
 
     public AK.Wwise.Switch clockStingerCheck;
+    public AK.Wwise.Event outroMusic;
     public GameObject clockSuspenseTrigger;
     public GameObject outroStinger;
-    public GameObject outroMusic;
+    private bool isTriggered = false;
 
     void Awake()
     {
         outroStinger.SetActive(false);
-        outroMusic.SetActive(false);
     }
+
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
-            //Debug.Log(other.name);
             clockStingerCheck.SetValue(clockSuspenseTrigger);
             outroStinger.SetActive(true);
-            outroMusic.SetActive(true);
+            isTriggered = true;
         }
     }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("Player") && isTriggered == true)
+        {
+            outroMusic.Post(gameObject);
+        }
+    }
+
 }
