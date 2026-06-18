@@ -3,12 +3,56 @@
 	<Events>
 		<WorkUnit Name="Ambisonics" ID="{5B08A073-D5F3-4A26-BA28-5303E42114D7}" PersistMode="Standalone">
 			<ChildrenList>
-				<Event Name="Play_RT_Bedroom" ID="{407C844C-53E2-4602-9F98-A6E51578FBB9}">
+				<Event Name="Play_Rt_Bedroom_quiet2" ID="{4FCEF198-2EF0-4FEB-A583-FD2DAB51A305}">
 					<ChildrenList>
-						<Action Name="" ID="{33295265-5196-4DFB-9E76-74B6D778E424}" ShortID="680719872">
+						<Action Name="" ID="{42921C66-F067-4CBD-9BD4-362C8AD6524D}" ShortID="518335881">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="GoneAstray_ChildBedroom3" ID="{227F8F52-2B5A-4F9A-87F3-44EA636C708F}" WorkUnitID="{EE36E31B-4D9F-4FFF-9192-8B9C5165E303}"/>
+									<ObjectRef Name="Rt_Bedroom_quiet2" ID="{699DA079-DB0B-4A68-8FF5-3E48AE5F2119}" WorkUnitID="{EE36E31B-4D9F-4FFF-9192-8B9C5165E303}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_RT_LivingRoom" ID="{96DDD343-1A44-4130-8E78-C8A11F27F566}">
+					<ChildrenList>
+						<Action Name="" ID="{7223AC6F-550F-4242-B625-1D1A5D37604C}" ShortID="179727214">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="RT_LivingRoom" ID="{C12B68A8-7A25-4F75-AB8D-2D0F56644CCB}" WorkUnitID="{EE36E31B-4D9F-4FFF-9192-8B9C5165E303}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_RT_Kitchen" ID="{4ADA9F86-7745-4224-87E3-B8754D905A75}">
+					<ChildrenList>
+						<Action Name="" ID="{C6EFF02A-65C3-4503-8E00-C8A5C068B89B}" ShortID="397033759">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="RT_Kitchen" ID="{9096CA29-DDBC-4050-AFB1-30F016CB4794}" WorkUnitID="{EE36E31B-4D9F-4FFF-9192-8B9C5165E303}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Rt_OutdoorsAmbiX" ID="{E30FE4CC-AB9B-4355-89BD-5805F7B85C48}">
+					<ChildrenList>
+						<Action Name="" ID="{994482E3-9971-43F7-8C95-2552B84FD1C4}" ShortID="479291527">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Rt_OutdoorsAmbiX" ID="{99A43518-E5EB-438D-9F76-DA5B022501DC}" WorkUnitID="{EE36E31B-4D9F-4FFF-9192-8B9C5165E303}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_GoneAstray_Hallway" ID="{65C474B9-E63B-478D-9A58-9010A49AD27A}">
+					<ChildrenList>
+						<Action Name="" ID="{67512E46-8781-440D-AF54-7630CBD4C586}" ShortID="655423572">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="GoneAstray_Hallway" ID="{DE8D5068-4BFA-4D90-965E-CCFEC8066FAB}" WorkUnitID="{EE36E31B-4D9F-4FFF-9192-8B9C5165E303}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

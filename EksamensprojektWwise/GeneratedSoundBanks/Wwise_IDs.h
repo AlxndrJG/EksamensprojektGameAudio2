@@ -31,6 +31,7 @@ namespace AK
         static const AkUniqueID PLAY_FSBACK = 369029778U;
         static const AkUniqueID PLAY_FSFORWARD = 3148743426U;
         static const AkUniqueID PLAY_FSSIDE = 4244553126U;
+        static const AkUniqueID PLAY_GONEASTRAY_HALLWAY = 4054260100U;
         static const AkUniqueID PLAY_INTROMUSIC_SWITCHCONTAINER = 3694200493U;
         static const AkUniqueID PLAY_KITCHEN_CABINET_BOTTOM_CLOSE = 259954442U;
         static const AkUniqueID PLAY_KITCHEN_CABINET_BOTTOM_OPEN = 1437364014U;
@@ -40,7 +41,10 @@ namespace AK
         static const AkUniqueID PLAY_KITCHEN_DRAW_OPEN = 1911134838U;
         static const AkUniqueID PLAY_KITCHEN_SINK_LOOP = 1645146637U;
         static const AkUniqueID PLAY_OUTROMUSIC_SWITCHCONTAINER = 2337892720U;
-        static const AkUniqueID PLAY_RT_BEDROOM = 1498325373U;
+        static const AkUniqueID PLAY_RT_BEDROOM_QUIET2 = 2049265138U;
+        static const AkUniqueID PLAY_RT_KITCHEN = 2589829285U;
+        static const AkUniqueID PLAY_RT_LIVINGROOM = 133076249U;
+        static const AkUniqueID PLAY_RT_OUTDOORSAMBIX = 248599327U;
         static const AkUniqueID PLAY_TESTLYD = 1963904025U;
         static const AkUniqueID PLAY_TV_ONOFF = 1847523583U;
         static const AkUniqueID PLAY_TV_STATIC = 1897478513U;

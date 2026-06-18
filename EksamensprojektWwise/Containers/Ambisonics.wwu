@@ -7,6 +7,7 @@
 					<PropertyList>
 						<Property Name="3DSpatialization" Type="int16" Value="2"/>
 						<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Attenuation">
@@ -20,13 +21,9 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<Sound Name="RT_Bedroom" ID="{F1DF781D-203A-4EC8-8461-2CC0AD83A9E2}" ShortID="79882882">
+						<Sound Name="Rt_Bedroom_quiet2" ID="{699DA079-DB0B-4A68-8FF5-3E48AE5F2119}" ShortID="41010399">
 							<PropertyList>
-								<Property Name="3DSpatialization" Type="int16" Value="2"/>
-								<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-								<Property Name="OverrideGameAuxSends" Type="bool" Value="True"/>
-								<Property Name="OverridePositioning" Type="bool" Value="True"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -37,31 +34,28 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="RT_Bedroom" ID="{65C20F99-3ABE-4787-AF96-7B7A0A25EAB9}">
+								<AudioFileSource Name="Rt_Bedroom_quiet2" ID="{C3CC8BF5-172D-4864-A28F-EC835444282E}">
 									<PropertyList>
 										<Property Name="ChannelConfigOverride" Type="int64" Value="516"/>
-										<Property Name="CrossfadeDuration" Type="Real64" Value="882.898"/>
-										<Property Name="LoopBegin" Type="Real64" Value="2.29821"/>
-										<Property Name="LoopEnd" Type="Real64" Value="82.91957"/>
+										<Property Name="CrossfadeDuration" Type="Real64" Value="2687.511"/>
+										<Property Name="LoopBegin" Type="Real64" Value="3.44368"/>
+										<Property Name="LoopEnd" Type="Real64" Value="67.11507"/>
 										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 									</PropertyList>
 									<Language>SFX</Language>
-									<AudioFile>EksamensprojektWwise\Originals\SFX\RT_Bedroom.wav</AudioFile>
+									<AudioFile>EksamensprojektWwise\Originals\SFX\Rt_Bedroom_quiet2.wav</AudioFile>
 									<MediaIDList>
-										<MediaID ID="583841913"/>
+										<MediaID ID="734362545"/>
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
 							<ActiveSourceList>
-								<ActiveSource Name="RT_Bedroom" ID="{65C20F99-3ABE-4787-AF96-7B7A0A25EAB9}" Platform="Linked"/>
+								<ActiveSource Name="Rt_Bedroom_quiet2" ID="{C3CC8BF5-172D-4864-A28F-EC835444282E}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
-						<Sound Name="GoneAstray_ChildBedroom3" ID="{227F8F52-2B5A-4F9A-87F3-44EA636C708F}" ShortID="279675879">
+						<Sound Name="GoneAstray_Hallway" ID="{DE8D5068-4BFA-4D90-965E-CCFEC8066FAB}" ShortID="440619255">
 							<PropertyList>
-								<Property Name="3DSpatialization" Type="int16" Value="2"/>
-								<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -72,22 +66,121 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="GoneAstray_ChildBedroom3" ID="{AA50C50A-51B0-4F7D-8412-08AF47DDAE4E}">
+								<AudioFileSource Name="GoneAstray_Hallway" ID="{261C4DE1-7EE6-4814-9443-DEA443B98E97}">
 									<PropertyList>
-										<Property Name="CrossfadeDuration" Type="Real64" Value="883.238"/>
-										<Property Name="LoopBegin" Type="Real64" Value="3.49463"/>
-										<Property Name="LoopEnd" Type="Real64" Value="82.30784"/>
+										<Property Name="ChannelConfigOverride" Type="int64" Value="8589935108"/>
+										<Property Name="CrossfadeDuration" Type="Real64" Value="3762.547"/>
+										<Property Name="LoopBegin" Type="Real64" Value="3.73679"/>
+										<Property Name="LoopEnd" Type="Real64" Value="65.94331"/>
 										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 									</PropertyList>
 									<Language>SFX</Language>
-									<AudioFile>EksamensprojektWwise\Originals\SFX\GoneAstray_ChildBedroom3.wav</AudioFile>
+									<AudioFile>EksamensprojektWwise\Originals\SFX\GoneAstray_Hallway.wav</AudioFile>
 									<MediaIDList>
-										<MediaID ID="614025624"/>
+										<MediaID ID="165350269"/>
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
 							<ActiveSourceList>
-								<ActiveSource Name="GoneAstray_ChildBedroom3" ID="{AA50C50A-51B0-4F7D-8412-08AF47DDAE4E}" Platform="Linked"/>
+								<ActiveSource Name="GoneAstray_Hallway" ID="{261C4DE1-7EE6-4814-9443-DEA443B98E97}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="RT_Kitchen" ID="{9096CA29-DDBC-4050-AFB1-30F016CB4794}" ShortID="514033072">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="RT_Kitchen" ID="{03C283D8-F54D-45FE-AAB9-E39FCFBA077F}">
+									<PropertyList>
+										<Property Name="ChannelConfigOverride" Type="int64" Value="516"/>
+										<Property Name="CrossfadeDuration" Type="Real64" Value="813.618"/>
+										<Property Name="FadeInDuration" Type="Real64" Value="2.196"/>
+										<Property Name="LoopBegin" Type="Real64" Value="3.32726"/>
+										<Property Name="LoopEnd" Type="Real64" Value="56.69643"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>EksamensprojektWwise\Originals\SFX\RT_Kitchen.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="767371912"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="RT_Kitchen" ID="{03C283D8-F54D-45FE-AAB9-E39FCFBA077F}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="RT_LivingRoom" ID="{C12B68A8-7A25-4F75-AB8D-2D0F56644CCB}" ShortID="260291411">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="RT_LivingRoom" ID="{98BBD9EA-DDBF-4A24-AD51-6ECA8B499D2C}">
+									<PropertyList>
+										<Property Name="ChannelConfigOverride" Type="int64" Value="516"/>
+										<Property Name="CrossfadeDuration" Type="Real64" Value="1993.843"/>
+										<Property Name="LoopBegin" Type="Real64" Value="1.84"/>
+										<Property Name="LoopEnd" Type="Real64" Value="53.87738"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>EksamensprojektWwise\Originals\SFX\RT_LivingRoom.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="412448464"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="RT_LivingRoom" ID="{98BBD9EA-DDBF-4A24-AD51-6ECA8B499D2C}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Rt_OutdoorsAmbiX" ID="{99A43518-E5EB-438D-9F76-DA5B022501DC}" ShortID="1044680053">
+							<PropertyList>
+								<Property Name="OverrideGameAuxSends" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Rt_OutdoorsAmbiX" ID="{1E8E2FD8-4B90-4DB4-940B-962C088E0EED}">
+									<PropertyList>
+										<Property Name="ChannelConfigOverride" Type="int64" Value="516"/>
+										<Property Name="CrossfadeDuration" Type="Real64" Value="2365.71"/>
+										<Property Name="FadeInDuration" Type="Real64" Value="2.70882"/>
+										<Property Name="LoopBegin" Type="Real64" Value="4.257"/>
+										<Property Name="LoopEnd" Type="Real64" Value="83.00693"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>EksamensprojektWwise\Originals\SFX\Rt_OutdoorsAmbiX.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="938324684"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Rt_OutdoorsAmbiX" ID="{1E8E2FD8-4B90-4DB4-940B-962C088E0EED}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>
