@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{DB4AC107-C2B5-49AC-92D3-D797F926A85E}" SchemaVersion="133">
+	<Modulators>
+		<WorkUnit Name="AMBI" ID="{DB4AC107-C2B5-49AC-92D3-D797F926A85E}" PersistMode="Standalone"/>
+	</Modulators>
+</WwiseDocument>

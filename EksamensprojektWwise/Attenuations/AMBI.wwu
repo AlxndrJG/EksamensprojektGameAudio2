@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{BA513D22-44D7-4F69-A08B-335B3744671E}" SchemaVersion="133">
+	<Attenuations>
+		<WorkUnit Name="AMBI" ID="{BA513D22-44D7-4F69-A08B-335B3744671E}" PersistMode="Standalone"/>
+	</Attenuations>
+</WwiseDocument>

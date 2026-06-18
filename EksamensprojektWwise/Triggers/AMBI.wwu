@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{7AB2FE36-2EE1-4FE2-A7B1-81913A88D660}" SchemaVersion="133">
+	<Triggers>
+		<WorkUnit Name="AMBI" ID="{7AB2FE36-2EE1-4FE2-A7B1-81913A88D660}" PersistMode="Standalone"/>
+	</Triggers>
+</WwiseDocument>

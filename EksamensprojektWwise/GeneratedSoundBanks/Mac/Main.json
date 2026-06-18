@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{69C07AC4-2AB0-417A-A9B2-DC14CCE12DE0}",
     "Language": "SFX",
-    "Hash": "{3D3D657F-F853-62B6-C249-A4883A4B2A90}",
+    "Hash": "{04D996B0-1F26-C25B-24D3-3739BED6C884}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -72,6 +72,14 @@
       "CachePath": "C3/{C3E60523-14A3-68F5-8730-E78D1B6C2702}.wem"
      },
      {
+      "Id": "33492631",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "GoneAstray_ClockGoOff_Bell.wav",
+      "CachePath": "EF/{EF4D18D3-5348-D378-8645-4AD2CA18A174}.wem"
+     },
+     {
       "Id": "36999298",
       "Language": "SFX",
       "Streaming": "false",
@@ -110,6 +118,14 @@
       "Location": "Memory",
       "ShortName": "EksamensprojektGameAudio2\\EksamensprojektWwise\\Originals\\SFX\\WoodSolid\\Footstep_Walking_Hardwood_01.wav",
       "CachePath": "CA/{CA016289-4407-1B84-A9CD-F3F358842D64}.wem"
+     },
+     {
+      "Id": "47628912",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "GoneAstray_Intro_WhiteLightPad.wav",
+      "CachePath": "A2/{A2C90679-0964-C9F9-43C8-59B666AC9905}.wem"
      },
      {
       "Id": "49916121",
@@ -320,6 +336,14 @@
       "CachePath": "3D/{3DDD2004-4C2D-9274-74AA-C855A1CF9E6F}.wem"
      },
      {
+      "Id": "161693148",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "GoneAstray_Tone_F#4.wav",
+      "CachePath": "42/{424FA2DE-B3E0-D6F5-E477-40BFFB36E90E}.wem"
+     },
+     {
       "Id": "166747718",
       "Language": "SFX",
       "Streaming": "false",
@@ -422,6 +446,14 @@
       "Location": "Memory",
       "ShortName": "EksamensprojektGameAudio2\\EksamensprojektWwise\\Originals\\SFX\\WoodSolid\\Footstep_Walking_Hardwood_04.wav",
       "CachePath": "29/{29F1896E-8A4C-4AFB-6218-D37E1C54DA92}.wem"
+     },
+     {
+      "Id": "202305316",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "GoneAstray_IntroStinger_Spøgelsesklaver.wav",
+      "CachePath": "1C/{1C66D99F-80D1-0D30-CE9A-49AE92692DC4}.wem"
      },
      {
       "Id": "209127710",
@@ -576,6 +608,14 @@
       "CachePath": "53/{534610DE-100A-7855-62A6-1204EAA4269B}.wem"
      },
      {
+      "Id": "267968090",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "GoneAstray_IntroStinger_WhiteLightPad.wav",
+      "CachePath": "EF/{EF8314F6-3E68-8DEB-F010-6507360D3648}.wem"
+     },
+     {
       "Id": "271782980",
       "Language": "SFX",
       "Streaming": "false",
@@ -622,6 +662,14 @@
       "Location": "Memory",
       "ShortName": "EksamensprojektWwise\\Originals\\SFX\\Dør_Håndtag-002.wav",
       "CachePath": "6D/{6D252322-EEA2-24F5-986D-BBFB460C5585}.wem"
+     },
+     {
+      "Id": "286471465",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "GoneAstray_IntroStinger_ EerieStrings.wav",
+      "CachePath": "94/{94FED4E6-2A56-21E8-F2BB-3013D6438FBB}.wem"
      },
      {
       "Id": "287090829",
@@ -768,6 +816,14 @@
       "CachePath": "9D/{9DB8EDDE-3FD6-985E-5EE5-B90016CD7F58}.wem"
      },
      {
+      "Id": "328270525",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "GoneAstray_ClockGoOff_Clock 1.wav",
+      "CachePath": "12/{12BFD0D4-0D78-C8D1-2AD6-F2CC8B5389E6}.wem"
+     },
+     {
       "Id": "329876546",
       "Language": "SFX",
       "Streaming": "false",
@@ -894,6 +950,14 @@
       "Location": "Memory",
       "ShortName": "EksamensprojektWwise\\Originals\\SFX\\Dør_Åben-004.wav",
       "CachePath": "4C/{4CAF1365-CEB6-F7B6-0F9A-051F0BFE650C}.wem"
+     },
+     {
+      "Id": "351395096",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "GoneAstray_Outro_TritonusPad.wav",
+      "CachePath": "CA/{CA89C463-0654-6EA6-BB85-E1187A3D73D5}.wem"
      },
      {
       "Id": "354238923",
@@ -1104,6 +1168,14 @@
       "CachePath": "40/{4000803D-B17F-2E01-0F46-25BB52AA53BF}.wem"
      },
      {
+      "Id": "400834290",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "GoneAstray_Tone_F4.wav",
+      "CachePath": "B2/{B2D7541C-A727-722A-071E-FA29713A54E0}.wem"
+     },
+     {
       "Id": "405351695",
       "Language": "SFX",
       "Streaming": "false",
@@ -1176,12 +1248,36 @@
       "CachePath": "89/{89166E90-F677-D55D-B86B-E7C3351C44A5}.wem"
      },
      {
+      "Id": "449590241",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "GoneAstray_OutroStinger_PadRiser.wav",
+      "CachePath": "F1/{F120D369-BF94-5CE2-F979-D1DD5A4795CD}.wem"
+     },
+     {
       "Id": "452746440",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "EksamensprojektWwise\\Originals\\SFX\\Carpet_Texture-001.wav",
       "CachePath": "CF/{CFE73C0B-40ED-A83F-5859-4D8DAB52EB41}.wem"
+     },
+     {
+      "Id": "457145754",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "GoneAstray_Outro_ Clock.wav",
+      "CachePath": "57/{5723D1B3-2F3E-E2F1-3579-E6938721FA7F}.wem"
+     },
+     {
+      "Id": "460231350",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "GoneAstray_OutroStinger_ClockDistortHit.wav",
+      "CachePath": "72/{72245BFA-5A76-B3E2-7456-CC9BE3346F81}.wem"
      },
      {
       "Id": "461500473",
@@ -1400,6 +1496,14 @@
       "CachePath": "DD/{DDB0B207-F472-A81D-A8F8-3EBA8132E5D5}.wem"
      },
      {
+      "Id": "558060360",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "GoneAstray_ClockGoOff_TritonusPad.wav",
+      "CachePath": "08/{08F77FAA-A62F-D962-CDA6-D6A5EB16BC49}.wem"
+     },
+     {
       "Id": "560497447",
       "Language": "SFX",
       "Streaming": "false",
@@ -1582,6 +1686,14 @@
       "Location": "Memory",
       "ShortName": "EksamensprojektWwise\\Originals\\SFX\\Water_Tap_Multiples_13.wav",
       "CachePath": "30/{308ED2C0-C9BE-FE78-5954-9253F4AE06E7}.wem"
+     },
+     {
+      "Id": "614025624",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "EksamensprojektWwise\\Originals\\SFX\\GoneAstray_ChildBedroom3.wav",
+      "CachePath": "AB/{AB9219DF-45D3-2FB7-5A67-74477CE22BE0}.wem"
      },
      {
       "Id": "618541652",
@@ -1768,6 +1880,14 @@
       "CachePath": "EE/{EE09868B-B039-74C9-E6EF-27E50E23E4CC}.wem"
      },
      {
+      "Id": "717961820",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "GoneAstray_Intro_Melofrase2.wav",
+      "CachePath": "90/{906D755E-5510-05F5-15B6-60045A9D9B98}.wem"
+     },
+     {
       "Id": "721261236",
       "Language": "SFX",
       "Streaming": "false",
@@ -1920,6 +2040,14 @@
       "CachePath": "E0/{E034F008-0E0E-1B02-08D7-FA180D369D3C}.wem"
      },
      {
+      "Id": "801337456",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "GoneAstray_Tone_C4.wav",
+      "CachePath": "3E/{3E2EC7F8-59C5-A34C-3962-24CFC98BC5A4}.wem"
+     },
+     {
       "Id": "801953892",
       "Language": "SFX",
       "Streaming": "false",
@@ -2006,6 +2134,14 @@
       "Location": "Memory",
       "ShortName": "EksamensprojektWwise\\Originals\\SFX\\Carpet_Texture-007.wav",
       "CachePath": "56/{56B99404-0DE8-81A8-4E7F-7BC47C5E561A}.wem"
+     },
+     {
+      "Id": "823154029",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "GoneAstray_ClockGoOff_ClockHit1.wav",
+      "CachePath": "71/{717927EE-8FF1-EE29-1AB5-4654E07766F6}.wem"
      },
      {
       "Id": "825609899",
@@ -2400,6 +2536,14 @@
       "CachePath": "86/{8671B8F6-07AF-54B0-6FBC-3304991938C0}.wem"
      },
      {
+      "Id": "998935566",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "GoneAstray_IntroStinger_ ReverseKlaver.wav",
+      "CachePath": "2B/{2B242C75-973B-6358-A987-ED3581D067CD}.wem"
+     },
+     {
       "Id": "1007782491",
       "Language": "SFX",
       "Streaming": "false",
@@ -2440,6 +2584,14 @@
       "CachePath": "B5/{B53747D8-079D-3B6E-2598-28046F684843}.wem"
      },
      {
+      "Id": "1016695201",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "GoneAstray_Intro_EeriePad.wav",
+      "CachePath": "8F/{8FC10ADD-DB40-D75C-7202-F88CEB0C6AF0}.wem"
+     },
+     {
       "Id": "1017019208",
       "Language": "SFX",
       "Streaming": "false",
@@ -2470,6 +2622,14 @@
       "Location": "Memory",
       "ShortName": "EksamensprojektWwise\\Originals\\SFX\\Wood_Impact-009.wav",
       "CachePath": "82/{82B13148-3039-D895-0693-D4A4A557E4EF}.wem"
+     },
+     {
+      "Id": "1032132753",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "GoneAstray_OutroStinger_TritonusPad.wav",
+      "CachePath": "31/{311D76F5-4A6D-9828-AA53-3DF149CD5F1F}.wem"
      },
      {
       "Id": "1036064127",
@@ -2536,12 +2696,28 @@
       "CachePath": "D1/{D1F3EB8D-DBB9-A308-16D9-0EF8CA96A522}.wem"
      },
      {
+      "Id": "1055282842",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "GoneAstray_Tone_C#4.wav",
+      "CachePath": "B6/{B633C16B-49D4-7D42-00C4-DD82C73F8696}.wem"
+     },
+     {
       "Id": "1056241564",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Soundly Audio\\Clocks, Tick, Grandfather Clock, 1920, Pendulum Ticking SND102394 2.wav",
       "CachePath": "62/{6236BBF8-2602-DEE3-AB9E-9744D0919D03}.wem"
+     },
+     {
+      "Id": "1058457310",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "GoneAstray_Intro_Melofrase1.wav",
+      "CachePath": "24/{247F078F-E383-D3C0-487A-C3DEC21B1786}.wem"
      },
      {
       "Id": "1060488270",
@@ -2665,17 +2841,6 @@
      ]
     },
     "Events": [
-     {
-      "Id": "4278613964",
-      "Name": "InsideRoom_Music",
-      "ObjectPath": "\\Events\\Music\\InsideRoom_Music",
-      "GUID": "{59552ECE-2C97-4222-A870-D41DA5561CA3}",
-      "Color": "11",
-      "MaxAttenuation": "0",
-      "DurationType": "OneShot",
-      "DurationMin": "0",
-      "DurationMax": "0"
-     },
      {
       "Id": "4255376059",
       "Name": "Play_Bookshelf_Cabinet_Close",
@@ -2876,6 +3041,54 @@
        },
        {
         "Id": "1036064127"
+       }
+      ]
+     },
+     {
+      "Id": "1402222415",
+      "Name": "Play_ClockSus_SwitchContainer",
+      "ObjectPath": "\\Events\\Music\\Play_ClockSus_SwitchContainer",
+      "GUID": "{DDE48CF4-EFB4-4910-B2AF-6C6D82ECFF2F}",
+      "Color": "4",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "449590241"
+       },
+       {
+        "Id": "460231350"
+       },
+       {
+        "Id": "1032132753"
+       }
+      ],
+      "SwitchContainers": [
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "1684197371",
+         "Id": "2953275426",
+         "GUID": "{704EBA13-D240-4E44-A537-24B13482CD76}",
+         "Color": "4"
+        },
+        "MediaRefs": [
+         {
+          "Id": "351395096"
+         },
+         {
+          "Id": "457145754"
+         }
+        ]
+       }
+      ],
+      "ActionSetSwitch": [
+       {
+        "GroupId": "1684197371",
+        "Id": "2953275426",
+        "Name": "TriggerOff",
+        "ObjectPath": "\\Switches\\Music\\ClockSus_TriggerCheck\\TriggerOff",
+        "GUID": "{704EBA13-D240-4E44-A537-24B13482CD76}",
+        "Color": "4"
        }
       ]
      },
@@ -4652,6 +4865,75 @@
       ]
      },
      {
+      "Id": "3694200493",
+      "Name": "Play_IntroMusic_SwitchContainer",
+      "ObjectPath": "\\Events\\Music\\Play_IntroMusic_SwitchContainer",
+      "GUID": "{F58B7498-8C86-4903-88E0-B10D0262764E}",
+      "Color": "4",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "202305316"
+       },
+       {
+        "Id": "267968090"
+       },
+       {
+        "Id": "286471465"
+       },
+       {
+        "Id": "998935566"
+       }
+      ],
+      "SwitchContainers": [
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "2977570674",
+         "Id": "2924291032",
+         "GUID": "{3A2A8D1A-D82B-4F3B-A890-24A24E3B0B28}",
+         "Color": "4"
+        },
+        "MediaRefs": [
+         {
+          "Id": "47628912"
+         },
+         {
+          "Id": "161693148"
+         },
+         {
+          "Id": "400834290"
+         },
+         {
+          "Id": "717961820"
+         },
+         {
+          "Id": "801337456"
+         },
+         {
+          "Id": "1016695201"
+         },
+         {
+          "Id": "1055282842"
+         },
+         {
+          "Id": "1058457310"
+         }
+        ]
+       }
+      ],
+      "ActionSetSwitch": [
+       {
+        "GroupId": "2977570674",
+        "Id": "2924291032",
+        "Name": "InsideRoom",
+        "ObjectPath": "\\Switches\\Music\\IntroRoom_RoomCheck\\InsideRoom",
+        "GUID": "{3A2A8D1A-D82B-4F3B-A890-24A24E3B0B28}",
+        "Color": "4"
+       }
+      ]
+     },
+     {
       "Id": "259954442",
       "Name": "Play_Kitchen_Cabinet_Bottom_Close",
       "ObjectPath": "\\Events\\SFX\\Objects\\Cabinets\\Play_Kitchen_Cabinet_Bottom_Close",
@@ -5023,6 +5305,73 @@
       ]
      },
      {
+      "Id": "2337892720",
+      "Name": "Play_OutroMusic_SwitchContainer",
+      "ObjectPath": "\\Events\\Music\\Play_OutroMusic_SwitchContainer",
+      "GUID": "{5C92A248-25B0-4E61-8911-964F04B68F0D}",
+      "Color": "4",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "449590241"
+       },
+       {
+        "Id": "460231350"
+       },
+       {
+        "Id": "1032132753"
+       }
+      ],
+      "SwitchContainers": [
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "2951404499",
+         "Id": "3553349781",
+         "GUID": "{6AB774A5-5E5E-469F-A7A2-23396FEF36D2}",
+         "Color": "4"
+        },
+        "MediaRefs": [
+         {
+          "Id": "33492631"
+         },
+         {
+          "Id": "328270525"
+         },
+         {
+          "Id": "558060360"
+         },
+         {
+          "Id": "823154029"
+         }
+        ]
+       }
+      ],
+      "ActionSetSwitch": [
+       {
+        "GroupId": "2951404499",
+        "Id": "3553349781",
+        "Name": "Inside",
+        "ObjectPath": "\\Switches\\Music\\Outro_InsideCheck\\Inside",
+        "GUID": "{6AB774A5-5E5E-469F-A7A2-23396FEF36D2}",
+        "Color": "4"
+       }
+      ]
+     },
+     {
+      "Id": "1498325373",
+      "Name": "Play_RT_Bedroom",
+      "ObjectPath": "\\Events\\Ambisonics\\Play_RT_Bedroom",
+      "GUID": "{407C844C-53E2-4602-9F98-A6E51578FBB9}",
+      "MaxAttenuation": "10",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "614025624"
+       }
+      ]
+     },
+     {
       "Id": "1963904025",
       "Name": "Play_Testlyd",
       "ObjectPath": "\\Events\\Default Work Unit\\Play_Testlyd",
@@ -5077,17 +5426,6 @@
         "Id": "398776290"
        }
       ]
-     },
-     {
-      "Id": "3041563226",
-      "Name": "Silence",
-      "ObjectPath": "\\Events\\Music\\Silence",
-      "GUID": "{06C43C7D-752D-4935-BB57-9A7670D978C8}",
-      "Color": "11",
-      "MaxAttenuation": "0",
-      "DurationType": "OneShot",
-      "DurationMin": "0",
-      "DurationMax": "0"
      },
      {
       "Id": "1329369387",
@@ -5260,6 +5598,75 @@
     ],
     "SwitchGroups": [
      {
+      "Id": "1684197371",
+      "Name": "ClockSus_TriggerCheck",
+      "ObjectPath": "\\Switches\\Music\\ClockSus_TriggerCheck",
+      "GUID": "{DA10E6CF-DA8F-40F7-8CB8-8CE9E16B88C0}",
+      "Color": "4",
+      "Switches": [
+       {
+        "Id": "698233124",
+        "Name": "TriggerOn",
+        "ObjectPath": "\\Switches\\Music\\ClockSus_TriggerCheck\\TriggerOn",
+        "GUID": "{79DEFFDE-B5B6-4922-9BCB-C3626BB467B4}",
+        "Color": "4"
+       },
+       {
+        "Id": "2953275426",
+        "Name": "TriggerOff",
+        "ObjectPath": "\\Switches\\Music\\ClockSus_TriggerCheck\\TriggerOff",
+        "GUID": "{704EBA13-D240-4E44-A537-24B13482CD76}",
+        "Color": "4"
+       }
+      ]
+     },
+     {
+      "Id": "2951404499",
+      "Name": "Outro_InsideCheck",
+      "ObjectPath": "\\Switches\\Music\\Outro_InsideCheck",
+      "GUID": "{FB5B7D68-C089-4AFA-9BD5-A3492088962D}",
+      "Color": "4",
+      "Switches": [
+       {
+        "Id": "438105790",
+        "Name": "Outside",
+        "ObjectPath": "\\Switches\\Music\\Outro_InsideCheck\\Outside",
+        "GUID": "{8738D379-BEE7-4FEB-BCA6-EF23C085A6FA}",
+        "Color": "4"
+       },
+       {
+        "Id": "3553349781",
+        "Name": "Inside",
+        "ObjectPath": "\\Switches\\Music\\Outro_InsideCheck\\Inside",
+        "GUID": "{6AB774A5-5E5E-469F-A7A2-23396FEF36D2}",
+        "Color": "4"
+       }
+      ]
+     },
+     {
+      "Id": "2977570674",
+      "Name": "IntroRoom_RoomCheck",
+      "ObjectPath": "\\Switches\\Music\\IntroRoom_RoomCheck",
+      "GUID": "{85FD0BEB-E56F-4430-96ED-E4A775AF0BE2}",
+      "Color": "4",
+      "Switches": [
+       {
+        "Id": "249825411",
+        "Name": "OutsideRoom",
+        "ObjectPath": "\\Switches\\Music\\IntroRoom_RoomCheck\\OutsideRoom",
+        "GUID": "{2D9812ED-5981-4EB1-A7D8-C78515AACC52}",
+        "Color": "4"
+       },
+       {
+        "Id": "2924291032",
+        "Name": "InsideRoom",
+        "ObjectPath": "\\Switches\\Music\\IntroRoom_RoomCheck\\InsideRoom",
+        "GUID": "{3A2A8D1A-D82B-4F3B-A890-24A24E3B0B28}",
+        "Color": "4"
+       }
+      ]
+     },
+     {
       "Id": "4050929301",
       "Name": "Materials",
       "ObjectPath": "\\Switches\\Default Work Unit\\Materials",
@@ -5300,6 +5707,6 @@
     ]
    }
   ],
-  "FileHash": "{F6BCE422-4EDF-D84F-56A8-7760CA867FCA}"
+  "FileHash": "{477FCD95-6C54-C4C2-037F-7C92214C11E4}"
  }
 }

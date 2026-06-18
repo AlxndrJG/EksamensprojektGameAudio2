@@ -13,12 +13,12 @@ namespace AK
 {
     namespace EVENTS
     {
-        static const AkUniqueID INSIDEROOM_MUSIC = 4278613964U;
         static const AkUniqueID PLAY_BOOKSHELF_CABINET_CLOSE = 4255376059U;
         static const AkUniqueID PLAY_BOOKSHELF_CABINET_OPEN = 2481548253U;
         static const AkUniqueID PLAY_CABINET_DRAW_CLOSE = 1347786538U;
         static const AkUniqueID PLAY_CABINET_DRAW_OPEN = 4258792910U;
         static const AkUniqueID PLAY_CLOCK_CREAK = 4027104577U;
+        static const AkUniqueID PLAY_CLOCKSUS_SWITCHCONTAINER = 1402222415U;
         static const AkUniqueID PLAY_CLOCKSWITCH = 1136407996U;
         static const AkUniqueID PLAY_CLOSET_DRAW_CLOSE = 3919977262U;
         static const AkUniqueID PLAY_CLOSET_DRAW_OPEN = 2360365162U;
@@ -30,6 +30,7 @@ namespace AK
         static const AkUniqueID PLAY_FSBACK = 369029778U;
         static const AkUniqueID PLAY_FSFORWARD = 3148743426U;
         static const AkUniqueID PLAY_FSSIDE = 4244553126U;
+        static const AkUniqueID PLAY_INTROMUSIC_SWITCHCONTAINER = 3694200493U;
         static const AkUniqueID PLAY_KITCHEN_CABINET_BOTTOM_CLOSE = 259954442U;
         static const AkUniqueID PLAY_KITCHEN_CABINET_BOTTOM_OPEN = 1437364014U;
         static const AkUniqueID PLAY_KITCHEN_CABINET_TOP_CLOSE = 1760803494U;
@@ -37,10 +38,11 @@ namespace AK
         static const AkUniqueID PLAY_KITCHEN_DRAW_CLOSE = 3137613346U;
         static const AkUniqueID PLAY_KITCHEN_DRAW_OPEN = 1911134838U;
         static const AkUniqueID PLAY_KITCHEN_SINK_LOOP = 1645146637U;
+        static const AkUniqueID PLAY_OUTROMUSIC_SWITCHCONTAINER = 2337892720U;
+        static const AkUniqueID PLAY_RT_BEDROOM = 1498325373U;
         static const AkUniqueID PLAY_TESTLYD = 1963904025U;
         static const AkUniqueID PLAY_TV_ONOFF = 1847523583U;
         static const AkUniqueID PLAY_TV_STATIC = 1897478513U;
-        static const AkUniqueID SILENCE = 3041563226U;
         static const AkUniqueID STOP_TV_STATIC = 1329369387U;
     } // namespace EVENTS
 
@@ -63,6 +65,28 @@ namespace AK
 
     namespace SWITCHES
     {
+        namespace CLOCKSUS_TRIGGERCHECK
+        {
+            static const AkUniqueID GROUP = 1684197371U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID TRIGGEROFF = 2953275426U;
+                static const AkUniqueID TRIGGERON = 698233124U;
+            } // namespace SWITCH
+        } // namespace CLOCKSUS_TRIGGERCHECK
+
+        namespace INTROROOM_ROOMCHECK
+        {
+            static const AkUniqueID GROUP = 2977570674U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID INSIDEROOM = 2924291032U;
+                static const AkUniqueID OUTSIDEROOM = 249825411U;
+            } // namespace SWITCH
+        } // namespace INTROROOM_ROOMCHECK
+
         namespace MATERIALS
         {
             static const AkUniqueID GROUP = 4050929301U;
@@ -77,16 +101,16 @@ namespace AK
             } // namespace SWITCH
         } // namespace MATERIALS
 
-        namespace ROOMCHECK_SWITCH
+        namespace OUTRO_INSIDECHECK
         {
-            static const AkUniqueID GROUP = 2088086403U;
+            static const AkUniqueID GROUP = 2951404499U;
 
             namespace SWITCH
             {
-                static const AkUniqueID INSIDEROOM = 2924291032U;
-                static const AkUniqueID OUTSIDEROOM = 249825411U;
+                static const AkUniqueID INSIDE = 3553349781U;
+                static const AkUniqueID OUTSIDE = 438105790U;
             } // namespace SWITCH
-        } // namespace ROOMCHECK_SWITCH
+        } // namespace OUTRO_INSIDECHECK
 
     } // namespace SWITCHES
 

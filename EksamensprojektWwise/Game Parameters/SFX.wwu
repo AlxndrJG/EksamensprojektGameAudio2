@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{F392667F-579C-4817-AE6E-779854A706CD}" SchemaVersion="133">
+	<GameParameters>
+		<WorkUnit Name="SFX" ID="{F392667F-579C-4817-AE6E-779854A706CD}" PersistMode="Standalone"/>
+	</GameParameters>
+</WwiseDocument>

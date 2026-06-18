@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0719a08c641a74099be74c1fce563f02, type: 3}
+  m_Name: 407C844C-53E2-4602-9F98-A6E51578FBB9
+  m_EditorClassIdentifier: AK.Wwise.Unity.API.WwiseTypes::WwiseEventReference
+  objectName: Play_RT_Bedroom
+  id: 1498325373
+  guid: 407C844C-53E2-4602-9F98-A6E51578FBB9
+  IsInUserDefinedSoundBank: 1

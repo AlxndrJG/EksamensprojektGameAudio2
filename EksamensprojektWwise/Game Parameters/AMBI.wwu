@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{010CBF43-2CF0-4712-87A0-5C06445938D6}" SchemaVersion="133">
+	<GameParameters>
+		<WorkUnit Name="AMBI" ID="{010CBF43-2CF0-4712-87A0-5C06445938D6}" PersistMode="Standalone"/>
+	</GameParameters>
+</WwiseDocument>

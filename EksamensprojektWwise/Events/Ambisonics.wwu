@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{5B08A073-D5F3-4A26-BA28-5303E42114D7}" SchemaVersion="133">
+	<Events>
+		<WorkUnit Name="Ambisonics" ID="{5B08A073-D5F3-4A26-BA28-5303E42114D7}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Play_RT_Bedroom" ID="{407C844C-53E2-4602-9F98-A6E51578FBB9}">
+					<ChildrenList>
+						<Action Name="" ID="{33295265-5196-4DFB-9E76-74B6D778E424}" ShortID="680719872">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="GoneAstray_ChildBedroom3" ID="{227F8F52-2B5A-4F9A-87F3-44EA636C708F}" WorkUnitID="{EE36E31B-4D9F-4FFF-9192-8B9C5165E303}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

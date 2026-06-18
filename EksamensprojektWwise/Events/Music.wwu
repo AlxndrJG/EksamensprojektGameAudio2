@@ -7,12 +7,6 @@
 				<Property Name="OverrideColor" Type="bool" Value="True"/>
 			</PropertyList>
 			<ChildrenList>
-				<Event Name="InsideRoom_Music" ID="{59552ECE-2C97-4222-A870-D41DA5561CA3}">
-					<PropertyList>
-						<Property Name="Color" Type="int16" Value="4"/>
-					</PropertyList>
-				</Event>
-				<Event Name="Silence" ID="{06C43C7D-752D-4935-BB57-9A7670D978C8}"/>
 				<Event Name="Play_IntroMusic_SwitchContainer" ID="{F58B7498-8C86-4903-88E0-B10D0262764E}">
 					<PropertyList>
 						<Property Name="Color" Type="int16" Value="4"/>

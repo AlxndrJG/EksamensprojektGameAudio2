@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{2B1ECB34-7DCF-4651-A942-E3AE8D9817D8}" SchemaVersion="133">
+	<VirtualAcoustics>
+		<WorkUnit Name="SFX" ID="{2B1ECB34-7DCF-4651-A942-E3AE8D9817D8}" PersistMode="Standalone"/>
+	</VirtualAcoustics>
+</WwiseDocument>

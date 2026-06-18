@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{5326512E-C93C-4F78-B136-FEB0FDFDA698}" SchemaVersion="133">
+	<VirtualAcoustics>
+		<WorkUnit Name="AMBI" ID="{5326512E-C93C-4F78-B136-FEB0FDFDA698}" PersistMode="Standalone"/>
+	</VirtualAcoustics>
+</WwiseDocument>

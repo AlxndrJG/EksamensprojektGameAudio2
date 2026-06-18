@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{EE36E31B-4D9F-4FFF-9192-8B9C5165E303}" SchemaVersion="133">
+	<Containers>
+		<WorkUnit Name="Ambisonics" ID="{EE36E31B-4D9F-4FFF-9192-8B9C5165E303}" PersistMode="Standalone">
+			<ChildrenList>
+				<PropertyContainer Name="RoomTones" ID="{85AAC5AB-5979-42B2-A697-8F2E27160020}" ShortID="901981063">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="Attenuate_50" ID="{143E31F9-1597-48C4-9436-CFA24A10D321}" WorkUnitID="{2A830985-BB9C-43E5-BEB6-A0EA9412F107}"/>
+						</Reference>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="RT_Bedroom" ID="{F1DF781D-203A-4EC8-8461-2CC0AD83A9E2}" ShortID="79882882">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="OverrideGameAuxSends" Type="bool" Value="True"/>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="RT_Bedroom" ID="{65C20F99-3ABE-4787-AF96-7B7A0A25EAB9}">
+									<PropertyList>
+										<Property Name="ChannelConfigOverride" Type="int64" Value="516"/>
+										<Property Name="CrossfadeDuration" Type="Real64" Value="882.898"/>
+										<Property Name="LoopBegin" Type="Real64" Value="2.29821"/>
+										<Property Name="LoopEnd" Type="Real64" Value="82.91957"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>EksamensprojektWwise\Originals\SFX\RT_Bedroom.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="583841913"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="RT_Bedroom" ID="{65C20F99-3ABE-4787-AF96-7B7A0A25EAB9}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="GoneAstray_ChildBedroom3" ID="{227F8F52-2B5A-4F9A-87F3-44EA636C708F}" ShortID="279675879">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A0AB1A33-5402-4C5D-BA04-4C148F9511F9}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="GoneAstray_ChildBedroom3" ID="{AA50C50A-51B0-4F7D-8412-08AF47DDAE4E}">
+									<PropertyList>
+										<Property Name="CrossfadeDuration" Type="Real64" Value="883.238"/>
+										<Property Name="LoopBegin" Type="Real64" Value="3.49463"/>
+										<Property Name="LoopEnd" Type="Real64" Value="82.30784"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>EksamensprojektWwise\Originals\SFX\GoneAstray_ChildBedroom3.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="614025624"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="GoneAstray_ChildBedroom3" ID="{AA50C50A-51B0-4F7D-8412-08AF47DDAE4E}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+					<PositioningInfo>
+						<Panner Name="" ID="{58AD4CFC-EB2F-4162-8552-0CB1E5773452}"/>
+						<Position Name="" ID="{C1CD0BBE-AA58-429A-BEF5-818DE6B591ED}"/>
+					</PositioningInfo>
+				</PropertyContainer>
+			</ChildrenList>
+		</WorkUnit>
+	</Containers>
+</WwiseDocument>

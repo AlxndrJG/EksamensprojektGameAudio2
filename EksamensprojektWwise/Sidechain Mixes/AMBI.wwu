@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{0B11A4D8-77B4-46BD-A5D0-AAE3CA8A89C0}" SchemaVersion="133">
+	<SidechainMixes>
+		<WorkUnit Name="AMBI" ID="{0B11A4D8-77B4-46BD-A5D0-AAE3CA8A89C0}" PersistMode="Standalone"/>
+	</SidechainMixes>
+</WwiseDocument>

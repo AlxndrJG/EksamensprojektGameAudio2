@@ -281,22 +281,71 @@
     ],
     "SwitchGroups": [
      {
-      "Id": "2088086403",
-      "Name": "RoomCheck_Switch",
-      "ObjectPath": "\\Switches\\Default Work Unit\\RoomCheck_Switch",
+      "Id": "1684197371",
+      "Name": "ClockSus_TriggerCheck",
+      "ObjectPath": "\\Switches\\Music\\ClockSus_TriggerCheck",
+      "GUID": "{DA10E6CF-DA8F-40F7-8CB8-8CE9E16B88C0}",
+      "Color": "4",
+      "Switches": [
+       {
+        "Id": "698233124",
+        "Name": "TriggerOn",
+        "ObjectPath": "\\Switches\\Music\\ClockSus_TriggerCheck\\TriggerOn",
+        "GUID": "{79DEFFDE-B5B6-4922-9BCB-C3626BB467B4}",
+        "Color": "4"
+       },
+       {
+        "Id": "2953275426",
+        "Name": "TriggerOff",
+        "ObjectPath": "\\Switches\\Music\\ClockSus_TriggerCheck\\TriggerOff",
+        "GUID": "{704EBA13-D240-4E44-A537-24B13482CD76}",
+        "Color": "4"
+       }
+      ]
+     },
+     {
+      "Id": "2951404499",
+      "Name": "Outro_InsideCheck",
+      "ObjectPath": "\\Switches\\Music\\Outro_InsideCheck",
+      "GUID": "{FB5B7D68-C089-4AFA-9BD5-A3492088962D}",
+      "Color": "4",
+      "Switches": [
+       {
+        "Id": "438105790",
+        "Name": "Outside",
+        "ObjectPath": "\\Switches\\Music\\Outro_InsideCheck\\Outside",
+        "GUID": "{8738D379-BEE7-4FEB-BCA6-EF23C085A6FA}",
+        "Color": "4"
+       },
+       {
+        "Id": "3553349781",
+        "Name": "Inside",
+        "ObjectPath": "\\Switches\\Music\\Outro_InsideCheck\\Inside",
+        "GUID": "{6AB774A5-5E5E-469F-A7A2-23396FEF36D2}",
+        "Color": "4"
+       }
+      ]
+     },
+     {
+      "Id": "2977570674",
+      "Name": "IntroRoom_RoomCheck",
+      "ObjectPath": "\\Switches\\Music\\IntroRoom_RoomCheck",
       "GUID": "{85FD0BEB-E56F-4430-96ED-E4A775AF0BE2}",
+      "Color": "4",
       "Switches": [
        {
         "Id": "249825411",
         "Name": "OutsideRoom",
-        "ObjectPath": "\\Switches\\Default Work Unit\\RoomCheck_Switch\\OutsideRoom",
-        "GUID": "{2D9812ED-5981-4EB1-A7D8-C78515AACC52}"
+        "ObjectPath": "\\Switches\\Music\\IntroRoom_RoomCheck\\OutsideRoom",
+        "GUID": "{2D9812ED-5981-4EB1-A7D8-C78515AACC52}",
+        "Color": "4"
        },
        {
         "Id": "2924291032",
         "Name": "InsideRoom",
-        "ObjectPath": "\\Switches\\Default Work Unit\\RoomCheck_Switch\\InsideRoom",
-        "GUID": "{3A2A8D1A-D82B-4F3B-A890-24A24E3B0B28}"
+        "ObjectPath": "\\Switches\\Music\\IntroRoom_RoomCheck\\InsideRoom",
+        "GUID": "{3A2A8D1A-D82B-4F3B-A890-24A24E3B0B28}",
+        "Color": "4"
        }
       ]
      },
@@ -341,6 +390,6 @@
     ]
    }
   ],
-  "FileHash": "{B9A05F91-7C7D-0D14-F2D1-91D56C851505}"
+  "FileHash": "{2EE4D0BC-C834-1349-794C-5DAD50EB76FC}"
  }
 }

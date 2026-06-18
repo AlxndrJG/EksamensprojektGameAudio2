@@ -22,7 +22,7 @@
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Attenuation">
-							<ObjectRef Name="Attenuate_50" ID="{143E31F9-1597-48C4-9436-CFA24A10D321}" WorkUnitID="{E312AA2F-7D32-49AE-9B3F-853E8C0370AC}"/>
+							<ObjectRef Name="Attenuate_50" ID="{143E31F9-1597-48C4-9436-CFA24A10D321}" WorkUnitID="{2A830985-BB9C-43E5-BEB6-A0EA9412F107}"/>
 						</Reference>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B37C50F-12B3-4A06-A0B3-56AFB47D2BB5}"/>

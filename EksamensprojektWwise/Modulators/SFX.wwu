@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{7C51B363-8383-4E2E-B9DC-4B4B881C13F6}" SchemaVersion="133">
+	<Modulators>
+		<WorkUnit Name="SFX" ID="{7C51B363-8383-4E2E-B9DC-4B4B881C13F6}" PersistMode="Standalone"/>
+	</Modulators>
+</WwiseDocument>
