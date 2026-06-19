@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{69C07AC4-2AB0-417A-A9B2-DC14CCE12DE0}",
     "Language": "SFX",
-    "Hash": "{5BA9D8AF-788B-8B5F-0954-328BC1A5E667}",
+    "Hash": "{F28A207C-6741-7760-69AF-7B1C03F2D9D0}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -70,14 +70,6 @@
       "Location": "Memory",
       "ShortName": "SFX\\EksamensprojektWwise\\Originals\\SFX\\Tiles_Toe-005.wav",
       "CachePath": "3A/{3AC353C1-8EB6-3562-D8B2-18F7BB6BD058}.wem"
-     },
-     {
-      "Id": "32808192",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "EksamensprojektWwise\\Originals\\SFX\\Carpet_Step_2-006.wav",
-      "CachePath": "C3/{C3E60523-14A3-68F5-8730-E78D1B6C2702}.wem"
      },
      {
       "Id": "33492631",
@@ -158,14 +150,6 @@
       "Location": "Memory",
       "ShortName": "EksamensprojektWwise\\Originals\\SFX\\tøj_Ben_Venstre-003.wav",
       "CachePath": "18/{183AA6D3-31B5-B451-492D-5C0F8CEB9856}.wem"
-     },
-     {
-      "Id": "77414822",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "EksamensprojektWwise\\Originals\\SFX\\Carpet_Step_2-007.wav",
-      "CachePath": "1D/{1DA3DAAD-204E-5BA5-8437-2090AAA51AF4}.wem"
      },
      {
       "Id": "83294258",
@@ -272,28 +256,12 @@
       "CachePath": "60/{6045F212-94B8-171C-0427-6C4699FAF2A4}.wem"
      },
      {
-      "Id": "114162983",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "EksamensprojektWwise\\Originals\\SFX\\Dirt_Toe-001.wav",
-      "CachePath": "7D/{7D5FB5E5-3A14-A686-88F1-D75D381029B9}.wem"
-     },
-     {
       "Id": "116254863",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "EksamensprojektWwise\\Originals\\SFX\\Wood_Impact-001.wav",
       "CachePath": "51/{51632D61-6D84-08D4-1460-0D41FE8E905A}.wem"
-     },
-     {
-      "Id": "116752336",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "EksamensprojektWwise\\Originals\\SFX\\Dirt_Texture-006.wav",
-      "CachePath": "46/{464D6F5E-9268-F9CC-BB3B-0CE2D8EEB64D}.wem"
      },
      {
       "Id": "119226732",
@@ -358,14 +326,6 @@
       "Location": "Memory",
       "ShortName": "EksamensprojektWwise\\Originals\\SFX\\SkydeLåger-006.wav",
       "CachePath": "BD/{BDC0CFF9-6097-86D2-B10F-57B082CDD9D6}.wem"
-     },
-     {
-      "Id": "159813447",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "EksamensprojektWwise\\Originals\\SFX\\Carpet_Step_2-009.wav",
-      "CachePath": "ED/{ED0C4481-929E-DDC0-D66E-0959ADF04361}.wem"
      },
      {
       "Id": "161588475",
@@ -520,14 +480,6 @@
       "CachePath": "CB/{CBEDE4A7-2A0B-1BFC-F088-BC0F9955C079}.wem"
      },
      {
-      "Id": "215588902",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "EksamensprojektWwise\\Originals\\SFX\\Dirt_Toe-002.wav",
-      "CachePath": "CA/{CAEF6374-530D-271B-33F4-54544DA11B43}.wem"
-     },
-     {
       "Id": "219205901",
       "Language": "SFX",
       "Streaming": "false",
@@ -630,14 +582,6 @@
       "Location": "Memory",
       "ShortName": "EksamensprojektWwise\\Originals\\SFX\\Cabinet_Creak_4.wav",
       "CachePath": "A4/{A4443063-7492-218A-93CC-DC87D7CC36FB}.wem"
-     },
-     {
-      "Id": "258433631",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "EksamensprojektWwise\\Originals\\SFX\\Carpet_Step_2-006.wav",
-      "CachePath": "A1/{A10CF7E4-C665-1871-BCF9-946F53CB47C0}.wem"
      },
      {
       "Id": "260190266",
@@ -856,14 +800,6 @@
       "CachePath": "6B/{6B375230-4326-4AAD-2B63-5C6D63B2F9B4}.wem"
      },
      {
-      "Id": "317693023",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "EksamensprojektWwise\\Originals\\SFX\\Dirt_Texture-008.wav",
-      "CachePath": "E6/{E6CD31AF-6240-FE08-F2DF-F0A249BDF676}.wem"
-     },
-     {
       "Id": "320846986",
       "Language": "SFX",
       "Streaming": "false",
@@ -878,22 +814,6 @@
       "Location": "Memory",
       "ShortName": "EksamensprojektWwise\\Originals\\SFX\\Skuffe_Ud-008.wav",
       "CachePath": "47/{47B7742E-289C-D085-9243-BB419F95C487}.wem"
-     },
-     {
-      "Id": "324876723",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "EksamensprojektWwise\\Originals\\SFX\\Carpet_Step_2-005.wav",
-      "CachePath": "42/{42A603E6-FE0C-E525-EC7C-EF74720D6905}.wem"
-     },
-     {
-      "Id": "325308676",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "EksamensprojektWwise\\Originals\\SFX\\Carpet_Step_2-004.wav",
-      "CachePath": "01/{01D31C44-2AF4-44D9-6DC4-05A8CA96E6A5}.wem"
      },
      {
       "Id": "327770689",
@@ -974,22 +894,6 @@
       "Location": "Memory",
       "ShortName": "EksamensprojektWwise\\Originals\\SFX\\Dør_Luk-002.wav",
       "CachePath": "4F/{4FF9B186-AE07-036C-6557-099B55E1F76C}.wem"
-     },
-     {
-      "Id": "337398265",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "EksamensprojektWwise\\Originals\\SFX\\Carpet_Step_2-010.wav",
-      "CachePath": "A5/{A53A035C-8FDB-5FC5-97EA-F1E03C0D8D5E}.wem"
-     },
-     {
-      "Id": "348192053",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "EksamensprojektWwise\\Originals\\SFX\\Dirt_Toe-003.wav",
-      "CachePath": "81/{81BDB650-01E5-21BB-AD55-0DCF99A6030E}.wem"
      },
      {
       "Id": "349133057",
@@ -1240,14 +1144,6 @@
       "CachePath": "BA/{BA5A5B55-4737-AEE4-449B-C1238EA33279}.wem"
      },
      {
-      "Id": "422690016",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "EksamensprojektWwise\\Originals\\SFX\\Carpet_Step_2-007.wav",
-      "CachePath": "EF/{EF8E93F3-D7FF-E43A-A6FD-17A6CCC04489}.wem"
-     },
-     {
       "Id": "422722377",
       "Language": "SFX",
       "Streaming": "false",
@@ -1376,14 +1272,6 @@
       "CachePath": "D0/{D0CF06BC-C224-AE9C-0CA9-4B2202AC4561}.wem"
      },
      {
-      "Id": "467355072",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "EksamensprojektWwise\\Originals\\SFX\\Carpet_Step_2-003.wav",
-      "CachePath": "7A/{7A46762D-16A5-C08C-3714-642855B0925A}.wem"
-     },
-     {
       "Id": "467378241",
       "Language": "SFX",
       "Streaming": "false",
@@ -1432,14 +1320,6 @@
       "CachePath": "65/{65D41C47-3761-2809-FE4C-654B2BFD4B13}.wem"
      },
      {
-      "Id": "480470741",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "EksamensprojektWwise\\Originals\\SFX\\Carpet_Step_2-007.wav",
-      "CachePath": "8E/{8E05E002-B568-AE20-E8AE-79BEFB78BA1C}.wem"
-     },
-     {
       "Id": "486995106",
       "Language": "SFX",
       "Streaming": "false",
@@ -1454,6 +1334,14 @@
       "Location": "Memory",
       "ShortName": "EksamensprojektWwise\\Originals\\SFX\\tøj_Ben_Højre-005.wav",
       "CachePath": "43/{43B6F77D-B2D4-8B8B-1EA6-B3EA0A6CB231}.wem"
+     },
+     {
+      "Id": "493584770",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "EksamensprojektWwise\\Originals\\SFX\\Dirt_Toe-002.wav",
+      "CachePath": "9B/{9B5B5F14-FCF8-397D-C8ED-19196224CB05}.wem"
      },
      {
       "Id": "495671222",
@@ -1494,22 +1382,6 @@
       "Location": "Memory",
       "ShortName": "EksamensprojektWwise\\Originals\\SFX\\tøj_Ben_Højre-006.wav",
       "CachePath": "0E/{0EE638CD-658B-C7E5-FC98-C14922A407DE}.wem"
-     },
-     {
-      "Id": "518050569",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "EksamensprojektWwise\\Originals\\SFX\\Carpet_Step_2-008.wav",
-      "CachePath": "E4/{E409DE61-1ED2-0F25-0D23-DECEE18EA71F}.wem"
-     },
-     {
-      "Id": "518144614",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "EksamensprojektWwise\\Originals\\SFX\\Dirt_Texture-007.wav",
-      "CachePath": "6C/{6CFD4ACA-A301-6451-EAFA-B76FA7C6A3A4}.wem"
      },
      {
       "Id": "521251913",
@@ -1584,14 +1456,6 @@
       "CachePath": "EE/{EEDF56D8-C909-321F-6E76-1170EE3A817F}.wem"
      },
      {
-      "Id": "548011774",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "EksamensprojektWwise\\Originals\\SFX\\Carpet_Step_2-009.wav",
-      "CachePath": "59/{594EDA3C-6EB3-E207-B44D-1B0BB4CAA302}.wem"
-     },
-     {
       "Id": "548501112",
       "Language": "SFX",
       "Streaming": "false",
@@ -1654,14 +1518,6 @@
       "Location": "Memory",
       "ShortName": "EksamensprojektWwise\\Originals\\SFX\\SkydeLåger-014.wav",
       "CachePath": "FC/{FC3E6683-62CB-1ADC-C8F6-6F7643A6D155}.wem"
-     },
-     {
-      "Id": "577861633",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "EksamensprojektWwise\\Originals\\SFX\\Carpet_Step_2-002.wav",
-      "CachePath": "2C/{2C483210-1D2E-605B-F379-0D7833D1FF54}.wem"
      },
      {
       "Id": "578541975",
@@ -1749,7 +1605,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "EksamensprojektWwise\\Originals\\SFX\\Dirt_Toe-001.wav",
-      "CachePath": "48/{48E3359B-9614-ECEA-787F-F48AC47701BB}.wem"
+      "CachePath": "4E/{4EB65687-4503-A123-8E50-6F4F32771E44}.wem"
      },
      {
       "Id": "613209508",
@@ -2000,6 +1856,14 @@
       "CachePath": "C4/{C44C9E85-CBE2-8FAE-22F8-850CF1E5ED4C}.wem"
      },
      {
+      "Id": "722041938",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "EksamensprojektWwise\\Originals\\SFX\\Dirt_Toe-004.wav",
+      "CachePath": "CB/{CB7DC345-61BC-7F6E-F982-A0E9EA5104C4}.wem"
+     },
+     {
       "Id": "722315689",
       "Language": "SFX",
       "Streaming": "false",
@@ -2102,14 +1966,6 @@
       "Location": "Memory",
       "ShortName": "EksamensprojektWwise\\Originals\\SFX\\Wood_Impact-004.wav",
       "CachePath": "1B/{1B967ECD-5383-6D7C-8C8A-E1447EA47190}.wem"
-     },
-     {
-      "Id": "766264832",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "EksamensprojektWwise\\Originals\\SFX\\Carpet_Step_2-004.wav",
-      "CachePath": "76/{766C1028-1C32-45B7-7BF6-D86401D3EA19}.wem"
      },
      {
       "Id": "767128951",
@@ -2312,14 +2168,6 @@
       "CachePath": "D6/{D6E9092C-89CB-AE1C-BA05-E88AB317E29B}.wem"
      },
      {
-      "Id": "832777814",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "EksamensprojektWwise\\Originals\\SFX\\Carpet_Step_2-008.wav",
-      "CachePath": "5D/{5D9E5BA1-43A4-30A1-561C-AB8E131EDBD8}.wem"
-     },
-     {
       "Id": "835078316",
       "Language": "SFX",
       "Streaming": "false",
@@ -2392,14 +2240,6 @@
       "CachePath": "57/{57B499CF-7B66-F47D-3D50-D232BEF1673F}.wem"
      },
      {
-      "Id": "864005805",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "EksamensprojektWwise\\Originals\\SFX\\Dirt_Texture-009.wav",
-      "CachePath": "4B/{4B105D6D-0449-E505-3774-D8177C9CDDE8}.wem"
-     },
-     {
       "Id": "865936765",
       "Language": "SFX",
       "Streaming": "false",
@@ -2416,20 +2256,20 @@
       "CachePath": "D5/{D56F4E8B-F5F0-7C57-CFCC-A4BA43755942}.wem"
      },
      {
-      "Id": "874307436",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "EksamensprojektWwise\\Originals\\SFX\\Carpet_Step_2-006.wav",
-      "CachePath": "D9/{D9F82D7C-45FC-B0FC-4842-3668C1E28002}.wem"
-     },
-     {
       "Id": "884897319",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "EksamensprojektWwise\\Originals\\SFX\\Dør_Åben-007.wav",
       "CachePath": "1B/{1B5A3DA5-ED43-0F05-3C92-6F352C40C208}.wem"
+     },
+     {
+      "Id": "885024624",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "EksamensprojektWwise\\Originals\\SFX\\Dirt_Toe-003.wav",
+      "CachePath": "0B/{0BFB3195-972A-1B4D-1F16-0D63E8B77A46}.wem"
      },
      {
       "Id": "891127014",
@@ -2517,7 +2357,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "EksamensprojektWwise\\Originals\\SFX\\Rt_OutdoorsAmbiX.wav",
-      "CachePath": "FD/{FD62AD90-8755-5C14-2FF9-6851A08FA46B}.wem"
+      "CachePath": "30/{309D261F-EEE3-7913-720F-440291237495}.wem"
      },
      {
       "Id": "943204351",
@@ -2806,14 +2646,6 @@
       "Location": "Memory",
       "ShortName": "EksamensprojektWwise\\Originals\\SFX\\tøj_Ben_Venstre-005.wav",
       "CachePath": "28/{287735A7-DE12-DF87-1631-14F72978AF38}.wem"
-     },
-     {
-      "Id": "1047715996",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "EksamensprojektWwise\\Originals\\SFX\\Dirt_Toe-004.wav",
-      "CachePath": "A9/{A953655D-D7D5-E4D0-F021-A86FB322BC03}.wem"
      },
      {
       "Id": "1048691574",
@@ -3288,7 +3120,7 @@
       "ObjectPath": "\\Events\\SFX\\Objects\\Clock\\Play_ClockSwitch",
       "GUID": "{656ACBE1-22BA-492D-B79F-865A0596A049}",
       "Color": "4",
-      "MaxAttenuation": "30",
+      "MaxAttenuation": "50",
       "DurationType": "Infinite",
       "SwitchContainers": [
        {
@@ -3600,7 +3432,7 @@
       "MaxAttenuation": "6",
       "DurationType": "OneShot",
       "DurationMin": "0.20347638",
-      "DurationMax": "0.6551298",
+      "DurationMax": "0.63792914",
       "SwitchContainers": [
        {
         "SwitchValue": {
@@ -4225,9 +4057,6 @@
           "Id": "209127710"
          },
          {
-          "Id": "215588902"
-         },
-         {
           "Id": "294041007"
          },
          {
@@ -4240,16 +4069,13 @@
           "Id": "329876546"
          },
          {
-          "Id": "348192053"
-         },
-         {
-          "Id": "422690016"
-         },
-         {
           "Id": "461500473"
          },
          {
           "Id": "464125871"
+         },
+         {
+          "Id": "493584770"
          },
          {
           "Id": "507133250"
@@ -4279,6 +4105,9 @@
           "Id": "715331280"
          },
          {
+          "Id": "722041938"
+         },
+         {
           "Id": "780003102"
          },
          {
@@ -4291,7 +4120,7 @@
           "Id": "821231081"
          },
          {
-          "Id": "874307436"
+          "Id": "885024624"
          },
          {
           "Id": "932754104"
@@ -4304,9 +4133,6 @@
          },
          {
           "Id": "1046478347"
-         },
-         {
-          "Id": "1047715996"
          },
          {
           "Id": "1048691574"
@@ -4961,37 +4787,25 @@
           "Id": "18837402"
          },
          {
-          "Id": "77414822"
+          "Id": "56376927"
          },
          {
           "Id": "109919315"
          },
          {
-          "Id": "114162983"
-         },
-         {
-          "Id": "116752336"
+          "Id": "113902855"
          },
          {
           "Id": "138856344"
          },
          {
-          "Id": "159813447"
-         },
-         {
           "Id": "203642519"
-         },
-         {
-          "Id": "215588902"
          },
          {
           "Id": "224743406"
          },
          {
           "Id": "248287198"
-         },
-         {
-          "Id": "258433631"
          },
          {
           "Id": "267949599"
@@ -5003,22 +4817,13 @@
           "Id": "300480720"
          },
          {
-          "Id": "317693023"
-         },
-         {
-          "Id": "348192053"
-         },
-         {
-          "Id": "467355072"
-         },
-         {
           "Id": "493180402"
          },
          {
-          "Id": "518050569"
+          "Id": "493584770"
          },
          {
-          "Id": "518144614"
+          "Id": "525684587"
          },
          {
           "Id": "534708669"
@@ -5030,19 +4835,31 @@
           "Id": "592383825"
          },
          {
+          "Id": "608112164"
+         },
+         {
+          "Id": "633786017"
+         },
+         {
           "Id": "634008821"
          },
          {
           "Id": "650196904"
          },
          {
+          "Id": "722041938"
+         },
+         {
           "Id": "722813382"
          },
          {
-          "Id": "766264832"
+          "Id": "780003102"
          },
          {
           "Id": "803876534"
+         },
+         {
+          "Id": "808249415"
          },
          {
           "Id": "810697554"
@@ -5054,19 +4871,28 @@
           "Id": "812973326"
          },
          {
-          "Id": "864005805"
+          "Id": "865936765"
          },
          {
-          "Id": "865936765"
+          "Id": "885024624"
+         },
+         {
+          "Id": "932754104"
+         },
+         {
+          "Id": "983991431"
          },
          {
           "Id": "1022166016"
          },
          {
-          "Id": "1047715996"
+          "Id": "1048691574"
          },
          {
-          "Id": "1048691574"
+          "Id": "1054553199"
+         },
+         {
+          "Id": "1061141745"
          }
         ]
        }
@@ -5649,7 +5475,7 @@
           "Id": "5429533"
          },
          {
-          "Id": "32808192"
+          "Id": "56376927"
          },
          {
           "Id": "72868023"
@@ -5661,7 +5487,7 @@
           "Id": "89778146"
          },
          {
-          "Id": "116752336"
+          "Id": "113902855"
          },
          {
           "Id": "199146222"
@@ -5673,16 +5499,7 @@
           "Id": "294041007"
          },
          {
-          "Id": "317693023"
-         },
-         {
           "Id": "320846986"
-         },
-         {
-          "Id": "324876723"
-         },
-         {
-          "Id": "325308676"
          },
          {
           "Id": "327770689"
@@ -5691,34 +5508,22 @@
           "Id": "329876546"
          },
          {
-          "Id": "337398265"
-         },
-         {
           "Id": "461500473"
          },
          {
           "Id": "464125871"
          },
          {
-          "Id": "467355072"
-         },
-         {
-          "Id": "480470741"
-         },
-         {
           "Id": "507133250"
          },
          {
-          "Id": "518144614"
-         },
-         {
-          "Id": "548011774"
-         },
-         {
-          "Id": "577861633"
+          "Id": "525684587"
          },
          {
           "Id": "623892796"
+         },
+         {
+          "Id": "633786017"
          },
          {
           "Id": "657761468"
@@ -5733,16 +5538,22 @@
           "Id": "715331280"
          },
          {
+          "Id": "780003102"
+         },
+         {
           "Id": "789356201"
+         },
+         {
+          "Id": "808249415"
          },
          {
           "Id": "821231081"
          },
          {
-          "Id": "832777814"
+          "Id": "932754104"
          },
          {
-          "Id": "864005805"
+          "Id": "983991431"
          },
          {
           "Id": "984302823"
@@ -5754,7 +5565,13 @@
           "Id": "1048691574"
          },
          {
+          "Id": "1054553199"
+         },
+         {
           "Id": "1060976376"
+         },
+         {
+          "Id": "1061141745"
          }
         ]
        }
@@ -5850,8 +5667,8 @@
       "Color": "4",
       "MaxAttenuation": "6",
       "DurationType": "OneShot",
-      "DurationMin": "0.9579432",
-      "DurationMax": "1.1203368",
+      "DurationMin": "0.65794325",
+      "DurationMax": "0.8203367",
       "MediaRefs": [
        {
         "Id": "42955071"
@@ -5936,8 +5753,8 @@
       "Color": "4",
       "MaxAttenuation": "6",
       "DurationType": "OneShot",
-      "DurationMin": "0.9579432",
-      "DurationMax": "1.1203368",
+      "DurationMin": "0.65794325",
+      "DurationMax": "0.8203367",
       "MediaRefs": [
        {
         "Id": "42955071"
@@ -6312,9 +6129,7 @@
       "ObjectPath": "\\Events\\Ambisonics\\Play_Rt_OutdoorsAmbiX",
       "GUID": "{E30FE4CC-AB9B-4355-89BD-5805F7B85C48}",
       "MaxAttenuation": "6",
-      "DurationType": "OneShot",
-      "DurationMin": "90.84325",
-      "DurationMax": "90.84325",
+      "DurationType": "Infinite",
       "MediaRefs": [
        {
         "Id": "938324684"
@@ -6657,6 +6472,6 @@
     ]
    }
   ],
-  "FileHash": "{643962F5-D8A2-BB27-4F88-E7D2CB472CDF}"
+  "FileHash": "{489F666D-3BE3-7107-7FA2-DB95A80F4CBE}"
  }
 }

@@ -38,7 +38,7 @@
 						</Property>
 						<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
 						<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
-						<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.7">
+						<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.4">
 							<ModifierList>
 								<ModifierInfo>
 									<Modifier Name="" ID="{4F5987F0-611E-4A14-8F6F-AB97FE77C3EA}"/>

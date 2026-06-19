@@ -339,11 +339,6 @@
 						<Property Name="AttenuationDistanceScaling" Type="Real32" Value="2.65"/>
 						<Property Name="Color" Type="int16" Value="4"/>
 						<Property Name="EnableDiffraction" Type="bool" Value="True"/>
-						<Property Name="GameAuxSendVolume" Type="Real64">
-							<ValueList>
-								<Value>10</Value>
-							</ValueList>
-						</Property>
 						<Property Name="OverrideColor" Type="bool" Value="True"/>
 						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 						<Property Name="Volume" Type="Real64">

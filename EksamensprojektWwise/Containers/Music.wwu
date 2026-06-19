@@ -1334,7 +1334,7 @@
 							<PropertyList>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-1.5</Value>
+										<Value>-3.5</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -2007,7 +2007,7 @@
 							<PropertyList>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-1.5</Value>
+										<Value>-3.5</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
